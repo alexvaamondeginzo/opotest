@@ -102,23 +102,21 @@ Google está activado en Supabase.
       Email de soporte: oponota.contacto@gmail.com.
       Logotipo: assets/marca/oponota-icono-1024.png (opcional).
       Dominios autorizados: netlify.app y supabase.co
-      Enlace a la política de privacidad: https://opotest-app.netlify.app/privacidad.html
+      Enlace a la política de privacidad: https://oponota.netlify.app/privacidad.html
       Permisos (scopes): solo email, profile y openid.
    Después, en Audience, pulsa "Publish app" para que pueda entrar cualquiera
    (si no, solo los emails que añadas como testers).
 3. APIs & Services > Credentials > Create credentials > OAuth client ID:
       Tipo: Web application.
-      Authorized JavaScript origins: https://opotest-app.netlify.app
-                                     (y https://oponota.netlify.app si renombráis el proyecto)
+      Authorized JavaScript origins: https://oponota.netlify.app
       Authorized redirect URIs:
          https://djzqzywpwliytbtkpdzk.supabase.co/auth/v1/callback
    Copia el Client ID y el Client secret.
 4. Supabase > Authentication > Sign In / Providers > Google: actívalo y pega
    el Client ID y el Client secret. Guarda.
 5. Supabase > Authentication > URL Configuration:
-      Site URL: https://opotest-app.netlify.app
-      Redirect URLs: añade https://opotest-app.netlify.app/**
-                     y https://oponota.netlify.app/**
+      Site URL: https://oponota.netlify.app
+      Redirect URLs: añade https://oponota.netlify.app/**
 6. Recarga la web y abre "Entrar": ya sale "Continuar con Google".
 
 ---------------------------------------------------------------------
