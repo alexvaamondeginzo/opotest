@@ -363,6 +363,11 @@ label.f{display:flex;flex-direction:column;gap:4px;font-size:15px;color:var(--mu
 label.f input,.admin-form input,.admin-form select{font:17px var(--body);padding:10px 0;border:0;border-bottom:1.5px solid var(--line-strong);border-radius:0;background:transparent;color:var(--ink)}
 label.f input:focus-visible{outline:0;border-bottom-color:var(--ink)}
 textarea{font:inherit;padding:12px 14px;border:1.5px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink);width:100%;min-height:110px;resize:vertical}
+.pass-w{position:relative;display:block}
+.pass-w input{width:100%;padding-right:44px!important}
+.ojo{position:absolute;right:0;top:50%;transform:translateY(-50%);background:none;border:0;padding:8px;border-radius:6px;color:var(--muted);line-height:0;cursor:pointer}
+.ojo:hover{color:var(--ink)}
+.ojo svg{width:22px;height:22px}
 .reqs{list-style:none;margin:-4px 0 0;padding:14px 16px;background:var(--bg);border-radius:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;font-size:14px;color:var(--muted)}
 .reqs li{display:flex;align-items:center;gap:8px}
 .reqs li::before{content:"";flex:0 0 18px;height:18px;border-radius:50%;border:1.5px solid var(--line-strong);background:var(--surface) center/12px no-repeat}
@@ -1641,6 +1646,16 @@ function errPass(p){
   return "";
 }
 vigilarPass("su");vigilarPass("np");
+// Mostrar u ocultar la contraseña (ojo)
+const OJO='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+const OJO_NO='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></svg>';
+document.querySelectorAll('input[type="password"]').forEach(inp=>{
+  const w=document.createElement("span");w.className="pass-w";inp.parentNode.insertBefore(w,inp);w.appendChild(inp);
+  const b=document.createElement("button");b.type="button";b.className="ojo";
+  const pinta=()=>{const vis=inp.type==="text";b.innerHTML=vis?OJO_NO:OJO;b.setAttribute("aria-label",vis?"Ocultar contraseña":"Mostrar contraseña");b.setAttribute("aria-pressed",String(vis))};
+  b.addEventListener("click",e=>{e.preventDefault();inp.type=inp.type==="password"?"text":"password";pinta();inp.focus()});
+  pinta();w.appendChild(b);
+});
 const validEmail=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
 // ===== ROBUSTEZ: reintentos, copia local y registro de errores =====
