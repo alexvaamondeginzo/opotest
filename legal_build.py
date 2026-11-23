@@ -3,7 +3,7 @@ OUT = "web"
 os.makedirs(OUT, exist_ok=True)
 
 STYLE = """
-:root{--bg:#f4f5f8;--surface:#fff;--ink:#1a2233;--muted:#5b6478;--line:#dde1ea;--accent:#c2410c;--mark:#fff4d6;
+:root{--bg:#f5f8f7;--surface:#fff;--ink:#052f2e;--muted:#4a6361;--line:#d6e6e3;--accent:#10776d;--mark:#fff4d6;
 --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}
@@ -28,7 +28,7 @@ def page(fname, title, body):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} · OpoTest</title>
+<title>{title} · OpoNota</title>
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/png" href="logo-32.png">
 <style>{STYLE}</style>

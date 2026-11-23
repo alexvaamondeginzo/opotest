@@ -1,0 +1,13 @@
+{
+  "_instrucciones": "Mientras 'importe' esté vacío (o la web esté en modo pruebas), la portada muestra «Gratis». Cuando decidáis el precio, rellenad 'importe' (por ejemplo «4,99 €») y 'detalle', y ejecutad build.py.",
+  "importe": "",
+  "detalle": "Pago único por oposición. Sin suscripción: acceso hasta el examen de la convocatoria en curso.",
+  "despues": "Cuando acabe la fase de pruebas, cada oposición tendrá un pago único, sin suscripción. Lo anunciaremos con tiempo y tu progreso se mantiene.",
+  "incluye": [
+    "Todas las preguntas de tu oposición, con su explicación y el artículo del BOE",
+    "Simulacros con el formato, el tiempo y la penalización del examen real",
+    "Progreso por tema, temas débiles y evolución de tus notas",
+    "Racha, objetivo diario y plan hasta el examen",
+    "Tu progreso guardado en cualquier dispositivo"
+  ]
+}

@@ -1,4 +1,4 @@
-# CLAUDE.md · contexto del proyecto OpoTest
+# CLAUDE.md · contexto del proyecto OpoNota (antes OpoTest)
 
 Este archivo es la memoria compartida del proyecto. Lo usan los dos socios, cada uno con su propio Claude. Léelo antes de tocar nada y actualízalo cuando se tome una decisión o se cierre una tarea importante.
 
@@ -14,6 +14,14 @@ Web de tests de oposiciones. Su diferencia frente a OpositaTest y similares es q
 Mientras dure la beta no se cobra, así que no corre prisa, pero hay que decidirlo antes de desactivar el modo beta. Tampoco está decidido si habrá temas gratis (propuesta: temas 1 y 16 abiertos) además o en lugar de la prueba de 2 días.
 
 Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre, como TCAE de los servicios de salud, Administrativo de Navarra, Auxiliar del Gobierno de Canarias u Osakidetza. Ya aparecen en la portada como «Próximamente», con lista de espera. Las de Madrid y del Estado son las primeras disponibles.
+
+## Marca y diseño
+
+- Nombre: **OpoNota**. Redes: @oponota.tests (TikTok) y @oponota.contacto (Instagram). El dominio sigue pendiente.
+- Logotipo e icono originales en `assets/marca/`. Colores del logotipo: tinta petróleo `#052F2E`, verde azulado `#10776D` (acciones), menta `#99F6E4` (acento del anillo) y fondo `#F5F8F7`.
+- Tipografía: DM Sans (OFL), servida desde la propia web (`assets/fuentes/dmsans.woff`, la copia `build.py`). Sin peticiones a servidores de terceros.
+- Estructura de la web: portada `#/` (oposiciones, qué incluye, precio, preguntas frecuentes) y un panel por oposición `#/o/<id>` (hoy con objetivo, racha y plan hasta el examen; test; temas débiles; evolución de simulacros; progreso por tema; examen y convocatoria; temario).
+- El precio de la portada sale de `precio.json`. Mientras `importe` esté vacío o la web esté en modo pruebas, se muestra «Gratis».
 
 ## Stack
 
@@ -79,7 +87,8 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [ ] Siguientes oposiciones: Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid (ya en la portada como «Próximamente»), y las de la lista de espera según demanda.
 - [ ] Rellenar los datos de las páginas legales (`legal_build.py`) y revisarlas con un asesor antes de cobrar. Añadir la lista de espera a la política de privacidad.
 - [ ] SMTP propio en Supabase para los emails de confirmación.
-- [ ] Nombre definitivo de la marca y dominio.
+- [x] Nombre de la marca: OpoNota. Rediseño de la web con sus colores, portada con varias secciones y panel por oposición.
+- [ ] Dominio propio.
 
 ## Forma de trabajar
 

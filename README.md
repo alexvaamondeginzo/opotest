@@ -1,8 +1,8 @@
-# OpoTest
+# OpoNota
 
 Web de tests de oposiciones en la que cada respuesta cita el artículo exacto y enlaza al texto consolidado del BOE.
 
-**Estado:** en pruebas (modo beta: acceso gratis a todo, sin cobrar). Publicada en https://opomadridprueba.netlify.app/
+**Estado:** en pruebas (modo beta: acceso gratis a todo, sin cobrar). Publicada en https://opotest-app.netlify.app/
 
 ## Qué incluye
 
@@ -50,7 +50,7 @@ Formato de una pregunta en los bancos:
 1. Edita el banco (`all.json` o `bancos/<id>.json`; para el Estado, `age/nNN.json` y luego `python3 age/montar.py`).
 2. Comprueba que no haya pistas de forma: `python3 herramientas/analizar.py bancos/aux-age.json`.
 3. `python3 make_sql.py` y ejecuta los `supabase/pNN-*.sql` en el SQL Editor de Supabase.
-4. Si cambias la web o `oposiciones.json`: `python3 build.py https://opomadridprueba.netlify.app/`.
+4. Si cambias la web o `oposiciones.json`: `python3 build.py https://opotest-app.netlify.app/`.
 5. Publica la carpeta `web` en Netlify.
 
 Nunca se suben claves secretas al repositorio. La clave de Supabase que aparece en `build.py` es la publicable, pensada para ir en la web; la de servicio y la secreta de Stripe van solo en Supabase.
