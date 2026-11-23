@@ -86,7 +86,13 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
 - [ ] Enlaces a las normas autonómicas de Madrid (BOCM) en `NORMAS`.
 - [ ] Siguientes oposiciones: Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid (ya en la portada como «Próximamente»), y las de la lista de espera según demanda.
-- [ ] Rellenar los datos de las páginas legales (`legal_build.py`) y revisarlas con un asesor antes de cobrar. Añadir la lista de espera a la política de privacidad.
+- [x] Páginas legales (`legal_build.py`) rellenadas: titular OPONOTA, email oponota.contacto@gmail.com, fecha 18/10/2026, web https://oponota.netlify.app/, Supabase en Irlanda (eu-west-1), Netlify como alojamiento y lista de espera y avisos de error en la privacidad. Las condiciones de compra no dan precios (cada oposición tendrá el suyo y se mostrará en la web antes de pagar).
+- [ ] **ANTES DEL LANZAMIENTO PÚBLICO (recordárselo al socio cuando diga que se lanza la web):**
+  - poner NIF y domicilio en `NIF` y `DOMICILIO` de `legal_build.py` (ahora están vacíos y no se muestran);
+  - poner como titular el nombre real de la persona o de la sociedad, porque «OPONOTA» no es una persona jurídica y la LSSI pide nombre o denominación social;
+  - revisar las páginas legales con un asesor antes de cobrar;
+  - añadir a las condiciones de compra el precio y lo que incluye cada oposición cuando esté decidido.
+- [ ] Renombrar el proyecto de Netlify a `oponota` para que funcione https://oponota.netlify.app/, que es la web que citan las páginas legales. Ahora está en `opotest-app`, en la cuenta de Netlify del otro socio.
 - [ ] SMTP propio en Supabase para los emails de confirmación.
 - [x] Nombre de la marca: OpoNota. Rediseño de la web con sus colores, portada con varias secciones y panel por oposición.
 - [ ] Dominio propio.

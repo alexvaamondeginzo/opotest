@@ -8,9 +8,11 @@
 <link rel="icon" type="image/png" href="logo-32.png">
 <style>
 :root{--bg:#f5f8f7;--surface:#fff;--ink:#052f2e;--muted:#4a6361;--line:#d6e6e3;--accent:#10776d;--mark:#fff4d6;
---body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}
+--body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#99f6e4;--mark:#4a3a10;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#99f6e4;--mark:#4a3a10;color-scheme:dark}
+@font-face{font-family:"Barlow";src:url("Barlow-Regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Barlow";src:url("Barlow-SemiBold.woff") format("woff");font-weight:600 700;font-display:swap}
 *{box-sizing:border-box}html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--body)}
 main{max-width:720px;margin:0 auto;padding:28px 16px 64px}
@@ -28,19 +30,17 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 </head>
 <body>
 <main>
-<a class="back" href="index.html">← Volver al test</a>
+<a class="back" href="index.html">← Volver a OpoNota</a>
 <h1>Política de privacidad</h1>
-<p class="updated">Última actualización: <mark>[FECHA DE PUBLICACIÓN]</mark></p>
+<p class="updated">Última actualización: 18 de octubre de 2026</p>
 
 <p>Esta política explica qué datos personales se tratan en este sitio, para qué y qué derechos tienes, conforme al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018 (LOPDGDD).</p>
 
 <h2>1. Responsable del tratamiento</h2>
 <ul>
-<li><strong>Titular:</strong> <mark>[TU NOMBRE Y APELLIDOS]</mark></li>
-<li><strong>NIF:</strong> <mark>[TU NIF]</mark></li>
-<li><strong>Domicilio:</strong> <mark>[TU DIRECCIÓN POSTAL COMPLETA]</mark></li>
-<li><strong>Email de contacto:</strong> <mark>[TU EMAIL DE CONTACTO]</mark></li>
-<li><strong>Sitio web:</strong> opomadridprueba.netlify.app</li>
+<li><strong>Titular:</strong> OPONOTA</li>
+<li><strong>Email de contacto:</strong> <a href="mailto:oponota.contacto@gmail.com">oponota.contacto@gmail.com</a></li>
+<li><strong>Sitio web:</strong> <a href="https://oponota.netlify.app/">https://oponota.netlify.app/</a></li>
 </ul>
 
 <h2>2. Qué datos tratamos</h2>
@@ -48,6 +48,8 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 <li><strong>Si visitas la web sin cuenta:</strong> no tratamos datos personales. Para hacer tests hay que crear una cuenta.</li>
 <li><strong>Si creas una cuenta:</strong> tu email, tu contraseña (que se guarda cifrada y que nadie puede leer), la fecha en que aceptaste esta política, tu declaración de tener 14 años o más, tu progreso en el test (aciertos por tema y preguntas falladas) y la fecha de inicio de tu prueba gratis. Para que la prueba gratis sea una por persona, conservamos una versión normalizada de tu email junto a esa fecha.</li>
 <li><strong>Si compras un plan:</strong> el plan comprado, el importe, la fecha, tu email y el identificador del pago. El pago lo gestiona Stripe: nosotros nunca vemos ni guardamos los datos de tu tarjeta.</li>
+<li><strong>Si te apuntas a la lista de espera de una oposición:</strong> tu email y la oposición que te interesa, solo para avisarte cuando esté disponible.</li>
+<li><strong>Si reportas un error en una pregunta:</strong> la pregunta, tu mensaje y, si lo escribes, tu email para responderte.</li>
 <li><strong>Si rellenas el formulario de opinión:</strong> los datos que tú decidas escribir en él, como tu email y tus respuestas.</li>
 <li><strong>Datos técnicos:</strong> el proveedor de alojamiento registra de forma automática datos como la dirección IP para la seguridad y el funcionamiento del servicio.</li>
 </ul>
@@ -59,19 +61,19 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 <tr><td>Crear y gestionar tu cuenta, dar acceso a la prueba gratis y al plan que compres, y guardar y sincronizar tu progreso entre dispositivos.</td><td>Ejecución del contrato que solicitas al registrarte o al comprar (art. 6.1.b RGPD).</td></tr>
 <tr><td>Evitar que una misma persona use varias pruebas gratis o emails temporales.</td><td>Interés legítimo en evitar abusos del servicio (art. 6.1.f RGPD).</td></tr>
 <tr><td>Conservar los datos de las compras.</td><td>Cumplimiento de obligaciones legales contables y fiscales (art. 6.1.c RGPD).</td></tr>
-<tr><td>Atender tus opiniones y avisos de errores, y avisarte del lanzamiento del temario completo si lo pides en el formulario.</td><td>Tu consentimiento (art. 6.1.a RGPD), que puedes retirar cuando quieras.</td></tr>
+<tr><td>Atender tus opiniones y avisos de errores, y avisarte cuando esté disponible la oposición en cuya lista de espera te apuntes.</td><td>Tu consentimiento (art. 6.1.a RGPD), que puedes retirar cuando quieras.</td></tr>
 <tr><td>Garantizar la seguridad técnica del sitio.</td><td>Interés legítimo en proteger el servicio (art. 6.1.f RGPD).</td></tr>
 </tbody></table></div>
 <p>No usamos tus datos para publicidad, no los vendemos y no tomamos decisiones automatizadas que te afecten.</p>
 
 <h2>4. Cuánto tiempo los guardamos</h2>
-<p>Los datos de la cuenta, mientras esté activa. Si la eliminas (puedes hacerlo tú en «Mi cuenta»), se borran de forma definitiva tu cuenta y tu progreso. Se conservan, sin vincular a ninguna cuenta, el registro de la prueba gratis usada (email normalizado y fecha) para impedir que se repita, y los datos de las compras durante los plazos que exige la normativa fiscal (en general, 6 años). Los datos del formulario, hasta que pidas la baja o retires tu consentimiento.</p>
+<p>Los datos de la cuenta, mientras esté activa. Si la eliminas (puedes hacerlo tú en «Mi cuenta»), se borran de forma definitiva tu cuenta y tu progreso. Se conservan, sin vincular a ninguna cuenta, el registro de la prueba gratis usada (email normalizado y fecha) para impedir que se repita, y los datos de las compras durante los plazos que exige la normativa fiscal (en general, 6 años). Los emails de la lista de espera, hasta que te avisemos del lanzamiento de esa oposición o pidas la baja. Los avisos de error y los datos del formulario de opinión, el tiempo necesario para atenderlos o hasta que retires tu consentimiento.</p>
 
 <h2>5. Quién trata los datos por nuestra cuenta</h2>
 <p>Para prestar el servicio usamos proveedores que actúan como encargados del tratamiento, con contrato que les obliga a proteger los datos:</p>
 <ul>
-<li><strong>Supabase</strong> (autenticación y base de datos de las cuentas). Los datos se alojan en servidores de la Unión Europea: <mark>[REGIÓN QUE ELIJAS AL CREAR EL PROYECTO, p. ej. Fráncfort]</mark>.</li>
-<li><strong><mark>[Netlify u otro proveedor de alojamiento]</mark></strong> (alojamiento de la web). Puede implicar transferencias a Estados Unidos, amparadas en el Marco de Privacidad de Datos UE-EE. UU. o en cláusulas contractuales tipo de la Comisión Europea.</li>
+<li><strong>Supabase</strong> (autenticación y base de datos de las cuentas). Los datos se alojan en servidores de la Unión Europea, en Irlanda.</li>
+<li><strong>Netlify, Inc.</strong> (alojamiento de la web y recepción de los formularios de lista de espera y de aviso de errores). Puede implicar transferencias a Estados Unidos, amparadas en el Marco de Privacidad de Datos UE-EE. UU. o en cláusulas contractuales tipo de la Comisión Europea.</li>
 <li><strong>Stripe Payments Europe, Ltd.</strong> (procesamiento de los pagos). Stripe trata los datos de pago como responsable independiente según su propia política de privacidad y puede realizar transferencias internacionales amparadas en cláusulas contractuales tipo.</li>
 <li><strong>Google</strong> (formulario de opinión de Google Forms), solo si decides rellenarlo. Se rige también por la política de privacidad de Google.</li>
 <li><strong>jsDelivr</strong> (red de distribución desde la que se descarga el código del sistema de cuentas), al cargar la web. No usa cookies y solo recibe los datos técnicos de la conexión.</li>
@@ -79,7 +81,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 <p>No cedemos tus datos a terceros salvo obligación legal.</p>
 
 <h2>6. Tus derechos</h2>
-<p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a <mark>[TU EMAIL DE CONTACTO]</mark>. También puedes retirar tu consentimiento en cualquier momento, sin que afecte a lo tratado antes.</p>
+<p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad escribiendo a <a href="mailto:oponota.contacto@gmail.com">oponota.contacto@gmail.com</a>. También puedes retirar tu consentimiento en cualquier momento, sin que afecte a lo tratado antes.</p>
 <p>Si consideras que no hemos tratado bien tus datos, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>).</p>
 
 <h2>7. Menores de edad</h2>

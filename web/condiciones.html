@@ -8,9 +8,11 @@
 <link rel="icon" type="image/png" href="logo-32.png">
 <style>
 :root{--bg:#f5f8f7;--surface:#fff;--ink:#052f2e;--muted:#4a6361;--line:#d6e6e3;--accent:#10776d;--mark:#fff4d6;
---body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}
+--body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#99f6e4;--mark:#4a3a10;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#99f6e4;--mark:#4a3a10;color-scheme:dark}
+@font-face{font-family:"Barlow";src:url("Barlow-Regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Barlow";src:url("Barlow-SemiBold.woff") format("woff");font-weight:600 700;font-display:swap}
 *{box-sizing:border-box}html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--body)}
 main{max-width:720px;margin:0 auto;padding:28px 16px 64px}
@@ -28,31 +30,23 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 </head>
 <body>
 <main>
-<a class="back" href="index.html">← Volver al test</a>
+<a class="back" href="index.html">← Volver a OpoNota</a>
 <h1>Condiciones de compra</h1>
-<p class="updated">Última actualización: <mark>[FECHA DE PUBLICACIÓN]</mark></p>
+<p class="updated">Última actualización: 18 de octubre de 2026</p>
 
 <h2>1. Quién vende</h2>
 <ul>
-<li><strong>Titular:</strong> <mark>[TU NOMBRE Y APELLIDOS]</mark></li>
-<li><strong>NIF:</strong> <mark>[TU NIF]</mark></li>
-<li><strong>Domicilio:</strong> <mark>[TU DIRECCIÓN POSTAL COMPLETA]</mark></li>
-<li><strong>Email de contacto:</strong> <mark>[TU EMAIL DE CONTACTO]</mark></li>
-<li><strong>Sitio web:</strong> opomadridprueba.netlify.app</li>
+<li><strong>Titular:</strong> OPONOTA</li>
+<li><strong>Email de contacto:</strong> <a href="mailto:oponota.contacto@gmail.com">oponota.contacto@gmail.com</a></li>
+<li><strong>Sitio web:</strong> <a href="https://oponota.netlify.app/">https://oponota.netlify.app/</a></li>
 </ul>
 
 <h2>2. Qué se compra</h2>
-<p>Acceso a un servicio digital de preguntas tipo test para preparar oposiciones. Cada plan da acceso a la oposición para la que se compra (por ejemplo, Auxiliar Administrativo de la Comunidad de Madrid). Es un material de práctica independiente, sin relación con ninguna administración ni con los tribunales.</p>
-<div class="wrapt"><table>
-<thead><tr><th>Plan</th><th>Precio (IVA incluido)</th><th>Incluye</th></tr></thead>
-<tbody>
-<tr><td>Legislación</td><td>14,99 €</td><td>Temas 1 a 15, simulacros del primer ejercicio, modo práctica y repaso de fallos.</td></tr>
-<tr><td>Completo</td><td>24,99 €</td><td>Los 21 temas, simulacros de los dos ejercicios, modo práctica y repaso de fallos.</td></tr>
-</tbody></table></div>
-<p>Es un <strong>pago único</strong>, no una suscripción: no hay cargos automáticos posteriores. El acceso dura hasta el <strong>31 de diciembre de 2027</strong>. Si compras un plan superior después de otro, se cobra su precio completo.</p>
+<p>Acceso a un servicio digital de preguntas tipo test para preparar oposiciones. Cada compra da acceso a la oposición para la que se hace. Es un material de práctica independiente, sin relación con ninguna administración ni con los tribunales.</p>
+<p>El precio de cada oposición (IVA incluido), lo que incluye y hasta cuándo dura el acceso se muestran en la web antes de pagar. Es un <strong>pago único</strong>, no una suscripción: no hay cargos automáticos posteriores.</p>
 
-<h2>3. Prueba gratis</h2>
-<p>Al crear una cuenta tienes 2 días de acceso completo gratis, sin dar ninguna forma de pago. La prueba es una por persona y por email; no se admiten emails temporales. Al terminar, el acceso a las preguntas se interrumpe hasta que compres un plan. Tu progreso se mantiene.</p>
+<h2>3. Fase de pruebas y prueba gratis</h2>
+<p>Mientras la web esté en fase de pruebas, el acceso es gratuito para las personas registradas y no se puede pagar. Si más adelante se ofrece una prueba gratis, sus condiciones se indicarán al crear la cuenta. Al terminar la prueba, el acceso a las preguntas se interrumpe hasta que compres; tu progreso se mantiene.</p>
 
 <h2>4. Pago</h2>
 <p>El pago se hace en la página segura de Stripe con los medios que esta ofrezca (tarjeta, Apple Pay, Google Pay...). El plan se activa automáticamente en tu cuenta en cuanto Stripe confirma el pago, normalmente en segundos. Recibirás el justificante por email.</p>
@@ -70,7 +64,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 <p>Para comprar debes ser mayor de edad o contar con el consentimiento de tus padres o tutores.</p>
 
 <h2>9. Reclamaciones y legislación aplicable</h2>
-<p>Puedes escribirnos a <mark>[TU EMAIL DE CONTACTO]</mark>. Estas condiciones se rigen por la ley española. Como consumidor, también puedes acudir a los servicios de consumo de tu comunidad autónoma.</p>
+<p>Puedes escribirnos a <a href="mailto:oponota.contacto@gmail.com">oponota.contacto@gmail.com</a>. Estas condiciones se rigen por la ley española. Como consumidor, también puedes acudir a los servicios de consumo de tu comunidad autónoma.</p>
 
 <footer><a href="aviso-legal.html">Aviso legal</a><a href="condiciones.html">Condiciones de compra</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a></footer>
 </main>

@@ -8,9 +8,11 @@
 <link rel="icon" type="image/png" href="logo-32.png">
 <style>
 :root{--bg:#f5f8f7;--surface:#fff;--ink:#052f2e;--muted:#4a6361;--line:#d6e6e3;--accent:#10776d;--mark:#fff4d6;
---body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#ff5c74;--mark:#4a3a10;color-scheme:dark}
+--body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#99f6e4;--mark:#4a3a10;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#11151f;--surface:#1a2030;--ink:#e7eaf2;--muted:#a0a8bb;--line:#2c3447;--accent:#99f6e4;--mark:#4a3a10;color-scheme:dark}
+@font-face{font-family:"Barlow";src:url("Barlow-Regular.woff") format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Barlow";src:url("Barlow-SemiBold.woff") format("woff");font-weight:600 700;font-display:swap}
 *{box-sizing:border-box}html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--body)}
 main{max-width:720px;margin:0 auto;padding:28px 16px 64px}
@@ -28,9 +30,9 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 </head>
 <body>
 <main>
-<a class="back" href="index.html">← Volver al test</a>
+<a class="back" href="index.html">← Volver a OpoNota</a>
 <h1>Política de cookies</h1>
-<p class="updated">Última actualización: <mark>[FECHA DE PUBLICACIÓN]</mark></p>
+<p class="updated">Última actualización: 18 de octubre de 2026</p>
 
 <p>Esta web <strong>no usa cookies de publicidad, de análisis ni de seguimiento</strong>. Solo guarda en tu navegador la información técnica imprescindible para funcionar. Este tipo de almacenamiento está exento de consentimiento según el artículo 22.2 de la LSSI-CE, pero te informamos de él con transparencia.</p>
 
@@ -38,7 +40,9 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 <div class="wrapt"><table>
 <thead><tr><th>Nombre</th><th>Tipo</th><th>Para qué sirve</th><th>Duración</th></tr></thead>
 <tbody>
-<tr><td>auxcm-v2</td><td>Almacenamiento local, propio</td><td>Guarda tu progreso: aciertos por tema y preguntas falladas.</td><td>Hasta que lo borres desde la web o desde tu navegador.</td></tr>
+<tr><td>auxcm-v2</td><td>Almacenamiento local, propio</td><td>Guarda tu progreso: aciertos por tema, preguntas falladas y marcadas, simulacros, racha y objetivo diario.</td><td>Hasta que lo borres desde la web o desde tu navegador.</td></tr>
+<tr><td>auxcm-op</td><td>Almacenamiento local, propio</td><td>Recuerda la última oposición que has abierto.</td><td>Hasta que lo borres.</td></tr>
+<tr><td>auxcm-owner, auxcm-q-…, auxcm-acc-…</td><td>Almacenamiento local, propio</td><td>Solo con sesión iniciada: identifican de qué cuenta es el progreso guardado y guardan una copia de las preguntas y de tu acceso para que la web arranque rápido y funcione si falla la conexión.</td><td>Se borran al cerrar sesión.</td></tr>
 <tr><td>auxcm-cookies</td><td>Almacenamiento local, propio</td><td>Recuerda que ya has visto el aviso de cookies.</td><td>Hasta que lo borres.</td></tr>
 <tr><td>sb-…-auth-token</td><td>Almacenamiento local, del sistema de cuentas (Supabase)</td><td>Mantiene tu sesión iniciada. Solo existe si creas una cuenta y entras.</td><td>Hasta que cierres sesión.</td></tr>
 </tbody></table></div>
@@ -49,8 +53,9 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 <h2>Cómo borrar estos datos</h2>
 <p>Puedes borrar tu progreso con el botón «Borrar mi progreso» de la web, o eliminar todos los datos del sitio desde la configuración de privacidad de tu navegador.</p>
 
-<h2>Cambios</h2>
+<h2>Contador de visitas</h2>
 <p>Para saber cuánta gente usa la web, se suma 1 a un contador diario cada vez que se abre la página. No se guarda ninguna cookie ni ningún dato que te identifique (ni IP, ni dispositivo): solo el número total de visitas de cada día.</p>
+<h2>Cambios</h2>
 <p>Si en el futuro se añadieran cookies de análisis o publicidad, se pediría tu consentimiento antes de activarlas y se actualizaría esta página.</p>
 
 <footer><a href="aviso-legal.html">Aviso legal</a><a href="condiciones.html">Condiciones de compra</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a></footer>
