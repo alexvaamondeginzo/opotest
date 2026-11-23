@@ -19,8 +19,9 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 - Nombre: **OpoNota**. Redes: @oponota.tests (TikTok) y @oponota.contacto (Instagram). El dominio sigue pendiente.
 - Logotipo e icono originales en `assets/marca/`. Colores del logotipo: tinta petróleo `#052F2E`, verde azulado `#10776D` (acciones), menta `#99F6E4` (acento del anillo) y fondo `#F5F8F7`.
-- Tipografía: DM Sans (OFL), servida desde la propia web (`assets/fuentes/dmsans.woff`, la copia `build.py`). Sin peticiones a servidores de terceros.
-- Estructura de la web: portada `#/` (oposiciones, qué incluye, precio, preguntas frecuentes) y un panel por oposición `#/o/<id>` (hoy con objetivo, racha y plan hasta el examen; test; temas débiles; evolución de simulacros; progreso por tema; examen y convocatoria; temario).
+- Tipografía: Barlow Condensed (títulos, menú, botones y etiquetas, en mayúsculas) y Barlow (texto), ambas OFL y servidas desde la propia web (`assets/fuentes/*.woff`, las copia `build.py`). Sin peticiones a servidores de terceros.
+- Estilo (según las capturas de referencia del equipo): fondo gris claro, barra superior blanca con el menú en mayúsculas subrayado en verde azulado y un avatar con menú de cuenta, cabeceras oscuras con el anillo del logotipo, títulos de página enormes y tarjetas blancas redondeadas.
+- Estructura de la web: portada `#/` (oposiciones, cómo funciona con pregunta de muestra, precio, preguntas frecuentes) y, por oposición, páginas `#/o/<id>/<sección>`: inicio (hoy, resumen, temas débiles), `practicar`, `simulacros` (tarjetas y evolución de notas), `progreso`, `temario`, `examen` y `admin`.
 - El precio de la portada sale de `precio.json`. Mientras `importe` esté vacío o la web esté en modo pruebas, se muestra «Gratis».
 
 ## Stack
