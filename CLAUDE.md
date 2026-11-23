@@ -28,7 +28,8 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 - Una sola página: `template.html` (HTML, CSS y JS sin dependencias salvo el cliente de Supabase). `build.py` la rellena con `oposiciones.json` y genera `web/index.html`. **No edites `web/` a mano.**
 - **Supabase**: auth, tabla `preguntas` con RLS (solo se ven con sesión y según el plan, por oposición), `progreso` sincronizado, `compras`, visitas, errores y funciones de administración. SQL en `supabase/` (orden en `INSTRUCCIONES.txt`). Modo beta en `ajustes.modo_beta`.
-- **Stripe**: Payment Links por oposición y plan (`pagos.json`, formato `{oposicion:{plan:enlace}}`) y webhook en `supabase/stripe-webhook/index.ts`. `client_reference_id` = `usuarioId__oposicion`.
+- **Stripe**: Stripe Checkout. La función `crear-pago` (`supabase/crear-pago/index.ts`, con JWT) crea la sesión de pago con el precio de la tabla `precios` (`supabase/9-pagos.sql`; se edita en Administración > Precios) y la función `stripe-webhook` (sin JWT, firma de Stripe) guarda la compra en `compras` con el plan, la oposición y la duración de los metadatos. Las dos están desplegadas en Supabase. Faltan los secretos `STRIPE_SECRET_KEY` y `STRIPE_WEBHOOK_SECRET` y el endpoint del webhook en Stripe (pasos en `INSTRUCCIONES.txt`). Los Payment Links de `pagos.json` solo se usan si falla la función.
+- **Entrar con Google**: botón en el diálogo de cuenta con `signInWithOAuth`. Solo se muestra si Google está activado en Supabase (lo comprueba en `/auth/v1/settings`). Falta crear el cliente OAuth en Google Cloud y activarlo en Supabase (pasos en `INSTRUCCIONES.txt`).
 - **Netlify**: proyecto `opotest-app`, en producción en https://opotest-app.netlify.app. Cada push a `main` se publica solo. Publica la carpeta `web` (`netlify.toml`). El repositorio es público porque el plan gratuito de Netlify solo publica los cambios del dueño en repos privados: **nunca subas claves secretas**, y ten en cuenta que los bancos de preguntas (`all.json`, `bancos/`, `supabase/p0*.sql`) son visibles para cualquiera. Formularios con Netlify Forms (`reporte` y `lista-espera`), declarados ocultos en `template.html`. Hay que tener activada la detección de formularios en Netlify.
 - Progreso en `localStorage` (`auxcm-v2`) con formato `{ops:{<oposicion>:{t,wrong,sims,marks}}, done, days, goal}` y copia en Supabase.
 - Las preguntas **nunca** van dentro de la web: `build.py` comprueba que no se filtre ninguna.
@@ -81,7 +82,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
   - 4 preguntas del tema 4 que no estaban en el banco de Madrid.
 
   El resto de sus 208 preguntas ya estaba en el banco de Madrid o duplicaba una pregunta existente.
-- [ ] **Decidir el precio** (ver arriba) y crear los Payment Links de Stripe por oposición.
+- [ ] **Decidir el precio** (ver arriba) y ponerlo en Administración > Precios. Configurar Stripe (secretos y webhook) y Google (cliente OAuth) siguiendo `INSTRUCCIONES.txt`.
 - [ ] Ampliar los temas más cortos del Estado: 17 (20 preguntas), 18 (18), 21 (24), 22 (23) y 28 (24).
 - [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
 - [ ] Enlaces a las normas autonómicas de Madrid (BOCM) en `NORMAS`.

@@ -12,10 +12,10 @@ const PLAN_POR_IMPORTE: Record<number, string> = {
   1499: "legislacion", // 14,99 €
   2499: "completo",    // 24,99 €
 };
-// Hasta cuándo dura el acceso comprado (cubre el examen de 2027 y posibles retrasos)
+// Hasta cuándo dura el acceso comprado con Payment Links antiguos (cubre el examen de 2027 y posibles retrasos)
 const ACCESO_HASTA = "2027-12-31T22:59:59Z"; // 31/12/2027 a las 23:59 en Madrid
 
-const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") ?? "", { httpClient: Stripe.createFetchHttpClient() });
+const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") || "sk_sin_configurar", { httpClient: Stripe.createFetchHttpClient() });
 const crypto = Stripe.createSubtleCryptoProvider();
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
@@ -44,19 +44,22 @@ Deno.serve(async (req) => {
   const s = evento.data.object as Stripe.Checkout.Session;
   if (s.payment_status !== "paid") return new Response("Pago pendiente", { status: 200 });
 
-  const plan = PLAN_POR_IMPORTE[s.amount_subtotal ?? -1];
-  if (!plan) {
-    console.error("Importe sin plan asociado:", s.amount_subtotal, s.id);
-    return new Response("Importe desconocido", { status: 200 });
-  }
-
   const supa = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, { auth: { persistSession: false } });
   const email = s.customer_details?.email ?? s.customer_email ?? "";
-  // client_reference_id = "<id del usuario>__<oposición>" (la web lo añade al enlace de pago)
+  const md = s.metadata ?? {};
+  // client_reference_id = "<id del usuario>__<oposición>"
   const [refUser, refOp] = (s.client_reference_id ?? "").split("__");
-  const OPOSICIONES = ["aux-cm", "aux-age", "adm-cm", "aux-ayto-mad"];
-  const oposicion = OPOSICIONES.includes(refOp) ? refOp : "aux-cm";
-  let userId: string | null = refUser && UUID.test(refUser) ? refUser : null;
+
+  // Pagos creados por la función crear-pago: el plan, la oposición y la duración van en los metadatos.
+  // Pagos antiguos con Payment Links: el plan se deduce del importe.
+  const plan = md.plan || PLAN_POR_IMPORTE[s.amount_subtotal ?? -1];
+  if (!plan) {
+    console.error("Pago sin plan asociado:", s.amount_subtotal, s.id);
+    return new Response("Plan desconocido", { status: 200 });
+  }
+  const oposicion = md.oposicion || (/^[a-z0-9-]{2,40}$/.test(refOp ?? "") ? refOp : "aux-cm");
+  const hasta = md.hasta && !isNaN(Date.parse(md.hasta)) ? md.hasta : ACCESO_HASTA;
+  let userId: string | null = md.user_id && UUID.test(md.user_id) ? md.user_id : (refUser && UUID.test(refUser) ? refUser : null);
   if (!userId && email) {
     const { data } = await supa.rpc("usuario_por_email", { e: email });
     userId = (data as string) ?? null;
@@ -70,7 +73,7 @@ Deno.serve(async (req) => {
     importe_cent: s.amount_total,
     moneda: s.currency,
     stripe_session: s.id,
-    hasta: ACCESO_HASTA,
+    hasta,
   }, { onConflict: "stripe_session", ignoreDuplicates: true });
 
   if (error) {

@@ -13,6 +13,7 @@ PASO 1 · BASE DE DATOS (Supabase, ~5 minutos)
 2. Abre el archivo  supabase/1-configuracion.sql , copia TODO, pégalo y pulsa Run.
 3. Haz lo mismo, en este orden, con:
      supabase/8-oposiciones.sql
+     supabase/9-pagos.sql  (precios; ya está aplicado en el proyecto actual)
      supabase/p01-preguntas-parte1.sql, p02, p03... (todos los que empiecen por p, en orden)
    (Son las preguntas de todas las oposiciones. Están fuera de la carpeta
     "web" a propósito: así nadie puede verlas sin cuenta.)
@@ -52,55 +53,73 @@ PASO 2b · HACERTE ADMINISTRADOR (~1 minuto)
    ANTES de desactivarlo.
 
 ---------------------------------------------------------------------
-PASO 3 · CUENTA DE STRIPE (cuando vayas a cobrar) Y ENLACES DE PAGO (~15 minutos)
+PASO 3 · PAGOS CON STRIPE (cuando vayas a cobrar, ~15 minutos)
 ---------------------------------------------------------------------
-1. Crea la cuenta en stripe.com y completa los datos (DNI, IBAN donde
-   cobrarás). Mientras pruebas, usa el "modo de prueba".
-2. Product catalog > crea 2 productos de pago único:
-      Plan Legislación · 14,99 EUR
-      Plan Completo    · 24,99 EUR
-   IMPORTANTE: los precios deben ser exactamente 14,99 y 24,99 €. Así
-   reconoce el sistema qué plan se ha comprado.
-3. Payment Links > crea un enlace para cada producto. Activa en cada
-   enlace "Permitir códigos promocionales" (para la oferta de lanzamiento). En "Después del
-   pago" elige "No mostrar página de confirmación, redirigir a mi web":
-      https://opomadridprueba.netlify.app/?pago=ok
-4. Pásame los 2 enlaces (empiezan por https://buy.stripe.com/...) y los
-   pongo en la web. (O pégalos tú en pagos.json y ejecuta build.py.)
+Ya está hecho (no lo repitas): la tabla de precios (supabase/9-pagos.sql)
+y las dos funciones de Supabase: "crear-pago" (abre la página de pago de
+Stripe con el precio de la tabla) y "stripe-webhook" (activa el plan
+cuando Stripe confirma el pago). No hace falta crear productos ni Payment
+Links en Stripe: el precio lo pones tú en el panel de administración.
 
----------------------------------------------------------------------
-PASO 4 · ACTIVACIÓN AUTOMÁTICA DEL PLAN TRAS PAGAR (cuando vayas a cobrar)
----------------------------------------------------------------------
-1. Supabase > Edge Functions > Deploy a new function > "Via Editor".
-   Nombre:  stripe-webhook
-   Borra el código de ejemplo y pega el de  supabase/stripe-webhook/index.ts
-   Pulsa Deploy.
-2. En los ajustes de esa función, DESACTIVA "Enforce JWT verification"
-   (Stripe no lleva sesión de usuario; la seguridad la da la firma de Stripe).
-3. Copia la URL de la función. Es algo así:
-   https://djzqzywpwliytbtkpdzk.supabase.co/functions/v1/stripe-webhook
-4. Stripe > Developers > Webhooks > Add endpoint:
-      URL: la de arriba
+Lo que tienes que hacer tú:
+1. Crea la cuenta en stripe.com. Para probar no hace falta completar
+   nada: usa el "modo de prueba" (Test mode). Para cobrar de verdad,
+   completa los datos (DNI, IBAN donde cobrarás).
+2. Stripe > Developers > Webhooks > Add endpoint:
+      URL: https://djzqzywpwliytbtkpdzk.supabase.co/functions/v1/stripe-webhook
       Eventos: checkout.session.completed
                checkout.session.async_payment_succeeded
    Al crearlo, Stripe te da un "Signing secret" (whsec_...). Cópialo.
-5. Supabase > Edge Functions > Secrets > añade:
-      STRIPE_WEBHOOK_SECRET = whsec_...   (el del paso anterior)
+3. Supabase > Edge Functions > Secrets > añade:
       STRIPE_SECRET_KEY     = sk_...      (Stripe > Developers > API keys)
-   ¡La clave sk_ NUNCA la pongas en la web ni me la pegues en el chat!
+      STRIPE_WEBHOOK_SECRET = whsec_...   (el del paso anterior)
+   ¡La clave sk_ NUNCA la pongas en la web, en el repositorio ni en el chat!
+4. En la web, Administración > Precios: pon el precio de cada oposición y
+   plan, hasta cuándo dura el acceso, marca "A la venta" y pulsa Guardar.
+5. Stripe > Settings > Emails: activa "Successful payments" para que al
+   comprador le llegue el recibo.
 
-PRUEBA FINAL (en modo de prueba de Stripe):
-- Crea una cuenta en la web, pulsa un plan y paga con la tarjeta de prueba
+PRUEBA (con las claves de prueba sk_test_ y el modo pruebas de la web
+desactivado, o en otro proyecto de Supabase):
+- Entra en la web, pulsa un plan y paga con la tarjeta de prueba
   4242 4242 4242 4242 (cualquier fecha futura y cualquier CVC).
 - Al volver a la web debe salir "¡Listo! Plan ... activado".
-- Si funciona, repite los pasos 3 y 4 en modo real (live) y pásame los
-  enlaces reales.
+- Para cobrar de verdad, cambia en Supabase los dos secretos por los del
+  modo real (sk_live_ y el whsec_ de un webhook creado en modo real).
 
 OFERTA DE LANZAMIENTO (opcional): Stripe > Product catalog > Coupons >
-crea un cupón de 5,00 EUR de descuento, solo para el producto "Plan Completo",
-con un máximo de 50 usos, y un código promocional (por ejemplo LANZAMIENTO).
-El Completo quedará en 19,99 € para quien use el código. El plan se activa
-igual, porque se reconoce por el precio antes del descuento.
+crea un cupón y un código promocional (por ejemplo LANZAMIENTO). En la
+página de pago aparece el campo para escribirlo. El plan se activa igual.
+
+---------------------------------------------------------------------
+PASO 4 · ENTRAR CON GOOGLE (~10 minutos)
+---------------------------------------------------------------------
+La web ya tiene el botón "Continuar con Google". Aparece solo cuando
+Google está activado en Supabase.
+1. console.cloud.google.com > crea un proyecto (por ejemplo "OpoNota").
+2. APIs & Services > OAuth consent screen (Google Auth Platform > Branding):
+      Tipo: External. Nombre de la app: OpoNota.
+      Email de soporte: oponota.contacto@gmail.com.
+      Logotipo: assets/marca/oponota-icono-1024.png (opcional).
+      Dominios autorizados: netlify.app y supabase.co
+      Enlace a la política de privacidad: https://opotest-app.netlify.app/privacidad.html
+      Permisos (scopes): solo email, profile y openid.
+   Después, en Audience, pulsa "Publish app" para que pueda entrar cualquiera
+   (si no, solo los emails que añadas como testers).
+3. APIs & Services > Credentials > Create credentials > OAuth client ID:
+      Tipo: Web application.
+      Authorized JavaScript origins: https://opotest-app.netlify.app
+                                     (y https://oponota.netlify.app si renombráis el proyecto)
+      Authorized redirect URIs:
+         https://djzqzywpwliytbtkpdzk.supabase.co/auth/v1/callback
+   Copia el Client ID y el Client secret.
+4. Supabase > Authentication > Sign In / Providers > Google: actívalo y pega
+   el Client ID y el Client secret. Guarda.
+5. Supabase > Authentication > URL Configuration:
+      Site URL: https://opotest-app.netlify.app
+      Redirect URLs: añade https://opotest-app.netlify.app/**
+                     y https://oponota.netlify.app/**
+6. Recarga la web y abre "Entrar": ya sale "Continuar con Google".
 
 ---------------------------------------------------------------------
 PASO 5 · SUBIR LA WEB

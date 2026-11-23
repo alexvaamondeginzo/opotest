@@ -363,6 +363,13 @@ label.f{display:flex;flex-direction:column;gap:4px;font-size:15px;color:var(--mu
 label.f input,.admin-form input,.admin-form select{font:17px var(--body);padding:10px 0;border:0;border-bottom:1.5px solid var(--line-strong);border-radius:0;background:transparent;color:var(--ink)}
 label.f input:focus-visible{outline:0;border-bottom-color:var(--ink)}
 textarea{font:inherit;padding:12px 14px;border:1.5px solid var(--line-strong);border-radius:8px;background:var(--surface);color:var(--ink);width:100%;min-height:110px;resize:vertical}
+.oauth{display:flex;flex-direction:column;gap:12px}
+.google{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;background:#fff;border:1.5px solid var(--line-strong);color:#1f1f1f;font:600 16px/1 var(--body);text-transform:none;letter-spacing:0;padding:14px 18px;border-radius:999px}
+.google:hover{border-color:var(--ink);background:var(--bg)}
+.google svg{width:20px;height:20px}
+.oauth-nota{font-size:13px;color:var(--muted);text-align:center}
+.o-sep{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--muted);margin:4px 0}
+.o-sep::before,.o-sep::after{content:"";flex:1;border-top:1px solid var(--line)}
 .pass-w{position:relative;display:block}
 .pass-w input{width:100%;padding-right:44px!important}
 .ojo{position:absolute;right:0;top:50%;transform:translateY(-50%);background:none;border:0;padding:8px;border-radius:6px;color:var(--muted);line-height:0;cursor:pointer}
@@ -562,7 +569,7 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
 
         <section id="planes" class="card hidden" aria-labelledby="planes-h">
           <h3 id="planes-h">Planes</h3>
-          <p class="meta" id="planes-intro">Al crear tu cuenta tienes <strong>2 días de prueba gratis con todo incluido</strong>, sin poner tarjeta. Después, elige un plan. Pago único, sin suscripción: acceso hasta el 31 de diciembre de 2027.</p>
+          <p class="meta" id="planes-intro">Pago único, sin suscripción ni cargos posteriores. Tu progreso se mantiene.</p>
           <div id="planes-msg" class="msg hidden" role="status"></div>
           <div class="planes" id="planes-list"></div>
           <label class="chk"><input type="checkbox" id="pay-legal"><span>He leído y acepto las <a href="condiciones.html" target="_blank" rel="noopener">condiciones de compra</a>. Pido acceder al contenido digital de inmediato y entiendo que, al empezar el acceso, pierdo el derecho de desistimiento de 14 días.</span></label>
@@ -730,6 +737,9 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
           <h3>Modo pruebas</h3>
           <p class="meta" id="admin-beta-txt"></p>
           <div><button class="ghost small" id="admin-beta-btn"></button></div>
+          <h3>Precios</h3>
+          <p class="meta">El precio de cada oposición y plan, con IVA incluido, y hasta cuándo dura el acceso. Solo se puede comprar lo que esté «A la venta», y solo con el modo pruebas desactivado. Stripe cobra lo que pongas aquí.</p>
+          <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Oposición</th><th>Plan</th><th>Precio (€)</th><th>Acceso hasta</th><th>A la venta</th><th></th></tr></thead><tbody id="admin-precios"></tbody></table></div>
           <h3>Dar acceso a mano</h3>
           <p class="meta">Para testers, sorteos o reclamaciones. La persona no paga nada. Puede ser un email que aún no se ha registrado: el acceso se activará cuando se registre.</p>
           <form class="admin-form" id="admin-grant">
@@ -848,6 +858,11 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
       <button role="tab" id="tab-reset" aria-selected="false">He olvidado la contraseña</button>
     </div>
     <div id="auth-msg" class="msg hidden" role="status"></div>
+    <div class="oauth hidden" id="oauth-w">
+      <button type="button" class="google" id="btn-google"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>Continuar con Google</button>
+      <p class="oauth-nota">Al continuar con Google aceptas la <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad</a> y el <a href="aviso-legal.html" target="_blank" rel="noopener">aviso legal</a>, y declaras tener 14 años o más.</p>
+      <div class="o-sep"><span>o con tu email</span></div>
+    </div>
     <form id="f-signup" novalidate>
       <label class="f">Email<input type="email" id="su-email" autocomplete="email" required></label>
       <label class="f">Contraseña<input type="password" id="su-pass" autocomplete="new-password" maxlength="16" required aria-describedby="su-reqs"></label>
@@ -1598,15 +1613,31 @@ function setUser(u){
   $("btn-login").classList.toggle("hidden",!!u);
   $("btn-cuenta").classList.toggle("hidden",!u);if(!u)menuCuenta(false);
   if(VISTA==="inicio")renderPrecio();$("hero-cuenta").textContent=u?"Ir a mis oposiciones":"Crear cuenta gratis";
+  if(u&&changed&&!(u.user_metadata||{}).acepta_privacidad){const g=getLS("auxcm-google");if(g&&sb)sb.auth.updateUser({data:{acepta_privacidad:g,mayor_14:true,via:"google"}}).then(()=>{},()=>{})}
   if(u){$("who").textContent=u.email;$("ini").textContent=(u.email||"?").charAt(0).toUpperCase();$("acc-email").textContent=u.email;if(changed){
       // El progreso guardado en este navegador solo se mezcla si es de esta misma cuenta
       if(getLS(OWNER)!==u.id){DB=dbVacia();try{localStorage.setItem(KEY,"{}")}catch(e){}}
-      setLS(OWNER,u.id);pullAndMerge();refreshAccess().then(()=>{if(/[?&]pago=ok/.test(location.search)){history.replaceState(null,"",location.pathname);esperarPago()}})}}
+      setLS(OWNER,u.id);pullAndMerge();refreshAccess().then(()=>{
+        if(/[?&]pago=ok/.test(location.search)){history.replaceState(null,"",location.pathname+location.hash);esperarPago()}
+        else if(/[?&]pago=cancelado/.test(location.search)){history.replaceState(null,"",location.pathname+location.hash);showPlans("Has cancelado el pago. No se te ha cobrado nada.")}})}}
   else{setSync("");if(changed||ACC.plan){ACC={plan:null};Q=[];BYID={};borrarCopias();
       DB=dbVacia();try{localStorage.setItem(KEY,"{}");localStorage.removeItem(OWNER)}catch(e){}
       try{refreshSetup();renderStats();renderToday();if(VISTA==="inicio")renderInicio()}catch(e){}}$("admin").classList.add("hidden");renderAccess();applyPlan()}
 }
+// Entrar con Google: el botón solo aparece si el proveedor está activado en Supabase
+let GOOGLE_ON=false;
+fetch(SUPABASE_URL+"/auth/v1/settings",{headers:{apikey:SUPABASE_ANON_KEY}}).then(r=>r.ok?r.json():null).then(s=>{GOOGLE_ON=!!(s&&s.external&&s.external.google);setTab(TAB_ACTUAL)}).catch(()=>{});
+let TAB_ACTUAL="signup";
+$("btn-google").addEventListener("click",async()=>{
+  hideMsg("auth-msg");$("btn-google").disabled=true;
+  try{await loadSupabase();
+    setLS("auxcm-google",new Date().toISOString());   // aceptación de la política al pulsar el botón
+    const {error}=await sb.auth.signInWithOAuth({provider:"google",options:{redirectTo:location.origin+location.pathname,queryParams:{prompt:"select_account"}}});
+    if(error)throw error;
+  }catch(e){$("btn-google").disabled=false;showMsg("auth-msg",errText(e))}
+});
 function setTab(t){
+  TAB_ACTUAL=t;$("oauth-w").classList.toggle("hidden",!GOOGLE_ON||t==="reset");
   ["signup","login","reset"].forEach(x=>{$("tab-"+x).setAttribute("aria-selected",String(x===t));$("f-"+x).classList.toggle("hidden",x!==t)});
   hideMsg("auth-msg");
 }
@@ -1707,12 +1738,21 @@ function renderAccess(){
   $("who-plan").textContent=ACC.admin?"Administrador":($("acc-plan").textContent||"");
   renderPlans();
 }
+// Precios: salen de la tabla "precios" de Supabase (los que estén activos). Sin precio activo, el plan no se vende.
+let PRECIOS={};
+async function cargarPrecios(){
+  try{const r=await sb.from("precios").select("oposicion,plan,importe_cent,hasta");if(r.error)throw r.error;
+    PRECIOS={};(r.data||[]).forEach(x=>{(PRECIOS[x.oposicion]=PRECIOS[x.oposicion]||{})[x.plan]=x});renderPlans()}
+  catch(e){registrarError("cargar precios",e)}
+}
+const euros=c=>(c/100).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2});
 function renderPlans(){
-  const actual=RANGO[ACC.plan]||0;
+  const actual=RANGO[ACC.plan]||0,P0=PRECIOS[OP]||{};
   $("planes-list").innerHTML=PLANES.map(p=>{
-    const tengo=actual>=(RANGO[p.id]||0);
-    return `<div class="plan${p.dest?" dest":""}"><h3>${p.nombre}</h3><div class="precio">${p.precio} € <small>pago único</small></div><ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}</ul>${tengo?'<span class="actual">✓ Incluido en tu plan</span>':`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">Elegir ${p.nombre}</button>`}</div>`}).join("");
-  document.querySelectorAll("#planes-list button[data-plan]").forEach(b=>b.addEventListener("click",()=>comprar(b.dataset.plan)));
+    const tengo=actual>=(RANGO[p.id]||0),pr=P0[p.id];
+    const boton=tengo?'<span class="actual">✓ Incluido en tu plan</span>':pr?`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">Elegir ${p.nombre}</button>`:'<span class="meta">Todavía no está a la venta</span>';
+    return `<div class="plan${p.dest?" dest":""}"><h3>${p.nombre}</h3><div class="precio">${pr?euros(pr.importe_cent)+" €":"—"} <small>pago único, IVA incluido</small></div><ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}${pr?`<li>Acceso hasta el ${fechaCorta(pr.hasta)}</li>`:""}</ul>${boton}</div>`}).join("");
+  document.querySelectorAll("#planes-list button[data-plan]").forEach(b=>b.addEventListener("click",()=>comprar(b.dataset.plan,b)));
 }
 function applyBeta(){
   const beta=BETA!==false;   // mientras no se sabe, se ocultan los precios
@@ -1729,14 +1769,25 @@ function showPlans(msg){
   if(SUB!=="inicio")irSub("inicio");
   setTimeout(()=>$("planes").scrollIntoView({behavior:"smooth",block:"start"}),80);
 }
-function comprar(plan){
+async function comprar(plan,btn){
   if(!user){openAuth("signup","Primero crea tu cuenta (o entra si ya la tienes). Luego podrás pagar.");return}
   if(BETA){showMsg("planes-msg","Ahora mismo no se puede comprar: la web está en fase de pruebas.");return}
   if(!$("pay-legal").checked){showMsg("planes-msg","Para continuar, marca la casilla de aceptación de las condiciones de compra.");return}
-  const link=(PAY_LINKS[OP]||{})[plan];
-  if(!link){showMsg("planes-msg","Los pagos todavía no están activados. Vuelve a intentarlo en unos días.");return}
-  const url=link+(link.includes("?")?"&":"?")+"client_reference_id="+encodeURIComponent(user.id+"__"+OP)+"&locked_prefilled_email="+encodeURIComponent(user.email);
-  location.href=url;
+  hideMsg("planes-msg");
+  const txt=btn?btn.textContent:"";if(btn){btn.disabled=true;btn.textContent="Abriendo el pago…"}
+  try{
+    // Pago con Stripe Checkout: la función crear-pago pone el precio y vuelve con la página de pago
+    const {data,error}=await sb.functions.invoke("crear-pago",{body:{oposicion:OP,plan}});
+    if(error){let m="";try{m=(await error.context.json()).error}catch(_){}throw new Error(m||error.message)}
+    if(!data||!data.url)throw new Error("Sin enlace de pago");
+    location.href=data.url;return;
+  }catch(e){
+    // Si la función no está, se usan los Payment Links de pagos.json (si los hay)
+    const link=(PAY_LINKS[OP]||{})[plan];
+    if(link){location.href=link+(link.includes("?")?"&":"?")+"client_reference_id="+encodeURIComponent(user.id+"__"+OP)+"&locked_prefilled_email="+encodeURIComponent(user.email);return}
+    registrarError("crear pago",e);
+    showMsg("planes-msg",/no se puede pagar|no está a la venta|Inicia sesión/i.test(e.message)?e.message:"No se ha podido abrir la página de pago. Inténtalo de nuevo en unos minutos.");
+  }finally{if(btn){btn.disabled=false;btn.textContent=txt}}
 }
 function applyPlan(){
   const m=maxTema();
@@ -1843,6 +1894,7 @@ async function loadAdmin(){
       `<tr><td><b>Total</b></td><td><b>${tv}</b></td><td><b>${ts}</b></td><td><b>${tr}</b>${ts?` <span class="meta">(${Math.round(100*tr/ts)} % de las visitas sin sesión acaban en registro)</span>`:""}</td></tr>`;
     const hoy=V[0]||{visitas:0,registros:0};
     $("admin-tiles").insertAdjacentHTML("afterbegin",`<div><b>${esc(hoy.visitas)}</b><span>Visitas hoy</span></div><div><b>${esc(hoy.registros)}</b><span>Registros hoy</span></div>`)}
+  renderAdminPrecios();
   const er=await sb.rpc("admin_errores");
   $("admin-errores").innerHTML=er.error?'<tr><td colspan="5" class="meta">Falta ejecutar el archivo 6-errores.sql en Supabase.</td></tr>':
     ((er.data||[]).map(x=>`<tr><td>${fmtFH(x.creado)}</td><td>${esc(x.email||"sin sesión")}</td><td>${esc(x.contexto)}</td><td style="white-space:normal;min-width:240px">${esc(x.mensaje)}</td><td style="white-space:normal;max-width:220px" class="meta">${esc((x.agente||"").slice(0,80))}</td></tr>`).join("")||'<tr><td colspan="5" class="meta">Ningún error registrado. 👍</td></tr>');
@@ -1855,6 +1907,27 @@ function renderAdminUsers(){
   $("admin-users").innerHTML=L.map(x=>`<tr><td>${esc(x.email)}${x.confirmado?"":' <span class="meta">(sin confirmar)</span>'}</td><td>${fmtF(x.registrado)}</td><td><span class="est ${esc(x.estado)}">${esc(x.estado)}</span></td><td>${x.estado==="admin"||x.estado==="pruebas"?"—":fmtF(x.hasta)}</td><td>${esc(x.respuestas)}</td><td>${fmtFH(x.ultima_actividad)}</td></tr>`).join("")||'<tr><td colspan="6" class="meta">Sin resultados.</td></tr>';
 }
 $("admin-filter").addEventListener("input",renderAdminUsers);
+async function renderAdminPrecios(){
+  const r=await sb.rpc("admin_precios");
+  if(r.error){$("admin-precios").innerHTML='<tr><td colspan="6" class="meta">Falta ejecutar el archivo 9-pagos.sql en Supabase.</td></tr>';return}
+  const ya={};(r.data||[]).forEach(x=>ya[x.oposicion+"|"+x.plan]=x);
+  const filas=[];
+  Object.entries(OPOS).filter(([id])=>opValida(id)).forEach(([id,c])=>(c.planes||[]).forEach(p=>{
+    const x=ya[id+"|"+p.id]||{};
+    const h=x.hasta?new Date(x.hasta).toISOString().slice(0,10):"2027-12-31";
+    filas.push(`<tr data-o="${id}" data-p="${p.id}"><td>${esc(c.corto)}</td><td>${esc(p.nombre)}</td><td><input class="buscar" style="min-width:0;width:90px" inputmode="decimal" value="${x.importe_cent?euros(x.importe_cent):""}" placeholder="0,00"></td><td><input class="buscar" style="min-width:0" type="date" value="${h}"></td><td><input type="checkbox" ${x.activo?"checked":""} aria-label="A la venta"></td><td><button class="ghost small" type="button" data-guardar-precio>Guardar</button></td></tr>`)}));
+  $("admin-precios").innerHTML=filas.join("");
+}
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-guardar-precio]");if(!b)return;
+  const tr=b.closest("tr"),[imp,fe,act]=tr.querySelectorAll("input");
+  const c=Math.round(parseFloat(imp.value.replace(/\./g,"").replace(",","."))*100);
+  if(!(c>=50)){showMsg("admin-msg","Escribe un precio de al menos 0,50 €.");return}
+  if(!fe.value){showMsg("admin-msg","Elige hasta cuándo dura el acceso.");return}
+  const {error}=await sb.rpc("admin_precio",{o:tr.dataset.o,p:tr.dataset.p,importe:c,h:new Date(fe.value+"T23:59:59").toISOString(),act:act.checked});
+  if(error){showMsg("admin-msg","No se ha podido guardar el precio.");return}
+  showMsg("admin-msg",`Precio guardado: ${euros(c)} €${act.checked?", a la venta":", todavía no a la venta"}.`,"ok");cargarPrecios();renderAdminPrecios();
+});
 $("admin-diag").addEventListener("click",async()=>{
   const ul=$("admin-diag-res");ul.innerHTML="<li>Comprobando…</li>";
   const res=[];
@@ -1901,6 +1974,10 @@ $("ag-revoke").addEventListener("click",async()=>{
 // ===== ARRANQUE =====
 setOpVars();pintarCabecera();buildSetup();
 $("ag-op").innerHTML=Object.entries(OPOS).filter(([id])=>opValida(id)).map(([id,c])=>`<option value="${id}">${esc(c.corto)}</option>`).join("");
+// Vuelta de Google con error (por ejemplo, cuenta cancelada o email no permitido)
+{const m=(location.hash+"&"+location.search).match(/error_description=([^&]+)/);
+  if(m){const d=decodeURIComponent(m[1].replace(/\+/g," "));history.replaceState(null,"",location.pathname+"#/");
+    setTimeout(()=>openAuth("login"),0);setTimeout(()=>showMsg("auth-msg",/temporal|no válid|not allowed|hook/i.test(d)?"Dirección de email no válida.":"No se ha podido entrar con Google. Vuelve a intentarlo."),50)}}
 pintarDemo();ruta();
 renderPlans();renderAccess();
 
@@ -1909,7 +1986,7 @@ if(AUTH_ON){
   loadSupabase().then(async()=>{
     try{const r=await sb.rpc("estado_web");BETA=!!(r.data&&r.data.beta)}catch(e){BETA=false}
     try{sb.rpc("registrar_visita",{con_sesion:hasStoredSession()}).then(()=>{},()=>{})}catch(e){}
-    applyBeta();
+    applyBeta();cargarPrecios();
     if(hasStoredSession()||/access_token|type=recovery|code=/.test(location.hash+location.search)){const r=await sb.auth.getSession();setUser(r.data.session?r.data.session.user:null)}
   }).catch(()=>{BETA=false;applyBeta()});
   $("btn-login").addEventListener("click",()=>openAuth("signup"));
