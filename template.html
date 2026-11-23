@@ -1416,7 +1416,7 @@ function mostrarVista(v){
     if(SUB==="simulacros")renderSimulacros();
     if(SUB==="admin"&&!EN_TEST)loadAdmin();
   }
-  if(typeof applyBeta==="function"&&BETA!==null&&!EN_TEST){$("planes").classList.toggle("hidden",!enOp||BETA!==false)}
+  if(typeof applyBeta==="function"&&BETA!==null&&!EN_TEST){$("planes").classList.toggle("hidden",!enOp||(BETA!==false&&!ACC.admin))}
 }
 function enTest(si){EN_TEST=si;mostrarVista(VISTA)}
 // Navegación: el hash manda (#/, #/o/<oposición>, #/o/<oposición>/<sección>), así funcionan Atrás y Adelante
@@ -1733,6 +1733,7 @@ function renderAccess(){
   const b=$("acc-cta");if(b)b.addEventListener("click",()=>{if(!user)return openAuth("signup");showPlans()});
   const ba=$("acc-admin");if(ba)ba.addEventListener("click",openAdmin);
   $("btn-admin").classList.toggle("hidden",!ACC.admin);$("admin").classList.toggle("hidden",!ACC.admin);
+  if(BETA!==null)$("planes").classList.toggle("hidden",(BETA!==false&&!ACC.admin)||VISTA!=="op"||EN_TEST);
   if(ACC.admin&&VISTA==="op"&&SUB==="admin"&&!EN_TEST&&Date.now()-ADMIN_T>5000)loadAdmin();
   $("acc-plan").textContent=user?(ACC.plan?`${PLAN_NOMBRE[ACC.plan]}${ACC.plan==="beta"?"":" · "+CFG().corto}${ACC.hasta?` · hasta el ${fechaCorta(ACC.hasta)}`:""}`:`Sin plan activo en ${CFG().corto}.`):"";
   $("who-plan").textContent=ACC.admin?"Administrador":($("acc-plan").textContent||"");
@@ -1756,7 +1757,8 @@ function renderPlans(){
 }
 function applyBeta(){
   const beta=BETA!==false;   // mientras no se sabe, se ocultan los precios
-  $("planes").classList.toggle("hidden",beta||VISTA!=="op"||EN_TEST);
+  // En modo pruebas los planes solo los ven los administradores, para probar el pago
+  $("planes").classList.toggle("hidden",(beta&&!ACC.admin)||VISTA!=="op"||EN_TEST);
   $("faq-precio").classList.toggle("hidden",beta);
   $("sub-oferta").textContent=BETA?"Gratis durante la fase de pruebas. Solo necesitas una cuenta.":"Pruébalo gratis 2 días, sin tarjeta.";
   if(VISTA==="inicio")renderPrecio();
@@ -1771,7 +1773,7 @@ function showPlans(msg){
 }
 async function comprar(plan,btn){
   if(!user){openAuth("signup","Primero crea tu cuenta (o entra si ya la tienes). Luego podrás pagar.");return}
-  if(BETA){showMsg("planes-msg","Ahora mismo no se puede comprar: la web está en fase de pruebas.");return}
+  if(BETA&&!ACC.admin){showMsg("planes-msg","Ahora mismo no se puede comprar: la web está en fase de pruebas.");return}
   if(!$("pay-legal").checked){showMsg("planes-msg","Para continuar, marca la casilla de aceptación de las condiciones de compra.");return}
   hideMsg("planes-msg");
   const txt=btn?btn.textContent:"";if(btn){btn.disabled=true;btn.textContent="Abriendo el pago…"}

@@ -45,7 +45,11 @@ Deno.serve(async (req) => {
 
   const supa = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, { auth: { persistSession: false } });
   const { data: beta } = await supa.rpc("modo_beta");
-  if (beta) return json({ error: "La web está en fase de pruebas: ahora mismo no se puede pagar." }, 409, h);
+  // En modo pruebas solo pueden pagar los administradores (para probar el pago con tarjetas de prueba)
+  if (beta) {
+    const { data: admin } = await usr.rpc("es_admin");
+    if (!admin) return json({ error: "La web está en fase de pruebas: ahora mismo no se puede pagar." }, 409, h);
+  }
 
   const { data: precio } = await supa.from("precios").select("*").eq("oposicion", oposicion).eq("plan", plan).eq("activo", true).maybeSingle();
   if (!precio) return json({ error: "Este plan todavía no está a la venta." }, 404, h);
