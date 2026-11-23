@@ -11,6 +11,8 @@ Web de tests de oposiciones. Su diferencia frente a OpositaTest y similares es q
 - Pago único de 4,99 € por oposición (2,99 € la segunda), con acceso hasta el examen.
 - Lo que tiene configurado ahora la web en `oposiciones.json`: Madrid 14,99 € (solo legislación) o 24,99 € (completo), y Estado 24,99 €, con 2 días de prueba gratis.
 
+Estructura de planes acordada (24/11/2026): precio por oposición y planes por niveles, donde la informática y los psicotécnicos son un extra pequeño para que compense coger el completo. Madrid: Legislación (temas 1-15) → Completo (+ ofimática). Estado: Teoría (temas 1-20) → Teoría + Ofimática (hasta el 28) → Completo (+ psicotécnicos). En la base de datos los niveles son `legislacion` < `completo` < `premium` (`tema_maximo_op` en `supabase/8-oposiciones.sql`). Los precios se ponen en Administración > Precios. Propuesta: Madrid 19,99 € / 24,99 €; Estado 22,99 € / 26,99 € / 29,99 €.
+
 Mientras dure la beta no se cobra, así que no corre prisa, pero hay que decidirlo antes de desactivar el modo beta. Tampoco está decidido si habrá temas gratis (propuesta: temas 1 y 16 abiertos) además o en lugar de la prueba de 2 días.
 
 Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre, como TCAE de los servicios de salud, Administrativo de Navarra, Auxiliar del Gobierno de Canarias u Osakidetza. Ya aparecen en la portada como «Próximamente», con lista de espera. Las de Madrid y del Estado son las primeras disponibles.

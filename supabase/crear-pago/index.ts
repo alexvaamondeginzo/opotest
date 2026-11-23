@@ -11,6 +11,10 @@ import { createClient } from "npm:@supabase/supabase-js@2";
 const ORIGENES = [/^https:\/\/opotest-app\.netlify\.app$/, /^https:\/\/oponota\.netlify\.app$/, /^https:\/\/([\w-]+\.)?oponota\.(es|com)$/, /^http:\/\/localhost(:\d+)?$/];
 const OPO_NOMBRE: Record<string, string> = { "aux-cm": "Auxiliar Administrativo de la Comunidad de Madrid", "aux-age": "Auxiliar Administrativo del Estado" };
 const PLAN_NOMBRE: Record<string, string> = { legislacion: "Plan Legislación", completo: "Plan Completo", premium: "Plan Premium" };
+// En el Estado los planes van por niveles: teoría, + ofimática, + psicotécnicos
+const PLAN_NOMBRE_OPO: Record<string, Record<string, string>> = {
+  "aux-age": { legislacion: "Plan Teoría", completo: "Plan Teoría + Ofimática", premium: "Plan Completo (con psicotécnicos)" },
+};
 
 function cors(origen: string) {
   return {
@@ -68,7 +72,7 @@ Deno.serve(async (req) => {
         currency: "eur",
         unit_amount: precio.importe_cent,
         product_data: {
-          name: `OpoNota · ${OPO_NOMBRE[oposicion] ?? oposicion} · ${PLAN_NOMBRE[plan] ?? plan}`,
+          name: `OpoNota · ${OPO_NOMBRE[oposicion] ?? oposicion} · ${PLAN_NOMBRE_OPO[oposicion]?.[plan] ?? PLAN_NOMBRE[plan] ?? plan}`,
           description: `Acceso hasta el ${new Date(precio.hasta).toLocaleDateString("es-ES", { timeZone: "Europe/Madrid" })}. Pago único, sin suscripción.`,
         },
       },

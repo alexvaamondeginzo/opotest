@@ -129,7 +129,6 @@
       {
         "id": "legislacion",
         "nombre": "Legislación",
-        "precio": "14,99",
         "temas": 15,
         "desc": [
           "Temas 1 a 15 (primer ejercicio)",
@@ -141,13 +140,13 @@
       {
         "id": "completo",
         "nombre": "Completo",
-        "precio": "24,99",
         "temas": 21,
         "dest": true,
+        "plus": "la ofimática del 2.º ejercicio (temas 16 a 21) y sus simulacros",
         "desc": [
-          "Los 21 temas: legislación y ofimática",
+          "Todo lo de Legislación",
+          "Ofimática: Windows 11 y Microsoft 365 (temas 16 a 21)",
           "Simulacros de los dos ejercicios, con penalización",
-          "Modo práctica, repaso de fallos y gráfica de notas",
           "Progreso guardado en tu cuenta"
         ]
       }
@@ -338,15 +337,38 @@
     "faqExamen": "Un ejercicio único tipo test de 90 minutos con dos partes que se hacen juntas. La primera tiene 60 preguntas: 30 del bloque I (organización pública) y 30 psicotécnicas. La segunda, 50 preguntas del bloque II (actividad administrativa y ofimática). Cada parte vale 50 puntos, hay que sacar al menos 25 en cada una y cada fallo resta un tercio de acierto. Los simulacros reparten los 90 minutos entre las dos partes.",
     "planes": [
       {
+        "id": "legislacion",
+        "nombre": "Teoría",
+        "temas": 20,
+        "desc": [
+          "Bloque I completo (temas 1 a 16)",
+          "Bloque II sin informática (temas 17 a 20)",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ]
+      },
+      {
         "id": "completo",
+        "nombre": "Teoría + Ofimática",
+        "temas": 28,
+        "plus": "la informática y ofimática del bloque II (temas 21 a 28) y el simulacro de la 2.ª parte",
+        "desc": [
+          "Todo lo de Teoría",
+          "Informática y ofimática: Windows, Word, Excel, Access, Outlook e Internet (temas 21 a 28)",
+          "Simulacro de la 2.ª parte del examen, con penalización",
+          "Progreso guardado en tu cuenta"
+        ]
+      },
+      {
+        "id": "premium",
         "nombre": "Completo",
-        "precio": "24,99",
         "temas": 999,
         "dest": true,
+        "plus": "los psicotécnicos y el simulacro de la 1.ª parte",
         "desc": [
-          "Los 28 temas del programa y psicotécnicos",
+          "Todo lo de Teoría + Ofimática",
+          "Psicotécnicos de la 1.ª parte del examen",
           "Simulacros de las dos partes del examen, con penalización",
-          "Modo práctica, repaso de fallos y gráfica de notas",
           "Progreso guardado en tu cuenta"
         ]
       }

@@ -293,6 +293,10 @@ legend{font:700 22px/1 var(--cond);text-transform:uppercase;margin-bottom:14px;d
 .plan .precio{font:800 44px/1 var(--cond)}
 .plan .precio small{font:500 15px var(--body);color:var(--muted)}
 .plan ul{margin:0;padding-left:18px;font-size:15px;flex:1}
+.plan{position:relative}
+.plan .recomendado{position:absolute;top:-12px;left:22px;background:var(--ink);color:#fff;font:700 13px/1 var(--cond);text-transform:uppercase;padding:6px 10px;border-radius:3px}
+.plan .plus{font-size:15px;background:var(--mint-soft);color:var(--teal-deep);padding:10px 12px;border-radius:8px}
+.plan .plus strong{color:var(--ink)}
 .plan .actual{font-size:14px;color:var(--teal-deep);font-weight:700}
 .lock{font-size:11px;color:var(--muted);margin-left:4px}
 
@@ -762,7 +766,7 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
           <form class="admin-form" id="admin-grant">
             <label>Email<input type="email" id="ag-email" required placeholder="nombre@gmail.com"></label>
             <label>Oposición<select id="ag-op"></select></label>
-            <label>Plan<select id="ag-plan"><option value="completo">Completo</option><option value="legislacion">Legislación</option></select></label>
+            <label>Plan<select id="ag-plan"><option value="premium">Completo con psicotécnicos (Estado)</option><option value="completo">Completo (Madrid) · Teoría + Ofimática (Estado)</option><option value="legislacion">Legislación (Madrid) · Teoría (Estado)</option></select></label>
             <label>Hasta<input type="date" id="ag-hasta" value="2027-12-31" required></label>
             <button class="primary small" type="submit">Dar acceso</button>
             <button class="ghost small" type="button" id="ag-revoke">Quitar accesos dados a mano</button>
@@ -976,7 +980,9 @@ let ACC={plan:null};
 let BETA=null; // null = aún no se sabe; true = modo pruebas (sin pagos)
 let PLANES=[];
 const RANGO={legislacion:1,completo:2,premium:3};
-const PLAN_NOMBRE={beta:"Acceso de pruebas",prueba:"Prueba gratis",legislacion:"Plan Legislación",completo:"Plan Completo",premium:"Plan Premium"};
+const PLAN_BASE={beta:"Acceso de pruebas",prueba:"Prueba gratis",legislacion:"Plan Legislación",completo:"Plan Completo",premium:"Plan Premium"};
+// El nombre de cada plan depende de la oposición (en el Estado, "completo" es Teoría + Ofimática)
+const PLAN_NOMBRE=new Proxy({},{get:(_,k)=>{const p=(PLANES||[]).find(x=>x.id===k);return p?"Plan "+p.nombre:PLAN_BASE[k]}});
 function maxTema(){
   if(!ACC.plan)return 999;
   const p=PLANES.find(x=>x.id===ACC.plan);
@@ -1765,11 +1771,13 @@ async function cargarPrecios(){
 }
 const euros=c=>(c/100).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2});
 function renderPlans(){
-  const actual=RANGO[ACC.plan]||0,P0=PRECIOS[OP]||{};
-  $("planes-list").innerHTML=PLANES.map(p=>{
-    const tengo=actual>=(RANGO[p.id]||0),pr=P0[p.id];
-    const boton=tengo?'<span class="actual">✓ Incluido en tu plan</span>':pr?`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">Elegir ${p.nombre}</button>`:'<span class="meta">Todavía no está a la venta</span>';
-    return `<div class="plan${p.dest?" dest":""}"><h3>${p.nombre}</h3><div class="precio">${pr?euros(pr.importe_cent)+" €":"—"} <small>pago único, IVA incluido</small></div><ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}${pr?`<li>Acceso hasta el ${fechaCorta(pr.hasta)}</li>`:""}</ul>${boton}</div>`}).join("");
+  const actual=ACC.admin?0:(RANGO[ACC.plan]||0),P0=PRECIOS[OP]||{};
+  $("planes-list").innerHTML=PLANES.map((p,i)=>{
+    const tengo=actual>=(RANGO[p.id]||0),pr=P0[p.id],prev=i?P0[PLANES[i-1].id]:null;
+    // "Por solo X € más": la diferencia con el plan anterior y lo que añade
+    const extra=pr&&prev&&p.plus&&pr.importe_cent>prev.importe_cent?`<p class="plus">Por solo <strong>${(d=>d%100?euros(d):String(d/100))(pr.importe_cent-prev.importe_cent)} € más</strong> que ${esc(PLANES[i-1].nombre)}, añades ${esc(p.plus)}.</p>`:"";
+    const boton=tengo?'<span class="actual">✓ Incluido en tu plan</span>':pr?`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">Elegir ${esc(p.nombre)}</button>`:'<span class="meta">Todavía no está a la venta</span>';
+    return `<div class="plan${p.dest?" dest":""}">${p.dest?'<span class="recomendado">El más completo</span>':""}<h3>${esc(p.nombre)}</h3><div class="precio">${pr?euros(pr.importe_cent)+" €":"—"} <small>pago único, IVA incluido</small></div>${extra}<ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}${pr?`<li>Acceso hasta el ${fechaCorta(pr.hasta)}</li>`:""}</ul>${boton}</div>`}).join("");
   document.querySelectorAll("#planes-list button[data-plan]").forEach(b=>b.addEventListener("click",()=>comprar(b.dataset.plan,b)));
 }
 function applyBeta(){
