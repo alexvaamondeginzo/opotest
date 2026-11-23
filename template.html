@@ -392,6 +392,17 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
 .cookiebar p{flex:1 1 320px}
 
 /* ---------- administración ---------- */
+.plegable-admin{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:4px 0}
+.plegable-admin summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:14px 32px 14px 0;position:relative;font:700 22px/1.1 var(--cond);text-transform:uppercase}
+.plegable-admin summary::-webkit-details-marker{display:none}
+.plegable-admin summary .meta{font:400 15px var(--body);text-transform:none}
+.plegable-admin summary::after{content:"";position:absolute;right:8px;top:50%;width:10px;height:10px;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:translateY(-75%) rotate(45deg);transition:transform .2s}
+.plegable-admin[open] summary::after{transform:translateY(-25%) rotate(-135deg)}
+.plegable-admin[open]{padding-bottom:16px}
+.plegable-admin > :not(summary){margin-top:10px}
+.periodos{display:flex;gap:6px;flex-wrap:wrap}
+.periodos button{font:600 14px/1 var(--body);text-transform:none;padding:8px 12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px}
+.periodos button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
 .admin-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
 .admin-tiles div{border-radius:12px;padding:12px 14px;background:var(--bg)}
 .admin-tiles b{display:block;font:800 30px/1 var(--cond)}
@@ -732,8 +743,14 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
         <section id="admin" class="card" aria-labelledby="admin-h">
           <div id="admin-msg" class="msg hidden" role="status"></div>
           <div class="admin-tiles" id="admin-tiles"></div>
-          <h3>Visitas y registros <span class="meta">(últimos 14 días; «sin sesión» es gente que entra sin haber iniciado sesión)</span></h3>
-          <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Día</th><th>Visitas</th><th>Sin sesión</th><th>Registros nuevos</th></tr></thead><tbody id="admin-visitas"></tbody></table></div>
+          <details class="plegable-admin" id="visitas-w">
+            <summary><span>Visitas y registros</span><span class="meta" id="visitas-resumen"></span></summary>
+            <div class="periodos" role="group" aria-label="Periodo">
+              <button type="button" data-dias="1">Último día</button><button type="button" data-dias="7" aria-pressed="true">Última semana</button><button type="button" data-dias="30">Último mes</button><button type="button" data-dias="182">Últimos 6 meses</button><button type="button" data-dias="365">Último año</button>
+            </div>
+            <p class="meta">«Sin sesión» es gente que entra sin haber iniciado sesión.</p>
+            <div class="tabla-wrap"><table class="tabla"><thead><tr><th id="visitas-col">Día</th><th>Visitas</th><th>Sin sesión</th><th>Registros nuevos</th></tr></thead><tbody id="admin-visitas"></tbody></table></div>
+          </details>
           <h3>Modo pruebas</h3>
           <p class="meta" id="admin-beta-txt"></p>
           <div><button class="ghost small" id="admin-beta-btn"></button></div>
@@ -1889,13 +1906,7 @@ async function loadAdmin(){
   $("admin-beta-txt").textContent=BETA?"ACTIVADO. Todos los registrados tienen acceso completo gratis, los precios están ocultos y no se puede pagar.":"DESACTIVADO. Cada cuenta nueva tiene 2 días de prueba y después tiene que pagar. Las cuentas que ya tenían más de 2 días pierden el acceso salvo que les des acceso a mano.";
   $("admin-beta-btn").textContent=BETA?"Desactivar modo pruebas y abrir los pagos":"Activar modo pruebas";
   ADMIN_USERS=u.data||[];renderAdminUsers();
-  const vi=await sb.rpc("admin_visitas",{dias:14});
-  if(vi.error){$("admin-visitas").innerHTML='<tr><td colspan="4" class="meta">Falta ejecutar el archivo 7-visitas.sql en Supabase.</td></tr>'}
-  else{const V=vi.data||[],tv=V.reduce((a,x)=>a+x.visitas,0),ts=V.reduce((a,x)=>a+x.sin_sesion,0),tr=V.reduce((a,x)=>a+x.registros,0);
-    $("admin-visitas").innerHTML=V.map(x=>`<tr><td>${fmtF(x.dia+"T12:00:00")}</td><td>${esc(x.visitas)}</td><td>${esc(x.sin_sesion)}</td><td>${esc(x.registros)}</td></tr>`).join("")+
-      `<tr><td><b>Total</b></td><td><b>${tv}</b></td><td><b>${ts}</b></td><td><b>${tr}</b>${ts?` <span class="meta">(${Math.round(100*tr/ts)} % de las visitas sin sesión acaban en registro)</span>`:""}</td></tr>`;
-    const hoy=V[0]||{visitas:0,registros:0};
-    $("admin-tiles").insertAdjacentHTML("afterbegin",`<div><b>${esc(hoy.visitas)}</b><span>Visitas hoy</span></div><div><b>${esc(hoy.registros)}</b><span>Registros hoy</span></div>`)}
+  await cargarVisitas();
   renderAdminPrecios();
   const er=await sb.rpc("admin_errores");
   $("admin-errores").innerHTML=er.error?'<tr><td colspan="5" class="meta">Falta ejecutar el archivo 6-errores.sql en Supabase.</td></tr>':
@@ -1909,6 +1920,36 @@ function renderAdminUsers(){
   $("admin-users").innerHTML=L.map(x=>`<tr><td>${esc(x.email)}${x.confirmado?"":' <span class="meta">(sin confirmar)</span>'}</td><td>${fmtF(x.registrado)}</td><td><span class="est ${esc(x.estado)}">${esc(x.estado)}</span></td><td>${x.estado==="admin"||x.estado==="pruebas"?"—":fmtF(x.hasta)}</td><td>${esc(x.respuestas)}</td><td>${fmtFH(x.ultima_actividad)}</td></tr>`).join("")||'<tr><td colspan="6" class="meta">Sin resultados.</td></tr>';
 }
 $("admin-filter").addEventListener("input",renderAdminUsers);
+// Visitas y registros: periodo elegible y filas agrupadas por día, semana o mes según el periodo
+let VISITAS_DIAS=7;
+async function cargarVisitas(){
+  const vi=await sb.rpc("admin_visitas",{dias:VISITAS_DIAS});
+  if(vi.error){$("admin-visitas").innerHTML='<tr><td colspan="4" class="meta">Falta ejecutar el archivo 7-visitas.sql en Supabase.</td></tr>';return}
+  const V=vi.data||[];
+  const tv=V.reduce((a,x)=>a+x.visitas,0),ts=V.reduce((a,x)=>a+x.sin_sesion,0),tr=V.reduce((a,x)=>a+x.registros,0);
+  const nombre={1:"Último día",7:"Última semana",30:"Último mes",182:"Últimos 6 meses",365:"Último año"}[VISITAS_DIAS];
+  $("visitas-resumen").textContent=`${nombre}: ${tv.toLocaleString("es-ES")} visitas y ${tr.toLocaleString("es-ES")} registros`;
+  // Agrupar: hasta un mes, por día; 6 meses, por semana; un año, por mes
+  const modo=VISITAS_DIAS<=30?"dia":VISITAS_DIAS<=182?"semana":"mes";
+  $("visitas-col").textContent={dia:"Día",semana:"Semana",mes:"Mes"}[modo];
+  const grupos=[],idx={};
+  V.forEach(x=>{
+    const d=new Date(x.dia+"T12:00:00");let k,et;
+    if(modo==="dia"){k=x.dia;et=d.toLocaleDateString("es-ES")}
+    else if(modo==="semana"){const l=new Date(d);l.setDate(d.getDate()-((d.getDay()+6)%7));k=dayKey(l);et="Semana del "+l.toLocaleDateString("es-ES",{day:"numeric",month:"short"})}
+    else{k=x.dia.slice(0,7);et=d.toLocaleDateString("es-ES",{month:"long",year:"numeric"})}
+    if(!(k in idx)){idx[k]=grupos.length;grupos.push({et,visitas:0,sin_sesion:0,registros:0})}
+    const g=grupos[idx[k]];g.visitas+=x.visitas;g.sin_sesion+=x.sin_sesion;g.registros+=x.registros;
+  });
+  $("admin-visitas").innerHTML=grupos.map(g=>`<tr><td>${esc(g.et)}</td><td>${g.visitas}</td><td>${g.sin_sesion}</td><td>${g.registros}</td></tr>`).join("")+
+    (grupos.length>1?`<tr><td><b>Total</b></td><td><b>${tv}</b></td><td><b>${ts}</b></td><td><b>${tr}</b>${ts?` <span class="meta">(${Math.round(100*tr/ts)} % de las visitas sin sesión acaban en registro)</span>`:""}</td></tr>`:"");
+  const hoy=V[0]||{visitas:0,registros:0};
+  document.querySelectorAll("#admin-tiles .hoy").forEach(e=>e.remove());
+  $("admin-tiles").insertAdjacentHTML("afterbegin",`<div class="hoy"><b>${esc(hoy.visitas)}</b><span>Visitas hoy</span></div><div class="hoy"><b>${esc(hoy.registros)}</b><span>Registros hoy</span></div>`);
+}
+document.querySelectorAll(".periodos button").forEach(b=>b.addEventListener("click",()=>{
+  VISITAS_DIAS=+b.dataset.dias;document.querySelectorAll(".periodos button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));cargarVisitas();
+}));
 async function renderAdminPrecios(){
   const r=await sb.rpc("admin_precios");
   if(r.error){$("admin-precios").innerHTML='<tr><td colspan="6" class="meta">Falta ejecutar el archivo 9-pagos.sql en Supabase.</td></tr>';return}

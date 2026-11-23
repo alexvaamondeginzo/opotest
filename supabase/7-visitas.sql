@@ -31,7 +31,7 @@ begin
          coalesce(v.sin_sesion, 0),
          (select count(*)::integer from auth.users u
            where (u.created_at at time zone 'Europe/Madrid')::date = g.dia::date)
-  from generate_series((now() at time zone 'Europe/Madrid')::date - (least(greatest(dias,1),90) - 1),
+  from generate_series((now() at time zone 'Europe/Madrid')::date - (least(greatest(dias,1),366) - 1),
                        (now() at time zone 'Europe/Madrid')::date, interval '1 day') as g(dia)
   left join public.visitas_dia v on v.dia = g.dia::date
   order by 1 desc;
