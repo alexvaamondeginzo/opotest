@@ -63,7 +63,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [x] Banco de Madrid: 1.224 preguntas de los 21 temas, con distractores reescritos contra las pistas de forma.
 - [x] Banco del Estado: 1.441 preguntas. 795 vienen de Madrid, 507 son nuevas comprobadas con el BOE y 139 son psicotécnicos generados por código.
 - [x] Backend: Supabase con RLS, cuentas, progreso sincronizado, panel de administración y webhook de Stripe.
-- [x] Fusión de las dos versiones (rama `fusion-version-completa`). De la versión de Alex se han traído:
+- [x] Fusión de las dos versiones (pull request #1, ya en `main`). De la versión de Alex se han traído:
   - el enlace al BOE de cada respuesta;
   - marcar preguntas y repasar las marcadas;
   - reportar una pregunta;
@@ -83,7 +83,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 ## Forma de trabajar
 
-- Una rama por tarea (`alex/...`, `edu/...`) y un pull request hacia `main`. Si Netlify está conectado al repositorio, genera una URL de vista previa para cada pull request.
-- Antes de abrir el pull request: `python3 build.py <url>` (debe decir «preguntas visibles en la web: 0»), `python3 make_sql.py` si cambió algún banco, y el análisis de pistas si añadiste preguntas.
+- Se trabaja directamente sobre `main`, sin ramas. **Antes de empezar, haz `git pull`** para traer lo que haya subido el otro socio, y súbelo en cuanto termines cada cambio, para no pisaros. Si `git push` falla porque el otro ha subido algo, haz `git pull`, resuelve los conflictos y vuelve a subir: nunca `git push --force`.
+- Antes de subir: `python3 build.py <url>` (debe decir «preguntas visibles en la web: 0»), `python3 make_sql.py` si cambió algún banco, y el análisis de pistas si añadiste preguntas.
 - No subir nunca claves secretas (Stripe, clave de servicio de Supabase) al repositorio. La clave publicable de Supabase sí puede ir en `build.py`.
 - Al terminar una tarea, actualiza la sección «Estado y pendientes» de este archivo.
