@@ -1,0 +1,143 @@
+=====================================================================
+ OPOTEST · INSTALACIÓN
+=====================================================================
+AHORA (fase de pruebas con tu grupo): haz los pasos 1, 2, 2b y 5.
+MÁS ADELANTE (cuando quieras cobrar): pasos 3, 4 y 6, y desactiva el
+modo pruebas desde el panel de administración.
+Si en algún paso te atascas, dime en qué pantalla estás.
+
+---------------------------------------------------------------------
+PASO 1 · BASE DE DATOS (Supabase, ~5 minutos)
+---------------------------------------------------------------------
+1. Entra en supabase.com > tu proyecto > SQL Editor > New query.
+2. Abre el archivo  supabase/1-configuracion.sql , copia TODO, pégalo y pulsa Run.
+3. Haz lo mismo, en este orden, con:
+     supabase/8-oposiciones.sql
+     supabase/p01-preguntas-parte1.sql, p02, p03... (todos los que empiecen por p, en orden)
+   (Son las preguntas de todas las oposiciones. Están fuera de la carpeta
+    "web" a propósito: así nadie puede verlas sin cuenta.)
+4. Comprueba: en SQL Editor ejecuta
+     select oposicion, count(*) from preguntas group by 1;
+   Debe salir aux-cm 1224 y aux-age 1441.
+
+---------------------------------------------------------------------
+PASO 2 · BLOQUEAR EMAILS TEMPORALES (~1 minuto)
+---------------------------------------------------------------------
+1. Supabase > Authentication > Hooks (o "Auth Hooks") > Add hook.
+2. Elige "Before User Created".
+3. Tipo: Postgres function. Schema: public.
+   Función: hook_antes_de_crear_usuario
+4. Guarda y actívalo.
+5. En Authentication > Sign In / Providers > Email, deja ACTIVADO
+   "Confirm email": así nadie puede registrarse con un email que no es suyo.
+
+---------------------------------------------------------------------
+PASO 2b · HACERTE ADMINISTRADOR (~1 minuto)
+---------------------------------------------------------------------
+1. Sube la web (paso 5) y regístrate en ella con TU email. Confírmalo.
+2. Supabase > SQL Editor, ejecuta (cambiando el email por el tuyo):
+     insert into public.administradores
+     select id from auth.users where email = 'TU_EMAIL@gmail.com';
+3. Recarga la web: arriba verás el botón "Administración".
+   En el panel tienes:
+   - Usuarios: quién se ha registrado, su estado, respuestas y última actividad.
+   - Modo pruebas: activado de serie. Mientras esté activado, TODOS los
+     registrados tienen acceso completo gratis, los precios no se ven y no
+     se puede pagar. Para empezar a cobrar, pulsa "Desactivar modo pruebas".
+   - Dar acceso a mano: para regalar acceso a un email (por ejemplo, a tus
+     testers cuando acabe la fase de pruebas) hasta la fecha que elijas.
+   - Compras y accesos: el historial.
+   OJO: al desactivar el modo pruebas, quien se registró hace más de 2 días
+   pierde el acceso. Si quieres premiar a tus testers, dales acceso a mano
+   ANTES de desactivarlo.
+
+---------------------------------------------------------------------
+PASO 3 · CUENTA DE STRIPE (cuando vayas a cobrar) Y ENLACES DE PAGO (~15 minutos)
+---------------------------------------------------------------------
+1. Crea la cuenta en stripe.com y completa los datos (DNI, IBAN donde
+   cobrarás). Mientras pruebas, usa el "modo de prueba".
+2. Product catalog > crea 2 productos de pago único:
+      Plan Legislación · 14,99 EUR
+      Plan Completo    · 24,99 EUR
+   IMPORTANTE: los precios deben ser exactamente 14,99 y 24,99 €. Así
+   reconoce el sistema qué plan se ha comprado.
+3. Payment Links > crea un enlace para cada producto. Activa en cada
+   enlace "Permitir códigos promocionales" (para la oferta de lanzamiento). En "Después del
+   pago" elige "No mostrar página de confirmación, redirigir a mi web":
+      https://opomadridprueba.netlify.app/?pago=ok
+4. Pásame los 2 enlaces (empiezan por https://buy.stripe.com/...) y los
+   pongo en la web. (O pégalos tú en pagos.json y ejecuta build.py.)
+
+---------------------------------------------------------------------
+PASO 4 · ACTIVACIÓN AUTOMÁTICA DEL PLAN TRAS PAGAR (cuando vayas a cobrar)
+---------------------------------------------------------------------
+1. Supabase > Edge Functions > Deploy a new function > "Via Editor".
+   Nombre:  stripe-webhook
+   Borra el código de ejemplo y pega el de  supabase/stripe-webhook/index.ts
+   Pulsa Deploy.
+2. En los ajustes de esa función, DESACTIVA "Enforce JWT verification"
+   (Stripe no lleva sesión de usuario; la seguridad la da la firma de Stripe).
+3. Copia la URL de la función. Es algo así:
+   https://djzqzywpwliytbtkpdzk.supabase.co/functions/v1/stripe-webhook
+4. Stripe > Developers > Webhooks > Add endpoint:
+      URL: la de arriba
+      Eventos: checkout.session.completed
+               checkout.session.async_payment_succeeded
+   Al crearlo, Stripe te da un "Signing secret" (whsec_...). Cópialo.
+5. Supabase > Edge Functions > Secrets > añade:
+      STRIPE_WEBHOOK_SECRET = whsec_...   (el del paso anterior)
+      STRIPE_SECRET_KEY     = sk_...      (Stripe > Developers > API keys)
+   ¡La clave sk_ NUNCA la pongas en la web ni me la pegues en el chat!
+
+PRUEBA FINAL (en modo de prueba de Stripe):
+- Crea una cuenta en la web, pulsa un plan y paga con la tarjeta de prueba
+  4242 4242 4242 4242 (cualquier fecha futura y cualquier CVC).
+- Al volver a la web debe salir "¡Listo! Plan ... activado".
+- Si funciona, repite los pasos 3 y 4 en modo real (live) y pásame los
+  enlaces reales.
+
+OFERTA DE LANZAMIENTO (opcional): Stripe > Product catalog > Coupons >
+crea un cupón de 5,00 EUR de descuento, solo para el producto "Plan Completo",
+con un máximo de 50 usos, y un código promocional (por ejemplo LANZAMIENTO).
+El Completo quedará en 19,99 € para quien use el código. El plan se activa
+igual, porque se reconoce por el precio antes del descuento.
+
+---------------------------------------------------------------------
+PASO 5 · SUBIR LA WEB
+---------------------------------------------------------------------
+Arrastra a Netlify SOLO la carpeta "web" (como siempre).
+NO subas la carpeta "supabase": contiene las preguntas.
+Si el sitio de Netlify está conectado al repositorio de GitHub, no hace
+falta arrastrar nada: netlify.toml publica solo la carpeta "web".
+
+Formularios (reportar una pregunta y lista de espera): en Netlify >
+Project configuration > Forms, activa "Form detection" una vez. Los
+avisos llegan a Netlify > Forms (formularios "reporte" y "lista-espera").
+
+---------------------------------------------------------------------
+PASO 6 · LEGAL (obligatorio antes de cobrar; los datos de titular, ya)
+---------------------------------------------------------------------
+- Rellena en las páginas legales lo que está marcado en amarillo:
+  nombre, NIF, dirección, email y fecha.
+- Vender requiere estar dado de alta (autónomo o empresa) y emitir
+  factura. Consulta con una gestoría.
+
+---------------------------------------------------------------------
+CÓMO FUNCIONA (resumen)
+---------------------------------------------------------------------
+- Sin cuenta se ve la portada, pero no se puede hacer ningún test.
+- Al registrarse: 2 días con todo incluido, sin tarjeta. Una prueba por
+  email: aunque borre la cuenta y se registre otra vez (o use
+  pepe+1@gmail.com o p.e.p.e@gmail.com), no tiene otra prueba.
+- Las preguntas están en la base de datos y solo se entregan a cuentas con
+  prueba activa o plan pagado. El plan Legislación solo recibe los temas
+  1-15 y su simulacro; el Completo, todo.
+- Para añadir un dominio de email temporal a la lista negra, en SQL Editor:
+    insert into dominios_bloqueados values ('nuevodominio.com');
+
+
+EXTRA (ya montada la web): en Supabase → SQL Editor ejecuta también, una vez:
+  - supabase/6-errores.sql  (registro de errores para el panel de administrador)
+  - supabase/7-visitas.sql  (contador de visitas por día, sin cookies)
+  - supabase/8-oposiciones.sql  (varias oposiciones en la misma web)
+Si cambian las preguntas, vuelve a ejecutar los archivos p01, p02, p03... en orden.

@@ -1,0 +1,326 @@
+[
+[
+20,
+"Según el artículo 9 de la Ley 39/2015, ¿cuál de los siguientes es un sistema válido para que los interesados se identifiquen electrónicamente ante las Administraciones?",
+"Los sistemas de clave concertada",
+[
+"La firma manuscrita escaneada",
+"El número de teléfono móvil",
+"La fotocopia del DNI enviada por correo electrónico"
+],
+"Art. 9.2 Ley 39/2015",
+"También los certificados electrónicos cualificados de firma y de sello y cualquier otro sistema que las Administraciones consideren válido en los términos y condiciones que se establezcan."
+],
+[
+20,
+"¿Cómo se llama el sistema común de identificación electrónica basado en claves concertadas que usa la Administración General del Estado?",
+"Cl@ve",
+[
+"Autofirma",
+"Carpeta Ciudadana",
+"DEHú"
+],
+"Sistema Cl@ve",
+"Autofirma es una aplicación para firmar, Carpeta Ciudadana un área personal y DEHú la dirección electrónica habilitada única."
+],
+[
+20,
+"¿Qué es Autofirma?",
+"Una aplicación de escritorio para firmar electrónicamente documentos con certificado",
+[
+"El sistema de identificación de la AGE mediante claves concertadas que se envían por SMS",
+"El registro de los funcionarios habilitados para firmar en nombre de los ciudadanos",
+"Un certificado electrónico cualificado que emite la Fábrica Nacional de Moneda y Timbre"
+],
+"Firma electrónica",
+"La desarrolla y distribuye gratuitamente la Administración General del Estado."
+],
+[
+20,
+"Según el artículo 43 de la Ley 39/2015, la notificación por medios electrónicos se entiende rechazada cuando:",
+"Han transcurrido diez días naturales desde su puesta a disposición sin que se acceda a su contenido",
+[
+"Han transcurrido cinco días hábiles desde su envío sin que el interesado haya contestado ni presentado alegaciones",
+"El interesado no contesta en veinticuatro horas al aviso enviado a su dirección de correo electrónico o a su móvil",
+"Han transcurrido quince días hábiles desde que se dictó el acto"
+],
+"Art. 43.2 Ley 39/2015",
+"Se entiende practicada en el momento en que se produce el acceso a su contenido."
+],
+[
+20,
+"Según la Ley 39/2015, toda notificación debe cursarse dentro del plazo de:",
+"Diez días a partir de la fecha en que el acto haya sido dictado",
+[
+"Un mes a partir de la fecha en que el acto haya sido dictado y firmado",
+"Tres días a partir de la fecha en que el acto haya adquirido firmeza",
+"Quince días a partir de la fecha en que el acto haya sido publicado"
+],
+"Art. 40.2 Ley 39/2015",
+"Debe contener el texto íntegro de la resolución, si pone fin o no a la vía administrativa y los recursos que procedan."
+],
+[
+20,
+"¿Cuál de los siguientes está obligado a relacionarse electrónicamente con las Administraciones según el artículo 14.2 de la Ley 39/2015?",
+"Las personas jurídicas",
+[
+"Las personas físicas mayores de 65 años",
+"Los extranjeros residentes en España",
+"Los autónomos sin colegiación obligatoria"
+],
+"Art. 14.2 Ley 39/2015",
+"También las entidades sin personalidad jurídica, los profesionales de colegiación obligatoria en el ejercicio de su actividad, sus representantes y los empleados públicos en los trámites por su condición de tales."
+],
+[
+20,
+"¿Qué es la Dirección Electrónica Habilitada única (DEHú)?",
+"El punto donde el interesado puede consultar las notificaciones electrónicas que le remitan las Administraciones",
+[
+"El correo electrónico oficial que la Administración asigna a cada ciudadano y a cada empresa para recibir sus comunicaciones oficiales",
+"La dirección postal que el interesado designa para recibir las notificaciones en papel cuando no está obligado a relacionarse electrónicamente",
+"La sede electrónica del Ministerio competente en materia de función pública"
+],
+"Art. 43 Ley 39/2015 y RD 203/2021",
+"Las notificaciones pueden practicarse por comparecencia en la sede electrónica o a través de la DEHú."
+],
+[
+20,
+"Según la Ley 40/2015, la sede electrónica es:",
+"La dirección electrónica disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública",
+[
+"Cualquier página web en la que aparezca el escudo de una Administración",
+"El edificio en el que se ubican los servidores informáticos de un Ministerio",
+"El buzón de correo electrónico de una unidad administrativa"
+],
+"Art. 38.1 Ley 40/2015",
+"El titular de la sede responde de la integridad, veracidad y actualización de la información y de los servicios a los que pueda accederse a través de ella."
+],
+[
+20,
+"Según la Ley 40/2015, la actuación administrativa automatizada es:",
+"Cualquier acto o actuación realizada íntegramente a través de medios electrónicos por una Administración en el marco de un procedimiento, sin intervención directa de un empleado público",
+[
+"Cualquier acto dictado por un funcionario usando un ordenador",
+"El envío de avisos por SMS a los interesados",
+"La digitalización de documentos en papel"
+],
+"Art. 41.1 Ley 40/2015",
+"Debe establecerse previamente el órgano u órganos competentes para definir las especificaciones, programación, mantenimiento, supervisión y control de calidad y auditoría del sistema."
+],
+[
+20,
+"En la actuación administrativa automatizada, ¿qué sistema de firma puede utilizar cada Administración?",
+"Sello electrónico de órgano o código seguro de verificación",
+[
+"La firma manuscrita del titular del órgano, digitalizada mediante escáner",
+"El certificado electrónico personal del ciudadano que inició el procedimiento",
+"La clave concertada del interesado, comunicada previamente por SMS"
+],
+"Art. 42 Ley 40/2015",
+"El código seguro de verificación permite comprobar la integridad del documento mediante el acceso a la sede electrónica correspondiente."
+],
+[
+20,
+"El código seguro de verificación (CSV) permite:",
+"Comprobar la integridad y autenticidad de un documento accediendo a la sede electrónica correspondiente",
+[
+"Cifrar el documento para que solo pueda leerlo el destinatario que disponga de la clave privada correspondiente",
+"Identificar al ciudadano ante cualquier Administración sin necesidad de disponer de un certificado electrónico",
+"Firmar documentos en papel con valor de original"
+],
+"Art. 42 b) Ley 40/2015",
+"Se vincula a la Administración, órgano u organismo y, en su caso, a la persona firmante del documento."
+],
+[
+20,
+"¿Qué norma regula el Esquema Nacional de Seguridad vigente?",
+"El Real Decreto 311/2022, de 3 de mayo",
+[
+"El Real Decreto 4/2010, de 8 de enero",
+"El Real Decreto 203/2021, de 30 de marzo",
+"El Real Decreto 3/2010, de 8 de enero"
+],
+"RD 311/2022",
+"El RD 4/2010 regula el Esquema Nacional de Interoperabilidad. El RD 3/2010 era el anterior Esquema Nacional de Seguridad, derogado."
+],
+[
+20,
+"El Esquema Nacional de Interoperabilidad se regula en:",
+"El RD 4/2010",
+[
+"El RD 311/2022",
+"El RD 1708/2011",
+"El RD 203/2021"
+],
+"RD 4/2010",
+"El Esquema Nacional de Interoperabilidad y el de Seguridad se prevén en el artículo 156 de la Ley 40/2015."
+],
+[
+20,
+"¿En qué categorías clasifica los sistemas de información el Esquema Nacional de Seguridad?",
+"Básica, media y alta",
+[
+"Pública, reservada y secreta",
+"Baja, alta y crítica",
+"Nivel 1, nivel 2, nivel 3 y nivel 4"
+],
+"RD 311/2022",
+"La categoría depende del impacto que tendría un incidente en la información o los servicios."
+],
+[
+20,
+"¿Cuál de las siguientes es una dimensión de seguridad del Esquema Nacional de Seguridad?",
+"La trazabilidad",
+[
+"La gratuidad",
+"La proporcionalidad",
+"La publicidad"
+],
+"RD 311/2022",
+"Las dimensiones son confidencialidad, integridad, trazabilidad, autenticidad y disponibilidad."
+],
+[
+20,
+"¿Qué Reglamento europeo regula la identificación electrónica y los servicios de confianza para las transacciones electrónicas?",
+"El Reglamento eIDAS (UE) 910/2014",
+[
+"El Reglamento (UE) 2016/679, de 27 de abril",
+"La Directiva (UE) 2019/1024, de 20 de junio",
+"El Reglamento (UE) 2022/2065, de 19 de octubre"
+],
+"Reglamento eIDAS",
+"El Reglamento 2016/679 es el de protección de datos, la Directiva 2019/1024 la de datos abiertos y el Reglamento 2022/2065 el de servicios digitales."
+],
+[
+20,
+"Según el Reglamento eIDAS, la firma electrónica cualificada tiene un efecto jurídico equivalente al de:",
+"Una firma manuscrita",
+[
+"Un documento notarial",
+"Una copia simple",
+"Un sello de registro"
+],
+"Art. 25.2 Reglamento eIDAS",
+"Es una firma avanzada creada por un dispositivo cualificado y basada en un certificado cualificado."
+],
+[
+20,
+"¿Qué ley española regula determinados aspectos de los servicios electrónicos de confianza?",
+"La Ley 6/2020, de 11 de noviembre",
+[
+"La Ley 59/2003, de 19 de diciembre",
+"La Ley 11/2007, de 22 de junio",
+"La Ley 34/2002, de 11 de julio"
+],
+"Ley 6/2020",
+"Derogó la Ley 59/2003 de firma electrónica. La Ley 11/2007 de acceso electrónico fue derogada por las Leyes 39 y 40 de 2015 y la Ley 34/2002 regula los servicios de la sociedad de la información."
+],
+[
+20,
+"¿Qué red de comunicaciones interconecta las redes de las Administraciones Públicas españolas e instituciones europeas?",
+"La Red SARA",
+[
+"La Red IRIS",
+"La Red Cl@ve",
+"La Red 060"
+],
+"Red SARA",
+"RedIRIS es la red académica y de investigación española."
+],
+[
+20,
+"Según la Ley 39/2015, los interesados no estarán obligados a aportar documentos que:",
+"Hayan sido elaborados por cualquier Administración o que hayan sido aportados anteriormente por el interesado a cualquier Administración",
+[
+"Estén redactados en una lengua cooficial distinta del castellano",
+"Tengan una antigüedad inferior a cinco años desde su expedición, salvo que el órgano competente los requiera por resolución motivada",
+"Hayan sido firmados electrónicamente por el propio interesado o por su representante con un certificado cualificado expedido por un prestador de confianza"
+],
+"Art. 28.2 y 28.3 Ley 39/2015",
+"La Administración los consultará o recabará, salvo oposición expresa del interesado o que una ley especial exija su consentimiento expreso."
+],
+[
+20,
+"¿Qué servicio permite al ciudadano consultar en un único espacio sus expedientes, sus datos en poder de las Administraciones y sus notificaciones?",
+"La Carpeta Ciudadana",
+[
+"El Registro Electrónico de Apoderamientos",
+"El Portal de la Transparencia",
+"La Plataforma de Contratación del Sector Público"
+],
+"Carpeta Ciudadana",
+"Es accesible desde el Punto de Acceso General electrónico."
+],
+[
+20,
+"¿Qué reglamento desarrolla la actuación y el funcionamiento del sector público por medios electrónicos?",
+"El Real Decreto 203/2021, de 30 de marzo",
+[
+"El Real Decreto 1671/2009, de 6 de noviembre",
+"El Real Decreto 951/2005, de 29 de julio",
+"El Real Decreto 1708/2011, de 18 de noviembre"
+],
+"RD 203/2021",
+"Derogó el RD 1671/2009, que desarrollaba la Ley 11/2007."
+],
+[
+20,
+"Según la Ley 39/2015, si el interesado no dispone de los medios electrónicos necesarios, su identificación o firma electrónica en el procedimiento puede ser válidamente realizada por:",
+"Un funcionario público habilitado, mediante el uso del sistema de firma electrónica del que esté dotado",
+[
+"Cualquier familiar del interesado, con su propio certificado",
+"Un notario de libre elección del interesado, que deberá dar fe del acto realizado y de la identidad del firmante",
+"El representante sindical del interesado"
+],
+"Art. 12.2 Ley 39/2015",
+"El interesado debe identificarse ante el funcionario y prestar su consentimiento expreso, que debe quedar constancia."
+],
+[
+20,
+"¿Cuál es el órgano de respuesta a incidentes de ciberseguridad del Centro Criptológico Nacional?",
+"El CCN-CERT",
+[
+"El INCIBE-CERT",
+"La Agencia Española de Protección de Datos",
+"El Mando Conjunto del Ciberespacio"
+],
+"Centro Criptológico Nacional",
+"El INCIBE-CERT atiende a ciudadanos y empresas; el CCN-CERT, al sector público."
+],
+[
+20,
+"El portal de internet, según la Ley 40/2015, es:",
+"El punto de acceso electrónico cuya titularidad corresponde a una Administración Pública u organismo y que permite el acceso a través de internet a la información publicada y, en su caso, a la sede electrónica",
+[
+"La sede electrónica de cada Ministerio",
+"Un servidor de correo electrónico de la Administración",
+"El programa informático que permite firmar documentos"
+],
+"Art. 39 Ley 40/2015",
+"No todo portal es una sede electrónica: la sede tiene garantías de integridad, veracidad y actualización."
+],
+[
+20,
+"El sello electrónico, como sistema de firma de las Administraciones, se basa en:",
+"Un certificado electrónico reconocido o cualificado que reúna los requisitos de la legislación de firma electrónica",
+[
+"La firma manuscrita digitalizada del titular del órgano, incorporada como imagen a todos los documentos que se emitan",
+"Una contraseña que conoce solo el funcionario que tramita",
+"El número de registro de entrada asignado al documento"
+],
+"Art. 40 Ley 40/2015",
+"Los certificados incluyen el número de identificación fiscal y la denominación correspondiente."
+],
+[
+20,
+"¿Qué ley de 2007 reconoció por primera vez el derecho de los ciudadanos a relacionarse electrónicamente con las Administraciones?",
+"La Ley 11/2007, de 22 de junio",
+[
+"La Ley 30/1992, de 26 de noviembre",
+"La Ley 39/2015, de 1 de octubre",
+"La Ley 19/2013, de 9 de diciembre"
+],
+"Ley 11/2007",
+"Fue derogada por las Leyes 39/2015 y 40/2015."
+]
+]

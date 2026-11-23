@@ -1,0 +1,290 @@
+[
+[
+21,
+"¿Cuántos bytes tiene un kilobyte (KB) en el sistema binario tradicional?",
+"1.024 bytes",
+[
+"1.000 bytes",
+"1.048 bytes",
+"512 bytes"
+],
+"Unidades de información",
+"1 KB = 2^10 bytes = 1.024 bytes. En el sistema internacional, 1 kB = 1.000 bytes (y 1 KiB = 1.024)."
+],
+[
+21,
+"¿Cuántos bits forman un byte?",
+"8",
+[
+"4",
+"16",
+"10"
+],
+"Unidades de información",
+"Un byte permite representar 256 valores distintos."
+],
+[
+21,
+"¿Qué unidad de almacenamiento es mayor?",
+"Un terabyte",
+[
+"Un gigabyte",
+"Un megabyte",
+"Un kilobyte"
+],
+"Unidades de información",
+"Orden creciente: kilobyte, megabyte, gigabyte, terabyte, petabyte."
+],
+[
+21,
+"La memoria RAM se caracteriza por ser:",
+"Volátil, de lectura y escritura",
+[
+"No volátil y de solo lectura",
+"Volátil y de solo lectura",
+"No volátil, de lectura y escritura"
+],
+"Memoria",
+"Su contenido se pierde al apagar el equipo. La ROM es no volátil y, en principio, de solo lectura."
+],
+[
+21,
+"¿Qué componente del ordenador ejecuta las instrucciones de los programas?",
+"El procesador o CPU",
+[
+"La tarjeta de red",
+"El disco duro",
+"La fuente de alimentación"
+],
+"Hardware",
+"La CPU incluye la unidad de control y la unidad aritmético-lógica."
+],
+[
+21,
+"¿Qué parte de la CPU realiza las operaciones aritméticas y lógicas?",
+"La unidad aritmético-lógica (ALU)",
+[
+"La unidad de control del procesador",
+"La memoria caché interna del procesador",
+"El bus de datos y direcciones del sistema"
+],
+"Hardware",
+"La unidad de control interpreta las instrucciones y coordina el resto de componentes."
+],
+[
+21,
+"¿Cuál de los siguientes es un periférico de entrada?",
+"El escáner",
+[
+"La impresora",
+"El monitor",
+"Los altavoces"
+],
+"Periféricos",
+"Impresora, monitor y altavoces son periféricos de salida."
+],
+[
+21,
+"Una pantalla táctil es un periférico:",
+"De entrada y salida",
+[
+"Exclusivamente de entrada",
+"Exclusivamente de salida",
+"De almacenamiento"
+],
+"Periféricos",
+"Muestra información y a la vez recibe órdenes del usuario."
+],
+[
+21,
+"¿Qué tipo de unidad de almacenamiento no tiene partes mecánicas móviles?",
+"El SSD",
+[
+"El disco duro HDD",
+"La unidad de cinta",
+"El disquete"
+],
+"Almacenamiento",
+"Los SSD usan memoria flash; por eso son más rápidos y resistentes a golpes que los HDD."
+],
+[
+21,
+"El firmware que inicia el hardware al encender el ordenador y arranca el sistema operativo es, en los equipos actuales:",
+"La UEFI, sucesora de la BIOS",
+[
+"El controlador de la tarjeta gráfica",
+"El gestor de arranque de la memoria RAM",
+"El sistema de archivos NTFS"
+],
+"Arranque del equipo",
+"La BIOS es el firmware tradicional; la UEFI la sustituye en los equipos modernos."
+],
+[
+21,
+"¿Cuál de los siguientes es un sistema operativo?",
+"Linux",
+[
+"Excel",
+"Chrome",
+"Java"
+],
+"Software",
+"Excel es una aplicación, Chrome un navegador y Java un lenguaje de programación."
+],
+[
+21,
+"El software cuyo código fuente puede estudiarse, modificarse y redistribuirse libremente se denomina:",
+"Software libre",
+[
+"Software propietario",
+"Shareware",
+"Freeware"
+],
+"Tipos de software",
+"El freeware es gratuito pero no necesariamente permite acceder al código ni modificarlo."
+],
+[
+21,
+"¿Qué sistema de numeración utiliza internamente el ordenador?",
+"El binario",
+[
+"El decimal",
+"El octal",
+"El romano"
+],
+"Representación de la información",
+"Solo usa los dígitos 0 y 1."
+],
+[
+21,
+"El número decimal 10 se representa en binario como:",
+"1010",
+[
+"1100",
+"1001",
+"0110"
+],
+"Representación de la información",
+"1010 = 8 + 0 + 2 + 0 = 10."
+],
+[
+21,
+"Una red que conecta los ordenadores de un mismo edificio u oficina se denomina:",
+"LAN",
+[
+"WAN",
+"MAN",
+"VPN"
+],
+"Redes",
+"LAN es red de área local; WAN, de área extensa; MAN, metropolitana; VPN, red privada virtual."
+],
+[
+21,
+"¿Qué tipo de puerto se usa habitualmente para conectar un monitor con audio y vídeo digital?",
+"HDMI",
+[
+"RJ-45",
+"PS/2",
+"VGA"
+],
+"Puertos",
+"El RJ-45 se usa para la red, el PS/2 para teclados y ratones antiguos, y el VGA transmite solo vídeo analógico."
+],
+[
+21,
+"El malware que cifra los archivos del usuario y pide un rescate para recuperarlos se llama:",
+"Ransomware",
+[
+"Spyware",
+"Adware",
+"Gusano"
+],
+"Seguridad",
+"El spyware espía la actividad del usuario y el adware muestra publicidad no deseada."
+],
+[
+21,
+"Un troyano es:",
+"Un programa malicioso que se presenta como legítimo para que el usuario lo instale",
+[
+"Un programa que se replica por sí solo a través de la red sin intervención del usuario",
+"Un correo que suplanta a una entidad para robar contraseñas",
+"Un programa que muestra publicidad emergente"
+],
+"Seguridad",
+"El gusano se replica solo; la suplantación por correo es phishing; la publicidad emergente, adware."
+],
+[
+21,
+"El phishing consiste en:",
+"Suplantar la identidad de una entidad de confianza para obtener datos confidenciales",
+[
+"Bloquear un servidor saturándolo con miles de peticiones simultáneas desde muchos equipos",
+"Infectar un equipo a través de una memoria USB que ejecuta automáticamente un programa",
+"Instalar en secreto un programa que registra todas las pulsaciones del teclado del usuario"
+],
+"Seguridad",
+"Bloquear un servidor con peticiones masivas es un ataque de denegación de servicio (DoS); registrar pulsaciones, un keylogger."
+],
+[
+21,
+"Una copia de seguridad incremental guarda:",
+"Solo los archivos modificados desde la última copia, sea completa o incremental",
+[
+"Todos los archivos del equipo cada vez",
+"Solo los archivos modificados desde la última copia completa, sin tener en cuenta las demás",
+"Únicamente los archivos del sistema operativo"
+],
+"Copias de seguridad",
+"La copia diferencial guarda los cambios desde la última copia completa."
+],
+[
+21,
+"La memoria caché es:",
+"Una memoria muy rápida y pequeña que guarda los datos que el procesador usa con más frecuencia",
+[
+"La memoria secundaria, como el disco duro o el SSD, donde se instalan los programas y se guardan los archivos",
+"Una memoria de solo lectura que contiene la BIOS",
+"Un espacio del disco duro que el sistema operativo utiliza como memoria cuando la RAM se llena"
+],
+"Memoria",
+"El espacio en disco usado cuando la RAM se llena es la memoria virtual o archivo de paginación."
+],
+[
+21,
+"¿Qué es un controlador o driver?",
+"Un programa que permite al sistema operativo comunicarse con un dispositivo de hardware",
+[
+"Un componente físico de la placa base que conecta el procesador con el resto de dispositivos",
+"Una aplicación del sistema operativo para crear y restaurar copias de seguridad de los archivos",
+"El usuario con permisos de administrador que puede instalar y desinstalar programas en el equipo"
+],
+"Software",
+"Cada dispositivo necesita su controlador para funcionar correctamente."
+],
+[
+21,
+"La computación en la nube (cloud computing) consiste en:",
+"Usar recursos informáticos, como almacenamiento o aplicaciones, ofrecidos a través de internet",
+[
+"Conectar varios ordenadores de una misma oficina en una red local sin cables mediante tecnología wifi",
+"Guardar archivos en una memoria USB externa",
+"Instalar programas solo desde un CD o DVD"
+],
+"Cloud computing",
+"Ejemplos: OneDrive, Google Drive o Microsoft 365."
+],
+[
+21,
+"¿Qué significan las siglas SaaS en la computación en la nube?",
+"Software como servicio",
+[
+"Sistema de almacenamiento seguro",
+"Servidor de aplicaciones en red",
+"Seguridad como servicio"
+],
+"Cloud computing",
+"Junto a SaaS están IaaS (infraestructura como servicio) y PaaS (plataforma como servicio)."
+]
+]

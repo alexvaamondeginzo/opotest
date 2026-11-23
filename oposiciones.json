@@ -1,0 +1,431 @@
+{
+  "aux-cm": {
+    "nombre": "Auxiliar Administrativo de la Comunidad de Madrid",
+    "corto": "Auxiliar · Comunidad de Madrid",
+    "grupo": "C2",
+    "ambito": "Comunidad de Madrid",
+    "eyebrow": "Auxiliar Administrativo · Comunidad de Madrid · C2",
+    "titulo": "Test de legislación y ofimática para el examen de 2027",
+    "sub": "Preguntas tipo examen de los 21 temas, cada una con su explicación: la legislación, con el artículo exacto y comprobada con los textos consolidados del BOE; la ofimática, con Windows 11 y Microsoft 365.",
+    "plazas": 673,
+    "examen": "2027-06-01",
+    "examenOficial": false,
+    "examenTxt": "Junio de 2027",
+    "examenLbl": "Primer ejercicio",
+    "programa": "Orden 1628/2026 (BOCM de 13 de julio de 2026)",
+    "temario": [
+      [
+        1,
+        "Constitución Española"
+      ],
+      [
+        2,
+        "Estatuto de Autonomía de Madrid"
+      ],
+      [
+        3,
+        "Ley de Gobierno y Administración de la CM"
+      ],
+      [
+        4,
+        "Fuentes del ordenamiento jurídico"
+      ],
+      [
+        5,
+        "Acto administrativo y recursos"
+      ],
+      [
+        6,
+        "Procedimiento administrativo común"
+      ],
+      [
+        7,
+        "Jurisdicción contencioso-administrativa"
+      ],
+      [
+        8,
+        "Transparencia y protección de datos"
+      ],
+      [
+        9,
+        "Contratos del sector público"
+      ],
+      [
+        10,
+        "Empleo público (TREBEP y Ley 1/1986)"
+      ],
+      [
+        11,
+        "Seguridad Social"
+      ],
+      [
+        12,
+        "Ley de Hacienda de la CM"
+      ],
+      [
+        13,
+        "Igualdad y no discriminación"
+      ],
+      [
+        14,
+        "Atención al ciudadano y administración electrónica"
+      ],
+      [
+        15,
+        "Documentos, registro y archivo"
+      ],
+      [
+        16,
+        "Explorador de Windows"
+      ],
+      [
+        17,
+        "Word"
+      ],
+      [
+        18,
+        "Excel"
+      ],
+      [
+        19,
+        "Access y Power BI"
+      ],
+      [
+        20,
+        "Outlook"
+      ],
+      [
+        21,
+        "Trabajo colaborativo en Microsoft 365"
+      ]
+    ],
+    "sims": [
+      {
+        "id": "simulacro",
+        "nombre": "Simulacro 1.er ejercicio",
+        "desc": "Legislación (temas 1-15): 40 preguntas en 45 minutos. Cada fallo resta un tercio.",
+        "n": 40,
+        "min": 45,
+        "ex": 1,
+        "desde": 1,
+        "hasta": 15,
+        "elegirTemas": true
+      },
+      {
+        "id": "simulacro2",
+        "nombre": "Simulacro 2.º ejercicio",
+        "desc": "Ofimática (temas 16-21): 30 preguntas en 35 minutos. Cada fallo resta un tercio.",
+        "n": 30,
+        "min": 35,
+        "ex": 2,
+        "desde": 16,
+        "hasta": 21,
+        "elegirTemas": false
+      }
+    ],
+    "faqExamen": "Dos ejercicios tipo test. El primero, de legislación (temas 1 a 15), tiene 40 preguntas en 45 minutos. El segundo, de ofimática (temas 16 a 21), 30 preguntas en 35 minutos. Cada uno vale 50 puntos, se aprueba con 25 y cada fallo resta un tercio de acierto.",
+    "faqCayo": "Que lo que pregunta ya salió en un examen oficial reciente de la Comunidad de Madrid (noviembre de 2024, febrero de 2025, abril de 2026 u octubre de 2026). La pregunta no es copia literal del examen, pero sí del mismo contenido.",
+    "planes": [
+      {
+        "id": "legislacion",
+        "nombre": "Legislación",
+        "precio": "14,99",
+        "temas": 15,
+        "desc": [
+          "Temas 1 a 15 (primer ejercicio)",
+          "Simulacros del 1.er ejercicio: 40 preguntas en 45 minutos, con penalización",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ]
+      },
+      {
+        "id": "completo",
+        "nombre": "Completo",
+        "precio": "24,99",
+        "temas": 21,
+        "dest": true,
+        "desc": [
+          "Los 21 temas: legislación y ofimática",
+          "Simulacros de los dos ejercicios, con penalización",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ]
+      }
+    ],
+    "enlaces": [
+      {
+        "t": "Página oficial de la convocatoria",
+        "u": "https://www.comunidad.madrid/empleo/auxiliares-administracion-general-c2-16282026"
+      },
+      {
+        "t": "Bases en el BOCM (PDF)",
+        "u": "https://bocm.es/boletin/CM_Orden_BOCM/2026/07/13/BOCM-20260713-2.PDF"
+      }
+    ],
+    "enlacesTxt": "La Comunidad de Madrid publica las bases y los cuestionarios con plantilla de convocatorias anteriores. Los iremos convirtiendo en simulacros interactivos."
+  },
+  "aux-age": {
+    "nombre": "Auxiliar Administrativo del Estado",
+    "corto": "Auxiliar · Administración del Estado",
+    "grupo": "C2",
+    "ambito": "Toda España",
+    "eyebrow": "Auxiliar Administrativo del Estado · C2 · Toda España",
+    "titulo": "Test de Auxiliar Administrativo del Estado",
+    "sub": "Preguntas tipo examen de los 28 temas del programa y psicotécnicos, cada una con su explicación: la legislación, con el artículo exacto y comprobada con los textos consolidados del BOE; la ofimática, con Windows 11 y Microsoft 365.",
+    "plazas": 1700,
+    "plazasNota": "última convocatoria",
+    "examen": "",
+    "examenOficial": false,
+    "examenTxt": "Por convocar (OEP 2026)",
+    "examenLbl": "Examen",
+    "programa": "Resolución de 18 de diciembre de 2025 (BOE de 22 de diciembre), anexo I",
+    "temario": [
+      [
+        1,
+        "Constitución: principios, derechos y garantías"
+      ],
+      [
+        2,
+        "Tribunal Constitucional, reforma y Corona"
+      ],
+      [
+        3,
+        "Cortes Generales y Defensor del Pueblo"
+      ],
+      [
+        4,
+        "Poder Judicial"
+      ],
+      [
+        5,
+        "Gobierno y Administración"
+      ],
+      [
+        6,
+        "Gobierno abierto y Agenda 2030"
+      ],
+      [
+        7,
+        "Ley de Transparencia"
+      ],
+      [
+        8,
+        "Administración General del Estado"
+      ],
+      [
+        9,
+        "Organización territorial: CCAA y Administración local"
+      ],
+      [
+        10,
+        "Unión Europea"
+      ],
+      [
+        11,
+        "Procedimiento administrativo, régimen jurídico y recursos"
+      ],
+      [
+        12,
+        "Protección de datos"
+      ],
+      [
+        13,
+        "Personal funcionario: selección, provisión y situaciones"
+      ],
+      [
+        14,
+        "Derechos, carrera, retribuciones y disciplina"
+      ],
+      [
+        15,
+        "Presupuesto del Estado"
+      ],
+      [
+        16,
+        "Igualdad, violencia de género, LGTBI y discapacidad"
+      ],
+      [
+        17,
+        "Atención al público"
+      ],
+      [
+        18,
+        "Servicios de información administrativa"
+      ],
+      [
+        19,
+        "Documento, registro y archivo"
+      ],
+      [
+        20,
+        "Administración electrónica"
+      ],
+      [
+        21,
+        "Informática básica"
+      ],
+      [
+        22,
+        "Entorno Windows"
+      ],
+      [
+        23,
+        "Explorador de Windows"
+      ],
+      [
+        24,
+        "Word"
+      ],
+      [
+        25,
+        "Excel"
+      ],
+      [
+        26,
+        "Access"
+      ],
+      [
+        27,
+        "Outlook"
+      ],
+      [
+        28,
+        "Internet"
+      ],
+      [
+        29,
+        "Psicotécnicos"
+      ]
+    ],
+    "sims": [
+      {
+        "id": "age-p1",
+        "nombre": "Simulacro 1.ª parte",
+        "desc": "30 preguntas del bloque I (temas 1-16) y 30 psicotécnicas: 60 preguntas en 50 minutos. Cada fallo resta un tercio.",
+        "n": 60,
+        "min": 50,
+        "ex": 1,
+        "desde": 1,
+        "hasta": 29,
+        "elegirTemas": false,
+        "equilibrar": true,
+        "cupos": [
+          {
+            "desde": 1,
+            "hasta": 16,
+            "n": 30
+          },
+          {
+            "desde": 29,
+            "hasta": 29,
+            "n": 30
+          }
+        ]
+      },
+      {
+        "id": "age-p2",
+        "nombre": "Simulacro 2.ª parte",
+        "desc": "Bloque II (temas 17-28): 50 preguntas en 40 minutos. Cada fallo resta un tercio.",
+        "n": 50,
+        "min": 40,
+        "ex": 2,
+        "desde": 17,
+        "hasta": 28,
+        "elegirTemas": false,
+        "equilibrar": true
+      }
+    ],
+    "faqExamen": "Un ejercicio único tipo test de 90 minutos con dos partes que se hacen juntas. La primera tiene 60 preguntas: 30 del bloque I (organización pública) y 30 psicotécnicas. La segunda, 50 preguntas del bloque II (actividad administrativa y ofimática). Cada parte vale 50 puntos, hay que sacar al menos 25 en cada una y cada fallo resta un tercio de acierto. Los simulacros reparten los 90 minutos entre las dos partes.",
+    "planes": [
+      {
+        "id": "completo",
+        "nombre": "Completo",
+        "precio": "24,99",
+        "temas": 999,
+        "dest": true,
+        "desc": [
+          "Los 28 temas del programa y psicotécnicos",
+          "Simulacros de las dos partes del examen, con penalización",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ]
+      }
+    ],
+    "enlaces": [
+      {
+        "t": "Última convocatoria en el BOE",
+        "u": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262"
+      }
+    ],
+    "enlacesTxt": "Bases y programa de la última convocatoria. La de la Oferta de Empleo Público de 2026 aún no se ha publicado."
+  },
+  "adm-cm": {
+    "nombre": "Administrativo de la Comunidad de Madrid",
+    "corto": "Administrativo · Comunidad de Madrid",
+    "grupo": "C1",
+    "ambito": "Comunidad de Madrid",
+    "plazas": 107,
+    "proximamente": true
+  },
+  "aux-ayto-mad": {
+    "nombre": "Auxiliar Administrativo del Ayuntamiento de Madrid",
+    "corto": "Auxiliar · Ayuntamiento de Madrid",
+    "grupo": "C2",
+    "ambito": "Ciudad de Madrid",
+    "proximamente": true
+  },
+  "tcae-sermas": {
+    "nombre": "TCAE · Servicio Madrileño de Salud",
+    "corto": "TCAE · SERMAS",
+    "grupo": "C2",
+    "ambito": "Comunidad de Madrid",
+    "plazas": 1878,
+    "convocatoria": "BOCM 31/07/2025",
+    "proximamente": true
+  },
+  "tcai-ics": {
+    "nombre": "TCAI (Auxiliar de Enfermería) · Institut Català de la Salut",
+    "corto": "TCAI · ICS",
+    "grupo": "C2",
+    "ambito": "Cataluña",
+    "plazas": 757,
+    "convocatoria": "DOGC 26/06/2025 · examen desde enero de 2027",
+    "proximamente": true
+  },
+  "tcae-sergas": {
+    "nombre": "TCAE · Servizo Galego de Saúde",
+    "corto": "TCAE · SERGAS",
+    "grupo": "C2",
+    "ambito": "Galicia",
+    "plazas": 1306,
+    "convocatoria": "DOG 04/09/2025",
+    "proximamente": true
+  },
+  "admin-navarra": {
+    "nombre": "Administrativo · Gobierno de Navarra",
+    "corto": "Administrativo · Navarra",
+    "grupo": "C",
+    "ambito": "Navarra",
+    "plazas": 585,
+    "plazasNota": "última convocatoria",
+    "convocatoria": "BON 22/05/2025 · OPE 2026 en camino",
+    "proximamente": true
+  },
+  "aux-canarias": {
+    "nombre": "Auxiliar Administrativo · Gobierno de Canarias",
+    "corto": "Auxiliar · Canarias",
+    "grupo": "C2",
+    "ambito": "Canarias",
+    "plazas": 296,
+    "convocatoria": "BOC 24/03/2026",
+    "proximamente": true
+  },
+  "osakidetza-aux-enf": {
+    "nombre": "Auxiliar de Enfermería · Osakidetza",
+    "corto": "Aux. Enfermería · Osakidetza",
+    "grupo": "C2",
+    "ambito": "País Vasco",
+    "convocatoria": "OPE 2023-2025 y 2026 · BOPV 20/03/2026",
+    "proximamente": true
+  }
+}

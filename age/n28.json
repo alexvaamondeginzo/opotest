@@ -1,0 +1,290 @@
+[
+[
+28,
+"¿Qué protocolo se usa para transferir páginas web de forma cifrada?",
+"HTTPS",
+[
+"FTP",
+"SMTP",
+"HTTP"
+],
+"Protocolos de internet",
+"HTTPS es HTTP sobre una conexión cifrada con TLS. FTP transfiere archivos y SMTP envía correo."
+],
+[
+28,
+"¿Qué función cumple el sistema DNS en internet?",
+"Traducir los nombres de dominio en direcciones IP",
+[
+"Cifrar las comunicaciones entre el navegador y el servidor",
+"Asignar una dirección de correo a cada usuario",
+"Bloquear el acceso a páginas peligrosas"
+],
+"DNS",
+"Gracias al DNS escribimos «boe.es» en lugar de la dirección IP del servidor."
+],
+[
+28,
+"En la dirección https://www.boe.es/diario_boe/, ¿cuál es el dominio de primer nivel?",
+".es",
+[
+"www",
+"boe",
+"diario_boe"
+],
+"Dominios",
+"El dominio de primer nivel es la última parte del nombre: .es, .com, .org, etc."
+],
+[
+28,
+"¿Qué protocolo se utiliza para enviar correo electrónico?",
+"SMTP",
+[
+"POP3",
+"IMAP",
+"HTTP"
+],
+"Correo electrónico",
+"POP3 e IMAP se usan para recibir o consultar el correo."
+],
+[
+28,
+"¿Quién creó la World Wide Web?",
+"Tim Berners-Lee, en el CERN",
+[
+"Bill Gates, en la empresa Microsoft",
+"Vinton Cerf, en el proyecto ARPANET",
+"Linus Torvalds, en la Universidad de Helsinki"
+],
+"Historia de internet",
+"La propuso en 1989 y desarrolló el primer navegador y servidor web."
+],
+[
+28,
+"El lenguaje de marcado con el que se escriben las páginas web es:",
+"HTML",
+[
+"SQL",
+"XML",
+"CSS"
+],
+"Lenguajes web",
+"CSS se usa para el diseño o estilo, SQL para bases de datos y XML para intercambio de datos."
+],
+[
+28,
+"Una cookie es:",
+"Un pequeño archivo que el sitio web guarda en el navegador del usuario para recordar información",
+[
+"Un programa malicioso que se instala en el equipo al visitar determinadas páginas web sin que el usuario lo sepa",
+"Un buscador alternativo a Google",
+"Un certificado digital que acredita que la web es segura y que pertenece a la organización que dice ser"
+],
+"Navegación",
+"Sirve, por ejemplo, para recordar el idioma, la sesión iniciada o el carrito de compra."
+],
+[
+28,
+"La navegación InPrivate o de incógnito:",
+"No guarda en el equipo el historial, las cookies ni los datos de formularios al cerrar la ventana",
+[
+"Oculta la dirección IP del usuario a todos los sitios web que visita, de modo que navega de forma anónima",
+"Impide que el proveedor de internet vea las páginas visitadas",
+"Protege el equipo frente a cualquier virus"
+],
+"Navegación privada",
+"No hace al usuario anónimo frente a los sitios web, su empresa o su proveedor de internet."
+],
+[
+28,
+"En Microsoft Edge, ¿qué combinación abre una nueva ventana InPrivate?",
+"Ctrl + Mayús + N",
+[
+"Ctrl + Mayús + P",
+"Ctrl + N",
+"Ctrl + Mayús + I"
+],
+"Atajos del navegador",
+"En Firefox, la ventana privada se abre con Ctrl + Mayús + P."
+],
+[
+28,
+"En los navegadores, Ctrl + Mayús + T sirve para:",
+"Volver a abrir la última pestaña cerrada",
+[
+"Abrir una nueva pestaña en blanco junto a la actual",
+"Cerrar todas las pestañas abiertas salvo la actual",
+"Traducir la página al idioma configurado en el navegador"
+],
+"Atajos del navegador",
+"Ctrl + T abre una pestaña nueva y Ctrl + W cierra la actual."
+],
+[
+28,
+"¿Qué combinación de teclas añade la página actual a Favoritos o Marcadores?",
+"Ctrl + D",
+[
+"Ctrl + F",
+"Ctrl + H",
+"Ctrl + B"
+],
+"Atajos del navegador",
+"Ctrl + F busca en la página y Ctrl + H abre el historial."
+],
+[
+28,
+"En los navegadores, Ctrl + J abre:",
+"Las descargas",
+[
+"El historial",
+"Los favoritos",
+"Una pestaña nueva"
+],
+"Atajos del navegador",
+"Ctrl + H abre el historial."
+],
+[
+28,
+"La tecla F5 en un navegador sirve para:",
+"Actualizar o recargar la página",
+[
+"Ir a la página de inicio configurada en el navegador",
+"Activar o desactivar el modo de pantalla completa",
+"Imprimir la página o guardarla como PDF"
+],
+"Atajos del navegador",
+"F11 activa la pantalla completa."
+],
+[
+28,
+"Una intranet es:",
+"Una red privada de una organización que usa las tecnologías de internet y solo es accesible para sus miembros",
+[
+"Una red pública mundial accesible para cualquier persona",
+"La parte de internet que solo puede visitarse con navegadores especiales y que no aparece indexada en los buscadores",
+"Una red que conecta varias organizaciones entre sí a través de satélites"
+],
+"Redes",
+"Si se abre a usuarios externos autorizados (proveedores, clientes), se habla de extranet."
+],
+[
+28,
+"¿Qué es una dirección IP?",
+"Un número que identifica a un dispositivo dentro de una red",
+[
+"El nombre de dominio con el que se identifica una página web en internet",
+"La contraseña que protege el acceso a la red wifi de una casa u oficina",
+"El código de un certificado digital"
+],
+"Direccionamiento",
+"Existen direcciones IPv4 (32 bits) e IPv6 (128 bits)."
+],
+[
+28,
+"¿Cuántos bits tiene una dirección IPv6?",
+"128",
+[
+"32",
+"64",
+"256"
+],
+"Direccionamiento",
+"Las direcciones IPv4 tienen 32 bits."
+],
+[
+28,
+"La URL es:",
+"La dirección que identifica un recurso en internet",
+[
+"El protocolo de cifrado que utilizan las páginas web seguras",
+"El servidor físico en el que se aloja una página web",
+"El nombre del programa que se usa para navegar por internet"
+],
+"Navegación",
+"Por ejemplo, https://administracion.gob.es."
+],
+[
+28,
+"¿Qué indica el candado que aparece junto a la dirección en el navegador?",
+"Que la conexión con el sitio está cifrada",
+[
+"Que el sitio es oficial y no puede ser fraudulento",
+"Que la página no usa cookies",
+"Que la web está bloqueada"
+],
+"Seguridad",
+"Una web fraudulenta también puede tener conexión cifrada; el candado no garantiza que sea legítima."
+],
+[
+28,
+"Un motor de búsqueda o buscador es:",
+"Un sistema que localiza páginas web según las palabras clave que introduce el usuario",
+[
+"Un programa para descargar archivos de forma más rápida",
+"Un servidor que asigna los nombres de dominio a las organizaciones que los solicitan y pagan por ellos",
+"La aplicación que muestra las páginas web en pantalla"
+],
+"Buscadores",
+"La aplicación que muestra las páginas es el navegador."
+],
+[
+28,
+"En la mayoría de buscadores, escribir una frase entre comillas sirve para:",
+"Buscar exactamente esa frase",
+[
+"Excluir esas palabras de la búsqueda",
+"Buscar solo imágenes",
+"Buscar sinónimos"
+],
+"Buscadores",
+"El signo menos delante de una palabra la excluye de los resultados."
+],
+[
+28,
+"El protocolo FTP se usa para:",
+"Transferir archivos entre equipos",
+[
+"Enviar mensajes de correo electrónico a otros usuarios",
+"Resolver los nombres de dominio en direcciones IP",
+"Cifrar las páginas web que contienen datos personales"
+],
+"Protocolos de internet",
+"Existe una versión segura llamada SFTP o FTPS."
+],
+[
+28,
+"¿Qué es la caché del navegador?",
+"Un almacenamiento temporal de elementos de las páginas visitadas para cargarlas más rápido",
+[
+"La lista de contraseñas y datos de inicio de sesión que el usuario ha decidido guardar en el navegador",
+"La carpeta del disco duro en la que se guardan por defecto todos los archivos descargados de internet",
+"El registro de las páginas marcadas como favoritas"
+],
+"Navegación",
+"Borrar la caché puede resolver problemas de visualización de algunas páginas."
+],
+[
+28,
+"¿Qué es un navegador web?",
+"Una aplicación que permite acceder a las páginas web y visualizarlas",
+[
+"Un servidor que almacena páginas web y las envía a los usuarios que las solicitan",
+"Un protocolo de transferencia de archivos",
+"Una red privada virtual"
+],
+"Navegadores",
+"Ejemplos: Microsoft Edge, Google Chrome, Mozilla Firefox o Safari."
+],
+[
+28,
+"¿Qué es una VPN?",
+"Una red privada virtual que crea una conexión cifrada a través de internet",
+[
+"Un tipo de virus que se propaga por la red infectando los equipos conectados a ella",
+"Un navegador especial que deben usar los empleados públicos para acceder a la sede",
+"Un servidor de correo electrónico seguro"
+],
+"Redes",
+"Permite, por ejemplo, teletrabajar accediendo a la red interna de la organización."
+]
+]

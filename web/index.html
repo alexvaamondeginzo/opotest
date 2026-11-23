@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpoTest · Tests de oposiciones (Auxiliar Administrativo Comunidad de Madrid 2027)</title>
+<meta name="description" content="Tests de oposiciones con preguntas tipo examen comprobadas con el BOE, explicación y artículo de cada respuesta, simulacros con el formato real y repaso de fallos. Empezando por Auxiliar Administrativo de la Comunidad de Madrid (1224 preguntas).">
+<meta property="og:title" content="OpoTest · Tests de oposiciones con preguntas tipo examen">
+<meta property="og:description" content="1224 preguntas tipo examen de los 21 temas: legislación comprobada con el BOE y ofimática de Windows 11 y Microsoft 365. Simulacros de los dos ejercicios, como el examen real.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://opomadridprueba.netlify.app/">
+<meta property="og:image" content="https://opomadridprueba.netlify.app/og-image.png">
+<link rel="canonical" href="https://opomadridprueba.netlify.app/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OpoTest: tests de oposiciones con preguntas comprobadas con el BOE">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f97316">
+<link rel="icon" type="image/png" sizes="32x32" href="logo-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="logo-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+:root{
+  /* Plan: hoja de examen oficial; tinta azul pizarra, acento carmesí de la bandera de Madrid; una columna de trabajo centrada */
+  --bg:#f4f5f8; --surface:#ffffff; --ink:#1a2233; --muted:#5b6478; --line:#dde1ea;
+  --accent:#c2410c; --accent-soft:#fff1e6; --brand:#f97316;
+  --ok:#17794a; --ok-soft:#e3f4ea; --bad:#b3261e; --bad-soft:#fdeceb; --warn:#9a6700; --warn-soft:#fff4d6;
+  /* Fuentes del sistema: sin peticiones a servidores de terceros */
+  --display:ui-rounded,"SF Pro Rounded","Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11151f; --surface:#1a2030; --ink:#e7eaf2; --muted:#a0a8bb; --line:#2c3447;
+    --accent:#fb923c; --accent-soft:#3a2414; --brand:#f97316;
+    --ok:#4cd08a; --ok-soft:#14301f; --bad:#ff7a70; --bad-soft:#3a1815; --warn:#f2c14e; --warn-soft:#352a10;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11151f; --surface:#1a2030; --ink:#e7eaf2; --muted:#a0a8bb; --line:#2c3447;
+  --accent:#fb923c; --accent-soft:#3a2414; --brand:#f97316;
+  --ok:#4cd08a; --ok-soft:#14301f; --bad:#ff7a70; --bad-soft:#3a1815; --warn:#f2c14e; --warn-soft:#352a10;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+a{color:var(--accent)}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px 64px;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:10px;border-bottom:3px solid var(--brand);padding-bottom:18px}
+.eyebrow{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font:800 clamp(28px,5.5vw,40px)/1.08 var(--display);margin:0;text-wrap:balance}
+h2{font:600 20px/1.25 var(--display);margin:0;text-wrap:balance}
+h3{font:600 16px/1.3 var(--body);margin:0}
+.sub{color:var(--muted);margin:0;max-width:62ch}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:6px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column}
+.fact b{font:800 22px/1.15 var(--display);font-variant-numeric:tabular-nums}
+.fact span{font-size:13px;color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:16px}
+fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+legend{font-weight:600;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.chip span{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--bg);font-size:15px}
+.chip input:checked + span{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+.chip input:focus-visible + span{outline:2px solid var(--accent);outline-offset:2px}
+.chip input:disabled + span{opacity:.45}
+.chip small{color:var(--muted);font-weight:400}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.mode{position:relative}
+.mode input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.mode div{height:100%;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--bg);display:flex;flex-direction:column;gap:2px}
+.mode div b{font-size:15px}
+.mode div span{font-size:13px;color:var(--muted)}
+.mode input:checked + div{border-color:var(--accent);background:var(--accent-soft)}
+.mode input:focus-visible + div{outline:2px solid var(--accent);outline-offset:2px}
+.mode input:disabled + div{opacity:.45}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);font:600 14px var(--body);cursor:pointer;text-decoration:underline}
+button{font:600 16px var(--body);border-radius:8px;padding:12px 18px;cursor:pointer;border:1px solid transparent}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.primary{background:var(--accent);color:#fff}
+.primary:disabled{opacity:.45;cursor:not-allowed}
+.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.meta{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.progress{display:flex;flex-direction:column;gap:6px}
+.bar{height:6px;background:var(--line);border-radius:999px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+.timer{font:600 15px var(--body);font-variant-numeric:tabular-nums;padding:4px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.timer.low{background:var(--warn-soft);color:var(--warn);border-color:var(--warn)}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.q{font:600 19px/1.4 var(--body);margin:0;text-wrap:pretty}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-weight:400;padding:12px 14px}
+.opt b{flex:0 0 26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);font-size:14px;background:var(--surface)}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
+.opt:disabled{cursor:default}
+.expl{border-left:4px solid var(--ok);background:var(--ok-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:15px}
+.expl.no{border-left-color:var(--bad);background:var(--bad-soft)}
+.expl strong{display:block;margin-bottom:4px}
+.keys{font-size:13px;color:var(--muted)}
+kbd{font:600 12px var(--body);border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;background:var(--bg)}
+.score{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.tile{border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:2px}
+.tile span{font-size:13px;color:var(--muted)}
+.tile b{font:800 26px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-weight:600;font-size:14px}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+.stats{display:flex;flex-direction:column;gap:8px}
+.stat{display:grid;grid-template-columns:minmax(0,1fr) 120px 48px;gap:10px;align-items:center;font-size:14px}
+.stat .track{height:8px;background:var(--line);border-radius:999px;overflow:hidden}
+.stat .track i{display:block;height:100%;border-radius:999px}
+.stat .pct{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.temario{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:6px;font-size:14px}
+.temario div{display:flex;gap:8px;align-items:baseline;padding:6px 8px;border-radius:6px;background:var(--bg)}
+.temario div b{font-variant-numeric:tabular-nums;min-width:22px}
+.temario .on{background:var(--ok-soft)}
+.temario .on::after{content:"Disponible";margin-left:auto;font-size:11px;font-weight:600;color:var(--ok)}
+.temario .off{color:var(--muted)}
+.temario .off::after{content:"Próximamente";margin-left:auto;font-size:11px}
+details summary{cursor:pointer;font-weight:600}
+details[open] summary{margin-bottom:10px}
+.review{display:flex;flex-direction:column;gap:12px}
+.rev{border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.rev .your{color:var(--bad)}
+.rev .right{color:var(--ok)}
+.cta{border:2px solid var(--accent);background:var(--accent-soft);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.cta p{margin:0}
+.cta a{align-self:flex-start;text-decoration:none;background:var(--accent);color:#fff;font-weight:600;border-radius:8px;padding:10px 16px}
+.cta a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.faq{display:flex;flex-direction:column;gap:12px;font-size:15px}
+.faq p{margin:4px 0 0;color:var(--muted)}
+footer{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:16px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px}
+.topbar .brand{font-weight:700;letter-spacing:.02em}
+.acct{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.acct .who{color:var(--muted);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.small{font-size:14px;padding:8px 14px}
+.sync{font-size:12px;color:var(--muted)}
+dialog{border:1px solid var(--line);border-radius:14px;padding:0;background:var(--surface);color:var(--ink);width:min(440px,calc(100% - 32px))}
+dialog::backdrop{background:rgba(10,14,24,.55)}
+.dlg{padding:22px;display:flex;flex-direction:column;gap:14px}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;border-radius:0;padding:8px 10px;color:var(--muted);font-size:15px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+form{display:flex;flex-direction:column;gap:12px}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600}
+label.f input{font:16px var(--body);padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+label.f input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+label.chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:400}
+label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--accent)}
+.msg{font-size:14px;padding:10px 12px;border-radius:8px}
+.msg.err{background:var(--bad-soft);color:var(--bad)}
+.msg.ok{background:var(--ok-soft);color:var(--ok)}
+.cookiebar{position:fixed;left:16px;right:16px;bottom:16px;max-width:760px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.18);padding:14px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:14px;z-index:50}
+.cookiebar p{margin:0;flex:1 1 320px}
+footer nav{display:flex;gap:14px;flex-wrap:wrap}
+.today{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.tbox{border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;background:var(--bg)}
+.tbox .big{font:800 26px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.tbox .lbl{font-size:13px;color:var(--muted)}
+.goalbar{height:8px;background:var(--line);border-radius:999px;overflow:hidden;margin-top:4px}
+.goalbar i{display:block;height:100%;background:var(--ok);border-radius:999px;width:0}
+.goalsel{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.goalsel{gap:4px}
+.goalsel button{font-size:13px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.goalsel button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+.week{display:flex;gap:4px;margin-top:4px}
+.week span{flex:1;height:8px;border-radius:3px;background:var(--line)}
+.week span.on{background:var(--accent)}
+.chart{width:100%;height:auto;display:block}
+.chart text{fill:var(--muted);font:12px var(--body)}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .pass{stroke:var(--ok);stroke-width:1.5;stroke-dasharray:5 4}
+.chart text.passlbl{fill:var(--ok);font-weight:600}
+.chart .area{fill:var(--accent-soft)}
+.chart .line{stroke:var(--accent);stroke-width:2.5;fill:none}
+.chart .dot{fill:var(--surface);stroke:var(--accent);stroke-width:2.5}
+.chart .last{fill:var(--accent)}
+.examtag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:#fff1c2;color:#7a5200}
+@media (prefers-color-scheme:dark){.examtag{background:#4a3a10;color:#ffd77a}}
+.qtools{display:flex;gap:14px;margin-left:auto}
+.qtools .linkbtn{text-decoration:none}
+.qtools .linkbtn[aria-pressed="true"]{color:#a16207}
+.expl a.boe{display:inline-block;margin-top:6px;font-size:14px;font-weight:600}
+.rev a.boe{font-size:14px;font-weight:600}
+.oficiales{display:flex;flex-wrap:wrap;gap:10px}
+.sin-enlaces{display:none!important}
+.oficiales a{font-size:14px}
+textarea{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%;min-height:110px;resize:vertical}
+.acceso{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--line);border-left:4px solid var(--accent);background:var(--surface);border-radius:12px;padding:12px 16px;margin:0 0 16px}
+.acceso p{margin:0}
+.acceso.ok{border-left-color:var(--ok)}
+.planes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0}
+.plan{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--bg);display:flex;flex-direction:column;gap:8px}
+.plan.dest{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.plan h3{margin:0;font-size:17px}
+.plan .precio{font-size:30px;font-weight:800;line-height:1}
+.plan .precio small{font-size:13px;font-weight:500;color:var(--muted)}
+.plan ul{margin:0;padding-left:18px;font-size:14px;flex:1}
+.plan .actual{font-size:13px;color:var(--ok);font-weight:600}
+.lock{font-size:11px;color:var(--muted);margin-left:4px}
+.admin-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:10px 0}
+.admin-tiles div{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg)}
+.admin-tiles b{display:block;font-size:22px}
+.admin-tiles span{font-size:12px;color:var(--muted)}
+.admin-form{display:flex !important;flex-direction:row !important;flex-wrap:wrap;gap:8px;align-items:flex-end !important;justify-content:flex-start !important}
+.admin-form label{display:flex;flex-direction:column;font-size:13px;gap:4px}
+.admin-form input,.admin-form select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.tabla{width:100%;border-collapse:collapse;font-size:13px}
+.tabla th,.tabla td{text-align:left;border-bottom:1px solid var(--line);padding:6px 6px;vertical-align:top;white-space:nowrap}
+.tabla-wrap{overflow-x:auto;max-height:420px;overflow-y:auto;border:1px solid var(--line);border-radius:10px}
+.est{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;background:var(--bg)}
+.est.completo,.est.legislacion,.est.admin{background:#dff3e6;color:#1d6b3a}.est.caducada{background:#fde2e2;color:#9b1c1c}.est.prueba,.est.pruebas{background:#fff1c2;color:#7a5200}
+.hidden{display:none !important}
+@media (max-width:480px){.stat{grid-template-columns:minmax(0,1fr) 80px 44px}}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+.brand{display:inline-flex;align-items:center;gap:8px}
+.brand img{width:28px;height:28px;border-radius:7px}
+.mainnav{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:0 0 18px;overflow-x:auto}
+.mainnav button{background:none;border:0;border-bottom:3px solid transparent;border-radius:0;color:var(--muted);font:600 15px var(--body);padding:10px 14px;cursor:pointer;white-space:nowrap}
+.mainnav button[aria-current="page"]{color:var(--ink);border-bottom-color:var(--brand)}
+.mainnav button:hover{color:var(--ink)}
+.hero{display:flex;flex-direction:column;gap:8px;margin:4px 0 18px}
+.hero h1{margin:0}
+.opgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.opcard{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--surface);display:flex;flex-direction:column;gap:8px}
+.opcard.on{border-top:4px solid var(--brand)}
+.opcard.off{opacity:.72}
+.opcard h3{margin:0;font-size:17px}
+.opcard .meta{margin:0}
+.opcard .chips2{display:flex;flex-wrap:wrap;gap:6px}
+.opcard .chips2 span{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.opcard .soon{align-self:flex-start;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.opcard button{align-self:flex-start;margin-top:auto}
+.opsel{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.opsel select{font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <span class="brand"><img src="logo-192.png" alt="" width="28" height="28">OpoTest</span>
+    <div class="acct">
+      <span class="sync hidden" id="sync-state"></span>
+      <span class="who hidden" id="who"></span>
+      <button class="ghost small hidden" id="btn-login">Entrar o crear cuenta</button>
+      <button class="ghost small hidden" id="btn-admin">Administración</button>
+      <button class="ghost small hidden" id="btn-account">Mi cuenta</button>
+    </div>
+  </div>
+  <nav class="mainnav" id="mainnav" aria-label="Secciones">
+    <button type="button" data-view="inicio">Inicio</button>
+    <button type="button" data-view="practicar">Practicar</button>
+    <button type="button" data-view="progreso">Mi progreso</button>
+  </nav>
+
+  <section id="inicio" data-view="inicio" aria-labelledby="inicio-h">
+    <div class="hero">
+      <div class="eyebrow">Tests de oposiciones</div>
+      <h1 id="inicio-h">Practica con preguntas tipo examen y llega preparado</h1>
+      <p class="sub">Preguntas comprobadas con los textos del BOE, cada una con su explicación y el artículo, simulacros con el formato real del examen y repaso de tus fallos. <span id="sub-oferta">Pruébalo gratis 2 días, sin tarjeta.</span></p>
+    </div>
+    <h2 style="margin:0 0 10px">Elige tu oposición</h2>
+    <div class="opgrid" id="opgrid"></div>
+  </section>
+
+  <header data-view="practicar">
+    <div class="opsel"><div class="eyebrow" id="op-eyebrow"></div><select id="op-select" aria-label="Cambiar de oposición"></select></div>
+    <h1 id="op-titulo"></h1>
+    <p class="sub" id="op-sub"></p>
+    <div class="facts">
+      <div class="fact"><b id="f-n"></b><span>preguntas comprobadas</span></div>
+      <div class="fact"><b id="f-temas"></b><span>temas del temario</span></div>
+      <div class="fact"><b id="f-plazas"></b><span>plazas convocadas</span></div>
+      <div class="fact"><b id="f-examen"></b><span id="f-examen-l"></span></div>
+    </div>
+  </header>
+
+  <div id="acceso" class="acceso hidden" role="status" data-view="inicio practicar"></div>
+
+  <section id="todaycard" class="card" aria-labelledby="today-h" data-view="practicar progreso">
+    <h2 id="today-h" class="hidden">Tu día de estudio</h2>
+    <div class="today">
+      <div class="tbox">
+        <span class="lbl" id="cd-lbl">Examen</span>
+        <span class="big" id="cd-days"></span>
+        <span class="lbl" id="cd-note"></span>
+      </div>
+      <div class="tbox">
+        <span class="lbl">Racha de estudio</span>
+        <span class="big" id="streak"></span>
+        <div class="week" id="week" aria-label="Últimos 7 días"></div>
+        <span class="lbl" id="streak-note"></span>
+      </div>
+      <div class="tbox">
+        <span class="lbl">Objetivo de hoy</span>
+        <span class="big" id="goal-num"></span>
+        <div class="goalbar"><i id="goal-bar"></i></div>
+        <div class="goalsel" role="group" aria-label="Elegir objetivo diario"><span>Meta:</span><button type="button" data-goal="10">10</button><button type="button" data-goal="20">20</button><button type="button" data-goal="40">40</button><button type="button" data-goal="80">80</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="setup" class="card" aria-labelledby="setup-h" data-view="practicar">
+    <h2 id="setup-h">Prepara tu test</h2>
+    <fieldset>
+      <legend>Modo</legend>
+      <div class="modes">
+        <label class="mode"><input type="radio" name="modo" id="modo-practica" value="practica" checked><div><b>Práctica</b><span>Corrección y explicación después de cada pregunta.</span></div></label>
+        <span id="modos-sim" style="display:contents"></span>
+        <label class="mode"><input type="radio" name="modo" id="modo-fallos" value="fallos"><div><b>Repasar mis fallos</b><span id="fallos-desc">Las preguntas que has fallado en este navegador.</span></div></label>
+        <label class="mode"><input type="radio" name="modo" id="modo-marcadas" value="marcadas"><div><b>Repasar marcadas</b><span id="marcadas-desc">Las preguntas que marques con ☆ durante los tests.</span></div></label>
+      </div>
+    </fieldset>
+    <fieldset id="temas-fs">
+      <legend>Temas <button type="button" class="linkbtn" id="toggle-temas">Quitar todos</button></legend>
+      <div class="chips" id="temas"></div>
+    </fieldset>
+    <fieldset id="nums-fs">
+      <legend>Número de preguntas</legend>
+      <div class="chips" id="nums"></div>
+    </fieldset>
+    <div class="row">
+      <span class="meta" id="pool-info"></span>
+      <button class="primary" id="start">Empezar test</button>
+    </div>
+    <div id="setup-msg" class="msg hidden" role="status"></div>
+  </section>
+
+  <section id="oficiales-card" class="card hidden" aria-labelledby="ofi-h" data-view="practicar">
+    <h2 id="ofi-h">Convocatoria y exámenes oficiales</h2>
+    <p class="meta" style="margin:0" id="ofi-txt"></p>
+    <div class="oficiales" id="oficiales"></div>
+  </section>
+
+  <section id="mystats" class="card" aria-labelledby="stats-h" data-view="progreso">
+    <div class="row"><h2 id="stats-h">Tu progreso</h2><button type="button" class="linkbtn" id="reset-stats">Borrar mi progreso</button></div>
+    <p class="meta" id="stats-sum"></p>
+    <p class="meta hidden" id="stats-vacio">Todavía no has respondido preguntas de esta oposición. Ve a <button type="button" class="linkbtn" data-go="practicar">Practicar</button> para empezar.</p>
+    <div class="stats" id="stats"></div>
+    <div id="sims-wrap" class="hidden">
+      <h3 style="margin:8px 0 6px">Tus últimos simulacros (nota sobre 50)</h3>
+      <div id="sims"></div>
+      <p class="meta" id="sims-note" style="margin:6px 0 0"></p>
+    </div>
+  </section>
+
+  <section id="quiz" class="card hidden" aria-live="polite">
+    <div class="progress">
+      <div class="row"><span class="meta" id="count"></span><span class="timer hidden" id="timer" aria-label="Tiempo restante"></span><span class="meta" id="tally"></span></div>
+      <div class="bar"><i id="bar"></i></div>
+    </div>
+    <div class="row" style="justify-content:flex-start;gap:8px;flex-wrap:wrap"><span class="tag" id="qtema"></span><span class="examtag hidden" id="qexam"></span><span class="qtools"><button type="button" class="linkbtn" id="mark" aria-pressed="false">☆ Marcar</button><button type="button" class="linkbtn" id="report">Reportar error</button></span></div>
+    <p class="q" id="qtext"></p>
+    <div class="opts" id="opts"></div>
+    <div id="feedback"></div>
+    <div class="row">
+      <button class="ghost" id="quit">Terminar ahora</button>
+      <div class="row" style="gap:10px">
+        <button class="ghost" id="skip">Dejar en blanco</button>
+        <button class="primary" id="next">Siguiente</button>
+      </div>
+    </div>
+    <p class="keys">Atajos: <kbd>A</kbd>–<kbd>D</kbd> o <kbd>1</kbd>–<kbd>4</kbd> para responder, <kbd>Intro</kbd> para seguir.</p>
+  </section>
+
+  <section id="result" class="card hidden">
+    <h2>Resultado</h2>
+    <div class="score" id="score"></div>
+    <p id="verdict" style="margin:0"></p>
+    <div id="by-tema-wrap">
+      <h3 style="margin-bottom:8px">Por temas</h3>
+      <div class="stats" id="by-tema"></div>
+    </div>
+    <div class="row">
+      <button class="primary" id="again">Hacer otro test</button>
+      <button class="ghost" id="retry-wrong">Repetir solo los fallos</button>
+    </div>
+    <div class="cta hidden" id="cta">
+      <h2>¿Me das tu opinión? Es un minuto</h2>
+      <p>Ya incluye los 21 temas: legislación (1-15) y ofimática de Windows 11 y Microsoft 365 (16-21), con un simulacro de cada ejercicio como en el examen de junio de 2027. Sigo ampliándolo y revisándolo.</p>
+      <p>Cuéntame qué te ha parecido, qué echas en falta o si has visto algún error. Si dejas tu email, te aviso cuando esté completo.</p>
+      <a id="cta-link" href="#" target="_blank" rel="noopener">Dar mi opinión</a>
+    </div>
+    <h2 id="review-h">Repaso de fallos y preguntas en blanco</h2>
+    <div class="review" id="review"></div>
+  </section>
+
+  <section id="admin" class="card hidden" aria-labelledby="admin-h">
+    <div class="row"><h2 id="admin-h">Panel de administración</h2><button class="ghost small" id="admin-reload">Actualizar</button></div>
+    <div id="admin-msg" class="msg hidden" role="status"></div>
+    <div class="admin-tiles" id="admin-tiles"></div>
+    <h3>Visitas y registros <span class="meta">(últimos 14 días · «sin sesión» = gente que entra sin haber iniciado sesión)</span></h3>
+    <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Día</th><th>Visitas</th><th>Sin sesión</th><th>Registros nuevos</th></tr></thead><tbody id="admin-visitas"></tbody></table></div>
+    <h3>Modo pruebas</h3>
+    <p class="meta" id="admin-beta-txt" style="margin:0 0 8px"></p>
+    <button class="ghost small" id="admin-beta-btn"></button>
+    <h3>Dar acceso a mano</h3>
+    <p class="meta" style="margin:0 0 8px">Para testers, sorteos o reclamaciones. La persona no paga nada. Puede ser un email que aún no se ha registrado: el acceso se activará cuando se registre.</p>
+    <form class="admin-form" id="admin-grant">
+      <label>Email<input type="email" id="ag-email" required placeholder="nombre@gmail.com"></label>
+      <label>Oposición<select id="ag-op"></select></label>
+      <label>Plan<select id="ag-plan"><option value="completo">Completo</option><option value="legislacion">Legislación</option></select></label>
+      <label>Hasta<input type="date" id="ag-hasta" value="2027-12-31" required></label>
+      <button class="primary small" type="submit">Dar acceso</button>
+      <button class="ghost small" type="button" id="ag-revoke">Quitar accesos dados a mano</button>
+    </form>
+    <div class="row" style="margin-top:16px"><h3 style="margin:0">Usuarios <span class="meta" id="admin-ucount"></span></h3><input type="search" id="admin-filter" placeholder="Buscar email…" style="font:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)"></div>
+    <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Email</th><th>Registro</th><th>Estado</th><th>Hasta</th><th>Respuestas</th><th>Última actividad</th></tr></thead><tbody id="admin-users"></tbody></table></div>
+    <h3>Comprobar que todo funciona</h3>
+    <p class="meta" style="margin:0 0 8px">Revisa la conexión, los permisos y las preguntas como lo haría un usuario.</p>
+    <button class="ghost small" id="admin-diag">Comprobar ahora</button>
+    <ul id="admin-diag-res" style="margin:8px 0 0;padding-left:18px;font-size:14px"></ul>
+    <h3>Errores recientes <span class="meta">(lo que ha fallado a los usuarios; ellos solo ven un aviso amable)</span></h3>
+    <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Fecha</th><th>Usuario</th><th>Dónde</th><th>Error</th><th>Navegador</th></tr></thead><tbody id="admin-errores"></tbody></table></div>
+    <h3>Compras y accesos</h3>
+    <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Fecha</th><th>Email</th><th>Plan</th><th>Importe</th><th>Tipo</th><th>Hasta</th></tr></thead><tbody id="admin-compras"></tbody></table></div>
+  </section>
+
+  <section id="planes" class="card hidden" aria-labelledby="planes-h" data-view="practicar">
+    <h2 id="planes-h">Planes</h2>
+    <p class="meta" id="planes-intro" style="margin:0">Al crear tu cuenta tienes <strong>2 días de prueba gratis con todo incluido</strong>, sin poner tarjeta. Después, elige un plan. Pago único, sin suscripción: acceso hasta el 31 de diciembre de 2027.</p>
+    <div id="planes-msg" class="msg hidden" role="status"></div>
+    <div class="planes" id="planes-list" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"></div>
+    <label class="chk"><input type="checkbox" id="pay-legal"><span>He leído y acepto las <a href="condiciones.html" target="_blank" rel="noopener">condiciones de compra</a>. Pido acceder al contenido digital de inmediato y entiendo que, al empezar el acceso, pierdo el derecho de desistimiento de 14 días.</span></label>
+    <p class="meta" style="margin:0">El pago se hace en la página segura de Stripe con tarjeta, Apple Pay o Google Pay. Nunca vemos los datos de tu tarjeta.</p>
+  </section>
+
+  <section class="card" aria-labelledby="temario-h" data-view="practicar">
+    <details>
+      <summary id="temario-h">Qué temas incluye</summary>
+      <div class="temario" id="temario"></div>
+    </details>
+  </section>
+
+  <section class="card" aria-labelledby="faq-h" data-view="inicio practicar">
+    <h2 id="faq-h">Preguntas frecuentes</h2>
+    <div class="faq">
+      <div id="faq-examen-w"><h3>¿Cómo es el examen real?</h3><p id="faq-examen"></p></div>
+      <div><h3>¿De dónde salen las preguntas?</h3><p>Las de legislación se redactan a partir de los textos consolidados del BOE de cada ley y se comprueban contra ellos. Por eso recogen cambios recientes, como la reforma constitucional de 2026 o el permiso de nacimiento de 19 semanas del TREBEP. Las de ofimática se basan en el funcionamiento de Windows 11 y Microsoft 365 y en la documentación de Microsoft; los atajos que dependen del idioma se evitan o se indica la versión en español.</p></div>
+      <div id="faq-precio" class="hidden"><h3>¿Cuánto cuesta?</h3><p>Los 2 primeros días son gratis y no tienes que poner ninguna forma de pago. Después, cada oposición tiene sus propios planes de pago único, con simulacros incluidos. No es una suscripción: pagas una vez y tienes acceso hasta el 31 de diciembre de 2027.</p></div>
+      <div><h3>¿Por qué tengo que registrarme?</h3><p>La prueba gratis va unida a tu email, y así tu progreso y tus fallos se guardan en tu cuenta y los recuperas en cualquier dispositivo. No se admiten emails temporales. Nadie más ve tus resultados.</p></div>
+      <div id="faq-cayo-w"><h3>¿Qué significa «Cayó en examen oficial»?</h3><p id="faq-cayo"></p></div>
+      <div><h3>¿Es material oficial?</h3><p>No. Es un test de práctica independiente, sin relación con ninguna administración. Ante cualquier duda, manda siempre el texto del BOE y las bases de la convocatoria.</p></div>
+      <div><h3>He visto un error, ¿qué hago?</h3><p id="faq-error">Avísame y lo corrijo. Cada aviso mejora el test para todos.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <nav aria-label="Información legal"><a href="aviso-legal.html">Aviso legal</a><a href="condiciones.html">Condiciones de compra</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a><button type="button" class="linkbtn" id="open-cookies" style="font-size:13px">Ver aviso de cookies</button></nav>
+    <span>Fuentes: textos consolidados del BOE y de los boletines autonómicos de cada ley del programa. Ofimática: documentación oficial de soporte de Microsoft para Windows 11 y Microsoft 365.</span>
+    <span id="foot-programa"></span>
+    <span>Tests de práctica independientes, sin relación con ninguna administración pública.</span>
+  </footer>
+</div>
+
+<dialog id="dlg-report" aria-labelledby="rep-h">
+  <form class="dlg" id="f-report" novalidate>
+    <div class="row"><h2 id="rep-h">Reportar esta pregunta</h2><button type="button" class="ghost small" id="rep-close" aria-label="Cerrar">Cerrar</button></div>
+    <p class="meta" style="margin:0" id="rep-q"></p>
+    <label class="f">¿Qué está mal?<textarea id="rep-msg" required placeholder="Por ejemplo: la ley ha cambiado, la opción B también es correcta…"></textarea></label>
+    <label class="f">Email (opcional, para responderte)<input type="email" id="rep-email" autocomplete="email"></label>
+    <div id="rep-status" class="msg hidden" role="status"></div>
+    <button class="primary" type="submit" id="rep-btn">Enviar</button>
+  </form>
+</dialog>
+
+<dialog id="dlg-wait" aria-labelledby="wait-h">
+  <form class="dlg" id="f-wait" novalidate>
+    <div class="row"><h2 id="wait-h">Avísame cuando esté lista</h2><button type="button" class="ghost small" id="wait-close" aria-label="Cerrar">Cerrar</button></div>
+    <p class="meta" style="margin:0" id="wait-op"></p>
+    <label class="f">Email<input type="email" id="wait-email" autocomplete="email" required></label>
+    <label class="chk"><input type="checkbox" id="wait-legal" required><span>Acepto que usen mi email solo para avisarme del lanzamiento, según la <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.</span></label>
+    <div id="wait-status" class="msg hidden" role="status"></div>
+    <button class="primary" type="submit" id="wait-btn">Apuntarme</button>
+  </form>
+</dialog>
+
+<!-- Formularios ocultos para que Netlify Forms los detecte al publicar -->
+<form name="reporte" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="oposicion"><input name="id"><input name="pregunta"><input name="referencia"><textarea name="mensaje"></textarea><input name="email"><input name="bot-field">
+</form>
+<form name="lista-espera" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="email"><input name="oposicion"><input name="bot-field">
+</form>
+
+<dialog id="dlg-auth" aria-labelledby="auth-h">
+  <div class="dlg">
+    <div class="row"><h2 id="auth-h">Tu cuenta</h2><button class="ghost small" id="auth-close" aria-label="Cerrar">Cerrar</button></div>
+    <p class="meta" style="margin:0" id="auth-intro">Al crear tu cuenta empiezas <strong>2 días de prueba gratis con todo incluido</strong>, sin tarjeta. Tu progreso se guarda y lo recuperas en cualquier dispositivo.</p>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-signup" aria-selected="true">Crear cuenta</button>
+      <button role="tab" id="tab-login" aria-selected="false">Entrar</button>
+      <button role="tab" id="tab-reset" aria-selected="false">He olvidado la contraseña</button>
+    </div>
+    <div id="auth-msg" class="msg hidden" role="status"></div>
+    <form id="f-signup" novalidate>
+      <label class="f">Email (no se admiten emails temporales)<input type="email" id="su-email" autocomplete="email" required></label>
+      <label class="f">Contraseña (mínimo 8 caracteres)<input type="password" id="su-pass" autocomplete="new-password" minlength="8" required></label>
+      <label class="chk"><input type="checkbox" id="su-legal" required><span>He leído y acepto la <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad</a> y el <a href="aviso-legal.html" target="_blank" rel="noopener">aviso legal</a>.</span></label>
+      <label class="chk"><input type="checkbox" id="su-age" required><span>Declaro que tengo 14 años o más.</span></label>
+      <button class="primary" type="submit" id="su-btn">Crear cuenta</button>
+    </form>
+    <form id="f-login" class="hidden" novalidate>
+      <label class="f">Email<input type="email" id="li-email" autocomplete="email" required></label>
+      <label class="f">Contraseña<input type="password" id="li-pass" autocomplete="current-password" required></label>
+      <button class="primary" type="submit" id="li-btn">Entrar</button>
+    </form>
+    <form id="f-reset" class="hidden" novalidate>
+      <label class="f">Email de tu cuenta<input type="email" id="rs-email" autocomplete="email" required></label>
+      <button class="primary" type="submit" id="rs-btn">Enviarme un enlace para cambiarla</button>
+    </form>
+  </div>
+</dialog>
+
+<dialog id="dlg-account" aria-labelledby="acc-h">
+  <div class="dlg">
+    <div class="row"><h2 id="acc-h">Mi cuenta</h2><button class="ghost small" id="acc-close" aria-label="Cerrar">Cerrar</button></div>
+    <p style="margin:0">Has entrado como <strong id="acc-email"></strong>. Tu progreso se guarda automáticamente.</p>
+    <p style="margin:0" id="acc-plan"></p>
+    <div id="acc-msg" class="msg hidden" role="status"></div>
+    <form id="f-newpass" class="hidden" novalidate>
+      <label class="f">Nueva contraseña (mínimo 8 caracteres)<input type="password" id="np-pass" autocomplete="new-password" minlength="8" required></label>
+      <button class="primary" type="submit">Guardar nueva contraseña</button>
+    </form>
+    <div class="row" style="justify-content:flex-start">
+      <button class="ghost small" id="acc-logout">Cerrar sesión</button>
+      <button class="ghost small" id="acc-changepass">Cambiar contraseña</button>
+    </div>
+    <details>
+      <summary>Eliminar mi cuenta</summary>
+      <p class="meta">Se borrarán tu cuenta y todo tu progreso de forma definitiva. No se puede deshacer.</p>
+      <button class="ghost small" id="acc-delete" style="color:var(--bad);border-color:var(--bad)">Eliminar mi cuenta definitivamente</button>
+    </details>
+  </div>
+</dialog>
+
+<div class="cookiebar hidden" id="cookiebar" role="region" aria-label="Aviso de cookies">
+  <p>Esta web no usa cookies de publicidad ni de análisis. Solo guarda en tu navegador lo necesario para que funcione: tu progreso y, si creas una cuenta, tu sesión. <a href="cookies.html">Más información</a></p>
+  <button class="primary small" id="cookie-ok">Entendido</button>
+</div>
+
+<script>
+const FORM_URL="https://forms.gle/2ShnxHhTrBVKBMQ48";
+// ===== CONFIGURACIÓN DEL REGISTRO (Supabase) =====
+// Pega aquí los datos de tu proyecto (Supabase → Project Settings → API).
+// Si se dejan vacíos, la web funciona igual pero sin cuentas de usuario.
+const SUPABASE_URL="https://djzqzywpwliytbtkpdzk.supabase.co";
+const SUPABASE_ANON_KEY="sb_publishable_OBFWgh-yTm0EJvAT8FkTpQ_y1GiRhf6";
+const SUPABASE_JS="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js";
+// Oposiciones disponibles (se generan en build.py a partir de oposiciones.json)
+const OPOS={"aux-cm": {"nombre": "Auxiliar Administrativo de la Comunidad de Madrid", "corto": "Auxiliar · Comunidad de Madrid", "grupo": "C2", "ambito": "Comunidad de Madrid", "eyebrow": "Auxiliar Administrativo · Comunidad de Madrid · C2", "titulo": "Test de legislación y ofimática para el examen de 2027", "sub": "Preguntas tipo examen de los 21 temas, cada una con su explicación: la legislación, con el artículo exacto y comprobada con los textos consolidados del BOE; la ofimática, con Windows 11 y Microsoft 365.", "plazas": 673, "examen": "2027-06-01", "examenOficial": false, "examenTxt": "Junio de 2027", "examenLbl": "Primer ejercicio", "programa": "Orden 1628/2026 (BOCM de 13 de julio de 2026)", "temario": [[1, "Constitución Española"], [2, "Estatuto de Autonomía de Madrid"], [3, "Ley de Gobierno y Administración de la CM"], [4, "Fuentes del ordenamiento jurídico"], [5, "Acto administrativo y recursos"], [6, "Procedimiento administrativo común"], [7, "Jurisdicción contencioso-administrativa"], [8, "Transparencia y protección de datos"], [9, "Contratos del sector público"], [10, "Empleo público (TREBEP y Ley 1/1986)"], [11, "Seguridad Social"], [12, "Ley de Hacienda de la CM"], [13, "Igualdad y no discriminación"], [14, "Atención al ciudadano y administración electrónica"], [15, "Documentos, registro y archivo"], [16, "Explorador de Windows"], [17, "Word"], [18, "Excel"], [19, "Access y Power BI"], [20, "Outlook"], [21, "Trabajo colaborativo en Microsoft 365"]], "sims": [{"id": "simulacro", "nombre": "Simulacro 1.er ejercicio", "desc": "Legislación (temas 1-15): 40 preguntas en 45 minutos. Cada fallo resta un tercio.", "n": 40, "min": 45, "ex": 1, "desde": 1, "hasta": 15, "elegirTemas": true}, {"id": "simulacro2", "nombre": "Simulacro 2.º ejercicio", "desc": "Ofimática (temas 16-21): 30 preguntas en 35 minutos. Cada fallo resta un tercio.", "n": 30, "min": 35, "ex": 2, "desde": 16, "hasta": 21, "elegirTemas": false}], "faqExamen": "Dos ejercicios tipo test. El primero, de legislación (temas 1 a 15), tiene 40 preguntas en 45 minutos. El segundo, de ofimática (temas 16 a 21), 30 preguntas en 35 minutos. Cada uno vale 50 puntos, se aprueba con 25 y cada fallo resta un tercio de acierto.", "faqCayo": "Que lo que pregunta ya salió en un examen oficial reciente de la Comunidad de Madrid (noviembre de 2024, febrero de 2025, abril de 2026 u octubre de 2026). La pregunta no es copia literal del examen, pero sí del mismo contenido.", "planes": [{"id": "legislacion", "nombre": "Legislación", "precio": "14,99", "temas": 15, "desc": ["Temas 1 a 15 (primer ejercicio)", "Simulacros del 1.er ejercicio: 40 preguntas en 45 minutos, con penalización", "Modo práctica, repaso de fallos y gráfica de notas", "Progreso guardado en tu cuenta"]}, {"id": "completo", "nombre": "Completo", "precio": "24,99", "temas": 21, "dest": true, "desc": ["Los 21 temas: legislación y ofimática", "Simulacros de los dos ejercicios, con penalización", "Modo práctica, repaso de fallos y gráfica de notas", "Progreso guardado en tu cuenta"]}], "enlaces": [{"t": "Página oficial de la convocatoria", "u": "https://www.comunidad.madrid/empleo/auxiliares-administracion-general-c2-16282026"}, {"t": "Bases en el BOCM (PDF)", "u": "https://bocm.es/boletin/CM_Orden_BOCM/2026/07/13/BOCM-20260713-2.PDF"}], "enlacesTxt": "La Comunidad de Madrid publica las bases y los cuestionarios con plantilla de convocatorias anteriores. Los iremos convirtiendo en simulacros interactivos.", "counts": {"1": 102, "2": 75, "3": 53, "4": 39, "5": 104, "6": 153, "7": 61, "8": 57, "9": 68, "10": 78, "11": 57, "12": 51, "13": 37, "14": 28, "15": 35, "16": 43, "17": 39, "18": 46, "19": 35, "20": 31, "21": 32}, "n": 1224}, "aux-age": {"nombre": "Auxiliar Administrativo del Estado", "corto": "Auxiliar · Administración del Estado", "grupo": "C2", "ambito": "Toda España", "eyebrow": "Auxiliar Administrativo del Estado · C2 · Toda España", "titulo": "Test de Auxiliar Administrativo del Estado", "sub": "Preguntas tipo examen de los 28 temas del programa y psicotécnicos, cada una con su explicación: la legislación, con el artículo exacto y comprobada con los textos consolidados del BOE; la ofimática, con Windows 11 y Microsoft 365.", "plazas": 1700, "plazasNota": "última convocatoria", "examen": "", "examenOficial": false, "examenTxt": "Por convocar (OEP 2026)", "examenLbl": "Examen", "programa": "Resolución de 18 de diciembre de 2025 (BOE de 22 de diciembre), anexo I", "temario": [[1, "Constitución: principios, derechos y garantías"], [2, "Tribunal Constitucional, reforma y Corona"], [3, "Cortes Generales y Defensor del Pueblo"], [4, "Poder Judicial"], [5, "Gobierno y Administración"], [6, "Gobierno abierto y Agenda 2030"], [7, "Ley de Transparencia"], [8, "Administración General del Estado"], [9, "Organización territorial: CCAA y Administración local"], [10, "Unión Europea"], [11, "Procedimiento administrativo, régimen jurídico y recursos"], [12, "Protección de datos"], [13, "Personal funcionario: selección, provisión y situaciones"], [14, "Derechos, carrera, retribuciones y disciplina"], [15, "Presupuesto del Estado"], [16, "Igualdad, violencia de género, LGTBI y discapacidad"], [17, "Atención al público"], [18, "Servicios de información administrativa"], [19, "Documento, registro y archivo"], [20, "Administración electrónica"], [21, "Informática básica"], [22, "Entorno Windows"], [23, "Explorador de Windows"], [24, "Word"], [25, "Excel"], [26, "Access"], [27, "Outlook"], [28, "Internet"], [29, "Psicotécnicos"]], "sims": [{"id": "age-p1", "nombre": "Simulacro 1.ª parte", "desc": "30 preguntas del bloque I (temas 1-16) y 30 psicotécnicas: 60 preguntas en 50 minutos. Cada fallo resta un tercio.", "n": 60, "min": 50, "ex": 1, "desde": 1, "hasta": 29, "elegirTemas": false, "equilibrar": true, "cupos": [{"desde": 1, "hasta": 16, "n": 30}, {"desde": 29, "hasta": 29, "n": 30}]}, {"id": "age-p2", "nombre": "Simulacro 2.ª parte", "desc": "Bloque II (temas 17-28): 50 preguntas en 40 minutos. Cada fallo resta un tercio.", "n": 50, "min": 40, "ex": 2, "desde": 17, "hasta": 28, "elegirTemas": false, "equilibrar": true}], "faqExamen": "Un ejercicio único tipo test de 90 minutos con dos partes que se hacen juntas. La primera tiene 60 preguntas: 30 del bloque I (organización pública) y 30 psicotécnicas. La segunda, 50 preguntas del bloque II (actividad administrativa y ofimática). Cada parte vale 50 puntos, hay que sacar al menos 25 en cada una y cada fallo resta un tercio de acierto. Los simulacros reparten los 90 minutos entre las dos partes.", "planes": [{"id": "completo", "nombre": "Completo", "precio": "24,99", "temas": 999, "dest": true, "desc": ["Los 28 temas del programa y psicotécnicos", "Simulacros de las dos partes del examen, con penalización", "Modo práctica, repaso de fallos y gráfica de notas", "Progreso guardado en tu cuenta"]}], "enlaces": [{"t": "Última convocatoria en el BOE", "u": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26262"}], "enlacesTxt": "Bases y programa de la última convocatoria. La de la Oferta de Empleo Público de 2026 aún no se ha publicado.", "counts": {"1": 101, "2": 37, "3": 40, "4": 34, "5": 35, "6": 30, "7": 37, "8": 30, "9": 30, "10": 29, "11": 324, "12": 34, "13": 40, "14": 40, "15": 29, "16": 54, "17": 20, "18": 18, "19": 34, "20": 35, "21": 24, "22": 23, "23": 43, "24": 39, "25": 46, "26": 36, "27": 36, "28": 24, "29": 139}, "n": 1441}, "adm-cm": {"nombre": "Administrativo de la Comunidad de Madrid", "corto": "Administrativo · Comunidad de Madrid", "grupo": "C1", "ambito": "Comunidad de Madrid", "plazas": 107, "proximamente": true, "counts": {}, "n": 0}, "aux-ayto-mad": {"nombre": "Auxiliar Administrativo del Ayuntamiento de Madrid", "corto": "Auxiliar · Ayuntamiento de Madrid", "grupo": "C2", "ambito": "Ciudad de Madrid", "proximamente": true, "counts": {}, "n": 0}, "tcae-sermas": {"nombre": "TCAE · Servicio Madrileño de Salud", "corto": "TCAE · SERMAS", "grupo": "C2", "ambito": "Comunidad de Madrid", "plazas": 1878, "convocatoria": "BOCM 31/07/2025", "proximamente": true, "counts": {}, "n": 0}, "tcai-ics": {"nombre": "TCAI (Auxiliar de Enfermería) · Institut Català de la Salut", "corto": "TCAI · ICS", "grupo": "C2", "ambito": "Cataluña", "plazas": 757, "convocatoria": "DOGC 26/06/2025 · examen desde enero de 2027", "proximamente": true, "counts": {}, "n": 0}, "tcae-sergas": {"nombre": "TCAE · Servizo Galego de Saúde", "corto": "TCAE · SERGAS", "grupo": "C2", "ambito": "Galicia", "plazas": 1306, "convocatoria": "DOG 04/09/2025", "proximamente": true, "counts": {}, "n": 0}, "admin-navarra": {"nombre": "Administrativo · Gobierno de Navarra", "corto": "Administrativo · Navarra", "grupo": "C", "ambito": "Navarra", "plazas": 585, "plazasNota": "última convocatoria", "convocatoria": "BON 22/05/2025 · OPE 2026 en camino", "proximamente": true, "counts": {}, "n": 0}, "aux-canarias": {"nombre": "Auxiliar Administrativo · Gobierno de Canarias", "corto": "Auxiliar · Canarias", "grupo": "C2", "ambito": "Canarias", "plazas": 296, "convocatoria": "BOC 24/03/2026", "proximamente": true, "counts": {}, "n": 0}, "osakidetza-aux-enf": {"nombre": "Auxiliar de Enfermería · Osakidetza", "corto": "Aux. Enfermería · Osakidetza", "grupo": "C2", "ambito": "País Vasco", "convocatoria": "OPE 2023-2025 y 2026 · BOPV 20/03/2026", "proximamente": true, "counts": {}, "n": 0}};
+const OP_DEF="aux-cm";
+const opValida=o=>!!(OPOS[o]&&!OPOS[o].proximamente&&OPOS[o].n);
+let OP=(()=>{try{const o=localStorage.getItem("auxcm-op");return opValida(o)?o:OP_DEF}catch(e){return OP_DEF}})();
+const CFG=()=>OPOS[OP];
+let TEMARIO=[],TNAME={};
+// Las preguntas NO van en la página: se descargan de la base de datos solo si tu cuenta tiene acceso.
+// [tema, pregunta, [A,B,C,D], correcta 0-3, artículo, explicación, examen oficial en que cayó]
+let Q=[];
+let TEMA_COUNTS={};
+// Enlaces de pago de Stripe (Payment Links). Se rellenan en build.py.
+const PAY_LINKS={"aux-cm": {"legislacion": "", "completo": ""}, "aux-age": {}, "adm-cm": {}, "aux-ayto-mad": {}, "tcae-sermas": {}, "tcai-ics": {}, "tcae-sergas": {}, "admin-navarra": {}, "aux-canarias": {}, "osakidetza-aux-enf": {}};
+const DOMINIOS_TEMPORALES=new Set(["0-mail.com", "10minemail.com", "10minutemail.com", "10minutemail.net", "1secmail.com", "1secmail.net", "1secmail.org", "20minutemail.com", "33mail.com", "anonbox.net", "armyspy.com", "binkmail.com", "bobmail.info", "burnermail.io", "byom.de", "chammy.info", "cool.fr.nf", "correotemporal.org", "courriel.fr.nf", "crazymailing.com", "cuvox.de", "dayrep.com", "dcctb.com", "deadaddress.com", "devnullmail.com", "discard.email", "discardmail.com", "discardmail.de", "dispostable.com", "dropmail.me", "e4ward.com", "einrot.com", "emailfake.com", "emailondeck.com", "emailsensei.com", "emailtemp.org", "emailtemporal.org", "emltmp.com", "esiix.com", "fake-mail.net", "fakeinbox.com", "fakemail.net", "fakemailgenerator.com", "filzmail.com", "fleckens.hu", "generator.email", "getairmail.com", "getnada.com", "gishpuppy.com", "grr.la", "guerrillamail.biz", "guerrillamail.com", "guerrillamail.de", "guerrillamail.info", "guerrillamail.net", "guerrillamail.org", "guerrillamailblock.com", "gustr.com", "harakirimail.com", "inboxkitten.com", "incognitomail.com", "instantemailaddress.com", "jetable.fr.nf", "jetable.org", "jourrapide.com", "kasmail.com", "kzccv.com", "letthemeatspam.com", "luxusmail.org", "mail-temporaire.fr", "mail.tm", "mailcatch.com", "maildrop.cc", "mailexpire.com", "mailforspam.com", "mailhazard.com", "mailinater.com", "mailinator.com", "mailinator.net", "mailinator2.com", "mailismagic.com", "mailmetrash.com", "mailmoat.com", "mailnesia.com", "mailnull.com", "mailpoof.com", "mailsac.com", "mailtothis.com", "mega.zik.dj", "mintemail.com", "minuteinbox.com", "mohmal.com", "moncourrier.fr.nf", "monemail.fr.nf", "monmail.fr.nf", "mvrht.com", "mytrashmail.com", "nada.email", "nomail.xl.cx", "nospam.ze.tc", "notmailinator.com", "owlymail.com", "pokemail.net", "qiott.com", "rhyta.com", "safetymail.info", "sharklasers.com", "sneakemail.com", "sogetthis.com", "spam4.me", "spambox.us", "spamcero.com", "spamdecoy.net", "spamex.com", "spamfree24.org", "spamgourmet.com", "spamherelots.com", "spamhereplease.com", "spamobox.com", "spamthisplease.com", "speed.1s.fr", "superrito.com", "suremail.info", "teleworm.us", "temp-mail.io", "temp-mail.org", "tempail.com", "tempemail.com", "tempemail.net", "tempinbox.com", "tempmail.com", "tempmail.dev", "tempmail.email", "tempmail.net", "tempmail.plus", "tempmailaddress.com", "tempmailin.com", "tempmailo.com", "tempomail.fr", "temporarioemail.com.br", "temporaryemail.net", "temporaryinbox.com", "tempr.email", "tempsky.com", "thisisnotmyrealemail.com", "throwawaymail.com", "tmail.ws", "tmpeml.com", "tmpmail.net", "tmpmail.org", "tradermail.info", "trashmail.com", "trashmail.de", "trashmail.io", "trashmail.me", "trashmail.net", "trbvm.com", "veryrealemail.com", "wegwerfmail.de", "wegwerfmail.net", "wwjmp.com", "xojxe.com", "yoggm.com", "yopmail.com", "yopmail.fr", "yopmail.net", "zippymail.info"]);
+
+const $=id=>document.getElementById(id);
+const LET=["A","B","C","D"];
+let SIMCFG={};
+const isSim=m=>!!SIMCFG[m];
+let st=null, timerId=null;
+
+function hash(s){let h=5381;for(let i=0;i<s.length;i++)h=((h<<5)+h+s.charCodeAt(i))|0;return (h>>>0).toString(36)}
+let BYID={};
+let AVAIL=[];
+// Las de Auxiliar CM mantienen su identificador de siempre para no perder el progreso guardado.
+const qidDe=(tema,preg)=>(OP===OP_DEF?"":OP+":")+tema+"-"+hash(preg);
+function setQuestions(rows){
+  Q=rows.map(r=>{const q=[r.tema,r.pregunta,r.opciones,r.correcta,r.articulo,r.explicacion,r.examen];q.id=qidDe(r.tema,r.pregunta);return q});
+  BYID=Object.fromEntries(Q.map(q=>[q.id,q]));
+}
+const contar=f=>AVAIL.filter(f).reduce((s,k)=>s+TEMA_COUNTS[k],0);
+// ----- acceso: prueba de 2 días y planes de pago -----
+let ACC={plan:null};
+let BETA=null; // null = aún no se sabe; true = modo pruebas (sin pagos)
+let PLANES=[];
+const RANGO={legislacion:1,completo:2,premium:3};
+const PLAN_NOMBRE={beta:"Acceso de pruebas",prueba:"Prueba gratis",legislacion:"Plan Legislación",completo:"Plan Completo",premium:"Plan Premium"};
+function maxTema(){
+  if(!ACC.plan)return 999;
+  const p=PLANES.find(x=>x.id===ACC.plan);
+  return p?p.temas:(["beta","prueba","premium"].includes(ACC.plan)?999:0);
+}
+function simPermitido(modo){return !!ACC.plan&&(!SIMCFG[modo]||maxTema()>=SIMCFG[modo].hasta)}
+// Carga los datos de la oposición elegida
+function setOpVars(){
+  const c=CFG();
+  TEMARIO=c.temario||[];TNAME=Object.fromEntries(TEMARIO);
+  TEMA_COUNTS=c.counts||{};AVAIL=Object.keys(TEMA_COUNTS).map(Number).sort((a,b)=>a-b);
+  SIMCFG={};(c.sims||[]).forEach(x=>{const cu=x.cupos||[{desde:x.desde,hasta:x.hasta,n:x.n}];SIMCFG[x.id]={...x,cupos:cu,s:x.min*60,temas:t=>cu.some(k=>t>=k.desde&&t<=k.hasta)}});
+  PLANES=c.planes||[];
+  EXAM_DATE=c.examen||"";EXAM_DATE_OFFICIAL=!!c.examenOficial;
+}
+function fechaCorta(s){return new Date(s).toLocaleDateString("es-ES",{day:"numeric",month:"long",year:"numeric"})}
+function quedan(s){const ms=new Date(s)-Date.now();if(ms<=0)return"0 h";const h=Math.floor(ms/36e5),d=Math.floor(h/24);return d?`${d} día${d>1?"s":""} y ${h%24} h`:`${h} h`}
+
+// ----- almacenamiento local (puede no estar disponible) -----
+const KEY="auxcm-v2",OWNER="auxcm-owner";
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d))}catch(e){}if(typeof scheduleSync==="function")scheduleSync()}
+// Fecha del primer ejercicio. Las bases solo dicen "junio de 2027": cámbiala cuando se publique la fecha oficial.
+let EXAM_DATE="", EXAM_DATE_OFFICIAL=false;
+// Progreso: lo común (racha, objetivo) arriba y lo de cada oposición en DB.ops[oposición]
+function normDB(d){
+  d=d&&typeof d==="object"?d:{};
+  d.ops=d.ops||{};
+  if(d.t||d.wrong||d.sims){   // formato antiguo (solo Auxiliar CM)
+    const o=d.ops[OP_DEF]=d.ops[OP_DEF]||{t:{},wrong:[],sims:[]};
+    o.t={...(d.t||{}),...o.t};o.wrong=[...new Set([...(o.wrong||[]),...(d.wrong||[])])];o.sims=[...(o.sims||[]),...(d.sims||[])];
+    delete d.t;delete d.wrong;delete d.sims;
+  }
+  d.done=d.done||0;d.days=d.days||{};d.goal=d.goal||20;
+  return d;
+}
+const dbVacia=()=>({ops:{},done:0,days:{},goal:20});
+let DB=normDB(load());
+function P(){const o=DB.ops[OP]=DB.ops[OP]||{t:{},wrong:[],sims:[],marks:[]};o.t=o.t||{};o.wrong=o.wrong||[];o.sims=o.sims||[];o.marks=o.marks||[];return o}
+function dayKey(d){d=d||new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+function record(q,ok){
+  const o=P(),t=o.t[q[0]]=o.t[q[0]]||{a:0,n:0};t.n++;if(ok)t.a++;
+  const dk=dayKey();DB.days[dk]=(DB.days[dk]||0)+1;
+  const w=new Set(o.wrong); if(ok) w.delete(q.id); else w.add(q.id); o.wrong=[...w];
+}
+
+// ----- portada -----
+function buildSetup(){
+  $("modos-sim").innerHTML=Object.values(SIMCFG).map(x=>`<label class="mode"><input type="radio" name="modo" id="modo-${x.id}" value="${x.id}"><div><b>${esc(x.nombre)}</b><span>${esc(x.desc)}</span></div></label>`).join("");
+  $("modo-practica").checked=true;
+  $("temas").innerHTML=AVAIL.map(k=>`<label class="chip"><input type="checkbox" id="tema-${k}" value="${k}" checked><span>T${k} · ${TNAME[k]} <small>${TEMA_COUNTS[k]}</small><span class="lock hidden" id="lock-${k}">🔒</span></span></label>`).join("");
+  $("nums").innerHTML=[10,20,40,0].map(n=>`<label class="chip"><input type="radio" name="num" id="num-${n||'todas'}" value="${n}" ${n===20?"checked":""}><span>${n||"Todas"}</span></label>`).join("");
+  $("temario").innerHTML=TEMARIO.map(([k,t])=>`<div class="${AVAIL.includes(k)?"on":"off"}"><b>${k}</b><span>${t}</span></div>`).join("");
+  if(!FORM_URL) $("faq-error").textContent="Avísame y lo corrijo. Cada aviso mejora el test para todos.";
+  else $("faq-error").innerHTML=`Avísame en <a href="${FORM_URL}" target="_blank" rel="noopener">este formulario</a> y lo corrijo. Cada aviso mejora el test para todos.`;
+  document.querySelectorAll("#setup input").forEach(i=>i.addEventListener("change",refreshSetup));
+  refreshSetup();renderStats();renderToday();
+}
+$("toggle-temas").addEventListener("click",()=>{
+  const boxes=[...document.querySelectorAll("#temas input:not(:disabled)")];const any=boxes.some(b=>b.checked);
+  boxes.forEach(b=>b.checked=!any);refreshSetup();
+});
+function selected(){
+  return{
+    temas:[...document.querySelectorAll("#temas input:checked")].map(i=>+i.value),
+    num:+(document.querySelector("input[name=num]:checked")||{value:20}).value,
+    modo:document.querySelector("input[name=modo]:checked").value
+  };
+}
+function refreshSetup(){
+  const {temas,num,modo}=selected();
+  const W=P().wrong,nWrong=Q.length?W.filter(id=>BYID[id]).length:W.length;
+  $("modo-fallos").disabled=!nWrong;
+  $("fallos-desc").textContent=nWrong?`Tienes ${nWrong} pregunta${nWrong>1?"s":""} pendiente${nWrong>1?"s":""} de repasar.`:"Aquí aparecerán las preguntas que falles.";
+  const nMarks=Q.length?P().marks.filter(id=>BYID[id]).length:P().marks.length;
+  $("modo-marcadas").disabled=!nMarks;
+  $("marcadas-desc").textContent=nMarks?`${plural(nMarks,"pregunta marcada","preguntas marcadas")} con ☆.`:"Las preguntas que marques con ☆ durante los tests.";
+  if(modo==="fallos"&&!nWrong||modo==="marcadas"&&!nMarks){$("modo-practica").checked=true;return refreshSetup()}
+  $("toggle-temas").textContent=temas.length?"Quitar todos":"Marcar todos";
+  $("nums-fs").classList.toggle("hidden",modo!=="practica");
+  const C=SIMCFG[modo];
+  $("temas-fs").classList.toggle("hidden",modo==="fallos"||modo==="marcadas"||(C&&!C.elegirTemas));
+  let pool;
+  if(modo==="fallos"){pool=nWrong;$("pool-info").textContent=`${nWrong} preguntas falladas`;$("start").disabled=false;return}
+  if(modo==="marcadas"){$("pool-info").textContent=plural(nMarks,"pregunta marcada","preguntas marcadas");$("start").disabled=false;return}
+  pool=C?contar(k=>C.temas(k)&&(!C.elegirTemas||temas.includes(k))):contar(k=>temas.includes(k));
+  const n=C?Math.min(C.n,pool):(num?Math.min(num,pool):pool);
+  $("pool-info").textContent=pool?(C?`${n} preguntas · ${C.min} minutos`:`${n} de ${pool} preguntas disponibles`):(C?`Marca al menos un tema del ${C.desde} al ${C.hasta}`:"Elige al menos un tema");
+  $("start").disabled=!pool;
+}
+function renderStats(){
+  const o=P(),T=o.t,keys=Object.keys(T).filter(k=>T[k].n);
+  $("stats-h").textContent="Tu progreso · "+CFG().corto;
+  $("stats-vacio").classList.toggle("hidden",!!keys.length);$("stats-sum").classList.toggle("hidden",!keys.length);
+  $("reset-stats").classList.toggle("hidden",!keys.length);
+  renderSims();
+  if(!keys.length){$("stats").innerHTML="";return}
+  const tot=keys.reduce((s,k)=>s+T[k].n,0), ac=keys.reduce((s,k)=>s+T[k].a,0);
+  $("stats-sum").textContent=`${plural(tot,"respuesta","respuestas")} en total, ${Math.round(ac/tot*100)} % de aciertos. ${o.wrong.length?`${plural(o.wrong.length,"pregunta pendiente","preguntas pendientes")} de repasar.`:"Ninguna pregunta pendiente de repasar."}`;
+  $("stats").innerHTML=keys.sort((a,b)=>(T[a].a/T[a].n)-(T[b].a/T[b].n)).map(k=>bar(`T${k} · ${TNAME[k]||""}`,T[k].a,T[k].n)).join("");
+}
+function bar(label,a,n){
+  const p=n?Math.round(a/n*100):0;
+  const c=p>=70?"var(--ok)":p>=50?"var(--warn)":"var(--bad)";
+  return `<div class="stat"><span>${label} <span class="meta">(${a}/${n})</span></span><span class="track"><i style="width:${p}%;background:${c}"></i></span><span class="pct">${p} %</span></div>`;
+}
+// Reparte las preguntas entre todos los temas, para que ningún tema grande acapare el simulacro
+function equilibrada(pool,n){
+  const por={};pool.forEach(q=>(por[q[0]]=por[q[0]]||[]).push(q));
+  const listas=shuffle(Object.values(por).map(l=>shuffle(l.slice())));const out=[];
+  while(out.length<n&&listas.some(l=>l.length))for(const l of listas){if(out.length>=n)break;if(l.length)out.push(l.pop())}
+  return out;
+}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+// ----- hoy: cuenta atrás, racha y objetivo -----
+function streakInfo(){
+  const d=new Date();let s=0;
+  if(!DB.days[dayKey(d)])d.setDate(d.getDate()-1);
+  while(DB.days[dayKey(d)]){s++;d.setDate(d.getDate()-1)}
+  return s;
+}
+function renderToday(){
+  const c=CFG(),now=new Date(),ex=new Date(EXAM_DATE+"T09:00:00");
+  const days=EXAM_DATE?Math.ceil((ex-now)/86400000):null;
+  $("cd-lbl").textContent=c.examenLbl||"Examen";
+  $("cd-days").textContent=days===null?"Sin fecha":days>0?(EXAM_DATE_OFFICIAL?"":"≈ ")+days+" días":"¡Ya es el examen!";
+  $("cd-note").textContent=days===null?"Aún no hay fecha publicada":EXAM_DATE_OFFICIAL?"hasta el examen":`${c.examenTxt||""} (fecha exacta aún por publicar)`;
+  const s=streakInfo(),today=DB.days[dayKey()]||0;
+  $("streak").textContent=s+(s===1?" día":" días");
+  $("streak-note").textContent=today?"Hoy ya has estudiado. ¡Sigue así!":(s?"Responde una pregunta hoy para no perder la racha.":"Responde una pregunta para empezar tu racha.");
+  let w="";for(let i=6;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);const k=dayKey(d);w+=`<span class="${DB.days[k]?"on":""}" title="${d.toLocaleDateString("es-ES",{weekday:"long",day:"numeric"})}: ${DB.days[k]||0} preguntas"></span>`}
+  $("week").innerHTML=w;
+  $("goal-num").textContent=`${Math.min(today,DB.goal)} / ${DB.goal}${today>=DB.goal?" ✓":""}`;
+  $("goal-bar").style.width=Math.min(100,today/DB.goal*100)+"%";
+  document.querySelectorAll(".goalsel button").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.goal===DB.goal)));
+}
+document.querySelectorAll(".goalsel button").forEach(b=>b.addEventListener("click",()=>{DB.goal=+b.dataset.goal;save(DB);renderToday()}));
+function renderSims(){
+  const S=P().sims;
+  $("sims-wrap").classList.toggle("hidden",!S.length);
+  if(!S.length)return;
+  const W=640,H=200,L=34,R=14,T=14,B=26,iw=W-L-R,ih=H-T-B;
+  const x=i=>L+(S.length===1?iw/2:i*iw/(S.length-1)), y=v=>T+ih-(v/50)*ih;
+  let g="";[0,10,20,30,40,50].forEach(v=>{g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end">${v}</text>`});
+  const pts=S.map((s,i)=>[x(i),y(s.nota)]);
+  const line=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+  const area=S.length>1?`<path class="area" d="${line} L${pts[pts.length-1][0]} ${y(0)} L${pts[0][0]} ${y(0)} Z"/>`:"";
+  const dots=pts.map((p,i)=>`<circle class="${i===pts.length-1?"last":"dot"}" cx="${p[0]}" cy="${p[1]}" r="${i===pts.length-1?5.5:4}"><title>${new Date(S[i].ts).toLocaleDateString("es-ES")} · ${S[i].ex===2?"2.º ejercicio":"1.er ejercicio"}: ${S[i].nota.toLocaleString("es-ES")}</title></circle>`).join("");
+  $("sims").innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolución de la nota en los simulacros">${g}${area}<line class="pass" x1="${L}" x2="${W-R}" y1="${y(25)}" y2="${y(25)}"/><text x="${L+6}" y="${y(25)-6}" class="passlbl">Aprobado: 25</text><path class="line" d="${line}"/>${dots}</svg>`;
+  const last=S[S.length-1].nota, best=Math.max(...S.map(s=>s.nota));
+  $("sims-note").textContent=`${S.length} simulacro${S.length>1?"s":""} · último: ${last.toLocaleString("es-ES")} · mejor: ${best.toLocaleString("es-ES")}`;
+}
+
+// ----- test -----
+function start(list){
+  const {temas,num,modo}=selected();
+  let qs, m=modo;
+  if(list){qs=list;m="practica"}
+  else if(modo==="fallos"){qs=shuffle(P().wrong.map(id=>BYID[id]).filter(Boolean));m="practica"}
+  else if(modo==="marcadas"){qs=shuffle(P().marks.map(id=>BYID[id]).filter(Boolean));m="practica"}
+  else{
+    const C=SIMCFG[modo];
+    if(C){qs=[];C.cupos.forEach(k=>{const pool=Q.filter(q=>q[0]>=k.desde&&q[0]<=k.hasta&&(!C.elegirTemas||temas.includes(q[0])));qs=qs.concat(C.equilibrar?equilibrada(pool,k.n):shuffle(pool).slice(0,k.n))});if(C.cupos.length>1)qs=shuffle(qs)}
+    else{qs=shuffle(Q.filter(q=>temas.includes(q[0])));if(num) qs=qs.slice(0,num)}
+  }
+  st={qs,modo:m,i:0,ans:new Array(qs.length).fill(null),locked:false,ends:null};
+  enTest(true);$("result").classList.add("hidden");$("quiz").classList.remove("hidden");
+  clearInterval(timerId);$("timer").classList.add("hidden");
+  if(isSim(m)){st.ends=Date.now()+SIMCFG[m].s*1000;$("timer").classList.remove("hidden");tick();timerId=setInterval(tick,1000)}
+  render();window.scrollTo({top:0});
+}
+function tick(){
+  const left=Math.max(0,Math.round((st.ends-Date.now())/1000));
+  const mm=String(Math.floor(left/60)).padStart(2,"0"),ss=String(left%60).padStart(2,"0");
+  $("timer").textContent=`⏱ ${mm}:${ss}`;$("timer").classList.toggle("low",left<=300);
+  if(left===0){clearInterval(timerId);finish(true)}
+}
+function counts(){
+  let a=0,f=0;st.ans.forEach((x,k)=>{if(x===null||x===-1)return;if(x===st.qs[k][3])a++;else f++});return{a,f};
+}
+function render(){
+  const q=st.qs[st.i];
+  $("count").textContent=`Pregunta ${st.i+1} de ${st.qs.length}`;
+  $("bar").style.width=(st.i/st.qs.length*100)+"%";
+  const {a,f}=counts();
+  $("tally").textContent=st.modo==="practica"?`${a} aciertos · ${f} fallos`:`${st.ans.filter(x=>x!==null&&x!==-1).length} respondidas`;
+  $("qtema").textContent=`Tema ${q[0]} · ${TNAME[q[0]]||""}`;
+  $("qtext").textContent=q[1];
+  const qe=$("qexam");qe.classList.toggle("hidden",!q[6]);if(q[6])qe.textContent="📌 Cayó en examen oficial: "+q[6];
+  $("feedback").innerHTML="";st.locked=false;pintarMarca();
+  const o=$("opts");o.innerHTML="";
+  q[2].forEach((t,k)=>{
+    const b=document.createElement("button");b.className="opt";b.id="opt-"+k;
+    b.innerHTML=`<b>${LET[k]}</b><span></span>`;b.querySelector("span").textContent=t;
+    b.addEventListener("click",()=>choose(k));o.appendChild(b);
+  });
+  if(st.ans[st.i]!==null&&st.ans[st.i]>=0) markSel(st.ans[st.i]);
+  $("next").textContent=st.i===st.qs.length-1?"Ver resultado":"Siguiente";
+  $("next").disabled=st.modo==="practica"||st.ans[st.i]===null;
+  $("skip").classList.remove("hidden");
+}
+function markSel(k){document.querySelectorAll(".opt").forEach((b,j)=>b.classList.toggle("sel",j===k))}
+function choose(k){
+  if(st.locked)return;
+  st.ans[st.i]=k;
+  if(isSim(st.modo)){markSel(k);$("next").disabled=false;return}
+  reveal(k);
+}
+function reveal(k){
+  const q=st.qs[st.i];st.locked=true;
+  document.querySelectorAll(".opt").forEach((b,j)=>{b.disabled=true;if(j===q[3])b.classList.add("ok");else if(j===k)b.classList.add("bad")});
+  const ok=k===q[3];
+  record(q,ok);save(DB);
+  $("feedback").innerHTML=`<div class="expl ${ok?"":"no"}"><strong></strong><span></span></div>`;
+  $("feedback").querySelector("strong").textContent=k===-1?`En blanco. Correcta: ${LET[q[3]]} · ${q[4]}`:(ok?`Correcta · ${q[4]}`:`Incorrecta. Era la ${LET[q[3]]} · ${q[4]}`);
+  $("feedback").querySelector("span").textContent=q[5];
+  const fu=fuente(q[4]);if(fu){const a=document.createElement("a");a.className="boe";a.href=fu.url;a.target="_blank";a.rel="noopener";a.textContent=fu.txt+" ↗";$("feedback").querySelector(".expl").appendChild(a)}
+  $("next").disabled=false;$("skip").classList.add("hidden");
+  const {a,f}=counts();$("tally").textContent=`${a} aciertos · ${f} fallos`;
+  $("next").focus({preventScroll:true});
+}
+function next(){if(st.i<st.qs.length-1){st.i++;render()}else finish()}
+function skip(){
+  st.ans[st.i]=-1;
+  if(st.modo==="practica"){reveal(-1);return}
+  next();
+}
+function finish(timeout){
+  clearInterval(timerId);
+  if(isSim(st.modo)){st.qs.forEach((q,k)=>{const x=st.ans[k];if(x!==null&&x!==-1)record(q,x===q[3]);else record(q,false)});save(DB)}
+  DB.done++;save(DB);
+  const n=st.qs.length;let a=0,f=0,b=0;const wrong=[];const per={};
+  st.qs.forEach((q,k)=>{const x=st.ans[k];const p=per[q[0]]=per[q[0]]||{a:0,n:0};p.n++;
+    if(x===null||x===-1){b++;wrong.push(k)}else if(x===q[3]){a++;p.a++}else{f++;wrong.push(k)}});
+  const nota=Math.round(Math.max(0,a-f/3)/n*50*100)/100;
+  if(isSim(st.modo)&&n>=SIMCFG[st.modo].n){const o=P();o.sims.push({ts:Date.now(),nota,ex:SIMCFG[st.modo].ex});o.sims=o.sims.slice(-20);save(DB)}
+  $("quiz").classList.add("hidden");$("result").classList.remove("hidden");
+  $("score").innerHTML=`
+    <div class="tile"><span>Nota sobre 50</span><b>${nota.toLocaleString("es-ES")}</b></div>
+    <div class="tile"><span>Aciertos</span><b>${a}</b></div>
+    <div class="tile"><span>Fallos</span><b>${f}</b></div>
+    <div class="tile"><span>En blanco</span><b>${b}</b></div>`;
+  const pass=nota>=25;
+  $("verdict").innerHTML=`<span class="pill ${pass?"ok":"bad"}">${pass?"Aprobado":"Suspenso"}</span> ${timeout?"Se acabó el tiempo. ":""}Cada fallo resta un tercio de acierto, como en el examen real. Se aprueba con 25 sobre 50.`;
+  const pk=Object.keys(per);
+  $("by-tema-wrap").classList.toggle("hidden",pk.length<2);
+  $("by-tema").innerHTML=pk.map(k=>bar(`T${k} · ${TNAME[k]||""}`,per[k].a,per[k].n)).join("");
+  const r=$("review");r.innerHTML="";
+  $("review-h").classList.toggle("hidden",!wrong.length);
+  $("retry-wrong").classList.toggle("hidden",!wrong.length);
+  wrong.forEach(k=>{
+    const q=st.qs[k],x=st.ans[k];
+    const d=document.createElement("div");d.className="rev";
+    d.innerHTML=`<span class="tag"></span>${q[6]?'<span class="examtag" style="margin-left:6px"></span>':""}<strong></strong><span class="your"></span><span class="right"></span><span class="ex"></span>`;
+    d.querySelector(".tag").textContent=`Tema ${q[0]} · ${q[4]}`;
+    if(q[6])d.querySelector(".examtag").textContent="📌 Cayó: "+q[6];
+    d.querySelector("strong").textContent=q[1];
+    d.querySelector(".your").textContent=(x===null||x===-1)?"La dejaste en blanco":`Marcaste ${LET[x]}: ${q[2][x]}`;
+    d.querySelector(".right").textContent=`Correcta ${LET[q[3]]}: ${q[2][q[3]]}`;
+    d.querySelector(".ex").textContent=q[5];
+    const fu=fuente(q[4]);if(fu){const a=document.createElement("a");a.className="boe";a.href=fu.url;a.target="_blank";a.rel="noopener";a.textContent=fu.txt+" ↗";d.appendChild(a)}
+    r.appendChild(d);
+  });
+  st.wrong=wrong.map(k=>st.qs[k]);
+  if(FORM_URL){$("cta-link").href=FORM_URL;$("cta").classList.remove("hidden")}
+  window.scrollTo({top:0});
+}
+function home(){
+  clearInterval(timerId);
+  ["quiz","result"].forEach(id=>$(id).classList.add("hidden"));enTest(false);
+  refreshSetup();renderStats();renderToday();window.scrollTo({top:0});
+}
+$("start").addEventListener("click",async()=>{
+  const b=$("start");b.disabled=true;
+  try{if(await ensureAccess(selected().modo))start()}finally{b.disabled=false}
+});
+$("next").addEventListener("click",()=>{if(isSim(st.modo)&&st.ans[st.i]===null)return;next()});
+$("skip").addEventListener("click",skip);
+$("quit").addEventListener("click",()=>finish(false));
+$("again").addEventListener("click",home);
+$("retry-wrong").addEventListener("click",()=>start(shuffle(st.wrong.slice())));
+$("reset-stats").addEventListener("click",()=>{
+  const b=$("reset-stats");
+  if(b.dataset.confirm){DB.ops[OP]={t:{},wrong:[],sims:[],marks:[]};save(DB);b.textContent="Borrar mi progreso";delete b.dataset.confirm;refreshSetup();renderStats();renderToday()}
+  else{b.dataset.confirm="1";b.textContent="Pulsa otra vez para confirmar";setTimeout(()=>{if(b.dataset.confirm){delete b.dataset.confirm;b.textContent="Borrar mi progreso"}},4000)}
+});
+document.addEventListener("keydown",e=>{
+  if($("quiz").classList.contains("hidden")||e.ctrlKey||e.metaKey||e.altKey)return;
+  if(document.querySelector("dialog[open]")||/^(INPUT|TEXTAREA|SELECT)$/.test((e.target||{}).tagName||""))return;
+  const k=e.key.toLowerCase();const map={a:0,b:1,c:2,d:3,"1":0,"2":1,"3":2,"4":3};
+  if(k in map&&!st.locked){e.preventDefault();choose(map[k])}
+  else if(k==="enter"&&!$("next").disabled&&document.activeElement.tagName!=="BUTTON"){e.preventDefault();$("next").click()}
+});
+// ===== ENLACE A LA NORMA (BOE) =====
+// Cada referencia ("Art. 16.4 Ley 39/2015") enlaza al texto consolidado. Si añades una norma nueva, añádela aquí.
+const BOE_ELI="https://www.boe.es/eli/es/";
+const NORMAS=[
+  [/\bLey 39\/2015\b/,BOE_ELI+"l/2015/10/01/39/con"],[/\bLey 40\/2015\b/,BOE_ELI+"l/2015/10/01/40/con"],
+  [/\bCE\b/,BOE_ELI+"c/1978/12/27/(1)/con"],[/\bTREBEP\b/,BOE_ELI+"rdlg/2015/10/30/5/con"],
+  [/\bLey 29\/1998\b/,BOE_ELI+"l/1998/07/13/29/con"],[/\bLO 3\/2018\b/,BOE_ELI+"lo/2018/12/05/3/con"],
+  [/\bLCSP\b/,BOE_ELI+"l/2017/11/08/9/con"],[/\bLey 19\/2013\b/,BOE_ELI+"l/2013/12/09/19/con"],
+  [/\bTRLGSS\b/,BOE_ELI+"rdlg/2015/10/30/8/con"],[/\bLO 3\/2007\b/,BOE_ELI+"lo/2007/03/22/3/con"],
+  [/\bLO 1\/2004\b/,BOE_ELI+"lo/2004/12/28/1/con"],[/\bLey 47\/2003\b/,BOE_ELI+"l/2003/11/26/47/con"],
+  [/\bLey 50\/1997\b/,BOE_ELI+"l/1997/11/27/50/con"],[/\bCC\b|Código Civil/,BOE_ELI+"rd/1889/07/24/(1)/con"],
+  [/\bLOPJ\b/,BOE_ELI+"lo/1985/07/01/6/con"],[/\bLBRL\b/,BOE_ELI+"l/1985/04/02/7/con"],
+  [/\bLey 4\/2023\b/,BOE_ELI+"l/2023/02/28/4/con"],[/\bLey 39\/2006\b/,BOE_ELI+"l/2006/12/14/39/con"],
+  [/\bRDL 1\/2013\b/,BOE_ELI+"rdlg/2013/11/29/1/con"],[/\bLey 15\/2022\b/,BOE_ELI+"l/2022/07/12/15/con"],
+  [/\bLO 2\/2012\b/,BOE_ELI+"lo/2012/04/27/2/con"],[/\bLey 16\/1985\b/,BOE_ELI+"l/1985/06/25/16/con"],
+  [/\bRD 364\/1995\b/,BOE_ELI+"rd/1995/03/10/364/con"],[/\bRD 33\/1986\b/,BOE_ELI+"rd/1986/01/10/33/con"],
+  [/\bLO 3\/1981\b/,BOE_ELI+"lo/1981/04/06/3/con"],[/\bLO 4\/2001\b/,BOE_ELI+"lo/2001/11/12/4/con"],
+  [/\bRD 208\/1996\b/,BOE_ELI+"rd/1996/02/09/208/con"],[/\bRD 951\/2005\b/,BOE_ELI+"rd/2005/07/29/951/con"],
+  [/\bRD 1708\/2011\b/,BOE_ELI+"rd/2011/11/18/1708/con"],[/\bRD 311\/2022\b/,BOE_ELI+"rd/2022/05/03/311/con"],
+  [/\bLey 37\/2007\b/,BOE_ELI+"l/2007/11/16/37/con"],[/\bLey 6\/2020\b/,BOE_ELI+"l/2020/11/11/6/con"],
+  [/\bLey 2\/2014\b/,BOE_ELI+"l/2014/03/25/2/con"],[/\bLey 27\/2007\b/,BOE_ELI+"l/2007/10/23/27/con"],
+  [/\bEA\b|LO 3\/1983/,"https://www.boe.es/buscar/act.php?id=BOE-A-1983-6317"],
+  [/\bLey 1\/1983\b/,"https://www.boe.es/buscar/act.php?id=BOE-A-1984-2926"]
+];
+function fuente(ref){
+  ref=String(ref||"");
+  if(/\bTUE\b/.test(ref))return{url:"https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:12016M/TXT",txt:"Ver el Tratado de la Unión Europea"};
+  if(/\bTFUE\b/.test(ref))return{url:"https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:12016E/TXT",txt:"Ver el Tratado de Funcionamiento de la UE"};
+  for(const [re,url] of NORMAS)if(re.test(ref)){
+    const m=ref.match(/^Arts?\.\s*(\d+)(\s*bis)?/);
+    return{url:url+(m?"#a"+m[1]+(m[2]?"bis":""):""),txt:m?"Ver el artículo en el BOE":"Ver la norma en el BOE"};
+  }
+  if(/Word|Excel|Windows|Access|Outlook|Teams|Microsoft|Explorador|OneDrive|SharePoint|Power BI/.test(ref))return{url:"https://support.microsoft.com/es-es",txt:"Documentación de Microsoft"};
+  return null;
+}
+
+// ===== PREGUNTAS MARCADAS =====
+function pintarMarca(){
+  const q=st&&st.qs&&st.qs[st.i];if(!q)return;
+  const on=P().marks.includes(q.id),b=$("mark");
+  b.setAttribute("aria-pressed",on?"true":"false");b.textContent=on?"★ Marcada":"☆ Marcar";
+}
+$("mark").addEventListener("click",()=>{
+  const q=st.qs[st.i],o=P(),i=o.marks.indexOf(q.id);
+  if(i>=0)o.marks.splice(i,1);else o.marks.push(q.id);
+  save(DB);pintarMarca();
+});
+
+// ===== FORMULARIOS (Netlify Forms) =====
+async function enviarForm(nombre,campos){
+  try{
+    const r=await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({"form-name":nombre,...campos}).toString()});
+    return r.ok;
+  }catch(e){return false}
+}
+let repQ=null;
+$("report").addEventListener("click",()=>{
+  repQ=st.qs[st.i];$("rep-q").textContent=repQ[1];$("rep-msg").value="";$("rep-email").value=(user&&user.email)||"";
+  $("rep-status").classList.add("hidden");$("rep-btn").disabled=false;$("dlg-report").showModal();
+});
+$("rep-close").addEventListener("click",()=>$("dlg-report").close());
+$("f-report").addEventListener("submit",async e=>{
+  e.preventDefault();const msg=$("rep-msg").value.trim();
+  if(!msg){showMsg("rep-status","Cuéntanos brevemente qué está mal.");return}
+  $("rep-btn").disabled=true;
+  const ok=await enviarForm("reporte",{oposicion:OP,id:repQ.id||"",pregunta:repQ[1],referencia:repQ[4]||"",mensaje:msg,email:$("rep-email").value.trim()});
+  if(ok){showMsg("rep-status","Gracias. Lo revisamos contra el BOE y lo corregimos si hace falta.","ok");setTimeout(()=>$("dlg-report").close(),1800)}
+  else{$("rep-btn").disabled=false;showMsg("rep-status",FORM_URL?"No se ha podido enviar. Puedes avisarnos en el formulario de la web (pie de página).":"No se ha podido enviar. Inténtalo de nuevo más tarde.")}
+});
+let waitOp=null;
+function abrirEspera(op){
+  waitOp=op;const c=OPOS[op]||{};
+  $("wait-op").textContent=`${c.nombre||op}${c.ambito?" · "+c.ambito:""}. Te escribimos solo para avisarte cuando esté disponible.`;
+  $("wait-email").value=(user&&user.email)||"";$("wait-legal").checked=false;$("wait-status").classList.add("hidden");$("wait-btn").disabled=false;
+  $("dlg-wait").showModal();
+}
+$("wait-close").addEventListener("click",()=>$("dlg-wait").close());
+$("f-wait").addEventListener("submit",async e=>{
+  e.preventDefault();const em=$("wait-email").value.trim();
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){showMsg("wait-status","Escribe un email válido.");return}
+  if(!$("wait-legal").checked){showMsg("wait-status","Marca la casilla para poder apuntarte.");return}
+  $("wait-btn").disabled=true;
+  const ok=await enviarForm("lista-espera",{email:em,oposicion:waitOp});
+  if(ok){showMsg("wait-status","Apuntado. Te avisaremos en cuanto esté lista.","ok");setTimeout(()=>$("dlg-wait").close(),1800)}
+  else{$("wait-btn").disabled=false;showMsg("wait-status","No se ha podido enviar. Inténtalo de nuevo más tarde.")}
+});
+
+// ===== VISTAS: Inicio, Practicar y Mi progreso =====
+let VISTA="inicio",EN_TEST=false;
+function mostrarVista(v){
+  VISTA=v;
+  document.querySelectorAll("[data-view]").forEach(el=>{if(el.tagName==="BUTTON")return;el.classList.toggle("hidden",EN_TEST||!el.dataset.view.split(" ").includes(v))});
+  document.querySelectorAll("#mainnav button").forEach(b=>b.setAttribute("aria-current",b.dataset.view===v?"page":"false"));
+  $("mainnav").classList.toggle("hidden",EN_TEST);
+  if(v!=="practicar")$("admin").classList.add("hidden");
+  if(v==="inicio")renderInicio();
+  // En Inicio solo se ven las preguntas frecuentes generales
+  $("faq-examen-w").classList.toggle("hidden",v==="inicio"||!CFG().faqExamen);$("faq-cayo-w").classList.toggle("hidden",v==="inicio"||!CFG().faqCayo);
+  if(v==="progreso"){renderStats();renderToday()}
+  if(typeof applyBeta==="function"&&BETA!==null&&!EN_TEST){$("planes").classList.toggle("hidden",v!=="practicar"||BETA!==false)}
+  try{if(history.replaceState)history.replaceState(null,"",v==="inicio"?location.pathname+location.search:"#"+v)}catch(e){}
+}
+function enTest(si){EN_TEST=si;mostrarVista(VISTA)}
+document.querySelectorAll("#mainnav button").forEach(b=>b.addEventListener("click",()=>{mostrarVista(b.dataset.view);window.scrollTo({top:0})}));
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){mostrarVista(g.dataset.go);window.scrollTo({top:0})}});
+function progresoDe(op){
+  const o=(DB.ops||{})[op];if(!o||!o.t)return null;
+  const v=Object.values(o.t),n=v.reduce((s,x)=>s+x.n,0),a=v.reduce((s,x)=>s+x.a,0);
+  return n?{n,pct:Math.round(a/n*100),fallos:(o.wrong||[]).length}:null;
+}
+function renderInicio(){
+  $("opgrid").innerHTML=Object.entries(OPOS).map(([id,c])=>{
+    const on=opValida(id),pr=on&&progresoDe(id);
+    const chips=[c.grupo,c.ambito,c.plazas?c.plazas.toLocaleString("es-ES")+" plazas"+(c.plazasNota?" ("+c.plazasNota+")":""):null,on?c.n.toLocaleString("es-ES")+" preguntas":null].filter(Boolean).map(x=>`<span>${esc(x)}</span>`).join("");
+    const est=on?(pr?`<p class="meta">Tu progreso: ${pr.n} respuestas · ${pr.pct} % de aciertos${pr.fallos?` · ${plural(pr.fallos,"fallo","fallos")} por repasar`:""}</p>`:`<p class="meta">${plural((c.sims||[]).length,"simulacro","simulacros")} con el formato real · ${plural(AVAIL_DE(c),"tema","temas")}</p>`):`<span class="soon">Próximamente</span>${c.convocatoria?`<p class="meta">${esc(c.convocatoria)}</p>`:""}`;
+    return `<div class="opcard ${on?"on":"off"}"><h3>${esc(c.nombre)}</h3><div class="chips2">${chips}</div>${est}${on?`<button class="primary small" data-op="${id}">${id===OP&&pr?"Seguir practicando":"Practicar"}</button>`:`<button class="ghost small" data-wait="${id}">Avísame cuando esté</button>`}</div>`;
+  }).join("");
+  document.querySelectorAll("#opgrid button[data-op]").forEach(b=>b.addEventListener("click",()=>{cambiarOp(b.dataset.op);mostrarVista("practicar");window.scrollTo({top:0})}));
+  document.querySelectorAll("#opgrid button[data-wait]").forEach(b=>b.addEventListener("click",()=>abrirEspera(b.dataset.wait)));
+}
+const AVAIL_DE=c=>Object.keys(c.counts||{}).length;
+const plural=(n,a,b)=>`${n.toLocaleString("es-ES")} ${n===1?a:b}`;
+function pintarCabecera(){
+  const c=CFG();
+  $("op-eyebrow").textContent=c.eyebrow||c.corto;
+  $("op-titulo").textContent=c.titulo||("Test de "+c.nombre);
+  $("op-sub").textContent=c.sub||"";
+  $("f-n").textContent=(c.n||0).toLocaleString("es-ES");
+  $("f-temas").textContent=`${AVAIL.length} de ${TEMARIO.length}`;
+  $("f-plazas").textContent=c.plazas?c.plazas.toLocaleString("es-ES"):"—";$("f-plazas").nextElementSibling.textContent="plazas convocadas"+(c.plazasNota?" ("+c.plazasNota+")":"");
+  $("f-examen").textContent=c.examenTxt||"Sin fecha";$("f-examen-l").textContent=c.examen?(c.examenLbl||"examen").toLowerCase()+" previsto":"fecha del examen";
+  $("temario-h").textContent="Qué temas incluye"+(c.programa?" (programa: "+c.programa+")":"");
+  $("temario").innerHTML=TEMARIO.map(([k,t])=>`<div class="${AVAIL.includes(k)?"on":"off"}"><b>${k}</b><span>${esc(t)}</span></div>`).join("");
+  $("faq-examen").textContent=c.faqExamen||"";$("faq-examen-w").classList.toggle("hidden",!c.faqExamen);
+  $("faq-cayo").textContent=c.faqCayo||"";$("faq-cayo-w").classList.toggle("hidden",!c.faqCayo);
+  $("foot-programa").textContent=c.programa?`Programa de ${c.nombre}: ${c.programa}.`:"";
+  const ofi=c.enlaces||[];$("oficiales-card").classList.toggle("sin-enlaces",!ofi.length);
+  $("ofi-txt").textContent=c.enlacesTxt||"Las bases, el programa y los exámenes de convocatorias anteriores, en las webs oficiales.";
+  $("oficiales").innerHTML=ofi.map(x=>`<a class="btn ghost small" href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.t)} ↗</a>`).join("");
+  const sel=$("op-select");
+  sel.innerHTML=Object.entries(OPOS).filter(([id])=>opValida(id)).map(([id,x])=>`<option value="${id}" ${id===OP?"selected":""}>${esc(x.corto)}</option>`).join("");
+  sel.classList.toggle("hidden",sel.options.length<2);
+}
+$("op-select").addEventListener("change",e=>cambiarOp(e.target.value));
+function cambiarOp(op){
+  if(!opValida(op)||op===OP&&TEMARIO.length)return;
+  OP=op;setLS("auxcm-op",op);
+  Q=[];BYID={};setOpVars();pintarCabecera();buildSetup();
+  if(user){refreshAccess()}else{renderAccess();applyPlan()}
+}
+
+// ===== AVISO DE COOKIES =====
+const CK="auxcm-cookies";
+function getLS(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function setLS(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+if(!getLS(CK)) $("cookiebar").classList.remove("hidden");
+$("cookie-ok").addEventListener("click",()=>{setLS(CK,new Date().toISOString());$("cookiebar").classList.add("hidden")});
+$("open-cookies").addEventListener("click",()=>$("cookiebar").classList.remove("hidden"));
+
+// ===== CUENTAS DE USUARIO =====
+const AUTH_ON=!!(SUPABASE_URL&&SUPABASE_ANON_KEY);
+let sb=null,user=null,syncTimer=null,sbLoading=null;
+function loadSupabase(){
+  if(sb)return Promise.resolve(sb);
+  if(sbLoading)return sbLoading;
+  sbLoading=new Promise((res,rej)=>{
+    const s=document.createElement("script");s.src=SUPABASE_JS;s.async=true;
+    s.onload=()=>{try{sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+      sb.auth.onAuthStateChange((ev,session)=>{
+        if(ev==="PASSWORD_RECOVERY"){openAccount();$("f-newpass").classList.remove("hidden");showMsg("acc-msg","Escribe tu nueva contraseña.","ok")}
+        setUser(session?session.user:null)});
+      res(sb)}catch(e){rej(e)}};
+    s.onerror=()=>rej(new Error("No se pudo cargar el sistema de cuentas"));
+    document.head.appendChild(s);
+  });
+  return sbLoading;
+}
+function hasStoredSession(){try{return Object.keys(localStorage).some(k=>k.startsWith("sb-")&&k.endsWith("-auth-token"))}catch(e){return false}}
+function showMsg(id,text,kind){const m=$(id);m.textContent=text;m.className="msg "+(kind||"err");m.classList.remove("hidden")}
+function hideMsg(id){$(id).classList.add("hidden")}
+function setSync(t){const s=$("sync-state");if(!t){s.classList.add("hidden");return}s.textContent=t;s.classList.remove("hidden")}
+function mergeOp(a,b){
+  a=a||{};b=b||{};const out={t:{},wrong:[]};
+  new Set([...Object.keys(a.t||{}),...Object.keys(b.t||{})]).forEach(k=>{
+    const x=(a.t||{})[k]||{a:0,n:0},y=(b.t||{})[k]||{a:0,n:0};out.t[k]=x.n>=y.n?x:y});
+  out.wrong=[...new Set([...(a.wrong||[]),...(b.wrong||[])])];
+  out.marks=[...new Set([...(a.marks||[]),...(b.marks||[])])];
+  const seen=new Set();out.sims=[...(a.sims||[]),...(b.sims||[])].filter(s=>!seen.has(s.ts)&&seen.add(s.ts)).sort((p,q)=>p.ts-q.ts).slice(-20);
+  return out;
+}
+function mergeDB(a,b){
+  a=normDB(JSON.parse(JSON.stringify(a||{})));b=normDB(JSON.parse(JSON.stringify(b||{})));
+  const out={ops:{},done:Math.max(a.done||0,b.done||0)};
+  new Set([...Object.keys(a.ops),...Object.keys(b.ops)]).forEach(o=>{out.ops[o]=mergeOp(a.ops[o],b.ops[o])});
+  out.days={...(b.days||{})};Object.entries(a.days||{}).forEach(([k,v])=>{out.days[k]=Math.max(v,out.days[k]||0)});
+  out.goal=a.goal||b.goal||20;
+  return out;
+}
+async function pullAndMerge(){
+  setSync("Sincronizando…");
+  let data=null;
+  try{({data}=await conReintentos(()=>sb.from("progreso").select("datos").eq("user_id",user.id).maybeSingle()))}
+  catch(e){registrarError("leer progreso",e);setSync("Guardado en este dispositivo");return}
+  if(data&&data.datos){DB=mergeDB(DB,data.datos);try{localStorage.setItem(KEY,JSON.stringify(DB))}catch(e){}}
+  await pushNow();refreshSetup();renderStats();renderToday();if(VISTA==="inicio")renderInicio();
+}
+async function pushNow(){
+  if(!sb||!user)return;
+  try{await conReintentos(()=>sb.from("progreso").upsert({user_id:user.id,datos:DB,actualizado:new Date().toISOString()}));setSync("Progreso guardado en tu cuenta")}
+  catch(e){registrarError("guardar progreso",e);setSync("Guardado en este dispositivo");clearTimeout(syncTimer);syncTimer=setTimeout(pushNow,60000)}
+}
+function scheduleSync(){if(!user)return;clearTimeout(syncTimer);setSync("Guardando…");syncTimer=setTimeout(pushNow,1500)}
+function setUser(u){
+  const changed=(u&&u.id)!==(user&&user.id);
+  user=u;
+  $("btn-login").classList.toggle("hidden",!!u);
+  $("btn-account").classList.toggle("hidden",!u);
+  $("who").classList.toggle("hidden",!u);
+  if(u){$("who").textContent=u.email;$("acc-email").textContent=u.email;if(changed){
+      // El progreso guardado en este navegador solo se mezcla si es de esta misma cuenta
+      if(getLS(OWNER)!==u.id){DB=dbVacia();try{localStorage.setItem(KEY,"{}")}catch(e){}}
+      setLS(OWNER,u.id);pullAndMerge();refreshAccess().then(()=>{if(/[?&]pago=ok/.test(location.search)){history.replaceState(null,"",location.pathname);esperarPago()}})}}
+  else{setSync("");if(changed||ACC.plan){ACC={plan:null};Q=[];BYID={};borrarCopias();
+      DB=dbVacia();try{localStorage.setItem(KEY,"{}");localStorage.removeItem(OWNER)}catch(e){}
+      try{refreshSetup();renderStats();renderToday();if(VISTA==="inicio")renderInicio()}catch(e){}}$("admin").classList.add("hidden");renderAccess();applyPlan()}
+}
+function setTab(t){
+  ["signup","login","reset"].forEach(x=>{$("tab-"+x).setAttribute("aria-selected",String(x===t));$("f-"+x).classList.toggle("hidden",x!==t)});
+  hideMsg("auth-msg");
+}
+function openAuth(t,msg){
+  setTab(t||"signup");if(msg)showMsg("auth-msg",msg,"ok");$("dlg-auth").showModal();
+  loadSupabase().catch(()=>showMsg("auth-msg","No se ha podido conectar con el sistema de cuentas. Inténtalo más tarde."));
+}
+function openAccount(){hideMsg("acc-msg");$("f-newpass").classList.add("hidden");$("dlg-account").showModal()}
+const ERR={"Invalid login credentials":"Email o contraseña incorrectos.","Email not confirmed":"Todavía no has confirmado tu email. Revisa tu correo (y la carpeta de spam).","User already registered":"Ya existe una cuenta con ese email. Prueba a entrar.","Password should be at least 8 characters":"La contraseña debe tener al menos 8 caracteres."};
+function errText(e){
+  const m=(e&&e.message)||"";
+  if(/temporal|no válido/i.test(m))return m;
+  if(ERR[m])return ERR[m];
+  registrarError("cuenta",e);
+  if(/rate limit|too many/i.test(m))return "Hay mucha gente registrándose ahora mismo. Espera unos minutos y vuelve a intentarlo.";
+  if(/fetch|network|failed to/i.test(m))return "No hemos podido conectar. Comprueba tu conexión a internet y vuelve a intentarlo.";
+  return "No se ha podido completar. Vuelve a intentarlo en un momento.";
+}
+const validEmail=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
+// ===== ROBUSTEZ: reintentos, copia local y registro de errores =====
+const espera=ms=>new Promise(r=>setTimeout(r,ms));
+function leerLS(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
+function guardarLS(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function borrarCopias(){try{Object.keys(localStorage).filter(k=>k.startsWith("auxcm-q-")||k.startsWith("auxcm-acc-")).forEach(k=>localStorage.removeItem(k))}catch(e){}}
+async function conReintentos(fn,intentos=3){
+  let ult;
+  for(let i=0;i<intentos;i++){
+    try{const r=await fn();if(r&&r.error)throw r.error;return r}
+    catch(e){ult=e;
+      if(i<intentos-1){
+        if(sb&&/jwt|token|401|expired/i.test((e&&e.message)||""))try{await sb.auth.refreshSession()}catch(_){}
+        await espera(700*Math.pow(2,i));
+      }}
+  }
+  throw ult;
+}
+function registrarError(ctx,e){
+  try{
+    const m=((e&&(e.message||e.reason&&e.reason.message))||String(e||"")).slice(0,500);
+    if(sb)sb.rpc("registrar_error",{m,c:ctx,a:navigator.userAgent}).then(()=>{},()=>{});
+  }catch(_){}
+}
+window.addEventListener("error",e=>registrarError("error de la página",e.error||e.message));
+window.addEventListener("unhandledrejection",e=>registrarError("error de la página",e.reason));
+const MSG_CONEXION="No hemos podido conectar ahora mismo. Comprueba tu conexión a internet y vuelve a pulsar «Empezar test».";
+
+// ===== ACCESO Y PAGOS =====
+function renderAccess(){
+  const a=$("acceso");a.classList.remove("hidden","ok");
+  let html;
+  if(!AUTH_ON){a.classList.add("hidden");return}
+  if(!user&&BETA) html=`<p><strong>Versión de pruebas.</strong> Crea tu cuenta y tendrás acceso completo gratis mientras dure la fase de pruebas.</p><button class="primary small" id="acc-cta">Crear mi cuenta</button>`;
+  else if(!user) html=`<p><strong>Pruébalo gratis 2 días con todo incluido.</strong> Solo necesitas crear una cuenta: sin tarjeta y sin compromiso.</p><button class="primary small" id="acc-cta">Empezar la prueba gratis</button>`;
+  else if(ACC.admin){a.classList.add("ok");html=`<p><strong>Cuenta de administrador.</strong> Tienes acceso a todo.${BETA?" El modo pruebas está activado: no se puede pagar.":""}</p><button class="ghost small" id="acc-admin">Panel de administración</button>`}
+  else if(ACC.plan==="beta"){a.classList.add("ok");html=`<p><strong>Versión de pruebas:</strong> tienes acceso completo gratis a todas las oposiciones, simulacros incluidos.${FORM_URL?` Si ves un error o tienes una idea, <a href="${FORM_URL}" target="_blank" rel="noopener">cuéntamelo aquí</a>.`:""}</p>`}
+  else if(ACC.plan==="prueba") html=`<p><strong>Prueba gratis activa:</strong> te quedan ${quedan(ACC.hasta)}. Tienes acceso a todo, simulacros incluidos.</p><button class="ghost small" id="acc-cta">Ver planes</button>`;
+  else if(ACC.plan){a.classList.add("ok");const mej=PLANES.some(p=>(RANGO[p.id]||0)>(RANGO[ACC.plan]||0));html=`<p><strong>${PLAN_NOMBRE[ACC.plan]}</strong> de ${esc(CFG().corto)} activo hasta el ${fechaCorta(ACC.hasta)}.</p>${mej?'<button class="ghost small" id="acc-cta">Mejorar plan</button>':""}`}
+  else if(ACC.cargando) html=`<p>Comprobando tu acceso…</p>`;
+  else html=`<p><strong>Sin plan activo en ${esc(CFG().corto)}.</strong> Elige un plan para seguir practicando; tu progreso se mantiene.</p><button class="primary small" id="acc-cta">Ver planes</button>`;
+  a.innerHTML=html;
+  const b=$("acc-cta");if(b)b.addEventListener("click",()=>{if(!user)return openAuth("signup");mostrarVista("practicar");showPlans()});
+  const ba=$("acc-admin");if(ba)ba.addEventListener("click",openAdmin);
+  $("btn-admin").classList.toggle("hidden",!ACC.admin);
+  $("acc-plan").textContent=user?(ACC.plan?`${PLAN_NOMBRE[ACC.plan]}${ACC.plan==="beta"?"":" · "+CFG().corto}${ACC.hasta?` · hasta el ${fechaCorta(ACC.hasta)}`:""}`:`Sin plan activo en ${CFG().corto}.`):"";
+  renderPlans();
+}
+function renderPlans(){
+  const actual=RANGO[ACC.plan]||0;
+  $("planes-list").innerHTML=PLANES.map(p=>{
+    const tengo=actual>=(RANGO[p.id]||0);
+    return `<div class="plan${p.dest?" dest":""}"><h3>${p.nombre}</h3><div class="precio">${p.precio} € <small>pago único</small></div><ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}</ul>${tengo?'<span class="actual">✓ Incluido en tu plan</span>':`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">Elegir ${p.nombre}</button>`}</div>`}).join("");
+  document.querySelectorAll("#planes-list button[data-plan]").forEach(b=>b.addEventListener("click",()=>comprar(b.dataset.plan)));
+}
+function applyBeta(){
+  const beta=BETA!==false;   // mientras no se sabe, se ocultan los precios
+  $("planes").classList.toggle("hidden",beta||VISTA!=="practicar"||EN_TEST);
+  $("faq-precio").classList.toggle("hidden",beta);
+  $("sub-oferta").textContent=BETA?"Versión de pruebas: acceso completo gratis con tu cuenta.":"Pruébalo gratis 2 días, sin tarjeta.";
+  $("auth-intro").innerHTML=BETA?"Estamos en <strong>fase de pruebas</strong>: al crear tu cuenta tendrás acceso completo gratis. Tu progreso se guarda y lo recuperas en cualquier dispositivo.":"Al crear tu cuenta empiezas <strong>2 días de prueba gratis con todo incluido</strong>, sin tarjeta. Tu progreso se guarda y lo recuperas en cualquier dispositivo.";
+  renderAccess();
+}
+function showPlans(msg){
+  if(BETA){showMsg("setup-msg",msg||"Ahora mismo no se puede comprar: la web está en fase de pruebas.");return}
+  if(msg)showMsg("planes-msg",msg,"err");else hideMsg("planes-msg");
+  $("planes").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function comprar(plan){
+  if(!user){openAuth("signup","Primero crea tu cuenta (o entra si ya la tienes). Luego podrás pagar.");return}
+  if(BETA){showMsg("planes-msg","Ahora mismo no se puede comprar: la web está en fase de pruebas.");return}
+  if(!$("pay-legal").checked){showMsg("planes-msg","Para continuar, marca la casilla de aceptación de las condiciones de compra.");return}
+  const link=(PAY_LINKS[OP]||{})[plan];
+  if(!link){showMsg("planes-msg","Los pagos todavía no están activados. Vuelve a intentarlo en unos días.");return}
+  const url=link+(link.includes("?")?"&":"?")+"client_reference_id="+encodeURIComponent(user.id+"__"+OP)+"&locked_prefilled_email="+encodeURIComponent(user.email);
+  location.href=url;
+}
+function applyPlan(){
+  const m=maxTema();
+  if(!$("temas"))return;
+  AVAIL.forEach(k=>{const i=$("tema-"+k),l=$("lock-"+k);if(!i)return;const bloq=!!ACC.plan&&k>m;i.disabled=bloq;if(bloq)i.checked=false;l.classList.toggle("hidden",!bloq)});
+  refreshSetup();
+}
+async function refreshAccess(){
+  if(!sb||!user){ACC={plan:null};renderAccess();applyPlan();return ACC}
+  const prev=ACC;ACC={plan:null,cargando:true};renderAccess();
+  const kc="auxcm-acc-"+user.id+"-"+OP,opPedida=OP;
+  try{
+    // mi_acceso_op existe tras ejecutar 8-oposiciones.sql; si no, se usa la versión anterior (solo Auxiliar CM)
+    let r=await conReintentos(()=>sb.rpc("mi_acceso_op",{op:OP})).catch(e=>{if(OP===OP_DEF&&/mi_acceso_op|PGRST202|function/i.test((e&&(e.message||e.code))||""))return null;throw e});
+    if(!r)r=await conReintentos(()=>sb.rpc("mi_acceso"));
+    if(opPedida!==OP)return ACC;
+    ACC=r.data||{plan:null};guardarLS(kc,ACC);
+  }catch(e){
+    registrarError("comprobar acceso",e);
+    const c=leerLS(kc)||(prev&&prev.plan?prev:null);
+    // Sin conexión: si la última vez tenía acceso y no ha caducado, sigue estudiando.
+    ACC=(c&&c.plan&&(!c.hasta||new Date(c.hasta)>new Date()))?c:{plan:null,error:true};
+  }
+  renderAccess();applyPlan();return ACC;
+}
+let SIN_COL_OP=false;   // la base de datos aún no tiene la columna "oposicion" (falta 8-oposiciones.sql)
+async function descargarPreguntas(){
+  let rows=[],from=0;
+  for(;;){
+    const r=await conReintentos(()=>{let q=sb.from("preguntas").select("tema,pregunta,opciones,correcta,articulo,explicacion,examen");if(!SIN_COL_OP)q=q.eq("oposicion",OP);return q.order("id").range(from,from+999)})
+      .catch(e=>{if(!SIN_COL_OP&&OP===OP_DEF&&/oposicion/i.test((e&&e.message)||"")){SIN_COL_OP=true;return descargarPreguntas().then(rows=>({data:rows,todo:true}))}throw e});
+    if(r.todo)return r.data;
+    rows=rows.concat(r.data||[]);if(!r.data||r.data.length<1000)break;from+=1000;
+  }
+  return rows;
+}
+async function loadQuestions(){
+  if(Q.length)return;
+  const kq="auxcm-q-"+user.id+"-"+OP,max=maxTema(),c=leerLS(kq),opPedida=OP;
+  const copiaValida=c&&c.max===max&&Array.isArray(c.rows)&&c.rows.length;
+  if(copiaValida&&Date.now()-c.t<24*36e5){
+    // Arranca al instante con la copia guardada y la actualiza por detrás.
+    setQuestions(c.rows);refreshSetup();
+    descargarPreguntas().then(rows=>{if(rows.length&&opPedida===OP){guardarLS(kq,{t:Date.now(),max,rows});setQuestions(rows)}}).catch(e=>registrarError("actualizar preguntas",e));
+    return;
+  }
+  setSync("Cargando preguntas…");
+  try{
+    const rows=await descargarPreguntas();
+    if(opPedida!==OP)return;
+    setQuestions(rows);if(rows.length)guardarLS(kq,{t:Date.now(),max,rows});
+  }catch(e){
+    registrarError("cargar preguntas",e);
+    if(c&&Array.isArray(c.rows)&&c.rows.length)setQuestions(c.rows.filter(r=>r.tema<=max));
+    else{setSync("");throw e}
+  }
+  setSync("");refreshSetup();
+}
+async function ensureAccess(modo){
+  hideMsg("setup-msg");
+  if(!AUTH_ON){showMsg("setup-msg","El sistema de cuentas no está configurado.");return false}
+  if(!user){openAuth("signup",BETA?"Crea tu cuenta para empezar: durante la fase de pruebas el acceso es completo y gratis.":"Crea tu cuenta para empezar: tienes 2 días de prueba gratis con todo incluido, sin tarjeta.");return false}
+  await refreshAccess();
+  if(ACC.error){showMsg("setup-msg",MSG_CONEXION,"err");return false}
+  if(!ACC.plan){showPlans("Tu prueba gratis ha terminado. Elige un plan para seguir practicando; tu progreso se mantiene.");return false}
+  if(isSim(modo)&&!simPermitido(modo)){showPlans(`El «${SIMCFG[modo].nombre}» no está incluido en tu plan. Puedes mejorarlo aquí.`);return false}
+  try{await loadQuestions()}catch(e){setSync("");showMsg("setup-msg",MSG_CONEXION,"err");return false}
+  if(!Q.length){registrarError("sin preguntas","plan "+ACC.plan+" · "+OP);showMsg("setup-msg",MSG_CONEXION,"err");return false}
+  return true;
+}
+async function esperarPago(){
+  showMsg("planes-msg","Pago recibido. Estamos activando tu plan; tarda unos segundos…","ok");
+  for(let i=0;i<20;i++){
+    await refreshAccess();
+    if(ACC.plan&&ACC.plan!=="prueba"){Q=[];BYID={};showMsg("planes-msg",`¡Listo! ${PLAN_NOMBRE[ACC.plan]} activado. Gracias por tu compra.`,"ok");return}
+    await new Promise(r=>setTimeout(r,3000));
+  }
+  showMsg("planes-msg","El pago se ha recibido, pero el plan aún no aparece. Recarga la página en unos minutos; si sigue igual, escríbenos.","err");
+}
+function emailTemporal(em){const d=(em.split("@")[1]||"").toLowerCase();if(!d)return false;if(DOMINIOS_TEMPORALES.has(d))return true;for(const x of DOMINIOS_TEMPORALES)if(d.endsWith("."+x))return true;return false}
+// ----- panel de administración -----
+const fmtF=s=>s?new Date(s).toLocaleDateString("es-ES"):"—";
+const fmtFH=s=>s?new Date(s).toLocaleString("es-ES",{day:"2-digit",month:"2-digit",year:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let ADMIN_USERS=[];
+function openAdmin(){if(VISTA!=="practicar")mostrarVista("practicar");$("admin").classList.remove("hidden");loadAdmin();$("admin").scrollIntoView({behavior:"smooth",block:"start"})}
+async function loadAdmin(){
+  if(!ACC.admin)return;
+  hideMsg("admin-msg");
+  const [r,u,c]=await Promise.all([sb.rpc("admin_resumen"),sb.rpc("admin_usuarios"),sb.rpc("admin_compras")]);
+  if(r.error||u.error||c.error){showMsg("admin-msg","No se han podido cargar los datos del panel.");return}
+  const d=r.data;BETA=!!d.beta;applyBeta();
+  $("admin-tiles").innerHTML=[["Usuarios",d.usuarios],["Email confirmado",d.confirmados],["Nuevos (7 días)",d.nuevos_7d],["Activos (7 días)",d.activos_7d],["En prueba de 2 días",d.en_prueba],["Con plan",d.con_plan],["Ventas",d.ventas],["Ingresos",(d.ingresos_cent/100).toLocaleString("es-ES",{style:"currency",currency:"EUR"})]]
+    .map(([k,v])=>`<div><b>${esc(v)}</b><span>${k}</span></div>`).join("");
+  $("admin-beta-txt").textContent=BETA?"ACTIVADO. Todos los registrados tienen acceso completo gratis, los precios están ocultos y no se puede pagar.":"DESACTIVADO. Cada cuenta nueva tiene 2 días de prueba y después tiene que pagar. Las cuentas que ya tenían más de 2 días pierden el acceso salvo que les des acceso a mano.";
+  $("admin-beta-btn").textContent=BETA?"Desactivar modo pruebas y abrir los pagos":"Activar modo pruebas";
+  ADMIN_USERS=u.data||[];renderAdminUsers();
+  const vi=await sb.rpc("admin_visitas",{dias:14});
+  if(vi.error){$("admin-visitas").innerHTML='<tr><td colspan="4" class="meta">Falta ejecutar el archivo 7-visitas.sql en Supabase.</td></tr>'}
+  else{const V=vi.data||[],tv=V.reduce((a,x)=>a+x.visitas,0),ts=V.reduce((a,x)=>a+x.sin_sesion,0),tr=V.reduce((a,x)=>a+x.registros,0);
+    $("admin-visitas").innerHTML=V.map(x=>`<tr><td>${fmtF(x.dia+"T12:00:00")}</td><td>${esc(x.visitas)}</td><td>${esc(x.sin_sesion)}</td><td>${esc(x.registros)}</td></tr>`).join("")+
+      `<tr><td><b>Total</b></td><td><b>${tv}</b></td><td><b>${ts}</b></td><td><b>${tr}</b>${ts?` <span class="meta">(${Math.round(100*tr/ts)} % de las visitas sin sesión acaban en registro)</span>`:""}</td></tr>`;
+    const hoy=V[0]||{visitas:0,registros:0};
+    $("admin-tiles").insertAdjacentHTML("afterbegin",`<div><b>${esc(hoy.visitas)}</b><span>Visitas hoy</span></div><div><b>${esc(hoy.registros)}</b><span>Registros hoy</span></div>`)}
+  const er=await sb.rpc("admin_errores");
+  $("admin-errores").innerHTML=er.error?'<tr><td colspan="5" class="meta">Falta ejecutar el archivo 6-errores.sql en Supabase.</td></tr>':
+    ((er.data||[]).map(x=>`<tr><td>${fmtFH(x.creado)}</td><td>${esc(x.email||"sin sesión")}</td><td>${esc(x.contexto)}</td><td style="white-space:normal;min-width:240px">${esc(x.mensaje)}</td><td style="white-space:normal;max-width:220px" class="meta">${esc((x.agente||"").slice(0,80))}</td></tr>`).join("")||'<tr><td colspan="5" class="meta">Ningún error registrado. 👍</td></tr>');
+  $("admin-compras").innerHTML=(c.data||[]).map(x=>`<tr><td>${fmtFH(x.creado)}</td><td>${esc(x.email)}</td><td>${esc(x.plan)}</td><td>${((x.importe_cent||0)/100).toLocaleString("es-ES",{style:"currency",currency:"EUR"})}</td><td>${esc(x.tipo)}</td><td>${fmtF(x.hasta)}</td></tr>`).join("")||'<tr><td colspan="6" class="meta">Todavía no hay compras.</td></tr>';
+}
+function renderAdminUsers(){
+  const f=$("admin-filter").value.trim().toLowerCase();
+  const L=ADMIN_USERS.filter(x=>!f||(x.email||"").toLowerCase().includes(f));
+  $("admin-ucount").textContent=`(${L.length})`;
+  $("admin-users").innerHTML=L.map(x=>`<tr><td>${esc(x.email)}${x.confirmado?"":' <span class="meta">(sin confirmar)</span>'}</td><td>${fmtF(x.registrado)}</td><td><span class="est ${esc(x.estado)}">${esc(x.estado)}</span></td><td>${x.estado==="admin"||x.estado==="pruebas"?"—":fmtF(x.hasta)}</td><td>${esc(x.respuestas)}</td><td>${fmtFH(x.ultima_actividad)}</td></tr>`).join("")||'<tr><td colspan="6" class="meta">Sin resultados.</td></tr>';
+}
+$("admin-filter").addEventListener("input",renderAdminUsers);
+$("admin-diag").addEventListener("click",async()=>{
+  const ul=$("admin-diag-res");ul.innerHTML="<li>Comprobando…</li>";
+  const res=[];
+  const ok=(t)=>res.push(`<li>✅ ${t}</li>`),mal=(t,c)=>res.push(`<li>❌ ${t}<br><span class="meta">${c}</span></li>`);
+  try{const r=await sb.rpc("estado_web");if(r.error)throw r.error;ok("Conexión con Supabase"+(r.data&&r.data.beta?" · modo pruebas activado":" · modo pruebas desactivado"))}catch(e){mal("Conexión con Supabase","Revisa que el proyecto de Supabase esté activo (los gratuitos se pausan tras 7 días sin uso) y que 1-configuracion.sql esté ejecutado. Detalle: "+esc(e.message))}
+  try{const r=await sb.rpc("mi_acceso");if(r.error)throw r.error;ok("Comprobación de acceso ("+esc(r.data&&r.data.plan)+")")}catch(e){mal("Comprobación de acceso","Vuelve a ejecutar 1-configuracion.sql. Detalle: "+esc(e.message))}
+  try{const r=await sb.from("preguntas").select("id",{count:"exact",head:true});if(r.error)throw r.error;if(!r.count)throw new Error("la tabla está vacía");ok(`Preguntas: ${r.count} en la base de datos`)}catch(e){mal("Lectura de preguntas","Ejecuta 5-permisos.sql y los archivos de preguntas (p01, p02, p03…). Detalle: "+esc(e.message))}
+  for(const [id,c] of Object.entries(OPOS).filter(([id])=>opValida(id))){
+    try{const r=await sb.from("preguntas").select("id",{count:"exact",head:true}).eq("oposicion",id);if(r.error)throw r.error;
+      if(r.count!==c.n)throw new Error(`hay ${r.count} y la web espera ${c.n}`);ok(`${c.corto}: ${r.count} preguntas`)}
+    catch(e){mal(`${c.corto}: preguntas`,"Ejecuta 8-oposiciones.sql y los archivos de preguntas. Detalle: "+esc(e.message))}}
+  try{const r=await sb.rpc("mi_acceso_op",{op:OP});if(r.error)throw r.error;ok("Acceso por oposición")}catch(e){mal("Acceso por oposición","Ejecuta 8-oposiciones.sql. Detalle: "+esc(e.message))}
+  try{const r=await sb.from("progreso").select("user_id").limit(1);if(r.error)throw r.error;ok("Guardado del progreso")}catch(e){mal("Guardado del progreso","Ejecuta 5-permisos.sql. Detalle: "+esc(e.message))}
+  try{const r=await sb.rpc("admin_errores");if(r.error)throw r.error;ok("Registro de errores")}catch(e){mal("Registro de errores","Ejecuta 6-errores.sql. Detalle: "+esc(e.message))}
+  try{const r=await sb.rpc("admin_visitas",{dias:1});if(r.error)throw r.error;ok("Contador de visitas")}catch(e){mal("Contador de visitas","Ejecuta 7-visitas.sql. Detalle: "+esc(e.message))}
+  ul.innerHTML=res.join("");
+});
+$("admin-reload").addEventListener("click",loadAdmin);
+$("btn-admin").addEventListener("click",openAdmin);
+$("admin-beta-btn").addEventListener("click",async()=>{
+  const b=$("admin-beta-btn"),activar=!BETA;
+  if(!activar&&!b.dataset.confirm){b.dataset.confirm="1";b.textContent="Pulsa otra vez para confirmar: se abrirán los pagos";return}
+  delete b.dataset.confirm;
+  const {error}=await sb.rpc("admin_modo_beta",{activar});
+  if(error){showMsg("admin-msg","No se ha podido cambiar el modo pruebas.");return}
+  showMsg("admin-msg",activar?"Modo pruebas activado.":"Modo pruebas desactivado: ya se puede pagar.","ok");loadAdmin();
+});
+$("admin-grant").addEventListener("submit",async e=>{
+  e.preventDefault();const em=$("ag-email").value.trim(),pl=$("ag-plan").value,h=$("ag-hasta").value;
+  if(!validEmail(em)||!h){showMsg("admin-msg","Escribe un email y una fecha válidos.");return}
+  const op=$("ag-op").value||OP_DEF,hh=new Date(h+"T23:59:59").toISOString();
+  let {error}=await sb.rpc("admin_conceder_op",{e:em,p:pl,h:hh,o:op});
+  if(error&&op===OP_DEF&&/admin_conceder_op|PGRST202|function/i.test(error.message||error.code||""))({error}=await sb.rpc("admin_conceder",{e:em,p:pl,h:hh}));
+  if(error){showMsg("admin-msg","No se ha podido dar el acceso.");return}
+  showMsg("admin-msg",`Acceso ${pl} de ${OPOS[op].corto} dado a ${em} hasta el ${fmtF(h+"T12:00:00")}.`,"ok");$("ag-email").value="";loadAdmin();
+});
+$("ag-revoke").addEventListener("click",async()=>{
+  const em=$("ag-email").value.trim();if(!validEmail(em)){showMsg("admin-msg","Escribe arriba el email al que quieres quitar el acceso.");return}
+  const {data,error}=await sb.rpc("admin_revocar",{e:em});
+  if(error){showMsg("admin-msg","No se ha podido quitar el acceso.");return}
+  showMsg("admin-msg",data?`Accesos dados a mano retirados a ${em}.`:`${em} no tenía accesos dados a mano activos. (Las compras pagadas no se pueden quitar desde aquí: haz el reembolso en Stripe.)`,data?"ok":"err");loadAdmin();
+});
+
+// ===== ARRANQUE =====
+setOpVars();pintarCabecera();buildSetup();
+$("ag-op").innerHTML=Object.entries(OPOS).filter(([id])=>opValida(id)).map(([id,c])=>`<option value="${id}">${esc(c.corto)}</option>`).join("");
+mostrarVista(["practicar","progreso"].includes(location.hash.slice(1))?location.hash.slice(1):"inicio");
+renderPlans();renderAccess();
+
+if(AUTH_ON){
+  $("btn-login").classList.remove("hidden");
+  loadSupabase().then(async()=>{
+    try{const r=await sb.rpc("estado_web");BETA=!!(r.data&&r.data.beta)}catch(e){BETA=false}
+    try{sb.rpc("registrar_visita",{con_sesion:hasStoredSession()}).then(()=>{},()=>{})}catch(e){}
+    applyBeta();
+    if(hasStoredSession()||/access_token|type=recovery|code=/.test(location.hash+location.search)){const r=await sb.auth.getSession();setUser(r.data.session?r.data.session.user:null)}
+  }).catch(()=>{BETA=false;applyBeta()});
+  $("btn-login").addEventListener("click",()=>openAuth("signup"));
+  $("btn-account").addEventListener("click",openAccount);
+  $("auth-close").addEventListener("click",()=>$("dlg-auth").close());
+  $("acc-close").addEventListener("click",()=>$("dlg-account").close());
+  ["signup","login","reset"].forEach(t=>$("tab-"+t).addEventListener("click",()=>setTab(t)));
+  $("f-signup").addEventListener("submit",async e=>{
+    e.preventDefault();const em=$("su-email").value.trim(),pw=$("su-pass").value;
+    if(!validEmail(em))return showMsg("auth-msg","Escribe un email válido.");
+    if(emailTemporal(em))return showMsg("auth-msg","No se admiten emails temporales. Usa tu correo habitual (Gmail, Outlook, Hotmail, Yahoo...).");
+    if(pw.length<8)return showMsg("auth-msg","La contraseña debe tener al menos 8 caracteres.");
+    if(!$("su-legal").checked)return showMsg("auth-msg","Para crear la cuenta tienes que aceptar la política de privacidad y el aviso legal.");
+    if(!$("su-age").checked)return showMsg("auth-msg","Para crear una cuenta tienes que tener 14 años o más.");
+    $("su-btn").disabled=true;
+    try{await loadSupabase();
+      const {data,error}=await sb.auth.signUp({email:em,password:pw,options:{emailRedirectTo:location.origin+location.pathname,data:{acepta_privacidad:new Date().toISOString(),mayor_14:true}}});
+      if(error)throw error;
+      if(data.session){$("dlg-auth").close()}
+      else showMsg("auth-msg","Cuenta creada. Te hemos enviado un email para confirmarla: abre el enlace y ya podrás entrar. Tus 2 días de prueba gratis cuentan desde que creas la cuenta.","ok");
+    }catch(err){showMsg("auth-msg",errText(err))}finally{$("su-btn").disabled=false}
+  });
+  $("f-login").addEventListener("submit",async e=>{
+    e.preventDefault();const em=$("li-email").value.trim(),pw=$("li-pass").value;
+    if(!validEmail(em)||!pw)return showMsg("auth-msg","Escribe tu email y tu contraseña.");
+    $("li-btn").disabled=true;
+    try{await loadSupabase();const {error}=await sb.auth.signInWithPassword({email:em,password:pw});if(error)throw error;$("dlg-auth").close()}
+    catch(err){showMsg("auth-msg",errText(err))}finally{$("li-btn").disabled=false}
+  });
+  $("f-reset").addEventListener("submit",async e=>{
+    e.preventDefault();const em=$("rs-email").value.trim();
+    if(!validEmail(em))return showMsg("auth-msg","Escribe un email válido.");
+    $("rs-btn").disabled=true;
+    try{await loadSupabase();await sb.auth.resetPasswordForEmail(em,{redirectTo:location.origin+location.pathname});
+      showMsg("auth-msg","Si existe una cuenta con ese email, te llegará un enlace para cambiar la contraseña.","ok")}
+    catch(err){showMsg("auth-msg",errText(err))}finally{$("rs-btn").disabled=false}
+  });
+  $("acc-logout").addEventListener("click",async()=>{await pushNow();await sb.auth.signOut();$("dlg-account").close()});
+  $("acc-changepass").addEventListener("click",()=>$("f-newpass").classList.toggle("hidden"));
+  $("f-newpass").addEventListener("submit",async e=>{
+    e.preventDefault();const pw=$("np-pass").value;
+    if(pw.length<8)return showMsg("acc-msg","La contraseña debe tener al menos 8 caracteres.");
+    const {error}=await sb.auth.updateUser({password:pw});
+    if(error)showMsg("acc-msg",errText(error));else{showMsg("acc-msg","Contraseña cambiada.","ok");$("f-newpass").classList.add("hidden")}
+  });
+  $("acc-delete").addEventListener("click",async()=>{
+    const b=$("acc-delete");
+    if(!b.dataset.confirm){b.dataset.confirm="1";b.textContent="Pulsa otra vez para confirmar";return}
+    const {error}=await sb.rpc("eliminar_mi_cuenta");
+    if(error){showMsg("acc-msg","No se ha podido eliminar la cuenta. Escríbenos y lo haremos por ti.");return}
+    await sb.auth.signOut();$("dlg-account").close();
+  });
+}
+</script>
+</body>
+</html>
