@@ -6,12 +6,9 @@ Este archivo es la memoria compartida del proyecto. Lo usan los dos socios, cada
 
 Web de tests de oposiciones. Su diferencia frente a OpositaTest y similares es que **cada pregunta va verificada contra el texto consolidado del BOE**, cita su artículo exacto y enlaza a él.
 
-**Modelo de precio: PENDIENTE DE ACORDAR entre los dos socios.** Hay dos propuestas:
+**Modelo de precio: pago único por oposición, sin suscripción.**
 
-- Pago único de 4,99 € por oposición (2,99 € la segunda), con acceso hasta el examen.
-- Lo que tiene configurado ahora la web en `oposiciones.json`: Madrid 14,99 € (solo legislación) o 24,99 € (completo), y Estado 24,99 €, con 2 días de prueba gratis.
-
-Estructura de planes acordada (24/11/2026): precio por oposición y planes por niveles, donde la informática y los psicotécnicos son un extra pequeño para que compense coger el completo. Madrid: Legislación (temas 1-15) → Completo (+ ofimática). Estado: Teoría (temas 1-20) → Teoría + Ofimática (hasta el 28) → Completo (+ psicotécnicos). En la base de datos los niveles son `legislacion` < `completo` < `premium` (`tema_maximo_op` en `supabase/8-oposiciones.sql`). Los precios se ponen en Administración > Precios. Propuesta: Madrid 19,99 € / 24,99 €; Estado 22,99 € / 26,99 € / 29,99 €.
+Estructura de planes acordada (24/11/2026): precio por oposición y planes por niveles, donde la informática y los psicotécnicos son un extra pequeño para que compense coger el completo. Madrid: Legislación (temas 1-15) → Completo (+ ofimática). Estado: Teoría (temas 1-20) → Teoría + Ofimática (hasta el 28) → Completo (+ psicotécnicos). En la base de datos los niveles son `legislacion` < `completo` < `premium` (`tema_maximo_op` en `supabase/8-oposiciones.sql`). Los precios se ponen en Administración > Precios. Precios decididos (24/11/2026) y ya puestos en la tabla `precios`, a la venta hasta el 31/12/2027: Madrid 11,99 € (Legislación) / 14,99 € (Completo); Estado 11,99 € (Teoría) / 14,99 € (Teoría + Ofimática) / 17,99 € (Completo). Los psicotécnicos del Estado son 139 y poco variados: queda pendiente ampliarlos (unos 450, con tablas, ordenación y claves) para justificar el extra.
 
 Mientras dure la beta no se cobra, así que no corre prisa, pero hay que decidirlo antes de desactivar el modo beta. Tampoco está decidido si habrá temas gratis (propuesta: temas 1 y 16 abiertos) además o en lugar de la prueba de 2 días.
 
@@ -84,7 +81,9 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
   - 4 preguntas del tema 4 que no estaban en el banco de Madrid.
 
   El resto de sus 208 preguntas ya estaba en el banco de Madrid o duplicaba una pregunta existente.
-- [ ] **Decidir el precio** (ver arriba) y ponerlo en Administración > Precios. Configurar Stripe (secretos y webhook) y Google (cliente OAuth) siguiendo `INSTRUCCIONES.txt`.
+- [x] Precios decididos y puestos en Administración > Precios (ver arriba).
+- [ ] Probar un pago completo con la tarjeta de prueba y configurar Google (cliente OAuth) siguiendo `INSTRUCCIONES.txt`.
+- [ ] Ampliar los psicotécnicos del Estado (ahora 139).
 - [ ] Ampliar los temas más cortos del Estado: 17 (20 preguntas), 18 (18), 21 (24), 22 (23) y 28 (24).
 - [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
 - [ ] Enlaces a las normas autonómicas de Madrid (BOCM) en `NORMAS`.

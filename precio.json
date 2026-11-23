@@ -1,7 +1,7 @@
 {
   "_instrucciones": "Mientras 'importe' esté vacío (o la web esté en modo pruebas), la portada muestra «Gratis». Cuando decidáis el precio, rellenad 'importe' (por ejemplo «4,99 €») y 'detalle', y ejecutad build.py.",
-  "importe": "",
-  "detalle": "Pago único por oposición. Sin suscripción: acceso hasta el examen de la convocatoria en curso.",
+  "importe": "Desde 11,99 €",
+  "detalle": "Pago único por oposición, sin suscripción. Madrid: 11,99 € (legislación) o 14,99 € (con ofimática). Estado: 11,99 € (teoría), 14,99 € (con ofimática) o 17,99 € (completo, con psicotécnicos). Acceso hasta el 31 de diciembre de 2027.",
   "despues": "Cuando acabe la fase de pruebas, cada oposición tendrá un pago único, sin suscripción. Lo anunciaremos con tiempo y tu progreso se mantiene.",
   "incluye": [
     "Todas las preguntas de tu oposición, con su explicación y el artículo del BOE",

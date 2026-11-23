@@ -135,7 +135,8 @@
           "Simulacros del 1.er ejercicio: 40 preguntas en 45 minutos, con penalización",
           "Modo práctica, repaso de fallos y gráfica de notas",
           "Progreso guardado en tu cuenta"
-        ]
+        ],
+        "precio": "11,99"
       },
       {
         "id": "completo",
@@ -148,7 +149,8 @@
           "Ofimática: Windows 11 y Microsoft 365 (temas 16 a 21)",
           "Simulacros de los dos ejercicios, con penalización",
           "Progreso guardado en tu cuenta"
-        ]
+        ],
+        "precio": "14,99"
       }
     ],
     "enlaces": [
@@ -345,7 +347,8 @@
           "Bloque II sin informática (temas 17 a 20)",
           "Modo práctica, repaso de fallos y gráfica de notas",
           "Progreso guardado en tu cuenta"
-        ]
+        ],
+        "precio": "11,99"
       },
       {
         "id": "completo",
@@ -357,7 +360,8 @@
           "Informática y ofimática: Windows, Word, Excel, Access, Outlook e Internet (temas 21 a 28)",
           "Simulacro de la 2.ª parte del examen, con penalización",
           "Progreso guardado en tu cuenta"
-        ]
+        ],
+        "precio": "14,99"
       },
       {
         "id": "premium",
@@ -370,7 +374,8 @@
           "Psicotécnicos de la 1.ª parte del examen",
           "Simulacros de las dos partes del examen, con penalización",
           "Progreso guardado en tu cuenta"
-        ]
+        ],
+        "precio": "17,99"
       }
     ],
     "enlaces": [
