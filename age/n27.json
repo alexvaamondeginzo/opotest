@@ -1,0 +1,62 @@
+[
+[
+27,
+"En Outlook, ¿qué combinación de teclas reenvía el mensaje seleccionado?",
+"Ctrl + F",
+[
+"Ctrl + R",
+"Ctrl + Mayús + R",
+"Ctrl + E"
+],
+"Atajos de Outlook",
+"Ctrl + R responde al remitente y Ctrl + Mayús + R responde a todos."
+],
+[
+27,
+"En Outlook, Ctrl + Mayús + R sirve para:",
+"Responder a todos",
+[
+"Responder solo al remitente",
+"Reenviar el mensaje",
+"Marcar como leído"
+],
+"Atajos de Outlook",
+"Ctrl + R responde solo al remitente."
+],
+[
+27,
+"En Outlook clásico, la combinación Ctrl + 3 lleva a:",
+"Contactos (Personas)",
+[
+"Calendario (Agenda)",
+"Correo (Bandeja)",
+"Notas"
+],
+"Atajos de Outlook",
+"Ctrl + 1 lleva a Correo, Ctrl + 2 a Calendario y Ctrl + 4 a Tareas."
+],
+[
+27,
+"¿Qué combinación de teclas crea un mensaje nuevo en Outlook desde cualquier vista?",
+"Ctrl + Mayús + M",
+[
+"Ctrl + Mayús + N",
+"Ctrl + Alt + Mayús + M",
+"Alt + N"
+],
+"Atajos de Outlook",
+"Ctrl + N crea un elemento nuevo del tipo de la vista activa (en Correo, un mensaje)."
+],
+[
+27,
+"La carpeta Correo no deseado de Outlook recibe:",
+"Los mensajes que el filtro de Outlook considera spam",
+[
+"Los mensajes que el usuario ha eliminado de la Bandeja de entrada",
+"Los mensajes enviados sin asunto o sin texto en el cuerpo",
+"Los mensajes con archivos adjuntos grandes"
+],
+"Organización del correo",
+"El usuario puede añadir remitentes a la lista de remitentes seguros o bloqueados."
+]
+]

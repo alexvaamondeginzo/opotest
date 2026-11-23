@@ -1,0 +1,1670 @@
+[
+[
+29,
+"¿Qué número continúa la serie? 8, 20, 32, 44, 56, …",
+"68",
+[
+"80",
+"66",
+"70"
+],
+"Psicotécnicos",
+"Cada término suma 12 al anterior: 56 + 12 = 68."
+],
+[
+29,
+"¿Qué número continúa la serie? 27, 33, 39, 45, 51, …",
+"57",
+[
+"58",
+"51",
+"55"
+],
+"Psicotécnicos",
+"Cada término suma 6 al anterior: 51 + 6 = 57."
+],
+[
+29,
+"¿Qué número continúa la serie? 23, 31, 39, 47, 55, …",
+"63",
+[
+"71",
+"72",
+"65"
+],
+"Psicotécnicos",
+"Cada término suma 8 al anterior: 55 + 8 = 63."
+],
+[
+29,
+"¿Qué número continúa la serie? 12, 21, 30, 39, 48, …",
+"57",
+[
+"48",
+"55",
+"59"
+],
+"Psicotécnicos",
+"Cada término suma 9 al anterior: 48 + 9 = 57."
+],
+[
+29,
+"¿Qué número continúa la serie? 12, 24, 36, 48, 60, …",
+"72",
+[
+"84",
+"74",
+"73"
+],
+"Psicotécnicos",
+"Cada término suma 12 al anterior: 60 + 12 = 72."
+],
+[
+29,
+"¿Qué número continúa la serie? 22, 34, 46, 58, 70, …",
+"82",
+[
+"80",
+"83",
+"94"
+],
+"Psicotécnicos",
+"Cada término suma 12 al anterior: 70 + 12 = 82."
+],
+[
+29,
+"¿Qué número continúa la serie? 38, 42, 46, 50, 54, …",
+"58",
+[
+"60",
+"56",
+"59"
+],
+"Psicotécnicos",
+"Cada término suma 4 al anterior: 54 + 4 = 58."
+],
+[
+29,
+"¿Qué número continúa la serie? 6, 18, 30, 42, 54, …",
+"66",
+[
+"65",
+"67",
+"64"
+],
+"Psicotécnicos",
+"Cada término suma 12 al anterior: 54 + 12 = 66."
+],
+[
+29,
+"¿Qué número continúa la serie? 36, 39, 42, 45, 48, …",
+"51",
+[
+"55",
+"50",
+"52"
+],
+"Psicotécnicos",
+"Cada término suma 3 al anterior: 48 + 3 = 51."
+],
+[
+29,
+"¿Qué número continúa la serie? 2, 8, 14, 20, 26, …",
+"32",
+[
+"30",
+"38",
+"33"
+],
+"Psicotécnicos",
+"Cada término suma 6 al anterior: 26 + 6 = 32."
+],
+[
+29,
+"¿Qué número continúa la serie? 34, 45, 56, 67, 78, …",
+"89",
+[
+"78",
+"88",
+"91"
+],
+"Psicotécnicos",
+"Cada término suma 11 al anterior: 78 + 11 = 89."
+],
+[
+29,
+"¿Qué número continúa la serie? 2, 6, 18, 54, 162, …",
+"486",
+[
+"405",
+"483",
+"648"
+],
+"Psicotécnicos",
+"Cada término se multiplica por 3: 162 × 3 = 486."
+],
+[
+29,
+"¿Qué número continúa la serie? 4, 12, 36, 108, 324, …",
+"972",
+[
+"975",
+"969",
+"1.296"
+],
+"Psicotécnicos",
+"Cada término se multiplica por 3: 324 × 3 = 972."
+],
+[
+29,
+"¿Qué número continúa la serie? 2, 4, 8, 16, 32, …",
+"64",
+[
+"62",
+"66",
+"48"
+],
+"Psicotécnicos",
+"Cada término se multiplica por 2: 32 × 2 = 64."
+],
+[
+29,
+"¿Qué número continúa la serie? 4, 8, 16, 32, 64, …",
+"128",
+[
+"126",
+"192",
+"96"
+],
+"Psicotécnicos",
+"Cada término se multiplica por 2: 64 × 2 = 128."
+],
+[
+29,
+"¿Qué número continúa la serie? 3, 9, 27, 81, 243, …",
+"729",
+[
+"726",
+"972",
+"608"
+],
+"Psicotécnicos",
+"Cada término se multiplica por 3: 243 × 3 = 729."
+],
+[
+29,
+"¿Qué número continúa la serie? 5, 15, 45, 135, 405, …",
+"1.215",
+[
+"1.013",
+"1.212",
+"1.218"
+],
+"Psicotécnicos",
+"Cada término se multiplica por 3: 405 × 3 = 1.215."
+],
+[
+29,
+"¿Qué número continúa la serie? 15, 17, 22, 30, 41, 55, …",
+"72",
+[
+"69",
+"66",
+"73"
+],
+"Psicotécnicos",
+"Las diferencias entre términos aumentan de 3 en 3 (2, 5, 8, 11, 14…); la siguiente diferencia es 17: 55 + 17 = 72."
+],
+[
+29,
+"¿Qué número continúa la serie? 7, 10, 15, 22, 31, 42, …",
+"55",
+[
+"53",
+"54",
+"51"
+],
+"Psicotécnicos",
+"Las diferencias entre términos aumentan de 2 en 2 (3, 5, 7, 9, 11…); la siguiente diferencia es 13: 42 + 13 = 55."
+],
+[
+29,
+"¿Qué número continúa la serie? 9, 11, 14, 18, 23, 29, …",
+"36",
+[
+"38",
+"37",
+"34"
+],
+"Psicotécnicos",
+"Las diferencias entre términos aumentan de 1 en 1 (2, 3, 4, 5, 6…); la siguiente diferencia es 7: 29 + 7 = 36."
+],
+[
+29,
+"¿Qué número continúa la serie? 14, 15, 17, 20, 24, 29, …",
+"35",
+[
+"36",
+"37",
+"34"
+],
+"Psicotécnicos",
+"Las diferencias entre términos aumentan de 1 en 1 (1, 2, 3, 4, 5…); la siguiente diferencia es 6: 29 + 6 = 35."
+],
+[
+29,
+"¿Qué número continúa la serie? 1, 5, 12, 22, 35, 51, …",
+"70",
+[
+"67",
+"64",
+"71"
+],
+"Psicotécnicos",
+"Las diferencias entre términos aumentan de 3 en 3 (4, 7, 10, 13, 16…); la siguiente diferencia es 19: 51 + 19 = 70."
+],
+[
+29,
+"¿Qué número continúa la serie? 18, 22, 27, 33, 40, 48, …",
+"57",
+[
+"55",
+"58",
+"59"
+],
+"Psicotécnicos",
+"Las diferencias entre términos aumentan de 1 en 1 (4, 5, 6, 7, 8…); la siguiente diferencia es 9: 48 + 9 = 57."
+],
+[
+29,
+"¿Qué número continúa la serie? 5, 24, 8, 27, 11, 30, 14, …",
+"33",
+[
+"36",
+"17",
+"34"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: en las posiciones pares el término varía +3 cada vez (24, 27, 30…), así que el siguiente es 33."
+],
+[
+29,
+"¿Qué número continúa la serie? 3, 25, 6, 27, 9, 29, 12, …",
+"31",
+[
+"33",
+"15",
+"29"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: en las posiciones pares el término varía +2 cada vez (25, 27, 29…), así que el siguiente es 31."
+],
+[
+29,
+"¿Qué número continúa la serie? 12, 23, 15, 20, 18, 17, 21, …",
+"14",
+[
+"24",
+"11",
+"17"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: en las posiciones pares el término varía -3 cada vez (23, 20, 17…), así que el siguiente es 14."
+],
+[
+29,
+"¿Qué número continúa la serie? 4, 31, 8, 28, 12, 25, 16, …",
+"22",
+[
+"21",
+"25",
+"20"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: en las posiciones pares el término varía -3 cada vez (31, 28, 25…), así que el siguiente es 22."
+],
+[
+29,
+"¿Qué número continúa la serie? 2, 41, 5, 38, 8, 35, 11, …",
+"32",
+[
+"31",
+"14",
+"35"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: en las posiciones pares el término varía -3 cada vez (41, 38, 35…), así que el siguiente es 32."
+],
+[
+29,
+"¿Qué número continúa la serie? 13, 53, 16, 56, 19, 59, 22, …",
+"62",
+[
+"65",
+"59",
+"61"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: en las posiciones pares el término varía +3 cada vez (53, 56, 59…), así que el siguiente es 62."
+],
+[
+29,
+"¿Qué número continúa la serie? 4, 10, 22, 46, 94, …",
+"190",
+[
+"192",
+"195",
+"191"
+],
+"Psicotécnicos",
+"Cada término es el anterior multiplicado por 2 más 2: 94 × 2 + 2 = 190."
+],
+[
+29,
+"¿Qué número continúa la serie? 2, 5, 11, 23, 47, …",
+"95",
+[
+"96",
+"97",
+"98"
+],
+"Psicotécnicos",
+"Cada término es el anterior multiplicado por 2 más 1: 47 × 2 + 1 = 95."
+],
+[
+29,
+"¿Qué número continúa la serie? 2, 6, 14, 30, 62, …",
+"126",
+[
+"124",
+"131",
+"128"
+],
+"Psicotécnicos",
+"Cada término es el anterior multiplicado por 2 más 2: 62 × 2 + 2 = 126."
+],
+[
+29,
+"¿Qué número continúa la serie? 4, 11, 25, 53, 109, …",
+"221",
+[
+"219",
+"222",
+"218"
+],
+"Psicotécnicos",
+"Cada término es el anterior multiplicado por 2 más 3: 109 × 2 + 3 = 221."
+],
+[
+29,
+"¿Qué número continúa la serie? 9, 16, 25, 36, 49, …",
+"64",
+[
+"62",
+"67",
+"63"
+],
+"Psicotécnicos",
+"Son los cuadrados de números consecutivos: 8² = 64."
+],
+[
+29,
+"¿Qué número continúa la serie? 15, 24, 35, 48, 63, …",
+"80",
+[
+"81",
+"78",
+"63"
+],
+"Psicotécnicos",
+"Son los cuadrados menos 1 de números consecutivos: 9² − 1 = 80."
+],
+[
+29,
+"¿Qué número continúa la serie? 1, 4, 9, 16, 25, …",
+"36",
+[
+"39",
+"37",
+"25"
+],
+"Psicotécnicos",
+"Son los cuadrados de números consecutivos: 6² = 36."
+],
+[
+29,
+"¿Qué número continúa la serie? 11, 18, 27, 38, 51, …",
+"66",
+[
+"69",
+"64",
+"65"
+],
+"Psicotécnicos",
+"Son los cuadrados más 2 de números consecutivos: 8² + 2 = 66."
+],
+[
+29,
+"¿Qué número continúa la serie? 3, 7, 10, 17, 27, 44, 71, …",
+"115",
+[
+"114",
+"142",
+"113"
+],
+"Psicotécnicos",
+"Cada término es la suma de los dos anteriores: 44 + 71 = 115."
+],
+[
+29,
+"¿Qué número continúa la serie? 3, 2, 5, 7, 12, 19, 31, …",
+"50",
+[
+"48",
+"62",
+"51"
+],
+"Psicotécnicos",
+"Cada término es la suma de los dos anteriores: 19 + 31 = 50."
+],
+[
+29,
+"¿Qué número continúa la serie? 4, 5, 9, 14, 23, 37, 60, …",
+"97",
+[
+"120",
+"98",
+"96"
+],
+"Psicotécnicos",
+"Cada término es la suma de los dos anteriores: 37 + 60 = 97."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? C, F, I, L, Ñ, …",
+"Q",
+[
+"R",
+"O",
+"T"
+],
+"Psicotécnicos",
+"Se avanza de 3 en 3 letras (saltando 2): tras la Ñ viene la Q. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? K, N, P, S, V, …",
+"Y",
+[
+"Z",
+"A",
+"X"
+],
+"Psicotécnicos",
+"Se avanza de 3 en 3 letras (saltando 2): tras la V viene la Y. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? A, C, E, G, I, …",
+"K",
+[
+"I",
+"M",
+"J"
+],
+"Psicotécnicos",
+"Se avanza de 2 en 2 letras (saltando 1): tras la I viene la K. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, F, J, N, Q, …",
+"U",
+[
+"V",
+"Y",
+"S"
+],
+"Psicotécnicos",
+"Se avanza de 4 en 4 letras (saltando 3): tras la Q viene la U. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? K, M, Ñ, P, R, …",
+"T",
+[
+"S",
+"R",
+"V"
+],
+"Psicotécnicos",
+"Se avanza de 2 en 2 letras (saltando 1): tras la R viene la T. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? E, I, M, P, T, …",
+"X",
+[
+"Y",
+"Z",
+"W"
+],
+"Psicotécnicos",
+"Se avanza de 4 en 4 letras (saltando 3): tras la T viene la X. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? G, I, K, M, Ñ, …",
+"P",
+[
+"Q",
+"O",
+"Ñ"
+],
+"Psicotécnicos",
+"Se avanza de 2 en 2 letras (saltando 1): tras la Ñ viene la P. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, I, L, Ñ, Q, …",
+"T",
+[
+"S",
+"V",
+"U"
+],
+"Psicotécnicos",
+"Se avanza de 3 en 3 letras (saltando 2): tras la Q viene la T. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? H, K, N, P, S, …",
+"V",
+[
+"Y",
+"T",
+"U"
+],
+"Psicotécnicos",
+"Se avanza de 3 en 3 letras (saltando 2): tras la S viene la V. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? C, E, G, I, K, …",
+"M",
+[
+"Ñ",
+"N",
+"K"
+],
+"Psicotécnicos",
+"Se avanza de 2 en 2 letras (saltando 1): tras la K viene la M. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, E, H, K, N, …",
+"P",
+[
+"S",
+"Ñ",
+"O"
+],
+"Psicotécnicos",
+"Se avanza de 3 en 3 letras (saltando 2): tras la N viene la P. Recuerda contar la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, Y, G, W, H, U, …",
+"I",
+[
+"S",
+"J",
+"H"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la Y. Toca la primera: I."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? C, T, E, S, G, R, …",
+"I",
+[
+"H",
+"J",
+"Q"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 2 desde la C (C, E, G…) y otra retrocede 1 desde la T. Toca la primera: I."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, S, G, Q, H, O, …",
+"I",
+[
+"N",
+"J",
+"H"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la S. Toca la primera: I."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, Z, G, X, H, V, …",
+"I",
+[
+"T",
+"H",
+"J"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la Z. Toca la primera: I."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, X, F, V, H, T, …",
+"J",
+[
+"K",
+"L",
+"I"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 2 desde la D (D, F, H…) y otra retrocede 2 desde la X. Toca la primera: J."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, T, D, S, F, R, …",
+"H",
+[
+"J",
+"Q",
+"G"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 2 desde la B (B, D, F…) y otra retrocede 1 desde la T. Toca la primera: H."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, Y, F, W, H, U, …",
+"J",
+[
+"K",
+"I",
+"S"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 2 desde la D (D, F, H…) y otra retrocede 2 desde la Y. Toca la primera: J."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? G, Y, H, X, I, W, …",
+"J",
+[
+"K",
+"V",
+"I"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 1 desde la G (G, H, I…) y otra retrocede 1 desde la Y. Toca la primera: J."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, S, E, Q, F, O, …",
+"G",
+[
+"H",
+"N",
+"F"
+],
+"Psicotécnicos",
+"Son dos series intercaladas: una avanza 1 desde la D (D, E, F…) y otra retrocede 2 desde la S. Toca la primera: G."
+],
+[
+29,
+"¿Cuánto es el 35 % de 160?",
+"56",
+[
+"64",
+"52",
+"51,2"
+],
+"Psicotécnicos",
+"160 × 35 / 100 = 56."
+],
+[
+29,
+"¿Cuánto es el 25 % de 160?",
+"40",
+[
+"48",
+"36",
+"35,2"
+],
+"Psicotécnicos",
+"160 × 25 / 100 = 40."
+],
+[
+29,
+"¿Cuánto es el 18 % de 640?",
+"115,2",
+[
+"147,2",
+"99,2",
+"96"
+],
+"Psicotécnicos",
+"640 × 18 / 100 = 115,2."
+],
+[
+29,
+"¿Cuánto es el 25 % de 720?",
+"180",
+[
+"216",
+"162",
+"158,4"
+],
+"Psicotécnicos",
+"720 × 25 / 100 = 180."
+],
+[
+29,
+"¿Cuánto es el 12 % de 240?",
+"28,8",
+[
+"40,8",
+"22,8",
+"21,6"
+],
+"Psicotécnicos",
+"240 × 12 / 100 = 28,8."
+],
+[
+29,
+"¿Cuánto es el 35 % de 240?",
+"84",
+[
+"96",
+"78",
+"76,8"
+],
+"Psicotécnicos",
+"240 × 35 / 100 = 84."
+],
+[
+29,
+"¿Cuánto es el 5 % de 420?",
+"21",
+[
+"42",
+"11",
+"8,4"
+],
+"Psicotécnicos",
+"420 × 5 / 100 = 21."
+],
+[
+29,
+"¿Cuánto es el 25 % de 80?",
+"20",
+[
+"24",
+"18",
+"17,6"
+],
+"Psicotécnicos",
+"80 × 25 / 100 = 20."
+],
+[
+29,
+"¿Cuánto es el 40 % de 480?",
+"192",
+[
+"216",
+"180",
+"177,6"
+],
+"Psicotécnicos",
+"480 × 40 / 100 = 192."
+],
+[
+29,
+"¿Cuánto es el 35 % de 420?",
+"147",
+[
+"168",
+"137",
+"134,4"
+],
+"Psicotécnicos",
+"420 × 35 / 100 = 147."
+],
+[
+29,
+"Un producto cuesta 120 €. Si su precio sube un 30 %, ¿cuál es el nuevo precio?",
+"156 €",
+[
+"84 €",
+"161 €",
+"153 €"
+],
+"Psicotécnicos",
+"120 × 1,30 = 156 €."
+],
+[
+29,
+"Un producto cuesta 200 €. Si su precio baja un 25 %, ¿cuál es el nuevo precio?",
+"150 €",
+[
+"250 €",
+"155 €",
+"147 €"
+],
+"Psicotécnicos",
+"200 × 0,75 = 150 €."
+],
+[
+29,
+"Un producto cuesta 200 €. Si su precio baja un 20 %, ¿cuál es el nuevo precio?",
+"160 €",
+[
+"240 €",
+"165 €",
+"157 €"
+],
+"Psicotécnicos",
+"200 × 0,80 = 160 €."
+],
+[
+29,
+"Un producto cuesta 150 €. Si su precio sube un 20 %, ¿cuál es el nuevo precio?",
+"180 €",
+[
+"120 €",
+"185 €",
+"177 €"
+],
+"Psicotécnicos",
+"150 × 1,20 = 180 €."
+],
+[
+29,
+"En una oficina hay 400 expedientes y se han resuelto 240. ¿Qué porcentaje se ha resuelto?",
+"60 %",
+[
+"65 %",
+"55 %",
+"70 %"
+],
+"Psicotécnicos",
+"240 / 400 × 100 = 60 %."
+],
+[
+29,
+"En una oficina hay 50 expedientes y se han resuelto 20. ¿Qué porcentaje se ha resuelto?",
+"40 %",
+[
+"45 %",
+"35 %",
+"50 %"
+],
+"Psicotécnicos",
+"20 / 50 × 100 = 40 %."
+],
+[
+29,
+"En una oficina hay 400 expedientes y se han resuelto 80. ¿Qué porcentaje se ha resuelto?",
+"20 %",
+[
+"25 %",
+"15 %",
+"30 %"
+],
+"Psicotécnicos",
+"80 / 400 × 100 = 20 %."
+],
+[
+29,
+"En una oficina hay 50 expedientes y se han resuelto 15. ¿Qué porcentaje se ha resuelto?",
+"30 %",
+[
+"35 %",
+"25 %",
+"40 %"
+],
+"Psicotécnicos",
+"15 / 50 × 100 = 30 %."
+],
+[
+29,
+"En una oficina hay 80 expedientes y se han resuelto 16. ¿Qué porcentaje se ha resuelto?",
+"20 %",
+[
+"25 %",
+"15 %",
+"30 %"
+],
+"Psicotécnicos",
+"16 / 80 × 100 = 20 %."
+],
+[
+29,
+"Si 4 cuadernos cuestan 24 €, ¿cuánto cuestan 10 cuadernos?",
+"60 €",
+[
+"66 €",
+"54 €",
+"62 €"
+],
+"Psicotécnicos",
+"Cada cuaderno cuesta 6 €; 10 × 6 = 60 €."
+],
+[
+29,
+"Si 3 cuadernos cuestan 12 €, ¿cuánto cuestan 9 cuadernos?",
+"36 €",
+[
+"40 €",
+"32 €",
+"38 €"
+],
+"Psicotécnicos",
+"Cada cuaderno cuesta 4 €; 9 × 4 = 36 €."
+],
+[
+29,
+"Si 3 cuadernos cuestan 12 €, ¿cuánto cuestan 12 cuadernos?",
+"48 €",
+[
+"52 €",
+"44 €",
+"50 €"
+],
+"Psicotécnicos",
+"Cada cuaderno cuesta 4 €; 12 × 4 = 48 €."
+],
+[
+29,
+"6 personas tardan 10 días en tramitar unos expedientes. Al mismo ritmo, ¿cuántos días tardarían 4 personas?",
+"15 días",
+[
+"18 días",
+"17 días",
+"14 días"
+],
+"Psicotécnicos",
+"Es una proporción inversa: 6 × 10 = 60 días-persona; 60 / 4 = 15 días."
+],
+[
+29,
+"Un vehículo circula a velocidad constante de 60 km/h. ¿Qué distancia recorre en 2 horas?",
+"120 km",
+[
+"150 km",
+"105 km",
+"140 km"
+],
+"Psicotécnicos",
+"Distancia = velocidad × tiempo = 60 × 2 = 120 km."
+],
+[
+29,
+"Un vehículo circula a velocidad constante de 90 km/h. ¿Qué distancia recorre en 3 horas?",
+"270 km",
+[
+"315 km",
+"248 km",
+"300 km"
+],
+"Psicotécnicos",
+"Distancia = velocidad × tiempo = 90 × 3 = 270 km."
+],
+[
+29,
+"Un vehículo circula a velocidad constante de 72 km/h. ¿Qué distancia recorre en 3 horas?",
+"216 km",
+[
+"252 km",
+"198 km",
+"240 km"
+],
+"Psicotécnicos",
+"Distancia = velocidad × tiempo = 72 × 3 = 216 km."
+],
+[
+29,
+"Un vehículo circula a velocidad constante de 100 km/h. ¿Qué distancia recorre en 2 horas?",
+"200 km",
+[
+"250 km",
+"175 km",
+"233 km"
+],
+"Psicotécnicos",
+"Distancia = velocidad × tiempo = 100 × 2 = 200 km."
+],
+[
+29,
+"Un vehículo circula a velocidad constante de 80 km/h. ¿Qué distancia recorre en 2 horas?",
+"160 km",
+[
+"200 km",
+"140 km",
+"186 km"
+],
+"Psicotécnicos",
+"Distancia = velocidad × tiempo = 80 × 2 = 160 km."
+],
+[
+29,
+"Un padre tiene 3 veces la edad de su hijo, que tiene 12 años. ¿Cuántos años tendrá el padre dentro de 5 años?",
+"41 años",
+[
+"36 años",
+"51 años",
+"43 años"
+],
+"Psicotécnicos",
+"Hoy el padre tiene 12 × 3 = 36 años; dentro de 5 años tendrá 41."
+],
+[
+29,
+"Un padre tiene 4 veces la edad de su hijo, que tiene 12 años. ¿Cuántos años tendrá el padre dentro de 12 años?",
+"60 años",
+[
+"48 años",
+"96 años",
+"62 años"
+],
+"Psicotécnicos",
+"Hoy el padre tiene 12 × 4 = 48 años; dentro de 12 años tendrá 60."
+],
+[
+29,
+"Un padre tiene 3 veces la edad de su hijo, que tiene 12 años. ¿Cuántos años tendrá el padre dentro de 10 años?",
+"46 años",
+[
+"36 años",
+"66 años",
+"48 años"
+],
+"Psicotécnicos",
+"Hoy el padre tiene 12 × 3 = 36 años; dentro de 10 años tendrá 46."
+],
+[
+29,
+"Un padre tiene 4 veces la edad de su hijo, que tiene 8 años. ¿Cuántos años tendrá el padre dentro de 10 años?",
+"42 años",
+[
+"32 años",
+"72 años",
+"44 años"
+],
+"Psicotécnicos",
+"Hoy el padre tiene 8 × 4 = 32 años; dentro de 10 años tendrá 42."
+],
+[
+29,
+"Un opositor obtiene en cuatro simulacros estas notas: 5, 9, 4, 6. ¿Cuál es su nota media?",
+"6",
+[
+"7",
+"5",
+"8"
+],
+"Psicotécnicos",
+"(5 + 9 + 4 + 6) / 4 = 24 / 4 = 6."
+],
+[
+29,
+"Un opositor obtiene en cuatro simulacros estas notas: 4, 4, 4, 4. ¿Cuál es su nota media?",
+"4",
+[
+"5",
+"3",
+"5,33"
+],
+"Psicotécnicos",
+"(4 + 4 + 4 + 4) / 4 = 16 / 4 = 4."
+],
+[
+29,
+"Un opositor obtiene en cuatro simulacros estas notas: 9, 5, 5, 9. ¿Cuál es su nota media?",
+"7",
+[
+"8",
+"6",
+"9,33"
+],
+"Psicotécnicos",
+"(9 + 5 + 5 + 9) / 4 = 28 / 4 = 7."
+],
+[
+29,
+"Un opositor obtiene en cuatro simulacros estas notas: 9, 8, 5, 10. ¿Cuál es su nota media?",
+"8",
+[
+"9",
+"7",
+"10,67"
+],
+"Psicotécnicos",
+"(9 + 8 + 5 + 10) / 4 = 32 / 4 = 8."
+],
+[
+29,
+"¿Cuánto son los 4/5 de 40?",
+"32",
+[
+"40",
+"24",
+"50"
+],
+"Psicotécnicos",
+"40 / 5 × 4 = 32."
+],
+[
+29,
+"¿Cuánto son los 3/4 de 76?",
+"57",
+[
+"76",
+"38",
+"60"
+],
+"Psicotécnicos",
+"76 / 4 × 3 = 57."
+],
+[
+29,
+"¿Cuánto son los 4/5 de 135?",
+"108",
+[
+"135",
+"81",
+"112"
+],
+"Psicotécnicos",
+"135 / 5 × 4 = 108."
+],
+[
+29,
+"¿Cuánto son los 3/5 de 40?",
+"24",
+[
+"32",
+"16",
+"27"
+],
+"Psicotécnicos",
+"40 / 5 × 3 = 24."
+],
+[
+29,
+"¿Cuánto son los 2/3 de 48?",
+"32",
+[
+"48",
+"16",
+"72"
+],
+"Psicotécnicos",
+"48 / 3 × 2 = 32."
+],
+[
+29,
+"¿Cuánto son los 3/4 de 120?",
+"90",
+[
+"120",
+"60",
+"160"
+],
+"Psicotécnicos",
+"120 / 4 × 3 = 90."
+],
+[
+29,
+"¿Cuál es el resultado de 48 × 24?",
+"1.152",
+[
+"1.200",
+"1.128",
+"1.162"
+],
+"Psicotécnicos",
+"48 × 24 = 1.152."
+],
+[
+29,
+"¿Cuál es el resultado de 99 × 32?",
+"3.168",
+[
+"3.267",
+"3.136",
+"3.178"
+],
+"Psicotécnicos",
+"99 × 32 = 3.168."
+],
+[
+29,
+"¿Cuál es el resultado de 125 × 16?",
+"2.000",
+[
+"2.125",
+"1.984",
+"2.010"
+],
+"Psicotécnicos",
+"125 × 16 = 2.000."
+],
+[
+29,
+"¿Cuál es el resultado de 125 × 44?",
+"5.500",
+[
+"5.625",
+"5.456",
+"5.510"
+],
+"Psicotécnicos",
+"125 × 44 = 5.500."
+],
+[
+29,
+"¿Cuál es el resultado de 75 × 24?",
+"1.800",
+[
+"1.875",
+"1.776",
+"1.810"
+],
+"Psicotécnicos",
+"75 × 24 = 1.800."
+],
+[
+29,
+"¿Cuál es el resultado de 99 × 44?",
+"4.356",
+[
+"4.455",
+"4.312",
+"4.366"
+],
+"Psicotécnicos",
+"99 × 44 = 4.356."
+],
+[
+29,
+"¿Cuál es la raíz cuadrada de 576?",
+"24",
+[
+"25",
+"23",
+"26"
+],
+"Psicotécnicos",
+"24 × 24 = 576."
+],
+[
+29,
+"¿Cuál es la raíz cuadrada de 841?",
+"29",
+[
+"30",
+"28",
+"31"
+],
+"Psicotécnicos",
+"29 × 29 = 841."
+],
+[
+29,
+"¿Cuál es la raíz cuadrada de 144?",
+"12",
+[
+"13",
+"11",
+"14"
+],
+"Psicotécnicos",
+"12 × 12 = 144."
+],
+[
+29,
+"Calcula: 5 × 2 + 17 − 3 × 2",
+"21",
+[
+"89",
+"48",
+"23"
+],
+"Psicotécnicos",
+"Primero las multiplicaciones: 10 + 17 − 6 = 21."
+],
+[
+29,
+"Calcula: 8 × 7 + 17 − 6 × 2",
+"61",
+[
+"180",
+"134",
+"63"
+],
+"Psicotécnicos",
+"Primero las multiplicaciones: 56 + 17 − 12 = 61."
+],
+[
+29,
+"Calcula: 7 × 4 + 15 − 4 × 2",
+"35",
+[
+"125",
+"78",
+"37"
+],
+"Psicotécnicos",
+"Primero las multiplicaciones: 28 + 15 − 8 = 35."
+],
+[
+29,
+"Calcula: 5 × 9 + 11 − 3 × 2",
+"50",
+[
+"94",
+"106",
+"52"
+],
+"Psicotécnicos",
+"Primero las multiplicaciones: 45 + 11 − 6 = 50."
+],
+[
+29,
+"Señala el sinónimo de «efímero»:",
+"Pasajero",
+[
+"Duradero",
+"Eficaz",
+"Esencial"
+],
+"Psicotécnicos",
+"Efímero es lo que dura poco: pasajero, fugaz."
+],
+[
+29,
+"Señala el sinónimo de «exhaustivo»:",
+"Minucioso",
+[
+"Agotado",
+"Superficial",
+"Excesivo"
+],
+"Psicotécnicos",
+"Exhaustivo es lo que se hace con todo detalle."
+],
+[
+29,
+"Señala el sinónimo de «inherente»:",
+"Consustancial",
+[
+"Heredado",
+"Accesorio",
+"Inerte"
+],
+"Psicotécnicos",
+"Inherente es lo que por su naturaleza está unido a algo."
+],
+[
+29,
+"Señala el sinónimo de «diligente»:",
+"Cuidadoso",
+[
+"Directivo",
+"Lento",
+"Delicado"
+],
+"Psicotécnicos",
+"Diligente es quien actúa con cuidado, prontitud y esmero."
+],
+[
+29,
+"Señala el sinónimo de «prolijo»:",
+"Extenso",
+[
+"Breve",
+"Prolífico",
+"Limpio"
+],
+"Psicotécnicos",
+"Prolijo significa largo, dilatado en exceso. Prolífico es «que produce mucho»."
+],
+[
+29,
+"Señala el sinónimo de «subsanar»:",
+"Corregir",
+[
+"Sustituir",
+"Suspender",
+"Sanear"
+],
+"Psicotécnicos",
+"Subsanar es reparar o remediar un defecto."
+],
+[
+29,
+"Señala el sinónimo de «perentorio»:",
+"Urgente",
+[
+"Perpetuo",
+"Pertinente",
+"Aplazable"
+],
+"Psicotécnicos",
+"Perentorio es lo urgente o apremiante."
+],
+[
+29,
+"Señala el sinónimo de «ecuánime»:",
+"Imparcial",
+[
+"Equivalente",
+"Unánime",
+"Arbitrario"
+],
+"Psicotécnicos",
+"Ecuánime es quien actúa con equidad e imparcialidad."
+],
+[
+29,
+"Señala el sinónimo de «exiguo»:",
+"Escaso",
+[
+"Exigente",
+"Abundante",
+"Excesivo"
+],
+"Psicotécnicos",
+"Exiguo es insuficiente, escaso."
+],
+[
+29,
+"Señala el sinónimo de «dilucidar»:",
+"Aclarar",
+[
+"Diluir",
+"Complicar",
+"Dilatar"
+],
+"Psicotécnicos",
+"Dilucidar es aclarar y explicar un asunto."
+],
+[
+29,
+"Señala el antónimo de «prolijo»:",
+"Conciso",
+[
+"Extenso",
+"Detallado",
+"Minucioso"
+],
+"Psicotécnicos",
+"Lo contrario de prolijo (largo, excesivo) es conciso o breve."
+],
+[
+29,
+"Señala el antónimo de «escaso»:",
+"Abundante",
+[
+"Exiguo",
+"Limitado",
+"Insuficiente"
+],
+"Psicotécnicos",
+"Las otras tres palabras son sinónimos de escaso."
+],
+[
+29,
+"Señala el antónimo de «efímero»:",
+"Perdurable",
+[
+"Fugaz",
+"Breve",
+"Transitorio"
+],
+"Psicotécnicos",
+"Las otras tres palabras son sinónimos de efímero."
+],
+[
+29,
+"Señala el antónimo de «diáfano»:",
+"Opaco",
+[
+"Claro",
+"Transparente",
+"Nítido"
+],
+"Psicotécnicos",
+"Diáfano es claro o transparente; su contrario es opaco."
+],
+[
+29,
+"Señala el antónimo de «sosegado»:",
+"Inquieto",
+[
+"Tranquilo",
+"Calmado",
+"Sereno"
+],
+"Psicotécnicos",
+"Sosegado es tranquilo; su contrario es inquieto."
+],
+[
+29,
+"Señala el antónimo de «pródigo»:",
+"Tacaño",
+[
+"Generoso",
+"Derrochador",
+"Espléndido"
+],
+"Psicotécnicos",
+"Pródigo es quien gasta o da con generosidad; su contrario es tacaño."
+],
+[
+29,
+"¿Qué palabra está escrita correctamente?",
+"Absorber",
+[
+"Absorver",
+"Abzorber",
+"Avsorber"
+],
+"Psicotécnicos",
+"Absorber se escribe con b en ambas sílabas («absorción» con c)."
+],
+[
+29,
+"¿Cuál de estas palabras está bien escrita?",
+"Exhaustivo",
+[
+"Exaustivo",
+"Exhaustibo",
+"Eshaustivo"
+],
+"Psicotécnicos",
+"Exhaustivo se escribe con h intercalada y con v."
+],
+[
+29,
+"Indica la palabra correctamente escrita:",
+"Adecuado",
+[
+"Adequado",
+"Hadecuado",
+"Adecuádo"
+],
+"Psicotécnicos",
+"Adecuado se escribe con c y sin tilde (palabra llana terminada en vocal)."
+],
+[
+29,
+"¿Cuál de las siguientes palabras está escrita sin faltas?",
+"Desahucio",
+[
+"Desaucio",
+"Deshaucio",
+"Desahúcio"
+],
+"Psicotécnicos",
+"Desahucio lleva h intercalada entre la a y la u, y no lleva tilde."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Martillo, destornillador, alicates, pincel, llave inglesa",
+"Pincel",
+[
+"Martillo",
+"Alicates",
+"Destornillador"
+],
+"Psicotécnicos",
+"Todas son herramientas de bricolaje o mecánica salvo el pincel, que es un útil de pintura."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Ley, reglamento, orden ministerial, sentencia, real decreto",
+"Sentencia",
+[
+"Reglamento",
+"Real decreto",
+"Orden ministerial"
+],
+"Psicotécnicos",
+"Todas son normas jurídicas salvo la sentencia, que es una resolución judicial."
+],
+[
+29,
+"Libro es a biblioteca como cuadro es a:",
+"Museo",
+[
+"Pintor",
+"Marco",
+"Pincel"
+],
+"Psicotécnicos",
+"Los libros se guardan y exponen en bibliotecas; los cuadros, en museos."
+],
+[
+29,
+"Juez es a sentencia como legislador es a:",
+"Ley",
+[
+"Tribunal",
+"Parlamento",
+"Juicio"
+],
+"Psicotécnicos",
+"El juez dicta sentencias; el legislador aprueba leyes."
+]
+]

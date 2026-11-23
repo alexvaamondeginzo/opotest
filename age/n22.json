@@ -1,0 +1,278 @@
+[
+[
+22,
+"En Windows 11, ¿qué combinación de teclas muestra u oculta el escritorio?",
+"Windows + D",
+[
+"Windows + E",
+"Windows + L",
+"Windows + M + Mayús"
+],
+"Atajos de Windows",
+"Windows + E abre el Explorador de archivos y Windows + L bloquea el equipo."
+],
+[
+22,
+"En Windows 11, la combinación Windows + L sirve para:",
+"Bloquear el equipo",
+[
+"Abrir el Explorador de archivos",
+"Cerrar la sesión y apagar el equipo",
+"Abrir la configuración de idioma"
+],
+"Atajos de Windows",
+"Para volver a entrar hay que identificarse (contraseña, PIN o Windows Hello)."
+],
+[
+22,
+"¿Qué combinación de teclas abre el historial del portapapeles en Windows 11?",
+"Windows + V",
+[
+"Ctrl + V",
+"Ctrl + Mayús + V",
+"Windows + C"
+],
+"Atajos de Windows",
+"Ctrl + V pega el último elemento copiado. El historial debe estar activado en Configuración."
+],
+[
+22,
+"En Windows 11, Windows + Mayús + S permite:",
+"Capturar una parte de la pantalla con la herramienta Recortes",
+[
+"Guardar el documento que está abierto con otro nombre o en otra carpeta",
+"Abrir el menú de apagado, reinicio y suspensión del sistema operativo",
+"Cambiar entre los distintos escritorios virtuales creados por el usuario"
+],
+"Atajos de Windows",
+"La captura se copia en el portapapeles y puede editarse en Recortes."
+],
+[
+22,
+"¿Qué combinación abre directamente el Administrador de tareas?",
+"Ctrl + Mayús + Esc",
+[
+"Windows + Ctrl + Esc",
+"Alt + F4",
+"Windows + Tab"
+],
+"Atajos de Windows",
+"Ctrl + Alt + Supr muestra una pantalla desde la que también puede abrirse."
+],
+[
+22,
+"En Windows 11, la combinación Windows + Tab abre:",
+"La vista de tareas, con las ventanas abiertas y los escritorios virtuales",
+[
+"El menú Inicio con las aplicaciones ancladas y los archivos recomendados recientemente",
+"El cuadro Ejecutar para escribir el nombre de un programa, carpeta o comando",
+"El centro de notificaciones"
+],
+"Atajos de Windows",
+"Alt + Tab permite cambiar rápidamente entre ventanas abiertas."
+],
+[
+22,
+"En Windows 11, la combinación Windows + I abre:",
+"Configuración",
+[
+"El Panel de control",
+"El Explorador de archivos",
+"La búsqueda de Windows"
+],
+"Atajos de Windows",
+"La aplicación Configuración sustituye progresivamente al Panel de control."
+],
+[
+22,
+"¿Qué combinación de teclas abre el cuadro de diálogo Ejecutar?",
+"Windows + R",
+[
+"Windows + E",
+"Ctrl + R",
+"Alt + R"
+],
+"Atajos de Windows",
+"Permite abrir programas, carpetas o comandos escribiendo su nombre, por ejemplo «cmd»."
+],
+[
+22,
+"Al eliminar un archivo del disco duro con Mayús + Supr en Windows:",
+"Se elimina de forma permanente, sin pasar por la Papelera de reciclaje",
+[
+"Se envía a la Papelera de reciclaje, igual que si se pulsara solo la tecla Supr",
+"Se oculta al usuario, pero sigue ocupando espacio en la misma carpeta del disco",
+"Se mueve a la carpeta Documentos"
+],
+"Papelera de reciclaje",
+"Normalmente Windows pide confirmación antes de eliminarlo definitivamente."
+],
+[
+22,
+"¿Qué es Copilot en Windows 11?",
+"Un asistente de inteligencia artificial de Microsoft",
+[
+"El antivirus que viene integrado en el sistema operativo Windows",
+"Una herramienta para hacer copias de seguridad de los archivos en la nube",
+"El gestor de contraseñas integrado en el navegador Microsoft Edge"
+],
+"Copilot",
+"Permite hacer preguntas, redactar textos o resumir contenidos en lenguaje natural. Algunos teclados recientes incluyen una tecla Copilot."
+],
+[
+22,
+"¿Qué antivirus incluye Windows 11 de forma integrada?",
+"Microsoft Defender",
+[
+"Windows Hello",
+"BitLocker",
+"OneDrive"
+],
+"Seguridad de Windows",
+"Windows Hello sirve para iniciar sesión con rostro, huella o PIN; BitLocker cifra unidades y OneDrive es almacenamiento en la nube."
+],
+[
+22,
+"BitLocker es una función de Windows que sirve para:",
+"Cifrar unidades de disco para proteger los datos",
+[
+"Bloquear las ventanas emergentes que abren las páginas web en el navegador",
+"Limitar el tiempo que cada usuario puede usar los programas del equipo",
+"Comprimir carpetas y archivos en formato ZIP para que ocupen menos"
+],
+"Seguridad de Windows",
+"Si se pierde el equipo, los datos no pueden leerse sin la clave."
+],
+[
+22,
+"Windows Hello permite:",
+"Iniciar sesión con reconocimiento facial, huella dactilar o PIN",
+[
+"Hacer videollamadas con otros usuarios de Windows a través de la cámara del equipo",
+"Traducir automáticamente al español el texto que aparece en la pantalla",
+"Saludar al usuario con un mensaje de voz al arrancar"
+],
+"Inicio de sesión",
+"Es una alternativa más segura y cómoda a la contraseña."
+],
+[
+22,
+"¿Qué función de Windows 11 permite organizar las ventanas en distintas disposiciones de la pantalla al pasar el ratón por el botón Maximizar?",
+"Los diseños de ajuste (Snap layouts)",
+[
+"Los escritorios virtuales de la vista de tareas",
+"La vista de tareas con todas las ventanas abiertas",
+"El modo tableta para pantallas táctiles"
+],
+"Ventanas",
+"También pueden abrirse con Windows + Z."
+],
+[
+22,
+"¿Qué ocurre con un archivo eliminado de una memoria USB en Windows?",
+"Se elimina definitivamente, porque las unidades extraíbles no usan la Papelera de reciclaje",
+[
+"Se envía a la Papelera de reciclaje del ordenador, desde donde puede restaurarse en cualquier momento",
+"Se mueve a una carpeta oculta de la propia memoria",
+"Se guarda una copia en OneDrive"
+],
+"Papelera de reciclaje",
+"Por eso conviene tener cuidado al borrar archivos de unidades extraíbles."
+],
+[
+22,
+"¿Qué sistema de archivos no admite archivos individuales mayores de 4 GB?",
+"FAT32",
+[
+"NTFS",
+"exFAT",
+"ReFS"
+],
+"Sistemas de archivos",
+"NTFS es el sistema de archivos habitual de Windows; exFAT es frecuente en memorias USB y tarjetas."
+],
+[
+22,
+"El Control de cuentas de usuario (UAC) de Windows:",
+"Pide confirmación antes de realizar cambios que requieren permisos de administrador",
+[
+"Limita el número máximo de cuentas de usuario que pueden crearse en un mismo equipo",
+"Registra las horas de conexión y desconexión de cada usuario para controlar su jornada",
+"Elimina las cuentas que no se usan en treinta días"
+],
+"Cuentas de usuario",
+"Ayuda a evitar que programas maliciosos hagan cambios sin que el usuario lo sepa."
+],
+[
+22,
+"¿En qué se diferencia la hibernación de la suspensión en Windows?",
+"La hibernación guarda la sesión en el disco y apaga el equipo; la suspensión la mantiene en la memoria con un consumo mínimo",
+[
+"La hibernación cierra todos los programas sin guardar los cambios; la suspensión los guarda automáticamente en el disco duro del equipo",
+"No hay ninguna diferencia, son dos nombres de la misma función",
+"La suspensión apaga por completo el equipo y la hibernación solo apaga la pantalla"
+],
+"Opciones de energía",
+"Por eso la reanudación desde la suspensión es más rápida."
+],
+[
+22,
+"¿Qué combinación abre el menú de vínculo rápido (clic derecho del botón Inicio) en Windows 11?",
+"Windows + X",
+[
+"Windows + Q",
+"Alt + Inicio",
+"Ctrl + X"
+],
+"Atajos de Windows",
+"Da acceso a herramientas como el Administrador de dispositivos, la Administración de discos o Terminal."
+],
+[
+22,
+"La tecla Windows + Impr Pant en Windows 11:",
+"Captura la pantalla completa y la guarda como imagen en la carpeta Capturas de pantalla",
+[
+"Imprime directamente la pantalla completa en la impresora que esté configurada como predeterminada",
+"Abre el cuadro de diálogo de impresión del programa activo",
+"Copia solo la ventana activa en el portapapeles"
+],
+"Capturas de pantalla",
+"La carpeta Capturas de pantalla está dentro de Imágenes. Alt + Impr Pant copia solo la ventana activa."
+],
+[
+22,
+"¿Qué combinación abre el panel de emojis en Windows 11?",
+"Windows + punto (.)",
+[
+"Windows + E",
+"Ctrl + Mayús + E",
+"Alt + punto (.)"
+],
+"Atajos de Windows",
+"También permite insertar símbolos y GIF."
+],
+[
+22,
+"En Windows 11, Windows + A abre:",
+"La Configuración rápida (wifi, volumen, brillo, etc.)",
+[
+"El Administrador de tareas con los procesos en ejecución",
+"Las aplicaciones ancladas en el menú Inicio del usuario",
+"El asistente de accesibilidad con la lupa y el narrador"
+],
+"Atajos de Windows",
+"Windows + N abre el centro de notificaciones y el calendario."
+],
+[
+22,
+"¿Qué fecha marcó el fin del soporte de Windows 10 para las ediciones domésticas y profesionales?",
+"El 14 de octubre de 2025",
+[
+"El 14 de enero de 2020",
+"El 31 de diciembre de 2024",
+"El 5 de octubre de 2021"
+],
+"Ciclo de vida de Windows",
+"El 14 de enero de 2020 terminó el soporte de Windows 7 y el 5 de octubre de 2021 se lanzó Windows 11."
+]
+]

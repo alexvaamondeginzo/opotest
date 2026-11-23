@@ -1,0 +1,122 @@
+[
+[
+26,
+"En Access, ¿qué tipo de datos es el más adecuado para guardar importes en euros sin errores de redondeo?",
+"Moneda",
+[
+"Texto corto",
+"Número de tipo Simple",
+"Calculado"
+],
+"Tipos de datos",
+"El tipo Moneda usa 4 decimales fijos y evita errores de redondeo en cálculos monetarios."
+],
+[
+26,
+"¿Qué tipo de consulta de Access resume datos agrupándolos por filas y columnas, como una tabla dinámica?",
+"La consulta de tabla de referencias cruzadas",
+[
+"La consulta de creación de tabla con totales",
+"La consulta de datos anexados con agrupación",
+"La consulta de eliminación de registros repetidos"
+],
+"Consultas",
+"Muestra valores resumidos (sumas, recuentos, promedios) agrupados por dos conjuntos de datos."
+],
+[
+26,
+"La consulta de creación de tabla de Access:",
+"Crea una tabla nueva a partir de los resultados de la consulta",
+[
+"Diseña una tabla vacía con los campos que indique el usuario",
+"Añade registros a una tabla ya existente",
+"Copia la estructura de una tabla sin sus datos"
+],
+"Consultas de acción",
+"La que añade registros a una tabla existente es la consulta de datos anexados."
+],
+[
+26,
+"En el criterio de una consulta de Access, ¿qué comodín representa cualquier número de caracteres?",
+"El asterisco (*)",
+[
+"La interrogación (?)",
+"La almohadilla (#)",
+"El signo más (+)"
+],
+"Criterios",
+"La interrogación representa un solo carácter y la almohadilla, un solo dígito."
+],
+[
+26,
+"Para obtener en una consulta de Access los registros con fecha entre el 1 y el 31 de enero de 2026, se usa el operador:",
+"Entre … Y …",
+[
+"Como … O …",
+"En … Y …",
+"Desde … Hasta …"
+],
+"Criterios",
+"Por ejemplo: Entre #01/01/2026# Y #31/01/2026#."
+],
+[
+26,
+"¿Qué objeto de Access permite automatizar tareas sin programar, mediante una lista de acciones?",
+"La macro",
+[
+"El informe",
+"El formulario",
+"La tabla"
+],
+"Objetos de Access",
+"Para programar en lenguaje VBA se usan los módulos."
+],
+[
+26,
+"En Access, los módulos contienen:",
+"Código en lenguaje Visual Basic para Aplicaciones (VBA)",
+[
+"Los datos de las tablas ordenados por su clave principal",
+"El diseño de los informes y de los formularios de la base",
+"Las relaciones entre tablas"
+],
+"Objetos de Access",
+"Permiten automatizaciones más complejas que las macros."
+],
+[
+26,
+"La opción Compactar y reparar base de datos de Access sirve para:",
+"Reducir el tamaño del archivo y corregir algunos errores",
+[
+"Cifrar la base de datos con una contraseña",
+"Convertir la base de datos a formato Excel para compartirla con otros usuarios",
+"Eliminar los registros duplicados de todas las tablas"
+],
+"Mantenimiento",
+"Conviene usarla periódicamente, porque las bases de datos crecen al borrar y modificar datos."
+],
+[
+26,
+"¿Qué tipo de datos de Access permite almacenar textos de más de 255 caracteres?",
+"Texto largo",
+[
+"Texto corto",
+"Hipervínculo",
+"Sí/No"
+],
+"Tipos de datos",
+"El Texto corto admite como máximo 255 caracteres."
+],
+[
+26,
+"En la cuadrícula de diseño de una consulta de Access, la fila Orden sirve para:",
+"Ordenar los resultados de forma ascendente o descendente por ese campo",
+[
+"Establecer el orden en que se muestran las columnas en la hoja de resultados",
+"Numerar correlativamente los registros que aparecen en el resultado de la consulta",
+"Elegir el orden en que aparecen las tablas en la ventana Relaciones de la base"
+],
+"Diseño de consultas",
+"La fila Criterios filtra los registros y la casilla Mostrar indica si el campo aparece en el resultado."
+]
+]

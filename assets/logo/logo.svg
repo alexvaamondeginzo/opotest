@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c8173a"/><stop offset="1" stop-color="#8f0e25"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <!-- hoja de test -->
+  <rect x="146" y="112" width="220" height="270" rx="26" fill="#ffffff"/>
+  <!-- opciones -->
+  <g fill="none" stroke="#e7c3ca" stroke-width="14" stroke-linecap="round">
+    <line x1="232" y1="170" x2="326" y2="170"/>
+    <line x1="232" y1="320" x2="326" y2="320"/>
+  </g>
+  <circle cx="190" cy="170" r="17" fill="none" stroke="#e7c3ca" stroke-width="9"/>
+  <circle cx="190" cy="320" r="17" fill="none" stroke="#e7c3ca" stroke-width="9"/>
+  <!-- opción correcta -->
+  <circle cx="190" cy="245" r="26" fill="#17794a"/>
+  <path d="M178 245 l9 10 l17 -20" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="232" y1="245" x2="326" y2="245" stroke="#b3122e" stroke-width="16" stroke-linecap="round"/>
+  <text x="256" y="445" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="50" fill="#ffffff" letter-spacing="4">AUX CM</text>
+</svg>

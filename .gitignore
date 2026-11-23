@@ -3,3 +3,5 @@ node_modules/
 .env
 .env.*
 *.zip
+*.xlsx
+__pycache__/
