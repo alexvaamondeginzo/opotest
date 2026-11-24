@@ -101,26 +101,26 @@ Google está activado en Supabase.
       Tipo: External. Nombre de la app: OpoNota.
       Email de soporte: oponota.contacto@gmail.com.
       Logotipo: assets/marca/oponota-icono-1024.png (opcional).
-      Dominios autorizados: netlify.app y supabase.co
-      Enlace a la política de privacidad: https://oponota.netlify.app/privacidad.html
+      Dominios autorizados: pages.dev y supabase.co
+      Enlace a la política de privacidad: https://oponota.pages.dev/privacidad.html
       Permisos (scopes): solo email, profile y openid.
    Después, en Audience, pulsa "Publish app" para que pueda entrar cualquiera
    (si no, solo los emails que añadas como testers).
 3. APIs & Services > Credentials > Create credentials > OAuth client ID:
       Tipo: Web application.
-      Authorized JavaScript origins: https://oponota.netlify.app
+      Authorized JavaScript origins: https://oponota.pages.dev
       Authorized redirect URIs:
          https://djzqzywpwliytbtkpdzk.supabase.co/auth/v1/callback
    Copia el Client ID y el Client secret.
 4. Supabase > Authentication > Sign In / Providers > Google: actívalo y pega
    el Client ID y el Client secret. Guarda.
 5. Supabase > Authentication > URL Configuration:
-      Site URL: https://oponota.netlify.app
-      Redirect URLs: añade https://oponota.netlify.app/**
+      Site URL: https://oponota.pages.dev
+      Redirect URLs: https://oponota.pages.dev/** (ya puesto el 24/11/2026)
 6. Recarga la web y abre "Entrar": ya sale "Continuar con Google".
 
 ---------------------------------------------------------------------
-PASO 4b · PASAR LA WEB A CLOUDFLARE PAGES (gratis, sin límite de visitas)
+PASO 4b · PASAR LA WEB A CLOUDFLARE PAGES (HECHO el 24/11/2026)
 ---------------------------------------------------------------------
 Por qué: el plan gratis de Netlify da 300 créditos al mes y cada
 publicación gasta 15 (unas 20 al mes). Cloudflare Pages gratis permite
@@ -129,11 +129,13 @@ La web ya está preparada: los formularios van a Supabase (no a Netlify),
 el pago acepta la dirección oponota.pages.dev y el archivo web/_headers
 vale para los dos.
 
-1. Crea la cuenta en dash.cloudflare.com con oponota.contacto@gmail.com.
-2. Workers & Pages > Create > Pages > Connect to Git > GitHub.
-   El dueño del repositorio (alexvaamondeginzo/opotest) tiene que
-   autorizar la aplicación de Cloudflare en ese repositorio (o transferir
-   el repositorio a una organización de GitHub de los dos).
+Hecho: el repositorio está en la organización de GitHub "oponota"
+(github.com/oponota/opotest) y el proyecto "oponota" de Cloudflare Pages
+publica cada push a main en https://oponota.pages.dev. Pasos seguidos:
+1. Cuenta de Cloudflare del equipo (los dos socios tienen acceso).
+2. Workers & Pages > Create > Pages > Connect to Git > GitHub, con la
+   aplicación de Cloudflare instalada en la organización "oponota" y
+   acceso solo al repositorio opotest.
 3. Configuración del proyecto:
       Nombre del proyecto: oponota   (la web será https://oponota.pages.dev)
       Rama de producción: main
@@ -154,10 +156,9 @@ vale para los dos.
 ---------------------------------------------------------------------
 PASO 5 · SUBIR LA WEB
 ---------------------------------------------------------------------
-Arrastra a Netlify SOLO la carpeta "web" (como siempre).
-NO subas la carpeta "supabase": contiene las preguntas.
-Si el sitio de Netlify está conectado al repositorio de GitHub, no hace
-falta arrastrar nada: netlify.toml publica solo la carpeta "web".
+No hace falta subir nada a mano: cada push a main se publica solo en
+Cloudflare Pages (carpeta "web"). Nunca subas a mano la carpeta
+"supabase": contiene las preguntas.
 
 Formularios (reportar una pregunta y lista de espera): ahora se guardan
 en Supabase (supabase/10-formularios.sql, ya aplicado) y se ven en el panel

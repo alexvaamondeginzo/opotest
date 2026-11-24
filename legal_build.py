@@ -2,14 +2,14 @@ import os
 OUT = "web"
 
 # ===== DATOS DEL TITULAR =====
-SITIO = "https://oponota.netlify.app/"   # hasta que haya dominio propio
+SITIO = "https://oponota.pages.dev/"   # hasta que haya dominio propio
 EMAIL = "oponota.contacto@gmail.com"
 FECHA = "18 de octubre de 2026"
 # PENDIENTE ANTES DEL LANZAMIENTO PÚBLICO: rellenar NIF y domicilio (y el nombre real del titular).
 # Mientras estén vacíos, no se muestran en las páginas.
 NIF = ""
 # Dónde está alojada la web. Si os pasáis a Cloudflare Pages, cambiadlo por "Cloudflare, Inc.".
-ALOJAMIENTO = "Netlify, Inc."
+ALOJAMIENTO = "Cloudflare, Inc."
 DOMICILIO = ""
 os.makedirs(OUT, exist_ok=True)
 
