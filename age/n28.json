@@ -286,5 +286,149 @@
 ],
 "Redes",
 "Permite, por ejemplo, teletrabajar accediendo a la red interna de la organización."
+],
+[
+28,
+"¿Qué protocolo permite leer el correo manteniendo los mensajes sincronizados en el servidor?",
+"IMAP",
+[
+"POP3",
+"SMTP",
+"FTP"
+],
+"Correo electrónico",
+"IMAP sincroniza con el servidor; POP3 descarga los mensajes y SMTP sirve para enviar."
+],
+[
+28,
+"¿Cuántos bits tiene una dirección IPv4?",
+"32",
+[
+"64",
+"128",
+"16"
+],
+"Direccionamiento",
+"IPv4 usa 32 bits (cuatro números de 0 a 255); IPv6, 128."
+],
+[
+28,
+"¿Cuál de estos es un dominio de primer nivel genérico?",
+".org",
+[
+".es",
+".fr",
+".mx"
+],
+"Dominios",
+".org es genérico; .es, .fr y .mx son dominios territoriales de países."
+],
+[
+28,
+"¿Qué puerto usa por defecto el protocolo HTTPS?",
+"443",
+[
+"80",
+"21",
+"25"
+],
+"Protocolos de internet",
+"HTTPS usa el 443; HTTP, el 80; FTP, el 21, y SMTP, el 25."
+],
+[
+28,
+"En un correo electrónico, los destinatarios añadidos en CCO:",
+"No son visibles para el resto de destinatarios",
+[
+"Reciben el mensaje solo si lo abre el destinatario principal",
+"Pueden modificar el mensaje antes de leerlo",
+"Reciben una copia sin los archivos adjuntos"
+],
+"Correo electrónico",
+"CCO (copia oculta) envía el mensaje sin mostrar esas direcciones a los demás."
+],
+[
+28,
+"Un router es un dispositivo que:",
+"Conecta redes distintas y encamina los paquetes de datos entre ellas",
+[
+"Almacena las páginas web que se visitan",
+"Traduce los nombres de dominio de las páginas a sus direcciones IP numéricas",
+"Protege el equipo frente a los virus"
+],
+"Redes",
+"El router interconecta redes (por ejemplo, la de casa con internet) y decide por dónde enviar los datos."
+],
+[
+28,
+"¿Qué entidad pública gestiona el registro de los dominios .es?",
+"Red.es",
+[
+"El Ministerio de Hacienda",
+"La ICANN directamente",
+"El Instituto Nacional de Ciberseguridad"
+],
+"Dominios",
+"El registro de nombres de dominio bajo .es lo gestiona la entidad pública Red.es."
+],
+[
+28,
+"¿Cuál de los siguientes NO es un navegador web?",
+"Outlook",
+[
+"Microsoft Edge",
+"Mozilla Firefox",
+"Google Chrome"
+],
+"Navegadores",
+"Outlook es un gestor de correo y calendario; los otros tres son navegadores."
+],
+[
+28,
+"En los navegadores, Ctrl + T sirve para:",
+"Abrir una pestaña nueva",
+[
+"Cerrar la pestaña actual",
+"Volver a abrir la última pestaña cerrada",
+"Abrir una ventana privada"
+],
+"Atajos del navegador",
+"Ctrl + T abre una pestaña; Ctrl + W la cierra y Ctrl + Mayús + T reabre la última cerrada."
+],
+[
+28,
+"En los navegadores, Ctrl + W sirve para:",
+"Cerrar la pestaña actual",
+[
+"Abrir una pestaña nueva",
+"Guardar la página",
+"Abrir el historial"
+],
+"Atajos del navegador",
+"Ctrl + W cierra la pestaña activa."
+],
+[
+28,
+"El ancho de banda de una conexión indica:",
+"La cantidad de datos que puede transmitir por unidad de tiempo",
+[
+"La distancia máxima entre el equipo y el router",
+"El número de dispositivos que se pueden conectar",
+"El tiempo que tarda en cargar por completo una página web concreta"
+],
+"Redes",
+"Se mide en bits por segundo (Mbps, Gbps)."
+],
+[
+28,
+"Un hipervínculo es:",
+"Un elemento que, al pulsarlo, lleva a otra página o recurso",
+[
+"Un archivo temporal del navegador",
+"Un tipo de dirección IP",
+"Un programa del navegador que bloquea las ventanas emergentes publicitarias"
+],
+"Navegación",
+"Los hipervínculos o enlaces conectan páginas y recursos en la web."
 ]
 ]

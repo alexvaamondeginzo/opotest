@@ -274,5 +274,137 @@
 ],
 "Ciclo de vida de Windows",
 "El 14 de enero de 2020 terminó el soporte de Windows 7 y el 5 de octubre de 2021 se lanzó Windows 11."
+],
+[
+22,
+"En Windows 11, la combinación Windows + E abre:",
+"El Explorador de archivos",
+[
+"La Configuración",
+"El menú Inicio",
+"El Administrador de tareas"
+],
+"Atajos de Windows",
+"Windows + E abre el Explorador de archivos."
+],
+[
+22,
+"En Windows, Alt + Tab sirve para:",
+"Cambiar entre las ventanas abiertas",
+[
+"Cerrar la ventana activa",
+"Abrir la vista de tareas y los escritorios",
+"Minimizar todas las ventanas"
+],
+"Atajos de Windows",
+"Alt + Tab cambia entre ventanas; Alt + F4 cierra y Windows + Tab abre la vista de tareas."
+],
+[
+22,
+"En Windows, Alt + F4 sirve para:",
+"Cerrar la ventana o aplicación activa",
+[
+"Cambiar entre las ventanas abiertas",
+"Abrir el Explorador de archivos",
+"Bloquear el equipo"
+],
+"Atajos de Windows",
+"Alt + F4 cierra el elemento activo; en el escritorio, abre el cuadro de apagado."
+],
+[
+22,
+"En Windows 11, Windows + M:",
+"Minimiza todas las ventanas abiertas",
+[
+"Abre el menú Inicio",
+"Abre el Explorador de archivos",
+"Muestra el centro de notificaciones"
+],
+"Atajos de Windows",
+"Windows + M minimiza todas las ventanas."
+],
+[
+22,
+"En el Explorador de archivos de Windows 11, Ctrl + Mayús + N:",
+"Crea una carpeta nueva",
+[
+"Abre una nueva ventana del Explorador",
+"Crea un acceso directo",
+"Cambia el nombre de la carpeta"
+],
+"Explorador de archivos",
+"Ctrl + Mayús + N crea una carpeta nueva; Ctrl + N abre una nueva ventana."
+],
+[
+22,
+"En Windows 11, Windows + flecha izquierda:",
+"Ajusta la ventana activa a la mitad izquierda de la pantalla",
+[
+"Minimiza la ventana activa",
+"Cambia al escritorio virtual de la izquierda",
+"Mueve la ventana activa al monitor que esté situado a la izquierda"
+],
+"Ventanas",
+"Windows + flecha izquierda ajusta la ventana a la izquierda; Windows + Ctrl + flecha cambia de escritorio virtual."
+],
+[
+22,
+"En Windows 11, Windows + Ctrl + D:",
+"Crea un nuevo escritorio virtual",
+[
+"Muestra el escritorio",
+"Cierra el escritorio virtual actual",
+"Duplica la ventana activa"
+],
+"Escritorios virtuales",
+"Windows + Ctrl + D crea un escritorio virtual; Windows + Ctrl + F4 cierra el actual."
+],
+[
+22,
+"En Windows 11, pulsar Windows + un número (por ejemplo, Windows + 2):",
+"Abre la aplicación anclada en esa posición de la barra de tareas",
+[
+"Cambia directamente al escritorio virtual que tenga ese mismo número",
+"Abre esa ficha de la Configuración",
+"Ajusta la ventana a esa parte de la pantalla"
+],
+"Barra de tareas",
+"Windows + número abre o cambia a la aplicación que ocupa esa posición en la barra de tareas."
+],
+[
+22,
+"En Windows 11, Windows + H abre:",
+"El dictado o escritura por voz",
+[
+"La ayuda de Windows",
+"El historial del portapapeles",
+"La pantalla de inicio"
+],
+"Atajos de Windows",
+"Windows + H activa la escritura por voz."
+],
+[
+22,
+"¿Qué sistema de archivos usa Windows 11 en la unidad donde está instalado?",
+"NTFS",
+[
+"FAT32",
+"exFAT",
+"ext4"
+],
+"Sistemas de archivos",
+"Windows se instala en NTFS; FAT32 y exFAT se usan en memorias USB y ext4 es propio de Linux."
+],
+[
+22,
+"¿Qué función de Windows guarda copias de versiones anteriores de los archivos personales?",
+"El Historial de archivos",
+[
+"Restaurar sistema",
+"El Liberador de espacio en disco",
+"El Desfragmentador"
+],
+"Copias de seguridad",
+"El Historial de archivos guarda versiones de tus archivos; Restaurar sistema vuelve atrás la configuración del sistema."
 ]
 ]

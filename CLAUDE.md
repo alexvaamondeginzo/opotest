@@ -72,7 +72,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 ## Estado y pendientes
 
 - [x] Banco de Madrid: 1.224 preguntas de los 21 temas, con distractores reescritos contra las pistas de forma.
-- [x] Banco del Estado: 1.919 preguntas. 795 vienen de Madrid, 507 son nuevas comprobadas con el BOE y 617 son psicotécnicos generados por código (`age/psico.py`; los verbales, revisados a mano).
+- [x] Banco del Estado: 1.984 preguntas. 795 vienen de Madrid, 572 son nuevas comprobadas con el BOE y 617 son psicotécnicos generados por código (`age/psico.py`; los verbales, revisados a mano).
 - [x] Backend: Supabase con RLS, cuentas, progreso sincronizado, panel de administración y webhook de Stripe.
 - [x] Fusión de las dos versiones (pull request #1, ya en `main`). De la versión de Alex se han traído:
   - el enlace al BOE de cada respuesta;
@@ -86,7 +86,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [x] Precios decididos y puestos en Administración > Precios (ver arriba).
 - [ ] Probar un pago completo con la tarjeta de prueba y configurar Google (cliente OAuth) siguiendo `INSTRUCCIONES.txt`.
 - [x] Psicotécnicos del Estado ampliados de 139 a 617 (24/11/2026), según los tipos de los exámenes oficiales de 2024 y 2025.
-- [ ] Ampliar los temas más cortos del Estado: 17 (20 preguntas), 18 (18), 21 (24), 22 (23) y 28 (24).
+- [x] Temas más cortos del Estado ampliados (24-25/11/2026): 17 (30), 18 (35), 21 (39), 22 (34) y 28 (36).
 - [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
 - [ ] Enlaces a las normas autonómicas de Madrid (BOCM) en `NORMAS`.
 - [ ] Siguientes oposiciones: Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid (ya en la portada como «Próximamente»), y las de la lista de espera según demanda.
@@ -112,6 +112,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 25/11/2026 · Edu · Temas 17, 18, 21, 22 y 28 del Estado ampliados (+65, RD 951/2005, RD 208/1996 y LO 4/2001 comprobados en el BOE). Cargadas en Supabase 4 preguntas de Madrid (tema 4) que faltaban. Permiso de lectura de `precios` (la web no podía leerlos). Enlaces a las normas de Madrid en `NORMAS`.
 - 24/11/2026 · Edu · Psicotécnicos ajustados a los exámenes oficiales de 2024-2025: fuera conteo y pares de códigos (no salen); nuevas tablas de caso práctico (archivo, cursos, claves de registro), definiciones, ecuaciones, signos, probabilidad y códigos binarios. Total 617.
 - 24/11/2026 · Edu · Psicotécnicos del Estado: de 139 a 453 (tablas de datos, ordenación alfabética y de fechas, claves, pares de códigos, series difíciles, problemas y 51 verbales nuevos). Los enunciados con líneas «a | b» se ven como tabla. `age/montar.py` ya no cambia el orden de las opciones de las preguntas publicadas.
 - 24/11/2026 · Edu · Instrucciones compartidas para los dos Claude en `.claude/skills/` (añadir preguntas, publicar la web, cambios en Supabase) y estas dos secciones.

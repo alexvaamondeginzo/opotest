@@ -16086,6 +16086,146 @@ null
 null
 ],
 [
+17,
+"¿Cuántos programas integran el marco general para la mejora de la calidad del RD 951/2005?",
+[
+"Cinco",
+"Ocho",
+"Seis",
+"Cuatro"
+],
+2,
+"Art. 3 RD 951/2005",
+"Son seis: análisis de la demanda y evaluación de la satisfacción, cartas de servicios, quejas y sugerencias, evaluación de la calidad, reconocimiento y Observatorio de la Calidad.",
+null
+],
+[
+17,
+"Según el RD 951/2005, la unidad que coordina los programas de calidad en cada departamento ministerial la designa:",
+[
+"El Inspector General de Servicios de la Administración Pública",
+"El Secretario de Estado de Función Pública",
+"El Subsecretario del departamento",
+"El Ministro del departamento"
+],
+2,
+"Art. 3 RD 951/2005",
+"Cada Subsecretario designa la unidad responsable de coordinar los programas de calidad en su departamento.",
+null
+],
+[
+17,
+"Según el RD 951/2005, la satisfacción de los usuarios con los servicios se medirá:",
+[
+"De forma sistemática y permanente",
+"Solo cuando se reciban quejas",
+"Una vez al año, en el primer trimestre",
+"Cada tres años, al revisar la carta de servicios"
+],
+0,
+"Art. 5 RD 951/2005",
+"La medición de la percepción de la calidad por los usuarios se hace de forma sistemática y permanente.",
+null
+],
+[
+17,
+"La resolución que aprueba una carta de servicios, según el RD 951/2005, se publica en:",
+[
+"El tablón de anuncios de la oficina",
+"Únicamente en la sede electrónica del órgano",
+"El Boletín Oficial del Estado",
+"El Diario de Sesiones del Congreso"
+],
+2,
+"Art. 11 RD 951/2005",
+"La resolución aprobatoria se publica en el BOE y las cartas se difunden también por internet y en las oficinas.",
+null
+],
+[
+17,
+"Los órganos con carta de servicios deben enviar, según el RD 951/2005, un informe anual sobre su cumplimiento:",
+[
+"Cada tres años",
+"Durante el primer semestre de cada año",
+"En el mes de diciembre",
+"Durante el primer trimestre de cada año"
+],
+3,
+"Art. 12 RD 951/2005",
+"Los órganos remiten anualmente, en el primer trimestre, un informe sobre el grado de cumplimiento de los compromisos.",
+null
+],
+[
+17,
+"Si la unidad de quejas pide al ciudadano que aclare su queja, según el RD 951/2005 este dispone para hacerlo de:",
+[
+"10 días hábiles",
+"15 días hábiles",
+"5 días hábiles",
+"20 días hábiles"
+],
+0,
+"Art. 16 RD 951/2005",
+"El plazo de 20 días hábiles para contestar se suspende y el ciudadano tiene 10 días hábiles para responder a la aclaración.",
+null
+],
+[
+17,
+"¿Qué órgano realiza el seguimiento de las quejas y sugerencias en cada departamento, según el RD 951/2005?",
+[
+"El Defensor del Pueblo",
+"El Tribunal de Cuentas",
+"El Consejo de Transparencia y Buen Gobierno de la Administración",
+"La Inspección General de Servicios del departamento"
+],
+3,
+"Art. 17 RD 951/2005",
+"Las Inspecciones Generales de Servicios de los departamentos realizan el seguimiento de las quejas y sugerencias.",
+null
+],
+[
+17,
+"Según el RD 951/2005, para obtener el reconocimiento a la excelencia una organización debe haber realizado previamente:",
+[
+"Una carta de servicios electrónica",
+"Una encuesta de satisfacción del Centro de Investigaciones Sociológicas",
+"Una autoevaluación conforme a un modelo de gestión de calidad reconocido",
+"Una auditoría del Tribunal de Cuentas"
+],
+2,
+"Art. 23 RD 951/2005",
+"Para optar al reconocimiento a la excelencia es requisito haber realizado una autoevaluación según los modelos de gestión de calidad reconocidos.",
+null
+],
+[
+17,
+"Según el RD 951/2005, ¿quién designa la unidad encargada de gestionar las quejas y sugerencias?",
+[
+"La Agencia Española de Protección de Datos",
+"El Ministerio de Hacienda para todos los departamentos",
+"Cada órgano o organismo, que debe contestar al ciudadano",
+"El Defensor del Pueblo para toda la Administración"
+],
+2,
+"Art. 14 RD 951/2005",
+"Cada órgano designa la unidad responsable de la gestión de quejas y sugerencias, que debe responder al ciudadano.",
+null
+],
+[
+17,
+"Los órganos que prestan servicios electrónicos operativos deben tener, según el RD 951/2005:",
+[
+"Un libro de reclamaciones en papel",
+"Un certificado de calidad ISO",
+"Cartas de servicios electrónicos",
+"Un defensor del usuario propio"
+],
+2,
+"Art. 13 RD 951/2005",
+"Los órganos con servicios electrónicos operativos elaboran cartas de servicios electrónicos.",
+null
+],
+[
 18,
 "¿Qué norma regula los servicios de información administrativa y atención al ciudadano en la Administración General del Estado?",
 [
@@ -16335,6 +16475,244 @@ null
 3,
 "Art. 13 e) Ley 39/2015",
 "El artículo 13 recoge también, entre otros, el derecho a ser asistidas en el uso de medios electrónicos.",
+null
+],
+[
+18,
+"Según el RD 208/1996, la función de orientación e información al ciudadano:",
+[
+"Incluye interpretar las normas aplicables al caso concreto",
+"No puede suponer interpretación normativa ni valoración jurídica o económica",
+"Permite emitir valoraciones jurídicas, aunque no vinculantes",
+"Excluye ayudar al ciudadano a cumplimentar impresos y solicitudes oficiales"
+],
+1,
+"Art. 4 b) RD 208/1996",
+"La orientación se limita a aclarar conceptos, explicar opciones y ayudar a cumplimentar impresos; no puede entrañar interpretación normativa ni consideración jurídica o económica.",
+null
+],
+[
+18,
+"Según el RD 208/1996, la función de gestión de las oficinas de información comprende:",
+[
+"La resolución de los procedimientos iniciados en la oficina",
+"La instrucción completa de los expedientes de queja y de sus recursos",
+"La expedición de cualquier certificado administrativo",
+"Las gestiones urgentes y sencillas que requieran respuesta inmediata"
+],
+3,
+"Art. 4 c) RD 208/1996",
+"La gestión incluye recibir la documentación inicial cuando la norma lo prevea y realizar gestiones urgentes y sencillas que requieran una respuesta inmediata.",
+null
+],
+[
+18,
+"Las quejas por tardanzas, desatenciones u otras actuaciones irregulares corresponden, según el RD 208/1996, a la función de:",
+[
+"Recepción de quejas y reclamaciones",
+"Recepción de iniciativas y sugerencias",
+"Orientación e información",
+"Asistencia en el derecho de petición"
+],
+0,
+"Art. 4 e) RD 208/1996",
+"El art. 4 e) atribuye a las oficinas la recepción de las quejas por tardanzas, desatenciones o cualquier otro tipo de actuación irregular.",
+null
+],
+[
+18,
+"Si un ciudadano quiere ejercer el derecho de petición sin saber a quién dirigirlo, según el RD 208/1996 la oficina debe:",
+[
+"Inadmitir la petición por falta de destinatario",
+"Archivarla hasta que el propio ciudadano identifique al órgano competente para resolver",
+"Orientarle y remitir la petición si no tiene destinatario o lo tiene equivocado",
+"Indicarle que acuda al Defensor del Pueblo"
+],
+2,
+"Art. 4 f) RD 208/1996",
+"Las unidades deben orientar sobre el ejercicio del derecho de petición y remitir las peticiones que carezcan de destinatario o lo tengan erróneo.",
+null
+],
+[
+18,
+"Según el RD 208/1996, la información general se difundirá preferentemente:",
+[
+"Exclusivamente a través del Boletín Oficial del Estado",
+"Por medios a distancia, como publicaciones o el teléfono",
+"Mediante notificación individual a cada interesado",
+"Solo de forma presencial en las oficinas de atención"
+],
+1,
+"Art. 2 RD 208/1996",
+"El art. 2.4 manda utilizar los medios adecuados, favoreciendo los que permiten la información a distancia (publicaciones, teléfono y otras tecnologías).",
+null
+],
+[
+18,
+"¿Quién facilita la información particular según el RD 208/1996?",
+[
+"La Inspección General de Servicios",
+"El Centro de Información Administrativa",
+"Las oficinas de registro de cualquier Administración",
+"Las unidades de gestión que tramitan los procedimientos"
+],
+3,
+"Art. 3 RD 208/1996",
+"La información particular la facilitan las unidades de gestión; las oficinas de información pueden conectarse con ellas para responder con rapidez.",
+null
+],
+[
+18,
+"Según el RD 208/1996, el Centro de Información Administrativa tiene nivel orgánico de:",
+[
+"Subdirección General",
+"Dirección General",
+"Servicio",
+"Secretaría General"
+],
+0,
+"Art. 6 RD 208/1996",
+"El Centro de Información Administrativa tiene nivel orgánico de Subdirección General.",
+null
+],
+[
+18,
+"Las oficinas centrales de información de los servicios territoriales de la Administración General del Estado dependen, según el RD 208/1996, de:",
+[
+"Los ayuntamientos de las capitales de provincia",
+"Las diputaciones provinciales",
+"Las consejerías de presidencia de las comunidades autónomas",
+"Las Delegaciones del Gobierno en las comunidades autónomas"
+],
+3,
+"Art. 9 RD 208/1996",
+"Las oficinas centrales territoriales se integran en las Delegaciones del Gobierno (y en las antiguas Gobiernos Civiles, hoy Subdelegaciones, y Delegaciones Insulares).",
+null
+],
+[
+18,
+"Para crear oficinas integradas de información con participación de varias Administraciones, el RD 208/1996 prevé:",
+[
+"Un convenio de colaboración entre ellas",
+"Una ley aprobada por las Cortes Generales",
+"Una orden del ministerio competente",
+"Un real decreto del Consejo de Ministros"
+],
+0,
+"Art. 10 RD 208/1996",
+"El art. 10 permite, mediante convenio de colaboración entre Administraciones, intercambiar información o crear oficinas integradas.",
+null
+],
+[
+18,
+"Según la LO 4/2001, ¿en qué plazo debe acordarse y notificarse la inadmisión de una petición?",
+[
+"En los 45 días hábiles siguientes a su presentación",
+"En los 3 meses siguientes a su presentación",
+"En los 30 días hábiles siguientes a su presentación",
+"En los 10 días siguientes a su presentación"
+],
+0,
+"Art. 9 LO 4/2001",
+"La declaración de inadmisibilidad debe ser motivada y acordarse y notificarse en los 45 días hábiles siguientes a la presentación.",
+null
+],
+[
+18,
+"Si en el plazo establecido no se declara la inadmisión de una petición, según la LO 4/2001:",
+[
+"Se remite al Defensor del Pueblo",
+"Se archiva sin más trámite",
+"Se entiende admitida a trámite",
+"Se entiende desestimada"
+],
+2,
+"Art. 9 LO 4/2001",
+"Si no se declara la inadmisibilidad en plazo, la petición se entiende admitida a trámite.",
+null
+],
+[
+18,
+"Si a un escrito de petición le faltan requisitos, la LO 4/2001 da al peticionario un plazo para subsanarlo de:",
+[
+"Cinco días",
+"Diez días",
+"Un mes",
+"Quince días"
+],
+3,
+"Art. 7 LO 4/2001",
+"Se requiere la subsanación en quince días, con el apercibimiento de tenerle por desistido y archivar la petición.",
+null
+],
+[
+18,
+"Cuando el destinatario de una petición no es competente, según la LO 4/2001 debe remitirla al órgano competente en el plazo de:",
+[
+"Quince días",
+"Diez días",
+"Treinta días",
+"Cinco días"
+],
+1,
+"Art. 10 LO 4/2001",
+"Si la inadmisión se basa en la falta de competencia, el destinatario remite la petición al órgano competente en diez días e informa al peticionario.",
+null
+],
+[
+18,
+"Contra la inadmisión de una petición o la falta de contestación en plazo, la LO 4/2001 prevé:",
+[
+"Recurso contencioso-administrativo para la protección de derechos fundamentales",
+"Recurso de alzada ante el superior jerárquico",
+"Reclamación previa ante el Defensor del Pueblo",
+"Recurso de amparo directo ante el Tribunal Constitucional, sin vía previa"
+],
+0,
+"Art. 12 LO 4/2001",
+"El art. 12 remite al procedimiento de protección de los derechos fundamentales de la Ley 29/1998.",
+null
+],
+[
+18,
+"Según la LO 4/2001, NO pueden ser objeto del derecho de petición:",
+[
+"Las propuestas para que se aprueben nuevas disposiciones de carácter general",
+"Los asuntos de interés general o colectivo",
+"Las cuestiones que afecten solo al peticionario",
+"Las cuestiones que tengan un procedimiento específico distinto"
+],
+3,
+"Art. 3 LO 4/2001",
+"Quedan excluidas las solicitudes para cuya satisfacción el ordenamiento establezca un procedimiento específico distinto.",
+null
+],
+[
+18,
+"Si una petición es colectiva, la LO 4/2001 exige que:",
+[
+"La firmen todos los peticionarios, con su nombre y apellidos",
+"La firme solo un representante designado por todos",
+"La presente una asociación inscrita en un registro público",
+"Se acompañe de una lista sin necesidad de firmas"
+],
+0,
+"Art. 4 LO 4/2001",
+"En las peticiones colectivas, además de los requisitos generales, la firman todos los peticionarios, con su nombre y apellidos.",
+null
+],
+[
+18,
+"En una comunidad autónoma con lengua cooficial, quien dirige una petición a la Administración General del Estado, según la LO 4/2001:",
+[
+"Debe presentar una traducción jurada al castellano",
+"Puede usar cualquiera de las lenguas oficiales y recibir respuesta en la que elija",
+"Debe usar siempre el castellano",
+"Puede usar la lengua cooficial, pero la respuesta se le dará siempre en castellano"
+],
+1,
+"Art. 5 LO 4/2001",
+"El peticionario puede usar cualquiera de las lenguas oficiales y tiene derecho a obtener la respuesta en la lengua elegida.",
 null
 ],
 [
@@ -17360,6 +17738,216 @@ null
 null
 ],
 [
+21,
+"¿Cuántos bits forman un nibble o cuarteto?",
+[
+"2",
+"4",
+"16",
+"8"
+],
+1,
+"Unidades de información",
+"Un nibble son 4 bits, la mitad de un byte.",
+null
+],
+[
+21,
+"En el sistema binario tradicional, un gigabyte equivale a:",
+[
+"1.024 megabytes",
+"1.000 megabytes",
+"2.048 megabytes",
+"512 megabytes"
+],
+0,
+"Unidades de información",
+"Cada unidad es 1.024 veces la anterior: 1 GB = 1.024 MB.",
+null
+],
+[
+21,
+"El número binario 1111 equivale en decimal a:",
+[
+"11",
+"15",
+"14",
+"16"
+],
+1,
+"Representación de la información",
+"8 + 4 + 2 + 1 = 15.",
+null
+],
+[
+21,
+"¿Qué sistema de numeración utiliza los dígitos del 0 al 9 y las letras de la A a la F?",
+[
+"El hexadecimal",
+"El binario",
+"El octal",
+"El decimal"
+],
+0,
+"Representación de la información",
+"El sistema hexadecimal tiene base 16: 0-9 y A-F.",
+null
+],
+[
+21,
+"La memoria ROM se caracteriza por ser:",
+[
+"Volátil y de solo lectura",
+"No volátil y, en principio, de solo lectura",
+"Volátil y de lectura y escritura",
+"Una memoria de almacenamiento masivo externa"
+],
+1,
+"Memoria",
+"La ROM conserva los datos sin corriente y está pensada para leerse, no para escribirse en el uso normal.",
+null
+],
+[
+21,
+"¿Qué componente conecta todos los elementos internos del ordenador y permite que se comuniquen?",
+[
+"La placa base",
+"El disipador",
+"La fuente de alimentación",
+"La tarjeta gráfica"
+],
+0,
+"Hardware",
+"La placa base aloja y comunica el procesador, la memoria y el resto de componentes.",
+null
+],
+[
+21,
+"La GPU de un ordenador es:",
+[
+"La unidad principal de almacenamiento",
+"El procesador especializado en gráficos",
+"El controlador de la red inalámbrica",
+"La memoria intermedia del disco duro"
+],
+1,
+"Hardware",
+"La GPU (unidad de procesamiento gráfico) se encarga de calcular y mostrar las imágenes.",
+null
+],
+[
+21,
+"¿Cuál de los siguientes es un periférico de salida?",
+[
+"El micrófono",
+"El lector de códigos de barras",
+"La impresora",
+"El ratón"
+],
+2,
+"Periféricos",
+"La impresora saca información del ordenador; los otros tres la introducen.",
+null
+],
+[
+21,
+"Un disco duro tradicional (HDD) guarda la información:",
+[
+"En platos magnéticos que giran",
+"En chips de memoria flash",
+"En la memoria RAM del equipo",
+"En discos ópticos grabados con láser"
+],
+0,
+"Almacenamiento",
+"El HDD usa platos magnéticos y un cabezal móvil; el SSD usa memoria flash sin partes móviles.",
+null
+],
+[
+21,
+"Un procesador de textos es un ejemplo de:",
+[
+"Controlador de dispositivo",
+"Software de aplicación",
+"Firmware",
+"Software de sistema"
+],
+1,
+"Tipos de software",
+"Los programas para tareas del usuario (textos, hojas de cálculo) son software de aplicación.",
+null
+],
+[
+21,
+"En la computación en la nube, IaaS significa:",
+[
+"Integración como servicio",
+"Internet como servicio",
+"Infraestructura como servicio",
+"Información como servicio"
+],
+2,
+"Cloud computing",
+"IaaS ofrece servidores, almacenamiento y redes virtuales como servicio.",
+null
+],
+[
+21,
+"Un gusano informático se caracteriza por:",
+[
+"Propagarse por sí mismo a otros equipos a través de la red",
+"Cifrar los archivos del usuario y pedir un rescate económico para liberarlos",
+"Mostrar publicidad no deseada en el navegador",
+"Registrar las teclas que pulsa el usuario"
+],
+0,
+"Seguridad",
+"El gusano se replica solo; el ransomware cifra, el adware muestra anuncios y el keylogger registra pulsaciones.",
+null
+],
+[
+21,
+"Una copia de seguridad diferencial guarda:",
+[
+"Los archivos modificados desde la última copia de cualquier tipo",
+"Solo los archivos creados ese mismo día",
+"Todos los archivos del equipo cada vez",
+"Los archivos modificados desde la última copia completa"
+],
+3,
+"Copias de seguridad",
+"La diferencial toma como referencia la última copia completa; la incremental, la última copia de cualquier tipo.",
+null
+],
+[
+21,
+"La verificación en dos pasos consiste en:",
+[
+"Iniciar sesión a la vez desde dos dispositivos",
+"Usar dos contraseñas distintas, una para el usuario y otra para el equipo, en cada acceso",
+"Cambiar la contraseña cada dos meses",
+"Pedir, además de la contraseña, un segundo factor, como un código en el móvil"
+],
+3,
+"Seguridad",
+"Combina algo que sabes (contraseña) con algo que tienes (móvil, llave) o que eres (huella).",
+null
+],
+[
+21,
+"Una red que abarca una zona geográfica amplia, como un país, se denomina:",
+[
+"WAN",
+"PAN",
+"WLAN",
+"LAN"
+],
+0,
+"Redes",
+"WAN es red de área amplia; LAN, local; PAN, personal; WLAN, local inalámbrica.",
+null
+],
+[
 22,
 "En Windows 11, ¿qué combinación de teclas muestra u oculta el escritorio?",
 [
@@ -17679,6 +18267,160 @@ null
 3,
 "Ciclo de vida de Windows",
 "El 14 de enero de 2020 terminó el soporte de Windows 7 y el 5 de octubre de 2021 se lanzó Windows 11.",
+null
+],
+[
+22,
+"En Windows 11, la combinación Windows + E abre:",
+[
+"El Administrador de tareas",
+"El menú Inicio",
+"La Configuración",
+"El Explorador de archivos"
+],
+3,
+"Atajos de Windows",
+"Windows + E abre el Explorador de archivos.",
+null
+],
+[
+22,
+"En Windows, Alt + Tab sirve para:",
+[
+"Minimizar todas las ventanas",
+"Cerrar la ventana activa",
+"Abrir la vista de tareas y los escritorios",
+"Cambiar entre las ventanas abiertas"
+],
+3,
+"Atajos de Windows",
+"Alt + Tab cambia entre ventanas; Alt + F4 cierra y Windows + Tab abre la vista de tareas.",
+null
+],
+[
+22,
+"En Windows, Alt + F4 sirve para:",
+[
+"Bloquear el equipo",
+"Cerrar la ventana o aplicación activa",
+"Abrir el Explorador de archivos",
+"Cambiar entre las ventanas abiertas"
+],
+1,
+"Atajos de Windows",
+"Alt + F4 cierra el elemento activo; en el escritorio, abre el cuadro de apagado.",
+null
+],
+[
+22,
+"En Windows 11, Windows + M:",
+[
+"Abre el Explorador de archivos",
+"Muestra el centro de notificaciones",
+"Minimiza todas las ventanas abiertas",
+"Abre el menú Inicio"
+],
+2,
+"Atajos de Windows",
+"Windows + M minimiza todas las ventanas.",
+null
+],
+[
+22,
+"En el Explorador de archivos de Windows 11, Ctrl + Mayús + N:",
+[
+"Crea una carpeta nueva",
+"Cambia el nombre de la carpeta",
+"Crea un acceso directo",
+"Abre una nueva ventana del Explorador"
+],
+0,
+"Explorador de archivos",
+"Ctrl + Mayús + N crea una carpeta nueva; Ctrl + N abre una nueva ventana.",
+null
+],
+[
+22,
+"En Windows 11, Windows + flecha izquierda:",
+[
+"Ajusta la ventana activa a la mitad izquierda de la pantalla",
+"Cambia al escritorio virtual de la izquierda",
+"Minimiza la ventana activa",
+"Mueve la ventana activa al monitor que esté situado a la izquierda"
+],
+0,
+"Ventanas",
+"Windows + flecha izquierda ajusta la ventana a la izquierda; Windows + Ctrl + flecha cambia de escritorio virtual.",
+null
+],
+[
+22,
+"En Windows 11, Windows + Ctrl + D:",
+[
+"Muestra el escritorio",
+"Duplica la ventana activa",
+"Cierra el escritorio virtual actual",
+"Crea un nuevo escritorio virtual"
+],
+3,
+"Escritorios virtuales",
+"Windows + Ctrl + D crea un escritorio virtual; Windows + Ctrl + F4 cierra el actual.",
+null
+],
+[
+22,
+"En Windows 11, pulsar Windows + un número (por ejemplo, Windows + 2):",
+[
+"Cambia directamente al escritorio virtual que tenga ese mismo número",
+"Abre esa ficha de la Configuración",
+"Ajusta la ventana a esa parte de la pantalla",
+"Abre la aplicación anclada en esa posición de la barra de tareas"
+],
+3,
+"Barra de tareas",
+"Windows + número abre o cambia a la aplicación que ocupa esa posición en la barra de tareas.",
+null
+],
+[
+22,
+"En Windows 11, Windows + H abre:",
+[
+"El historial del portapapeles",
+"La pantalla de inicio",
+"El dictado o escritura por voz",
+"La ayuda de Windows"
+],
+2,
+"Atajos de Windows",
+"Windows + H activa la escritura por voz.",
+null
+],
+[
+22,
+"¿Qué sistema de archivos usa Windows 11 en la unidad donde está instalado?",
+[
+"FAT32",
+"NTFS",
+"exFAT",
+"ext4"
+],
+1,
+"Sistemas de archivos",
+"Windows se instala en NTFS; FAT32 y exFAT se usan en memorias USB y ext4 es propio de Linux.",
+null
+],
+[
+22,
+"¿Qué función de Windows guarda copias de versiones anteriores de los archivos personales?",
+[
+"El Desfragmentador",
+"Restaurar sistema",
+"El Liberador de espacio en disco",
+"El Historial de archivos"
+],
+3,
+"Copias de seguridad",
+"El Historial de archivos guarda versiones de tus archivos; Restaurar sistema vuelve atrás la configuración del sistema.",
 null
 ],
 [
@@ -18225,6 +18967,174 @@ null
 1,
 "Redes",
 "Permite, por ejemplo, teletrabajar accediendo a la red interna de la organización.",
+null
+],
+[
+28,
+"¿Qué protocolo permite leer el correo manteniendo los mensajes sincronizados en el servidor?",
+[
+"FTP",
+"SMTP",
+"IMAP",
+"POP3"
+],
+2,
+"Correo electrónico",
+"IMAP sincroniza con el servidor; POP3 descarga los mensajes y SMTP sirve para enviar.",
+null
+],
+[
+28,
+"¿Cuántos bits tiene una dirección IPv4?",
+[
+"64",
+"128",
+"32",
+"16"
+],
+2,
+"Direccionamiento",
+"IPv4 usa 32 bits (cuatro números de 0 a 255); IPv6, 128.",
+null
+],
+[
+28,
+"¿Cuál de estos es un dominio de primer nivel genérico?",
+[
+".fr",
+".es",
+".org",
+".mx"
+],
+2,
+"Dominios",
+".org es genérico; .es, .fr y .mx son dominios territoriales de países.",
+null
+],
+[
+28,
+"¿Qué puerto usa por defecto el protocolo HTTPS?",
+[
+"21",
+"443",
+"25",
+"80"
+],
+1,
+"Protocolos de internet",
+"HTTPS usa el 443; HTTP, el 80; FTP, el 21, y SMTP, el 25.",
+null
+],
+[
+28,
+"En un correo electrónico, los destinatarios añadidos en CCO:",
+[
+"Pueden modificar el mensaje antes de leerlo",
+"Reciben el mensaje solo si lo abre el destinatario principal",
+"Reciben una copia sin los archivos adjuntos",
+"No son visibles para el resto de destinatarios"
+],
+3,
+"Correo electrónico",
+"CCO (copia oculta) envía el mensaje sin mostrar esas direcciones a los demás.",
+null
+],
+[
+28,
+"Un router es un dispositivo que:",
+[
+"Almacena las páginas web que se visitan",
+"Traduce los nombres de dominio de las páginas a sus direcciones IP numéricas",
+"Protege el equipo frente a los virus",
+"Conecta redes distintas y encamina los paquetes de datos entre ellas"
+],
+3,
+"Redes",
+"El router interconecta redes (por ejemplo, la de casa con internet) y decide por dónde enviar los datos.",
+null
+],
+[
+28,
+"¿Qué entidad pública gestiona el registro de los dominios .es?",
+[
+"El Ministerio de Hacienda",
+"Red.es",
+"El Instituto Nacional de Ciberseguridad",
+"La ICANN directamente"
+],
+1,
+"Dominios",
+"El registro de nombres de dominio bajo .es lo gestiona la entidad pública Red.es.",
+null
+],
+[
+28,
+"¿Cuál de los siguientes NO es un navegador web?",
+[
+"Outlook",
+"Mozilla Firefox",
+"Microsoft Edge",
+"Google Chrome"
+],
+0,
+"Navegadores",
+"Outlook es un gestor de correo y calendario; los otros tres son navegadores.",
+null
+],
+[
+28,
+"En los navegadores, Ctrl + T sirve para:",
+[
+"Volver a abrir la última pestaña cerrada",
+"Abrir una pestaña nueva",
+"Cerrar la pestaña actual",
+"Abrir una ventana privada"
+],
+1,
+"Atajos del navegador",
+"Ctrl + T abre una pestaña; Ctrl + W la cierra y Ctrl + Mayús + T reabre la última cerrada.",
+null
+],
+[
+28,
+"En los navegadores, Ctrl + W sirve para:",
+[
+"Guardar la página",
+"Abrir el historial",
+"Cerrar la pestaña actual",
+"Abrir una pestaña nueva"
+],
+2,
+"Atajos del navegador",
+"Ctrl + W cierra la pestaña activa.",
+null
+],
+[
+28,
+"El ancho de banda de una conexión indica:",
+[
+"La distancia máxima entre el equipo y el router",
+"La cantidad de datos que puede transmitir por unidad de tiempo",
+"El número de dispositivos que se pueden conectar",
+"El tiempo que tarda en cargar por completo una página web concreta"
+],
+1,
+"Redes",
+"Se mide en bits por segundo (Mbps, Gbps).",
+null
+],
+[
+28,
+"Un hipervínculo es:",
+[
+"Un archivo temporal del navegador",
+"Un elemento que, al pulsarlo, lleva a otra página o recurso",
+"Un tipo de dirección IP",
+"Un programa del navegador que bloquea las ventanas emergentes publicitarias"
+],
+1,
+"Navegación",
+"Los hipervínculos o enlaces conectan páginas y recursos en la web.",
 null
 ],
 [

@@ -286,5 +286,185 @@
 ],
 "Cloud computing",
 "Junto a SaaS están IaaS (infraestructura como servicio) y PaaS (plataforma como servicio)."
+],
+[
+21,
+"¿Cuántos bits forman un nibble o cuarteto?",
+"4",
+[
+"2",
+"8",
+"16"
+],
+"Unidades de información",
+"Un nibble son 4 bits, la mitad de un byte."
+],
+[
+21,
+"En el sistema binario tradicional, un gigabyte equivale a:",
+"1.024 megabytes",
+[
+"1.000 megabytes",
+"512 megabytes",
+"2.048 megabytes"
+],
+"Unidades de información",
+"Cada unidad es 1.024 veces la anterior: 1 GB = 1.024 MB."
+],
+[
+21,
+"El número binario 1111 equivale en decimal a:",
+"15",
+[
+"16",
+"14",
+"11"
+],
+"Representación de la información",
+"8 + 4 + 2 + 1 = 15."
+],
+[
+21,
+"¿Qué sistema de numeración utiliza los dígitos del 0 al 9 y las letras de la A a la F?",
+"El hexadecimal",
+[
+"El octal",
+"El binario",
+"El decimal"
+],
+"Representación de la información",
+"El sistema hexadecimal tiene base 16: 0-9 y A-F."
+],
+[
+21,
+"La memoria ROM se caracteriza por ser:",
+"No volátil y, en principio, de solo lectura",
+[
+"Volátil y de lectura y escritura",
+"Volátil y de solo lectura",
+"Una memoria de almacenamiento masivo externa"
+],
+"Memoria",
+"La ROM conserva los datos sin corriente y está pensada para leerse, no para escribirse en el uso normal."
+],
+[
+21,
+"¿Qué componente conecta todos los elementos internos del ordenador y permite que se comuniquen?",
+"La placa base",
+[
+"La fuente de alimentación",
+"La tarjeta gráfica",
+"El disipador"
+],
+"Hardware",
+"La placa base aloja y comunica el procesador, la memoria y el resto de componentes."
+],
+[
+21,
+"La GPU de un ordenador es:",
+"El procesador especializado en gráficos",
+[
+"La unidad principal de almacenamiento",
+"El controlador de la red inalámbrica",
+"La memoria intermedia del disco duro"
+],
+"Hardware",
+"La GPU (unidad de procesamiento gráfico) se encarga de calcular y mostrar las imágenes."
+],
+[
+21,
+"¿Cuál de los siguientes es un periférico de salida?",
+"La impresora",
+[
+"El ratón",
+"El micrófono",
+"El lector de códigos de barras"
+],
+"Periféricos",
+"La impresora saca información del ordenador; los otros tres la introducen."
+],
+[
+21,
+"Un disco duro tradicional (HDD) guarda la información:",
+"En platos magnéticos que giran",
+[
+"En chips de memoria flash",
+"En discos ópticos grabados con láser",
+"En la memoria RAM del equipo"
+],
+"Almacenamiento",
+"El HDD usa platos magnéticos y un cabezal móvil; el SSD usa memoria flash sin partes móviles."
+],
+[
+21,
+"Un procesador de textos es un ejemplo de:",
+"Software de aplicación",
+[
+"Software de sistema",
+"Firmware",
+"Controlador de dispositivo"
+],
+"Tipos de software",
+"Los programas para tareas del usuario (textos, hojas de cálculo) son software de aplicación."
+],
+[
+21,
+"En la computación en la nube, IaaS significa:",
+"Infraestructura como servicio",
+[
+"Internet como servicio",
+"Información como servicio",
+"Integración como servicio"
+],
+"Cloud computing",
+"IaaS ofrece servidores, almacenamiento y redes virtuales como servicio."
+],
+[
+21,
+"Un gusano informático se caracteriza por:",
+"Propagarse por sí mismo a otros equipos a través de la red",
+[
+"Cifrar los archivos del usuario y pedir un rescate económico para liberarlos",
+"Mostrar publicidad no deseada en el navegador",
+"Registrar las teclas que pulsa el usuario"
+],
+"Seguridad",
+"El gusano se replica solo; el ransomware cifra, el adware muestra anuncios y el keylogger registra pulsaciones."
+],
+[
+21,
+"Una copia de seguridad diferencial guarda:",
+"Los archivos modificados desde la última copia completa",
+[
+"Los archivos modificados desde la última copia de cualquier tipo",
+"Todos los archivos del equipo cada vez",
+"Solo los archivos creados ese mismo día"
+],
+"Copias de seguridad",
+"La diferencial toma como referencia la última copia completa; la incremental, la última copia de cualquier tipo."
+],
+[
+21,
+"La verificación en dos pasos consiste en:",
+"Pedir, además de la contraseña, un segundo factor, como un código en el móvil",
+[
+"Usar dos contraseñas distintas, una para el usuario y otra para el equipo, en cada acceso",
+"Cambiar la contraseña cada dos meses",
+"Iniciar sesión a la vez desde dos dispositivos"
+],
+"Seguridad",
+"Combina algo que sabes (contraseña) con algo que tienes (móvil, llave) o que eres (huella)."
+],
+[
+21,
+"Una red que abarca una zona geográfica amplia, como un país, se denomina:",
+"WAN",
+[
+"LAN",
+"PAN",
+"WLAN"
+],
+"Redes",
+"WAN es red de área amplia; LAN, local; PAN, personal; WLAN, local inalámbrica."
 ]
 ]
