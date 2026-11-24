@@ -1445,6 +1445,7 @@ document.addEventListener("keydown",e=>{
 // ===== ENLACE A LA NORMA (BOE) =====
 // Cada referencia ("Art. 16.4 Ley 39/2015") enlaza al texto consolidado. Si añades una norma nueva, añádela aquí.
 const BOE_ELI="https://www.boe.es/eli/es/";
+const SEDE_MAD="https://sede.madrid.es/eli/es-md-01860896/"; // normas municipales de Madrid (Cibelex), sin anclas por artículo
 const NORMAS=[
   [/\bLey 39\/2015\b/,BOE_ELI+"l/2015/10/01/39/con"],[/\bLey 40\/2015\b/,BOE_ELI+"l/2015/10/01/40/con"],
   [/\bCE\b/,BOE_ELI+"c/1978/12/27/(1)/con"],[/\bTREBEP\b/,BOE_ELI+"rdlg/2015/10/30/5/con"],
@@ -1474,7 +1475,7 @@ const NORMAS=[
   [/\bLey 3\/2016 CM\b/,"https://www.boe.es/eli/es-md/l/2016/07/22/3/con"],
   [/\bLO 2\/2024\b/,BOE_ELI+"lo/2024/08/01/2/con"],[/\bLO 10\/2022\b/,BOE_ELI+"lo/2022/09/06/10/con"],
   // Ayuntamiento de Madrid (aux-ayto-mad)
-  [/\bLey 22\/2006\b/,BOE_ELI+"l/2006/07/04/22/con"],[/\bTRLRHL\b/,BOE_ELI+"rdlg/2004/03/05/2/con"],
+  [/\bLey 22\/2006\b/,BOE_ELI+"l/2006/07/04/22/con"],[/\bROGA\b/,SEDE_MAD+"reg/2004/06/23/(1)/con"],[/\bRO 6\/2021\b/,SEDE_MAD+"reg/2021/06/16/6/con"],[/\bOACAE\b/,SEDE_MAD+"odnz/2019/03/11/(1)/con"],[/\bTRLRHL\b/,BOE_ELI+"rdlg/2004/03/05/2/con"],
   [/\bLey 31\/1995\b/,BOE_ELI+"l/1995/11/08/31/con"]
 ];
 function fuente(ref){
@@ -1482,6 +1483,7 @@ function fuente(ref){
   if(/\bTUE\b/.test(ref))return{url:"https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:12016M/TXT",txt:"Ver el Tratado de la Unión Europea"};
   if(/\bTFUE\b/.test(ref))return{url:"https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:12016E/TXT",txt:"Ver el Tratado de Funcionamiento de la UE"};
   for(const [re,url] of NORMAS)if(re.test(ref)){
+    if(url.startsWith(SEDE_MAD))return{url,txt:"Ver la norma en la sede del Ayuntamiento"};
     const m=ref.match(/^Arts?\.\s*(\d+)(\s*bis)?/);
     return{url:url+(m?"#a"+m[1]+(m[2]?"bis":""):""),txt:m?"Ver el artículo en el BOE":"Ver la norma en el BOE"};
   }
