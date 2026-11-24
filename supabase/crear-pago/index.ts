@@ -60,8 +60,11 @@ Deno.serve(async (req) => {
 
   const clave = Deno.env.get("STRIPE_SECRET_KEY");
   if (!clave) return json({ error: "Los pagos todavía no están configurados." }, 503, h);
-  const stripe = new Stripe(clave, { httpClient: Stripe.createFetchHttpClient() });
-  const sesion = await stripe.checkout.sessions.create({
+  // Managed Payments exige la versión 2025-03-31.basil o posterior de la API de Stripe
+  const stripe = new Stripe(clave, { apiVersion: "2025-03-31.basil" as any, httpClient: Stripe.createFetchHttpClient() });
+  let sesion;
+  try {
+  sesion = await stripe.checkout.sessions.create({
     mode: "payment",
     locale: "es",
     customer_email: user.email,
@@ -71,9 +74,14 @@ Deno.serve(async (req) => {
       price_data: {
         currency: "eur",
         unit_amount: precio.importe_cent,
+        // Los precios de la tabla llevan el IVA incluido (si no, Stripe lo suma encima)
+        tax_behavior: "inclusive",
         product_data: {
           name: `OpoNota · ${OPO_NOMBRE[oposicion] ?? oposicion} · ${PLAN_NOMBRE_OPO[oposicion]?.[plan] ?? PLAN_NOMBRE[plan] ?? plan}`,
           description: `Acceso hasta el ${new Date(precio.hasta).toLocaleDateString("es-ES", { timeZone: "Europe/Madrid" })}. Pago único, sin suscripción.`,
+          // Código fiscal obligatorio con Managed Payments (Stripe hace de vendedor y gestiona el IVA):
+          // formación de autoestudio por internet, sin profesor.
+          tax_code: "txcd_20060058",
         },
       },
     }],
@@ -83,5 +91,10 @@ Deno.serve(async (req) => {
     success_url: `${origen}/?pago=ok#/o/${oposicion}`,
     cancel_url: `${origen}/?pago=cancelado#/o/${oposicion}`,
   });
+  } catch (e) {
+    // Sin esto la respuesta salía sin cabeceras CORS y la web solo veía «Failed to fetch»
+    console.error(e);
+    return json({ error: "No se ha podido abrir la página de pago. Inténtalo de nuevo en unos minutos." }, 502, h);
+  }
   return json({ url: sesion.url }, 200, h);
 });
