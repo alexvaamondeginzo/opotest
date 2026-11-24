@@ -2110,8 +2110,14 @@ if(AUTH_ON){
     try{await loadSupabase();
       const {data,error}=await sb.auth.signUp({email:em,password:pw,options:{emailRedirectTo:location.origin+location.pathname,data:{acepta_privacidad:new Date().toISOString(),mayor_14:true}}});
       if(error)throw error;
+      // Si el email ya tiene cuenta, Supabase responde como si todo fuera bien pero sin identidades y no envía nada
+      if(data.user&&Array.isArray(data.user.identities)&&data.user.identities.length===0){
+        setTab("login");$("li-email").value=em;$("li-pass").value="";
+        showMsg("auth-msg","Ya existe una cuenta con este email. Entra con tu contraseña o, si no la recuerdas, pulsa «He olvidado la contraseña».","err");
+        return;
+      }
       if(data.session){$("dlg-auth").close()}
-      else showMsg("auth-msg","Cuenta creada. Te hemos enviado un email para confirmarla: abre el enlace y ya podrás entrar. Tus 2 días de prueba gratis cuentan desde que creas la cuenta.","ok");
+      else showMsg("auth-msg",`Cuenta creada. Te hemos enviado un email a ${em} para confirmarla: abre el enlace y ya podrás entrar. Si no lo ves en unos minutos, mira en spam o promociones.${BETA?"":" Tus 2 días de prueba gratis cuentan desde que creas la cuenta."}`,"ok");
     }catch(err){showMsg("auth-msg",errText(err))}finally{$("su-btn").disabled=false}
   });
   $("f-login").addEventListener("submit",async e=>{
