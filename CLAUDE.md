@@ -91,7 +91,11 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [x] Temas más cortos del Estado ampliados (24-25/11/2026): 17 (30), 18 (35), 21 (39), 22 (34) y 28 (36).
 - [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
 - [x] Enlaces a las normas de Madrid publicadas en el BOE en `NORMAS` (falta el Decreto 21/2002, que no está en el BOE).
-- [ ] Vigencia, por revisar artículo a artículo: la LCSP (cambios del 23/01/2025, 02/04/2025, 04/12/2025, 26/12/2025, 21/03/2026 y 09/04/2026), la LBRL (03/01/2025, 03/12/2025, 21/03/2026, 03/06/2026 y 03/10/2026) y la Ley 1/1983 CM (11/04/2025) frente a las preguntas del banco. La Ley 47/2003 no ha cambiado desde 2022.
+- [x] Vigencia revisada (24/11/2026) en el BOE (pestaña «Análisis» de cada texto consolidado) frente a las preguntas del banco, sin cambios necesarios:
+  - LCSP: umbrales de regulación armonizada de 2026 (Orden HAC/1517/2025) ya puestos (5.404.000, 216.000 y 140.000 €); Ley 1/2025 (art. 202), RDL 7/2026 y Ley 9/2025 (DA 57), Ley 1/2026 (DA 4) y RDL 40/2026 (DA 59 y 60) no tocan artículos preguntados; el RDL 39/2026, de 17/11/2026, añade la letra j) al art. 211.1 (igualdad retributiva) y un párrafo a los arts. 201 y 212.1, sin cambiar la letra d) que preguntamos. El anteproyecto de Ley Orgánica de Integridad Pública cambiaría los arts. 63.4 y 120.1 a): revisar si se aprueba.
+  - LBRL: cambian el art. 25.2 (RDL 7/2026), el 73.3 y la DA 2.ª.7 (LO 1/2025); no hay preguntas de ellos.
+  - Ley 1/1983 CM: la Ley 8/2024 añade el capítulo VIII del título IV (arts. 87 a 89, recurridos ante el TC); no hay preguntas de ellos.
+  - Ley 29/1998: nota de los Tribunales de Instancia (LO 1/2025) añadida en las preguntas sobre Juzgados.
 - [ ] Siguientes oposiciones: Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid (ya en la portada como «Próximamente»), y las de la lista de espera según demanda.
 - [x] Páginas legales (`legal_build.py`) rellenadas: titular OPONOTA, email oponota.contacto@gmail.com, fecha 18/10/2026, web https://oponota.netlify.app/, Supabase en Irlanda (eu-west-1), Netlify como alojamiento y lista de espera y avisos de error en la privacidad. Las condiciones de compra no dan precios (cada oposición tendrá el suyo y se mostrará en la web antes de pagar).
 - [ ] **ANTES DEL LANZAMIENTO PÚBLICO (recordárselo al socio cuando diga que se lanza la web):**
@@ -115,6 +119,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Vigencia de la LCSP, la LBRL y la Ley 1/1983 CM revisada en el BOE: ninguna pregunta afectada (detalle en «Estado y pendientes»).
 - 24/11/2026 · Edu · Páginas para Google por oposición (`seo_build.py`), `sitemap.xml`, `robots.txt` y enlaces en el pie.
 - 24/11/2026 · Edu · Pruebas automáticas de la web en `pruebas/probar_web.py` (Supabase simulado, escritorio y móvil, práctica, simulacros, progreso, funciones de administrador), añadidas a la skill `publicar-web`.
 - 24/11/2026 · Edu · Corregido: al responder no se marcaba en verde la correcta ni en rojo la elegida (el código contaba también las opciones de la pregunta de muestra de la portada). Funciones en pruebas solo para administradores (repaso 1/3/7, nota estimada, comparativa, plan de hoy, práctica por ley y buscador, modo oscuro, instalable). Nueva función `percentil_aciertos` en Supabase.
