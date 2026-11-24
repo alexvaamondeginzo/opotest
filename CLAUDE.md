@@ -120,7 +120,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (sobre todo si toca `template.html` o la base de datos) y bórrate al terminar.
 
-(nadie)
+- 24/11/2026 · Alex · Nueva oposición **Auxiliar Administrativo del Ayuntamiento de Madrid** (`aux-ayto-mad`): banco, `oposiciones.json`, `template.html` (NORMAS y respuestas de 3 opciones), `seo_build.py`, `supabase/8-oposiciones.sql` y `precios`. No toquéis esos archivos hasta que lo suba.
 
 ## Registro de cambios
 
