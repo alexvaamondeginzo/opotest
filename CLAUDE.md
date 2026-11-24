@@ -99,7 +99,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [x] Proyecto de Netlify renombrado a `oponota`: la web está en https://oponota.netlify.app/ (en la cuenta de Netlify del otro socio). La antigua `opomadridprueba.netlify.app` es una versión vieja: no usarla.
 - [x] Emails de cuentas (24/11/2026): SMTP de Brevo en Supabase (smtp-relay.brevo.com:587, usuario c4d639001@smtp-brevo.com, remitente oponota.contacto@gmail.com), plantillas en español puestas (las de `supabase/plantillas-email/`), «Confirm email» activado y límite de 100 emails por hora. Más adelante: verificar el dominio propio en Brevo (o pasar a Gmail).
 - [x] Nombre de la marca: OpoNota. Rediseño de la web con sus colores, portada con varias secciones y panel por oposición.
-- [ ] Pasar la web a Cloudflare Pages (paso 4b de `INSTRUCCIONES.txt`) y comprar el dominio (idea: oponota.com).
+- [ ] Pasar la web a Cloudflare Pages (paso 4b de `INSTRUCCIONES.txt`) y comprar el dominio (idea: oponota.com). **24/11/2026: la cuenta de Cloudflare ya está creada, pero no se puede conectar el repositorio sin el dueño.** Opción recomendada para Alex: crear la organización de GitHub «oponota», invitar al otro socio como Owner y transferir el repositorio allí. Alternativa: instalar la aplicación de Cloudflare en su cuenta (github.com/apps/cloudflare-workers-and-pages > Only select repositories > opotest). No crear el proyecto de Pages subiendo la carpeta a mano, porque después no se puede conectar a GitHub.
 - [ ] Pasar Supabase a Pro (25 $/mes) cuando se empiece a cobrar: copias de seguridad diarias y sin pausa por inactividad.
 
 ## Forma de trabajar
