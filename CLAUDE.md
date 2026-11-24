@@ -115,7 +115,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (sobre todo si toca `template.html` o la base de datos) y bórrate al terminar.
 
-- Claude (Edu): trabajo nocturno por bloques (seguridad, enlaces Madrid, temas cortos del Estado, vigencia, Madrid, funciones web solo admins) · 24-25/11/2026
+(nadie)
 
 ## Registro de cambios
 
