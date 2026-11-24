@@ -1,0 +1,23 @@
+[
+  {"id": "pd-01-ce-sancion",
+   "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
+   "examen": "oct. 2026",
+   "pregunta": "¿En qué plazo sanciona el Rey las leyes aprobadas por las Cortes Generales?",
+   "opciones": ["Diez días", "Un mes", "Quince días", "Veinte días"], "correcta": 2,
+   "fuente": "Art. 91 de la Constitución · comprobado en el BOE",
+   "explicacion": "El Rey sanciona las leyes aprobadas por las Cortes Generales en el plazo de quince días, y las promulga y ordena su inmediata publicación."},
+  {"id": "pd-02-lcsp-menores",
+   "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
+   "examen": "oct. 2026",
+   "pregunta": "Son contratos menores de obras los de valor estimado inferior a:",
+   "opciones": ["40.000 euros", "15.000 euros", "50.000 euros", "100.000 euros"], "correcta": 0,
+   "fuente": "Art. 118.1 de la Ley 9/2017 (LCSP) · comprobado en el BOE",
+   "explicacion": "Obras: valor estimado inferior a 40.000 €. Suministros o servicios: inferior a 15.000 €."},
+  {"id": "pd-03-win-explorador",
+   "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
+   "examen": "abr. 2026",
+   "pregunta": "En Windows 11, ¿qué combinación de teclas abre el Explorador de archivos?",
+   "opciones": ["Tecla Windows + E", "Tecla Windows + I", "Tecla Windows + L", "Tecla Windows + D"], "correcta": 0,
+   "fuente": "Windows 11 · atajos de teclado oficiales de Microsoft",
+   "explicacion": "Win + D muestra el escritorio, Win + L bloquea el equipo y Win + I abre Configuración."}
+]

@@ -41,6 +41,10 @@ import shutil
 FUENTES=['Barlow-Regular','Barlow-Medium','Barlow-SemiBold','BarlowCondensed-SemiBold','BarlowCondensed-Bold','BarlowCondensed-ExtraBold']
 for src,dst in [('assets/marca/oponota.png','web/oponota.png'),('assets/_headers','web/_headers'),('assets/manifest.webmanifest','web/manifest.webmanifest'),('assets/sw.js','web/sw.js')]+[(f'assets/fuentes/{f}.woff',f'web/{f}.woff') for f in FUENTES]:
     shutil.copyfile(src,dst)
+# vídeos para redes sociales (Metricool los descarga desde la web)
+os.makedirs('web/redes',exist_ok=True)
+for f in os.listdir('assets/redes'):
+    if f.endswith('.mp4'): shutil.copyfile(f'assets/redes/{f}',f'web/redes/{f}')
 print(len(Q),'pendientes:',set(re.findall(r'__[A-Z_]+__',out)))
 # Comprobación: ninguna pregunta dentro de la web pública
 muestra=[q[1] for B in BANCOS.values() for q in B[::97]]
