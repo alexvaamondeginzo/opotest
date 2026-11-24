@@ -97,6 +97,8 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
   - Ley 1/1983 CM: la Ley 8/2024 añade el capítulo VIII del título IV (arts. 87 a 89, recurridos ante el TC); no hay preguntas de ellos.
   - Ley 29/1998: nota de los Tribunales de Instancia (LO 1/2025) añadida en las preguntas sobre Juzgados.
 - [ ] Siguientes oposiciones: Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid (ya en la portada como «Próximamente»), y las de la lista de espera según demanda.
+  - **Administrativo C1 de Madrid (`adm-cm`), primer banco en borrador (24/11/2026, sin publicar)**: `borradores/adm-cm.json` (1.654 preguntas ya comprobadas, reutilizadas de los bancos de Madrid y del Estado y asignadas a los 47 temas de la Orden 1634/2026, BOCM de 14/07/2026) con `borradores/montar_adm_cm.py`, y la configuración propuesta en `borradores/adm-cm-config.json`. Está en `borradores/` y no en `bancos/` porque `build.py` publica cualquier oposición con banco en `bancos/`.
+  - Falta antes de publicarla: temas sin preguntas (10 órganos y competencia, 16 potestad sancionadora, 17 expropiación, 19 subvenciones, 29 personal laboral y convenio, 30 contrato de trabajo, 33 sistema tributario, 35 a 37 Ley de Hacienda de Madrid y 39 Plan General de Contabilidad Pública) y flojos (15, 26, 27, 31 y 38); repartir las 51 de la Ley 5/2025 CM entre los temas 34 a 37 según el artículo; preguntas de supuesto práctico para el 2.º ejercicio; y que la web admita simulacros puntuados sobre 30 (ahora todos son sobre 50).
 - [x] Páginas legales (`legal_build.py`) rellenadas: titular OPONOTA, email oponota.contacto@gmail.com, fecha 18/10/2026, web https://oponota.netlify.app/, Supabase en Irlanda (eu-west-1), Netlify como alojamiento y lista de espera y avisos de error en la privacidad. Las condiciones de compra no dan precios (cada oposición tendrá el suyo y se mostrará en la web antes de pagar).
 - [ ] **ANTES DEL LANZAMIENTO PÚBLICO (recordárselo al socio cuando diga que se lanza la web):**
   - poner NIF y domicilio en `NIF` y `DOMICILIO` de `legal_build.py` (ahora están vacíos y no se muestran);
@@ -119,6 +121,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Primer banco en borrador del Administrativo C1 de Madrid (`borradores/`, sin publicar). Propuesta de textos de portada y email de bienvenida en un documento para revisar.
 - 24/11/2026 · Edu · Vigencia de la LCSP, la LBRL y la Ley 1/1983 CM revisada en el BOE: ninguna pregunta afectada (detalle en «Estado y pendientes»).
 - 24/11/2026 · Edu · Páginas para Google por oposición (`seo_build.py`), `sitemap.xml`, `robots.txt` y enlaces en el pie.
 - 24/11/2026 · Edu · Pruebas automáticas de la web en `pruebas/probar_web.py` (Supabase simulado, escritorio y móvil, práctica, simulacros, progreso, funciones de administrador), añadidas a la skill `publicar-web`.

@@ -1,0 +1,12 @@
+{
+  "_nota": "Configuración propuesta para Administrativo C1 de la Comunidad de Madrid (Orden 1634/2026, BOCM de 14/07/2026). Cuando el banco esté completo, copiar estos campos a la entrada «adm-cm» de oposiciones.json. Plazas, ejercicios y tiempos comprobados en el BOCM el 24/11/2026.",
+  "programa": "Orden 1634/2026, de 30 de junio (BOCM de 14 de julio de 2026), anexo III",
+  "plazas": 107,
+  "examenLbl": "Primer ejercicio",
+  "faqExamen": "Tres ejercicios eliminatorios. El primero, un test de 40 preguntas en 45 minutos sobre los temas 1 a 39 (de 0 a 30 puntos, se aprueba con 15). El segundo, dos supuestos prácticos de 15 preguntas cada uno en 45 minutos (de 0 a 40 puntos; al menos 10 en cada supuesto y 20 en total). El tercero, un test de 40 preguntas en 45 minutos de informática y ofimática (temas 40 a 47; de 0 a 30, se aprueba con 15). En los tres, cada fallo resta un tercio.",
+  "sims": [
+    {"id": "adm-ej1", "nombre": "Simulacro 1.er ejercicio", "desc": "Temas 1 a 39: 40 preguntas en 45 minutos. Cada fallo resta un tercio.", "n": 40, "min": 45, "ex": 1, "desde": 1, "hasta": 39, "elegirTemas": true, "equilibrar": true},
+    {"id": "adm-ej3", "nombre": "Simulacro 3.er ejercicio", "desc": "Informática y ofimática (temas 40 a 47): 40 preguntas en 45 minutos. Cada fallo resta un tercio.", "n": 40, "min": 45, "ex": 3, "desde": 40, "hasta": 47, "elegirTemas": false, "equilibrar": true}
+  ],
+  "_pendiente": "Ojo: la web calcula la nota de los simulacros sobre 50 y estos ejercicios valen 30. Hay que permitir una escala por simulacro antes de publicarla. El segundo ejercicio (supuestos prácticos) necesita preguntas de caso práctico propias."
+}
