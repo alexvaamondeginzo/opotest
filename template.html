@@ -404,6 +404,7 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
 .plegable-admin[open] summary::after{transform:translateY(-25%) rotate(-135deg)}
 .plegable-admin[open]{padding-bottom:16px}
 .plegable-admin > :not(summary){margin-top:10px}
+.tabla tr.resuelto td{opacity:.5}
 .periodos{display:flex;gap:6px;flex-wrap:wrap}
 .periodos button{font:600 14px/1 var(--body);text-transform:none;padding:8px 12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px}
 .periodos button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff}
@@ -758,6 +759,16 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
           <h3>Modo pruebas</h3>
           <p class="meta" id="admin-beta-txt"></p>
           <div><button class="ghost small" id="admin-beta-btn"></button></div>
+          <details class="plegable-admin" id="reportes-w">
+            <summary><span>Errores reportados en preguntas</span><span class="meta" id="reportes-resumen"></span></summary>
+            <p class="meta">Lo que mandan los usuarios con «Reportar error». Revísalo contra el BOE y márcalo como resuelto.</p>
+            <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Fecha</th><th>Oposición</th><th>Pregunta</th><th>Mensaje</th><th>Email</th><th></th></tr></thead><tbody id="admin-reportes"></tbody></table></div>
+          </details>
+          <details class="plegable-admin" id="espera-w">
+            <summary><span>Lista de espera</span><span class="meta" id="espera-resumen"></span></summary>
+            <p class="meta">Quién quiere que avisemos cuando salga cada oposición «Próximamente».</p>
+            <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Oposición</th><th>Apuntados</th><th>Emails</th></tr></thead><tbody id="admin-espera"></tbody></table></div>
+          </details>
           <h3>Precios</h3>
           <p class="meta">El precio de cada oposición y plan, con IVA incluido, y hasta cuándo dura el acceso. Solo se puede comprar lo que esté «A la venta», y solo con el modo pruebas desactivado. Stripe cobra lo que pongas aquí.</p>
           <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Oposición</th><th>Plan</th><th>Precio (€)</th><th>Acceso hasta</th><th>A la venta</th><th></th></tr></thead><tbody id="admin-precios"></tbody></table></div>
@@ -1382,7 +1393,19 @@ $("mark").addEventListener("click",()=>{
 });
 
 // ===== FORMULARIOS (Netlify Forms) =====
+// Los formularios se guardan en Supabase (tablas reportes y lista_espera). Si falla, se intenta Netlify Forms.
 async function enviarForm(nombre,campos){
+  try{
+    await loadSupabase();
+    const r=nombre==="reporte"
+      ?await sb.rpc("enviar_reporte",{o:campos.oposicion,pid:campos.id,p:campos.pregunta,ref:campos.referencia,m:campos.mensaje,e:campos.email})
+      :await sb.rpc("apuntar_lista_espera",{e:campos.email,o:campos.oposicion});
+    if(!r.error)return true;
+    registrarError("formulario "+nombre,r.error);
+  }catch(e){registrarError("formulario "+nombre,e)}
+  return enviarFormNetlify(nombre,campos);
+}
+async function enviarFormNetlify(nombre,campos){
   try{
     const r=await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({"form-name":nombre,...campos}).toString()});
     return r.ok;
@@ -1851,21 +1874,30 @@ async function descargarPreguntas(){
   }
   return rows;
 }
+// Las preguntas se guardan en el navegador y solo se vuelven a descargar si han cambiado
+// (lo dice la huella version_preguntas, que ocupa unos bytes). Así se gasta muy poca transferencia de Supabase.
+async function versionPreguntas(){
+  try{const r=await sb.rpc("version_preguntas",{op:OP});if(r.error)throw r.error;return r.data}
+  catch(e){return null}
+}
 async function loadQuestions(){
   if(Q.length)return;
   const kq="auxcm-q-"+user.id+"-"+OP,max=maxTema(),c=leerLS(kq),opPedida=OP;
-  const copiaValida=c&&c.max===max&&Array.isArray(c.rows)&&c.rows.length;
-  if(copiaValida&&Date.now()-c.t<24*36e5){
-    // Arranca al instante con la copia guardada y la actualiza por detrás.
-    setQuestions(c.rows);refreshSetup();
-    descargarPreguntas().then(rows=>{if(rows.length&&opPedida===OP){guardarLS(kq,{t:Date.now(),max,rows});setQuestions(rows)}}).catch(e=>registrarError("actualizar preguntas",e));
+  const copia=c&&c.max===max&&Array.isArray(c.rows)&&c.rows.length?c:null;
+  if(copia){
+    // Arranca al instante con la copia y comprueba por detrás si hay cambios
+    setQuestions(copia.rows);refreshSetup();
+    versionPreguntas().then(v=>{
+      if(!v||v===copia.v||opPedida!==OP)return;
+      descargarPreguntas().then(rows=>{if(rows.length&&opPedida===OP){guardarLS(kq,{t:Date.now(),max,v,rows});setQuestions(rows);refreshSetup()}}).catch(e=>registrarError("actualizar preguntas",e));
+    });
     return;
   }
   setSync("Cargando preguntas…");
   try{
-    const rows=await descargarPreguntas();
+    const [rows,v]=await Promise.all([descargarPreguntas(),versionPreguntas()]);
     if(opPedida!==OP)return;
-    setQuestions(rows);if(rows.length)guardarLS(kq,{t:Date.now(),max,rows});
+    setQuestions(rows);if(rows.length)guardarLS(kq,{t:Date.now(),max,v,rows});
   }catch(e){
     registrarError("cargar preguntas",e);
     if(c&&Array.isArray(c.rows)&&c.rows.length)setQuestions(c.rows.filter(r=>r.tema<=max));
@@ -1915,7 +1947,7 @@ async function loadAdmin(){
   $("admin-beta-btn").textContent=BETA?"Desactivar modo pruebas y abrir los pagos":"Activar modo pruebas";
   ADMIN_USERS=u.data||[];renderAdminUsers();
   await cargarVisitas();
-  renderAdminPrecios();
+  renderAdminPrecios();cargarFormularios();
   const er=await sb.rpc("admin_errores");
   $("admin-errores").innerHTML=er.error?'<tr><td colspan="5" class="meta">Falta ejecutar el archivo 6-errores.sql en Supabase.</td></tr>':
     ((er.data||[]).map(x=>`<tr><td>${fmtFH(x.creado)}</td><td>${esc(x.email||"sin sesión")}</td><td>${esc(x.contexto)}</td><td style="white-space:normal;min-width:240px">${esc(x.mensaje)}</td><td style="white-space:normal;max-width:220px" class="meta">${esc((x.agente||"").slice(0,80))}</td></tr>`).join("")||'<tr><td colspan="5" class="meta">Ningún error registrado. 👍</td></tr>');
@@ -1958,6 +1990,28 @@ async function cargarVisitas(){
 document.querySelectorAll(".periodos button").forEach(b=>b.addEventListener("click",()=>{
   VISITAS_DIAS=+b.dataset.dias;document.querySelectorAll(".periodos button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));cargarVisitas();
 }));
+// Errores reportados y lista de espera (tablas de 10-formularios.sql)
+let ADMIN_REPORTES=[];
+async function cargarFormularios(){
+  const [r,l]=await Promise.all([sb.rpc("admin_reportes"),sb.rpc("admin_lista_espera")]);
+  if(r.error){$("admin-reportes").innerHTML='<tr><td colspan="6" class="meta">Falta ejecutar el archivo 10-formularios.sql en Supabase.</td></tr>'}
+  else{
+    ADMIN_REPORTES=r.data||[];const pend=ADMIN_REPORTES.filter(x=>!x.resuelto).length;
+    $("reportes-resumen").textContent=pend?`${plural(pend,"pendiente","pendientes")} de revisar`:"Nada pendiente";
+    $("admin-reportes").innerHTML=ADMIN_REPORTES.map(x=>`<tr${x.resuelto?' class="resuelto"':""}><td>${fmtFH(x.creado)}</td><td>${esc((OPOS[x.oposicion]||{}).corto||x.oposicion||"")}</td><td style="white-space:normal;min-width:220px">${esc(x.pregunta||"")}<br><span class="meta">${esc(x.referencia||"")}</span></td><td style="white-space:normal;min-width:220px">${esc(x.mensaje)}</td><td>${x.email?`<a href="mailto:${esc(x.email)}">${esc(x.email)}</a>`:'<span class="meta">—</span>'}</td><td><button class="ghost small" type="button" data-resolver="${x.id}" data-res="${x.resuelto?0:1}">${x.resuelto?"Reabrir":"Resuelto"}</button></td></tr>`).join("")||'<tr><td colspan="6" class="meta">Nadie ha reportado errores todavía.</td></tr>';
+  }
+  if(l.error){$("admin-espera").innerHTML='<tr><td colspan="3" class="meta">Falta ejecutar el archivo 10-formularios.sql en Supabase.</td></tr>';return}
+  const por={};(l.data||[]).forEach(x=>(por[x.oposicion]=por[x.oposicion]||[]).push(x.email));
+  const total=(l.data||[]).length;$("espera-resumen").textContent=plural(total,"persona apuntada","personas apuntadas");
+  $("admin-espera").innerHTML=Object.entries(por).sort((a,b)=>b[1].length-a[1].length).map(([op,ems])=>`<tr><td>${esc((OPOS[op]||{}).nombre||op)}</td><td>${ems.length}</td><td style="white-space:normal;min-width:260px">${ems.map(esc).join(", ")}</td></tr>`).join("")||'<tr><td colspan="3" class="meta">Nadie se ha apuntado todavía.</td></tr>';
+}
+document.addEventListener("click",async e=>{
+  const b=e.target.closest("[data-resolver]");if(!b)return;
+  b.disabled=true;
+  const {error}=await sb.rpc("admin_resolver_reporte",{rid:+b.dataset.resolver,res:b.dataset.res==="1"});
+  if(error){b.disabled=false;showMsg("admin-msg","No se ha podido actualizar el aviso.");return}
+  cargarFormularios();
+});
 async function renderAdminPrecios(){
   const r=await sb.rpc("admin_precios");
   if(r.error){$("admin-precios").innerHTML='<tr><td colspan="6" class="meta">Falta ejecutar el archivo 9-pagos.sql en Supabase.</td></tr>';return}

@@ -8,7 +8,7 @@ import Stripe from "npm:stripe@17";
 import { createClient } from "npm:@supabase/supabase-js@2";
 
 // Webs desde las que se puede pagar (a ellas vuelve Stripe al terminar)
-const ORIGENES = [/^https:\/\/opotest-app\.netlify\.app$/, /^https:\/\/oponota\.netlify\.app$/, /^https:\/\/([\w-]+\.)?oponota\.(es|com)$/, /^http:\/\/localhost(:\d+)?$/];
+const ORIGENES = [/^https:\/\/opotest-app\.netlify\.app$/, /^https:\/\/oponota\.netlify\.app$/, /^https:\/\/([\w-]+\.)?oponota\.pages\.dev$/, /^https:\/\/([\w-]+\.)?oponota\.(es|com)$/, /^http:\/\/localhost(:\d+)?$/];
 const OPO_NOMBRE: Record<string, string> = { "aux-cm": "Auxiliar Administrativo de la Comunidad de Madrid", "aux-age": "Auxiliar Administrativo del Estado" };
 const PLAN_NOMBRE: Record<string, string> = { legislacion: "Plan Legislación", completo: "Plan Completo", premium: "Plan Premium" };
 // En el Estado los planes van por niveles: teoría, + ofimática, + psicotécnicos

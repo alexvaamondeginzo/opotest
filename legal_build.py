@@ -8,6 +8,8 @@ FECHA = "18 de octubre de 2026"
 # PENDIENTE ANTES DEL LANZAMIENTO PÚBLICO: rellenar NIF y domicilio (y el nombre real del titular).
 # Mientras estén vacíos, no se muestran en las páginas.
 NIF = ""
+# Dónde está alojada la web. Si os pasáis a Cloudflare Pages, cambiadlo por "Cloudflare, Inc.".
+ALOJAMIENTO = "Netlify, Inc."
 DOMICILIO = ""
 os.makedirs(OUT, exist_ok=True)
 
@@ -155,8 +157,8 @@ page("privacidad.html", "Política de privacidad", f"""
 <h2>5. Quién trata los datos por nuestra cuenta</h2>
 <p>Para prestar el servicio usamos proveedores que actúan como encargados del tratamiento, con contrato que les obliga a proteger los datos:</p>
 <ul>
-<li><strong>Supabase</strong> (autenticación y base de datos de las cuentas). Los datos se alojan en servidores de la Unión Europea, en Irlanda.</li>
-<li><strong>Netlify, Inc.</strong> (alojamiento de la web y recepción de los formularios de lista de espera y de aviso de errores). Puede implicar transferencias a Estados Unidos, amparadas en el Marco de Privacidad de Datos UE-EE. UU. o en cláusulas contractuales tipo de la Comisión Europea.</li>
+<li><strong>Supabase</strong> (autenticación y base de datos de las cuentas). También guarda los formularios de lista de espera y de aviso de errores. Los datos se alojan en servidores de la Unión Europea, en Irlanda.</li>
+<li><strong>{ALOJAMIENTO}</strong> (alojamiento de la web). Puede implicar transferencias a Estados Unidos, amparadas en el Marco de Privacidad de Datos UE-EE. UU. o en cláusulas contractuales tipo de la Comisión Europea.</li>
 <li><strong>Stripe Payments Europe, Ltd.</strong> (procesamiento de los pagos). Stripe trata los datos de pago como responsable independiente según su propia política de privacidad y puede realizar transferencias internacionales amparadas en cláusulas contractuales tipo.</li>
 <li><strong>Google</strong> (formulario de opinión de Google Forms), solo si decides rellenarlo. Se rige también por la política de privacidad de Google.</li>
 <li><strong>jsDelivr</strong> (red de distribución desde la que se descarga el código del sistema de cuentas), al cargar la web. No usa cookies y solo recibe los datos técnicos de la conexión.</li>

@@ -33,7 +33,7 @@ open('web/index.html','w').write(out)
 # recursos de la marca y la fuente
 import shutil
 FUENTES=['Barlow-Regular','Barlow-Medium','Barlow-SemiBold','BarlowCondensed-SemiBold','BarlowCondensed-Bold','BarlowCondensed-ExtraBold']
-for src,dst in [('assets/marca/oponota.png','web/oponota.png')]+[(f'assets/fuentes/{f}.woff',f'web/{f}.woff') for f in FUENTES]:
+for src,dst in [('assets/marca/oponota.png','web/oponota.png'),('assets/_headers','web/_headers')]+[(f'assets/fuentes/{f}.woff',f'web/{f}.woff') for f in FUENTES]:
     shutil.copyfile(src,dst)
 print(len(Q),'pendientes:',set(re.findall(r'__[A-Z_]+__',out)))
 # Comprobación: ninguna pregunta dentro de la web pública

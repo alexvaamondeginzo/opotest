@@ -1,0 +1,9 @@
+# Cabeceras para Netlify y Cloudflare Pages (las dos leen este archivo). Lo copia build.py a web/.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/*.woff
+  Cache-Control: public, max-age=2592000
