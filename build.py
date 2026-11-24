@@ -40,3 +40,9 @@ print(len(Q),'pendientes:',set(re.findall(r'__[A-Z_]+__',out)))
 muestra=[q[1] for B in BANCOS.values() for q in B[::97]]
 fugas=[m for m in muestra if m in out]
 print('preguntas visibles en la web:',len(fugas))
+# Páginas para Google (una por oposición), sitemap.xml y robots.txt
+if SITE:
+    from seo_build import seo
+    paginas=seo(SITE,OPOS,{op:c['counts'] for op,c in OPOS.items()})
+    seo_fugas=[m for m in muestra for f in paginas if m in open('web/'+f.rsplit('/',1)[1]).read()]
+    print('páginas para Google:',len(paginas),'· preguntas visibles en ellas:',len(seo_fugas))

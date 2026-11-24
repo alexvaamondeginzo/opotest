@@ -34,6 +34,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - **Preguntas en el navegador**: se guardan en `localStorage` y solo se vuelven a descargar si cambia la huella `version_preguntas(op)` (respeta la RLS). Así se gasta poca transferencia de Supabase (el plan gratis da 5 GB al mes).
 - Progreso en `localStorage` (`auxcm-v2`) con formato `{ops:{<oposicion>:{t,wrong,sims,marks}}, done, days, goal}` y copia en Supabase.
 - **Funciones en pruebas (solo administradores)**: bloque «En pruebas» en el inicio de cada oposición (`#lab` y funciones `lab*` al final de `template.html`): repaso espaciado de fallos a 1, 3 y 7 días (se guarda aparte, en `oponota-repaso`, solo en el navegador), nota estimada sobre 50 con −1/3, comparativa anónima (función `percentil_aciertos`, `supabase/11-comparativa.sql`), plan de hoy, práctica por ley y buscador, modo oscuro (`oponota-tema`) y aplicación instalable y sin conexión (`assets/manifest.webmanifest` y `assets/sw.js`; el service worker solo se registra para administradores). Para abrirlas a todos basta con quitar la condición `ACC.admin` de `labRender`, `labRecord` y `beforeinstallprompt`.
+- **Páginas para Google**: `seo_build.py` (lo llama `build.py`) genera `web/test-<oposición>.html` con temario, examen, plazas y planes de cada oposición disponible (sin preguntas), más `sitemap.xml` y `robots.txt`. Para una oposición nueva, añade su nombre de página en `SLUGS` y el enlace en el pie de `template.html`. Cuando haya dominio propio, dad de alta el `sitemap.xml` en Google Search Console.
 - Las preguntas **nunca** van dentro de la web: `build.py` comprueba que no se filtre ninguna.
 
 ## Formato de las preguntas
@@ -114,6 +115,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Páginas para Google por oposición (`seo_build.py`), `sitemap.xml`, `robots.txt` y enlaces en el pie.
 - 24/11/2026 · Edu · Pruebas automáticas de la web en `pruebas/probar_web.py` (Supabase simulado, escritorio y móvil, práctica, simulacros, progreso, funciones de administrador), añadidas a la skill `publicar-web`.
 - 24/11/2026 · Edu · Corregido: al responder no se marcaba en verde la correcta ni en rojo la elegida (el código contaba también las opciones de la pregunta de muestra de la portada). Funciones en pruebas solo para administradores (repaso 1/3/7, nota estimada, comparativa, plan de hoy, práctica por ley y buscador, modo oscuro, instalable). Nueva función `percentil_aciertos` en Supabase.
 - 24/11/2026 · Edu · Temas flojos de Madrid ampliados (+41, comprobadas en el BOE): tema 4 (50, Código Civil arts. 1-7), 13 (47, Ley 15/2022), 14 (41, Leyes 39 y 40/2015 de administración electrónica) y 15 (42, registro y documentos de la Ley 39/2015). Nuevo `madrid/anadir.py`.
