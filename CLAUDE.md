@@ -114,6 +114,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Pruebas automáticas de la web en `pruebas/probar_web.py` (Supabase simulado, escritorio y móvil, práctica, simulacros, progreso, funciones de administrador), añadidas a la skill `publicar-web`.
 - 24/11/2026 · Edu · Corregido: al responder no se marcaba en verde la correcta ni en rojo la elegida (el código contaba también las opciones de la pregunta de muestra de la portada). Funciones en pruebas solo para administradores (repaso 1/3/7, nota estimada, comparativa, plan de hoy, práctica por ley y buscador, modo oscuro, instalable). Nueva función `percentil_aciertos` en Supabase.
 - 24/11/2026 · Edu · Temas flojos de Madrid ampliados (+41, comprobadas en el BOE): tema 4 (50, Código Civil arts. 1-7), 13 (47, Ley 15/2022), 14 (41, Leyes 39 y 40/2015 de administración electrónica) y 15 (42, registro y documentos de la Ley 39/2015). Nuevo `madrid/anadir.py`.
 - 24/11/2026 · Edu · Vigencia: nota de la LO 1/2025 (Juzgados → Secciones de los Tribunales de Instancia desde el 31/12/2025) en las 7 preguntas de la Ley 29/1998 que hablan de Juzgados, en los dos bancos y en Supabase.
@@ -138,6 +139,6 @@ Los dos socios tienen acceso a Supabase, Stripe, Netlify y Cloudflare. Brevo (pl
 - Para las tareas que se repiten hay instrucciones compartidas en `.claude/skills/`: `anadir-preguntas`, `publicar-web` y `cambios-supabase`. Síguelas.
 
 - Se trabaja directamente sobre `main`, sin ramas. **Antes de empezar, haz `git pull`** para traer lo que haya subido el otro socio, y súbelo en cuanto termines cada cambio, para no pisaros. Si `git push` falla porque el otro ha subido algo, haz `git pull`, resuelve los conflictos y vuelve a subir: nunca `git push --force`.
-- Antes de subir: `python3 build.py <url>` (debe decir «preguntas visibles en la web: 0»), `python3 make_sql.py` si cambió algún banco, y el análisis de pistas si añadiste preguntas.
+- Antes de subir: `python3 build.py <url>` (debe decir «preguntas visibles en la web: 0»), `python3 pruebas/probar_web.py` (debe decir «TODO BIEN»), `python3 make_sql.py` si cambió algún banco, y el análisis de pistas si añadiste preguntas.
 - No subir nunca claves secretas (Stripe, clave de servicio de Supabase) al repositorio. La clave publicable de Supabase sí puede ir en `build.py`.
 - Al terminar una tarea, actualiza la sección «Estado y pendientes» de este archivo.
