@@ -102,7 +102,32 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [ ] Pasar la web a Cloudflare Pages (paso 4b de `INSTRUCCIONES.txt`) y comprar el dominio (idea: oponota.com). **24/11/2026: la cuenta de Cloudflare ya está creada, pero no se puede conectar el repositorio sin el dueño.** Opción recomendada para Alex: crear la organización de GitHub «oponota», invitar al otro socio como Owner y transferir el repositorio allí. Alternativa: instalar la aplicación de Cloudflare en su cuenta (github.com/apps/cloudflare-workers-and-pages > Only select repositories > opotest). No crear el proyecto de Pages subiendo la carpeta a mano, porque después no se puede conectar a GitHub.
 - [ ] Pasar Supabase a Pro (25 $/mes) cuando se empiece a cobrar: copias de seguridad diarias y sin pausa por inactividad.
 
+## En curso
+
+Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (sobre todo si toca `template.html` o la base de datos) y bórrate al terminar.
+
+- (nadie)
+
+## Registro de cambios
+
+Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
+
+- 24/11/2026 · Edu · Instrucciones compartidas para los dos Claude en `.claude/skills/` (añadir preguntas, publicar la web, cambios en Supabase) y estas dos secciones.
+- 24/11/2026 · Edu · Registro: aviso de «ya existe una cuenta» y borradas las cuentas de prueba (quedan las 3 de administrador).
+- 24/11/2026 · Edu · Emails de cuentas con Brevo, plantillas en español y «Confirm email» activado.
+- 24/11/2026 · Edu · Formularios en Supabase, descarga de preguntas solo si cambian y web preparada para Cloudflare Pages.
+- 24/11/2026 · Edu · Planes por niveles y precios (Madrid 11,99/14,99 €; Estado 11,99/14,99/17,99 €).
+- 24/11/2026 · Edu · Pago con Stripe Checkout (tabla `precios`, funciones `crear-pago` y `stripe-webhook`) y botón de entrar con Google.
+- 24/11/2026 · Edu · Páginas legales rellenadas (titular OPONOTA, email, fecha, web).
+- 23-24/11/2026 · Edu · Rediseño según las capturas de referencia (Barlow, páginas por oposición, menú de cuenta) y mejoras del registro (repetir contraseña, requisitos, ojo).
+
+## Accesos del equipo
+
+Los dos socios tienen acceso a Supabase, Stripe, Netlify y Cloudflare. Brevo (plan gratis, un solo usuario) se usa con la cuenta común oponota.contacto@gmail.com. GitHub: pendiente de pasar el repositorio a la organización «oponota». Cada socio conecta en su Claude los conectores con su propio usuario. Las contraseñas y claves las pega siempre la persona en el panel de cada servicio: ningún Claude las guarda ni las pide en el chat.
+
 ## Forma de trabajar
+
+- Para las tareas que se repiten hay instrucciones compartidas en `.claude/skills/`: `anadir-preguntas`, `publicar-web` y `cambios-supabase`. Síguelas.
 
 - Se trabaja directamente sobre `main`, sin ramas. **Antes de empezar, haz `git pull`** para traer lo que haya subido el otro socio, y súbelo en cuanto termines cada cambio, para no pisaros. Si `git push` falla porque el otro ha subido algo, haz `git pull`, resuelve los conflictos y vuelve a subir: nunca `git push --force`.
 - Antes de subir: `python3 build.py <url>` (debe decir «preguntas visibles en la web: 0»), `python3 make_sql.py` si cambió algún banco, y el análisis de pistas si añadiste preguntas.
