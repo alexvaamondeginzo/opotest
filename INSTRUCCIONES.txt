@@ -165,6 +165,10 @@ de administración. Netlify Forms solo queda de reserva. Antes: en Netlify >
 Project configuration > Forms, activa "Form detection" una vez. Los
 avisos llegan a Netlify > Forms (formularios "reporte" y "lista-espera").
 
+Comparativa con otros opositores: supabase/11-comparativa.sql (función
+percentil_aciertos, ya aplicada el 24/11/2026). Solo devuelve datos agregados
+y anónimos, y nada si hay menos de 5 usuarios con 50 respuestas.
+
 ---------------------------------------------------------------------
 PASO 6 · LEGAL (obligatorio antes de cobrar; los datos de titular, ya)
 ---------------------------------------------------------------------

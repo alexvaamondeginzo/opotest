@@ -33,6 +33,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - **Formularios**: «Reportar error» y «Lista de espera» se guardan en Supabase (tablas `reportes` y `lista_espera`, `supabase/10-formularios.sql`, ya aplicado) con las funciones `enviar_reporte` y `apuntar_lista_espera`, y se ven en el panel de administración. Netlify Forms queda solo de reserva si falla Supabase.
 - **Preguntas en el navegador**: se guardan en `localStorage` y solo se vuelven a descargar si cambia la huella `version_preguntas(op)` (respeta la RLS). Así se gasta poca transferencia de Supabase (el plan gratis da 5 GB al mes).
 - Progreso en `localStorage` (`auxcm-v2`) con formato `{ops:{<oposicion>:{t,wrong,sims,marks}}, done, days, goal}` y copia en Supabase.
+- **Funciones en pruebas (solo administradores)**: bloque «En pruebas» en el inicio de cada oposición (`#lab` y funciones `lab*` al final de `template.html`): repaso espaciado de fallos a 1, 3 y 7 días (se guarda aparte, en `oponota-repaso`, solo en el navegador), nota estimada sobre 50 con −1/3, comparativa anónima (función `percentil_aciertos`, `supabase/11-comparativa.sql`), plan de hoy, práctica por ley y buscador, modo oscuro (`oponota-tema`) y aplicación instalable y sin conexión (`assets/manifest.webmanifest` y `assets/sw.js`; el service worker solo se registra para administradores). Para abrirlas a todos basta con quitar la condición `ACC.admin` de `labRender`, `labRecord` y `beforeinstallprompt`.
 - Las preguntas **nunca** van dentro de la web: `build.py` comprueba que no se filtre ninguna.
 
 ## Formato de las preguntas
@@ -113,6 +114,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Corregido: al responder no se marcaba en verde la correcta ni en rojo la elegida (el código contaba también las opciones de la pregunta de muestra de la portada). Funciones en pruebas solo para administradores (repaso 1/3/7, nota estimada, comparativa, plan de hoy, práctica por ley y buscador, modo oscuro, instalable). Nueva función `percentil_aciertos` en Supabase.
 - 24/11/2026 · Edu · Temas flojos de Madrid ampliados (+41, comprobadas en el BOE): tema 4 (50, Código Civil arts. 1-7), 13 (47, Ley 15/2022), 14 (41, Leyes 39 y 40/2015 de administración electrónica) y 15 (42, registro y documentos de la Ley 39/2015). Nuevo `madrid/anadir.py`.
 - 24/11/2026 · Edu · Vigencia: nota de la LO 1/2025 (Juzgados → Secciones de los Tribunales de Instancia desde el 31/12/2025) en las 7 preguntas de la Ley 29/1998 que hablan de Juzgados, en los dos bancos y en Supabase.
 - 25/11/2026 · Edu · Temas 17, 18, 21, 22 y 28 del Estado ampliados (+65, RD 951/2005, RD 208/1996 y LO 4/2001 comprobados en el BOE). Cargadas en Supabase 4 preguntas de Madrid (tema 4) que faltaban. Permiso de lectura de `precios` (la web no podía leerlos). Enlaces a las normas de Madrid en `NORMAS`.

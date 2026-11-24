@@ -7,3 +7,6 @@
 
 /*.woff
   Cache-Control: public, max-age=2592000
+
+/sw.js
+  Cache-Control: no-cache

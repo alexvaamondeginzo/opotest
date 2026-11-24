@@ -20,6 +20,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="logo-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="logo-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
 <style>
 /* OpoNota · estilo según la referencia del equipo:
    tipografía condensada en mayúsculas (Barlow Condensed) para títulos, menú y botones; Barlow para el texto.
@@ -455,6 +456,22 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
 .hero + .seccion{padding-top:56px}
 .proximas-cab{margin-top:48px;display:flex;flex-direction:column;gap:8px}
 .proximas-cab h3{font-size:30px}
+
+/* ---------- funciones en pruebas (solo administradores) ---------- */
+.lab-card{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.lab-card h3{margin:0}
+.lab-bus{display:flex;flex-wrap:wrap;gap:16px}
+.lab-bus label{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--muted);flex:1 1 240px}
+.lab-bus select,.lab-bus input{font:17px var(--body);padding:8px 0;border:0;border-bottom:1.5px solid var(--line-strong);background:transparent;color:var(--ink)}
+.lab-acc{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:16px}
+/* modo oscuro */
+html[data-tema="oscuro"]{--ink:#e3eeec;--teal:#4fc2b4;--teal-deep:#8be0d4;--mint-soft:#163a35;--bg:#0e1716;--surface:#16211f;--line:#26332f;--line-strong:#3a4a46;--muted:#9db0ac;--bad:#ff8a80;--bad-soft:#3a1b19;--warn:#f2c26b;--warn-soft:#3a2e12;--ok:#4fc2b4;color-scheme:dark}
+html[data-tema="oscuro"] body{background:var(--bg);color:var(--ink)}
+html[data-tema="oscuro"] .primary,html[data-tema="oscuro"] .btn.primary,html[data-tema="oscuro"] .goalsel button[aria-pressed="true"],html[data-tema="oscuro"] .chip input:checked + span,html[data-tema="oscuro"] .opt b,html[data-tema="oscuro"] .plan .recomendado,html[data-tema="oscuro"] .periodos button[aria-pressed="true"],html[data-tema="oscuro"] .avatar .ini{background:var(--teal);border-color:var(--teal);color:#062421}
+html[data-tema="oscuro"] .hero{background:radial-gradient(120% 140% at 85% 30%,#0d4643 0%,#072a28 55%,#031d1c 100%)}
+html[data-tema="oscuro"] .precio-panel,html[data-tema="oscuro"] .cta{background:#0a2a28}
+html[data-tema="oscuro"] .brand img,html[data-tema="oscuro"] footer img{filter:brightness(0) invert(.92)}
+html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[data-tema="oscuro"] .cta a{color:#052f2e}
 </style>
 </head>
 <body>
@@ -640,6 +657,48 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
             <div id="deb-msg" class="msg hidden" role="status"></div>
             <div><button class="primary small hidden" id="btn-debiles">Test de 20 preguntas de estos temas</button></div>
           </section>
+        </div>
+
+        <div class="bloque hidden" id="lab">
+          <h2 id="lab-h">En pruebas</h2>
+          <p class="meta">Solo lo ven los administradores hasta que lo probéis.</p>
+          <div class="kpis">
+            <div class="kpi">
+              <span class="lbl">Repaso espaciado</span>
+              <span class="big" id="lab-rep">0</span>
+              <span class="nota" id="lab-rep-n"></span>
+              <div><button class="primary small hidden" id="lab-rep-btn">Repasar ahora</button></div>
+            </div>
+            <div class="kpi">
+              <span class="lbl">Nota estimada</span>
+              <span class="big" id="lab-nota">—</span>
+              <span class="nota" id="lab-nota-n"></span>
+            </div>
+            <div class="kpi">
+              <span class="lbl">Comparativa</span>
+              <span class="big" id="lab-pct">—</span>
+              <span class="nota" id="lab-pct-n"></span>
+            </div>
+          </div>
+          <section class="card lab-card" aria-labelledby="lab-plan-h">
+            <h3 id="lab-plan-h">Plan de hoy</h3>
+            <p id="lab-plan"></p>
+            <div><button class="primary small hidden" id="lab-plan-btn">Empezar el plan de hoy</button></div>
+          </section>
+          <section class="card lab-card" aria-labelledby="lab-bus-h">
+            <h3 id="lab-bus-h">Practicar por ley o buscar</h3>
+            <div class="lab-bus">
+              <label>Ley o norma<select id="lab-norma"><option value="">Todas</option></select></label>
+              <label>Buscar en el enunciado o el artículo<input type="search" id="lab-q" placeholder="Por ejemplo: silencio, art. 21, Defensor"></label>
+            </div>
+            <p class="meta" id="lab-bus-n"></p>
+            <div><button class="primary small hidden" id="lab-bus-btn">Practicar estas preguntas</button></div>
+          </section>
+          <div class="lab-acc">
+            <button class="ghost small" id="lab-oscuro" aria-pressed="false">Modo oscuro</button>
+            <button class="ghost small hidden" id="lab-instalar">Instalar la aplicación</button>
+            <span class="meta" id="lab-offline"></span>
+          </div>
         </div>
       </div>
     </section>
@@ -1044,6 +1103,7 @@ function record(q,ok){
   const o=P(),t=o.t[q[0]]=o.t[q[0]]||{a:0,n:0};t.n++;if(ok)t.a++;
   const dk=dayKey();DB.days[dk]=(DB.days[dk]||0)+1;
   const w=new Set(o.wrong); if(ok) w.delete(q.id); else w.add(q.id); o.wrong=[...w];
+  if(typeof labRecord==="function")labRecord(q,ok);
 }
 
 // ----- portada -----
@@ -1092,7 +1152,7 @@ function renderStats(){
   const o=P(),T=o.t,keys=Object.keys(T).filter(k=>T[k].n);
   $("stats-vacio").classList.toggle("hidden",!!keys.length);$("stats-tabla").classList.toggle("hidden",!keys.length);
   $("reset-stats").classList.toggle("hidden",!keys.length);
-  renderSims();renderDebiles();renderResumen();
+  renderSims();renderDebiles();renderResumen();if(typeof labRender==="function")labRender();
   if(!keys.length){$("stats").innerHTML="";$("stats-sum").textContent="Tu porcentaje de aciertos en cada tema, de menos a más.";return}
   const tot=keys.reduce((s,k)=>s+T[k].n,0), ac=keys.reduce((s,k)=>s+T[k].a,0);
   $("stats-sum").textContent=`${plural(tot,"respuesta","respuestas")} en total, ${Math.round(ac/tot*100)} % de aciertos. ${o.wrong.length?`${plural(o.wrong.length,"pregunta pendiente","preguntas pendientes")} de repasar.`:"Ninguna pregunta pendiente de repasar."}`;
@@ -1269,7 +1329,7 @@ function render(){
   $("next").disabled=st.modo==="practica"||st.ans[st.i]===null;
   $("skip").classList.remove("hidden");
 }
-function markSel(k){document.querySelectorAll(".opt").forEach((b,j)=>b.classList.toggle("sel",j===k))}
+function markSel(k){document.querySelectorAll("#opts .opt").forEach((b,j)=>b.classList.toggle("sel",j===k))}
 function choose(k){
   if(st.locked)return;
   st.ans[st.i]=k;
@@ -1278,7 +1338,7 @@ function choose(k){
 }
 function reveal(k){
   const q=st.qs[st.i];st.locked=true;
-  document.querySelectorAll(".opt").forEach((b,j)=>{b.disabled=true;if(j===q[3])b.classList.add("ok");else if(j===k)b.classList.add("bad")});
+  document.querySelectorAll("#opts .opt").forEach((b,j)=>{b.disabled=true;if(j===q[3])b.classList.add("ok");else if(j===k)b.classList.add("bad")});
   const ok=k===q[3];
   record(q,ok);save(DB);
   $("feedback").innerHTML=`<div class="expl ${ok?"":"no"}"><strong></strong><span></span></div>`;
@@ -1806,7 +1866,7 @@ function renderAccess(){
   a.innerHTML=html;
   const b=$("acc-cta");if(b)b.addEventListener("click",()=>{if(!user)return openAuth("signup");showPlans()});
   const ba=$("acc-admin");if(ba)ba.addEventListener("click",openAdmin);
-  $("btn-admin").classList.toggle("hidden",!ACC.admin);$("admin").classList.toggle("hidden",!ACC.admin);
+  $("btn-admin").classList.toggle("hidden",!ACC.admin);$("admin").classList.toggle("hidden",!ACC.admin);if(typeof labRender==="function")labRender();
   if(BETA!==null)$("planes").classList.toggle("hidden",(BETA!==false&&!ACC.admin)||VISTA!=="op"||EN_TEST);
   if(ACC.admin&&VISTA==="op"&&SUB==="admin"&&!EN_TEST&&Date.now()-ADMIN_T>5000)loadAdmin();
   $("acc-plan").textContent=user?(ACC.plan?`${PLAN_NOMBRE[ACC.plan]}${ACC.plan==="beta"?"":" · "+CFG().corto}${ACC.hasta?` · hasta el ${fechaCorta(ACC.hasta)}`:""}`:`Sin plan activo en ${CFG().corto}.`):"";
@@ -2179,6 +2239,108 @@ if(AUTH_ON){
     if(error){showMsg("acc-msg","No se ha podido eliminar la cuenta. Escríbenos y lo haremos por ti.");return}
     await sb.auth.signOut();$("dlg-account").close();
   });
+}
+
+// ===== Funciones en pruebas: solo las ven los administradores (24/11/2026) =====
+// Repaso espaciado, nota estimada, comparativa anónima, plan de hoy, práctica por ley,
+// modo oscuro y aplicación instalable. Nada de esto cambia el formato del progreso (auxcm-v2):
+// el repaso espaciado se guarda aparte, en «oponota-repaso», solo en este navegador.
+const REP_KEY="oponota-repaso",REP_DIAS=[1,3,7];
+function repLeer(){try{return JSON.parse(localStorage.getItem(REP_KEY))||{}}catch(e){return {}}}
+function repGuardar(r){try{localStorage.setItem(REP_KEY,JSON.stringify(r))}catch(e){}}
+function diaMas(n){const d=new Date();d.setDate(d.getDate()+n);return dayKey(d)}
+function labRecord(q,ok){
+  if(!ACC.admin||!q.id)return;
+  const R=repLeer(),r=R[OP]=R[OP]||{},x=r[q.id];
+  if(!ok)r[q.id]=[0,diaMas(REP_DIAS[0])];
+  else if(x&&x[1]<=dayKey()){const e=x[0]+1;if(e>=REP_DIAS.length)delete r[q.id];else r[q.id]=[e,diaMas(REP_DIAS[e])]}
+  repGuardar(R);
+}
+function repPendientes(){const r=repLeer()[OP]||{},hoy=dayKey();return Object.keys(r).filter(id=>r[id][1]<=hoy&&BYID[id]).map(id=>BYID[id])}
+function sinTildes(t){return String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}
+function normaDe(ref){return String(ref||"").replace(/^(Arts?\.|Disp\.|D\.)\s*[^A-Z]*?(?=\b(Ley|LO|RDL|RD|RDLeg|Real|Decreto|Orden|CE|CC|TREBEP|TRLGSS|LCSP|LBRL|LPAC|LRJSP|LOPDGDD|RGPD|Reglamento|Estatuto|EA|Resoluci)\b)/,"").replace(/\s*\(.*\)$/,"").trim()}
+function labNota(){
+  const T=P().t,out=[];
+  Object.values(SIMCFG).forEach(C=>{
+    let p=0,peso=0,n=0;
+    C.cupos.forEach(k=>{let a=0,m=0;for(let t=k.desde;t<=k.hasta;t++){const x=T[t];if(x){a+=x.a;m+=x.n}}if(m){p+=a/m*k.n;peso+=k.n;n+=m}});
+    if(peso&&n>=30){const pp=p/peso;out.push({c:C,nota:Math.max(0,Math.round(50*(pp-(1-pp)/3)*10)/10),n})}else out.push({c:C,nota:null,n})
+  });
+  return out;
+}
+let LAB_PCT_T=0;
+async function labPercentil(){
+  const v=Object.values(P().t),n=v.reduce((s,x)=>s+x.n,0),a=v.reduce((s,x)=>s+x.a,0);
+  if(n<50){$("lab-pct").textContent="—";$("lab-pct-n").textContent=`Responde al menos 50 preguntas (llevas ${n}) para compararte.`;return}
+  const pct=Math.round(a/n*1000)/10;$("lab-pct").textContent=pct.toLocaleString("es-ES")+" %";
+  if(!sb||!user){$("lab-pct-n").textContent="Tu porcentaje de aciertos. Entra en tu cuenta para compararte.";return}
+  if(Date.now()-LAB_PCT_T<60000)return;LAB_PCT_T=Date.now();
+  try{const {data,error}=await sb.rpc("percentil_aciertos",{op:OP,pct});if(error)throw error;const r=(data||[])[0]||{};
+    $("lab-pct-n").textContent=r.percentil==null?`Tu porcentaje de aciertos. Aún hay pocos opositores con 50 respuestas para comparar (${r.usuarios||0}; hacen falta 5).`:`Aciertas más que el ${r.percentil} % de los ${r.usuarios} opositores de esta oposición con al menos 50 respuestas.`}
+  catch(e){$("lab-pct-n").textContent="No se ha podido cargar la comparativa."}
+}
+function labPlan(){
+  const T=P().t,lim=maxTema(),temas=AVAIL.filter(t=>t<=lim);
+  $("lab-plan-btn").classList.toggle("hidden",!temas.length);
+  if(!temas.length){$("lab-plan").textContent="Cuando tengas acceso a algún tema, aquí verás qué estudiar hoy.";return null}
+  const vistos=temas.filter(t=>T[t]&&T[t].n>=10).sort((x,y)=>T[x].a/T[x].n-T[y].a/T[y].n);
+  const pocos=temas.filter(t=>!T[t]||T[t].n<10).sort((x,y)=>((T[x]||{}).n||0)-((T[y]||{}).n||0));
+  const elegidos=[...new Set([...vistos.slice(0,2),...pocos.slice(0,vistos.length>=2?1:3-vistos.length)])].slice(0,3);
+  const meta=Math.max(10,DB.goal||20),hecho=DB.days[dayKey()]||0,rep=repPendientes().length;
+  const nombres=elegidos.map(t=>`T${t} · ${esc(TNAME[t]||"")}${T[t]&&T[t].n>=10?` (${Math.round(T[t].a/T[t].n*100)} %)`:" (casi sin practicar)"}`);
+  $("lab-plan").innerHTML=`${hecho>=meta?"Ya has cumplido tu objetivo de hoy. ":""}${rep?`Primero, ${plural(rep,"pregunta","preguntas")} del repaso espaciado. Después, `:""}${meta} preguntas de: ${nombres.join(", ")}.`;
+  return {temas:elegidos,n:meta};
+}
+function labBuscar(){
+  const nor=$("lab-norma").value,txt=sinTildes($("lab-q").value.trim());
+  if(!nor&&!txt){$("lab-bus-n").textContent=`Elige una ley o escribe algo para buscar entre las ${Q.length.toLocaleString("es-ES")} preguntas.`;$("lab-bus-btn").classList.add("hidden");return []}
+  const L=Q.filter(q=>(!nor||normaDe(q[4])===nor)&&(!txt||sinTildes(q[1]+" "+q[4]).includes(txt)));
+  $("lab-bus-n").textContent=L.length?`${plural(L.length,"pregunta","preguntas")}${L.length>40?"; el test usa 40 al azar":""}.`:"Ninguna pregunta coincide.";
+  $("lab-bus-btn").classList.toggle("hidden",!L.length);$("lab-bus-btn").textContent=`Practicar ${Math.min(40,L.length)} preguntas`;
+  return L;
+}
+let LAB_NORMAS_OP="";
+let LAB_CARGANDO=false;
+function labNormas(){
+  // Las preguntas se descargan al empezar el primer test; el buscador las pide antes si hace falta
+  if(!Q.length&&user&&ACC.plan&&!LAB_CARGANDO){LAB_CARGANDO=true;loadQuestions().then(()=>{LAB_CARGANDO=false;if(Q.length)labRender()}).catch(()=>{LAB_CARGANDO=false})}
+  if(LAB_NORMAS_OP===OP+Q.length)return;LAB_NORMAS_OP=OP+Q.length;
+  const c={};Q.forEach(q=>{const n=normaDe(q[4]);if(n)c[n]=(c[n]||0)+1});
+  const L=Object.entries(c).filter(x=>x[1]>=5).sort((a,b)=>b[1]-a[1]);
+  $("lab-norma").innerHTML=`<option value="">Todas</option>`+L.map(([n,k])=>`<option value="${esc(n)}">${esc(n)} (${k})</option>`).join("");
+}
+function labRender(){
+  const el=$("lab");if(!el)return;
+  el.classList.toggle("hidden",!ACC.admin);if(!ACC.admin)return;
+  const rep=repPendientes(),total=Object.keys(repLeer()[OP]||{}).length;
+  $("lab-rep").textContent=rep.length;
+  $("lab-rep-n").textContent=rep.length?"Fallos que toca repasar hoy (se repiten a 1, 3 y 7 días).":total?`Nada para hoy. ${plural(total,"pregunta programada","preguntas programadas")} para los próximos días.`:"Las preguntas que falles volverán a 1, 3 y 7 días.";
+  $("lab-rep-btn").classList.toggle("hidden",!rep.length);
+  const N=labNota(),hay=N.filter(x=>x.nota!==null);
+  $("lab-nota").textContent=hay.length?hay.map(x=>x.nota.toLocaleString("es-ES")).join(" · "):"—";
+  $("lab-nota-n").textContent=hay.length?`Sobre 50, con −1/3 por fallo, si contestas todo (${N.map(x=>`${x.c.nombre.replace(/^Simulacro /,"")}: ${x.nota===null?"faltan datos":x.nota>=25?"aprobado":"suspenso"}`).join("; ")}). Es orientativa: sale de tus aciertos por tema.`:"Responde al menos 30 preguntas de los temas de un ejercicio para estimarla.";
+  labPlan();labNormas();labBuscar();labPercentil();
+  $("lab-oscuro").setAttribute("aria-pressed",String(document.documentElement.dataset.tema==="oscuro"));
+  labOffline();
+}
+$("lab-rep-btn").addEventListener("click",async()=>{if(!(await ensureAccess("practica")))return;const L=shuffle(repPendientes());if(L.length)start(L)});
+$("lab-plan-btn").addEventListener("click",async()=>{if(!(await ensureAccess("practica")))return;const p=labPlan();if(!p)return;const rep=shuffle(repPendientes());const resto=shuffle(Q.filter(q=>p.temas.includes(q[0])&&!rep.includes(q))).slice(0,Math.max(0,p.n-rep.length));if(rep.length+resto.length)start([...rep,...resto])});
+$("lab-norma").addEventListener("change",labBuscar);
+$("lab-q").addEventListener("input",labBuscar);
+$("lab-bus-btn").addEventListener("click",async()=>{if(!(await ensureAccess("practica")))return;const L=labBuscar();if(L.length)start(shuffle(L.slice()).slice(0,40))});
+// modo oscuro: se recuerda en este navegador
+try{if(localStorage.getItem("oponota-tema")==="oscuro")document.documentElement.dataset.tema="oscuro"}catch(e){}
+$("lab-oscuro").addEventListener("click",()=>{const on=document.documentElement.dataset.tema!=="oscuro";
+  if(on)document.documentElement.dataset.tema="oscuro";else delete document.documentElement.dataset.tema;
+  try{localStorage.setItem("oponota-tema",on?"oscuro":"claro")}catch(e){}
+  $("lab-oscuro").setAttribute("aria-pressed",String(on))});
+// aplicación instalable y sin conexión (el service worker solo se registra para administradores)
+let LAB_INSTALAR=null;
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();LAB_INSTALAR=e;if(ACC.admin)$("lab-instalar").classList.remove("hidden")});
+$("lab-instalar").addEventListener("click",async()=>{if(!LAB_INSTALAR)return;LAB_INSTALAR.prompt();try{await LAB_INSTALAR.userChoice}catch(e){}LAB_INSTALAR=null;$("lab-instalar").classList.add("hidden")});
+function labOffline(){
+  if(!("serviceWorker" in navigator)||location.protocol!=="https:"){$("lab-offline").textContent="";return}
+  navigator.serviceWorker.register("sw.js").then(()=>{$("lab-offline").textContent="Funciona sin conexión con las preguntas ya descargadas."}).catch(()=>{$("lab-offline").textContent=""});
 }
 </script>
 </body>
