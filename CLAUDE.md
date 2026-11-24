@@ -88,7 +88,8 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [x] Psicotécnicos del Estado ampliados de 139 a 617 (24/11/2026), según los tipos de los exámenes oficiales de 2024 y 2025.
 - [x] Temas más cortos del Estado ampliados (24-25/11/2026): 17 (30), 18 (35), 21 (39), 22 (34) y 28 (36).
 - [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
-- [ ] Enlaces a las normas autonómicas de Madrid (BOCM) en `NORMAS`.
+- [x] Enlaces a las normas de Madrid publicadas en el BOE en `NORMAS` (falta el Decreto 21/2002, que no está en el BOE).
+- [ ] Vigencia, por revisar artículo a artículo: la LCSP (cambios del 23/01/2025, 02/04/2025, 04/12/2025, 26/12/2025, 21/03/2026 y 09/04/2026), la LBRL (03/01/2025, 03/12/2025, 21/03/2026, 03/06/2026 y 03/10/2026) y la Ley 1/1983 CM (11/04/2025) frente a las preguntas del banco. La Ley 47/2003 no ha cambiado desde 2022.
 - [ ] Siguientes oposiciones: Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid (ya en la portada como «Próximamente»), y las de la lista de espera según demanda.
 - [x] Páginas legales (`legal_build.py`) rellenadas: titular OPONOTA, email oponota.contacto@gmail.com, fecha 18/10/2026, web https://oponota.netlify.app/, Supabase en Irlanda (eu-west-1), Netlify como alojamiento y lista de espera y avisos de error en la privacidad. Las condiciones de compra no dan precios (cada oposición tendrá el suyo y se mostrará en la web antes de pagar).
 - [ ] **ANTES DEL LANZAMIENTO PÚBLICO (recordárselo al socio cuando diga que se lanza la web):**
@@ -112,6 +113,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Vigencia: nota de la LO 1/2025 (Juzgados → Secciones de los Tribunales de Instancia desde el 31/12/2025) en las 7 preguntas de la Ley 29/1998 que hablan de Juzgados, en los dos bancos y en Supabase.
 - 25/11/2026 · Edu · Temas 17, 18, 21, 22 y 28 del Estado ampliados (+65, RD 951/2005, RD 208/1996 y LO 4/2001 comprobados en el BOE). Cargadas en Supabase 4 preguntas de Madrid (tema 4) que faltaban. Permiso de lectura de `precios` (la web no podía leerlos). Enlaces a las normas de Madrid en `NORMAS`.
 - 24/11/2026 · Edu · Psicotécnicos ajustados a los exámenes oficiales de 2024-2025: fuera conteo y pares de códigos (no salen); nuevas tablas de caso práctico (archivo, cursos, claves de registro), definiciones, ecuaciones, signos, probabilidad y códigos binarios. Total 617.
 - 24/11/2026 · Edu · Psicotécnicos del Estado: de 139 a 453 (tablas de datos, ordenación alfabética y de fechas, claves, pares de códigos, series difíciles, problemas y 51 verbales nuevos). Los enunciados con líneas «a | b» se ven como tabla. `age/montar.py` ya no cambia el orden de las opciones de las preguntas publicadas.
