@@ -89,7 +89,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - [ ] Probar un pago completo con la tarjeta de prueba y configurar Google (cliente OAuth) siguiendo `INSTRUCCIONES.txt`.
 - [x] Psicotécnicos del Estado ampliados de 139 a 617 (24/11/2026), según los tipos de los exámenes oficiales de 2024 y 2025.
 - [x] Temas más cortos del Estado ampliados (24-25/11/2026): 17 (30), 18 (35), 21 (39), 22 (34) y 28 (36).
-- [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
+- [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan). Paso intermedio hecho (24/11/2026, solo administradores): en «En pruebas» se puede practicar todo lo que cayó en cada examen oficial con nuestras preguntas marcadas (campo `examen`). Para el simulacro literal hace falta el cuestionario y la plantilla de cada examen en PDF: desde aquí no se pueden descargar enteros (la web de la Comunidad no deja copiarlos). Idea: guardarlos en una tabla aparte `examenes_oficiales` sin acceso directo y servirlos con una función solo para administradores, porque el modo beta abre a todos cualquier oposición nueva de la tabla `preguntas`.
 - [x] Enlaces a las normas de Madrid publicadas en el BOE en `NORMAS` (falta el Decreto 21/2002, que no está en el BOE).
 - [x] Vigencia revisada (24/11/2026) en el BOE (pestaña «Análisis» de cada texto consolidado) frente a las preguntas del banco, sin cambios necesarios:
   - LCSP: umbrales de regulación armonizada de 2026 (Orden HAC/1517/2025) ya puestos (5.404.000, 216.000 y 140.000 €); Ley 1/2025 (art. 202), RDL 7/2026 y Ley 9/2025 (DA 57), Ley 1/2026 (DA 4) y RDL 40/2026 (DA 59 y 60) no tocan artículos preguntados; el RDL 39/2026, de 17/11/2026, añade la letra j) al art. 211.1 (igualdad retributiva) y un párrafo a los arts. 201 y 212.1, sin cambiar la letra d) que preguntamos. El anteproyecto de Ley Orgánica de Integridad Pública cambiaría los arts. 63.4 y 120.1 a): revisar si se aprueba.
@@ -121,6 +121,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · En pruebas (administradores): practicar lo que cayó en cada examen oficial (6 exámenes de Madrid).
 - 24/11/2026 · Edu · Primer banco en borrador del Administrativo C1 de Madrid (`borradores/`, sin publicar). Propuesta de textos de portada y email de bienvenida en un documento para revisar.
 - 24/11/2026 · Edu · Vigencia de la LCSP, la LBRL y la Ley 1/1983 CM revisada en el BOE: ninguna pregunta afectada (detalle en «Estado y pendientes»).
 - 24/11/2026 · Edu · Páginas para Google por oposición (`seo_build.py`), `sitemap.xml`, `robots.txt` y enlaces en el pie.
