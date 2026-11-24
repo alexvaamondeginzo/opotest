@@ -17,6 +17,8 @@ drop policy if exists "Ver precios activos" on public.precios;
 create policy "Ver precios activos" on public.precios for select using (activo);
 -- Sin este permiso la política no basta: la web no podía leer los precios (arreglado el 24/11/2026).
 grant select on public.precios to anon, authenticated;
+-- La función crear-pago lee el precio con la clave de servicio: sin este permiso respondía «no está a la venta»
+grant select on public.precios to service_role;
 
 -- Precio por oposición y plan (solo administradores)
 create or replace function public.admin_precio(o text, p text, importe integer, h timestamptz, act boolean)
