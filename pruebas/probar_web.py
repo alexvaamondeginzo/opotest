@@ -110,6 +110,15 @@ async def main():
 
             if disp == 'escritorio':
                 # práctica: arranca, corrige y guarda
+                # temas separados por bloques (campo "bloques" de oposiciones.json)
+                await pg.evaluate("location.hash='#/o/aux-age/practicar'")
+                await pg.wait_for_timeout(300)
+                grupos = await pg.eval_on_selector_all('#temas .tgrupo h4', 'e=>e.map(h=>h.firstChild.textContent.trim())')
+                comprobar(grupos == ['Legislación', 'Ofimática', 'Psicotécnicos'], f'practicar: temas por bloques ({grupos})')
+                await pg.click('#temas [data-bloque="2"]')
+                quedan = await pg.evaluate("selected().temas")
+                comprobar(29 not in quedan and 1 in quedan, 'practicar: quitar un bloque desmarca solo sus temas')
+                await pg.click('#temas [data-bloque="2"]')
                 await pg.evaluate("location.hash='#/o/aux-cm/practicar'")
                 await pg.wait_for_timeout(300)
                 await pg.click('#start')

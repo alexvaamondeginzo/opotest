@@ -224,6 +224,9 @@ button.kpi{border:0;text-align:left;font:inherit;text-transform:none;letter-spac
 fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
 legend{font:700 22px/1 var(--cond);text-transform:uppercase;margin-bottom:14px;display:flex;gap:14px;align-items:baseline}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
+/* Temas separados por bloques (legislación, ofimática, psicotécnicos): campo "bloques" de oposiciones.json */
+.tgrupos{display:flex;flex-direction:column;gap:22px}
+.tgrupo h4{font:700 17px/1 var(--cond);text-transform:uppercase;letter-spacing:.02em;color:var(--teal-deep);margin:0 0 10px;display:flex;gap:12px;align-items:baseline}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
 .chip span{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border:1.5px solid var(--line);border-radius:3px;background:var(--surface);font-size:15px}
@@ -725,7 +728,7 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
           </fieldset>
           <fieldset id="temas-fs">
             <legend>Temas <button type="button" class="linkbtn" id="toggle-temas">Quitar todos</button></legend>
-            <div class="chips" id="temas"></div>
+            <div class="tgrupos" id="temas"></div>
           </fieldset>
           <fieldset id="nums-fs">
             <legend>Número de preguntas</legend>
@@ -1115,12 +1118,21 @@ function record(q,ok){
 function buildSetup(){
   $("modos-sim").innerHTML=Object.values(SIMCFG).map(x=>`<label class="mode"><input type="radio" name="modo" id="modo-${x.id}" value="${x.id}"><div><b>${esc(x.nombre)}</b><span>${esc(x.desc)}</span></div></label>`).join("");
   $("modo-practica").checked=true;
-  $("temas").innerHTML=AVAIL.map(k=>`<label class="chip"><input type="checkbox" id="tema-${k}" value="${k}" checked><span>T${k} · ${TNAME[k]} <small>${TEMA_COUNTS[k]}</small><span class="lock hidden" id="lock-${k}">🔒</span></span></label>`).join("");
+  const chip=k=>`<label class="chip"><input type="checkbox" id="tema-${k}" value="${k}" checked><span>T${k} · ${TNAME[k]} <small>${TEMA_COUNTS[k]}</small><span class="lock hidden" id="lock-${k}">🔒</span></span></label>`;
+  // Temas por bloques: [{nombre, desde, hasta}] en oposiciones.json; los que no caigan en ningún bloque van al final sin título
+  const BL=(CFG().bloques||[]).map(b=>({...b,temas:AVAIL.filter(k=>k>=b.desde&&k<=b.hasta)})).filter(b=>b.temas.length);
+  const resto=AVAIL.filter(k=>!BL.some(b=>b.temas.includes(k)));if(resto.length)BL.push({nombre:"",temas:resto});
+  $("temas").innerHTML=BL.map((b,i)=>`<div class="tgrupo">${b.nombre&&BL.length>1?`<h4>${esc(b.nombre)} <button type="button" class="linkbtn" data-bloque="${i}">Quitar</button></h4>`:""}<div class="chips">${b.temas.map(chip).join("")}</div></div>`).join("");
   $("nums").innerHTML=[10,20,40,0].map(n=>`<label class="chip"><input type="radio" name="num" id="num-${n||'todas'}" value="${n}" ${n===20?"checked":""}><span>${n||"Todas"}</span></label>`).join("");
   if(FORM_URL) $("faq-error").innerHTML=`Pulsa «Reportar error» en la propia pregunta, o escríbenos en <a href="${FORM_URL}" target="_blank" rel="noopener">este formulario</a>. Lo revisamos contra el BOE y lo corregimos.`;
   document.querySelectorAll("#setup input").forEach(i=>i.addEventListener("change",refreshSetup));
   refreshSetup();renderStats();renderToday();
 }
+$("temas").addEventListener("click",e=>{
+  const b=e.target.closest("[data-bloque]");if(!b)return;
+  const boxes=[...b.closest(".tgrupo").querySelectorAll("input:not(:disabled)")];const any=boxes.some(x=>x.checked);
+  boxes.forEach(x=>x.checked=!any);refreshSetup();
+});
 $("toggle-temas").addEventListener("click",()=>{
   const boxes=[...document.querySelectorAll("#temas input:not(:disabled)")];const any=boxes.some(b=>b.checked);
   boxes.forEach(b=>b.checked=!any);refreshSetup();
@@ -1142,6 +1154,7 @@ function refreshSetup(){
   $("marcadas-desc").textContent=nMarks?`${plural(nMarks,"pregunta marcada","preguntas marcadas")} con ☆.`:"Las preguntas que marques con ☆ durante los tests.";
   if(modo==="fallos"&&!nWrong||modo==="marcadas"&&!nMarks){$("modo-practica").checked=true;return refreshSetup()}
   $("toggle-temas").textContent=temas.length?"Quitar todos":"Marcar todos";
+  document.querySelectorAll("#temas [data-bloque]").forEach(b=>{const g=b.closest(".tgrupo");b.textContent=g.querySelector("input:checked")?"Quitar":"Marcar"});
   $("nums-fs").classList.toggle("hidden",modo!=="practica");
   const C=SIMCFG[modo];
   $("temas-fs").classList.toggle("hidden",modo==="fallos"||modo==="marcadas"||!!(C&&!C.elegirTemas));

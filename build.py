@@ -16,6 +16,12 @@ for op,c in OPOS.items():
     c['n']=len(B)
     if not B: c['proximamente']=True
     else: c.pop('proximamente',None)
+    # Practicar separa los temas por bloques (Legislación, Ofimática, Psicotécnicos...): obligatorio en cada oposición publicada
+    if B:
+        bl=c.get('bloques') or []
+        fuera=sorted({q[0] for q in B}-{t for b in bl for t in range(b['desde'],b['hasta']+1)})
+        if not bl: print(f'AVISO {op}: falta "bloques" en oposiciones.json (los temas saldrán sin separar)')
+        elif fuera: print(f'AVISO {op}: temas fuera de los bloques: {fuera}')
 # enlaces de pago por oposición (formato antiguo = solo Auxiliar CM)
 if any(isinstance(v,str) and k in ('legislacion','completo') for k,v in pagos.items()):
     pagos={'aux-cm':{k:pagos.get(k,'') for k in ('legislacion','completo')}}

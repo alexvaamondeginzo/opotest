@@ -28,6 +28,10 @@ Antes de empezar: `git pull` y apunta en `CLAUDE.md` > «En curso» qué temas v
   - `python3 herramientas/estrategias.py <banco>`: ninguna estrategia tonta por encima del 35 %.
 - Actualiza en `CLAUDE.md` la «Medición actual» si cambia.
 
+## Oposición nueva
+- En `oposiciones.json` pon siempre `"bloques"` justo después de `"temario"`, para que en Practicar los temas salgan separados: `[{"nombre": "Legislación", "desde": 1, "hasta": N}, {"nombre": "Ofimática", "desde": N+1, "hasta": M}]` y, si la oposición tiene psicotécnicos, `{"nombre": "Psicotécnicos", ...}`. Si no hay ofimática, deja solo los bloques que tenga. Todos los temas deben caer en algún bloque: `build.py` avisa si no.
+- Lo demás: temario, sims, planes y enlaces en `oposiciones.json`; banco en `bancos/<id>.json`; RLS y `tema_maximo_op` en `supabase/8-oposiciones.sql` (ver `CLAUDE.md`).
+
 ## 4. Subir
 1. `python3 make_sql.py` (regenera `supabase/p0*-preguntas-parte*.sql`).
 2. Cargar en Supabase: ejecutar las partes nuevas (la primera borra las preguntas antiguas). Si tienes el conector de Supabase, hazlo con él; si no, pídeselo a la persona.

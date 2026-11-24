@@ -20,6 +20,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - Logotipo e icono originales en `assets/marca/`. Colores del logotipo: tinta petróleo `#052F2E`, verde azulado `#10776D` (acciones), menta `#99F6E4` (acento del anillo) y fondo `#F5F8F7`.
 - Tipografía: Barlow Condensed (títulos, menú, botones y etiquetas, en mayúsculas) y Barlow (texto), ambas OFL y servidas desde la propia web (`assets/fuentes/*.woff`, las copia `build.py`). Sin peticiones a servidores de terceros.
 - Estilo (según las capturas de referencia del equipo): fondo gris claro, barra superior blanca con el menú en mayúsculas subrayado en verde azulado y un avatar con menú de cuenta, cabeceras oscuras con el anillo del logotipo, títulos de página enormes y tarjetas blancas redondeadas.
+- **Temas por bloques (decidido 24/11/2026, para todas las oposiciones)**: en Practicar los temas salen separados por bloques con su título y su botón de marcar o quitar el bloque: Legislación, Ofimática y, si la oposición los tiene, Psicotécnicos. Se definen en `oposiciones.json` con `"bloques": [{"nombre": "Legislación", "desde": 1, "hasta": 15}, …]` (Madrid: 1-15 y 16-21; Estado: 1-20, 21-28 y 29). `build.py` avisa si a una oposición publicada le faltan bloques o le queda algún tema fuera.
 - Estructura de la web: portada `#/` (oposiciones, cómo funciona con pregunta de muestra, precio, preguntas frecuentes) y, por oposición, páginas `#/o/<id>/<sección>`: inicio (hoy, resumen, temas débiles), `practicar`, `simulacros` (tarjetas y evolución de notas), `progreso`, `temario`, `examen` y `admin`.
 - El precio de la portada sale de `precio.json`. Mientras `importe` esté vacío o la web esté en modo pruebas, se muestra «Gratis».
 
@@ -49,7 +50,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - Ids: `aux-cm` usa `tema-md5(enunciado)[:10]`; el resto, `oposicion:tema-md5(oposicion|enunciado)[:10]`. Si cambias el enunciado, cambia el id (y se pierde ese fallo o marca en el progreso de los usuarios).
 - La referencia (`Art. 16.4 Ley 39/2015`) genera el enlace al BOE con la función `fuente()` y la tabla `NORMAS` de `template.html` (enlaces ELI: `https://www.boe.es/eli/es/<tipo>/<aaaa>/<mm>/<dd>/<n>/con#a<artículo>`). **Si añades una norma nueva, añádela allí.** Las normas autonómicas de Madrid aún no tienen enlace.
 - Banco del Estado: las preguntas nuevas se escriben en `age/nNN.json` con formato `[tema, enunciado, correcta, [3 incorrectas], ref, expl]`; `age/montar.py` las junta con las reutilizadas de Madrid, reparte la posición de la correcta y escribe `bancos/aux-age.json`. Los psicotécnicos (tema 29) los genera `age/psico.py`, que calcula la respuesta.
-- Al añadir una oposición: entrada en `oposiciones.json` (temario, sims, planes, enlaces), banco en `bancos/<id>.json`, y en `supabase/8-oposiciones.sql` añadirla al `case` de la política RLS y a `tema_maximo_op`. Después, `make_sql.py` y `build.py`.
+- Al añadir una oposición: entrada en `oposiciones.json` (temario, **bloques**, sims, planes, enlaces), banco en `bancos/<id>.json`, y en `supabase/8-oposiciones.sql` añadirla al `case` de la política RLS y a `tema_maximo_op`. Después, `make_sql.py` y `build.py`.
 
 ## Reglas de calidad (obligatorias)
 
@@ -124,6 +125,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Practicar: temas separados por bloques (Legislación, Ofimática, Psicotécnicos) con botón por bloque; campo `bloques` en `oposiciones.json`, aviso en `build.py` y prueba en `probar_web.py`.
 - 24/11/2026 · Edu · Quitada de las tarjetas de planes la frase «Por solo X € más que…, añades…» (y el campo `plus` de `oposiciones.json`). Precios comprobados en la tabla `precios`: sin cambios.
 - 24/11/2026 · Edu · App de Claude instalada en la organización `oponota` (los Claude ya pueden subir). Revisada la mudanza: no quedan referencias al repositorio antiguo; las webs de Netlify siguen en línea.
 - 24/11/2026 · Alex · Web pasada a Cloudflare Pages (https://oponota.pages.dev): organización de GitHub `oponota`, repositorio transferido, proyecto de Pages conectado a `main`, direcciones cambiadas y URL de Supabase actualizadas.

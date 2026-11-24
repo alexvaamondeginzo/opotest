@@ -99,6 +99,18 @@
         "Trabajo colaborativo en Microsoft 365"
       ]
     ],
+    "bloques": [
+      {
+        "nombre": "Legislación",
+        "desde": 1,
+        "hasta": 15
+      },
+      {
+        "nombre": "Ofimática",
+        "desde": 16,
+        "hasta": 21
+      }
+    ],
     "sims": [
       {
         "id": "simulacro",
@@ -296,6 +308,23 @@
         29,
         "Psicotécnicos"
       ]
+    ],
+    "bloques": [
+      {
+        "nombre": "Legislación",
+        "desde": 1,
+        "hasta": 20
+      },
+      {
+        "nombre": "Ofimática",
+        "desde": 21,
+        "hasta": 28
+      },
+      {
+        "nombre": "Psicotécnicos",
+        "desde": 29,
+        "hasta": 29
+      }
     ],
     "sims": [
       {
