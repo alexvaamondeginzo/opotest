@@ -56,7 +56,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
    - la correcta debe ser la más larga, la 2.ª, la 3.ª y la más corta en torno al 25 % cada una;
    - ninguna estrategia tonta («la más larga sin absolutos», etc.) debe pasar del 35 %;
    - los absolutos («siempre», «nunca», «solo») tienen que aparecer también en respuestas correctas.
-   Medición actual: Madrid, la más larga es la correcta en un 27 % y la mejor estrategia tonta acierta un 34 %. Estado, 38 % contando empates (los psicotécnicos tienen muchas opciones numéricas de igual longitud; con desempate al azar, 22 %) y 32 %.
+   Medición actual: Madrid, la más larga es la correcta en un 26 % y la mejor estrategia tonta acierta un 34 %. Estado, 38 % contando empates (los psicotécnicos tienen muchas opciones numéricas de igual longitud; con desempate al azar, 22 %) y 32 %.
 3. Sin distractores de relleno («Ninguna», opciones absurdas). Los distractores son plazos, órganos o mayorías cercanos al correcto, con plazos por encima y por debajo del real.
 4. Reparto equilibrado entre temas, como piden las bases de cada convocatoria (los simulacros usan `equilibrar` y `cupos`).
 5. No usar temarios de academias (tienen derechos de autor). Solo programa oficial, legislación y exámenes oficiales.
@@ -71,7 +71,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 ## Estado y pendientes
 
-- [x] Banco de Madrid: 1.224 preguntas de los 21 temas, con distractores reescritos contra las pistas de forma.
+- [x] Banco de Madrid: 1.265 preguntas de los 21 temas, con distractores reescritos contra las pistas de forma. Las nuevas se escriben en `madrid/nNN.json` (mismo formato que `age/nNN.json`) y se añaden con `python3 madrid/anadir.py madrid/nNN.json`, que reparte la posición de la correcta sin tocar las publicadas.
 - [x] Banco del Estado: 1.984 preguntas. 795 vienen de Madrid, 572 son nuevas comprobadas con el BOE y 617 son psicotécnicos generados por código (`age/psico.py`; los verbales, revisados a mano).
 - [x] Backend: Supabase con RLS, cuentas, progreso sincronizado, panel de administración y webhook de Stripe.
 - [x] Fusión de las dos versiones (pull request #1, ya en `main`). De la versión de Alex se han traído:
@@ -113,6 +113,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Temas flojos de Madrid ampliados (+41, comprobadas en el BOE): tema 4 (50, Código Civil arts. 1-7), 13 (47, Ley 15/2022), 14 (41, Leyes 39 y 40/2015 de administración electrónica) y 15 (42, registro y documentos de la Ley 39/2015). Nuevo `madrid/anadir.py`.
 - 24/11/2026 · Edu · Vigencia: nota de la LO 1/2025 (Juzgados → Secciones de los Tribunales de Instancia desde el 31/12/2025) en las 7 preguntas de la Ley 29/1998 que hablan de Juzgados, en los dos bancos y en Supabase.
 - 25/11/2026 · Edu · Temas 17, 18, 21, 22 y 28 del Estado ampliados (+65, RD 951/2005, RD 208/1996 y LO 4/2001 comprobados en el BOE). Cargadas en Supabase 4 preguntas de Madrid (tema 4) que faltaban. Permiso de lectura de `precios` (la web no podía leerlos). Enlaces a las normas de Madrid en `NORMAS`.
 - 24/11/2026 · Edu · Psicotécnicos ajustados a los exámenes oficiales de 2024-2025: fuera conteo y pares de códigos (no salen); nuevas tablas de caso práctico (archivo, cursos, claves de registro), definiciones, ecuaciones, signos, probabilidad y códigos binarios. Total 617.

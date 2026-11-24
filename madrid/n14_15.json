@@ -1,0 +1,242 @@
+[
+ [
+  14,
+  "Según la Ley 40/2015, el titular de la sede electrónica responde de:",
+  "La integridad, veracidad y actualización de la información y los servicios a los que pueda accederse a través de ella",
+  [
+   "La integridad de la información publicada, mientras que su actualización y la de los servicios corresponde al proveedor tecnológico contratado",
+   "Únicamente de la disponibilidad técnica de la sede durante el horario de atención presencial",
+   "La veracidad de la información publicada en el portal, pero no de los servicios electrónicos de la sede"
+  ],
+  "Art. 38.2 Ley 40/2015",
+  "El titular de la sede responde de la integridad, veracidad y actualización de la información y los servicios accesibles a través de ella."
+ ],
+ [
+  14,
+  "Para identificarse y garantizar una comunicación segura, las sedes electrónicas utilizan:",
+  "Certificados cualificados de autenticación de sitio web o medio equivalente",
+  [
+   "El código seguro de verificación del órgano titular de la sede",
+   "Un sello de tiempo cualificado emitido por la Fábrica Nacional de Moneda y Timbre-Real Casa de la Moneda",
+   "La firma electrónica personal de la persona titular del órgano"
+  ],
+  "Art. 38.6 Ley 40/2015",
+  "El art. 38.6 prevé certificados reconocidos o cualificados de autenticación de sitio web o un medio equivalente."
+ ],
+ [
+  14,
+  "Según el art. 40 de la Ley 40/2015, las Administraciones Públicas pueden identificarse mediante:",
+  "Un sello electrónico basado en un certificado electrónico reconocido o cualificado",
+  [
+   "La firma electrónica personal del titular del departamento ministerial o de la consejería, de forma exclusiva",
+   "Un código seguro de verificación generado por el propio interesado",
+   "El número de identificación profesional de cada uno de sus empleados"
+  ],
+  "Art. 40.1 Ley 40/2015",
+  "El sello electrónico se basa en un certificado reconocido o cualificado que incluye el NIF y la denominación de la Administración."
+ ],
+ [
+  14,
+  "Respecto de la información que publique como propia en su portal de internet, la Administración:",
+  "Se entiende identificada",
+  [
+   "Debe identificarse además con la firma electrónica cualificada del órgano",
+   "Solo se entiende identificada si incorpora un código seguro de verificación",
+   "Debe indicar el nombre del empleado público que elaboró la información"
+  ],
+  "Art. 40.1 Ley 40/2015",
+  "Se entenderá identificada la Administración respecto de la información que publique como propia en su portal de internet."
+ ],
+ [
+  14,
+  "En la actuación administrativa automatizada, cada Administración puede determinar como sistema de firma:",
+  "Un sello electrónico o un código seguro de verificación vinculado a la Administración",
+  [
+   "Solo la firma electrónica cualificada de la persona titular del órgano",
+   "La firma manuscrita digitalizada del empleado que supervisa el sistema",
+   "El certificado de autenticación de sitio web de la sede electrónica"
+  ],
+  "Art. 42 Ley 40/2015",
+  "El art. 42 permite el sello electrónico de Administración, órgano u organismo, o el código seguro de verificación."
+ ],
+ [
+  14,
+  "El código seguro de verificación (CSV) permite en todo caso:",
+  "Comprobar la integridad del documento mediante el acceso a la sede electrónica correspondiente",
+  [
+   "Identificar al empleado público que tramitó el expediente, su puesto de trabajo y el órgano al que está adscrito",
+   "Prorrogar durante cinco años la validez del documento al que se vincula",
+   "Sustituir la firma del interesado en las solicitudes que presente por registro"
+  ],
+  "Art. 42 b) Ley 40/2015",
+  "El CSV vinculado a la Administración permite en todo caso la comprobación de la integridad del documento accediendo a la sede."
+ ],
+ [
+  14,
+  "Por razones de seguridad pública, los sistemas de firma electrónica del personal al servicio de la Administración:",
+  "Podrán referirse solo al número de identificación profesional del empleado público",
+  [
+   "Podrán omitir cualquier dato que identifique al empleado público y a su órgano",
+   "Deberán incluir siempre el nombre, los apellidos y el número del DNI del empleado público que firma la actuación",
+   "Solo podrán utilizarse previa autorización judicial en cada procedimiento"
+  ],
+  "Art. 43.2 Ley 40/2015",
+  "Por razones de seguridad pública, los sistemas de firma pueden referirse solo al número de identificación profesional del empleado."
+ ],
+ [
+  14,
+  "Si los participantes en un entorno cerrado de comunicación pertenecen a distintas Administraciones, las condiciones y garantías se fijan:",
+  "Mediante convenio",
+  [
+   "Por orden del ministerio competente en materia de función pública",
+   "Por decisión del órgano emisor de los datos, sin más requisitos",
+   "Mediante real decreto aprobado por el Consejo de Ministros"
+  ],
+  "Art. 44.3 Ley 40/2015",
+  "Entre distintas Administraciones, las condiciones y garantías del entorno cerrado se establecen mediante convenio."
+ ],
+ [
+  14,
+  "Según el art. 46 de la Ley 40/2015, los documentos utilizados en las actuaciones administrativas se almacenan:",
+  "Por medios electrónicos, salvo cuando no sea posible",
+  [
+   "En papel y en soporte electrónico, siempre por duplicado",
+   "En soporte electrónico solo si lo solicita el interesado",
+   "Por medios electrónicos durante cinco años y después en papel"
+  ],
+  "Art. 46.1 Ley 40/2015",
+  "Todos los documentos utilizados en las actuaciones administrativas se almacenan por medios electrónicos, salvo cuando no sea posible."
+ ],
+ [
+  14,
+  "Si un interesado no obligado a relacionarse electrónicamente carece de los medios necesarios, su firma electrónica puede realizarla:",
+  "Un funcionario habilitado, si el interesado se identifica ante él y presta su consentimiento expreso",
+  [
+   "Cualquier empleado público de la oficina, sin necesidad de consentimiento expreso del interesado",
+   "Un familiar del interesado, previa presentación de una declaración responsable",
+   "Un funcionario habilitado, pero solo en los procedimientos que se inician de oficio"
+  ],
+  "Art. 12.2 Ley 39/2015",
+  "El funcionario firma con su propio sistema; el interesado debe identificarse y prestar consentimiento expreso, del que queda constancia."
+ ],
+ [
+  14,
+  "Los funcionarios habilitados para la identificación o firma de los interesados que no disponen de medios electrónicos constan en:",
+  "Un registro u otro sistema equivalente que cada Administración mantiene actualizado",
+  [
+   "El Registro Central de Personal, en una sección específica de firma electrónica",
+   "El registro electrónico de apoderamientos de la Administración correspondiente",
+   "Un listado único estatal publicado en la sede electrónica del Ministerio para la Transformación Digital y de la Función Pública"
+  ],
+  "Art. 12.3 Ley 39/2015",
+  "La AGE, las CCAA y las Entidades Locales mantienen actualizado un registro u otro sistema equivalente de funcionarios habilitados."
+ ],
+ [
+  14,
+  "La obligación de relacionarse electrónicamente con la Administración para ciertos colectivos de personas físicas puede establecerse:",
+  "Reglamentariamente, si queda acreditado que tienen acceso y disponibilidad de los medios electrónicos",
+  [
+   "Solo por ley y únicamente para los profesionales que estén colegiados",
+   "Por resolución del órgano instructor en cada procedimiento concreto",
+   "Reglamentariamente, para cualquier persona física mayor de edad"
+  ],
+  "Art. 14.3 Ley 39/2015",
+  "Puede imponerse por reglamento a colectivos que, por capacidad económica, técnica o dedicación profesional, tengan acceso a esos medios."
+ ],
+ [
+  14,
+  "Si la Administración no envía el aviso al dispositivo o correo electrónico del interesado de que tiene una notificación electrónica:",
+  "La notificación puede considerarse plenamente válida",
+  [
+   "La notificación es nula y debe practicarse de nuevo",
+   "La notificación debe repetirse en papel en el domicilio",
+   "El plazo para acceder a la notificación se amplía diez días"
+  ],
+  "Art. 41.6 Ley 39/2015",
+  "La falta de práctica del aviso no impide que la notificación sea considerada plenamente válida."
+ ],
+ [
+  15,
+  "Tras presentar un documento en el registro electrónico se emite automáticamente:",
+  "Un recibo con copia autenticada del documento, fecha y hora de presentación y número de entrada",
+  [
+   "Una resolución de admisión a trámite firmada por el órgano competente para resolver, con indicación del plazo máximo para hacerlo",
+   "Un justificante sin fecha, que se completa el primer día hábil siguiente",
+   "Un código para consultar el expediente, sin copia del documento presentado"
+  ],
+  "Art. 16.3 Ley 39/2015",
+  "El registro emite automáticamente un recibo consistente en una copia autenticada del documento, con fecha, hora y número de entrada."
+ ],
+ [
+  15,
+  "Una vez digitalizados por la oficina de asistencia, los documentos originales presentados presencialmente:",
+  "Se devuelven al interesado, salvo que una norma determine su custodia por la Administración",
+  [
+   "Se destruyen una vez transcurridos quince días hábiles desde su presentación",
+   "Se remiten siempre al archivo central de la consejería que tramita el expediente, para su custodia hasta que se dicte la resolución",
+   "Se conservan en la oficina de asistencia durante un año y después se devuelven"
+  ],
+  "Art. 16.5 Ley 39/2015",
+  "Los originales se devuelven al interesado, sin perjuicio de los supuestos en que la norma determine la custodia por la Administración."
+ ],
+ [
+  15,
+  "Las Administraciones deben hacer pública y mantener actualizada:",
+  "Una relación de las oficinas en las que se presta asistencia para la presentación electrónica de documentos",
+  [
+   "La lista de los interesados que han presentado documentos en papel durante el último año",
+   "Una relación de los documentos que no pueden presentarse en el registro electrónico",
+   "La lista de los funcionarios que digitalizan documentos en cada oficina"
+  ],
+  "Art. 16.7 Ley 39/2015",
+  "El art. 16.7 obliga a publicar y actualizar la relación de oficinas de asistencia en materia de registros."
+ ],
+ [
+  15,
+  "Los documentos electrónicos deben conservarse en un formato que permita garantizar:",
+  "Su autenticidad, integridad y conservación, y su consulta con independencia del tiempo transcurrido",
+  [
+   "Su consulta durante los cinco años siguientes a la finalización del procedimiento, plazo tras el cual pueden eliminarse sin más trámite",
+   "Su integridad mientras el procedimiento esté en tramitación, pero no después",
+   "Su conversión obligatoria a papel cuando el procedimiento termine"
+  ],
+  "Art. 17.2 Ley 39/2015",
+  "El art. 17.2 exige un formato que garantice autenticidad, integridad y conservación, y la consulta sin importar el tiempo transcurrido."
+ ],
+ [
+  15,
+  "Con carácter general, ¿pueden las Administraciones exigir a los interesados la presentación de documentos originales?",
+  "No, salvo que excepcionalmente la normativa reguladora aplicable establezca lo contrario",
+  [
+   "Sí, siempre que el procedimiento se haya iniciado a solicitud del interesado",
+   "Sí, en todo caso, cuando se trate de documentos de carácter público",
+   "No, en ningún caso, ni siquiera cuando lo establezca una norma reguladora"
+  ],
+  "Art. 28.3 Ley 39/2015",
+  "Las Administraciones no exigen originales, salvo que con carácter excepcional la normativa aplicable establezca lo contrario."
+ ],
+ [
+  15,
+  "Si existen dudas derivadas de la calidad de la copia aportada por el interesado, la Administración puede:",
+  "Solicitar de manera motivada el cotejo de la copia, requiriendo la exhibición del original",
+  [
+   "Inadmitir la solicitud sin más trámite, por falta de un requisito esencial",
+   "Exigir que el interesado aporte en el plazo de un mes una copia compulsada por notario o por el secretario de un ayuntamiento",
+   "Tener la copia por no presentada y archivar el procedimiento de oficio"
+  ],
+  "Art. 28.5 Ley 39/2015",
+  "Excepcionalmente, la Administración puede solicitar motivadamente el cotejo y requerir la exhibición del documento original."
+ ],
+ [
+  15,
+  "Según el art. 28.7 de la Ley 39/2015, de la veracidad de los documentos que presentan responden:",
+  "Los interesados",
+  [
+   "La oficina de asistencia que los registra",
+   "El órgano instructor del procedimiento",
+   "El funcionario que digitaliza los documentos"
+  ],
+  "Art. 28.7 Ley 39/2015",
+  "Los interesados se responsabilizarán de la veracidad de los documentos que presenten."
+ ]
+]

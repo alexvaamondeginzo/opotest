@@ -7,7 +7,7 @@ Web de tests de oposiciones en la que cada respuesta cita el artículo exacto y 
 ## Qué incluye
 
 - **Dos oposiciones disponibles**, con un selector:
-  - Auxiliar Administrativo de la Comunidad de Madrid (C2): 1.224 preguntas de los 21 temas.
+  - Auxiliar Administrativo de la Comunidad de Madrid (C2): 1.265 preguntas de los 21 temas.
   - Auxiliar Administrativo del Estado (C2): 1.441 preguntas de los 28 temas y psicotécnicos.
 - **Ocho oposiciones «Próximamente»** con lista de espera (TCAE SERMAS, TCAI ICS, TCAE SERGAS, Administrativo de Navarra, Auxiliar de Canarias, Osakidetza, Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid).
 - **Práctica por temas** con corrección y explicación al momento, y un enlace a la norma en el BOE.

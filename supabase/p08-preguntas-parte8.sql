@@ -1,6 +1,5 @@
 -- Banco de preguntas, parte 8 de 8. Ejecútalo en Supabase → SQL Editor DESPUÉS de 1-configuracion.sql y 8-oposiciones.sql.
 insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
-('aux-age:29-41fc255e61','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Oliver, Osorio, Olmo, Olmedo, Otero, Orozco','["Oliver", "Olmo", "Olmedo", "Osorio"]'::jsonb,2,'Psicotécnicos','Orden alfabético: Oliver, Olmedo, Olmo, Orozco, Osorio, Otero. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-9c5c4f2293','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Garcés, Galán, Gallego, Garzón, Gascón, García','["Galán", "Garcés", "Garzón", "Gallego"]'::jsonb,3,'Psicotécnicos','Orden alfabético: Galán, Gallego, Garcés, García, Garzón, Gascón. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-6ffc0f286f','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Martínez, Mas, Matas, Marín, Marco, Mármol','["Marco", "Martínez", "Marín", "Mármol"]'::jsonb,3,'Psicotécnicos','Orden alfabético: Marco, Marín, Mármol, Martínez, Mas, Matas. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-fa1ff9f9f2','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Penalva, Peñalver, Pérez, Pena, Pereira, Perea','["Peñalver", "Pereira", "Pérez", "Perea"]'::jsonb,3,'Psicotécnicos','Orden alfabético: Pena, Penalva, Peñalver, Perea, Pereira, Pérez. La tilde no cuenta y la Ñ va después de la N.',null),
@@ -203,10 +202,10 @@ Con esta clave, ¿qué palabra corresponde al código 0585?','["TASA", "ATSA", "
 ('aux-age:29-7e6c024e90','aux-age',29,'Entre dos hermanos suman 39 años y el mayor tiene 3 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["18 años", "17 años", "21 años", "19 años"]'::jsonb,0,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (39 − 3) / 2 = 18 años.',null),
 ('aux-age:29-dcbb5dbd9e','aux-age',29,'Entre dos hermanos suman 68 años y el mayor tiene 8 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["29 años", "30 años", "34 años", "38 años"]'::jsonb,1,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (68 − 8) / 2 = 30 años.',null),
 ('aux-age:29-7e05ebb2b4','aux-age',29,'Entre dos hermanos suman 65 años y el mayor tiene 5 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["32 años", "29 años", "30 años", "35 años"]'::jsonb,2,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (65 − 5) / 2 = 30 años.',null),
-('aux-age:29-4d143a18b7','aux-age',29,'Una impresora se revisa cada 9 días y otra cada 12. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?','["45 días", "108 días", "36 días", "27 días"]'::jsonb,2,'Psicotécnicos','Es el mínimo común múltiplo de 9 y 12: m.c.m.(9, 12) = 36.',null)
+('aux-age:29-4d143a18b7','aux-age',29,'Una impresora se revisa cada 9 días y otra cada 12. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?','["45 días", "108 días", "36 días", "27 días"]'::jsonb,2,'Psicotécnicos','Es el mínimo común múltiplo de 9 y 12: m.c.m.(9, 12) = 36.',null),
+('aux-age:29-64ffe8a85e','aux-age',29,'Una impresora se revisa cada 12 días y otra cada 18. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?','["24 días", "48 días", "216 días", "36 días"]'::jsonb,3,'Psicotécnicos','Es el mínimo común múltiplo de 12 y 18: m.c.m.(12, 18) = 36.',null)
 on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
 insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
-('aux-age:29-64ffe8a85e','aux-age',29,'Una impresora se revisa cada 12 días y otra cada 18. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?','["24 días", "48 días", "216 días", "36 días"]'::jsonb,3,'Psicotécnicos','Es el mínimo común múltiplo de 12 y 18: m.c.m.(12, 18) = 36.',null),
 ('aux-age:29-772072e1e4','aux-age',29,'Una impresora se revisa cada 14 días y otra cada 21. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?','["28 días", "294 días", "56 días", "42 días"]'::jsonb,3,'Psicotécnicos','Es el mínimo común múltiplo de 14 y 21: m.c.m.(14, 21) = 42.',null),
 ('aux-age:29-fb473362cf','aux-age',29,'Una impresora se revisa cada 15 días y otra cada 20. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?','["300 días", "75 días", "60 días", "45 días"]'::jsonb,2,'Psicotécnicos','Es el mínimo común múltiplo de 15 y 20: m.c.m.(15, 20) = 60.',null),
 ('aux-age:29-6223a4b6a5','aux-age',29,'Una impresora se revisa cada 6 días y otra cada 10. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?','["60 días", "36 días", "24 días", "30 días"]'::jsonb,3,'Psicotécnicos','Es el mínimo común múltiplo de 6 y 10: m.c.m.(6, 10) = 30.',null),
@@ -1117,9 +1116,7 @@ Cultura | 5
 Personal | 6
 Hacienda | 2
 Vivienda | 4
-¿Qué clave lleva una factura de Vivienda de 2026?','["R4-26", "F4-26", "F5-26", "F4-27"]'::jsonb,1,'Psicotécnicos','Factura = F; Vivienda = 4; año 2026 → F4-26.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+¿Qué clave lleva una factura de Vivienda de 2026?','["R4-26", "F4-26", "F5-26", "F4-27"]'::jsonb,1,'Psicotécnicos','Factura = F; Vivienda = 4; año 2026 → F4-26.',null),
 ('aux-age:29-768a10a231','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).
 Tipo | Letra
 Factura | F
@@ -1132,7 +1129,9 @@ Cultura | 5
 Personal | 6
 Hacienda | 2
 Vivienda | 4
-¿A qué documento corresponde la clave F5-24?','["Factura de Cultura de 2023", "Factura de Cultura de 2024", "Resolución de Cultura de 2024", "Factura de Personal de 2024"]'::jsonb,1,'Psicotécnicos','F = factura; 5 = Cultura; 24 = 2024.',null),
+¿A qué documento corresponde la clave F5-24?','["Factura de Cultura de 2023", "Factura de Cultura de 2024", "Resolución de Cultura de 2024", "Factura de Personal de 2024"]'::jsonb,1,'Psicotécnicos','F = factura; 5 = Cultura; 24 = 2024.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('aux-age:29-48e389c7fa','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, R8-25 es un documento de tipo resolución de Sanidad de 2025).
 Tipo | Letra
 Resolución | R

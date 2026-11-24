@@ -16065,5 +16065,579 @@ null
 "Art. 24.2 Ley 50/1997",
 "Primero van las disposiciones aprobadas por real decreto del Presidente del Gobierno o acordado en el Consejo de Ministros, y después las aprobadas por orden ministerial.",
 null
+],
+[
+14,
+"Según la Ley 40/2015, el titular de la sede electrónica responde de:",
+[
+"La integridad, veracidad y actualización de la información y los servicios a los que pueda accederse a través de ella",
+"Únicamente de la disponibilidad técnica de la sede durante el horario de atención presencial",
+"La integridad de la información publicada, mientras que su actualización y la de los servicios corresponde al proveedor tecnológico contratado",
+"La veracidad de la información publicada en el portal, pero no de los servicios electrónicos de la sede"
+],
+0,
+"Art. 38.2 Ley 40/2015",
+"El titular de la sede responde de la integridad, veracidad y actualización de la información y los servicios accesibles a través de ella.",
+null
+],
+[
+14,
+"Para identificarse y garantizar una comunicación segura, las sedes electrónicas utilizan:",
+[
+"El código seguro de verificación del órgano titular de la sede",
+"Un sello de tiempo cualificado emitido por la Fábrica Nacional de Moneda y Timbre-Real Casa de la Moneda",
+"Certificados cualificados de autenticación de sitio web o medio equivalente",
+"La firma electrónica personal de la persona titular del órgano"
+],
+2,
+"Art. 38.6 Ley 40/2015",
+"El art. 38.6 prevé certificados reconocidos o cualificados de autenticación de sitio web o un medio equivalente.",
+null
+],
+[
+14,
+"Según el art. 40 de la Ley 40/2015, las Administraciones Públicas pueden identificarse mediante:",
+[
+"La firma electrónica personal del titular del departamento ministerial o de la consejería, de forma exclusiva",
+"Un código seguro de verificación generado por el propio interesado",
+"Un sello electrónico basado en un certificado electrónico reconocido o cualificado",
+"El número de identificación profesional de cada uno de sus empleados"
+],
+2,
+"Art. 40.1 Ley 40/2015",
+"El sello electrónico se basa en un certificado reconocido o cualificado que incluye el NIF y la denominación de la Administración.",
+null
+],
+[
+14,
+"Respecto de la información que publique como propia en su portal de internet, la Administración:",
+[
+"Se entiende identificada",
+"Debe identificarse además con la firma electrónica cualificada del órgano",
+"Solo se entiende identificada si incorpora un código seguro de verificación",
+"Debe indicar el nombre del empleado público que elaboró la información"
+],
+0,
+"Art. 40.1 Ley 40/2015",
+"Se entenderá identificada la Administración respecto de la información que publique como propia en su portal de internet.",
+null
+],
+[
+14,
+"En la actuación administrativa automatizada, cada Administración puede determinar como sistema de firma:",
+[
+"El certificado de autenticación de sitio web de la sede electrónica",
+"Solo la firma electrónica cualificada de la persona titular del órgano",
+"La firma manuscrita digitalizada del empleado que supervisa el sistema",
+"Un sello electrónico o un código seguro de verificación vinculado a la Administración"
+],
+3,
+"Art. 42 Ley 40/2015",
+"El art. 42 permite el sello electrónico de Administración, órgano u organismo, o el código seguro de verificación.",
+null
+],
+[
+14,
+"El código seguro de verificación (CSV) permite en todo caso:",
+[
+"Prorrogar durante cinco años la validez del documento al que se vincula",
+"Comprobar la integridad del documento mediante el acceso a la sede electrónica correspondiente",
+"Identificar al empleado público que tramitó el expediente, su puesto de trabajo y el órgano al que está adscrito",
+"Sustituir la firma del interesado en las solicitudes que presente por registro"
+],
+1,
+"Art. 42 b) Ley 40/2015",
+"El CSV vinculado a la Administración permite en todo caso la comprobación de la integridad del documento accediendo a la sede.",
+null
+],
+[
+14,
+"Por razones de seguridad pública, los sistemas de firma electrónica del personal al servicio de la Administración:",
+[
+"Podrán referirse solo al número de identificación profesional del empleado público",
+"Solo podrán utilizarse previa autorización judicial en cada procedimiento",
+"Podrán omitir cualquier dato que identifique al empleado público y a su órgano",
+"Deberán incluir siempre el nombre, los apellidos y el número del DNI del empleado público que firma la actuación"
+],
+0,
+"Art. 43.2 Ley 40/2015",
+"Por razones de seguridad pública, los sistemas de firma pueden referirse solo al número de identificación profesional del empleado.",
+null
+],
+[
+14,
+"Si los participantes en un entorno cerrado de comunicación pertenecen a distintas Administraciones, las condiciones y garantías se fijan:",
+[
+"Por orden del ministerio competente en materia de función pública",
+"Mediante real decreto aprobado por el Consejo de Ministros",
+"Mediante convenio",
+"Por decisión del órgano emisor de los datos, sin más requisitos"
+],
+2,
+"Art. 44.3 Ley 40/2015",
+"Entre distintas Administraciones, las condiciones y garantías del entorno cerrado se establecen mediante convenio.",
+null
+],
+[
+14,
+"Según el art. 46 de la Ley 40/2015, los documentos utilizados en las actuaciones administrativas se almacenan:",
+[
+"En soporte electrónico solo si lo solicita el interesado",
+"En papel y en soporte electrónico, siempre por duplicado",
+"Por medios electrónicos durante cinco años y después en papel",
+"Por medios electrónicos, salvo cuando no sea posible"
+],
+3,
+"Art. 46.1 Ley 40/2015",
+"Todos los documentos utilizados en las actuaciones administrativas se almacenan por medios electrónicos, salvo cuando no sea posible.",
+null
+],
+[
+14,
+"Si un interesado no obligado a relacionarse electrónicamente carece de los medios necesarios, su firma electrónica puede realizarla:",
+[
+"Cualquier empleado público de la oficina, sin necesidad de consentimiento expreso del interesado",
+"Un funcionario habilitado, si el interesado se identifica ante él y presta su consentimiento expreso",
+"Un funcionario habilitado, pero solo en los procedimientos que se inician de oficio",
+"Un familiar del interesado, previa presentación de una declaración responsable"
+],
+1,
+"Art. 12.2 Ley 39/2015",
+"El funcionario firma con su propio sistema; el interesado debe identificarse y prestar consentimiento expreso, del que queda constancia.",
+null
+],
+[
+14,
+"Los funcionarios habilitados para la identificación o firma de los interesados que no disponen de medios electrónicos constan en:",
+[
+"Un registro u otro sistema equivalente que cada Administración mantiene actualizado",
+"El Registro Central de Personal, en una sección específica de firma electrónica",
+"Un listado único estatal publicado en la sede electrónica del Ministerio para la Transformación Digital y de la Función Pública",
+"El registro electrónico de apoderamientos de la Administración correspondiente"
+],
+0,
+"Art. 12.3 Ley 39/2015",
+"La AGE, las CCAA y las Entidades Locales mantienen actualizado un registro u otro sistema equivalente de funcionarios habilitados.",
+null
+],
+[
+14,
+"La obligación de relacionarse electrónicamente con la Administración para ciertos colectivos de personas físicas puede establecerse:",
+[
+"Reglamentariamente, para cualquier persona física mayor de edad",
+"Por resolución del órgano instructor en cada procedimiento concreto",
+"Reglamentariamente, si queda acreditado que tienen acceso y disponibilidad de los medios electrónicos",
+"Solo por ley y únicamente para los profesionales que estén colegiados"
+],
+2,
+"Art. 14.3 Ley 39/2015",
+"Puede imponerse por reglamento a colectivos que, por capacidad económica, técnica o dedicación profesional, tengan acceso a esos medios.",
+null
+],
+[
+14,
+"Si la Administración no envía el aviso al dispositivo o correo electrónico del interesado de que tiene una notificación electrónica:",
+[
+"La notificación es nula y debe practicarse de nuevo",
+"La notificación puede considerarse plenamente válida",
+"La notificación debe repetirse en papel en el domicilio",
+"El plazo para acceder a la notificación se amplía diez días"
+],
+1,
+"Art. 41.6 Ley 39/2015",
+"La falta de práctica del aviso no impide que la notificación sea considerada plenamente válida.",
+null
+],
+[
+15,
+"Tras presentar un documento en el registro electrónico se emite automáticamente:",
+[
+"Un recibo con copia autenticada del documento, fecha y hora de presentación y número de entrada",
+"Una resolución de admisión a trámite firmada por el órgano competente para resolver, con indicación del plazo máximo para hacerlo",
+"Un justificante sin fecha, que se completa el primer día hábil siguiente",
+"Un código para consultar el expediente, sin copia del documento presentado"
+],
+0,
+"Art. 16.3 Ley 39/2015",
+"El registro emite automáticamente un recibo consistente en una copia autenticada del documento, con fecha, hora y número de entrada.",
+null
+],
+[
+15,
+"Una vez digitalizados por la oficina de asistencia, los documentos originales presentados presencialmente:",
+[
+"Se remiten siempre al archivo central de la consejería que tramita el expediente, para su custodia hasta que se dicte la resolución",
+"Se destruyen una vez transcurridos quince días hábiles desde su presentación",
+"Se conservan en la oficina de asistencia durante un año y después se devuelven",
+"Se devuelven al interesado, salvo que una norma determine su custodia por la Administración"
+],
+3,
+"Art. 16.5 Ley 39/2015",
+"Los originales se devuelven al interesado, sin perjuicio de los supuestos en que la norma determine la custodia por la Administración.",
+null
+],
+[
+15,
+"Las Administraciones deben hacer pública y mantener actualizada:",
+[
+"La lista de los funcionarios que digitalizan documentos en cada oficina",
+"La lista de los interesados que han presentado documentos en papel durante el último año",
+"Una relación de las oficinas en las que se presta asistencia para la presentación electrónica de documentos",
+"Una relación de los documentos que no pueden presentarse en el registro electrónico"
+],
+2,
+"Art. 16.7 Ley 39/2015",
+"El art. 16.7 obliga a publicar y actualizar la relación de oficinas de asistencia en materia de registros.",
+null
+],
+[
+15,
+"Los documentos electrónicos deben conservarse en un formato que permita garantizar:",
+[
+"Su autenticidad, integridad y conservación, y su consulta con independencia del tiempo transcurrido",
+"Su consulta durante los cinco años siguientes a la finalización del procedimiento, plazo tras el cual pueden eliminarse sin más trámite",
+"Su conversión obligatoria a papel cuando el procedimiento termine",
+"Su integridad mientras el procedimiento esté en tramitación, pero no después"
+],
+0,
+"Art. 17.2 Ley 39/2015",
+"El art. 17.2 exige un formato que garantice autenticidad, integridad y conservación, y la consulta sin importar el tiempo transcurrido.",
+null
+],
+[
+15,
+"Con carácter general, ¿pueden las Administraciones exigir a los interesados la presentación de documentos originales?",
+[
+"Sí, siempre que el procedimiento se haya iniciado a solicitud del interesado",
+"Sí, en todo caso, cuando se trate de documentos de carácter público",
+"No, en ningún caso, ni siquiera cuando lo establezca una norma reguladora",
+"No, salvo que excepcionalmente la normativa reguladora aplicable establezca lo contrario"
+],
+3,
+"Art. 28.3 Ley 39/2015",
+"Las Administraciones no exigen originales, salvo que con carácter excepcional la normativa aplicable establezca lo contrario.",
+null
+],
+[
+15,
+"Si existen dudas derivadas de la calidad de la copia aportada por el interesado, la Administración puede:",
+[
+"Tener la copia por no presentada y archivar el procedimiento de oficio",
+"Exigir que el interesado aporte en el plazo de un mes una copia compulsada por notario o por el secretario de un ayuntamiento",
+"Solicitar de manera motivada el cotejo de la copia, requiriendo la exhibición del original",
+"Inadmitir la solicitud sin más trámite, por falta de un requisito esencial"
+],
+2,
+"Art. 28.5 Ley 39/2015",
+"Excepcionalmente, la Administración puede solicitar motivadamente el cotejo y requerir la exhibición del documento original.",
+null
+],
+[
+15,
+"Según el art. 28.7 de la Ley 39/2015, de la veracidad de los documentos que presentan responden:",
+[
+"El funcionario que digitaliza los documentos",
+"Los interesados",
+"El órgano instructor del procedimiento",
+"La oficina de asistencia que los registra"
+],
+1,
+"Art. 28.7 Ley 39/2015",
+"Los interesados se responsabilizarán de la veracidad de los documentos que presenten.",
+null
+],
+[
+13,
+"Según la Ley 15/2022, la discriminación por asociación se produce cuando una persona es tratada de modo discriminatorio:",
+[
+"Debido a su relación con otra persona sobre la que concurra alguna de las causas de discriminación previstas en la ley",
+"Por concurrir en ella dos o más de las causas de discriminación previstas en la ley, de manera simultánea o consecutiva",
+"Por una apreciación incorrecta acerca de las características de la propia persona discriminada",
+"Por pertenecer a una asociación que defiende los derechos de un colectivo protegido por la ley"
+],
+0,
+"Art. 6.2 a) Ley 15/2022",
+"Hay discriminación por asociación cuando se discrimina a alguien por su relación con otra persona en la que concurre una causa de discriminación.",
+null
+],
+[
+13,
+"La discriminación por error, según la Ley 15/2022, es la que se funda en:",
+[
+"La relación de la persona discriminada con otra persona en la que concurre alguna de las causas de discriminación",
+"Una apreciación incorrecta acerca de las características de la persona discriminada",
+"La interacción de varios motivos que genera una forma específica de discriminación",
+"Una disposición aparentemente neutra que ocasiona una desventaja particular"
+],
+1,
+"Art. 6.2 b) Ley 15/2022",
+"La discriminación por error es la que se funda en una apreciación incorrecta acerca de las características de la persona.",
+null
+],
+[
+13,
+"Cuando una persona es discriminada de manera simultánea o consecutiva por dos o más causas de las previstas en la Ley 15/2022, se produce:",
+[
+"Discriminación interseccional",
+"Discriminación por asociación",
+"Discriminación indirecta",
+"Discriminación múltiple"
+],
+3,
+"Art. 6.3 a) Ley 15/2022",
+"Es discriminación múltiple; la interseccional se da cuando la interacción de varios motivos genera una forma específica de discriminación.",
+null
+],
+[
+13,
+"Según la Ley 15/2022, la denegación de ajustes razonables a las personas con discapacidad se considera:",
+[
+"Discriminación indirecta",
+"Una infracción leve sin efecto discriminatorio",
+"Discriminación directa",
+"Discriminación por error"
+],
+2,
+"Art. 6.1 a) Ley 15/2022",
+"El art. 6.1 a) considera discriminación directa la denegación de ajustes razonables a las personas con discapacidad.",
+null
+],
+[
+13,
+"En la Ley 15/2022, cuando la parte actora aporta indicios fundados de discriminación, corresponde a la parte demandada:",
+[
+"Solicitar un informe preceptivo de la Autoridad Independiente antes de contestar",
+"Probar que la parte actora no pertenece a ninguno de los colectivos protegidos por la ley",
+"Nada, porque la carga de la prueba corresponde siempre a quien alega la discriminación",
+"Aportar una justificación objetiva y razonable, suficientemente probada, de las medidas adoptadas"
+],
+3,
+"Art. 30.1 Ley 15/2022",
+"Es la regla de la carga de la prueba del art. 30.1, que no se aplica a los procesos penales ni a los procedimientos administrativos sancionadores.",
+null
+],
+[
+13,
+"La regla de la Ley 15/2022 sobre la carga de la prueba en casos de discriminación NO se aplica:",
+[
+"A los procedimientos que se inicien de oficio o a instancia de la Autoridad Independiente para la Igualdad de Trato",
+"A los procesos penales ni a los procedimientos administrativos sancionadores",
+"A los procesos laborales ni a los contencioso-administrativos",
+"A los procesos civiles en los que se reclame una indemnización"
+],
+1,
+"Art. 30.3 Ley 15/2022",
+"El art. 30.3 excluye los procesos penales y los procedimientos administrativos sancionadores, entre otros.",
+null
+],
+[
+13,
+"Según la Ley 15/2022, acreditada la discriminación:",
+[
+"Se presume la existencia de daño moral",
+"La indemnización se limita a los daños materiales probados",
+"La víctima debe probar en todo caso el daño moral sufrido",
+"Se impone siempre una sanción muy grave al responsable"
+],
+0,
+"Art. 27.1 Ley 15/2022",
+"El art. 27.1 establece que, acreditada la discriminación, se presume la existencia de daño moral.",
+null
+],
+[
+13,
+"La persona titular de la Presidencia de la Autoridad Independiente para la Igualdad de Trato y la No Discriminación tiene un mandato de:",
+[
+"Cuatro años, renovable una sola vez",
+"Cinco años, renovable una sola vez",
+"Cinco años, no renovable",
+"Seis años, no renovable"
+],
+2,
+"Art. 41.4 Ley 15/2022",
+"La nombra el Gobierno por real decreto, tras comparecer ante el Congreso y el Senado, para un mandato de cinco años no renovable.",
+null
+],
+[
+13,
+"En la Ley 15/2022, las infracciones muy graves se sancionan con multa de:",
+[
+"60.001 a 1.000.000 de euros",
+"10.001 a 40.000 euros",
+"40.001 a 300.000 euros",
+"40.001 a 500.000 euros"
+],
+3,
+"Art. 48 Ley 15/2022",
+"Leves, de 300 a 10.000 euros; graves, de 10.001 a 40.000 euros; muy graves, de 40.001 a 500.000 euros.",
+null
+],
+[
+13,
+"Según la Ley 15/2022, las infracciones graves prescriben a los:",
+[
+"Dos años",
+"Tres años",
+"Cinco años",
+"Cuatro años"
+],
+1,
+"Art. 51 Ley 15/2022",
+"Las infracciones leves prescriben al año, las graves a los tres años y las muy graves a los cuatro años.",
+null
+],
+[
+4,
+"Según el Código Civil, las normas jurídicas contenidas en los tratados internacionales serán de aplicación directa en España:",
+[
+"Cuando hayan pasado a formar parte del ordenamiento interno mediante su publicación íntegra en el BOE",
+"Desde su ratificación por el Rey, aunque la publicación en el BOE sea solo de un extracto",
+"Desde su firma por el Gobierno, aunque todavía no se hayan publicado en ningún diario oficial",
+"A los veinte días de su publicación en el Diario Oficial de la Unión Europea, en todo caso"
+],
+0,
+"Art. 1.5 CC",
+"El art. 1.5 CC exige que hayan pasado a formar parte del ordenamiento interno mediante su publicación íntegra en el BOE.",
+null
+],
+[
+4,
+"Según el art. 3.1 del Código Civil, las normas se interpretarán atendiendo fundamentalmente a:",
+[
+"Su sentido literal",
+"Sus antecedentes históricos",
+"Su espíritu y finalidad",
+"La realidad social del momento en que se aprobaron"
+],
+2,
+"Art. 3.1 CC",
+"Se atiende al sentido de las palabras, el contexto, los antecedentes y la realidad social, pero fundamentalmente al espíritu y finalidad.",
+null
+],
+[
+4,
+"Según el Código Civil, las resoluciones de los tribunales solo podrán descansar de manera exclusiva en la equidad:",
+[
+"Cuando no exista costumbre aplicable al caso",
+"Cuando las partes lo soliciten de común acuerdo",
+"Cuando la ley expresamente lo permita",
+"En los asuntos de cuantía inferior a 6.000 euros"
+],
+2,
+"Art. 3.2 CC",
+"La equidad se pondera en la aplicación de las normas, pero las resoluciones solo pueden basarse exclusivamente en ella cuando la ley lo permita.",
+null
+],
+[
+4,
+"Procede la aplicación analógica de las normas cuando estas no contemplen un supuesto específico, pero regulen otro semejante:",
+[
+"Siempre que se trate de normas penales o sancionadoras",
+"Aunque no exista identidad de razón entre ambos",
+"Solo si así lo acuerda la jurisprudencia del Tribunal Supremo",
+"Entre los que se aprecie identidad de razón"
+],
+3,
+"Art. 4.1 CC",
+"El art. 4.1 CC exige que entre el supuesto regulado y el no regulado se aprecie identidad de razón.",
+null
+],
+[
+4,
+"Según el Código Civil, ¿qué leyes NO se aplicarán a supuestos ni en momentos distintos de los comprendidos expresamente en ellas?",
+[
+"Las orgánicas, las ordinarias y los decretos legislativos",
+"Las penales, las excepcionales y las de ámbito temporal",
+"Las de bases, las de armonización y los decretos-leyes",
+"Las autonómicas, las forales y las de régimen local"
+],
+1,
+"Art. 4.2 CC",
+"Las leyes penales, las excepcionales y las de ámbito temporal no admiten aplicación analógica.",
+null
+],
+[
+4,
+"Las disposiciones del Código Civil se aplicarán en las materias regidas por otras leyes:",
+[
+"Como supletorias",
+"Solo en defecto de costumbre",
+"Con carácter preferente",
+"Solo si lo prevé la otra ley"
+],
+0,
+"Art. 4.3 CC",
+"El art. 4.3 CC establece la aplicación supletoria del Código Civil en las materias regidas por otras leyes.",
+null
+],
+[
+4,
+"En el cómputo civil de los plazos, según el Código Civil:",
+[
+"Se excluyen los días inhábiles del mes de agosto",
+"No se excluyen los días inhábiles",
+"Se excluyen los sábados y domingos",
+"Se excluyen solo los días festivos nacionales"
+],
+1,
+"Art. 5.2 CC",
+"A diferencia del cómputo administrativo, en el cómputo civil no se excluyen los días inhábiles.",
+null
+],
+[
+4,
+"La exclusión voluntaria de la ley aplicable y la renuncia a los derechos en ella reconocidos solo serán válidas:",
+[
+"Cuando las autorice previamente el juez del domicilio del renunciante",
+"Cuando consten en documento público otorgado ante notario, en todo caso",
+"Cuando se refieran a derechos patrimoniales de cuantía inferior a 3.000 euros",
+"Cuando no contraríen el interés o el orden público ni perjudiquen a terceros"
+],
+3,
+"Art. 6.2 CC",
+"El art. 6.2 CC solo admite la exclusión o renuncia si no contraría el interés o el orden público ni perjudica a terceros.",
+null
+],
+[
+4,
+"Según el Código Civil, los actos contrarios a las normas imperativas y a las prohibitivas son:",
+[
+"Anulables a instancia de parte durante el plazo de cuatro años desde su celebración",
+"Nulos de pleno derecho en todo caso, sin que la norma pueda prever otro efecto",
+"Nulos de pleno derecho, salvo que en ellas se establezca un efecto distinto para el caso de contravención",
+"Válidos, aunque quien los realiza debe indemnizar los daños y perjuicios causados"
+],
+2,
+"Art. 6.3 CC",
+"Son nulos de pleno derecho, salvo que la norma establezca un efecto distinto para el caso de contravención.",
+null
+],
+[
+4,
+"Los actos realizados al amparo de una norma que persigan un resultado prohibido por el ordenamiento se consideran ejecutados en fraude de ley y:",
+[
+"No impedirán la debida aplicación de la norma que se hubiere tratado de eludir",
+"Serán válidos si la norma de cobertura tiene rango de ley",
+"Darán lugar siempre a responsabilidad penal de sus autores",
+"Producirán efectos hasta que un juez declare su nulidad"
+],
+0,
+"Art. 6.4 CC",
+"El fraude de ley no impide la debida aplicación de la norma que se hubiere tratado de eludir.",
+null
+],
+[
+4,
+"Según el art. 7 del Código Civil, la ley no ampara:",
+[
+"La aplicación supletoria del propio Código Civil",
+"La renuncia a derechos que no perjudique a terceros",
+"El ejercicio de los derechos conforme a la buena fe",
+"El abuso del derecho ni su ejercicio antisocial"
+],
+3,
+"Art. 7.2 CC",
+"El art. 7.2 CC: la ley no ampara el abuso del derecho o su ejercicio antisocial; el art. 7.1 exige ejercitar los derechos conforme a la buena fe.",
+null
 ]
 ]
