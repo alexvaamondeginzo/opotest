@@ -11,6 +11,7 @@ import html, json, os, datetime
 SLUGS = {
     'aux-cm': 'test-auxiliar-administrativo-comunidad-de-madrid',
     'aux-age': 'test-auxiliar-administrativo-del-estado',
+    'aux-ayto-mad': 'test-auxiliar-administrativo-ayuntamiento-de-madrid',
 }
 
 ESTILO = """

@@ -425,7 +425,183 @@
     "corto": "Auxiliar · Ayuntamiento de Madrid",
     "grupo": "C2",
     "ambito": "Ciudad de Madrid",
-    "proximamente": true
+    "eyebrow": "Auxiliar Administrativo · Ayuntamiento de Madrid · C2",
+    "titulo": "Test de legislación y ofimática para la próxima convocatoria",
+    "sub": "Preguntas tipo examen de los 22 temas, con tres opciones como en el examen real y cada una con su explicación: la legislación, con el artículo exacto y comprobada con los textos consolidados del BOE; la ofimática, con Word y Excel de Microsoft 365.",
+    "plazas": 256,
+    "plazasNota": "última convocatoria",
+    "examen": "",
+    "examenOficial": false,
+    "examenTxt": "Por convocar (OEP 2026)",
+    "examenLbl": "Examen",
+    "programa": "Bases específicas (BOAM núm. 9.128, de 29 de abril de 2022), anexo",
+    "temario": [
+      [
+        1,
+        "La Constitución: estructura, principios, derechos y deberes"
+      ],
+      [
+        2,
+        "Organización territorial y entidades locales en la Constitución"
+      ],
+      [
+        3,
+        "Ley 39/2015 (I): disposiciones generales, interesados y acto administrativo"
+      ],
+      [
+        4,
+        "Ley 39/2015 (II): procedimiento y recursos administrativos"
+      ],
+      [
+        5,
+        "Ley 7/1985, de Bases del Régimen Local"
+      ],
+      [
+        6,
+        "Haciendas Locales (I): impuestos"
+      ],
+      [
+        7,
+        "Haciendas Locales (II): tasas, contribuciones especiales y precios públicos"
+      ],
+      [
+        8,
+        "Ley de Capitalidad: competencias"
+      ],
+      [
+        9,
+        "Organización del Ayuntamiento (I): Pleno, Alcalde y Junta de Gobierno"
+      ],
+      [
+        10,
+        "Organización del Ayuntamiento (II): Administración municipal"
+      ],
+      [
+        11,
+        "Organización central: áreas de gobierno y órganos directivos"
+      ],
+      [
+        12,
+        "Organización territorial: los distritos"
+      ],
+      [
+        13,
+        "Ordenanzas y reglamentos locales"
+      ],
+      [
+        14,
+        "Contratos del sector público"
+      ],
+      [
+        15,
+        "Personal al servicio de la Administración (TREBEP)"
+      ],
+      [
+        16,
+        "Igualdad efectiva de mujeres y hombres (LO 3/2007)"
+      ],
+      [
+        17,
+        "Prevención de riesgos laborales (Ley 31/1995)"
+      ],
+      [
+        18,
+        "Registro y archivo"
+      ],
+      [
+        19,
+        "Atención a la ciudadanía"
+      ],
+      [
+        20,
+        "Sugerencias y reclamaciones"
+      ],
+      [
+        21,
+        "Word (Microsoft 365)"
+      ],
+      [
+        22,
+        "Excel (Microsoft 365)"
+      ]
+    ],
+    "bloques": [
+      {
+        "nombre": "Legislación",
+        "desde": 1,
+        "hasta": 20
+      },
+      {
+        "nombre": "Ofimática",
+        "desde": 21,
+        "hasta": 22
+      }
+    ],
+    "sims": [
+      {
+        "id": "ayto-teoria",
+        "nombre": "Simulacro parte teórica",
+        "desc": "Temas 1-20: 70 preguntas en 70 minutos, con tres opciones. Cada fallo resta un tercio.",
+        "n": 70,
+        "min": 70,
+        "ex": 1,
+        "desde": 1,
+        "hasta": 20,
+        "elegirTemas": true,
+        "equilibrar": true
+      },
+      {
+        "id": "ayto-practica",
+        "nombre": "Simulacro parte práctica",
+        "desc": "Ofimática (temas 21-22): 20 preguntas en 40 minutos, con tres opciones. Cada fallo resta un tercio.",
+        "n": 20,
+        "min": 40,
+        "ex": 2,
+        "desde": 21,
+        "hasta": 22,
+        "elegirTemas": false,
+        "equilibrar": true
+      }
+    ],
+    "faqExamen": "Un ejercicio tipo test con dos partes en la misma sesión, y todas las preguntas tienen tres opciones. La parte teórica (temas 1 a 20) tiene 70 preguntas en 70 minutos; la práctica (ofimática, temas 21 y 22), 20 preguntas en 40 minutos. Cada parte se califica de 0 a 10 y hay que sacar al menos 5 en cada una; cada fallo resta un tercio de acierto. En la web la nota sale sobre 50 (25 equivale al 5).",
+    "planes": [
+      {
+        "id": "legislacion",
+        "nombre": "Legislación",
+        "temas": 20,
+        "desc": [
+          "Temas 1 a 20 (parte teórica)",
+          "Simulacros de la parte teórica: 70 preguntas en 70 minutos, con penalización",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "11,99"
+      },
+      {
+        "id": "completo",
+        "nombre": "Completo",
+        "temas": 22,
+        "dest": true,
+        "desc": [
+          "Todo lo de Legislación",
+          "Ofimática: Word y Excel de Microsoft 365 (temas 21 y 22)",
+          "Simulacros de las dos partes, con penalización",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "14,99"
+      }
+    ],
+    "enlaces": [
+      {
+        "t": "Bases específicas de la última convocatoria (PDF)",
+        "u": "https://www.madrid.es/UnidadWeb/Contenidos/Oposiciones/2022/AuxiliarAdministrativoTL/Ficheros/BasesEspecificas.pdf"
+      },
+      {
+        "t": "Examen oficial de noviembre de 2025, modelo C (PDF)",
+        "u": "https://www.madrid.es/UnidadWeb/Contenidos/Oposiciones/2022/AuxiliarAdministrativoTL/Ficheros/256plModeloC.pdf"
+      }
+    ],
+    "enlacesTxt": "Bases y examen de la última convocatoria (256 plazas, examen del 22 de noviembre de 2025). La de la Oferta de Empleo Público de 2026 aún no se ha publicado."
   },
   "tcae-sermas": {
     "nombre": "TCAE · Servicio Madrileño de Salud",

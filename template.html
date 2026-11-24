@@ -915,7 +915,7 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
 <footer class="pie">
   <div class="wrap">
     <img src="oponota.png" alt="__BRAND__" width="107" height="26">
-    <nav aria-label="Oposiciones"><a href="test-auxiliar-administrativo-comunidad-de-madrid.html">Test de Auxiliar Administrativo de la Comunidad de Madrid</a><a href="test-auxiliar-administrativo-del-estado.html">Test de Auxiliar Administrativo del Estado</a></nav>
+    <nav aria-label="Oposiciones"><a href="test-auxiliar-administrativo-comunidad-de-madrid.html">Test de Auxiliar Administrativo de la Comunidad de Madrid</a><a href="test-auxiliar-administrativo-del-estado.html">Test de Auxiliar Administrativo del Estado</a><a href="test-auxiliar-administrativo-ayuntamiento-de-madrid.html">Test de Auxiliar Administrativo del Ayuntamiento de Madrid</a></nav>
     <nav aria-label="Información legal"><a href="aviso-legal.html">Aviso legal</a><a href="condiciones.html">Condiciones de compra</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a><button type="button" class="linkbtn" id="open-cookies" style="font-size:14px">Ver aviso de cookies</button></nav>
     <span>Fuentes: textos consolidados del BOE y de los boletines autonómicos de cada ley del programa. Ofimática: documentación oficial de Microsoft para Windows 11 y Microsoft 365.</span>
     <span id="foot-programa"></span>
@@ -1439,7 +1439,7 @@ document.addEventListener("keydown",e=>{
   if($("quiz").classList.contains("hidden")||e.ctrlKey||e.metaKey||e.altKey)return;
   if(document.querySelector("dialog[open]")||/^(INPUT|TEXTAREA|SELECT)$/.test((e.target||{}).tagName||""))return;
   const k=e.key.toLowerCase();const map={a:0,b:1,c:2,d:3,"1":0,"2":1,"3":2,"4":3};
-  if(k in map&&!st.locked){e.preventDefault();choose(map[k])}
+  if(k in map&&!st.locked){if(map[k]>=st.qs[st.i][2].length)return;e.preventDefault();choose(map[k])}
   else if(k==="enter"&&!$("next").disabled&&document.activeElement.tagName!=="BUTTON"){e.preventDefault();$("next").click()}
 });
 // ===== ENLACE A LA NORMA (BOE) =====
@@ -1472,7 +1472,10 @@ const NORMAS=[
   [/\bLey 1\/1986 CM\b/,"https://www.boe.es/eli/es-md/l/1986/04/10/1/con"],
   [/\bLey 5\/2005 CM\b/,"https://www.boe.es/eli/es-md/l/2005/12/20/5/con"],
   [/\bLey 3\/2016 CM\b/,"https://www.boe.es/eli/es-md/l/2016/07/22/3/con"],
-  [/\bLO 2\/2024\b/,BOE_ELI+"lo/2024/08/01/2/con"],[/\bLO 10\/2022\b/,BOE_ELI+"lo/2022/09/06/10/con"]
+  [/\bLO 2\/2024\b/,BOE_ELI+"lo/2024/08/01/2/con"],[/\bLO 10\/2022\b/,BOE_ELI+"lo/2022/09/06/10/con"],
+  // Ayuntamiento de Madrid (aux-ayto-mad)
+  [/\bLey 22\/2006\b/,BOE_ELI+"l/2006/07/04/22/con"],[/\bTRLRHL\b/,BOE_ELI+"rdlg/2004/03/05/2/con"],
+  [/\bLey 31\/1995\b/,BOE_ELI+"l/1995/11/08/31/con"]
 ];
 function fuente(ref){
   ref=String(ref||"");

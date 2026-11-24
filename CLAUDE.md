@@ -12,7 +12,7 @@ Estructura de planes acordada (24/11/2026): precio por oposición y planes por n
 
 Mientras dure la beta no se cobra, así que no corre prisa, pero hay que decidirlo antes de desactivar el modo beta. Tampoco está decidido si habrá temas gratis (propuesta: temas 1 y 16 abiertos) además o en lugar de la prueba de 2 días.
 
-Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre, como TCAE de los servicios de salud, Administrativo de Navarra, Auxiliar del Gobierno de Canarias u Osakidetza. Ya aparecen en la portada como «Próximamente», con lista de espera. Las de Madrid y del Estado son las primeras disponibles.
+Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre, como TCAE de los servicios de salud, Administrativo de Navarra, Auxiliar del Gobierno de Canarias u Osakidetza. Ya aparecen en la portada como «Próximamente», con lista de espera. Las de Madrid, del Estado y del Ayuntamiento de Madrid son las primeras disponibles.
 
 ## Marca y diseño
 
@@ -50,6 +50,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 - Ids: `aux-cm` usa `tema-md5(enunciado)[:10]`; el resto, `oposicion:tema-md5(oposicion|enunciado)[:10]`. Si cambias el enunciado, cambia el id (y se pierde ese fallo o marca en el progreso de los usuarios).
 - La referencia (`Art. 16.4 Ley 39/2015`) genera el enlace al BOE con la función `fuente()` y la tabla `NORMAS` de `template.html` (enlaces ELI: `https://www.boe.es/eli/es/<tipo>/<aaaa>/<mm>/<dd>/<n>/con#a<artículo>`). **Si añades una norma nueva, añádela allí.** Las normas autonómicas de Madrid aún no tienen enlace.
 - Banco del Estado: las preguntas nuevas se escriben en `age/nNN.json` con formato `[tema, enunciado, correcta, [3 incorrectas], ref, expl]`; `age/montar.py` las junta con las reutilizadas de Madrid, reparte la posición de la correcta y escribe `bancos/aux-age.json`. Los psicotécnicos (tema 29) los genera `age/psico.py`, que calcula la respuesta.
+- Banco del Ayuntamiento de Madrid (`aux-ayto-mad`, **3 opciones a/b/c**): las nuevas en `ayto/nNN.json` con formato `[tema, enunciado, correcta, [2 incorrectas], ref, expl]`; `ayto/montar.py` las junta con las reutilizadas de Madrid y del Estado (reduce las de 4 opciones a 3 eligiendo los distractores para no dejar pistas de longitud), reparte la posición de la correcta al 33 % y escribe `bancos/aux-ayto-mad.json`. `herramientas/analizar.py` y `estrategias.py` ya admiten cualquier número de opciones. Para cargarlo solo, sin recargar todo el banco: `supabase/12-preguntas-aux-ayto-mad.sql`.
 - Al añadir una oposición: entrada en `oposiciones.json` (temario, **bloques**, sims, planes, enlaces), banco en `bancos/<id>.json`, y en `supabase/8-oposiciones.sql` añadirla al `case` de la política RLS y a `tema_maximo_op`. Después, `make_sql.py` y `build.py`.
 
 ## Reglas de calidad (obligatorias)
@@ -59,7 +60,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
    - la correcta debe ser la más larga, la 2.ª, la 3.ª y la más corta en torno al 25 % cada una;
    - ninguna estrategia tonta («la más larga sin absolutos», etc.) debe pasar del 35 %;
    - los absolutos («siempre», «nunca», «solo») tienen que aparecer también en respuestas correctas.
-   Medición actual: Madrid, la más larga es la correcta en un 26 % y la mejor estrategia tonta acierta un 34 %. Estado, 38 % contando empates (los psicotécnicos tienen muchas opciones numéricas de igual longitud; con desempate al azar, 22 %) y 32 %.
+   Medición actual: Madrid, la más larga es la correcta en un 26 % y la mejor estrategia tonta acierta un 34 %. Estado, 38 % contando empates (los psicotécnicos tienen muchas opciones numéricas de igual longitud; con desempate al azar, 22 %) y 32 %. Ayuntamiento (3 opciones, azar 33 %): la más larga es la correcta en un 38 % y la mejor estrategia tonta acierta un 38 %; con 3 opciones el equivalente del 35 % es en torno al 43 %.
 3. Sin distractores de relleno («Ninguna», opciones absurdas). Los distractores son plazos, órganos o mayorías cercanos al correcto, con plazos por encima y por debajo del real.
 4. Reparto equilibrado entre temas, como piden las bases de cada convocatoria (los simulacros usan `equilibrar` y `cupos`).
 5. No usar temarios de academias (tienen derechos de autor). Solo programa oficial, legislación y exámenes oficiales.
@@ -72,10 +73,18 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
   - 2.ª parte: 50 preguntas del bloque II (temas 17 a 28);
   - cada parte se puntúa de 0 a 50, hay que sacar 25 en cada una y un error resta 1/3.
 
+- **Auxiliar Administrativo del Ayuntamiento de Madrid** (`aux-ayto-mad`). Bases específicas en el BOAM n.º 9.128, de 29/04/2022; última convocatoria con 256 plazas y examen el 22/11/2025. La OEP 2026 aún no está convocada (por eso se eligió: demanda alta y sin examen cercano). Ejercicio único con dos partes:
+  - teoría: 70 preguntas de los temas 1 a 20 en 70 minutos (simulacro `ayto-teoria`);
+  - práctica: 20 preguntas de Word y Excel (temas 21 y 22) en 40 minutos (simulacro `ayto-practica`);
+  - 3 opciones (a, b, c), un error resta 1/3 y hay que sacar al menos la mitad en cada parte.
+
 ## Estado y pendientes
 
 - [x] Banco de Madrid: 1.265 preguntas de los 21 temas, con distractores reescritos contra las pistas de forma. Las nuevas se escriben en `madrid/nNN.json` (mismo formato que `age/nNN.json`) y se añaden con `python3 madrid/anadir.py madrid/nNN.json`, que reparte la posición de la correcta sin tocar las publicadas.
 - [x] Banco del Estado: 1.984 preguntas. 795 vienen de Madrid, 572 son nuevas comprobadas con el BOE y 617 son psicotécnicos generados por código (`age/psico.py`; los verbales, revisados a mano).
+- [x] Banco del Ayuntamiento de Madrid (24/11/2026): 1.128 preguntas de 3 opciones. 432 son nuevas comprobadas con el BOE (CE, LBRL, TRLRHL, Ley 22/2006 de Capitalidad y Régimen Especial de Madrid y Ley 31/1995) y 696 reutilizadas de Madrid y del Estado (Leyes 39 y 40/2015, LCSP, TREBEP, LO 3/2007 y ofimática). Publicado en la web, cargado en Supabase, con planes Legislación (temas 1-20) y Completo (+ Word y Excel) a 11,99 y 14,99 € en `precios` (**provisionales, por decidir**). `tema_maximo_op` ya lo incluye.
+  - Falta: los temas 11, 12, 18, 19 y 20 son flojos (13, 8, 10, 12 y 9 preguntas) porque dependen de normas municipales que no están en el BOE: Reglamento Orgánico del Gobierno y de la Administración (ROGA), Reglamento Orgánico de los Distritos, Ordenanza de Atención a la Ciudadanía y Administración Electrónica, Código de Buenas Prácticas Administrativas y Ordenanza de Transparencia. Hay que comprobarlas en la sede electrónica del Ayuntamiento (Cibelex, `sede.madrid.es/eli/es-md-01860896/...`; el ROGA consolidado es el de 20230215) y añadir sus enlaces en `NORMAS`.
+  - Los exámenes oficiales del Ayuntamiento aún no están marcados en el campo `examen`.
 - [x] Backend: Supabase con RLS, cuentas, progreso sincronizado, panel de administración y webhook de Stripe.
 - [x] Fusión de las dos versiones (pull request #1, ya en `main`). De la versión de Alex se han traído:
   - el enlace al BOE de cada respuesta;
@@ -98,7 +107,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
   - LBRL: cambian el art. 25.2 (RDL 7/2026), el 73.3 y la DA 2.ª.7 (LO 1/2025); no hay preguntas de ellos.
   - Ley 1/1983 CM: la Ley 8/2024 añade el capítulo VIII del título IV (arts. 87 a 89, recurridos ante el TC); no hay preguntas de ellos.
   - Ley 29/1998: nota de los Tribunales de Instancia (LO 1/2025) añadida en las preguntas sobre Juzgados.
-- [ ] Siguientes oposiciones: Administrativo C1 de Madrid y Auxiliar del Ayuntamiento de Madrid (ya en la portada como «Próximamente»), y las de la lista de espera según demanda.
+- [ ] Siguientes oposiciones: Administrativo C1 de Madrid (ya en la portada como «Próximamente») y las de la lista de espera según demanda. El Auxiliar del Ayuntamiento de Madrid ya está publicado (ver arriba).
   - **Administrativo C1 de Madrid (`adm-cm`), primer banco en borrador (24/11/2026, sin publicar)**: `borradores/adm-cm.json` (1.654 preguntas ya comprobadas, reutilizadas de los bancos de Madrid y del Estado y asignadas a los 47 temas de la Orden 1634/2026, BOCM de 14/07/2026) con `borradores/montar_adm_cm.py`, y la configuración propuesta en `borradores/adm-cm-config.json`. Está en `borradores/` y no en `bancos/` porque `build.py` publica cualquier oposición con banco en `bancos/`.
   - Falta antes de publicarla: temas sin preguntas (10 órganos y competencia, 16 potestad sancionadora, 17 expropiación, 19 subvenciones, 29 personal laboral y convenio, 30 contrato de trabajo, 33 sistema tributario, 35 a 37 Ley de Hacienda de Madrid y 39 Plan General de Contabilidad Pública) y flojos (15, 26, 27, 31 y 38); repartir las 51 de la Ley 5/2025 CM entre los temas 34 a 37 según el artículo; preguntas de supuesto práctico para el 2.º ejercicio; y que la web admita simulacros puntuados sobre 30 (ahora todos son sobre 50).
 - [x] Páginas legales (`legal_build.py`) rellenadas: titular OPONOTA, email oponota.contacto@gmail.com, fecha 18/10/2026, web https://oponota.netlify.app/, Supabase en Irlanda (eu-west-1), Netlify como alojamiento y lista de espera y avisos de error en la privacidad. Las condiciones de compra no dan precios (cada oposición tendrá el suyo y se mostrará en la web antes de pagar).
@@ -120,12 +129,12 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (sobre todo si toca `template.html` o la base de datos) y bórrate al terminar.
 
-- 24/11/2026 · Alex · Nueva oposición **Auxiliar Administrativo del Ayuntamiento de Madrid** (`aux-ayto-mad`): banco, `oposiciones.json`, `template.html` (NORMAS y respuestas de 3 opciones), `seo_build.py`, `supabase/8-oposiciones.sql` y `precios`. No toquéis esos archivos hasta que lo suba.
 
 ## Registro de cambios
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Alex · Nueva oposición **Auxiliar Administrativo del Ayuntamiento de Madrid** (`aux-ayto-mad`): 1.128 preguntas de 3 opciones (`ayto/`), entrada en `oposiciones.json` con bloques y simulacros, normas nuevas en `NORMAS` (Ley 22/2006, TRLRHL, Ley 31/1995), teclado sin la D cuando hay 3 opciones, página para Google, `tema_maximo_op`, preguntas y precios en Supabase, y pruebas de 3 opciones en `probar_web.py`.
 - 24/11/2026 · Alex · Pago de prueba con Stripe funcionando: permiso `select` de `precios` para `service_role`; en `crear-pago`, Managed Payments (código fiscal, API `2025-03-31.basil`, IVA incluido en el precio) y errores de Stripe devueltos con CORS para que la web los muestre.
 - 24/11/2026 · Edu · Practicar: temas separados por bloques (Legislación, Ofimática, Psicotécnicos) con botón por bloque; campo `bloques` en `oposiciones.json`, aviso en `build.py` y prueba en `probar_web.py`.
 - 24/11/2026 · Edu · Quitada de las tarjetas de planes la frase «Por solo X € más que…, añades…» (y el campo `plus` de `oposiciones.json`). Precios comprobados en la tabla `precios`: sin cambios.
