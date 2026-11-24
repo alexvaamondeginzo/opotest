@@ -124,6 +124,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Quitada de las tarjetas de planes la frase «Por solo X € más que…, añades…» (y el campo `plus` de `oposiciones.json`). Precios comprobados en la tabla `precios`: sin cambios.
 - 24/11/2026 · Edu · App de Claude instalada en la organización `oponota` (los Claude ya pueden subir). Revisada la mudanza: no quedan referencias al repositorio antiguo; las webs de Netlify siguen en línea.
 - 24/11/2026 · Alex · Web pasada a Cloudflare Pages (https://oponota.pages.dev): organización de GitHub `oponota`, repositorio transferido, proyecto de Pages conectado a `main`, direcciones cambiadas y URL de Supabase actualizadas.
 - 24/11/2026 · Edu · En pruebas (administradores): practicar lo que cayó en cada examen oficial (6 exámenes de Madrid).

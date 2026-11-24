@@ -296,8 +296,6 @@ legend{font:700 22px/1 var(--cond);text-transform:uppercase;margin-bottom:14px;d
 .plan ul{margin:0;padding-left:18px;font-size:15px;flex:1}
 .plan{position:relative}
 .plan .recomendado{position:absolute;top:-12px;left:22px;background:var(--ink);color:#fff;font:700 13px/1 var(--cond);text-transform:uppercase;padding:6px 10px;border-radius:3px}
-.plan .plus{font-size:15px;background:var(--mint-soft);color:var(--teal-deep);padding:10px 12px;border-radius:8px}
-.plan .plus strong{color:var(--ink)}
 .plan .actual{font-size:14px;color:var(--teal-deep);font-weight:700}
 .lock{font-size:11px;color:var(--muted);margin-left:4px}
 
@@ -1891,11 +1889,9 @@ const euros=c=>(c/100).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFr
 function renderPlans(){
   const actual=ACC.admin?0:(RANGO[ACC.plan]||0),P0=PRECIOS[OP]||{};
   $("planes-list").innerHTML=PLANES.map((p,i)=>{
-    const tengo=actual>=(RANGO[p.id]||0),pr=P0[p.id],prev=i?P0[PLANES[i-1].id]:null;
-    // "Por solo X € más": la diferencia con el plan anterior y lo que añade
-    const extra=pr&&prev&&p.plus&&pr.importe_cent>prev.importe_cent?`<p class="plus">Por solo <strong>${(d=>d%100?euros(d):String(d/100))(pr.importe_cent-prev.importe_cent)} € más</strong> que ${esc(PLANES[i-1].nombre)}, añades ${esc(p.plus)}.</p>`:"";
+    const tengo=actual>=(RANGO[p.id]||0),pr=P0[p.id];
     const boton=tengo?'<span class="actual">✓ Incluido en tu plan</span>':pr?`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">Elegir ${esc(p.nombre)}</button>`:'<span class="meta">Todavía no está a la venta</span>';
-    return `<div class="plan${p.dest?" dest":""}">${p.dest?'<span class="recomendado">El más completo</span>':""}<h3>${esc(p.nombre)}</h3><div class="precio">${pr?euros(pr.importe_cent)+" €":"—"} <small>pago único, IVA incluido</small></div>${extra}<ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}${pr?`<li>Acceso hasta el ${fechaCorta(pr.hasta)}</li>`:""}</ul>${boton}</div>`}).join("");
+    return `<div class="plan${p.dest?" dest":""}">${p.dest?'<span class="recomendado">El más completo</span>':""}<h3>${esc(p.nombre)}</h3><div class="precio">${pr?euros(pr.importe_cent)+" €":"—"} <small>pago único, IVA incluido</small></div><ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}${pr?`<li>Acceso hasta el ${fechaCorta(pr.hasta)}</li>`:""}</ul>${boton}</div>`}).join("");
   document.querySelectorAll("#planes-list button[data-plan]").forEach(b=>b.addEventListener("click",()=>comprar(b.dataset.plan,b)));
 }
 function applyBeta(){

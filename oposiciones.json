@@ -143,7 +143,6 @@
         "nombre": "Completo",
         "temas": 21,
         "dest": true,
-        "plus": "la ofimática del 2.º ejercicio (temas 16 a 21) y sus simulacros",
         "desc": [
           "Todo lo de Legislación",
           "Ofimática: Windows 11 y Microsoft 365 (temas 16 a 21)",
@@ -354,7 +353,6 @@
         "id": "completo",
         "nombre": "Teoría + Ofimática",
         "temas": 28,
-        "plus": "la informática y ofimática del bloque II (temas 21 a 28) y el simulacro de la 2.ª parte",
         "desc": [
           "Todo lo de Teoría",
           "Informática y ofimática: Windows, Word, Excel, Access, Outlook e Internet (temas 21 a 28)",
@@ -368,7 +366,6 @@
         "nombre": "Completo",
         "temas": 999,
         "dest": true,
-        "plus": "los psicotécnicos y el simulacro de la 1.ª parte",
         "desc": [
           "Todo lo de Teoría + Ofimática",
           "Psicotécnicos de la 1.ª parte del examen",
