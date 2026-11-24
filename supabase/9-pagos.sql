@@ -15,6 +15,8 @@ create table if not exists public.precios (
 alter table public.precios enable row level security;
 drop policy if exists "Ver precios activos" on public.precios;
 create policy "Ver precios activos" on public.precios for select using (activo);
+-- Sin este permiso la política no basta: la web no podía leer los precios (arreglado el 24/11/2026).
+grant select on public.precios to anon, authenticated;
 
 -- Precio por oposición y plan (solo administradores)
 create or replace function public.admin_precio(o text, p text, importe integer, h timestamptz, act boolean)
