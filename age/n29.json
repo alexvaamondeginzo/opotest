@@ -3493,366 +3493,6 @@
 ],
 [
 29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nBM8-6ZS | BM8-6ZS\nN6Z-13E | N6Z-13E\n6E3-82I | 6E3-82I\nOO1-3ME | O01-3ME\nBOO-G42 | BOO-G42",
-"4",
-[
-"5",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nN41-BBM | N41-BBN\nIE3-5G8 | 1E3-5G8\nG80-37I | G8O-37I\nIAZ-901 | IAZ-9O1\nEIZ-3ZZ | FIZ-3ZZ",
-"0",
-[
-"1",
-"2",
-"3"
-],
-"Psicotécnicos",
-"Coinciden 0 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n217-47B | 217-47B\n5FN-E26 | 5EN-E26\nI5M-97E | 15M-97E\nA7G-F19 | A7G-E19\n0Z4-7NI | 0Z4-7NI",
-"2",
-[
-"3",
-"1",
-"4"
-],
-"Psicotécnicos",
-"Coinciden 2 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nASZ-4IB | ASZ-4IB\nOFN-0G4 | OFN-0G4\n192-05S | 192-05S\nGGI-AN1 | 6GI-AN1\nBB4-16I | BB4-16I",
-"4",
-[
-"5",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nZZA-601 | ZZA-601\n0EB-36Z | 0EB-36Z\nFAZ-8IO | FAZ-BIO\nZEO-245 | ZEO-Z45\nB23-1FZ | B23-1F2",
-"2",
-[
-"3",
-"1",
-"4"
-],
-"Psicotécnicos",
-"Coinciden 2 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nNB5-3A5 | N85-3A5\n7F6-N85 | 7F6-N8S\nFSF-MMB | FSE-MMB\n0I2-SMG | 012-SMG\nAZ8-BSZ | AZ8-BSZ",
-"1",
-[
-"2",
-"0",
-"3"
-],
-"Psicotécnicos",
-"Coinciden 1 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n234-ZNS | 234-ZNS\nNO4-IG7 | NO4-IG7\n46S-1M0 | 46S-1M0\nI20-AO0 | I20-AO0\nNBS-NBZ | NBS-NBZ",
-"5",
-[
-"4",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nN45-GG2 | N45-GG2\n1AM-A4S | 1AM-A4S\n6I8-Z38 | 6I8-Z38\n9BA-BON | 9BA-8ON\nFS3-4MF | FS3-4MF",
-"4",
-[
-"5",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n61B-ZMM | 61B-ZMM\nF1G-GSA | F1G-GSA\nE5M-GM4 | E5M-GM4\n31N-F0S | 31N-F0S\n197-2SB | 197-2S8",
-"4",
-[
-"5",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n2ZN-7O6 | 2ZN-7O6\n228-707 | 228-707\n0O0-OOM | 0O0-OOM\nS3E-28S | S3E-28S\nSE0-932 | SE0-932",
-"5",
-[
-"4",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nO4G-16B | O4G-1GB\n0GB-A23 | 0GB-AZ3\n6S6-SFA | 6S6-SFA\nOAB-I1O | OAB-I10\nM15-8N9 | N15-8N9",
-"1",
-[
-"2",
-"0",
-"3"
-],
-"Psicotécnicos",
-"Coinciden 1 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nE5A-IG8 | E5A-1G8\n9NI-OI0 | 9NI-0I0\nMBO-M94 | NBO-M94\nS34-B5N | S34-85N\n7S1-N01 | 751-N01",
-"0",
-[
-"1",
-"2",
-"3"
-],
-"Psicotécnicos",
-"Coinciden 0 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n68F-BO2 | 68F-B02\nON7-EM5 | 0N7-EM5\nS6A-2ON | S6A-2OM\n45A-GIO | 45A-GI0\nO1I-1A6 | O1I-1AG",
-"0",
-[
-"1",
-"2",
-"3"
-],
-"Psicotécnicos",
-"Coinciden 0 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n217-N51 | 217-N51\nF95-FE5 | F95-FE5\n22G-969 | 22G-969\nI3M-2BA | I3M-2BA\nGE6-I89 | GE6-I89",
-"5",
-[
-"4",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nA2G-7FS | A2G-7FS\n605-BON | 605-BON\n9AZ-65B | 9AZ-65B\n17B-IZO | 17B-IZO\nA61-4S4 | A61-4S4",
-"5",
-[
-"4",
-"3",
-"2"
-],
-"Psicotécnicos",
-"Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nEN0-998 | EN0-99B\n99F-471 | 99E-471\n426-0BE | 4Z6-0BE\n6GG-7EM | GGG-7EM\nZFA-A39 | ZFA-A39",
-"1",
-[
-"2",
-"0",
-"3"
-],
-"Psicotécnicos",
-"Coinciden 1 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
-],
-[
-29,
-"¿Cuántas veces aparece la letra «p» en esta serie? bdqbddqpdqpdbpbddbqqpqbddd",
-"4",
-[
-"5",
-"3",
-"6"
-],
-"Psicotécnicos",
-"Aparece 4 veces."
-],
-[
-29,
-"¿Cuántas veces aparece el número 9 en esta serie? 6 9 6 9 6 6 9 8 9 6 8 9 9 6 8 8 8 6 9 6 9 6 8 8",
-"8",
-[
-"9",
-"7",
-"10"
-],
-"Psicotécnicos",
-"Aparece 8 veces."
-],
-[
-29,
-"¿Cuántas veces aparece la letra «b» en esta serie? dpbppqdpdpqdpqbpddqbpbqbbb",
-"7",
-[
-"8",
-"6",
-"9"
-],
-"Psicotécnicos",
-"Aparece 7 veces."
-],
-[
-29,
-"¿Cuántas veces aparece el número 9 en esta serie? 9 9 6 9 6 9 6 9 8 8 9 8 9 6 9 9 8 8 9 9 6 6 9 8",
-"12",
-[
-"13",
-"11",
-"14"
-],
-"Psicotécnicos",
-"Aparece 12 veces."
-],
-[
-29,
-"¿Cuántas veces aparece la letra «q» en esta serie? dpdqddpppdqbpbdqqppdqbpdbd",
-"5",
-[
-"6",
-"4",
-"7"
-],
-"Psicotécnicos",
-"Aparece 5 veces."
-],
-[
-29,
-"¿Cuántas veces aparece el número 9 en esta serie? 8 6 9 8 8 9 9 6 8 9 6 9 8 9 9 6 8 9 8 6 9 6 8 8",
-"9",
-[
-"10",
-"8",
-"11"
-],
-"Psicotécnicos",
-"Aparece 9 veces."
-],
-[
-29,
-"¿Cuántas veces aparece la letra «d» en esta serie? bddqbbdbbdqdbpqpdqqddqpqqq",
-"8",
-[
-"9",
-"7",
-"10"
-],
-"Psicotécnicos",
-"Aparece 8 veces."
-],
-[
-29,
-"¿Cuántas veces aparece el número 9 en esta serie? 8 8 8 6 8 6 6 6 6 6 9 6 6 8 9 8 8 9 8 8 8 9 9 8",
-"5",
-[
-"6",
-"4",
-"7"
-],
-"Psicotécnicos",
-"Aparece 5 veces."
-],
-[
-29,
-"¿Cuántas veces aparece la letra «b» en esta serie? pqdpbqppddpbdqdpbbqdddpddd",
-"4",
-[
-"5",
-"3",
-"6"
-],
-"Psicotécnicos",
-"Aparece 4 veces."
-],
-[
-29,
-"¿Cuántas veces aparece el número 6 en esta serie? 6 8 6 9 8 6 9 9 6 9 8 8 9 6 9 8 8 9 8 6 6 6 9 9",
-"8",
-[
-"9",
-"7",
-"10"
-],
-"Psicotécnicos",
-"Aparece 8 veces."
-],
-[
-29,
-"¿Cuántas veces aparece la letra «d» en esta serie? qppbqdppppqdbppbpppbpqbdpb",
-"3",
-[
-"4",
-"2",
-"5"
-],
-"Psicotécnicos",
-"Aparece 3 veces."
-],
-[
-29,
-"¿Cuántas veces aparece el número 9 en esta serie? 6 9 6 9 9 6 6 6 8 6 6 8 9 8 8 6 6 8 8 6 6 6 6 8",
-"4",
-[
-"5",
-"3",
-"6"
-],
-"Psicotécnicos",
-"Aparece 4 veces."
-],
-[
-29,
-"¿Cuántas veces aparece la letra «d» en esta serie? pbpppqdqqqpbqdbdqbbdpqqbpb",
-"4",
-[
-"5",
-"3",
-"6"
-],
-"Psicotécnicos",
-"Aparece 4 veces."
-],
-[
-29,
-"¿Cuántas veces aparece el número 9 en esta serie? 8 8 6 6 8 6 9 9 6 8 6 6 6 9 9 6 9 9 6 6 8 8 6 6",
-"6",
-[
-"7",
-"5",
-"8"
-],
-"Psicotécnicos",
-"Aparece 6 veces."
-],
-[
-29,
 "Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, G, I, L, O, …",
 "T",
 [
@@ -5434,5 +5074,2333 @@
 ],
 "Psicotécnicos",
 "Haya es el subjuntivo de haber. Halla es del verbo hallar (encontrar), aya es una cuidadora y allá un adverbio de lugar."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nTributos | 1 | A | de la 2 a la 7\nLicencias | 2 | A | de la 5 a la 13\nSanciones | 2 | B | de la 7 a la 13\nSubvenciones | 2 | C | de la 4 a la 12\nBecas | 3 | A | de la 4 a la 19\nNóminas | 3 | B | de la 1 a la 12\n¿Qué código corresponde a un expediente de Licencias guardado en su estantería n.º 8?",
+"2-A-08",
+[
+"3-B-08",
+"2-B-08",
+"A-2-08"
+],
+"Psicotécnicos",
+"Licencias está en la planta 2, pasillo A: 2-A-08."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nTributos | 1 | A | de la 2 a la 7\nLicencias | 2 | A | de la 5 a la 13\nSanciones | 2 | B | de la 7 a la 13\nSubvenciones | 2 | C | de la 4 a la 12\nBecas | 3 | A | de la 4 a la 19\nNóminas | 3 | B | de la 1 a la 12\n¿De qué materia es el expediente con código 3-A-16?",
+"Becas",
+[
+"Tributos",
+"Licencias",
+"Sanciones"
+],
+"Psicotécnicos",
+"La planta 3, pasillo A, corresponde a Becas, que ocupa de la estantería 4 a la 19."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nTributos | 1 | A | de la 2 a la 7\nLicencias | 2 | A | de la 5 a la 13\nSanciones | 2 | B | de la 7 a la 13\nSubvenciones | 2 | C | de la 4 a la 12\nBecas | 3 | A | de la 4 a la 19\nNóminas | 3 | B | de la 1 a la 12\n¿Cuántas estanterías ocupa Tributos?",
+"6",
+[
+"5",
+"7",
+"8"
+],
+"Psicotécnicos",
+"De la 2 a la 7, ambas incluidas: 7 − 2 + 1 = 6."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nTributos | 1 | A | de la 2 a la 7\nLicencias | 2 | A | de la 5 a la 13\nSanciones | 2 | B | de la 7 a la 13\nSubvenciones | 2 | C | de la 4 a la 12\nBecas | 3 | A | de la 4 a la 19\nNóminas | 3 | B | de la 1 a la 12\n¿Qué materia ocupa más estanterías?",
+"Becas",
+[
+"Nóminas",
+"Tributos",
+"Licencias"
+],
+"Psicotécnicos",
+"Estanterías por materia: Tributos 6, Licencias 9, Sanciones 7, Subvenciones 9, Becas 16, Nóminas 12."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nTributos | 1 | A | de la 2 a la 7\nLicencias | 2 | A | de la 5 a la 13\nSanciones | 2 | B | de la 7 a la 13\nSubvenciones | 2 | C | de la 4 a la 12\nBecas | 3 | A | de la 4 a la 19\nNóminas | 3 | B | de la 1 a la 12\n¿Cuántas estanterías hay en total en la planta 2?",
+"25",
+[
+"24",
+"26",
+"35"
+],
+"Psicotécnicos",
+"Se suman las estanterías de las materias de la planta 2: 9 + 7 + 9 = 25."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nTributos | 1 | A | de la 2 a la 7\nLicencias | 2 | A | de la 5 a la 13\nSanciones | 2 | B | de la 7 a la 13\nSubvenciones | 2 | C | de la 4 a la 12\nBecas | 3 | A | de la 4 a la 19\nNóminas | 3 | B | de la 1 a la 12\n¿Cuál de estos códigos NO puede existir en el archivo?",
+"3-A-22",
+[
+"2-B-13",
+"2-A-08",
+"3-B-04"
+],
+"Psicotécnicos",
+"En la planta 3, pasillo A (Becas), las estanterías solo llegan a la 19; los demás códigos están dentro de los tramos de la tabla."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 7 a la 27\nNóminas | 1 | B | de la 2 a la 16\nLicencias | 1 | C | de la 6 a la 17\nContratos | 2 | B | de la 9 a la 17\nBecas | 3 | B | de la 9 a la 20\nTributos | 3 | C | de la 6 a la 23\n¿Qué código corresponde a un expediente de Urbanismo guardado en su estantería n.º 12?",
+"1-A-12",
+[
+"2-B-12",
+"1-B-12",
+"A-1-12"
+],
+"Psicotécnicos",
+"Urbanismo está en la planta 1, pasillo A: 1-A-12."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 7 a la 27\nNóminas | 1 | B | de la 2 a la 16\nLicencias | 1 | C | de la 6 a la 17\nContratos | 2 | B | de la 9 a la 17\nBecas | 3 | B | de la 9 a la 20\nTributos | 3 | C | de la 6 a la 23\n¿De qué materia es el expediente con código 1-C-11?",
+"Licencias",
+[
+"Nóminas",
+"Tributos",
+"Becas"
+],
+"Psicotécnicos",
+"La planta 1, pasillo C, corresponde a Licencias, que ocupa de la estantería 6 a la 17."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 7 a la 27\nNóminas | 1 | B | de la 2 a la 16\nLicencias | 1 | C | de la 6 a la 17\nContratos | 2 | B | de la 9 a la 17\nBecas | 3 | B | de la 9 a la 20\nTributos | 3 | C | de la 6 a la 23\n¿Cuántas estanterías ocupa Licencias?",
+"12",
+[
+"11",
+"13",
+"14"
+],
+"Psicotécnicos",
+"De la 6 a la 17, ambas incluidas: 17 − 6 + 1 = 12."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 7 a la 27\nNóminas | 1 | B | de la 2 a la 16\nLicencias | 1 | C | de la 6 a la 17\nContratos | 2 | B | de la 9 a la 17\nBecas | 3 | B | de la 9 a la 20\nTributos | 3 | C | de la 6 a la 23\n¿Qué materia ocupa más estanterías?",
+"Urbanismo",
+[
+"Nóminas",
+"Becas",
+"Licencias"
+],
+"Psicotécnicos",
+"Estanterías por materia: Urbanismo 21, Nóminas 15, Licencias 12, Contratos 9, Becas 12, Tributos 18."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 7 a la 27\nNóminas | 1 | B | de la 2 a la 16\nLicencias | 1 | C | de la 6 a la 17\nContratos | 2 | B | de la 9 a la 17\nBecas | 3 | B | de la 9 a la 20\nTributos | 3 | C | de la 6 a la 23\n¿Cuántas estanterías hay en total en la planta 1?",
+"48",
+[
+"47",
+"49",
+"58"
+],
+"Psicotécnicos",
+"Se suman las estanterías de las materias de la planta 1: 21 + 15 + 12 = 48."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 7 a la 27\nNóminas | 1 | B | de la 2 a la 16\nLicencias | 1 | C | de la 6 a la 17\nContratos | 2 | B | de la 9 a la 17\nBecas | 3 | B | de la 9 a la 20\nTributos | 3 | C | de la 6 a la 23\n¿Cuál de estos códigos NO puede existir en el archivo?",
+"3-C-25",
+[
+"3-B-12",
+"2-B-16",
+"3-C-07"
+],
+"Psicotécnicos",
+"En la planta 3, pasillo C (Tributos), las estanterías solo llegan a la 23; los demás códigos están dentro de los tramos de la tabla."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nNóminas | 1 | B | de la 3 a la 9\nSubvenciones | 2 | A | de la 9 a la 21\nPatrimonio | 2 | B | de la 8 a la 23\nBecas | 2 | C | de la 5 a la 16\nUrbanismo | 3 | A | de la 6 a la 12\nTributos | 3 | B | de la 1 a la 10\n¿Qué código corresponde a un expediente de Patrimonio guardado en su estantería n.º 19?",
+"2-B-19",
+[
+"1-B-19",
+"2-C-19",
+"B-2-19"
+],
+"Psicotécnicos",
+"Patrimonio está en la planta 2, pasillo B: 2-B-19."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nNóminas | 1 | B | de la 3 a la 9\nSubvenciones | 2 | A | de la 9 a la 21\nPatrimonio | 2 | B | de la 8 a la 23\nBecas | 2 | C | de la 5 a la 16\nUrbanismo | 3 | A | de la 6 a la 12\nTributos | 3 | B | de la 1 a la 10\n¿De qué materia es el expediente con código 2-C-10?",
+"Becas",
+[
+"Nóminas",
+"Patrimonio",
+"Urbanismo"
+],
+"Psicotécnicos",
+"La planta 2, pasillo C, corresponde a Becas, que ocupa de la estantería 5 a la 16."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nNóminas | 1 | B | de la 3 a la 9\nSubvenciones | 2 | A | de la 9 a la 21\nPatrimonio | 2 | B | de la 8 a la 23\nBecas | 2 | C | de la 5 a la 16\nUrbanismo | 3 | A | de la 6 a la 12\nTributos | 3 | B | de la 1 a la 10\n¿Cuántas estanterías ocupa Becas?",
+"12",
+[
+"11",
+"13",
+"14"
+],
+"Psicotécnicos",
+"De la 5 a la 16, ambas incluidas: 16 − 5 + 1 = 12."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nNóminas | 1 | B | de la 3 a la 9\nSubvenciones | 2 | A | de la 9 a la 21\nPatrimonio | 2 | B | de la 8 a la 23\nBecas | 2 | C | de la 5 a la 16\nUrbanismo | 3 | A | de la 6 a la 12\nTributos | 3 | B | de la 1 a la 10\n¿Qué materia ocupa más estanterías?",
+"Patrimonio",
+[
+"Tributos",
+"Nóminas",
+"Subvenciones"
+],
+"Psicotécnicos",
+"Estanterías por materia: Nóminas 7, Subvenciones 13, Patrimonio 16, Becas 12, Urbanismo 7, Tributos 10."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nNóminas | 1 | B | de la 3 a la 9\nSubvenciones | 2 | A | de la 9 a la 21\nPatrimonio | 2 | B | de la 8 a la 23\nBecas | 2 | C | de la 5 a la 16\nUrbanismo | 3 | A | de la 6 a la 12\nTributos | 3 | B | de la 1 a la 10\n¿Cuántas estanterías hay en total en la planta 3?",
+"17",
+[
+"16",
+"18",
+"27"
+],
+"Psicotécnicos",
+"Se suman las estanterías de las materias de la planta 3: 7 + 10 = 17."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nNóminas | 1 | B | de la 3 a la 9\nSubvenciones | 2 | A | de la 9 a la 21\nPatrimonio | 2 | B | de la 8 a la 23\nBecas | 2 | C | de la 5 a la 16\nUrbanismo | 3 | A | de la 6 a la 12\nTributos | 3 | B | de la 1 a la 10\n¿Cuál de estos códigos NO puede existir en el archivo?",
+"3-B-11",
+[
+"2-B-15",
+"2-C-13",
+"3-B-09"
+],
+"Psicotécnicos",
+"En la planta 3, pasillo B (Tributos), las estanterías solo llegan a la 10; los demás códigos están dentro de los tramos de la tabla."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 8 a la 21\nSanciones | 1 | C | de la 3 a la 13\nLicencias | 2 | C | de la 4 a la 9\nContratos | 3 | A | de la 6 a la 15\nBecas | 3 | B | de la 9 a la 18\nPatrimonio | 3 | C | de la 4 a la 18\n¿Qué código corresponde a un expediente de Patrimonio guardado en su estantería n.º 12?",
+"3-C-12",
+[
+"3-A-12",
+"C-3-12",
+"1-C-12"
+],
+"Psicotécnicos",
+"Patrimonio está en la planta 3, pasillo C: 3-C-12."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 8 a la 21\nSanciones | 1 | C | de la 3 a la 13\nLicencias | 2 | C | de la 4 a la 9\nContratos | 3 | A | de la 6 a la 15\nBecas | 3 | B | de la 9 a la 18\nPatrimonio | 3 | C | de la 4 a la 18\n¿De qué materia es el expediente con código 1-C-06?",
+"Sanciones",
+[
+"Contratos",
+"Licencias",
+"Urbanismo"
+],
+"Psicotécnicos",
+"La planta 1, pasillo C, corresponde a Sanciones, que ocupa de la estantería 3 a la 13."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 8 a la 21\nSanciones | 1 | C | de la 3 a la 13\nLicencias | 2 | C | de la 4 a la 9\nContratos | 3 | A | de la 6 a la 15\nBecas | 3 | B | de la 9 a la 18\nPatrimonio | 3 | C | de la 4 a la 18\n¿Cuántas estanterías ocupa Patrimonio?",
+"15",
+[
+"14",
+"16",
+"17"
+],
+"Psicotécnicos",
+"De la 4 a la 18, ambas incluidas: 18 − 4 + 1 = 15."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 8 a la 21\nSanciones | 1 | C | de la 3 a la 13\nLicencias | 2 | C | de la 4 a la 9\nContratos | 3 | A | de la 6 a la 15\nBecas | 3 | B | de la 9 a la 18\nPatrimonio | 3 | C | de la 4 a la 18\n¿Qué materia ocupa más estanterías?",
+"Patrimonio",
+[
+"Licencias",
+"Becas",
+"Contratos"
+],
+"Psicotécnicos",
+"Estanterías por materia: Urbanismo 14, Sanciones 11, Licencias 6, Contratos 10, Becas 10, Patrimonio 15."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 8 a la 21\nSanciones | 1 | C | de la 3 a la 13\nLicencias | 2 | C | de la 4 a la 9\nContratos | 3 | A | de la 6 a la 15\nBecas | 3 | B | de la 9 a la 18\nPatrimonio | 3 | C | de la 4 a la 18\n¿Cuántas estanterías hay en total en la planta 1?",
+"25",
+[
+"24",
+"26",
+"35"
+],
+"Psicotécnicos",
+"Se suman las estanterías de las materias de la planta 1: 14 + 11 = 25."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nUrbanismo | 1 | A | de la 8 a la 21\nSanciones | 1 | C | de la 3 a la 13\nLicencias | 2 | C | de la 4 a la 9\nContratos | 3 | A | de la 6 a la 15\nBecas | 3 | B | de la 9 a la 18\nPatrimonio | 3 | C | de la 4 a la 18\n¿Cuál de estos códigos NO puede existir en el archivo?",
+"3-B-21",
+[
+"2-C-04",
+"3-A-11",
+"1-A-16"
+],
+"Psicotécnicos",
+"En la planta 3, pasillo B (Becas), las estanterías solo llegan a la 18; los demás códigos están dentro de los tramos de la tabla."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 11\nSanciones | 1 | B | de la 8 a la 20\nNóminas | 1 | C | de la 7 a la 12\nTributos | 2 | A | de la 4 a la 18\nBecas | 3 | A | de la 2 a la 7\nPersonal | 3 | C | de la 4 a la 20\n¿Qué código corresponde a un expediente de Subvenciones guardado en su estantería n.º 10?",
+"1-A-10",
+[
+"3-C-10",
+"1-B-10",
+"A-1-10"
+],
+"Psicotécnicos",
+"Subvenciones está en la planta 1, pasillo A: 1-A-10."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 11\nSanciones | 1 | B | de la 8 a la 20\nNóminas | 1 | C | de la 7 a la 12\nTributos | 2 | A | de la 4 a la 18\nBecas | 3 | A | de la 2 a la 7\nPersonal | 3 | C | de la 4 a la 20\n¿De qué materia es el expediente con código 1-C-07?",
+"Nóminas",
+[
+"Subvenciones",
+"Sanciones",
+"Tributos"
+],
+"Psicotécnicos",
+"La planta 1, pasillo C, corresponde a Nóminas, que ocupa de la estantería 7 a la 12."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 11\nSanciones | 1 | B | de la 8 a la 20\nNóminas | 1 | C | de la 7 a la 12\nTributos | 2 | A | de la 4 a la 18\nBecas | 3 | A | de la 2 a la 7\nPersonal | 3 | C | de la 4 a la 20\n¿Cuántas estanterías ocupa Sanciones?",
+"13",
+[
+"12",
+"14",
+"15"
+],
+"Psicotécnicos",
+"De la 8 a la 20, ambas incluidas: 20 − 8 + 1 = 13."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 11\nSanciones | 1 | B | de la 8 a la 20\nNóminas | 1 | C | de la 7 a la 12\nTributos | 2 | A | de la 4 a la 18\nBecas | 3 | A | de la 2 a la 7\nPersonal | 3 | C | de la 4 a la 20\n¿Qué materia ocupa más estanterías?",
+"Personal",
+[
+"Sanciones",
+"Nóminas",
+"Tributos"
+],
+"Psicotécnicos",
+"Estanterías por materia: Subvenciones 7, Sanciones 13, Nóminas 6, Tributos 15, Becas 6, Personal 17."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 11\nSanciones | 1 | B | de la 8 a la 20\nNóminas | 1 | C | de la 7 a la 12\nTributos | 2 | A | de la 4 a la 18\nBecas | 3 | A | de la 2 a la 7\nPersonal | 3 | C | de la 4 a la 20\n¿Cuántas estanterías hay en total en la planta 1?",
+"26",
+[
+"25",
+"27",
+"36"
+],
+"Psicotécnicos",
+"Se suman las estanterías de las materias de la planta 1: 7 + 13 + 6 = 26."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 11\nSanciones | 1 | B | de la 8 a la 20\nNóminas | 1 | C | de la 7 a la 12\nTributos | 2 | A | de la 4 a la 18\nBecas | 3 | A | de la 2 a la 7\nPersonal | 3 | C | de la 4 a la 20\n¿Cuál de estos códigos NO puede existir en el archivo?",
+"1-B-21",
+[
+"3-A-04",
+"2-A-06",
+"1-A-09"
+],
+"Psicotécnicos",
+"En la planta 1, pasillo B (Sanciones), las estanterías solo llegan a la 20; los demás códigos están dentro de los tramos de la tabla."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 14\nPersonal | 1 | B | de la 1 a la 9\nBecas | 1 | C | de la 4 a la 12\nNóminas | 2 | B | de la 8 a la 17\nTributos | 2 | C | de la 5 a la 15\nUrbanismo | 3 | B | de la 5 a la 14\n¿Qué código corresponde a un expediente de Personal guardado en su estantería n.º 8?",
+"1-B-08",
+[
+"1-A-08",
+"1-C-08",
+"B-1-08"
+],
+"Psicotécnicos",
+"Personal está en la planta 1, pasillo B: 1-B-08."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 14\nPersonal | 1 | B | de la 1 a la 9\nBecas | 1 | C | de la 4 a la 12\nNóminas | 2 | B | de la 8 a la 17\nTributos | 2 | C | de la 5 a la 15\nUrbanismo | 3 | B | de la 5 a la 14\n¿De qué materia es el expediente con código 2-B-13?",
+"Nóminas",
+[
+"Becas",
+"Subvenciones",
+"Personal"
+],
+"Psicotécnicos",
+"La planta 2, pasillo B, corresponde a Nóminas, que ocupa de la estantería 8 a la 17."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 14\nPersonal | 1 | B | de la 1 a la 9\nBecas | 1 | C | de la 4 a la 12\nNóminas | 2 | B | de la 8 a la 17\nTributos | 2 | C | de la 5 a la 15\nUrbanismo | 3 | B | de la 5 a la 14\n¿Cuántas estanterías ocupa Tributos?",
+"11",
+[
+"10",
+"12",
+"13"
+],
+"Psicotécnicos",
+"De la 5 a la 15, ambas incluidas: 15 − 5 + 1 = 11."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 14\nPersonal | 1 | B | de la 1 a la 9\nBecas | 1 | C | de la 4 a la 12\nNóminas | 2 | B | de la 8 a la 17\nTributos | 2 | C | de la 5 a la 15\nUrbanismo | 3 | B | de la 5 a la 14\n¿Qué materia ocupa más estanterías?",
+"Tributos",
+[
+"Urbanismo",
+"Nóminas",
+"Becas"
+],
+"Psicotécnicos",
+"Estanterías por materia: Subvenciones 10, Personal 9, Becas 9, Nóminas 10, Tributos 11, Urbanismo 10."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 14\nPersonal | 1 | B | de la 1 a la 9\nBecas | 1 | C | de la 4 a la 12\nNóminas | 2 | B | de la 8 a la 17\nTributos | 2 | C | de la 5 a la 15\nUrbanismo | 3 | B | de la 5 a la 14\n¿Cuántas estanterías hay en total en la planta 3?",
+"10",
+[
+"9",
+"11",
+"20"
+],
+"Psicotécnicos",
+"En la planta 3 solo hay una materia, con 10 estanterías."
+],
+[
+29,
+"Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\nMateria | Planta | Pasillo | Estanterías\nSubvenciones | 1 | A | de la 5 a la 14\nPersonal | 1 | B | de la 1 a la 9\nBecas | 1 | C | de la 4 a la 12\nNóminas | 2 | B | de la 8 a la 17\nTributos | 2 | C | de la 5 a la 15\nUrbanismo | 3 | B | de la 5 a la 14\n¿Cuál de estos códigos NO puede existir en el archivo?",
+"3-B-17",
+[
+"3-B-11",
+"2-B-17",
+"1-B-01"
+],
+"Psicotécnicos",
+"En la planta 3, pasillo B (Urbanismo), las estanterías solo llegan a la 14; los demás códigos están dentro de los tramos de la tabla."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 48 | 32 | 8 | 10\nIgualdad | 40 | 32 | 24 | 40\nInglés | 20 | 12 | 6 | 15\nAtención al público | 28 | 24 | 18 | 30\nAdministración electrónica | 20 | 20 | 5 | 10\n¿Qué porcentaje de los inscritos aprobó Igualdad?",
+"75 %",
+[
+"50 %",
+"100 %",
+"60 %"
+],
+"Psicotécnicos",
+"24 / 32 × 100 = 75 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 48 | 32 | 8 | 10\nIgualdad | 40 | 32 | 24 | 40\nInglés | 20 | 12 | 6 | 15\nAtención al público | 28 | 24 | 18 | 30\nAdministración electrónica | 20 | 20 | 5 | 10\n¿Cuál es la media de inscritos por curso?",
+"24",
+[
+"22",
+"26",
+"29"
+],
+"Psicotécnicos",
+"(32 + 32 + 12 + 24 + 20) / 5 = 120 / 5 = 24."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 48 | 32 | 8 | 10\nIgualdad | 40 | 32 | 24 | 40\nInglés | 20 | 12 | 6 | 15\nAtención al público | 28 | 24 | 18 | 30\nAdministración electrónica | 20 | 20 | 5 | 10\n¿Cuántas plazas quedaron libres en total?",
+"36",
+[
+"31",
+"41",
+"46"
+],
+"Psicotécnicos",
+"Plazas menos inscritos en cada curso: 16 + 8 + 8 + 4 + 0 = 36."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 48 | 32 | 8 | 10\nIgualdad | 40 | 32 | 24 | 40\nInglés | 20 | 12 | 6 | 15\nAtención al público | 28 | 24 | 18 | 30\nAdministración electrónica | 20 | 20 | 5 | 10\n¿Qué curso tiene el mayor porcentaje de plazas ocupadas?",
+"Administración electrónica",
+[
+"Igualdad",
+"Atención al público",
+"Inglés"
+],
+"Psicotécnicos",
+"Inscritos / plazas: Excel avanzado, 67 %; Igualdad, 80 %; Inglés, 60 %; Atención al público, 86 %; Administración electrónica, 100 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 48 | 32 | 8 | 10\nIgualdad | 40 | 32 | 24 | 40\nInglés | 20 | 12 | 6 | 15\nAtención al público | 28 | 24 | 18 | 30\nAdministración electrónica | 20 | 20 | 5 | 10\nSi cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?",
+"90",
+[
+"180",
+"105",
+"75"
+],
+"Psicotécnicos",
+"6 aprobados × 15 horas = 90 horas."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 48 | 32 | 8 | 10\nIgualdad | 40 | 32 | 24 | 40\nInglés | 20 | 12 | 6 | 15\nAtención al público | 28 | 24 | 18 | 30\nAdministración electrónica | 20 | 20 | 5 | 10\n¿En qué curso hubo más inscritos sin aprobar?",
+"Excel avanzado",
+[
+"Administración electrónica",
+"Inglés",
+"Igualdad"
+],
+"Psicotécnicos",
+"Inscritos menos aprobados: Excel avanzado, 24; Igualdad, 8; Inglés, 6; Atención al público, 6; Administración electrónica, 15."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 24 | 16 | 4 | 20\nContratación pública | 48 | 44 | 11 | 30\nAtención al público | 36 | 36 | 9 | 40\nProtección de datos | 20 | 12 | 6 | 25\nInglés | 24 | 12 | 3 | 15\n¿Qué porcentaje de los inscritos aprobó Protección de datos?",
+"50 %",
+[
+"25 %",
+"75 %",
+"30 %"
+],
+"Psicotécnicos",
+"6 / 12 × 100 = 50 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 24 | 16 | 4 | 20\nContratación pública | 48 | 44 | 11 | 30\nAtención al público | 36 | 36 | 9 | 40\nProtección de datos | 20 | 12 | 6 | 25\nInglés | 24 | 12 | 3 | 15\n¿Cuál es la media de inscritos por curso?",
+"24",
+[
+"22",
+"26",
+"29"
+],
+"Psicotécnicos",
+"(16 + 44 + 36 + 12 + 12) / 5 = 120 / 5 = 24."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 24 | 16 | 4 | 20\nContratación pública | 48 | 44 | 11 | 30\nAtención al público | 36 | 36 | 9 | 40\nProtección de datos | 20 | 12 | 6 | 25\nInglés | 24 | 12 | 3 | 15\n¿Cuántas plazas quedaron libres en total?",
+"32",
+[
+"27",
+"37",
+"42"
+],
+"Psicotécnicos",
+"Plazas menos inscritos en cada curso: 8 + 4 + 0 + 8 + 12 = 32."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 24 | 16 | 4 | 20\nContratación pública | 48 | 44 | 11 | 30\nAtención al público | 36 | 36 | 9 | 40\nProtección de datos | 20 | 12 | 6 | 25\nInglés | 24 | 12 | 3 | 15\n¿Qué curso tiene el mayor porcentaje de plazas ocupadas?",
+"Atención al público",
+[
+"Contratación pública",
+"Excel avanzado",
+"Protección de datos"
+],
+"Psicotécnicos",
+"Inscritos / plazas: Excel avanzado, 67 %; Contratación pública, 92 %; Atención al público, 100 %; Protección de datos, 60 %; Inglés, 50 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 24 | 16 | 4 | 20\nContratación pública | 48 | 44 | 11 | 30\nAtención al público | 36 | 36 | 9 | 40\nProtección de datos | 20 | 12 | 6 | 25\nInglés | 24 | 12 | 3 | 15\nSi cada aprobado de Contratación pública recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?",
+"330",
+[
+"1.320",
+"360",
+"300"
+],
+"Psicotécnicos",
+"11 aprobados × 30 horas = 330 horas."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nExcel avanzado | 24 | 16 | 4 | 20\nContratación pública | 48 | 44 | 11 | 30\nAtención al público | 36 | 36 | 9 | 40\nProtección de datos | 20 | 12 | 6 | 25\nInglés | 24 | 12 | 3 | 15\n¿En qué curso hubo más inscritos sin aprobar?",
+"Contratación pública",
+[
+"Protección de datos",
+"Atención al público",
+"Excel avanzado"
+],
+"Psicotécnicos",
+"Inscritos menos aprobados: Excel avanzado, 12; Contratación pública, 33; Atención al público, 27; Protección de datos, 6; Inglés, 9."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nPrevención de riesgos | 28 | 16 | 4 | 40\nContratación pública | 36 | 32 | 24 | 30\nProtección de datos | 32 | 24 | 6 | 25\nInglés | 32 | 16 | 8 | 40\nAdministración electrónica | 48 | 32 | 24 | 10\n¿Qué porcentaje de los inscritos aprobó Inglés?",
+"50 %",
+[
+"25 %",
+"75 %",
+"40 %"
+],
+"Psicotécnicos",
+"8 / 16 × 100 = 50 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nPrevención de riesgos | 28 | 16 | 4 | 40\nContratación pública | 36 | 32 | 24 | 30\nProtección de datos | 32 | 24 | 6 | 25\nInglés | 32 | 16 | 8 | 40\nAdministración electrónica | 48 | 32 | 24 | 10\n¿Cuál es la media de inscritos por curso?",
+"24",
+[
+"22",
+"26",
+"29"
+],
+"Psicotécnicos",
+"(16 + 32 + 24 + 16 + 32) / 5 = 120 / 5 = 24."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nPrevención de riesgos | 28 | 16 | 4 | 40\nContratación pública | 36 | 32 | 24 | 30\nProtección de datos | 32 | 24 | 6 | 25\nInglés | 32 | 16 | 8 | 40\nAdministración electrónica | 48 | 32 | 24 | 10\n¿Cuántas plazas quedaron libres en total?",
+"56",
+[
+"51",
+"61",
+"66"
+],
+"Psicotécnicos",
+"Plazas menos inscritos en cada curso: 12 + 4 + 8 + 16 + 16 = 56."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nPrevención de riesgos | 28 | 16 | 4 | 40\nContratación pública | 36 | 32 | 24 | 30\nProtección de datos | 32 | 24 | 6 | 25\nInglés | 32 | 16 | 8 | 40\nAdministración electrónica | 48 | 32 | 24 | 10\n¿Qué curso tiene el mayor porcentaje de plazas ocupadas?",
+"Contratación pública",
+[
+"Prevención de riesgos",
+"Protección de datos",
+"Administración electrónica"
+],
+"Psicotécnicos",
+"Inscritos / plazas: Prevención de riesgos, 57 %; Contratación pública, 89 %; Protección de datos, 75 %; Inglés, 50 %; Administración electrónica, 67 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nPrevención de riesgos | 28 | 16 | 4 | 40\nContratación pública | 36 | 32 | 24 | 30\nProtección de datos | 32 | 24 | 6 | 25\nInglés | 32 | 16 | 8 | 40\nAdministración electrónica | 48 | 32 | 24 | 10\nSi cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?",
+"240",
+[
+"320",
+"250",
+"230"
+],
+"Psicotécnicos",
+"24 aprobados × 10 horas = 240 horas."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nPrevención de riesgos | 28 | 16 | 4 | 40\nContratación pública | 36 | 32 | 24 | 30\nProtección de datos | 32 | 24 | 6 | 25\nInglés | 32 | 16 | 8 | 40\nAdministración electrónica | 48 | 32 | 24 | 10\n¿En qué curso hubo más inscritos sin aprobar?",
+"Protección de datos",
+[
+"Prevención de riesgos",
+"Inglés",
+"Administración electrónica"
+],
+"Psicotécnicos",
+"Inscritos menos aprobados: Prevención de riesgos, 12; Contratación pública, 8; Protección de datos, 18; Inglés, 8; Administración electrónica, 8."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nContratación pública | 20 | 12 | 6 | 15\nAdministración electrónica | 36 | 24 | 18 | 25\nProtección de datos | 28 | 16 | 8 | 30\nPrevención de riesgos | 36 | 20 | 10 | 25\nAtención al público | 36 | 28 | 21 | 30\n¿Qué porcentaje de los inscritos aprobó Administración electrónica?",
+"75 %",
+[
+"50 %",
+"100 %",
+"65 %"
+],
+"Psicotécnicos",
+"18 / 24 × 100 = 75 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nContratación pública | 20 | 12 | 6 | 15\nAdministración electrónica | 36 | 24 | 18 | 25\nProtección de datos | 28 | 16 | 8 | 30\nPrevención de riesgos | 36 | 20 | 10 | 25\nAtención al público | 36 | 28 | 21 | 30\n¿Cuál es la media de inscritos por curso?",
+"20",
+[
+"18",
+"22",
+"25"
+],
+"Psicotécnicos",
+"(12 + 24 + 16 + 20 + 28) / 5 = 100 / 5 = 20."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nContratación pública | 20 | 12 | 6 | 15\nAdministración electrónica | 36 | 24 | 18 | 25\nProtección de datos | 28 | 16 | 8 | 30\nPrevención de riesgos | 36 | 20 | 10 | 25\nAtención al público | 36 | 28 | 21 | 30\n¿Cuántas plazas quedaron libres en total?",
+"56",
+[
+"51",
+"61",
+"66"
+],
+"Psicotécnicos",
+"Plazas menos inscritos en cada curso: 8 + 12 + 12 + 16 + 8 = 56."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nContratación pública | 20 | 12 | 6 | 15\nAdministración electrónica | 36 | 24 | 18 | 25\nProtección de datos | 28 | 16 | 8 | 30\nPrevención de riesgos | 36 | 20 | 10 | 25\nAtención al público | 36 | 28 | 21 | 30\n¿Qué curso tiene el mayor porcentaje de plazas ocupadas?",
+"Atención al público",
+[
+"Protección de datos",
+"Administración electrónica",
+"Contratación pública"
+],
+"Psicotécnicos",
+"Inscritos / plazas: Contratación pública, 60 %; Administración electrónica, 67 %; Protección de datos, 57 %; Prevención de riesgos, 56 %; Atención al público, 78 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nContratación pública | 20 | 12 | 6 | 15\nAdministración electrónica | 36 | 24 | 18 | 25\nProtección de datos | 28 | 16 | 8 | 30\nPrevención de riesgos | 36 | 20 | 10 | 25\nAtención al público | 36 | 28 | 21 | 30\nSi cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?",
+"450",
+[
+"600",
+"475",
+"425"
+],
+"Psicotécnicos",
+"18 aprobados × 25 horas = 450 horas."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nContratación pública | 20 | 12 | 6 | 15\nAdministración electrónica | 36 | 24 | 18 | 25\nProtección de datos | 28 | 16 | 8 | 30\nPrevención de riesgos | 36 | 20 | 10 | 25\nAtención al público | 36 | 28 | 21 | 30\n¿En qué curso hubo más inscritos sin aprobar?",
+"Prevención de riesgos",
+[
+"Contratación pública",
+"Protección de datos",
+"Administración electrónica"
+],
+"Psicotécnicos",
+"Inscritos menos aprobados: Contratación pública, 6; Administración electrónica, 6; Protección de datos, 8; Prevención de riesgos, 10; Atención al público, 7."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nAtención al público | 36 | 20 | 15 | 25\nExcel avanzado | 20 | 12 | 6 | 40\nProtección de datos | 28 | 28 | 21 | 30\nContratación pública | 20 | 16 | 12 | 15\nInglés | 48 | 44 | 22 | 40\n¿Qué porcentaje de los inscritos aprobó Contratación pública?",
+"75 %",
+[
+"50 %",
+"100 %",
+"60 %"
+],
+"Psicotécnicos",
+"12 / 16 × 100 = 75 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nAtención al público | 36 | 20 | 15 | 25\nExcel avanzado | 20 | 12 | 6 | 40\nProtección de datos | 28 | 28 | 21 | 30\nContratación pública | 20 | 16 | 12 | 15\nInglés | 48 | 44 | 22 | 40\n¿Cuál es la media de inscritos por curso?",
+"24",
+[
+"22",
+"26",
+"29"
+],
+"Psicotécnicos",
+"(20 + 12 + 28 + 16 + 44) / 5 = 120 / 5 = 24."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nAtención al público | 36 | 20 | 15 | 25\nExcel avanzado | 20 | 12 | 6 | 40\nProtección de datos | 28 | 28 | 21 | 30\nContratación pública | 20 | 16 | 12 | 15\nInglés | 48 | 44 | 22 | 40\n¿Cuántas plazas quedaron libres en total?",
+"32",
+[
+"27",
+"37",
+"42"
+],
+"Psicotécnicos",
+"Plazas menos inscritos en cada curso: 16 + 8 + 0 + 4 + 4 = 32."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nAtención al público | 36 | 20 | 15 | 25\nExcel avanzado | 20 | 12 | 6 | 40\nProtección de datos | 28 | 28 | 21 | 30\nContratación pública | 20 | 16 | 12 | 15\nInglés | 48 | 44 | 22 | 40\n¿Qué curso tiene el mayor porcentaje de plazas ocupadas?",
+"Protección de datos",
+[
+"Atención al público",
+"Inglés",
+"Contratación pública"
+],
+"Psicotécnicos",
+"Inscritos / plazas: Atención al público, 56 %; Excel avanzado, 60 %; Protección de datos, 100 %; Contratación pública, 80 %; Inglés, 92 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nAtención al público | 36 | 20 | 15 | 25\nExcel avanzado | 20 | 12 | 6 | 40\nProtección de datos | 28 | 28 | 21 | 30\nContratación pública | 20 | 16 | 12 | 15\nInglés | 48 | 44 | 22 | 40\nSi cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?",
+"880",
+[
+"1.760",
+"920",
+"840"
+],
+"Psicotécnicos",
+"22 aprobados × 40 horas = 880 horas."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nAtención al público | 36 | 20 | 15 | 25\nExcel avanzado | 20 | 12 | 6 | 40\nProtección de datos | 28 | 28 | 21 | 30\nContratación pública | 20 | 16 | 12 | 15\nInglés | 48 | 44 | 22 | 40\n¿En qué curso hubo más inscritos sin aprobar?",
+"Inglés",
+[
+"Protección de datos",
+"Atención al público",
+"Contratación pública"
+],
+"Psicotécnicos",
+"Inscritos menos aprobados: Atención al público, 5; Excel avanzado, 6; Protección de datos, 7; Contratación pública, 4; Inglés, 22."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nIgualdad | 24 | 20 | 15 | 15\nAtención al público | 48 | 32 | 24 | 15\nExcel avanzado | 32 | 20 | 15 | 30\nPrevención de riesgos | 28 | 20 | 15 | 30\nProtección de datos | 48 | 48 | 36 | 15\n¿Qué porcentaje de los inscritos aprobó Atención al público?",
+"75 %",
+[
+"50 %",
+"100 %",
+"65 %"
+],
+"Psicotécnicos",
+"24 / 32 × 100 = 75 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nIgualdad | 24 | 20 | 15 | 15\nAtención al público | 48 | 32 | 24 | 15\nExcel avanzado | 32 | 20 | 15 | 30\nPrevención de riesgos | 28 | 20 | 15 | 30\nProtección de datos | 48 | 48 | 36 | 15\n¿Cuál es la media de inscritos por curso?",
+"28",
+[
+"26",
+"30",
+"33"
+],
+"Psicotécnicos",
+"(20 + 32 + 20 + 20 + 48) / 5 = 140 / 5 = 28."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nIgualdad | 24 | 20 | 15 | 15\nAtención al público | 48 | 32 | 24 | 15\nExcel avanzado | 32 | 20 | 15 | 30\nPrevención de riesgos | 28 | 20 | 15 | 30\nProtección de datos | 48 | 48 | 36 | 15\n¿Cuántas plazas quedaron libres en total?",
+"40",
+[
+"35",
+"45",
+"50"
+],
+"Psicotécnicos",
+"Plazas menos inscritos en cada curso: 4 + 16 + 12 + 8 + 0 = 40."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nIgualdad | 24 | 20 | 15 | 15\nAtención al público | 48 | 32 | 24 | 15\nExcel avanzado | 32 | 20 | 15 | 30\nPrevención de riesgos | 28 | 20 | 15 | 30\nProtección de datos | 48 | 48 | 36 | 15\n¿Qué curso tiene el mayor porcentaje de plazas ocupadas?",
+"Protección de datos",
+[
+"Prevención de riesgos",
+"Igualdad",
+"Atención al público"
+],
+"Psicotécnicos",
+"Inscritos / plazas: Igualdad, 83 %; Atención al público, 67 %; Excel avanzado, 62 %; Prevención de riesgos, 71 %; Protección de datos, 100 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nIgualdad | 24 | 20 | 15 | 15\nAtención al público | 48 | 32 | 24 | 15\nExcel avanzado | 32 | 20 | 15 | 30\nPrevención de riesgos | 28 | 20 | 15 | 30\nProtección de datos | 48 | 48 | 36 | 15\nSi cada aprobado de Protección de datos recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?",
+"540",
+[
+"720",
+"555",
+"525"
+],
+"Psicotécnicos",
+"36 aprobados × 15 horas = 540 horas."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nIgualdad | 24 | 20 | 15 | 15\nAtención al público | 48 | 32 | 24 | 15\nExcel avanzado | 32 | 20 | 15 | 30\nPrevención de riesgos | 28 | 20 | 15 | 30\nProtección de datos | 48 | 48 | 36 | 15\n¿En qué curso hubo más inscritos sin aprobar?",
+"Protección de datos",
+[
+"Igualdad",
+"Excel avanzado",
+"Prevención de riesgos"
+],
+"Psicotécnicos",
+"Inscritos menos aprobados: Igualdad, 5; Atención al público, 8; Excel avanzado, 5; Prevención de riesgos, 5; Protección de datos, 12."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nProtección de datos | 48 | 24 | 18 | 40\nAdministración electrónica | 32 | 24 | 6 | 10\nAtención al público | 48 | 28 | 14 | 20\nPrevención de riesgos | 24 | 16 | 8 | 30\nIgualdad | 32 | 28 | 21 | 15\n¿Qué porcentaje de los inscritos aprobó Atención al público?",
+"50 %",
+[
+"25 %",
+"75 %",
+"29 %"
+],
+"Psicotécnicos",
+"14 / 28 × 100 = 50 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nProtección de datos | 48 | 24 | 18 | 40\nAdministración electrónica | 32 | 24 | 6 | 10\nAtención al público | 48 | 28 | 14 | 20\nPrevención de riesgos | 24 | 16 | 8 | 30\nIgualdad | 32 | 28 | 21 | 15\n¿Cuál es la media de inscritos por curso?",
+"24",
+[
+"22",
+"26",
+"29"
+],
+"Psicotécnicos",
+"(24 + 24 + 28 + 16 + 28) / 5 = 120 / 5 = 24."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nProtección de datos | 48 | 24 | 18 | 40\nAdministración electrónica | 32 | 24 | 6 | 10\nAtención al público | 48 | 28 | 14 | 20\nPrevención de riesgos | 24 | 16 | 8 | 30\nIgualdad | 32 | 28 | 21 | 15\n¿Cuántas plazas quedaron libres en total?",
+"64",
+[
+"59",
+"69",
+"74"
+],
+"Psicotécnicos",
+"Plazas menos inscritos en cada curso: 24 + 8 + 20 + 8 + 4 = 64."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nProtección de datos | 48 | 24 | 18 | 40\nAdministración electrónica | 32 | 24 | 6 | 10\nAtención al público | 48 | 28 | 14 | 20\nPrevención de riesgos | 24 | 16 | 8 | 30\nIgualdad | 32 | 28 | 21 | 15\n¿Qué curso tiene el mayor porcentaje de plazas ocupadas?",
+"Igualdad",
+[
+"Protección de datos",
+"Prevención de riesgos",
+"Administración electrónica"
+],
+"Psicotécnicos",
+"Inscritos / plazas: Protección de datos, 50 %; Administración electrónica, 75 %; Atención al público, 58 %; Prevención de riesgos, 67 %; Igualdad, 88 %."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nProtección de datos | 48 | 24 | 18 | 40\nAdministración electrónica | 32 | 24 | 6 | 10\nAtención al público | 48 | 28 | 14 | 20\nPrevención de riesgos | 24 | 16 | 8 | 30\nIgualdad | 32 | 28 | 21 | 15\nSi cada aprobado de Atención al público recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?",
+"280",
+[
+"560",
+"300",
+"260"
+],
+"Psicotécnicos",
+"14 aprobados × 20 horas = 280 horas."
+],
+[
+29,
+"La tabla recoge los cursos de formación de una consejería:\nCurso | Plazas | Inscritos | Aprobados | Horas\nProtección de datos | 48 | 24 | 18 | 40\nAdministración electrónica | 32 | 24 | 6 | 10\nAtención al público | 48 | 28 | 14 | 20\nPrevención de riesgos | 24 | 16 | 8 | 30\nIgualdad | 32 | 28 | 21 | 15\n¿En qué curso hubo más inscritos sin aprobar?",
+"Administración electrónica",
+[
+"Prevención de riesgos",
+"Igualdad",
+"Atención al público"
+],
+"Psicotécnicos",
+"Inscritos menos aprobados: Protección de datos, 6; Administración electrónica, 18; Atención al público, 14; Prevención de riesgos, 8; Igualdad, 7."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).\nTipo | Letra\nInforme | I\nFactura | F\nContrato | C\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nEducación | 1\nHacienda | 5\nPersonal | 2\nVivienda | 9\n¿Qué clave lleva una factura de Vivienda de 2023?",
+"F9-23",
+[
+"C9-23",
+"F1-23",
+"F9-24"
+],
+"Psicotécnicos",
+"Factura = F; Vivienda = 9; año 2023 → F9-23."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).\nTipo | Letra\nInforme | I\nFactura | F\nContrato | C\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nEducación | 1\nHacienda | 5\nPersonal | 2\nVivienda | 9\n¿A qué documento corresponde la clave Q5-25?",
+"Queja de Hacienda de 2025",
+[
+"Informe de Hacienda de 2025",
+"Queja de Personal de 2025",
+"Queja de Hacienda de 2024"
+],
+"Psicotécnicos",
+"Q = queja; 5 = Hacienda; 25 = 2025."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).\nTipo | Letra\nInforme | I\nFactura | F\nContrato | C\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nEducación | 1\nHacienda | 5\nPersonal | 2\nVivienda | 9\n¿Qué clave lleva un contrato de Personal de 2024?",
+"C2-24",
+[
+"Q2-24",
+"C9-24",
+"C2-25"
+],
+"Psicotécnicos",
+"Contrato = C; Personal = 2; año 2024 → C2-24."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).\nTipo | Letra\nInforme | I\nFactura | F\nContrato | C\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nEducación | 1\nHacienda | 5\nPersonal | 2\nVivienda | 9\n¿Qué clave lleva una factura de Educación de 2026?",
+"F1-26",
+[
+"C1-26",
+"F5-26",
+"F1-27"
+],
+"Psicotécnicos",
+"Factura = F; Educación = 1; año 2026 → F1-26."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).\nTipo | Letra\nInforme | I\nQueja | Q\nFactura | F\nContrato | C\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 6\nCultura | 7\nEducación | 8\nVivienda | 9\n¿Qué clave lleva un informe de Vivienda de 2024?",
+"I9-24",
+[
+"Q9-24",
+"I6-24",
+"I9-25"
+],
+"Psicotécnicos",
+"Informe = I; Vivienda = 9; año 2024 → I9-24."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).\nTipo | Letra\nInforme | I\nQueja | Q\nFactura | F\nContrato | C\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 6\nCultura | 7\nEducación | 8\nVivienda | 9\n¿A qué documento corresponde la clave Q9-25?",
+"Queja de Vivienda de 2025",
+[
+"Factura de Vivienda de 2025",
+"Queja de Sanidad de 2025",
+"Queja de Vivienda de 2024"
+],
+"Psicotécnicos",
+"Q = queja; 9 = Vivienda; 25 = 2025."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).\nTipo | Letra\nInforme | I\nQueja | Q\nFactura | F\nContrato | C\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 6\nCultura | 7\nEducación | 8\nVivienda | 9\n¿Qué clave lleva un informe de Sanidad de 2025?",
+"I6-25",
+[
+"Q6-25",
+"I7-25",
+"I6-26"
+],
+"Psicotécnicos",
+"Informe = I; Sanidad = 6; año 2025 → I6-25."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).\nTipo | Letra\nInforme | I\nQueja | Q\nFactura | F\nContrato | C\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 6\nCultura | 7\nEducación | 8\nVivienda | 9\n¿A qué documento corresponde la clave C7-23?",
+"Contrato de Cultura de 2023",
+[
+"Informe de Cultura de 2023",
+"Contrato de Educación de 2023",
+"Contrato de Cultura de 2022"
+],
+"Psicotécnicos",
+"C = contrato; 7 = Cultura; 23 = 2023."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).\nTipo | Letra\nInforme | I\nQueja | Q\nFactura | F\nContrato | C\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 6\nCultura | 7\nEducación | 8\nVivienda | 9\n¿Qué clave lleva una queja de Educación de 2024?",
+"Q8-24",
+[
+"F8-24",
+"Q9-24",
+"Q8-25"
+],
+"Psicotécnicos",
+"Queja = Q; Educación = 8; año 2024 → Q8-24."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).\nTipo | Letra\nInforme | I\nQueja | Q\nFactura | F\nContrato | C\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 6\nCultura | 7\nEducación | 8\nVivienda | 9\n¿A qué documento corresponde la clave I9-24?",
+"Informe de Vivienda de 2024",
+[
+"Queja de Vivienda de 2024",
+"Informe de Sanidad de 2024",
+"Informe de Vivienda de 2023"
+],
+"Psicotécnicos",
+"I = informe; 9 = Vivienda; 24 = 2024."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).\nTipo | Letra\nFactura | F\nResolución | R\nSolicitud | S\nInforme | I\nNúmeros de las unidades:\nUnidad | Número\nCultura | 5\nPersonal | 6\nHacienda | 2\nVivienda | 4\n¿Qué clave lleva una resolución de Cultura de 2024?",
+"R5-24",
+[
+"S5-24",
+"R6-24",
+"R5-25"
+],
+"Psicotécnicos",
+"Resolución = R; Cultura = 5; año 2024 → R5-24."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).\nTipo | Letra\nFactura | F\nResolución | R\nSolicitud | S\nInforme | I\nNúmeros de las unidades:\nUnidad | Número\nCultura | 5\nPersonal | 6\nHacienda | 2\nVivienda | 4\n¿A qué documento corresponde la clave S2-24?",
+"Solicitud de Hacienda de 2024",
+[
+"Informe de Hacienda de 2024",
+"Solicitud de Vivienda de 2024",
+"Solicitud de Hacienda de 2023"
+],
+"Psicotécnicos",
+"S = solicitud; 2 = Hacienda; 24 = 2024."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).\nTipo | Letra\nFactura | F\nResolución | R\nSolicitud | S\nInforme | I\nNúmeros de las unidades:\nUnidad | Número\nCultura | 5\nPersonal | 6\nHacienda | 2\nVivienda | 4\n¿Qué clave lleva una resolución de Vivienda de 2025?",
+"R4-25",
+[
+"S4-25",
+"R5-25",
+"R4-26"
+],
+"Psicotécnicos",
+"Resolución = R; Vivienda = 4; año 2025 → R4-25."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).\nTipo | Letra\nFactura | F\nResolución | R\nSolicitud | S\nInforme | I\nNúmeros de las unidades:\nUnidad | Número\nCultura | 5\nPersonal | 6\nHacienda | 2\nVivienda | 4\n¿A qué documento corresponde la clave S2-26?",
+"Solicitud de Hacienda de 2026",
+[
+"Informe de Hacienda de 2026",
+"Solicitud de Vivienda de 2026",
+"Solicitud de Hacienda de 2025"
+],
+"Psicotécnicos",
+"S = solicitud; 2 = Hacienda; 26 = 2026."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).\nTipo | Letra\nFactura | F\nResolución | R\nSolicitud | S\nInforme | I\nNúmeros de las unidades:\nUnidad | Número\nCultura | 5\nPersonal | 6\nHacienda | 2\nVivienda | 4\n¿Qué clave lleva una factura de Vivienda de 2026?",
+"F4-26",
+[
+"R4-26",
+"F5-26",
+"F4-27"
+],
+"Psicotécnicos",
+"Factura = F; Vivienda = 4; año 2026 → F4-26."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).\nTipo | Letra\nFactura | F\nResolución | R\nSolicitud | S\nInforme | I\nNúmeros de las unidades:\nUnidad | Número\nCultura | 5\nPersonal | 6\nHacienda | 2\nVivienda | 4\n¿A qué documento corresponde la clave F5-24?",
+"Factura de Cultura de 2024",
+[
+"Resolución de Cultura de 2024",
+"Factura de Personal de 2024",
+"Factura de Cultura de 2023"
+],
+"Psicotécnicos",
+"F = factura; 5 = Cultura; 24 = 2024."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, R8-25 es un documento de tipo resolución de Sanidad de 2025).\nTipo | Letra\nResolución | R\nContrato | C\nFactura | F\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 8\nEducación | 7\nCultura | 3\nPersonal | 4\n¿Qué clave lleva una resolución de Cultura de 2024?",
+"R3-24",
+[
+"C3-24",
+"R4-24",
+"R3-25"
+],
+"Psicotécnicos",
+"Resolución = R; Cultura = 3; año 2024 → R3-24."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, R8-25 es un documento de tipo resolución de Sanidad de 2025).\nTipo | Letra\nResolución | R\nContrato | C\nFactura | F\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 8\nEducación | 7\nCultura | 3\nPersonal | 4\n¿A qué documento corresponde la clave F3-26?",
+"Factura de Cultura de 2026",
+[
+"Queja de Cultura de 2026",
+"Factura de Personal de 2026",
+"Factura de Cultura de 2025"
+],
+"Psicotécnicos",
+"F = factura; 3 = Cultura; 26 = 2026."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, R8-25 es un documento de tipo resolución de Sanidad de 2025).\nTipo | Letra\nResolución | R\nContrato | C\nFactura | F\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 8\nEducación | 7\nCultura | 3\nPersonal | 4\n¿Qué clave lleva un contrato de Personal de 2024?",
+"C4-24",
+[
+"F4-24",
+"C8-24",
+"C4-25"
+],
+"Psicotécnicos",
+"Contrato = C; Personal = 4; año 2024 → C4-24."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, R8-25 es un documento de tipo resolución de Sanidad de 2025).\nTipo | Letra\nResolución | R\nContrato | C\nFactura | F\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 8\nEducación | 7\nCultura | 3\nPersonal | 4\n¿A qué documento corresponde la clave F4-25?",
+"Factura de Personal de 2025",
+[
+"Queja de Personal de 2025",
+"Factura de Sanidad de 2025",
+"Factura de Personal de 2024"
+],
+"Psicotécnicos",
+"F = factura; 4 = Personal; 25 = 2025."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, R8-25 es un documento de tipo resolución de Sanidad de 2025).\nTipo | Letra\nResolución | R\nContrato | C\nFactura | F\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 8\nEducación | 7\nCultura | 3\nPersonal | 4\n¿Qué clave lleva una factura de Educación de 2026?",
+"F7-26",
+[
+"Q7-26",
+"F3-26",
+"F7-27"
+],
+"Psicotécnicos",
+"Factura = F; Educación = 7; año 2026 → F7-26."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, R8-25 es un documento de tipo resolución de Sanidad de 2025).\nTipo | Letra\nResolución | R\nContrato | C\nFactura | F\nQueja | Q\nNúmeros de las unidades:\nUnidad | Número\nSanidad | 8\nEducación | 7\nCultura | 3\nPersonal | 4\n¿A qué documento corresponde la clave R3-26?",
+"Resolución de Cultura de 2026",
+[
+"Contrato de Cultura de 2026",
+"Resolución de Personal de 2026",
+"Resolución de Cultura de 2025"
+],
+"Psicotécnicos",
+"R = resolución; 3 = Cultura; 26 = 2026."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, C6-25 es un documento de tipo contrato de Hacienda de 2025).\nTipo | Letra\nContrato | C\nQueja | Q\nFactura | F\nResolución | R\nNúmeros de las unidades:\nUnidad | Número\nHacienda | 6\nCultura | 1\nEducación | 9\nSanidad | 3\n¿Qué clave lleva una resolución de Sanidad de 2024?",
+"R3-24",
+[
+"C3-24",
+"R6-24",
+"R3-25"
+],
+"Psicotécnicos",
+"Resolución = R; Sanidad = 3; año 2024 → R3-24."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, C6-25 es un documento de tipo contrato de Hacienda de 2025).\nTipo | Letra\nContrato | C\nQueja | Q\nFactura | F\nResolución | R\nNúmeros de las unidades:\nUnidad | Número\nHacienda | 6\nCultura | 1\nEducación | 9\nSanidad | 3\n¿A qué documento corresponde la clave R6-25?",
+"Resolución de Hacienda de 2025",
+[
+"Contrato de Hacienda de 2025",
+"Resolución de Cultura de 2025",
+"Resolución de Hacienda de 2024"
+],
+"Psicotécnicos",
+"R = resolución; 6 = Hacienda; 25 = 2025."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, C6-25 es un documento de tipo contrato de Hacienda de 2025).\nTipo | Letra\nContrato | C\nQueja | Q\nFactura | F\nResolución | R\nNúmeros de las unidades:\nUnidad | Número\nHacienda | 6\nCultura | 1\nEducación | 9\nSanidad | 3\n¿Qué clave lleva una queja de Cultura de 2026?",
+"Q1-26",
+[
+"F1-26",
+"Q9-26",
+"Q1-27"
+],
+"Psicotécnicos",
+"Queja = Q; Cultura = 1; año 2026 → Q1-26."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, C6-25 es un documento de tipo contrato de Hacienda de 2025).\nTipo | Letra\nContrato | C\nQueja | Q\nFactura | F\nResolución | R\nNúmeros de las unidades:\nUnidad | Número\nHacienda | 6\nCultura | 1\nEducación | 9\nSanidad | 3\n¿A qué documento corresponde la clave R9-24?",
+"Resolución de Educación de 2024",
+[
+"Contrato de Educación de 2024",
+"Resolución de Sanidad de 2024",
+"Resolución de Educación de 2023"
+],
+"Psicotécnicos",
+"R = resolución; 9 = Educación; 24 = 2024."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, C6-25 es un documento de tipo contrato de Hacienda de 2025).\nTipo | Letra\nContrato | C\nQueja | Q\nFactura | F\nResolución | R\nNúmeros de las unidades:\nUnidad | Número\nHacienda | 6\nCultura | 1\nEducación | 9\nSanidad | 3\n¿Qué clave lleva un contrato de Sanidad de 2026?",
+"C3-26",
+[
+"Q3-26",
+"C6-26",
+"C3-27"
+],
+"Psicotécnicos",
+"Contrato = C; Sanidad = 3; año 2026 → C3-26."
+],
+[
+29,
+"En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, C6-25 es un documento de tipo contrato de Hacienda de 2025).\nTipo | Letra\nContrato | C\nQueja | Q\nFactura | F\nResolución | R\nNúmeros de las unidades:\nUnidad | Número\nHacienda | 6\nCultura | 1\nEducación | 9\nSanidad | 3\n¿A qué documento corresponde la clave R9-23?",
+"Resolución de Educación de 2023",
+[
+"Contrato de Educación de 2023",
+"Resolución de Sanidad de 2023",
+"Resolución de Educación de 2022"
+],
+"Psicotécnicos",
+"R = resolución; 9 = Educación; 23 = 2023."
+],
+[
+29,
+"Si 4x + 11 = 23, ¿cuánto vale x?",
+"3",
+[
+"4",
+"2",
+"5"
+],
+"Psicotécnicos",
+"4x = 23 − 11 = 12; x = 12 / 4 = 3."
+],
+[
+29,
+"Si 2x + 15 = 37, ¿cuánto vale x?",
+"11",
+[
+"12",
+"10",
+"26"
+],
+"Psicotécnicos",
+"2x = 37 − 15 = 22; x = 22 / 2 = 11."
+],
+[
+29,
+"Si 9x + 28 = 64, ¿cuánto vale x?",
+"4",
+[
+"5",
+"3",
+"6"
+],
+"Psicotécnicos",
+"9x = 64 − 28 = 36; x = 36 / 9 = 4."
+],
+[
+29,
+"Si 8x + 28 = 44, ¿cuánto vale x?",
+"2",
+[
+"3",
+"1",
+"9"
+],
+"Psicotécnicos",
+"8x = 44 − 28 = 16; x = 16 / 8 = 2."
+],
+[
+29,
+"Si 7x + 30 = 121, ¿cuánto vale x?",
+"13",
+[
+"14",
+"12",
+"15"
+],
+"Psicotécnicos",
+"7x = 121 − 30 = 91; x = 91 / 7 = 13."
+],
+[
+29,
+"Si 5x + 25 = 70, ¿cuánto vale x?",
+"9",
+[
+"10",
+"8",
+"19"
+],
+"Psicotécnicos",
+"5x = 70 − 25 = 45; x = 45 / 5 = 9."
+],
+[
+29,
+"Si 3x + 27 = 45, ¿cuánto vale x?",
+"6",
+[
+"7",
+"5",
+"24"
+],
+"Psicotécnicos",
+"3x = 45 − 27 = 18; x = 18 / 3 = 6."
+],
+[
+29,
+"Si 3x + 17 = 56, ¿cuánto vale x?",
+"13",
+[
+"14",
+"12",
+"15"
+],
+"Psicotécnicos",
+"3x = 56 − 17 = 39; x = 39 / 3 = 13."
+],
+[
+29,
+"Si 8x + 25 = 41, ¿cuánto vale x?",
+"2",
+[
+"3",
+"1",
+"4"
+],
+"Psicotécnicos",
+"8x = 41 − 25 = 16; x = 16 / 8 = 2."
+],
+[
+29,
+"Si 2x + 5 = 19, ¿cuánto vale x?",
+"7",
+[
+"8",
+"6",
+"12"
+],
+"Psicotécnicos",
+"2x = 19 − 5 = 14; x = 14 / 2 = 7."
+],
+[
+29,
+"Si al cuádruple de un número se le suman 6, se obtiene 50. ¿Cuál es el número?",
+"11",
+[
+"12",
+"10",
+"14"
+],
+"Psicotécnicos",
+"4x + 6 = 50 → 4x = 44 → x = 11."
+],
+[
+29,
+"Si al triple de un número se le suman 20, se obtiene 107. ¿Cuál es el número?",
+"29",
+[
+"30",
+"28",
+"35"
+],
+"Psicotécnicos",
+"3x + 20 = 107 → 3x = 87 → x = 29."
+],
+[
+29,
+"Si al doble de un número se le suman 12, se obtiene 48. ¿Cuál es el número?",
+"18",
+[
+"19",
+"17",
+"24"
+],
+"Psicotécnicos",
+"2x + 12 = 48 → 2x = 36 → x = 18."
+],
+[
+29,
+"Si al cuádruple de un número se le suman 15, se obtiene 59. ¿Cuál es el número?",
+"11",
+[
+"12",
+"10",
+"14"
+],
+"Psicotécnicos",
+"4x + 15 = 59 → 4x = 44 → x = 11."
+],
+[
+29,
+"Si al triple de un número se le suman 3, se obtiene 111. ¿Cuál es el número?",
+"36",
+[
+"37",
+"35",
+"38"
+],
+"Psicotécnicos",
+"3x + 3 = 111 → 3x = 108 → x = 36."
+],
+[
+29,
+"Si al cuádruple de un número se le suman 5, se obtiene 25. ¿Cuál es el número?",
+"5",
+[
+"6",
+"4",
+"7"
+],
+"Psicotécnicos",
+"4x + 5 = 25 → 4x = 20 → x = 5."
+],
+[
+29,
+"Si al doble de un número se le suman 6, se obtiene 82. ¿Cuál es el número?",
+"38",
+[
+"39",
+"37",
+"41"
+],
+"Psicotécnicos",
+"2x + 6 = 82 → 2x = 76 → x = 38."
+],
+[
+29,
+"Si al cuádruple de un número se le suman 17, se obtiene 85. ¿Cuál es el número?",
+"17",
+[
+"18",
+"16",
+"21"
+],
+"Psicotécnicos",
+"4x + 17 = 85 → 4x = 68 → x = 17."
+],
+[
+29,
+"Entre dos departamentos tienen 45 empleados y uno tiene el doble que el otro. ¿Cuántos tiene el más grande?",
+"30",
+[
+"15",
+"32",
+"28"
+],
+"Psicotécnicos",
+"x + 2x = 45 → x = 15; el grande tiene 2 × 15 = 30."
+],
+[
+29,
+"Entre dos departamentos tienen 30 empleados y uno tiene el doble que el otro. ¿Cuántos tiene el más grande?",
+"20",
+[
+"10",
+"22",
+"18"
+],
+"Psicotécnicos",
+"x + 2x = 30 → x = 10; el grande tiene 2 × 10 = 20."
+],
+[
+29,
+"Entre dos departamentos tienen 36 empleados y uno tiene el triple que el otro. ¿Cuántos tiene el más grande?",
+"27",
+[
+"9",
+"30",
+"24"
+],
+"Psicotécnicos",
+"x + 3x = 36 → x = 9; el grande tiene 3 × 9 = 27."
+],
+[
+29,
+"Calcula: (−4) × 9 − (−20) ÷ 2",
+"−26",
+[
+"−46",
+"26",
+"−24"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−4) × 9 = −36; (−20) ÷ 2 = −10. Después: −36 − (−10) = −26."
+],
+[
+29,
+"Calcula: (−2) × 8 − (−6) ÷ 2",
+"−13",
+[
+"−19",
+"13",
+"−11"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−2) × 8 = −16; (−6) ÷ 2 = −3. Después: −16 − (−3) = −13."
+],
+[
+29,
+"Calcula: (−6) × 8 − (−12) ÷ (−2)",
+"−54",
+[
+"−42",
+"54",
+"−52"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−6) × 8 = −48; (−12) ÷ (−2) = 6. Después: −48 − 6 = −54."
+],
+[
+29,
+"Calcula: (−8) × 2 − (−18) ÷ 2",
+"−7",
+[
+"−25",
+"7",
+"−5"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−8) × 2 = −16; (−18) ÷ 2 = −9. Después: −16 − (−9) = −7."
+],
+[
+29,
+"Calcula: (−5) × 6 − (−12) ÷ (−2)",
+"−36",
+[
+"−24",
+"36",
+"−34"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−5) × 6 = −30; (−12) ÷ (−2) = 6. Después: −30 − 6 = −36."
+],
+[
+29,
+"Calcula: (−8) × 5 − (−14) ÷ 2",
+"−33",
+[
+"−47",
+"33",
+"−31"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−8) × 5 = −40; (−14) ÷ 2 = −7. Después: −40 − (−7) = −33."
+],
+[
+29,
+"Calcula: (−2) × 4 − (−16) ÷ 2",
+"0",
+[
+"−16",
+"2",
+"−2"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−2) × 4 = −8; (−16) ÷ 2 = −8. Después: −8 − (−8) = 0."
+],
+[
+29,
+"Calcula: (−5) × 8 − (−24) ÷ (−2)",
+"−52",
+[
+"−28",
+"52",
+"−50"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−5) × 8 = −40; (−24) ÷ (−2) = 12. Después: −40 − 12 = −52."
+],
+[
+29,
+"Calcula: (−1) × 9 − (−6) ÷ 2",
+"−6",
+[
+"−12",
+"6",
+"−4"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−1) × 9 = −9; (−6) ÷ 2 = −3. Después: −9 − (−3) = −6."
+],
+[
+29,
+"Calcula: (−3) × 9 − (−4) ÷ 2",
+"−25",
+[
+"−29",
+"25",
+"−23"
+],
+"Psicotécnicos",
+"Primero multiplicaciones y divisiones: (−3) × 9 = −27; (−4) ÷ 2 = −2. Después: −27 − (−2) = −25."
+],
+[
+29,
+"En una caja hay 2 bolas rojas, 5 azules y 2 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea roja?",
+"2/9",
+[
+"2/7",
+"7/9",
+"1/3"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 2 / 9."
+],
+[
+29,
+"En una caja hay 5 bolas rojas, 3 azules y 6 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea verde?",
+"3/7",
+[
+"3/4",
+"4/7",
+"1/2"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 6 / 14 = 3/7."
+],
+[
+29,
+"En una caja hay 1 bola roja, 8 azules y 3 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea azul?",
+"2/3",
+[
+"7/12",
+"1/3",
+"3/4"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 8 / 12 = 2/3."
+],
+[
+29,
+"En una caja hay 7 bolas rojas, 4 azules y 6 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea azul?",
+"4/17",
+[
+"4/13",
+"13/17",
+"5/17"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 4 / 17."
+],
+[
+29,
+"En una caja hay 1 bola roja, 2 azules y 5 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea azul?",
+"1/4",
+[
+"1/3",
+"3/4",
+"3/8"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 2 / 8 = 1/4."
+],
+[
+29,
+"En una caja hay 8 bolas rojas, 7 azules y 4 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea azul?",
+"7/19",
+[
+"7/12",
+"12/19",
+"8/19"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 7 / 19."
+],
+[
+29,
+"En una caja hay 5 bolas rojas, 7 azules y 3 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea verde?",
+"1/5",
+[
+"1/4",
+"4/5",
+"4/15"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 3 / 15 = 1/5."
+],
+[
+29,
+"En una caja hay 2 bolas rojas, 7 azules y 3 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea verde?",
+"1/4",
+[
+"1/3",
+"3/4",
+"3/13"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 3 / 12 = 1/4."
+],
+[
+29,
+"En una caja hay 3 bolas rojas, 5 azules y 8 verdes. Si se saca una al azar, ¿qué probabilidad hay de que sea azul?",
+"5/16",
+[
+"5/11",
+"11/16",
+"3/8"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 5 / 16."
+],
+[
+29,
+"En una caja hay 2 bolas rojas, 5 azules y 1 bola verde. Si se saca una al azar, ¿qué probabilidad hay de que sea roja?",
+"1/4",
+[
+"1/3",
+"3/4",
+"3/8"
+],
+"Psicotécnicos",
+"Casos favorables / casos posibles = 2 / 8 = 1/4."
+],
+[
+29,
+"Al lanzar un dado normal de seis caras, ¿qué probabilidad hay de sacar un número par?",
+"1/2",
+[
+"2/3",
+"3/5",
+"1/6"
+],
+"Psicotécnicos",
+"Hay 3 casos favorables (2, 4 y 6) de 6 posibles: 3/6 = 1/2."
+],
+[
+29,
+"Al lanzar un dado normal de seis caras, ¿qué probabilidad hay de sacar un número mayor que 4?",
+"1/3",
+[
+"1/2",
+"2/5",
+"2/3"
+],
+"Psicotécnicos",
+"Hay 2 casos favorables (5 y 6) de 6 posibles: 2/6 = 1/3."
+],
+[
+29,
+"Al lanzar un dado normal de seis caras, ¿qué probabilidad hay de sacar un múltiplo de 3?",
+"1/3",
+[
+"1/2",
+"2/5",
+"2/3"
+],
+"Psicotécnicos",
+"Hay 2 casos favorables (3 y 6) de 6 posibles: 2/6 = 1/3."
+],
+[
+29,
+"Al lanzar un dado normal de seis caras, ¿qué probabilidad hay de sacar un número menor que 3?",
+"1/3",
+[
+"1/2",
+"2/5",
+"2/3"
+],
+"Psicotécnicos",
+"Hay 2 casos favorables (1 y 2) de 6 posibles: 2/6 = 1/3."
+],
+[
+29,
+"Al lanzar un dado normal de seis caras, ¿qué probabilidad hay de sacar un número primo?",
+"1/2",
+[
+"2/3",
+"3/5",
+"1/6"
+],
+"Psicotécnicos",
+"Hay 3 casos favorables (2, 3 y 5) de 6 posibles: 3/6 = 1/2."
+],
+[
+29,
+"Al lanzar un dado normal de seis caras, ¿qué probabilidad hay de sacar un 6?",
+"1/6",
+[
+"1/3",
+"1/5",
+"5/6"
+],
+"Psicotécnicos",
+"Hay 1 caso favorable (solo el 6) de 6 posibles: 1/6."
+],
+[
+29,
+"Se lanzan dos monedas. ¿Qué probabilidad hay de que salgan dos caras?",
+"1/4",
+[
+"1/2",
+"1/3",
+"3/4"
+],
+"Psicotécnicos",
+"Los resultados posibles son cara-cara, cara-cruz, cruz-cara y cruz-cruz; solo uno es favorable: 1/4."
+],
+[
+29,
+"Se lanzan dos monedas. ¿Qué probabilidad hay de que salga al menos una cruz?",
+"3/4",
+[
+"1/2",
+"1/4",
+"2/3"
+],
+"Psicotécnicos",
+"De los 4 resultados (CC, CX, XC, XX) tres tienen alguna cruz: 3/4."
+],
+[
+29,
+"Se lanzan dos dados. ¿Qué probabilidad hay de que sumen 7?",
+"1/6",
+[
+"1/12",
+"7/36",
+"1/9"
+],
+"Psicotécnicos",
+"Hay 6 combinaciones que suman 7 (1-6, 2-5, 3-4, 4-3, 5-2, 6-1) de 36 posibles: 6/36 = 1/6."
+],
+[
+29,
+"Clave:\nI | G | H | D | T | L\n0101 | 1011 | 0100 | 0111 | 0001 | 1110\nSegún la clave, ¿qué letras corresponden a la cadena 0001 0001 1110 0001?",
+"TTLT",
+[
+"TLTT",
+"TDLT",
+"DTLT"
+],
+"Psicotécnicos",
+"Grupo a grupo: 0001=T, 0001=T, 1110=L, 0001=T → TTLT."
+],
+[
+29,
+"Clave:\nD | M | A | J | C | T\n1010 | 0010 | 1100 | 1110 | 0101 | 0100\nSegún la clave, ¿qué cadena corresponde a las letras TCTJ?",
+"0100 0101 0100 1110",
+[
+"0100 1010 0100 1110",
+"0101 0100 0100 1110",
+"0100 0101 0100 1010"
+],
+"Psicotécnicos",
+"Letra a letra: T=0100, C=0101, T=0100, J=1110 → 0100 0101 0100 1110."
+],
+[
+29,
+"Clave:\nF | J | B | O | R | C\n1100 | 1110 | 0000 | 0101 | 1011 | 0100\nSegún la clave, ¿qué letras corresponden a la cadena 0000 0100 0000 1100?",
+"BCBF",
+[
+"BRBF",
+"BBCF",
+"BFBF"
+],
+"Psicotécnicos",
+"Grupo a grupo: 0000=B, 0100=C, 0000=B, 1100=F → BCBF."
+],
+[
+29,
+"Clave:\nP | H | T | I | N | M\n1100 | 0101 | 0011 | 1101 | 1000 | 1011\nSegún la clave, ¿qué cadena corresponde a las letras NNHP?",
+"1000 1000 0101 1100",
+[
+"1000 1000 0101 0101",
+"1100 1000 0101 1000",
+"1011 1000 0101 1100"
+],
+"Psicotécnicos",
+"Letra a letra: N=1000, N=1000, H=0101, P=1100 → 1000 1000 0101 1100."
+],
+[
+29,
+"Clave:\nB | I | T | D | H | M\n0111 | 0000 | 1001 | 1011 | 0101 | 1010\nSegún la clave, ¿qué letras corresponden a la cadena 1001 0101 0111 0000?",
+"THBI",
+[
+"THTI",
+"TTBI",
+"THDI"
+],
+"Psicotécnicos",
+"Grupo a grupo: 1001=T, 0101=H, 0111=B, 0000=I → THBI."
+],
+[
+29,
+"Clave:\nJ | S | P | G | A | T\n1101 | 1010 | 0001 | 0110 | 1100 | 0000\nSegún la clave, ¿qué cadena corresponde a las letras ASPS?",
+"1100 1010 0001 1010",
+[
+"1100 1010 0000 1010",
+"1100 0110 0001 1010",
+"0001 1010 0001 1010"
+],
+"Psicotécnicos",
+"Letra a letra: A=1100, S=1010, P=0001, S=1010 → 1100 1010 0001 1010."
+],
+[
+29,
+"Clave:\nB | L | H | M | T | F\n0011 | 0110 | 0010 | 1000 | 0111 | 0001\nSegún la clave, ¿qué letras corresponden a la cadena 0011 0010 0011 0011?",
+"BHBB",
+[
+"MHBB",
+"BBHB",
+"BHBH"
+],
+"Psicotécnicos",
+"Grupo a grupo: 0011=B, 0010=H, 0011=B, 0011=B → BHBB."
+],
+[
+29,
+"Clave:\nF | R | E | H | N | A\n0111 | 1000 | 0001 | 1100 | 0101 | 1111\nSegún la clave, ¿qué cadena corresponde a las letras HEFR?",
+"1100 0001 0111 1000",
+[
+"0001 1100 0111 1000",
+"1000 0001 0111 1100",
+"1100 0001 0001 1000"
+],
+"Psicotécnicos",
+"Letra a letra: H=1100, E=0001, F=0111, R=1000 → 1100 0001 0111 1000."
+],
+[
+29,
+"Clave:\nP | D | C | J | S | T\n0111 | 1111 | 0011 | 0010 | 0000 | 0110\nSegún la clave, ¿qué letras corresponden a la cadena 0011 0110 1111 0000?",
+"CTDS",
+[
+"CTCS",
+"CDTS",
+"CTDJ"
+],
+"Psicotécnicos",
+"Grupo a grupo: 0011=C, 0110=T, 1111=D, 0000=S → CTDS."
+],
+[
+29,
+"Clave:\nT | F | H | C | D | I\n1001 | 0011 | 0101 | 0010 | 1101 | 1100\nSegún la clave, ¿qué cadena corresponde a las letras FHII?",
+"0011 0101 1100 1100",
+[
+"0011 0101 1100 1001",
+"0010 0101 1100 1100",
+"0011 1100 0101 1100"
+],
+"Psicotécnicos",
+"Letra a letra: F=0011, H=0101, I=1100, I=1100 → 0011 0101 1100 1100."
+],
+[
+29,
+"Clave:\nR | A | B | F | M | E\n0101 | 0100 | 0110 | 0010 | 1000 | 1001\nSegún la clave, ¿qué letras corresponden a la cadena 1000 1001 1000 1001?",
+"MEME",
+[
+"AEME",
+"MERE",
+"MEMF"
+],
+"Psicotécnicos",
+"Grupo a grupo: 1000=M, 1001=E, 1000=M, 1001=E → MEME."
+],
+[
+29,
+"Clave:\nE | L | I | M | S | O\n1000 | 0010 | 1100 | 1110 | 1011 | 0100\nSegún la clave, ¿qué cadena corresponde a las letras LSLL?",
+"0010 1011 0010 0010",
+[
+"0010 1011 0010 1011",
+"1011 0010 0010 0010",
+"0010 1011 0010 1110"
+],
+"Psicotécnicos",
+"Letra a letra: L=0010, S=1011, L=0010, L=0010 → 0010 1011 0010 0010."
+],
+[
+29,
+"¿Qué significa «fehaciente»?",
+"Que prueba algo de forma indudable",
+[
+"Que se hace con prisa y sin cuidado",
+"Que se refiere a la fe religiosa",
+"Que muestra entusiasmo y alegría"
+],
+"Psicotécnicos",
+"«Fehaciente» significa: que prueba algo de forma indudable."
+],
+[
+29,
+"¿Qué significa «subsidiario»?",
+"Que suple a otra cosa principal",
+[
+"Que recibe una subvención pública",
+"Que se repite de forma periódica",
+"Que está situado debajo de otro"
+],
+"Psicotécnicos",
+"«Subsidiario» significa: que suple a otra cosa principal."
+],
+[
+29,
+"¿Qué significa «taxativo»?",
+"Que limita y no admite discusión",
+[
+"Que está sujeto al pago de tasas e impuestos",
+"Que se dice de forma vaga",
+"Que avanza con mucha lentitud"
+],
+"Psicotécnicos",
+"«Taxativo» significa: que limita y no admite discusión."
+],
+[
+29,
+"¿Qué significa «dádiva»?",
+"Cosa que se da gratuitamente",
+[
+"Deuda que está pendiente de pago",
+"Cantidad que se cobra como multa",
+"Duda sobre una decisión"
+],
+"Psicotécnicos",
+"«Dádiva» significa: cosa que se da gratuitamente."
+],
+[
+29,
+"¿Qué significa «ínfulas»?",
+"Presunción o vanidad",
+[
+"Influencia sobre los demás",
+"Inflamación de una herida",
+"Falta de ganas de trabajar"
+],
+"Psicotécnicos",
+"«Ínfulas» significa: presunción o vanidad."
+],
+[
+29,
+"¿Qué significa «ambiguo»?",
+"Que puede entenderse de varios modos",
+[
+"Que tiene mucha ambición",
+"Que se mueve a la vez en dos direcciones opuestas",
+"Que es propio de un ambiente"
+],
+"Psicotécnicos",
+"«Ambiguo» significa: que puede entenderse de varios modos."
+],
+[
+29,
+"¿Qué significa «inexorable»?",
+"Que no se puede evitar",
+[
+"Que no se puede explicar",
+"Que no tiene ningún valor",
+"Que todavía no ha terminado"
+],
+"Psicotécnicos",
+"«Inexorable» significa: que no se puede evitar."
+],
+[
+29,
+"¿Qué significa «exhortar»?",
+"Animar a alguien a hacer algo",
+[
+"Extraer algo por la fuerza",
+"Expulsar a alguien de un lugar",
+"Exagerar los hechos al contarlos"
+],
+"Psicotécnicos",
+"«Exhortar» significa: animar a alguien a hacer algo."
+],
+[
+29,
+"¿Qué significa «paliar»?",
+"Atenuar o mitigar un daño",
+[
+"Pelear con palabras",
+"Empeorar una situación que ya era complicada",
+"Hablar en voz muy baja"
+],
+"Psicotécnicos",
+"«Paliar» significa: atenuar o mitigar un daño."
+],
+[
+29,
+"¿Qué significa «ufano»?",
+"Orgulloso y satisfecho de sí mismo",
+[
+"Triste y sin ánimo",
+"Que tiene mucha prisa",
+"Que desconoce por completo un asunto o materia"
+],
+"Psicotécnicos",
+"«Ufano» significa: orgulloso y satisfecho de sí mismo."
+],
+[
+29,
+"¿Qué significa «lacónico»?",
+"Que usa pocas palabras",
+[
+"Que siente mucha tristeza",
+"Que trabaja con lentitud",
+"Que tiene un color oscuro"
+],
+"Psicotécnicos",
+"«Lacónico» significa: que usa pocas palabras."
+],
+[
+29,
+"¿Qué significa «diatriba»?",
+"Escrito o discurso violento contra alguien",
+[
+"Alabanza pública de una persona",
+"Conversación tranquila entre dos o más personas",
+"División de un territorio en partes"
+],
+"Psicotécnicos",
+"«Diatriba» significa: escrito o discurso violento contra alguien."
+],
+[
+29,
+"¿Qué significa «enmendar»?",
+"Corregir un error o defecto",
+[
+"Enviar algo a otra persona",
+"Pedir dinero prestado a un familiar o amigo",
+"Añadir un adorno a algo"
+],
+"Psicotécnicos",
+"«Enmendar» significa: corregir un error o defecto."
+],
+[
+29,
+"¿Qué significa «pernicioso»?",
+"Muy perjudicial",
+[
+"Muy duradero",
+"Muy detallista y cuidadoso",
+"Muy rápido"
+],
+"Psicotécnicos",
+"«Pernicioso» significa: muy perjudicial."
+],
+[
+29,
+"¿Qué significa «escueto»?",
+"Breve y sin rodeos",
+[
+"Escondido y secreto",
+"Estricto y severo",
+"Abundante y variado"
+],
+"Psicotécnicos",
+"«Escueto» significa: breve y sin rodeos."
+],
+[
+29,
+"¿Qué significa «dirimir»?",
+"Resolver una controversia",
+[
+"Dirigir una reunión",
+"Disminuir una cantidad",
+"Aplazar una decisión hasta otro momento"
+],
+"Psicotécnicos",
+"«Dirimir» significa: resolver una controversia."
+],
+[
+29,
+"¿Qué significa «coercitivo»?",
+"Que obliga o reprime",
+[
+"Que es lógico y coherente",
+"Que colabora con otros",
+"Que se desarrolla despacio"
+],
+"Psicotécnicos",
+"«Coercitivo» significa: que obliga o reprime."
+],
+[
+29,
+"¿Qué significa «fútil»?",
+"De poca importancia",
+[
+"De gran utilidad",
+"De mucha dificultad",
+"De larga duración"
+],
+"Psicotécnicos",
+"«Fútil» significa: de poca importancia."
+],
+[
+29,
+"¿Qué significa «venial»?",
+"Leve y fácil de perdonar",
+[
+"Que se puede vender",
+"Que es muy grave",
+"Que se repite cada año"
+],
+"Psicotécnicos",
+"«Venial» significa: leve y fácil de perdonar."
+],
+[
+29,
+"¿Qué significa «acérrimo»?",
+"Muy tenaz o decidido",
+[
+"Muy ácido o amargo",
+"Muy cercano o próximo",
+"Muy antiguo o viejo"
+],
+"Psicotécnicos",
+"«Acérrimo» significa: muy tenaz o decidido."
+],
+[
+29,
+"¿Qué significa «compulsar»?",
+"Cotejar una copia con su original",
+[
+"Obligar a alguien a hacer algo",
+"Comprar algo de forma impulsiva",
+"Pulsar una tecla varias veces"
+],
+"Psicotécnicos",
+"«Compulsar» significa: cotejar una copia con su original."
+],
+[
+29,
+"¿Qué significa «recusar»?",
+"Rechazar a quien no ofrece imparcialidad",
+[
+"Volver a acusar a una persona",
+"Negarse a pagar una deuda",
+"Corregir un error ya publicado"
+],
+"Psicotécnicos",
+"«Recusar» significa: rechazar a quien no ofrece imparcialidad."
+],
+[
+29,
+"¿Qué significa «notificar»?",
+"Comunicar formalmente una resolución",
+[
+"Anotar algo en un registro",
+"Firmar ante un notario",
+"Publicar algo en un periódico"
+],
+"Psicotécnicos",
+"«Notificar» significa: comunicar formalmente una resolución."
+],
+[
+29,
+"¿Qué significa «caducidad»?",
+"Fin de un derecho o trámite por el paso del tiempo",
+[
+"Caída de un documento en un archivo",
+"Pérdida de un objeto por descuido",
+"Cuidado especial de un expediente"
+],
+"Psicotécnicos",
+"«Caducidad» significa: fin de un derecho o trámite por el paso del tiempo."
+],
+[
+29,
+"¿Qué significa «desestimar»?",
+"Denegar una petición",
+[
+"Retrasar una petición",
+"Aceptar en parte una petición",
+"Calcular el valor de algo"
+],
+"Psicotécnicos",
+"«Desestimar» significa: denegar una petición."
+],
+[
+29,
+"¿Qué significa «diligencia»?",
+"Cuidado y rapidez al hacer algo",
+[
+"Pereza al hacer las tareas",
+"Orden de detener a alguien",
+"Reunión de varios dirigentes"
+],
+"Psicotécnicos",
+"«Diligencia» significa: cuidado y rapidez al hacer algo."
 ]
 ]

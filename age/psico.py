@@ -20,6 +20,9 @@ def fmt(n):
     return s
 
 SEEN = set()
+def descartar(*_):
+    """Retiradas el 24/11/2026: el conteo y la comparación de pares no salen en el examen del Estado.
+    Se siguen generando (sin guardarlas) para no cambiar el sorteo de las preguntas siguientes."""
 def add(preg, corr, incs, expl):
     if preg in SEEN:
         return
@@ -452,7 +455,7 @@ for n in range(16):
             p = R2.choice(pos)
             d = c[:p] + PARECIDOS[c[p]] + c[p + 1:]
         lineas.append(f"{c} | {d}")
-    add("¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n" + "\n".join(lineas), str(k),
+    descartar("¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n" + "\n".join(lineas), str(k),
         [str(x) for x in [k + 1, k - 1, k + 2, k - 2, k + 3, k - 3] if 0 <= x <= 5],
         f"Coinciden {k} de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).")
 for n in range(14):
@@ -463,7 +466,7 @@ for n in range(14):
         alf = "6989"; obj = R2.choice("69"); txt = "".join(R2.choice("689") for _ in range(24)); que = f"el número {obj}"
         mostrado = " ".join(txt)
     v = txt.count(obj)
-    add(f"¿Cuántas veces aparece {que} en esta serie? {mostrado}", str(v), [str(x) for x in [v + 1, v - 1, v + 2, v - 2, v + 3] if x >= 0],
+    descartar(f"¿Cuántas veces aparece {que} en esta serie? {mostrado}", str(v), [str(x) for x in [v + 1, v - 1, v + 2, v - 2, v + 3] if x >= 0],
         f"Aparece {v} veces.")
 
 # ---------- 11. Series más difíciles ----------
@@ -622,6 +625,259 @@ VERB2 = [
 ]
 for p, c, i, e in VERB2:
     add(p, c, i, e)
+
+
+# =====================================================================
+# AMPLIACIÓN 2 (24/11/2026), según los exámenes oficiales de 2024 y 2025:
+# tablas de caso práctico con 6 preguntas, definiciones, ecuaciones,
+# probabilidad, operaciones con signos y códigos binarios.
+# =====================================================================
+R3 = random.Random(2031)
+
+def ops3(v, cands, sufijo=""):
+    return [fmt(x) + sufijo for x in dict.fromkeys(cands) if x != v and x >= 0]
+
+# ---------- 14. Tablas de caso práctico: archivo por plantas ----------
+MATERIAS = ["Contratos", "Personal", "Subvenciones", "Tributos", "Urbanismo", "Sanciones", "Licencias", "Patrimonio", "Becas", "Nóminas"]
+for n in range(7):
+    mats = R3.sample(MATERIAS, 6)
+    filas = []
+    usados = set()
+    for m in mats:
+        while True:
+            pl = R3.randint(1, 3); pa = R3.choice("ABC")
+            if (pl, pa) not in usados:
+                usados.add((pl, pa)); break
+        ini = R3.randint(1, 9); num = R3.randint(6, 18)
+        filas.append([m, pl, pa, ini, ini + num - 1])
+    filas.sort(key=lambda f: (f[1], f[2]))
+    tot = {f[0]: f[4] - f[3] + 1 for f in filas}
+    if sorted(tot.values())[-1] == sorted(tot.values())[-2]:
+        filas[0][4] += 3; tot[filas[0][0]] += 3
+        if sorted(tot.values())[-1] == sorted(tot.values())[-2]:
+            continue
+    cab = ("Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería "
+           "(por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).\n"
+           "Materia | Planta | Pasillo | Estanterías\n" +
+           "\n".join(f"{f[0]} | {f[1]} | {f[2]} | de la {f[3]} a la {f[4]}" for f in filas) + "\n")
+    # 1) código de un expediente
+    f = R3.choice(filas); e = R3.randint(f[3], f[4])
+    corr = f"{f[1]}-{f[2]}-{e:02d}"
+    otras = [g for g in filas if g is not f]
+    g = R3.choice(otras)
+    add(cab + f"¿Qué código corresponde a un expediente de {f[0]} guardado en su estantería n.º {e}?", corr,
+        [f"{g[1]}-{g[2]}-{e:02d}", f"{f[1]}-{'ABC'[('ABC'.index(f[2]) + 1) % 3]}-{e:02d}", f"{f[2]}-{f[1]}-{e:02d}", f"{(f[1] % 3) + 1}-{f[2]}-{e:02d}"],
+        f"{f[0]} está en la planta {f[1]}, pasillo {f[2]}: {corr}.")
+    # 2) de qué materia es un código
+    f = R3.choice(filas); e = R3.randint(f[3], f[4])
+    add(cab + f"¿De qué materia es el expediente con código {f[1]}-{f[2]}-{e:02d}?", f[0], [g[0] for g in R3.sample(otras if False else [x for x in filas if x is not f], 3)],
+        f"La planta {f[1]}, pasillo {f[2]}, corresponde a {f[0]}, que ocupa de la estantería {f[3]} a la {f[4]}.")
+    # 3) cuántas estanterías ocupa una materia
+    f = R3.choice(filas); v = f[4] - f[3] + 1
+    add(cab + f"¿Cuántas estanterías ocupa {f[0]}?", str(v), ops3(v, [v - 1, v + 1, f[4] - f[3], v + 2]),
+        f"De la {f[3]} a la {f[4]}, ambas incluidas: {f[4]} − {f[3]} + 1 = {v}.")
+    # 4) materia con más estanterías
+    v = max(tot.values()); k = [m for m in tot if tot[m] == v][0]
+    add(cab + "¿Qué materia ocupa más estanterías?", k, [m for m in R3.sample([x for x in tot if x != k], 3)],
+        "Estanterías por materia: " + ", ".join(f"{m} {tot[m]}" for m in tot) + ".")
+    # 5) estanterías por planta
+    p = R3.choice(sorted({f[1] for f in filas})); v = sum(f[4] - f[3] + 1 for f in filas if f[1] == p)
+    add(cab + f"¿Cuántas estanterías hay en total en la planta {p}?", str(v), ops3(v, [v - 1, v + 1, v + 10, v - 5, v + 5]),
+        (f"Se suman las estanterías de las materias de la planta {p}: " + " + ".join(str(f[4] - f[3] + 1) for f in filas if f[1] == p) + f" = {v}.")
+        if sum(1 for f in filas if f[1] == p) > 1 else f"En la planta {p} solo hay una materia, con {v} estanterías.")
+    # 6) existe un código
+    f = R3.choice(filas); fuera = f[4] + R3.randint(1, 3)
+    validos = []
+    for g in R3.sample(filas, 3):
+        validos.append(f"{g[1]}-{g[2]}-{R3.randint(g[3], g[4]):02d}")
+    malo = f"{f[1]}-{f[2]}-{fuera:02d}"
+    if malo in validos:
+        continue
+    add(cab + "¿Cuál de estos códigos NO puede existir en el archivo?", malo, validos,
+        f"En la planta {f[1]}, pasillo {f[2]} ({f[0]}), las estanterías solo llegan a la {f[4]}; los demás códigos están dentro de los tramos de la tabla.")
+
+# ---------- 15. Tablas de caso práctico: cursos de formación ----------
+CURSOS = ["Excel avanzado", "Atención al público", "Protección de datos", "Inglés", "Igualdad", "Contratación pública", "Administración electrónica", "Prevención de riesgos"]
+for n in range(7):
+    cs = R3.sample(CURSOS, 5)
+    filas = []
+    for _ in range(200):
+        filas = []
+        for c in cs:
+            plazas = R3.choice([20, 24, 28, 32, 36, 40, 48])
+            ins = R3.choice([x for x in range(plazas // 2, plazas + 1) if x % 4 == 0])
+            apr = ins * R3.choice([25, 50, 75]) // 100
+            horas = R3.choice([10, 15, 20, 25, 30, 40])
+            filas.append([c, plazas, ins, apr, horas])
+        occ = [f[2] / f[1] for f in filas]; sus = [f[2] - f[3] for f in filas]
+        if len(set(occ)) == 5 and sorted(sus)[-1] != sorted(sus)[-2] and sum(f[2] for f in filas) % 5 == 0:
+            break
+    else:
+        continue
+    cab = ("La tabla recoge los cursos de formación de una consejería:\n"
+           "Curso | Plazas | Inscritos | Aprobados | Horas\n" +
+           "\n".join(f"{f[0]} | {f[1]} | {f[2]} | {f[3]} | {f[4]}" for f in filas) + "\n")
+    f = R3.choice(filas); v = 100 * f[3] // f[2]
+    add(cab + f"¿Qué porcentaje de los inscritos aprobó {f[0]}?", f"{v} %", ops3(v, [v - 25, v + 25, round(100 * f[3] / f[1]), v - 10, v + 10], " %"),
+        f"{f[3]} / {f[2]} × 100 = {v} %.")
+    tot_ins = sum(f[2] for f in filas)
+    if tot_ins % 5 == 0:
+        v = tot_ins // 5
+        add(cab + "¿Cuál es la media de inscritos por curso?", fmt(v), ops3(v, [v - 2, v + 2, v + 5, v - 5, tot_ins // 4]),
+            f"({' + '.join(str(f[2]) for f in filas)}) / 5 = {tot_ins} / 5 = {v}.")
+    libres = sum(f[1] - f[2] for f in filas)
+    add(cab + "¿Cuántas plazas quedaron libres en total?", str(libres), ops3(libres, [libres - 5, libres + 5, libres + 10, libres - 2, libres + 3]),
+        "Plazas menos inscritos en cada curso: " + " + ".join(str(f[1] - f[2]) for f in filas) + f" = {libres}.")
+    occ = {f[0]: f[2] / f[1] for f in filas}; k = max(occ, key=occ.get)
+    if sorted(occ.values())[-1] != sorted(occ.values())[-2]:
+        add(cab + "¿Qué curso tiene el mayor porcentaje de plazas ocupadas?", k, R3.sample([x for x in occ if x != k], 3),
+            "Inscritos / plazas: " + "; ".join(f"{c}, {round(100 * o)} %" for c, o in occ.items()) + ".")
+    v = sum(f[3] * f[4] for f in filas)
+    f = R3.choice(filas); v1 = f[3] * f[4]
+    add(cab + f"Si cada aprobado de {f[0]} recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?", fmt(v1),
+        ops3(v1, [f[2] * f[4], v1 + f[4], v1 - f[4], f[3] + f[4]]), f"{f[3]} aprobados × {f[4]} horas = {fmt(v1)} horas.")
+    susp = {f[0]: f[2] - f[3] for f in filas}; mx = max(susp.values())
+    if list(susp.values()).count(mx) == 1:
+        k = [c for c in susp if susp[c] == mx][0]
+        add(cab + "¿En qué curso hubo más inscritos sin aprobar?", k, R3.sample([x for x in susp if x != k], 3),
+            "Inscritos menos aprobados: " + "; ".join(f"{c}, {s}" for c, s in susp.items()) + ".")
+
+# ---------- 16. Tablas de caso práctico: claves de registro ----------
+TIPOS = [("Contrato", "C"), ("Factura", "F"), ("Informe", "I"), ("Resolución", "R"), ("Solicitud", "S"), ("Queja", "Q")]
+UNIS = ["Personal", "Hacienda", "Cultura", "Sanidad", "Educación", "Vivienda"]
+for n in range(5):
+    tipos = R3.sample(TIPOS, 4); unis = R3.sample(UNIS, 4); nums = R3.sample(range(1, 10), 4)
+    cab = ("En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, " +
+           f"{tipos[0][1]}{nums[0]}-25 es un documento de tipo {tipos[0][0].lower()} de {unis[0]} de 2025).\n"
+           "Tipo | Letra\n" + "\n".join(f"{t} | {l}" for t, l in tipos) + "\n"
+           "Números de las unidades:\n"
+           "Unidad | Número\n" + "\n".join(f"{u} | {m}" for u, m in zip(unis, nums)) + "\n")
+    for q in range(6):
+        i = R3.randrange(4); j = R3.randrange(4); a = R3.choice([23, 24, 25, 26])
+        clave = f"{tipos[i][1]}{nums[j]}-{a}"
+        if q % 2 == 0:
+            i2 = (i + 1) % 4; j2 = (j + 1) % 4
+            add(cab + f"¿Qué clave lleva {('una ' if tipos[i][0] in ('Factura', 'Resolución', 'Solicitud', 'Queja') else 'un ')}{tipos[i][0].lower()} de {unis[j]} de 20{a}?", clave,
+                [f"{tipos[i2][1]}{nums[j]}-{a}", f"{tipos[i][1]}{nums[j2]}-{a}", f"{tipos[i][1]}{nums[j]}-{a + 1}", f"{tipos[i2][1]}{nums[j2]}-{a}"],
+                f"{tipos[i][0]} = {tipos[i][1]}; {unis[j]} = {nums[j]}; año 20{a} → {clave}.")
+        else:
+            i2 = (i + 1) % 4; j2 = (j + 1) % 4
+            def desc(ii, jj, aa): return f"{tipos[ii][0]} de {unis[jj]} de 20{aa}"
+            add(cab + f"¿A qué documento corresponde la clave {clave}?", desc(i, j, a),
+                [desc(i2, j, a), desc(i, j2, a), desc(i, j, a - 1), desc(i2, j2, a)],
+                f"{tipos[i][1]} = {tipos[i][0].lower()}; {nums[j]} = {unis[j]}; {a} = 20{a}.")
+
+# ---------- 17. Ecuaciones y operaciones con signos ----------
+for _ in range(10):
+    a = R3.randint(2, 9); x = R3.randint(2, 15); b = R3.randint(1, 30)
+    c = a * x + b
+    add(f"Si {a}x + {b} = {c}, ¿cuánto vale x?", str(x), [str(v) for v in [x + 1, x - 1, (c + b) // a if (c + b) % a == 0 else x + 2, x + 3, c // a] if v != x and v > 0],
+        f"{a}x = {c} − {b} = {a * x}; x = {a * x} / {a} = {x}.")
+for _ in range(8):
+    x = R3.randint(5, 40); k = R3.choice([2, 3, 4]); s = R3.randint(3, 20)
+    tot = k * x + s
+    add(f"Si al {'doble' if k == 2 else ('triple' if k == 3 else 'cuádruple')} de un número se le suman {s}, se obtiene {tot}. ¿Cuál es el número?", str(x),
+        [str(v) for v in [x + 1, x - 1, x + s // k if s // k else x + 2, (tot + s) // k, tot // k] if v != x and v > 0],
+        f"{k}x + {s} = {tot} → {k}x = {tot - s} → x = {x}.")
+for _ in range(6):
+    p = R3.choice([2, 3]); q = 1
+    total = R3.choice([30, 36, 40, 45, 48, 60])
+    if total % (p + q):
+        continue
+    menor = total // (p + q); mayor = total - menor
+    add(f"Entre dos departamentos tienen {total} empleados y uno tiene {'el doble' if p == 2 else 'el triple'} que el otro. ¿Cuántos tiene el más grande?", str(mayor),
+        [str(v) for v in [menor, mayor + p, mayor - p, total // 2] if v != mayor],
+        f"x + {p}x = {total} → x = {menor}; el grande tiene {p} × {menor} = {mayor}.")
+def sg(v): return f"({v})" if v < 0 else str(v)
+for _ in range(10):
+    a, b, c, d = R3.randint(-9, -1), R3.randint(2, 9), R3.randint(-12, -2) * 2, R3.choice([2, -2])
+    v = a * b - c // d
+    add(f"Calcula: {sg(a)} × {b} − {sg(c)} ÷ {sg(d)}".replace("-", "−"), str(v).replace("-", "−"),
+        [str(w).replace("-", "−") for w in [a * b + c // d, -v, v + 2, v - 2] if w != v],
+        f"Primero multiplicaciones y divisiones: {sg(a)} × {b} = {a * b}; {sg(c)} ÷ {sg(d)} = {c // d}. Después: {a * b} − {sg(c // d)} = {v}.".replace("-", "−"))
+
+# ---------- 18. Probabilidad ----------
+from math import gcd as _gcd
+def frac(a, b):
+    g = _gcd(a, b); return f"{a // g}/{b // g}"
+for _ in range(10):
+    r, z, v = R3.randint(1, 8), R3.randint(1, 8), R3.randint(1, 8)
+    tot = r + z + v; col = R3.choice(["roja", "azul", "verde"]); k = {"roja": r, "azul": z, "verde": v}[col]
+    c = frac(k, tot)
+    incs = [frac(k, tot - k) if k < tot - k else frac(k - 1, tot), frac(tot - k, tot), frac(k + 1, tot) if k + 1 < tot else frac(1, tot), f"{k}/{tot + 1}"]
+    def bolas(nn, col1, col2): return f"{nn} bola {col1}" if nn == 1 else f"{nn} {col2}"
+    add(f"En una caja hay {bolas(r, 'roja', 'bolas rojas')}, {bolas(z, 'azul', 'azules')} y {bolas(v, 'verde', 'verdes')}. Si se saca una al azar, ¿qué probabilidad hay de que sea {col}?", c, [x for x in incs if x != c] + [frac(1, 3), frac(1, 4)],
+        f"Casos favorables / casos posibles = {k} / {tot}" + (f" = {c}." if f"{k}/{tot}" != c else "."))
+DADO = [("un número par", 3, "2, 4 y 6"), ("un número mayor que 4", 2, "5 y 6"), ("un múltiplo de 3", 2, "3 y 6"), ("un número menor que 3", 2, "1 y 2"),
+        ("un número primo", 3, "2, 3 y 5"), ("un 6", 1, "solo el 6")]
+for txt, k, cuales in DADO:
+    add(f"Al lanzar un dado normal de seis caras, ¿qué probabilidad hay de sacar {txt}?", frac(k, 6), [x for x in [frac(k + 1, 6), frac(k, 5), frac(6 - k, 6), "1/6", "1/3", "1/2"] if x != frac(k, 6)],
+        (f"Hay {k} casos favorables ({cuales}) de 6 posibles: {k}/6" if k > 1 else f"Hay 1 caso favorable ({cuales}) de 6 posibles: 1/6") + (f" = {frac(k, 6)}." if frac(k, 6) != f"{k}/6" else "."))
+add("Se lanzan dos monedas. ¿Qué probabilidad hay de que salgan dos caras?", "1/4", ["1/2", "1/3", "3/4"],
+    "Los resultados posibles son cara-cara, cara-cruz, cruz-cara y cruz-cruz; solo uno es favorable: 1/4.")
+add("Se lanzan dos monedas. ¿Qué probabilidad hay de que salga al menos una cruz?", "3/4", ["1/2", "1/4", "2/3"],
+    "De los 4 resultados (CC, CX, XC, XX) tres tienen alguna cruz: 3/4.")
+add("Se lanzan dos dados. ¿Qué probabilidad hay de que sumen 7?", "1/6", ["1/12", "7/36", "1/9"],
+    "Hay 6 combinaciones que suman 7 (1-6, 2-5, 3-4, 4-3, 5-2, 6-1) de 36 posibles: 6/36 = 1/6.")
+
+# ---------- 19. Códigos binarios ----------
+for n in range(12):
+    letras = R3.sample("ABCDEFGHIJLMNOPRST", 6)
+    codigos = R3.sample([format(i, "04b") for i in range(16)], 6)
+    m = dict(zip(letras, codigos))
+    cab = "Clave:\n" + " | ".join(letras) + "\n" + " | ".join(codigos) + "\n"
+    pal = [R3.choice(letras) for _ in range(4)]
+    cad = " ".join(m[c] for c in pal); corr = "".join(pal)
+    incs = []
+    for _ in range(10):
+        x = pal[:]; a = R3.randrange(4)
+        if R3.random() < 0.5:
+            b = (a + 1) % 4; x[a], x[b] = x[b], x[a]
+        else:
+            x[a] = R3.choice([c for c in letras if c != x[a]])
+        incs.append("".join(x))
+    if n % 2 == 0:
+        add(cab + f"Según la clave, ¿qué letras corresponden a la cadena {cad}?", corr, [i for i in dict.fromkeys(incs) if i != corr],
+            "Grupo a grupo: " + ", ".join(f"{m[c]}={c}" for c in pal) + f" → {corr}.")
+    else:
+        ci = []
+        for i in dict.fromkeys(incs):
+            if i != corr:
+                ci.append(" ".join(m[c] for c in i))
+        add(cab + f"Según la clave, ¿qué cadena corresponde a las letras {corr}?", cad, ci,
+            "Letra a letra: " + ", ".join(f"{c}={m[c]}" for c in pal) + f" → {cad}.")
+
+# ---------- 20. Definiciones (revisadas a mano) ----------
+DEF = [
+ ("fehaciente", "Que prueba algo de forma indudable", ["Que se hace con prisa y sin cuidado", "Que se refiere a la fe religiosa", "Que muestra entusiasmo y alegría"]),
+ ("subsidiario", "Que suple a otra cosa principal", ["Que recibe una subvención pública", "Que se repite de forma periódica", "Que está situado debajo de otro"]),
+ ("taxativo", "Que limita y no admite discusión", ["Que está sujeto al pago de tasas e impuestos", "Que se dice de forma vaga", "Que avanza con mucha lentitud"]),
+ ("dádiva", "Cosa que se da gratuitamente", ["Deuda que está pendiente de pago", "Cantidad que se cobra como multa", "Duda sobre una decisión"]),
+ ("ínfulas", "Presunción o vanidad", ["Influencia sobre los demás", "Inflamación de una herida", "Falta de ganas de trabajar"]),
+ ("ambiguo", "Que puede entenderse de varios modos", ["Que tiene mucha ambición", "Que se mueve a la vez en dos direcciones opuestas", "Que es propio de un ambiente"]),
+ ("inexorable", "Que no se puede evitar", ["Que no se puede explicar", "Que no tiene ningún valor", "Que todavía no ha terminado"]),
+ ("exhortar", "Animar a alguien a hacer algo", ["Extraer algo por la fuerza", "Expulsar a alguien de un lugar", "Exagerar los hechos al contarlos"]),
+ ("paliar", "Atenuar o mitigar un daño", ["Pelear con palabras", "Empeorar una situación que ya era complicada", "Hablar en voz muy baja"]),
+ ("ufano", "Orgulloso y satisfecho de sí mismo", ["Triste y sin ánimo", "Que tiene mucha prisa", "Que desconoce por completo un asunto o materia"]),
+ ("lacónico", "Que usa pocas palabras", ["Que siente mucha tristeza", "Que trabaja con lentitud", "Que tiene un color oscuro"]),
+ ("diatriba", "Escrito o discurso violento contra alguien", ["Alabanza pública de una persona", "Conversación tranquila entre dos o más personas", "División de un territorio en partes"]),
+ ("enmendar", "Corregir un error o defecto", ["Enviar algo a otra persona", "Pedir dinero prestado a un familiar o amigo", "Añadir un adorno a algo"]),
+ ("pernicioso", "Muy perjudicial", ["Muy duradero", "Muy detallista y cuidadoso", "Muy rápido"]),
+ ("escueto", "Breve y sin rodeos", ["Escondido y secreto", "Estricto y severo", "Abundante y variado"]),
+ ("dirimir", "Resolver una controversia", ["Dirigir una reunión", "Disminuir una cantidad", "Aplazar una decisión hasta otro momento"]),
+ ("coercitivo", "Que obliga o reprime", ["Que es lógico y coherente", "Que colabora con otros", "Que se desarrolla despacio"]),
+ ("fútil", "De poca importancia", ["De gran utilidad", "De mucha dificultad", "De larga duración"]),
+ ("venial", "Leve y fácil de perdonar", ["Que se puede vender", "Que es muy grave", "Que se repite cada año"]),
+ ("acérrimo", "Muy tenaz o decidido", ["Muy ácido o amargo", "Muy cercano o próximo", "Muy antiguo o viejo"]),
+ ("compulsar", "Cotejar una copia con su original", ["Obligar a alguien a hacer algo", "Comprar algo de forma impulsiva", "Pulsar una tecla varias veces"]),
+ ("recusar", "Rechazar a quien no ofrece imparcialidad", ["Volver a acusar a una persona", "Negarse a pagar una deuda", "Corregir un error ya publicado"]),
+ ("notificar", "Comunicar formalmente una resolución", ["Anotar algo en un registro", "Firmar ante un notario", "Publicar algo en un periódico"]),
+ ("caducidad", "Fin de un derecho o trámite por el paso del tiempo", ["Caída de un documento en un archivo", "Pérdida de un objeto por descuido", "Cuidado especial de un expediente"]),
+ ("desestimar", "Denegar una petición", ["Retrasar una petición", "Aceptar en parte una petición", "Calcular el valor de algo"]),
+ ("diligencia", "Cuidado y rapidez al hacer algo", ["Pereza al hacer las tareas", "Orden de detener a alguien", "Reunión de varios dirigentes"]),
+]
+for w, c, i in DEF:
+    add(f"¿Qué significa «{w}»?", c, i, f"«{w.capitalize()}» significa: {c[0].lower() + c[1:]}.")
 
 json.dump(OUT, open("age/n29.json", "w"), ensure_ascii=False, indent=0)
 print(len(OUT), "psicotécnicos")

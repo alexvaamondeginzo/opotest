@@ -8,7 +8,7 @@ Web de tests de oposiciones. Su diferencia frente a OpositaTest y similares es q
 
 **Modelo de precio: pago único por oposición, sin suscripción.**
 
-Estructura de planes acordada (24/11/2026): precio por oposición y planes por niveles, donde la informática y los psicotécnicos son un extra pequeño para que compense coger el completo. Madrid: Legislación (temas 1-15) → Completo (+ ofimática). Estado: Teoría (temas 1-20) → Teoría + Ofimática (hasta el 28) → Completo (+ psicotécnicos). En la base de datos los niveles son `legislacion` < `completo` < `premium` (`tema_maximo_op` en `supabase/8-oposiciones.sql`). Los precios se ponen en Administración > Precios. Precios decididos (24/11/2026) y ya puestos en la tabla `precios`, a la venta hasta el 31/12/2027: Madrid 11,99 € (Legislación) / 14,99 € (Completo); Estado 11,99 € (Teoría) / 14,99 € (Teoría + Ofimática) / 17,99 € (Completo). Los psicotécnicos del Estado ya son 453 (series, tablas de datos, ordenación, claves, problemas y verbales), lo que justifica el extra del plan Completo.
+Estructura de planes acordada (24/11/2026): precio por oposición y planes por niveles, donde la informática y los psicotécnicos son un extra pequeño para que compense coger el completo. Madrid: Legislación (temas 1-15) → Completo (+ ofimática). Estado: Teoría (temas 1-20) → Teoría + Ofimática (hasta el 28) → Completo (+ psicotécnicos). En la base de datos los niveles son `legislacion` < `completo` < `premium` (`tema_maximo_op` en `supabase/8-oposiciones.sql`). Los precios se ponen en Administración > Precios. Precios decididos (24/11/2026) y ya puestos en la tabla `precios`, a la venta hasta el 31/12/2027: Madrid 11,99 € (Legislación) / 14,99 € (Completo); Estado 11,99 € (Teoría) / 14,99 € (Teoría + Ofimática) / 17,99 € (Completo). Los psicotécnicos del Estado ya son 617, con los tipos que salen en los exámenes oficiales de 2024 y 2025 (tablas de caso práctico con 6 preguntas, vocabulario y definiciones, problemas y ecuaciones, probabilidad, series, códigos y orden alfabético), lo que justifica el extra del plan Completo.
 
 Mientras dure la beta no se cobra, así que no corre prisa, pero hay que decidirlo antes de desactivar el modo beta. Tampoco está decidido si habrá temas gratis (propuesta: temas 1 y 16 abiertos) además o en lugar de la prueba de 2 días.
 
@@ -72,7 +72,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 ## Estado y pendientes
 
 - [x] Banco de Madrid: 1.224 preguntas de los 21 temas, con distractores reescritos contra las pistas de forma.
-- [x] Banco del Estado: 1.755 preguntas. 795 vienen de Madrid, 507 son nuevas comprobadas con el BOE y 453 son psicotécnicos generados por código (`age/psico.py`; los verbales, revisados a mano).
+- [x] Banco del Estado: 1.919 preguntas. 795 vienen de Madrid, 507 son nuevas comprobadas con el BOE y 617 son psicotécnicos generados por código (`age/psico.py`; los verbales, revisados a mano).
 - [x] Backend: Supabase con RLS, cuentas, progreso sincronizado, panel de administración y webhook de Stripe.
 - [x] Fusión de las dos versiones (pull request #1, ya en `main`). De la versión de Alex se han traído:
   - el enlace al BOE de cada respuesta;
@@ -85,7 +85,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
   El resto de sus 208 preguntas ya estaba en el banco de Madrid o duplicaba una pregunta existente.
 - [x] Precios decididos y puestos en Administración > Precios (ver arriba).
 - [ ] Probar un pago completo con la tarjeta de prueba y configurar Google (cliente OAuth) siguiendo `INSTRUCCIONES.txt`.
-- [x] Psicotécnicos del Estado ampliados de 139 a 453 (24/11/2026).
+- [x] Psicotécnicos del Estado ampliados de 139 a 617 (24/11/2026), según los tipos de los exámenes oficiales de 2024 y 2025.
 - [ ] Ampliar los temas más cortos del Estado: 17 (20 preguntas), 18 (18), 21 (24), 22 (23) y 28 (24).
 - [ ] Convertir los exámenes oficiales anteriores en simulacros interactivos (ahora solo se enlazan).
 - [ ] Enlaces a las normas autonómicas de Madrid (BOCM) en `NORMAS`.
@@ -112,6 +112,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 24/11/2026 · Edu · Psicotécnicos ajustados a los exámenes oficiales de 2024-2025: fuera conteo y pares de códigos (no salen); nuevas tablas de caso práctico (archivo, cursos, claves de registro), definiciones, ecuaciones, signos, probabilidad y códigos binarios. Total 617.
 - 24/11/2026 · Edu · Psicotécnicos del Estado: de 139 a 453 (tablas de datos, ordenación alfabética y de fechas, claves, pares de códigos, series difíciles, problemas y 51 verbales nuevos). Los enunciados con líneas «a | b» se ven como tabla. `age/montar.py` ya no cambia el orden de las opciones de las preguntas publicadas.
 - 24/11/2026 · Edu · Instrucciones compartidas para los dos Claude en `.claude/skills/` (añadir preguntas, publicar la web, cambios en Supabase) y estas dos secciones.
 - 24/11/2026 · Edu · Registro: aviso de «ya existe una cuenta» y borradas las cuentas de prueba (quedan las 3 de administrador).
