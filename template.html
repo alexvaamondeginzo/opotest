@@ -311,6 +311,12 @@ legend{font:700 22px/1 var(--cond);text-transform:uppercase;margin-bottom:14px;d
 .tag{display:inline-block;font:700 15px/1 var(--cond);text-transform:uppercase;padding:6px 10px;border-radius:3px;background:var(--mint-soft);color:var(--teal-deep)}
 .examtag{display:inline-block;font:700 15px/1 var(--cond);text-transform:uppercase;padding:6px 10px;border-radius:3px;background:var(--warn-soft);color:var(--warn)}
 .q{font:600 23px/1.38 var(--body);margin:0;text-wrap:pretty}
+.q-linea{display:block}
+.q-tabla{border-collapse:collapse;margin:12px 0;font:500 16px/1.3 var(--body);font-variant-numeric:tabular-nums}
+.q-tabla th,.q-tabla td{border:1px solid #cfdcd9;padding:6px 12px;text-align:right}
+.q-tabla th{background:#eaf2f0;font-weight:700}
+.q-tabla td:first-child,.q-tabla th:first-child{text-align:left}
+.rev strong .q-tabla{font-size:14px}
 .opts{display:flex;flex-direction:column;gap:10px}
 .opt{display:flex;gap:14px;align-items:flex-start;text-align:left;background:var(--surface);border:1.5px solid var(--line);color:var(--ink);font:500 17px/1.45 var(--body);text-transform:none;letter-spacing:0;padding:15px 16px;border-radius:12px}
 .opt b{flex:0 0 30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:#fff;font:700 15px var(--body)}
@@ -1228,6 +1234,20 @@ function tick(){
 function counts(){
   let a=0,f=0;st.ans.forEach((x,k)=>{if(x===null||x===-1)return;if(x===st.qs[k][3])a++;else f++});return{a,f};
 }
+function pintarEnunciado(el,txt){
+  /* Las líneas con «|» se pintan como tabla (la primera es la cabecera); el resto, como texto. */
+  el.textContent="";
+  if(txt.indexOf("\n")<0){el.textContent=txt;return}
+  let tabla=null;
+  txt.split("\n").forEach(l=>{
+    if(l.indexOf("|")>=0){
+      if(!tabla){tabla=document.createElement("table");tabla.className="q-tabla";el.appendChild(tabla)}
+      const tr=document.createElement("tr");
+      l.split("|").forEach(c=>{const td=document.createElement(tabla.rows.length?"td":"th");td.textContent=c.trim();tr.appendChild(td)});
+      tabla.appendChild(tr);
+    }else{tabla=null;const sp=document.createElement("span");sp.className="q-linea";sp.textContent=l;el.appendChild(sp)}
+  });
+}
 function render(){
   const q=st.qs[st.i];
   $("count").textContent=`Pregunta ${st.i+1} de ${st.qs.length}`;
@@ -1235,7 +1255,7 @@ function render(){
   const {a,f}=counts();
   $("tally").textContent=st.modo==="practica"?`${a} aciertos · ${f} fallos`:`${st.ans.filter(x=>x!==null&&x!==-1).length} respondidas`;
   $("qtema").textContent=`Tema ${q[0]} · ${TNAME[q[0]]||""}`;
-  $("qtext").textContent=q[1];
+  pintarEnunciado($("qtext"),q[1]);
   const qe=$("qexam");qe.classList.toggle("hidden",!q[6]);if(q[6])qe.textContent="📌 Cayó en examen oficial: "+q[6];
   $("feedback").innerHTML="";st.locked=false;pintarMarca();
   const o=$("opts");o.innerHTML="";
@@ -1304,7 +1324,7 @@ function finish(timeout){
     d.innerHTML=`<span class="tag"></span>${q[6]?'<span class="examtag" style="margin-left:6px"></span>':""}<strong></strong><span class="your"></span><span class="right"></span><span class="ex"></span>`;
     d.querySelector(".tag").textContent=`Tema ${q[0]} · ${q[4]}`;
     if(q[6])d.querySelector(".examtag").textContent="📌 Cayó: "+q[6];
-    d.querySelector("strong").textContent=q[1];
+    pintarEnunciado(d.querySelector("strong"),q[1]);
     d.querySelector(".your").textContent=(x===null||x===-1)?"La dejaste en blanco":`Marcaste ${LET[x]}: ${q[2][x]}`;
     d.querySelector(".right").textContent=`Correcta ${LET[q[3]]}: ${q[2][q[3]]}`;
     d.querySelector(".ex").textContent=q[5];

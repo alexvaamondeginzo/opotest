@@ -1666,5 +1666,3773 @@
 ],
 "Psicotécnicos",
 "El juez dicta sentencias; el legislador aprueba leyes."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Marzo | Abril | Mayo | Junio\nRegistro | 196 | 117 | 125 | 226\nPersonal | 67 | 191 | 85 | 187\nContratación | 107 | 109 | 68 | 206\nInformación | 121 | 65 | 207 | 86\n¿Cuántos expedientes más tramitó Registro en marzo que en abril?",
+"79",
+[
+"99",
+"78",
+"84"
+],
+"Psicotécnicos",
+"196 − 117 = 79."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Marzo | Abril | Mayo | Junio\nRegistro | 196 | 117 | 125 | 226\nPersonal | 67 | 191 | 85 | 187\nContratación | 107 | 109 | 68 | 206\nInformación | 121 | 65 | 207 | 86\n¿Cuántos expedientes tramitó Información en total entre marzo y junio?",
+"479",
+[
+"499",
+"468",
+"488"
+],
+"Psicotécnicos",
+"121 + 65 + 207 + 86 = 479."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Marzo | Abril | Mayo | Junio\nRegistro | 196 | 117 | 125 | 226\nPersonal | 67 | 191 | 85 | 187\nContratación | 107 | 109 | 68 | 206\nInformación | 121 | 65 | 207 | 86\n¿En qué mes hubo más expedientes sumando las cuatro filas?",
+"Junio",
+[
+"Marzo",
+"Abril",
+"Mayo"
+],
+"Psicotécnicos",
+"Totales por mes: marzo, 491; abril, 482; mayo, 485; junio, 705."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 115 | 99 | 144 | 108\nSede B | 137 | 158 | 133 | 183\nSede C | 107 | 85 | 219 | 84\nSede D | 121 | 223 | 192 | 212\n¿Cuántas solicitudes registró Sede D en total entre febrero y mayo?",
+"748",
+[
+"757",
+"627",
+"738"
+],
+"Psicotécnicos",
+"121 + 223 + 192 + 212 = 748."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 115 | 99 | 144 | 108\nSede B | 137 | 158 | 133 | 183\nSede C | 107 | 85 | 219 | 84\nSede D | 121 | 223 | 192 | 212\n¿Cuántas solicitudes más registró Sede C en febrero que en marzo?",
+"22",
+[
+"32",
+"21",
+"17"
+],
+"Psicotécnicos",
+"107 − 85 = 22."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 115 | 99 | 144 | 108\nSede B | 137 | 158 | 133 | 183\nSede C | 107 | 85 | 219 | 84\nSede D | 121 | 223 | 192 | 212\n¿Cuántas solicitudes hubo en total en mayo?",
+"587",
+[
+"607",
+"578",
+"596"
+],
+"Psicotécnicos",
+"108 + 183 + 84 + 212 = 587."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 155 | 194 | 234 | 98\nVentanilla 2 | 153 | 204 | 141 | 228\nVentanilla 3 | 117 | 102 | 170 | 192\nVentanilla 4 | 207 | 134 | 240 | 105\n¿Cuántas personas hubo en total en mayo?",
+"785",
+[
+"805",
+"775",
+"795"
+],
+"Psicotécnicos",
+"234 + 141 + 170 + 240 = 785."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 155 | 194 | 234 | 98\nVentanilla 2 | 153 | 204 | 141 | 228\nVentanilla 3 | 117 | 102 | 170 | 192\nVentanilla 4 | 207 | 134 | 240 | 105\n¿Qué porcentaje del total de personas de junio corresponde a Ventanilla 1, redondeado a la unidad?",
+"16 %",
+[
+"22 %",
+"13 %",
+"21 %"
+],
+"Psicotécnicos",
+"98 / 623 × 100 = 15,7 %, que redondeado es 16 %."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 155 | 194 | 234 | 98\nVentanilla 2 | 153 | 204 | 141 | 228\nVentanilla 3 | 117 | 102 | 170 | 192\nVentanilla 4 | 207 | 134 | 240 | 105\n¿Cuántas personas atendió Ventanilla 3 en total entre marzo y junio?",
+"581",
+[
+"601",
+"571",
+"464"
+],
+"Psicotécnicos",
+"117 + 102 + 170 + 192 = 581."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 224 | 61 | 213 | 83\nLuis | 235 | 86 | 189 | 202\nMarta | 62 | 220 | 205 | 120\nJorge | 163 | 150 | 157 | 199\nSumando los cuatro meses, ¿qué auxiliar digitalizó más documentos?",
+"Luis",
+[
+"Ana",
+"Marta",
+"Jorge"
+],
+"Psicotécnicos",
+"Totales: Ana, 581; Luis, 712; Marta, 607; Jorge, 669."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 224 | 61 | 213 | 83\nLuis | 235 | 86 | 189 | 202\nMarta | 62 | 220 | 205 | 120\nJorge | 163 | 150 | 157 | 199\n¿Cuántos documentos más digitalizó Jorge en marzo que en abril?",
+"13",
+[
+"18",
+"3",
+"23"
+],
+"Psicotécnicos",
+"163 − 150 = 13."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 224 | 61 | 213 | 83\nLuis | 235 | 86 | 189 | 202\nMarta | 62 | 220 | 205 | 120\nJorge | 163 | 150 | 157 | 199\n¿Cuántos documentos hubo en total en junio?",
+"604",
+[
+"613",
+"595",
+"624"
+],
+"Psicotécnicos",
+"83 + 202 + 120 + 199 = 604."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Febrero | Marzo | Abril | Mayo\nRegistro | 176 | 162 | 109 | 214\nPersonal | 148 | 97 | 143 | 198\nContratación | 126 | 189 | 100 | 93\nInformación | 205 | 112 | 203 | 200\n¿Cuántos expedientes más tramitó Registro en mayo que en febrero?",
+"38",
+[
+"58",
+"37",
+"39"
+],
+"Psicotécnicos",
+"214 − 176 = 38."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Febrero | Marzo | Abril | Mayo\nRegistro | 176 | 162 | 109 | 214\nPersonal | 148 | 97 | 143 | 198\nContratación | 126 | 189 | 100 | 93\nInformación | 205 | 112 | 203 | 200\n¿Cuántos expedientes hubo en total en mayo?",
+"705",
+[
+"715",
+"696",
+"685"
+],
+"Psicotécnicos",
+"214 + 198 + 93 + 200 = 705."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Febrero | Marzo | Abril | Mayo\nRegistro | 176 | 162 | 109 | 214\nPersonal | 148 | 97 | 143 | 198\nContratación | 126 | 189 | 100 | 93\nInformación | 205 | 112 | 203 | 200\n¿Cuántos expedientes tramitó Personal en total entre febrero y mayo?",
+"586",
+[
+"595",
+"575",
+"438"
+],
+"Psicotécnicos",
+"148 + 97 + 143 + 198 = 586."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Enero | Febrero | Marzo | Abril\nSede A | 137 | 62 | 101 | 84\nSede B | 136 | 236 | 109 | 77\nSede C | 62 | 170 | 107 | 115\nSede D | 125 | 135 | 174 | 129\n¿Cuántas solicitudes registró Sede D en total entre enero y abril?",
+"563",
+[
+"583",
+"438",
+"543"
+],
+"Psicotécnicos",
+"125 + 135 + 174 + 129 = 563."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Enero | Febrero | Marzo | Abril\nSede A | 137 | 62 | 101 | 84\nSede B | 136 | 236 | 109 | 77\nSede C | 62 | 170 | 107 | 115\nSede D | 125 | 135 | 174 | 129\n¿En qué mes hubo más solicitudes sumando las cuatro filas?",
+"Febrero",
+[
+"Enero",
+"Marzo",
+"Abril"
+],
+"Psicotécnicos",
+"Totales por mes: enero, 460; febrero, 603; marzo, 491; abril, 405."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Enero | Febrero | Marzo | Abril\nSede A | 137 | 62 | 101 | 84\nSede B | 136 | 236 | 109 | 77\nSede C | 62 | 170 | 107 | 115\nSede D | 125 | 135 | 174 | 129\nSumando los cuatro meses, ¿qué sede registró menos solicitudes?",
+"Sede A",
+[
+"Sede B",
+"Sede C",
+"Sede D"
+],
+"Psicotécnicos",
+"Totales: Sede A, 384; Sede B, 558; Sede C, 454; Sede D, 563."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 163 | 162 | 71 | 208\nVentanilla 2 | 194 | 128 | 153 | 100\nVentanilla 3 | 133 | 70 | 157 | 96\nVentanilla 4 | 186 | 73 | 123 | 210\n¿Qué porcentaje del total de personas de abril corresponde a Ventanilla 3, redondeado a la unidad?",
+"16 %",
+[
+"19 %",
+"10 %",
+"11 %"
+],
+"Psicotécnicos",
+"70 / 433 × 100 = 16,2 %, que redondeado es 16 %."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 163 | 162 | 71 | 208\nVentanilla 2 | 194 | 128 | 153 | 100\nVentanilla 3 | 133 | 70 | 157 | 96\nVentanilla 4 | 186 | 73 | 123 | 210\nSumando los cuatro meses, ¿qué ventanilla atendió más personas?",
+"Ventanilla 1",
+[
+"Ventanilla 2",
+"Ventanilla 3",
+"Ventanilla 4"
+],
+"Psicotécnicos",
+"Totales: Ventanilla 1, 604; Ventanilla 2, 575; Ventanilla 3, 456; Ventanilla 4, 592."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 163 | 162 | 71 | 208\nVentanilla 2 | 194 | 128 | 153 | 100\nVentanilla 3 | 133 | 70 | 157 | 96\nVentanilla 4 | 186 | 73 | 123 | 210\n¿Cuántas personas atendió Ventanilla 4 en total entre marzo y junio?",
+"592",
+[
+"602",
+"406",
+"581"
+],
+"Psicotécnicos",
+"186 + 73 + 123 + 210 = 592."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 193 | 68 | 66 | 215\nLuis | 128 | 89 | 109 | 112\nMarta | 239 | 87 | 179 | 151\nJorge | 151 | 187 | 139 | 119\n¿En qué mes hubo más documentos sumando las cuatro filas?",
+"Marzo",
+[
+"Abril",
+"Mayo",
+"Junio"
+],
+"Psicotécnicos",
+"Totales por mes: marzo, 711; abril, 431; mayo, 493; junio, 597."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 193 | 68 | 66 | 215\nLuis | 128 | 89 | 109 | 112\nMarta | 239 | 87 | 179 | 151\nJorge | 151 | 187 | 139 | 119\n¿Cuántos documentos digitalizó Jorge en total entre marzo y junio?",
+"596",
+[
+"606",
+"445",
+"616"
+],
+"Psicotécnicos",
+"151 + 187 + 139 + 119 = 596."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 193 | 68 | 66 | 215\nLuis | 128 | 89 | 109 | 112\nMarta | 239 | 87 | 179 | 151\nJorge | 151 | 187 | 139 | 119\n¿Cuántos documentos más digitalizó Jorge en abril que en mayo?",
+"48",
+[
+"53",
+"43",
+"58"
+],
+"Psicotécnicos",
+"187 − 139 = 48."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 193 | 68 | 66 | 215\nLuis | 128 | 89 | 109 | 112\nMarta | 239 | 87 | 179 | 151\nJorge | 151 | 187 | 139 | 119\n¿Qué porcentaje del total de documentos de abril corresponde a Marta, redondeado a la unidad?",
+"20 %",
+[
+"26 %",
+"17 %",
+"15 %"
+],
+"Psicotécnicos",
+"87 / 431 × 100 = 20,2 %, que redondeado es 20 %."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Febrero | Marzo | Abril | Mayo\nRegistro | 198 | 154 | 73 | 196\nPersonal | 103 | 140 | 100 | 128\nContratación | 104 | 184 | 235 | 60\nInformación | 192 | 171 | 74 | 82\n¿En qué mes hubo más expedientes sumando las cuatro filas?",
+"Marzo",
+[
+"Febrero",
+"Abril",
+"Mayo"
+],
+"Psicotécnicos",
+"Totales por mes: febrero, 597; marzo, 649; abril, 482; mayo, 466."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Febrero | Marzo | Abril | Mayo\nRegistro | 198 | 154 | 73 | 196\nPersonal | 103 | 140 | 100 | 128\nContratación | 104 | 184 | 235 | 60\nInformación | 192 | 171 | 74 | 82\n¿Qué porcentaje del total de expedientes de febrero corresponde a Personal, redondeado a la unidad?",
+"17 %",
+[
+"23 %",
+"14 %",
+"20 %"
+],
+"Psicotécnicos",
+"103 / 597 × 100 = 17,3 %, que redondeado es 17 %."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Febrero | Marzo | Abril | Mayo\nRegistro | 198 | 154 | 73 | 196\nPersonal | 103 | 140 | 100 | 128\nContratación | 104 | 184 | 235 | 60\nInformación | 192 | 171 | 74 | 82\n¿Cuántos expedientes tramitó Registro en total entre febrero y mayo?",
+"621",
+[
+"630",
+"423",
+"601"
+],
+"Psicotécnicos",
+"198 + 154 + 73 + 196 = 621."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Febrero | Marzo | Abril | Mayo\nRegistro | 198 | 154 | 73 | 196\nPersonal | 103 | 140 | 100 | 128\nContratación | 104 | 184 | 235 | 60\nInformación | 192 | 171 | 74 | 82\nSumando los cuatro meses, ¿qué unidad tramitó menos expedientes?",
+"Personal",
+[
+"Registro",
+"Contratación",
+"Información"
+],
+"Psicotécnicos",
+"Totales: Registro, 621; Personal, 471; Contratación, 583; Información, 519."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 150 | 174 | 220 | 231\nSede B | 228 | 170 | 214 | 150\nSede C | 112 | 149 | 104 | 64\nSede D | 235 | 71 | 120 | 161\n¿Cuántas solicitudes hubo en total en marzo?",
+"564",
+[
+"573",
+"555",
+"584"
+],
+"Psicotécnicos",
+"174 + 170 + 149 + 71 = 564."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 150 | 174 | 220 | 231\nSede B | 228 | 170 | 214 | 150\nSede C | 112 | 149 | 104 | 64\nSede D | 235 | 71 | 120 | 161\nSumando los cuatro meses, ¿qué sede registró menos solicitudes?",
+"Sede C",
+[
+"Sede A",
+"Sede B",
+"Sede D"
+],
+"Psicotécnicos",
+"Totales: Sede A, 775; Sede B, 762; Sede C, 429; Sede D, 587."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 150 | 174 | 220 | 231\nSede B | 228 | 170 | 214 | 150\nSede C | 112 | 149 | 104 | 64\nSede D | 235 | 71 | 120 | 161\n¿En qué mes hubo más solicitudes sumando las cuatro filas?",
+"Febrero",
+[
+"Marzo",
+"Abril",
+"Mayo"
+],
+"Psicotécnicos",
+"Totales por mes: febrero, 725; marzo, 564; abril, 658; mayo, 606."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Febrero | Marzo | Abril | Mayo\nVentanilla 1 | 154 | 88 | 218 | 215\nVentanilla 2 | 220 | 94 | 182 | 65\nVentanilla 3 | 142 | 141 | 64 | 82\nVentanilla 4 | 198 | 85 | 163 | 130\n¿Cuántas personas más atendió Ventanilla 2 en abril que en marzo?",
+"88",
+[
+"108",
+"87",
+"98"
+],
+"Psicotécnicos",
+"182 − 94 = 88."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Febrero | Marzo | Abril | Mayo\nVentanilla 1 | 154 | 88 | 218 | 215\nVentanilla 2 | 220 | 94 | 182 | 65\nVentanilla 3 | 142 | 141 | 64 | 82\nVentanilla 4 | 198 | 85 | 163 | 130\nSumando los cuatro meses, ¿qué ventanilla atendió menos personas?",
+"Ventanilla 3",
+[
+"Ventanilla 1",
+"Ventanilla 2",
+"Ventanilla 4"
+],
+"Psicotécnicos",
+"Totales: Ventanilla 1, 675; Ventanilla 2, 561; Ventanilla 3, 429; Ventanilla 4, 576."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Febrero | Marzo | Abril | Mayo\nVentanilla 1 | 154 | 88 | 218 | 215\nVentanilla 2 | 220 | 94 | 182 | 65\nVentanilla 3 | 142 | 141 | 64 | 82\nVentanilla 4 | 198 | 85 | 163 | 130\n¿Cuántas personas hubo en total en mayo?",
+"492",
+[
+"502",
+"483",
+"501"
+],
+"Psicotécnicos",
+"215 + 65 + 82 + 130 = 492."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Febrero | Marzo | Abril | Mayo\nVentanilla 1 | 154 | 88 | 218 | 215\nVentanilla 2 | 220 | 94 | 182 | 65\nVentanilla 3 | 142 | 141 | 64 | 82\nVentanilla 4 | 198 | 85 | 163 | 130\n¿Cuántas personas atendió Ventanilla 1 en total entre febrero y mayo?",
+"675",
+[
+"685",
+"664",
+"521"
+],
+"Psicotécnicos",
+"154 + 88 + 218 + 215 = 675."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 103 | 126 | 71 | 61\nLuis | 87 | 215 | 222 | 108\nMarta | 137 | 91 | 227 | 212\nJorge | 237 | 139 | 191 | 118\n¿Cuántos documentos digitalizó Marta en total entre marzo y junio?",
+"667",
+[
+"676",
+"530",
+"687"
+],
+"Psicotécnicos",
+"137 + 91 + 227 + 212 = 667."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 103 | 126 | 71 | 61\nLuis | 87 | 215 | 222 | 108\nMarta | 137 | 91 | 227 | 212\nJorge | 237 | 139 | 191 | 118\n¿Cuántos documentos más digitalizó Luis en mayo que en marzo?",
+"135",
+[
+"136",
+"134",
+"125"
+],
+"Psicotécnicos",
+"222 − 87 = 135."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 103 | 126 | 71 | 61\nLuis | 87 | 215 | 222 | 108\nMarta | 137 | 91 | 227 | 212\nJorge | 237 | 139 | 191 | 118\n¿En qué mes hubo más documentos sumando las cuatro filas?",
+"Mayo",
+[
+"Marzo",
+"Abril",
+"Junio"
+],
+"Psicotécnicos",
+"Totales por mes: marzo, 564; abril, 571; mayo, 711; junio, 499."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Marzo | Abril | Mayo | Junio\nAna | 103 | 126 | 71 | 61\nLuis | 87 | 215 | 222 | 108\nMarta | 137 | 91 | 227 | 212\nJorge | 237 | 139 | 191 | 118\nSumando los cuatro meses, ¿qué auxiliar digitalizó menos documentos?",
+"Ana",
+[
+"Luis",
+"Marta",
+"Jorge"
+],
+"Psicotécnicos",
+"Totales: Ana, 361; Luis, 632; Marta, 667; Jorge, 685."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Marzo | Abril | Mayo | Junio\nRegistro | 198 | 204 | 116 | 220\nPersonal | 126 | 218 | 217 | 170\nContratación | 136 | 150 | 122 | 162\nInformación | 154 | 153 | 88 | 61\n¿Cuántos expedientes hubo en total en mayo?",
+"543",
+[
+"553",
+"523",
+"533"
+],
+"Psicotécnicos",
+"116 + 217 + 122 + 88 = 543."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Marzo | Abril | Mayo | Junio\nRegistro | 198 | 204 | 116 | 220\nPersonal | 126 | 218 | 217 | 170\nContratación | 136 | 150 | 122 | 162\nInformación | 154 | 153 | 88 | 61\n¿En qué mes hubo más expedientes sumando las cuatro filas?",
+"Abril",
+[
+"Marzo",
+"Mayo",
+"Junio"
+],
+"Psicotécnicos",
+"Totales por mes: marzo, 614; abril, 725; mayo, 543; junio, 613."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Marzo | Abril | Mayo | Junio\nRegistro | 198 | 204 | 116 | 220\nPersonal | 126 | 218 | 217 | 170\nContratación | 136 | 150 | 122 | 162\nInformación | 154 | 153 | 88 | 61\n¿Cuántos expedientes más tramitó Registro en abril que en mayo?",
+"88",
+[
+"108",
+"87",
+"78"
+],
+"Psicotécnicos",
+"204 − 116 = 88."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 211 | 62 | 206 | 95\nSede B | 240 | 120 | 143 | 221\nSede C | 69 | 186 | 147 | 121\nSede D | 224 | 115 | 66 | 87\n¿Cuántas solicitudes registró Sede C en total entre febrero y mayo?",
+"523",
+[
+"532",
+"513",
+"503"
+],
+"Psicotécnicos",
+"69 + 186 + 147 + 121 = 523."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 211 | 62 | 206 | 95\nSede B | 240 | 120 | 143 | 221\nSede C | 69 | 186 | 147 | 121\nSede D | 224 | 115 | 66 | 87\n¿En qué mes hubo más solicitudes sumando las cuatro filas?",
+"Febrero",
+[
+"Marzo",
+"Abril",
+"Mayo"
+],
+"Psicotécnicos",
+"Totales por mes: febrero, 744; marzo, 483; abril, 562; mayo, 524."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 211 | 62 | 206 | 95\nSede B | 240 | 120 | 143 | 221\nSede C | 69 | 186 | 147 | 121\nSede D | 224 | 115 | 66 | 87\nSumando los cuatro meses, ¿qué sede registró menos solicitudes?",
+"Sede D",
+[
+"Sede A",
+"Sede B",
+"Sede C"
+],
+"Psicotécnicos",
+"Totales: Sede A, 574; Sede B, 724; Sede C, 523; Sede D, 492."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Febrero | Marzo | Abril | Mayo\nSede A | 211 | 62 | 206 | 95\nSede B | 240 | 120 | 143 | 221\nSede C | 69 | 186 | 147 | 121\nSede D | 224 | 115 | 66 | 87\n¿Cuántas solicitudes más registró Sede C en abril que en mayo?",
+"26",
+[
+"27",
+"21",
+"16"
+],
+"Psicotécnicos",
+"147 − 121 = 26."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 183 | 73 | 82 | 209\nVentanilla 2 | 122 | 69 | 77 | 91\nVentanilla 3 | 163 | 224 | 176 | 168\nVentanilla 4 | 131 | 220 | 65 | 214\n¿Cuántas personas más atendió Ventanilla 1 en marzo que en mayo?",
+"101",
+[
+"106",
+"100",
+"102"
+],
+"Psicotécnicos",
+"183 − 82 = 101."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 183 | 73 | 82 | 209\nVentanilla 2 | 122 | 69 | 77 | 91\nVentanilla 3 | 163 | 224 | 176 | 168\nVentanilla 4 | 131 | 220 | 65 | 214\nSumando los cuatro meses, ¿qué ventanilla atendió menos personas?",
+"Ventanilla 2",
+[
+"Ventanilla 1",
+"Ventanilla 3",
+"Ventanilla 4"
+],
+"Psicotécnicos",
+"Totales: Ventanilla 1, 547; Ventanilla 2, 359; Ventanilla 3, 731; Ventanilla 4, 630."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 183 | 73 | 82 | 209\nVentanilla 2 | 122 | 69 | 77 | 91\nVentanilla 3 | 163 | 224 | 176 | 168\nVentanilla 4 | 131 | 220 | 65 | 214\n¿Cuántas personas hubo en total en mayo?",
+"400",
+[
+"409",
+"380",
+"420"
+],
+"Psicotécnicos",
+"82 + 77 + 176 + 65 = 400."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Febrero | Marzo | Abril | Mayo\nAna | 60 | 142 | 106 | 218\nLuis | 169 | 100 | 103 | 193\nMarta | 180 | 79 | 231 | 137\nJorge | 121 | 91 | 221 | 167\n¿Cuántos documentos hubo en total en marzo?",
+"412",
+[
+"421",
+"402",
+"432"
+],
+"Psicotécnicos",
+"142 + 100 + 79 + 91 = 412."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Febrero | Marzo | Abril | Mayo\nAna | 60 | 142 | 106 | 218\nLuis | 169 | 100 | 103 | 193\nMarta | 180 | 79 | 231 | 137\nJorge | 121 | 91 | 221 | 167\n¿Qué porcentaje del total de documentos de abril corresponde a Ana, redondeado a la unidad?",
+"16 %",
+[
+"19 %",
+"10 %",
+"13 %"
+],
+"Psicotécnicos",
+"106 / 661 × 100 = 16,0 %, que redondeado es 16 %."
+],
+[
+29,
+"La tabla recoge los documentos digitalizados por cuatro auxiliares:\nAuxiliar | Febrero | Marzo | Abril | Mayo\nAna | 60 | 142 | 106 | 218\nLuis | 169 | 100 | 103 | 193\nMarta | 180 | 79 | 231 | 137\nJorge | 121 | 91 | 221 | 167\n¿Cuántos documentos digitalizó Marta en total entre febrero y mayo?",
+"627",
+[
+"636",
+"617",
+"616"
+],
+"Psicotécnicos",
+"180 + 79 + 231 + 137 = 627."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Enero | Febrero | Marzo | Abril\nRegistro | 209 | 75 | 169 | 161\nPersonal | 134 | 211 | 219 | 90\nContratación | 201 | 170 | 155 | 156\nInformación | 105 | 187 | 78 | 201\n¿En qué mes hubo más expedientes sumando las cuatro filas?",
+"Enero",
+[
+"Febrero",
+"Marzo",
+"Abril"
+],
+"Psicotécnicos",
+"Totales por mes: enero, 649; febrero, 643; marzo, 621; abril, 608."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Enero | Febrero | Marzo | Abril\nRegistro | 209 | 75 | 169 | 161\nPersonal | 134 | 211 | 219 | 90\nContratación | 201 | 170 | 155 | 156\nInformación | 105 | 187 | 78 | 201\n¿Qué porcentaje del total de expedientes de marzo corresponde a Registro, redondeado a la unidad?",
+"27 %",
+[
+"30 %",
+"22 %",
+"21 %"
+],
+"Psicotécnicos",
+"169 / 621 × 100 = 27,2 %, que redondeado es 27 %."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Enero | Febrero | Marzo | Abril\nRegistro | 209 | 75 | 169 | 161\nPersonal | 134 | 211 | 219 | 90\nContratación | 201 | 170 | 155 | 156\nInformación | 105 | 187 | 78 | 201\n¿Cuántos expedientes más tramitó Registro en enero que en febrero?",
+"134",
+[
+"154",
+"124",
+"135"
+],
+"Psicotécnicos",
+"209 − 75 = 134."
+],
+[
+29,
+"La tabla recoge los expedientes tramitados por cuatro unidades de una consejería:\nUnidad | Enero | Febrero | Marzo | Abril\nRegistro | 209 | 75 | 169 | 161\nPersonal | 134 | 211 | 219 | 90\nContratación | 201 | 170 | 155 | 156\nInformación | 105 | 187 | 78 | 201\nSumando los cuatro meses, ¿qué unidad tramitó más expedientes?",
+"Contratación",
+[
+"Registro",
+"Personal",
+"Información"
+],
+"Psicotécnicos",
+"Totales: Registro, 614; Personal, 654; Contratación, 682; Información, 571."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Enero | Febrero | Marzo | Abril\nSede A | 116 | 100 | 225 | 138\nSede B | 82 | 233 | 130 | 182\nSede C | 78 | 152 | 197 | 197\nSede D | 143 | 222 | 121 | 187\n¿Cuántas solicitudes registró Sede A en total entre enero y abril?",
+"579",
+[
+"588",
+"568",
+"569"
+],
+"Psicotécnicos",
+"116 + 100 + 225 + 138 = 579."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Enero | Febrero | Marzo | Abril\nSede A | 116 | 100 | 225 | 138\nSede B | 82 | 233 | 130 | 182\nSede C | 78 | 152 | 197 | 197\nSede D | 143 | 222 | 121 | 187\n¿Cuántas solicitudes más registró Sede D en febrero que en abril?",
+"35",
+[
+"36",
+"34",
+"30"
+],
+"Psicotécnicos",
+"222 − 187 = 35."
+],
+[
+29,
+"La tabla recoge las solicitudes registradas en cuatro sedes de un organismo:\nSede | Enero | Febrero | Marzo | Abril\nSede A | 116 | 100 | 225 | 138\nSede B | 82 | 233 | 130 | 182\nSede C | 78 | 152 | 197 | 197\nSede D | 143 | 222 | 121 | 187\n¿En qué mes hubo más solicitudes sumando las cuatro filas?",
+"Febrero",
+[
+"Enero",
+"Marzo",
+"Abril"
+],
+"Psicotécnicos",
+"Totales por mes: enero, 419; febrero, 707; marzo, 673; abril, 704."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 210 | 179 | 159 | 178\nVentanilla 2 | 88 | 90 | 137 | 214\nVentanilla 3 | 201 | 198 | 224 | 78\nVentanilla 4 | 141 | 121 | 82 | 101\nSumando los cuatro meses, ¿qué ventanilla atendió menos personas?",
+"Ventanilla 4",
+[
+"Ventanilla 1",
+"Ventanilla 2",
+"Ventanilla 3"
+],
+"Psicotécnicos",
+"Totales: Ventanilla 1, 726; Ventanilla 2, 529; Ventanilla 3, 701; Ventanilla 4, 445."
+],
+[
+29,
+"La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:\nVentanilla | Marzo | Abril | Mayo | Junio\nVentanilla 1 | 210 | 179 | 159 | 178\nVentanilla 2 | 88 | 90 | 137 | 214\nVentanilla 3 | 201 | 198 | 224 | 78\nVentanilla 4 | 141 | 121 | 82 | 101\n¿Cuántas personas atendió Ventanilla 1 en total entre marzo y junio?",
+"726",
+[
+"736",
+"516",
+"716"
+],
+"Psicotécnicos",
+"210 + 179 + 159 + 178 = 726."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Gascón, Garrido, Garcés, Garzón, Gallego, Gálvez",
+"Garzón",
+[
+"Garrido",
+"Gascón",
+"Gallego"
+],
+"Psicotécnicos",
+"Orden alfabético: Gallego, Gálvez, Garcés, Garrido, Garzón, Gascón. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Martín, Marco, Mata, Matas, Marín, Mas",
+"Martín",
+[
+"Marín",
+"Mas",
+"Marco"
+],
+"Psicotécnicos",
+"Orden alfabético: Marco, Marín, Martín, Mas, Mata, Matas. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Pereira, Perea, Pena, Peña, Pérez, Peral",
+"Peral",
+[
+"Peña",
+"Perea",
+"Pena"
+],
+"Psicotécnicos",
+"Orden alfabético: Pena, Peña, Peral, Perea, Pereira, Pérez. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Salinas, Saez, Sánchez, Salas, Sandoval, Sainz",
+"Salinas",
+[
+"Salas",
+"Sánchez",
+"Sandoval"
+],
+"Psicotécnicos",
+"Orden alfabético: Saez, Sainz, Salas, Salinas, Sánchez, Sandoval. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Román, Rosa, Romero, Rubio, Rojas, Rojo",
+"Rojo",
+[
+"Rojas",
+"Román",
+"Rosa"
+],
+"Psicotécnicos",
+"Orden alfabético: Rojas, Rojo, Román, Romero, Rosa, Rubio. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Nogales, Noguera, Núñez, Nava, Naranjo, Nieto",
+"Nava",
+[
+"Naranjo",
+"Nieto",
+"Núñez"
+],
+"Psicotécnicos",
+"Orden alfabético: Naranjo, Nava, Nieto, Nogales, Noguera, Núñez. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Calvo, Castro, Camacho, Campos, Casas, Casado",
+"Casas",
+[
+"Casado",
+"Castro",
+"Calvo"
+],
+"Psicotécnicos",
+"Orden alfabético: Calvo, Camacho, Campos, Casado, Casas, Castro. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Olmedo, Osorio, Orozco, Olmo, Oliver, Oliva",
+"Oliver",
+[
+"Oliva",
+"Olmedo",
+"Orozco"
+],
+"Psicotécnicos",
+"Orden alfabético: Oliva, Oliver, Olmedo, Olmo, Orozco, Osorio. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Garcés, Gallardo, Gamero, Galán, Gascón, García",
+"Gallardo",
+[
+"Galán",
+"Gamero",
+"Garcés"
+],
+"Psicotécnicos",
+"Orden alfabético: Galán, Gallardo, Gamero, Garcés, García, Gascón. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Mata, Márquez, Marco, Mariño, Matas, Martínez",
+"Márquez",
+[
+"Mariño",
+"Martínez",
+"Mata"
+],
+"Psicotécnicos",
+"Orden alfabético: Marco, Mariño, Márquez, Martínez, Mata, Matas. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Pelayo, Pereira, Penalva, Peñalver, Perea, Peña",
+"Penalva",
+[
+"Pelayo",
+"Peña",
+"Peñalver"
+],
+"Psicotécnicos",
+"Orden alfabético: Pelayo, Penalva, Peña, Peñalver, Perea, Pereira. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Sanz, Sainz, Saez, Salinas, Salas, Sandoval",
+"Sainz",
+[
+"Saez",
+"Salas",
+"Salinas"
+],
+"Psicotécnicos",
+"Orden alfabético: Saez, Sainz, Salas, Salinas, Sandoval, Sanz. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Rubio, Rojo, Roldán, Rosales, Rosa, Romo",
+"Romo",
+[
+"Roldán",
+"Rosa",
+"Rubio"
+],
+"Psicotécnicos",
+"Orden alfabético: Rojo, Roldán, Romo, Rosa, Rosales, Rubio. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Núñez, Nadal, Navas, Nogales, Naranjo, Nava",
+"Navas",
+[
+"Nava",
+"Nogales",
+"Naranjo"
+],
+"Psicotécnicos",
+"Orden alfabético: Nadal, Naranjo, Nava, Navas, Nogales, Núñez. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Cantero, Castillo, Cano, Castaño, Camacho, Casado",
+"Cantero",
+[
+"Cano",
+"Casado",
+"Castillo"
+],
+"Psicotécnicos",
+"Orden alfabético: Camacho, Cano, Cantero, Casado, Castaño, Castillo. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Oliver, Osorio, Olmo, Olmedo, Otero, Orozco",
+"Olmedo",
+[
+"Oliver",
+"Olmo",
+"Osorio"
+],
+"Psicotécnicos",
+"Orden alfabético: Oliver, Olmedo, Olmo, Orozco, Osorio, Otero. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Garcés, Galán, Gallego, Garzón, Gascón, García",
+"Gallego",
+[
+"Galán",
+"Garcés",
+"Garzón"
+],
+"Psicotécnicos",
+"Orden alfabético: Galán, Gallego, Garcés, García, Garzón, Gascón. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Martínez, Mas, Matas, Marín, Marco, Mármol",
+"Mármol",
+[
+"Marín",
+"Martínez",
+"Marco"
+],
+"Psicotécnicos",
+"Orden alfabético: Marco, Marín, Mármol, Martínez, Mas, Matas. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Penalva, Peñalver, Pérez, Pena, Pereira, Perea",
+"Perea",
+[
+"Peñalver",
+"Pereira",
+"Pérez"
+],
+"Psicotécnicos",
+"Orden alfabético: Pena, Penalva, Peñalver, Perea, Pereira, Pérez. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Sanz, Sainz, Salas, Sandoval, Saez, Salinas",
+"Sandoval",
+[
+"Salinas",
+"Sanz",
+"Saez"
+],
+"Psicotécnicos",
+"Orden alfabético: Saez, Sainz, Salas, Salinas, Sandoval, Sanz. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Rojo, Rosa, Romero, Rubio, Román, Rojas",
+"Rojo",
+[
+"Rojas",
+"Román",
+"Rosa"
+],
+"Psicotécnicos",
+"Orden alfabético: Rojas, Rojo, Román, Romero, Rosa, Rubio. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Noguera, Nava, Navas, Nadal, Núñez, Nieto",
+"Noguera",
+[
+"Nieto",
+"Núñez",
+"Nava"
+],
+"Psicotécnicos",
+"Orden alfabético: Nadal, Nava, Navas, Nieto, Noguera, Núñez. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Casas, Casado, Campos, Camacho, Calvo, Castro",
+"Casas",
+[
+"Casado",
+"Castro",
+"Campos"
+],
+"Psicotécnicos",
+"Orden alfabético: Calvo, Camacho, Campos, Casado, Casas, Castro. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Osorio, Otero, Ortiz, Olmo, Ortuño, Ortega",
+"Ortega",
+[
+"Olmo",
+"Ortiz",
+"Ortuño"
+],
+"Psicotécnicos",
+"Orden alfabético: Olmo, Ortega, Ortiz, Ortuño, Osorio, Otero. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Gallardo, Gascón, Gamero, Garcés, Gallego, Garrido",
+"Garrido",
+[
+"Garcés",
+"Gascón",
+"Gamero"
+],
+"Psicotécnicos",
+"Orden alfabético: Gallardo, Gallego, Gamero, Garcés, Garrido, Gascón. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Matas, Mármol, Marco, Mata, Mariño, Mas",
+"Mas",
+[
+"Mármol",
+"Mata",
+"Marco"
+],
+"Psicotécnicos",
+"Orden alfabético: Marco, Mariño, Mármol, Mas, Mata, Matas. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Pereira, Penalva, Pérez, Peral, Pedraza, Pena",
+"Pena",
+[
+"Pedraza",
+"Penalva",
+"Pereira"
+],
+"Psicotécnicos",
+"Orden alfabético: Pedraza, Pena, Penalva, Peral, Pereira, Pérez. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Salinas, Sanz, Sánchez, Sandoval, Sanjuán, Sainz",
+"Sánchez",
+[
+"Salinas",
+"Sandoval",
+"Sanjuán"
+],
+"Psicotécnicos",
+"Orden alfabético: Sainz, Salinas, Sánchez, Sandoval, Sanjuán, Sanz. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Rosa, Ruano, Román, Rojo, Roldán, Romero",
+"Román",
+[
+"Roldán",
+"Romero",
+"Ruano"
+],
+"Psicotécnicos",
+"Orden alfabético: Rojo, Roldán, Román, Romero, Rosa, Ruano. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Naranjo, Nieto, Nogales, Nava, Núñez, Nadal",
+"Nava",
+[
+"Naranjo",
+"Nieto",
+"Nadal"
+],
+"Psicotécnicos",
+"Orden alfabético: Nadal, Naranjo, Nava, Nieto, Nogales, Núñez. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Casas, Camacho, Calvo, Castro, Cano, Casado",
+"Casado",
+[
+"Cano",
+"Casas",
+"Camacho"
+],
+"Psicotécnicos",
+"Orden alfabético: Calvo, Camacho, Cano, Casado, Casas, Castro. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Otero, Ortiz, Olmo, Oliver, Olmedo, Osorio",
+"Osorio",
+[
+"Ortiz",
+"Otero",
+"Olmo"
+],
+"Psicotécnicos",
+"Orden alfabético: Oliver, Olmedo, Olmo, Ortiz, Osorio, Otero. La tilde no cuenta y la Ñ va después de la N."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en tercer lugar? Gallardo Sánchez, Javier; Gallardo Salinas, Pablo; Gascón Salas, Óscar; Gallardo Sanz, Sara; Gascón Salas, Carmen",
+"Gallardo Sanz, Sara",
+[
+"Gascón Salas, Óscar",
+"Gascón Salas, Carmen",
+"Gallardo Sánchez, Javier"
+],
+"Psicotécnicos",
+"Orden: Gallardo Salinas, Pablo; Gallardo Sánchez, Javier; Gallardo Sanz, Sara; Gascón Salas, Carmen; Gascón Salas, Óscar. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en cuarto lugar? Márquez Rubio, Raúl; Mármol Román, Luis; Mármol Román, Irene; Márquez Román, Elena; Mármol Rosales, Javier",
+"Márquez Román, Elena",
+[
+"Mármol Román, Luis",
+"Márquez Rubio, Raúl",
+"Mármol Rosales, Javier"
+],
+"Psicotécnicos",
+"Orden: Mármol Román, Irene; Mármol Román, Luis; Mármol Rosales, Javier; Márquez Román, Elena; Márquez Rubio, Raúl. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en cuarto lugar? Pérez Nieto, Pablo; Pelayo Navarro, Ana; Pelayo Nava, Óscar; Pena Núñez, Irene; Pelayo Nogales, Sara",
+"Pena Núñez, Irene",
+[
+"Pelayo Navarro, Ana",
+"Pelayo Nava, Óscar",
+"Pelayo Nogales, Sara"
+],
+"Psicotécnicos",
+"Orden: Pelayo Nava, Óscar; Pelayo Navarro, Ana; Pelayo Nogales, Sara; Pena Núñez, Irene; Pérez Nieto, Pablo. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en tercer lugar? Salas Camacho, Sara; Sanz Campos, Óscar; Salas Camacho, Ana; Sancho Castro, Pablo; Salas Castaño, Lucía",
+"Salas Castaño, Lucía",
+[
+"Sanz Campos, Óscar",
+"Salas Camacho, Ana",
+"Sancho Castro, Pablo"
+],
+"Psicotécnicos",
+"Orden: Salas Camacho, Ana; Salas Camacho, Sara; Salas Castaño, Lucía; Sancho Castro, Pablo; Sanz Campos, Óscar. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en tercer lugar? Román Oliver, Javier; Rojo Ortega, Raúl; Rojo Ortega, Lucía; Román Olmedo, Ana; Rojo Olmo, Pablo",
+"Rojo Ortega, Raúl",
+[
+"Rojo Ortega, Lucía",
+"Román Olmedo, Ana",
+"Rojo Olmo, Pablo"
+],
+"Psicotécnicos",
+"Orden: Rojo Olmo, Pablo; Rojo Ortega, Lucía; Rojo Ortega, Raúl; Román Oliver, Javier; Román Olmedo, Ana. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en segundo lugar? Navarro Gamero, Diego; Nava Gascón, Sara; Nava Gamero, Javier; Nava Galán, Lucía; Navarro Garrido, Carmen",
+"Nava Gamero, Javier",
+[
+"Nava Gascón, Sara",
+"Navarro Gamero, Diego",
+"Nava Galán, Lucía"
+],
+"Psicotécnicos",
+"Orden: Nava Galán, Lucía; Nava Gamero, Javier; Nava Gascón, Sara; Navarro Gamero, Diego; Navarro Garrido, Carmen. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en cuarto lugar? Casas Matas, Lucía; Casado Martínez, Carmen; Casas Mata, Lucía; Cano Márquez, Ana; Casado Marín, Raúl",
+"Casas Mata, Lucía",
+[
+"Casado Martínez, Carmen",
+"Casado Marín, Raúl",
+"Cano Márquez, Ana"
+],
+"Psicotécnicos",
+"Orden: Cano Márquez, Ana; Casado Marín, Raúl; Casado Martínez, Carmen; Casas Mata, Lucía; Casas Matas, Lucía. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en tercer lugar? Osorio Peñalver, Óscar; Osorio Pedraza, Irene; Ortuño Peral, Óscar; Osorio Perea, Javier; Otero Pedraza, Javier",
+"Osorio Peñalver, Óscar",
+[
+"Ortuño Peral, Óscar",
+"Otero Pedraza, Javier",
+"Osorio Pedraza, Irene"
+],
+"Psicotécnicos",
+"Orden: Ortuño Peral, Óscar; Osorio Pedraza, Irene; Osorio Peñalver, Óscar; Osorio Perea, Javier; Otero Pedraza, Javier. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en segundo lugar? Gálvez Santos, Sara; Gálvez Sanjuán, Pablo; Gálvez Sainz, Óscar; Garcés Salas, Javier; Garcés Santos, Irene",
+"Gálvez Sanjuán, Pablo",
+[
+"Gálvez Santos, Sara",
+"Gálvez Sainz, Óscar",
+"Garcés Santos, Irene"
+],
+"Psicotécnicos",
+"Orden: Gálvez Sainz, Óscar; Gálvez Sanjuán, Pablo; Gálvez Santos, Sara; Garcés Salas, Javier; Garcés Santos, Irene. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en cuarto lugar? Matas Roldán, Irene; Mas Rojo, Luis; Matas Rosales, Raúl; Mas Román, Luis; Matas Román, Ana",
+"Matas Román, Ana",
+[
+"Mas Román, Luis",
+"Matas Rosales, Raúl",
+"Mas Rojo, Luis"
+],
+"Psicotécnicos",
+"Orden: Mas Rojo, Luis; Mas Román, Luis; Matas Roldán, Irene; Matas Román, Ana; Matas Rosales, Raúl. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en tercer lugar? Pérez Navarro, Sara; Peña Nieves, Raúl; Pérez Navarro, Pablo; Pereira Noguera, Elena; Peña Nieves, Sara",
+"Pereira Noguera, Elena",
+[
+"Peña Nieves, Sara",
+"Peña Nieves, Raúl",
+"Pérez Navarro, Sara"
+],
+"Psicotécnicos",
+"Orden: Peña Nieves, Raúl; Peña Nieves, Sara; Pereira Noguera, Elena; Pérez Navarro, Pablo; Pérez Navarro, Sara. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en segundo lugar? Sanz Cano, Carmen; Salinas Calvo, Pablo; Salinas Castaño, Pablo; Salinas Calvo, Luis; Sanz Casas, Elena",
+"Salinas Calvo, Pablo",
+[
+"Sanz Casas, Elena",
+"Salinas Calvo, Luis",
+"Sanz Cano, Carmen"
+],
+"Psicotécnicos",
+"Orden: Salinas Calvo, Luis; Salinas Calvo, Pablo; Salinas Castaño, Pablo; Sanz Cano, Carmen; Sanz Casas, Elena. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en tercer lugar? Roldán Orozco, Javier; Ruano Ortega, Carmen; Ruano Oliver, Lucía; Ruano Otero, Lucía; Romero Ortuño, Luis",
+"Ruano Oliver, Lucía",
+[
+"Ruano Otero, Lucía",
+"Roldán Orozco, Javier",
+"Romero Ortuño, Luis"
+],
+"Psicotécnicos",
+"Orden: Roldán Orozco, Javier; Romero Ortuño, Luis; Ruano Oliver, Lucía; Ruano Ortega, Carmen; Ruano Otero, Lucía. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Se archivan estas fichas por orden alfabético (primer apellido, segundo apellido y nombre). ¿Cuál va en segundo lugar? Navas Gallardo, Sara; Navarro Galán, Carmen; Navarro Garcés, Elena; Núñez Gascón, Luis; Núñez Garzón, Sara",
+"Navarro Garcés, Elena",
+[
+"Núñez Gascón, Luis",
+"Núñez Garzón, Sara",
+"Navas Gallardo, Sara"
+],
+"Psicotécnicos",
+"Orden: Navarro Galán, Carmen; Navarro Garcés, Elena; Navas Gallardo, Sara; Núñez Garzón, Sara; Núñez Gascón, Luis. Si coincide el primer apellido, decide el segundo; si también coincide, el nombre."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el segundo lugar? 23/05/2024, 15/01/2024, 24/10/2025, 08/04/2024, 23/06/2025",
+"08/04/2024",
+[
+"15/01/2024",
+"23/06/2025",
+"24/10/2025"
+],
+"Psicotécnicos",
+"Orden: 15/01/2024, 08/04/2024, 23/05/2024, 23/06/2025, 24/10/2025. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el segundo lugar? 19/11/2027, 13/12/2026, 11/09/2026, 15/06/2026, 23/09/2027",
+"11/09/2026",
+[
+"15/06/2026",
+"13/12/2026",
+"19/11/2027"
+],
+"Psicotécnicos",
+"Orden: 15/06/2026, 11/09/2026, 13/12/2026, 23/09/2027, 19/11/2027. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el cuarto lugar? 27/09/2026, 18/05/2025, 25/09/2026, 26/08/2025, 11/03/2025",
+"25/09/2026",
+[
+"11/03/2025",
+"26/08/2025",
+"27/09/2026"
+],
+"Psicotécnicos",
+"Orden: 11/03/2025, 18/05/2025, 26/08/2025, 25/09/2026, 27/09/2026. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el tercer lugar? 24/09/2027, 10/12/2026, 01/09/2026, 19/06/2026, 25/10/2027",
+"10/12/2026",
+[
+"19/06/2026",
+"24/09/2027",
+"25/10/2027"
+],
+"Psicotécnicos",
+"Orden: 19/06/2026, 01/09/2026, 10/12/2026, 24/09/2027, 25/10/2027. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el cuarto lugar? 14/07/2025, 14/12/2026, 12/07/2026, 27/06/2026, 10/09/2025",
+"12/07/2026",
+[
+"14/07/2025",
+"14/12/2026",
+"27/06/2026"
+],
+"Psicotécnicos",
+"Orden: 14/07/2025, 10/09/2025, 27/06/2026, 12/07/2026, 14/12/2026. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el tercer lugar? 15/04/2026, 14/07/2026, 02/02/2026, 04/04/2027, 19/11/2026",
+"14/07/2026",
+[
+"19/11/2026",
+"15/04/2026",
+"02/02/2026"
+],
+"Psicotécnicos",
+"Orden: 02/02/2026, 15/04/2026, 14/07/2026, 19/11/2026, 04/04/2027. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el tercer lugar? 15/07/2025, 26/01/2025, 22/12/2025, 15/06/2025, 25/06/2025",
+"25/06/2025",
+[
+"15/07/2025",
+"15/06/2025",
+"26/01/2025"
+],
+"Psicotécnicos",
+"Orden: 26/01/2025, 15/06/2025, 25/06/2025, 15/07/2025, 22/12/2025. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el cuarto lugar? 03/08/2025, 22/09/2024, 22/11/2024, 19/08/2024, 25/05/2024",
+"22/11/2024",
+[
+"22/09/2024",
+"25/05/2024",
+"03/08/2025"
+],
+"Psicotécnicos",
+"Orden: 25/05/2024, 19/08/2024, 22/09/2024, 22/11/2024, 03/08/2025. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el cuarto lugar? 05/11/2026, 24/04/2025, 23/04/2025, 07/10/2025, 22/02/2026",
+"22/02/2026",
+[
+"07/10/2025",
+"23/04/2025",
+"24/04/2025"
+],
+"Psicotécnicos",
+"Orden: 23/04/2025, 24/04/2025, 07/10/2025, 22/02/2026, 05/11/2026. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el tercer lugar? 01/11/2025, 24/07/2025, 02/07/2025, 01/04/2025, 05/12/2026",
+"24/07/2025",
+[
+"02/07/2025",
+"01/04/2025",
+"05/12/2026"
+],
+"Psicotécnicos",
+"Orden: 01/04/2025, 02/07/2025, 24/07/2025, 01/11/2025, 05/12/2026. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el tercer lugar? 02/02/2026, 20/03/2025, 18/09/2025, 25/02/2025, 02/09/2026",
+"18/09/2025",
+[
+"20/03/2025",
+"02/02/2026",
+"25/02/2025"
+],
+"Psicotécnicos",
+"Orden: 25/02/2025, 20/03/2025, 18/09/2025, 02/02/2026, 02/09/2026. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el cuarto lugar? 19/03/2027, 18/02/2026, 07/03/2026, 09/02/2026, 18/07/2026",
+"18/07/2026",
+[
+"09/02/2026",
+"19/03/2027",
+"18/02/2026"
+],
+"Psicotécnicos",
+"Orden: 09/02/2026, 18/02/2026, 07/03/2026, 18/07/2026, 19/03/2027. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el segundo lugar? 28/09/2024, 07/12/2024, 15/06/2024, 22/02/2024, 19/04/2024",
+"19/04/2024",
+[
+"15/06/2024",
+"28/09/2024",
+"07/12/2024"
+],
+"Psicotécnicos",
+"Orden: 22/02/2024, 19/04/2024, 15/06/2024, 28/09/2024, 07/12/2024. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el tercer lugar? 14/11/2027, 08/01/2026, 13/06/2026, 20/04/2027, 16/11/2027",
+"20/04/2027",
+[
+"13/06/2026",
+"08/01/2026",
+"16/11/2027"
+],
+"Psicotécnicos",
+"Orden: 08/01/2026, 13/06/2026, 20/04/2027, 14/11/2027, 16/11/2027. Se compara primero el año, luego el mes y por último el día."
+],
+[
+29,
+"Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2026/07159, 2026/07591, 2026/09175, 2026/05197, 2026/05719",
+"2026/07591",
+[
+"2026/05719",
+"2026/05197",
+"2026/09175"
+],
+"Psicotécnicos",
+"Orden: 2026/05197, 2026/05719, 2026/07159, 2026/07591, 2026/09175."
+],
+[
+29,
+"Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2025/03789, 2025/03897, 2025/08973, 2025/09738, 2025/09873",
+"2025/09738",
+[
+"2025/03789",
+"2025/09873",
+"2025/08973"
+],
+"Psicotécnicos",
+"Orden: 2025/03789, 2025/03897, 2025/08973, 2025/09738, 2025/09873."
+],
+[
+29,
+"Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2026/09157, 2026/05179, 2026/01759, 2026/09517, 2026/07195",
+"2026/07195",
+[
+"2026/09157",
+"2026/05179",
+"2026/01759"
+],
+"Psicotécnicos",
+"Orden: 2026/09517, 2026/09157, 2026/07195, 2026/05179, 2026/01759."
+],
+[
+29,
+"Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/08524, 2025/02548, 2025/04852, 2025/08425, 2025/04528",
+"2025/04852",
+[
+"2025/04528",
+"2025/08524",
+"2025/08425"
+],
+"Psicotécnicos",
+"Orden: 2025/08524, 2025/08425, 2025/04852, 2025/04528, 2025/02548."
+],
+[
+29,
+"Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2026/06420, 2026/00246, 2026/06240, 2026/06204, 2026/04206",
+"2026/06204",
+[
+"2026/00246",
+"2026/06240",
+"2026/06420"
+],
+"Psicotécnicos",
+"Orden: 2026/00246, 2026/04206, 2026/06204, 2026/06240, 2026/06420."
+],
+[
+29,
+"Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2025/09751, 2025/01597, 2025/01759, 2025/09517, 2025/09175",
+"2025/09175",
+[
+"2025/01759",
+"2025/09517",
+"2025/09751"
+],
+"Psicotécnicos",
+"Orden: 2025/01597, 2025/01759, 2025/09175, 2025/09517, 2025/09751."
+],
+[
+29,
+"Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2025/09840, 2025/04980, 2025/00984, 2025/09084, 2025/04809",
+"2025/04980",
+[
+"2025/04809",
+"2025/09840",
+"2025/09084"
+],
+"Psicotécnicos",
+"Orden: 2025/00984, 2025/04809, 2025/04980, 2025/09084, 2025/09840."
+],
+[
+29,
+"Ordenados de mayor a menor, ¿qué número de expediente ocupa el cuarto lugar? 2025/00628, 2025/00682, 2025/06028, 2025/06802, 2025/06820",
+"2025/00682",
+[
+"2025/06028",
+"2025/06802",
+"2025/00628"
+],
+"Psicotécnicos",
+"Orden: 2025/06820, 2025/06802, 2025/06028, 2025/00682, 2025/00628."
+],
+[
+29,
+"Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/05971, 2025/09715, 2025/07591, 2025/05197, 2025/07915",
+"2025/07591",
+[
+"2025/09715",
+"2025/05197",
+"2025/05971"
+],
+"Psicotécnicos",
+"Orden: 2025/09715, 2025/07915, 2025/07591, 2025/05971, 2025/05197."
+],
+[
+29,
+"Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/00572, 2025/00527, 2025/02507, 2025/07502, 2025/05027",
+"2025/02507",
+[
+"2025/00572",
+"2025/07502",
+"2025/00527"
+],
+"Psicotécnicos",
+"Orden: 2025/07502, 2025/05027, 2025/02507, 2025/00572, 2025/00527."
+],
+[
+29,
+"Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2026/09214, 2026/09421, 2026/09412, 2026/02941, 2026/09124",
+"2026/09412",
+[
+"2026/09421",
+"2026/09214",
+"2026/09124"
+],
+"Psicotécnicos",
+"Orden: 2026/02941, 2026/09124, 2026/09214, 2026/09412, 2026/09421."
+],
+[
+29,
+"Ordenados de mayor a menor, ¿qué número de expediente ocupa el cuarto lugar? 2025/09135, 2025/05193, 2025/09351, 2025/03159, 2025/05391",
+"2025/05193",
+[
+"2025/05391",
+"2025/09351",
+"2025/03159"
+],
+"Psicotécnicos",
+"Orden: 2025/09351, 2025/09135, 2025/05391, 2025/05193, 2025/03159."
+],
+[
+29,
+"Clave:\nZ | S | I | O | P | L | A\n8 | 3 | 4 | 1 | 6 | 2 | 5\nCon esta clave, ¿cómo se escribe la palabra PLAZO?",
+"62581",
+[
+"22581",
+"62851",
+"64581"
+],
+"Psicotécnicos",
+"Letra a letra: P=6, L=2, A=5, Z=8, O=1 → 62581."
+],
+[
+29,
+"Clave:\nM | R | O | U | N | A | G\n9 | 5 | 6 | 1 | 2 | 7 | 0\nCon esta clave, ¿qué palabra corresponde al código 26597?",
+"NORMA",
+[
+"NORAA",
+"NOMRA",
+"NGRMA"
+],
+"Psicotécnicos",
+"Cifra a cifra: 2=N, 6=O, 5=R, 9=M, 7=A → NORMA."
+],
+[
+29,
+"Clave:\nI | C | O | H | E | R | S | T\n1 | 7 | 5 | 9 | 8 | 2 | 4 | 6\nCon esta clave, ¿cómo se escribe la palabra CORTES?",
+"752684",
+[
+"756284",
+"752648",
+"752644"
+],
+"Psicotécnicos",
+"Letra a letra: C=7, O=5, R=2, T=6, E=8, S=4 → 752684."
+],
+[
+29,
+"Clave:\nA | D | E | I | N | S | O | G\n8 | 7 | 6 | 2 | 1 | 3 | 5 | 0\nCon esta clave, ¿qué palabra corresponde al código 361875?",
+"SENADO",
+[
+"SENAOD",
+"SNEADO",
+"SENAGO"
+],
+"Psicotécnicos",
+"Cifra a cifra: 3=S, 6=E, 1=N, 8=A, 7=D, 5=O → SENADO."
+],
+[
+29,
+"Clave:\nZ | E | D | R | U | O | T | C\n6 | 8 | 3 | 2 | 4 | 9 | 7 | 0\nCon esta clave, ¿cómo se escribe la palabra DECRETO?",
+"3802879",
+[
+"3892879",
+"3802899",
+"6802879"
+],
+"Psicotécnicos",
+"Letra a letra: D=3, E=8, C=0, R=2, E=8, T=7, O=9 → 3802879."
+],
+[
+29,
+"Clave:\nF | A | R | O | I | N | M\n3 | 2 | 9 | 6 | 1 | 0 | 7\nCon esta clave, ¿qué palabra corresponde al código 31972?",
+"FIRMA",
+[
+"FARMA",
+"IFRMA",
+"AIRMA"
+],
+"Psicotécnicos",
+"Cifra a cifra: 3=F, 1=I, 9=R, 7=M, 2=A → FIRMA."
+],
+[
+29,
+"Clave:\nP | L | H | E | S | O\n4 | 0 | 3 | 5 | 6 | 1\nCon esta clave, ¿cómo se escribe la palabra SELLO?",
+"65001",
+[
+"56001",
+"15001",
+"65010"
+],
+"Psicotécnicos",
+"Letra a letra: S=6, E=5, L=0, L=0, O=1 → 65001."
+],
+[
+29,
+"Clave:\nE | C | U | T | S | O | D | R\n5 | 0 | 8 | 6 | 1 | 2 | 4 | 9\nCon esta clave, ¿qué palabra corresponde al código 9508912?",
+"RECURSO",
+[
+"RERURSO",
+"RECUUSO",
+"RDCURSO"
+],
+"Psicotécnicos",
+"Cifra a cifra: 9=R, 5=E, 0=C, 8=U, 9=R, 1=S, 2=O → RECURSO."
+],
+[
+29,
+"Clave:\nT | R | E | I | M | B | A | L\n2 | 1 | 8 | 4 | 5 | 6 | 3 | 0\nCon esta clave, ¿cómo se escribe la palabra TRAMITE?",
+"2135428",
+[
+"2315428",
+"2153428",
+"2135482"
+],
+"Psicotécnicos",
+"Letra a letra: T=2, R=1, A=3, M=5, I=4, T=2, E=8 → 2135428."
+],
+[
+29,
+"Clave:\nI | R | O | A | H | C | E | V | L\n2 | 8 | 7 | 9 | 5 | 0 | 4 | 1 | 3\nCon esta clave, ¿qué palabra corresponde al código 9805217?",
+"ARCHIVO",
+[
+"AICHIVO",
+"ARCHVIO",
+"ARCIHVO"
+],
+"Psicotécnicos",
+"Cifra a cifra: 9=A, 8=R, 0=C, 5=H, 2=I, 1=V, 7=O → ARCHIVO."
+],
+[
+29,
+"Clave:\nA | O | S | H | T | C\n2 | 9 | 6 | 5 | 4 | 3\nCon esta clave, ¿cómo se escribe la palabra ACTAS?",
+"23426",
+[
+"25426",
+"23226",
+"32426"
+],
+"Psicotécnicos",
+"Letra a letra: A=2, C=3, T=4, A=2, S=6 → 23426."
+],
+[
+29,
+"Clave:\nS | L | E | Y | I\n4 | 8 | 6 | 9 | 2\nCon esta clave, ¿qué palabra corresponde al código 869?",
+"LEY",
+[
+"SEY",
+"ELY",
+"LYY"
+],
+"Psicotécnicos",
+"Cifra a cifra: 8=L, 6=E, 9=Y → LEY."
+],
+[
+29,
+"Clave:\nN | L | E | O | S | P | C\n5 | 2 | 9 | 3 | 0 | 4 | 7\nCon esta clave, ¿cómo se escribe la palabra PLENO?",
+"42953",
+[
+"42593",
+"42935",
+"24953"
+],
+"Psicotécnicos",
+"Letra a letra: P=4, L=2, E=9, N=5, O=3 → 42953."
+],
+[
+29,
+"Clave:\nL | N | I | O | C | U | M\n5 | 1 | 8 | 0 | 9 | 2 | 7\nCon esta clave, ¿qué palabra corresponde al código 709801?",
+"MOCION",
+[
+"MCOION",
+"MOOION",
+"UOCION"
+],
+"Psicotécnicos",
+"Cifra a cifra: 7=M, 0=O, 9=C, 8=I, 0=O, 1=N → MOCION."
+],
+[
+29,
+"Clave:\nJ | O | S | I | E | C | Z | N\n3 | 9 | 5 | 1 | 8 | 0 | 6 | 4\nCon esta clave, ¿cómo se escribe la palabra CONSEJO?",
+"0945839",
+[
+"6945839",
+"9045839",
+"0945819"
+],
+"Psicotécnicos",
+"Letra a letra: C=0, O=9, N=4, S=5, E=8, J=3, O=9 → 0945839."
+],
+[
+29,
+"Clave:\nG | O | D | R | N | E | H\n5 | 4 | 0 | 6 | 8 | 7 | 2\nCon esta clave, ¿qué palabra corresponde al código 46078?",
+"ORDEN",
+[
+"ORNEN",
+"OREDN",
+"ORDNE"
+],
+"Psicotécnicos",
+"Cifra a cifra: 4=O, 6=R, 0=D, 7=E, 8=N → ORDEN."
+],
+[
+29,
+"Clave:\nO | S | C | D | T | N | E\n4 | 5 | 3 | 9 | 8 | 2 | 0\nCon esta clave, ¿cómo se escribe la palabra CENSO?",
+"30254",
+[
+"30454",
+"38254",
+"32054"
+],
+"Psicotécnicos",
+"Letra a letra: C=3, E=0, N=2, S=5, O=4 → 30254."
+],
+[
+29,
+"Clave:\nS | A | T | F | R\n8 | 5 | 0 | 2 | 9\nCon esta clave, ¿qué palabra corresponde al código 0585?",
+"TASA",
+[
+"ATSA",
+"TAAS",
+"SASA"
+],
+"Psicotécnicos",
+"Cifra a cifra: 0=T, 5=A, 8=S, 5=A → TASA."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nBM8-6ZS | BM8-6ZS\nN6Z-13E | N6Z-13E\n6E3-82I | 6E3-82I\nOO1-3ME | O01-3ME\nBOO-G42 | BOO-G42",
+"4",
+[
+"5",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nN41-BBM | N41-BBN\nIE3-5G8 | 1E3-5G8\nG80-37I | G8O-37I\nIAZ-901 | IAZ-9O1\nEIZ-3ZZ | FIZ-3ZZ",
+"0",
+[
+"1",
+"2",
+"3"
+],
+"Psicotécnicos",
+"Son iguales 0 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n217-47B | 217-47B\n5FN-E26 | 5EN-E26\nI5M-97E | 15M-97E\nA7G-F19 | A7G-E19\n0Z4-7NI | 0Z4-7NI",
+"2",
+[
+"3",
+"1",
+"4"
+],
+"Psicotécnicos",
+"Son iguales 2 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nASZ-4IB | ASZ-4IB\nOFN-0G4 | OFN-0G4\n192-05S | 192-05S\nGGI-AN1 | 6GI-AN1\nBB4-16I | BB4-16I",
+"4",
+[
+"5",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nZZA-601 | ZZA-601\n0EB-36Z | 0EB-36Z\nFAZ-8IO | FAZ-BIO\nZEO-245 | ZEO-Z45\nB23-1FZ | B23-1F2",
+"2",
+[
+"3",
+"1",
+"4"
+],
+"Psicotécnicos",
+"Son iguales 2 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nNB5-3A5 | N85-3A5\n7F6-N85 | 7F6-N8S\nFSF-MMB | FSE-MMB\n0I2-SMG | 012-SMG\nAZ8-BSZ | AZ8-BSZ",
+"1",
+[
+"2",
+"0",
+"3"
+],
+"Psicotécnicos",
+"Son iguales 1 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n234-ZNS | 234-ZNS\nNO4-IG7 | NO4-IG7\n46S-1M0 | 46S-1M0\nI20-AO0 | I20-AO0\nNBS-NBZ | NBS-NBZ",
+"5",
+[
+"4",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nN45-GG2 | N45-GG2\n1AM-A4S | 1AM-A4S\n6I8-Z38 | 6I8-Z38\n9BA-BON | 9BA-8ON\nFS3-4MF | FS3-4MF",
+"4",
+[
+"5",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n61B-ZMM | 61B-ZMM\nF1G-GSA | F1G-GSA\nE5M-GM4 | E5M-GM4\n31N-F0S | 31N-F0S\n197-2SB | 197-2S8",
+"4",
+[
+"5",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n2ZN-7O6 | 2ZN-7O6\n228-707 | 228-707\n0O0-OOM | 0O0-OOM\nS3E-28S | S3E-28S\nSE0-932 | SE0-932",
+"5",
+[
+"4",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nO4G-16B | O4G-1GB\n0GB-A23 | 0GB-AZ3\n6S6-SFA | 6S6-SFA\nOAB-I1O | OAB-I10\nM15-8N9 | N15-8N9",
+"1",
+[
+"2",
+"0",
+"3"
+],
+"Psicotécnicos",
+"Son iguales 1 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nE5A-IG8 | E5A-1G8\n9NI-OI0 | 9NI-0I0\nMBO-M94 | NBO-M94\nS34-B5N | S34-85N\n7S1-N01 | 751-N01",
+"0",
+[
+"1",
+"2",
+"3"
+],
+"Psicotécnicos",
+"Son iguales 0 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n68F-BO2 | 68F-B02\nON7-EM5 | 0N7-EM5\nS6A-2ON | S6A-2OM\n45A-GIO | 45A-GI0\nO1I-1A6 | O1I-1AG",
+"0",
+[
+"1",
+"2",
+"3"
+],
+"Psicotécnicos",
+"Son iguales 0 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n217-N51 | 217-N51\nF95-FE5 | F95-FE5\n22G-969 | 22G-969\nI3M-2BA | I3M-2BA\nGE6-I89 | GE6-I89",
+"5",
+[
+"4",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nA2G-7FS | A2G-7FS\n605-BON | 605-BON\n9AZ-65B | 9AZ-65B\n17B-IZO | 17B-IZO\nA61-4S4 | A61-4S4",
+"5",
+[
+"4",
+"3",
+"2"
+],
+"Psicotécnicos",
+"Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\nEN0-998 | EN0-99B\n99F-471 | 99E-471\n426-0BE | 4Z6-0BE\n6GG-7EM | GGG-7EM\nZFA-A39 | ZFA-A39",
+"1",
+[
+"2",
+"0",
+"3"
+],
+"Psicotécnicos",
+"Son iguales 1 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…)."
+],
+[
+29,
+"¿Cuántas veces aparece la letra «p» en esta serie? bdqbddqpdqpdbpbddbqqpqbddd",
+"4",
+[
+"5",
+"3",
+"6"
+],
+"Psicotécnicos",
+"Aparece 4 veces."
+],
+[
+29,
+"¿Cuántas veces aparece el número 9 en esta serie? 6 9 6 9 6 6 9 8 9 6 8 9 9 6 8 8 8 6 9 6 9 6 8 8",
+"8",
+[
+"9",
+"7",
+"10"
+],
+"Psicotécnicos",
+"Aparece 8 veces."
+],
+[
+29,
+"¿Cuántas veces aparece la letra «b» en esta serie? dpbppqdpdpqdpqbpddqbpbqbbb",
+"7",
+[
+"8",
+"6",
+"9"
+],
+"Psicotécnicos",
+"Aparece 7 veces."
+],
+[
+29,
+"¿Cuántas veces aparece el número 9 en esta serie? 9 9 6 9 6 9 6 9 8 8 9 8 9 6 9 9 8 8 9 9 6 6 9 8",
+"12",
+[
+"13",
+"11",
+"14"
+],
+"Psicotécnicos",
+"Aparece 12 veces."
+],
+[
+29,
+"¿Cuántas veces aparece la letra «q» en esta serie? dpdqddpppdqbpbdqqppdqbpdbd",
+"5",
+[
+"6",
+"4",
+"7"
+],
+"Psicotécnicos",
+"Aparece 5 veces."
+],
+[
+29,
+"¿Cuántas veces aparece el número 9 en esta serie? 8 6 9 8 8 9 9 6 8 9 6 9 8 9 9 6 8 9 8 6 9 6 8 8",
+"9",
+[
+"10",
+"8",
+"11"
+],
+"Psicotécnicos",
+"Aparece 9 veces."
+],
+[
+29,
+"¿Cuántas veces aparece la letra «d» en esta serie? bddqbbdbbdqdbpqpdqqddqpqqq",
+"8",
+[
+"9",
+"7",
+"10"
+],
+"Psicotécnicos",
+"Aparece 8 veces."
+],
+[
+29,
+"¿Cuántas veces aparece el número 9 en esta serie? 8 8 8 6 8 6 6 6 6 6 9 6 6 8 9 8 8 9 8 8 8 9 9 8",
+"5",
+[
+"6",
+"4",
+"7"
+],
+"Psicotécnicos",
+"Aparece 5 veces."
+],
+[
+29,
+"¿Cuántas veces aparece la letra «b» en esta serie? pqdpbqppddpbdqdpbbqdddpddd",
+"4",
+[
+"5",
+"3",
+"6"
+],
+"Psicotécnicos",
+"Aparece 4 veces."
+],
+[
+29,
+"¿Cuántas veces aparece el número 6 en esta serie? 6 8 6 9 8 6 9 9 6 9 8 8 9 6 9 8 8 9 8 6 6 6 9 9",
+"8",
+[
+"9",
+"7",
+"10"
+],
+"Psicotécnicos",
+"Aparece 8 veces."
+],
+[
+29,
+"¿Cuántas veces aparece la letra «d» en esta serie? qppbqdppppqdbppbpppbpqbdpb",
+"3",
+[
+"4",
+"2",
+"5"
+],
+"Psicotécnicos",
+"Aparece 3 veces."
+],
+[
+29,
+"¿Cuántas veces aparece el número 9 en esta serie? 6 9 6 9 9 6 6 6 8 6 6 8 9 8 8 6 6 8 8 6 6 6 6 8",
+"4",
+[
+"5",
+"3",
+"6"
+],
+"Psicotécnicos",
+"Aparece 4 veces."
+],
+[
+29,
+"¿Cuántas veces aparece la letra «d» en esta serie? pbpppqdqqqpbqdbdqbbdpqqbpb",
+"4",
+[
+"5",
+"3",
+"6"
+],
+"Psicotécnicos",
+"Aparece 4 veces."
+],
+[
+29,
+"¿Cuántas veces aparece el número 9 en esta serie? 8 8 6 6 8 6 9 9 6 8 6 6 6 9 9 6 9 9 6 6 8 8 6 6",
+"6",
+[
+"7",
+"5",
+"8"
+],
+"Psicotécnicos",
+"Aparece 6 veces."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, G, I, L, O, …",
+"T",
+[
+"U",
+"S",
+"R"
+],
+"Psicotécnicos",
+"Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la O viene la T."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, E, G, J, N, …",
+"R",
+[
+"S",
+"Q",
+"P"
+],
+"Psicotécnicos",
+"Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la N viene la R."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, C, E, H, L, …",
+"P",
+[
+"Q",
+"O",
+"Ñ"
+],
+"Psicotécnicos",
+"Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la L viene la P."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? A, B, D, G, K, …",
+"O",
+[
+"P",
+"Ñ",
+"N"
+],
+"Psicotécnicos",
+"Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la K viene la O."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? E, F, H, K, Ñ, …",
+"S",
+[
+"T",
+"R",
+"Q"
+],
+"Psicotécnicos",
+"Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la Ñ viene la S."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? X, V, T, R, P, …",
+"Ñ",
+[
+"O",
+"N",
+"Q"
+],
+"Psicotécnicos",
+"Se retroceden 2 letras cada vez: antes de la P, contando hacia atrás 2, está la Ñ. Recuerda la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? U, S, Q, O, N, …",
+"L",
+[
+"M",
+"K",
+"Ñ"
+],
+"Psicotécnicos",
+"Se retroceden 2 letras cada vez: antes de la N, contando hacia atrás 2, está la L. Recuerda la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? W, T, Q, Ñ, L, …",
+"I",
+[
+"J",
+"H",
+"M"
+],
+"Psicotécnicos",
+"Se retroceden 3 letras cada vez: antes de la L, contando hacia atrás 3, está la I. Recuerda la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? W, U, S, Q, O, …",
+"N",
+[
+"Ñ",
+"M",
+"P"
+],
+"Psicotécnicos",
+"Se retroceden 2 letras cada vez: antes de la O, contando hacia atrás 2, está la N. Recuerda la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? R, P, Ñ, M, K, …",
+"I",
+[
+"J",
+"H",
+"L"
+],
+"Psicotécnicos",
+"Se retroceden 2 letras cada vez: antes de la K, contando hacia atrás 2, está la I. Recuerda la Ñ."
+],
+[
+29,
+"Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? Z, X, V, T, R, …",
+"P",
+[
+"Q",
+"O",
+"S"
+],
+"Psicotécnicos",
+"Se retroceden 2 letras cada vez: antes de la R, contando hacia atrás 2, está la P. Recuerda la Ñ."
+],
+[
+29,
+"¿Qué número continúa la serie? 6, 12, 17, 34, 39, 78, …",
+"156",
+[
+"151",
+"161",
+"158"
+],
+"Psicotécnicos",
+"Se alternan dos operaciones: multiplicar por 2 y sumar 5. Tras sumar 5 toca multiplicar: 78 × 2 = 156."
+],
+[
+29,
+"¿Qué número continúa la serie? 4, 12, 16, 48, 52, 156, …",
+"468",
+[
+"472",
+"160",
+"471"
+],
+"Psicotécnicos",
+"Se alternan dos operaciones: multiplicar por 3 y sumar 4. Tras sumar 4 toca multiplicar: 156 × 3 = 468."
+],
+[
+29,
+"¿Qué número continúa la serie? 3, 6, 7, 14, 15, 30, …",
+"60",
+[
+"59",
+"62",
+"31"
+],
+"Psicotécnicos",
+"Se alternan dos operaciones: multiplicar por 2 y sumar 1. Tras sumar 1 toca multiplicar: 30 × 2 = 60."
+],
+[
+29,
+"¿Qué número continúa la serie? 6, 18, 19, 57, 58, 174, …",
+"522",
+[
+"525",
+"523",
+"521"
+],
+"Psicotécnicos",
+"Se alternan dos operaciones: multiplicar por 3 y sumar 1. Tras sumar 1 toca multiplicar: 174 × 3 = 522."
+],
+[
+29,
+"¿Qué número continúa la serie? 5, 10, 12, 24, 26, 52, …",
+"104",
+[
+"54",
+"102",
+"106"
+],
+"Psicotécnicos",
+"Se alternan dos operaciones: multiplicar por 2 y sumar 2. Tras sumar 2 toca multiplicar: 52 × 2 = 104."
+],
+[
+29,
+"¿Qué número continúa la serie? 1, 3, 5, 15, 17, 51, …",
+"153",
+[
+"53",
+"155",
+"156"
+],
+"Psicotécnicos",
+"Se alternan dos operaciones: multiplicar por 3 y sumar 2. Tras sumar 2 toca multiplicar: 51 × 3 = 153."
+],
+[
+29,
+"¿Qué número continúa la serie? 1, 3, 7, 21, 25, 75, …",
+"225",
+[
+"79",
+"229",
+"221"
+],
+"Psicotécnicos",
+"Se alternan dos operaciones: multiplicar por 3 y sumar 4. Tras sumar 4 toca multiplicar: 75 × 3 = 225."
+],
+[
+29,
+"¿Qué número continúa la serie? 21, 31, 28, 38, 35, 45, 42, …",
+"52",
+[
+"55",
+"39",
+"51"
+],
+"Psicotécnicos",
+"Se alterna sumar 10 y restar 3. Ahora toca sumar: 42 + 10 = 52."
+],
+[
+29,
+"¿Qué número continúa la serie? 26, 37, 31, 42, 36, 47, 41, …",
+"52",
+[
+"58",
+"40",
+"53"
+],
+"Psicotécnicos",
+"Se alterna sumar 11 y restar 6. Ahora toca sumar: 41 + 11 = 52."
+],
+[
+29,
+"¿Qué número continúa la serie? 26, 36, 29, 39, 32, 42, 35, …",
+"45",
+[
+"31",
+"46",
+"44"
+],
+"Psicotécnicos",
+"Se alterna sumar 10 y restar 7. Ahora toca sumar: 35 + 10 = 45."
+],
+[
+29,
+"¿Qué número continúa la serie? 17, 21, 18, 22, 19, 23, 20, …",
+"24",
+[
+"17",
+"18",
+"23"
+],
+"Psicotécnicos",
+"Se alterna sumar 4 y restar 3. Ahora toca sumar: 20 + 4 = 24."
+],
+[
+29,
+"¿Qué número continúa la serie? 22, 32, 27, 37, 32, 42, 37, …",
+"47",
+[
+"52",
+"32",
+"46"
+],
+"Psicotécnicos",
+"Se alterna sumar 10 y restar 5. Ahora toca sumar: 37 + 10 = 47."
+],
+[
+29,
+"¿Qué número continúa la serie? 6, 12, 8, 14, 10, 16, 12, …",
+"18",
+[
+"10",
+"8",
+"19"
+],
+"Psicotécnicos",
+"Se alterna sumar 6 y restar 4. Ahora toca sumar: 12 + 6 = 18."
+],
+[
+29,
+"¿Qué número continúa la serie? 21, 26, 25, 30, 29, 34, 33, …",
+"38",
+[
+"37",
+"39",
+"32"
+],
+"Psicotécnicos",
+"Se alterna sumar 5 y restar 1. Ahora toca sumar: 33 + 5 = 38."
+],
+[
+29,
+"¿Qué número continúa la serie? 20, 24, 21, 25, 22, 26, 23, …",
+"27",
+[
+"26",
+"30",
+"20"
+],
+"Psicotécnicos",
+"Se alterna sumar 4 y restar 3. Ahora toca sumar: 23 + 4 = 27."
+],
+[
+29,
+"¿Qué número continúa la serie? 13, 14, 16, 20, 28, 44, …",
+"76",
+[
+"77",
+"60",
+"84"
+],
+"Psicotécnicos",
+"Las diferencias se duplican (1, 2, 4, 8, 16…); la siguiente es 32: 44 + 32 = 76."
+],
+[
+29,
+"¿Qué número continúa la serie? 16, 17, 19, 23, 31, 47, …",
+"79",
+[
+"80",
+"63",
+"77"
+],
+"Psicotécnicos",
+"Las diferencias se duplican (1, 2, 4, 8, 16…); la siguiente es 32: 47 + 32 = 79."
+],
+[
+29,
+"¿Qué número continúa la serie? 12, 15, 21, 33, 57, 105, …",
+"201",
+[
+"153",
+"225",
+"204"
+],
+"Psicotécnicos",
+"Las diferencias se duplican (3, 6, 12, 24, 48…); la siguiente es 96: 105 + 96 = 201."
+],
+[
+29,
+"¿Qué número continúa la serie? 13, 16, 22, 34, 58, 106, …",
+"202",
+[
+"154",
+"196",
+"226"
+],
+"Psicotécnicos",
+"Las diferencias se duplican (3, 6, 12, 24, 48…); la siguiente es 96: 106 + 96 = 202."
+],
+[
+29,
+"¿Qué número continúa la serie? 2, 3, 5, 9, 17, 33, …",
+"65",
+[
+"66",
+"73",
+"49"
+],
+"Psicotécnicos",
+"Las diferencias se duplican (1, 2, 4, 8, 16…); la siguiente es 32: 33 + 32 = 65."
+],
+[
+29,
+"¿Qué número continúa la serie? 17, 19, 23, 31, 47, 79, …",
+"143",
+[
+"111",
+"159",
+"139"
+],
+"Psicotécnicos",
+"Las diferencias se duplican (2, 4, 8, 16, 32…); la siguiente es 64: 79 + 64 = 143."
+],
+[
+29,
+"¿Qué número continúa la serie? 1, 8, 27, 64, 125, …",
+"216",
+[
+"215",
+"222",
+"180"
+],
+"Psicotécnicos",
+"Son los cubos de números consecutivos: 6³ = 216."
+],
+[
+29,
+"¿Qué número continúa la serie? 27, 64, 125, 216, 343, …",
+"512",
+[
+"520",
+"128",
+"448"
+],
+"Psicotécnicos",
+"Son los cubos de números consecutivos: 8³ = 512."
+],
+[
+29,
+"Un artículo cuesta 500 €. Primero sube un 40 % y después baja un 25 %. ¿Cuánto cuesta al final?",
+"525 €",
+[
+"575 €",
+"550 €",
+"505 €"
+],
+"Psicotécnicos",
+"500 × 1,4 = 700; × 0,75 = 525 €. Los porcentajes no se suman: cada uno se aplica sobre el precio que ya ha cambiado."
+],
+[
+29,
+"Un artículo cuesta 200 €. Primero sube un 25 % y después baja un 20 %. ¿Cuánto cuesta al final?",
+"200 €",
+[
+"210 €",
+"192 €",
+"180 €"
+],
+"Psicotécnicos",
+"200 × 1,25 = 250; × 0,8 = 200 €. Los porcentajes no se suman: cada uno se aplica sobre el precio que ya ha cambiado."
+],
+[
+29,
+"Un artículo cuesta 1.000 €. Primero sube un 30 % y después baja un 50 %. ¿Cuánto cuesta al final?",
+"650 €",
+[
+"800 €",
+"700 €",
+"610 €"
+],
+"Psicotécnicos",
+"1.000 × 1,3 = 1.300; × 0,5 = 650 €. Los porcentajes no se suman: cada uno se aplica sobre el precio que ya ha cambiado."
+],
+[
+29,
+"Un artículo cuesta 500 €. Primero sube un 25 % y después baja un 50 %. ¿Cuánto cuesta al final?",
+"312,5 €",
+[
+"375 €",
+"337,5 €",
+"292,5 €"
+],
+"Psicotécnicos",
+"500 × 1,25 = 625; × 0,5 = 312,5 €. Los porcentajes no se suman: cada uno se aplica sobre el precio que ya ha cambiado."
+],
+[
+29,
+"Un artículo cuesta 300 €. Primero sube un 30 % y después baja un 20 %. ¿Cuánto cuesta al final?",
+"312 €",
+[
+"330 €",
+"327 €",
+"300 €"
+],
+"Psicotécnicos",
+"300 × 1,3 = 390; × 0,8 = 312 €. Los porcentajes no se suman: cada uno se aplica sobre el precio que ya ha cambiado."
+],
+[
+29,
+"Un artículo cuesta 200 €. Primero sube un 40 % y después baja un 25 %. ¿Cuánto cuesta al final?",
+"210 €",
+[
+"230 €",
+"220 €",
+"202 €"
+],
+"Psicotécnicos",
+"200 × 1,4 = 280; × 0,75 = 210 €. Los porcentajes no se suman: cada uno se aplica sobre el precio que ya ha cambiado."
+],
+[
+29,
+"Un artículo cuesta 200 €. Primero sube un 20 % y después baja un 25 %. ¿Cuánto cuesta al final?",
+"180 €",
+[
+"190 €",
+"172 €",
+"200 €"
+],
+"Psicotécnicos",
+"200 × 1,2 = 240; × 0,75 = 180 €. Los porcentajes no se suman: cada uno se aplica sobre el precio que ya ha cambiado."
+],
+[
+29,
+"Un equipo cuesta 100 € sin IVA y tiene un descuento del 25 %. ¿Cuánto se paga si después se aplica el IVA del 21 %?",
+"90,75 €",
+[
+"96 €",
+"75 €",
+"121 €"
+],
+"Psicotécnicos",
+"Con el descuento: 100 × 0,75 = 75 €. Con el IVA: × 1,21 = 90,75 €."
+],
+[
+29,
+"Un equipo cuesta 200 € sin IVA y tiene un descuento del 25 %. ¿Cuánto se paga si después se aplica el IVA del 21 %?",
+"181,5 €",
+[
+"192 €",
+"150 €",
+"242 €"
+],
+"Psicotécnicos",
+"Con el descuento: 200 × 0,75 = 150 €. Con el IVA: × 1,21 = 181,5 €."
+],
+[
+29,
+"Un equipo cuesta 400 € sin IVA y tiene un descuento del 25 %. ¿Cuánto se paga si después se aplica el IVA del 21 %?",
+"363 €",
+[
+"384 €",
+"300 €",
+"484 €"
+],
+"Psicotécnicos",
+"Con el descuento: 400 × 0,75 = 300 €. Con el IVA: × 1,21 = 363 €."
+],
+[
+29,
+"Un equipo cuesta 600 € sin IVA y tiene un descuento del 10 %. ¿Cuánto se paga si después se aplica el IVA del 21 %?",
+"653,4 €",
+[
+"666 €",
+"540 €",
+"726 €"
+],
+"Psicotécnicos",
+"Con el descuento: 600 × 0,9 = 540 €. Con el IVA: × 1,21 = 653,4 €."
+],
+[
+29,
+"Un equipo cuesta 500 € sin IVA y tiene un descuento del 10 %. ¿Cuánto se paga si después se aplica el IVA del 21 %?",
+"544,5 €",
+[
+"555 €",
+"450 €",
+"605 €"
+],
+"Psicotécnicos",
+"Con el descuento: 500 × 0,9 = 450 €. Con el IVA: × 1,21 = 544,5 €."
+],
+[
+29,
+"Un auxiliar tarda 10 horas en ordenar un archivo y otro tarda 15 horas. Trabajando juntos, ¿cuánto tardan?",
+"6 horas",
+[
+"12 horas",
+"7 horas",
+"5 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/10 + 1/15 = 1/6 del trabajo, así que tardan 10 × 15 / (10 + 15) = 6 horas."
+],
+[
+29,
+"Un auxiliar tarda 20 horas en ordenar un archivo y otro tarda 30 horas. Trabajando juntos, ¿cuánto tardan?",
+"12 horas",
+[
+"25 horas",
+"13 horas",
+"11 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/20 + 1/30 = 1/12 del trabajo, así que tardan 20 × 30 / (20 + 30) = 12 horas."
+],
+[
+29,
+"Un auxiliar tarda 14 horas en ordenar un archivo y otro tarda 35 horas. Trabajando juntos, ¿cuánto tardan?",
+"10 horas",
+[
+"24 horas",
+"11 horas",
+"9 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/14 + 1/35 = 1/10 del trabajo, así que tardan 14 × 35 / (14 + 35) = 10 horas."
+],
+[
+29,
+"Un auxiliar tarda 12 horas en ordenar un archivo y otro tarda 24 horas. Trabajando juntos, ¿cuánto tardan?",
+"8 horas",
+[
+"18 horas",
+"9 horas",
+"7 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/12 + 1/24 = 1/8 del trabajo, así que tardan 12 × 24 / (12 + 24) = 8 horas."
+],
+[
+29,
+"Un auxiliar tarda 12 horas en ordenar un archivo y otro tarda 36 horas. Trabajando juntos, ¿cuánto tardan?",
+"9 horas",
+[
+"24 horas",
+"10 horas",
+"8 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/12 + 1/36 = 1/9 del trabajo, así que tardan 12 × 36 / (12 + 36) = 9 horas."
+],
+[
+29,
+"Un auxiliar tarda 15 horas en ordenar un archivo y otro tarda 30 horas. Trabajando juntos, ¿cuánto tardan?",
+"10 horas",
+[
+"22 horas",
+"11 horas",
+"9 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/15 + 1/30 = 1/10 del trabajo, así que tardan 15 × 30 / (15 + 30) = 10 horas."
+],
+[
+29,
+"Un auxiliar tarda 6 horas en ordenar un archivo y otro tarda 30 horas. Trabajando juntos, ¿cuánto tardan?",
+"5 horas",
+[
+"18 horas",
+"6 horas",
+"4 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/6 + 1/30 = 1/5 del trabajo, así que tardan 6 × 30 / (6 + 30) = 5 horas."
+],
+[
+29,
+"Un auxiliar tarda 10 horas en ordenar un archivo y otro tarda 40 horas. Trabajando juntos, ¿cuánto tardan?",
+"8 horas",
+[
+"25 horas",
+"9 horas",
+"7 horas"
+],
+"Psicotécnicos",
+"En una hora hacen 1/10 + 1/40 = 1/8 del trabajo, así que tardan 10 × 40 / (10 + 40) = 8 horas."
+],
+[
+29,
+"Se reparten 960 € entre tres unidades, A, B y C, en proporción a 1, 3 y 4. ¿Cuánto recibe C?",
+"480 €",
+[
+"720 €",
+"420 €",
+"540 €"
+],
+"Psicotécnicos",
+"Hay 1 + 3 + 4 = 8 partes; cada parte vale 960 / 8 = 120 €. C recibe 4 × 120 = 480 €."
+],
+[
+29,
+"Se reparten 960 € entre tres unidades, A, B y C, en proporción a 1, 2 y 5. ¿Cuánto recibe C?",
+"600 €",
+[
+"840 €",
+"540 €",
+"660 €"
+],
+"Psicotécnicos",
+"Hay 1 + 2 + 5 = 8 partes; cada parte vale 960 / 8 = 120 €. C recibe 5 × 120 = 600 €."
+],
+[
+29,
+"Se reparten 2.500 € entre tres unidades, A, B y C, en proporción a 2, 5 y 3. ¿Cuánto recibe C?",
+"750 €",
+[
+"1.000 €",
+"500 €",
+"875 €"
+],
+"Psicotécnicos",
+"Hay 2 + 5 + 3 = 10 partes; cada parte vale 2.500 / 10 = 250 €. C recibe 3 × 250 = 750 €."
+],
+[
+29,
+"Se reparten 400 € entre tres unidades, A, B y C, en proporción a 1, 2 y 5. ¿Cuánto recibe B?",
+"100 €",
+[
+"150 €",
+"75 €",
+"125 €"
+],
+"Psicotécnicos",
+"Hay 1 + 2 + 5 = 8 partes; cada parte vale 400 / 8 = 50 €. B recibe 2 × 50 = 100 €."
+],
+[
+29,
+"Se reparten 500 € entre tres unidades, A, B y C, en proporción a 2, 3 y 5. ¿Cuánto recibe A?",
+"100 €",
+[
+"125 €",
+"75 €",
+"150 €"
+],
+"Psicotécnicos",
+"Hay 2 + 3 + 5 = 10 partes; cada parte vale 500 / 10 = 50 €. A recibe 2 × 50 = 100 €."
+],
+[
+29,
+"Se reparten 1.200 € entre tres unidades, A, B y C, en proporción a 2, 3 y 5. ¿Cuánto recibe A?",
+"240 €",
+[
+"360 €",
+"120 €",
+"180 €"
+],
+"Psicotécnicos",
+"Hay 2 + 3 + 5 = 10 partes; cada parte vale 1.200 / 10 = 120 €. A recibe 2 × 120 = 240 €."
+],
+[
+29,
+"Se reparten 1.000 € entre tres unidades, A, B y C, en proporción a 2, 3 y 5. ¿Cuánto recibe A?",
+"200 €",
+[
+"300 €",
+"150 €",
+"100 €"
+],
+"Psicotécnicos",
+"Hay 2 + 3 + 5 = 10 partes; cada parte vale 1.000 / 10 = 100 €. A recibe 2 × 100 = 200 €."
+],
+[
+29,
+"Una sesión de formación empieza a las 09:35 y dura 1 hora y 40 minutos. ¿A qué hora termina?",
+"11:15",
+[
+"10:15",
+"11:25",
+"11:05"
+],
+"Psicotécnicos",
+"09:35 + 1 h = 10:35; + 40 min = 11:15."
+],
+[
+29,
+"Una sesión de formación empieza a las 11:05 y dura 3 horas y 45 minutos. ¿A qué hora termina?",
+"14:50",
+[
+"13:50",
+"15:00",
+"14:40"
+],
+"Psicotécnicos",
+"11:05 + 3 h = 14:05; + 45 min = 14:50."
+],
+[
+29,
+"Una sesión de formación empieza a las 10:35 y dura 1 hora y 40 minutos. ¿A qué hora termina?",
+"12:15",
+[
+"11:15",
+"12:25",
+"12:05"
+],
+"Psicotécnicos",
+"10:35 + 1 h = 11:35; + 40 min = 12:15."
+],
+[
+29,
+"Una sesión de formación empieza a las 12:40 y dura 3 horas y 25 minutos. ¿A qué hora termina?",
+"16:05",
+[
+"15:05",
+"16:15",
+"15:55"
+],
+"Psicotécnicos",
+"12:40 + 3 h = 15:40; + 25 min = 16:05."
+],
+[
+29,
+"Una sesión de formación empieza a las 11:05 y dura 1 hora y 45 minutos. ¿A qué hora termina?",
+"12:50",
+[
+"11:50",
+"13:00",
+"12:40"
+],
+"Psicotécnicos",
+"11:05 + 1 h = 12:05; + 45 min = 12:50."
+],
+[
+29,
+"Una sesión de formación empieza a las 11:45 y dura 3 horas y 25 minutos. ¿A qué hora termina?",
+"15:10",
+[
+"14:10",
+"15:20",
+"15:00"
+],
+"Psicotécnicos",
+"11:45 + 3 h = 14:45; + 25 min = 15:10."
+],
+[
+29,
+"Una sesión de formación empieza a las 08:35 y dura 2 horas y 35 minutos. ¿A qué hora termina?",
+"11:10",
+[
+"10:10",
+"11:20",
+"11:00"
+],
+"Psicotécnicos",
+"08:35 + 2 h = 10:35; + 35 min = 11:10."
+],
+[
+29,
+"Entre dos hermanos suman 38 años y el mayor tiene 2 años más que el pequeño. ¿Cuántos años tiene el pequeño?",
+"18 años",
+[
+"20 años",
+"19 años",
+"17 años"
+],
+"Psicotécnicos",
+"Si al total se le quita la diferencia quedan dos edades iguales: (38 − 2) / 2 = 18 años."
+],
+[
+29,
+"Entre dos hermanos suman 42 años y el mayor tiene 10 años más que el pequeño. ¿Cuántos años tiene el pequeño?",
+"16 años",
+[
+"26 años",
+"21 años",
+"15 años"
+],
+"Psicotécnicos",
+"Si al total se le quita la diferencia quedan dos edades iguales: (42 − 10) / 2 = 16 años."
+],
+[
+29,
+"Entre dos hermanos suman 44 años y el mayor tiene 8 años más que el pequeño. ¿Cuántos años tiene el pequeño?",
+"18 años",
+[
+"26 años",
+"22 años",
+"17 años"
+],
+"Psicotécnicos",
+"Si al total se le quita la diferencia quedan dos edades iguales: (44 − 8) / 2 = 18 años."
+],
+[
+29,
+"Entre dos hermanos suman 39 años y el mayor tiene 3 años más que el pequeño. ¿Cuántos años tiene el pequeño?",
+"18 años",
+[
+"21 años",
+"19 años",
+"17 años"
+],
+"Psicotécnicos",
+"Si al total se le quita la diferencia quedan dos edades iguales: (39 − 3) / 2 = 18 años."
+],
+[
+29,
+"Entre dos hermanos suman 68 años y el mayor tiene 8 años más que el pequeño. ¿Cuántos años tiene el pequeño?",
+"30 años",
+[
+"38 años",
+"34 años",
+"29 años"
+],
+"Psicotécnicos",
+"Si al total se le quita la diferencia quedan dos edades iguales: (68 − 8) / 2 = 30 años."
+],
+[
+29,
+"Entre dos hermanos suman 65 años y el mayor tiene 5 años más que el pequeño. ¿Cuántos años tiene el pequeño?",
+"30 años",
+[
+"35 años",
+"32 años",
+"29 años"
+],
+"Psicotécnicos",
+"Si al total se le quita la diferencia quedan dos edades iguales: (65 − 5) / 2 = 30 años."
+],
+[
+29,
+"Una impresora se revisa cada 9 días y otra cada 12. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?",
+"36 días",
+[
+"108 días",
+"45 días",
+"27 días"
+],
+"Psicotécnicos",
+"Es el mínimo común múltiplo de 9 y 12: m.c.m.(9, 12) = 36."
+],
+[
+29,
+"Una impresora se revisa cada 12 días y otra cada 18. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?",
+"36 días",
+[
+"216 días",
+"48 días",
+"24 días"
+],
+"Psicotécnicos",
+"Es el mínimo común múltiplo de 12 y 18: m.c.m.(12, 18) = 36."
+],
+[
+29,
+"Una impresora se revisa cada 14 días y otra cada 21. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?",
+"42 días",
+[
+"294 días",
+"56 días",
+"28 días"
+],
+"Psicotécnicos",
+"Es el mínimo común múltiplo de 14 y 21: m.c.m.(14, 21) = 42."
+],
+[
+29,
+"Una impresora se revisa cada 15 días y otra cada 20. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?",
+"60 días",
+[
+"300 días",
+"75 días",
+"45 días"
+],
+"Psicotécnicos",
+"Es el mínimo común múltiplo de 15 y 20: m.c.m.(15, 20) = 60."
+],
+[
+29,
+"Una impresora se revisa cada 6 días y otra cada 10. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?",
+"30 días",
+[
+"60 días",
+"36 días",
+"24 días"
+],
+"Psicotécnicos",
+"Es el mínimo común múltiplo de 6 y 10: m.c.m.(6, 10) = 30."
+],
+[
+29,
+"Una impresora se revisa cada 6 días y otra cada 9. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?",
+"18 días",
+[
+"54 días",
+"24 días",
+"12 días"
+],
+"Psicotécnicos",
+"Es el mínimo común múltiplo de 6 y 9: m.c.m.(6, 9) = 18."
+],
+[
+29,
+"Una impresora se revisa cada 8 días y otra cada 12. Si hoy coinciden las dos revisiones, ¿dentro de cuántos días volverán a coincidir?",
+"24 días",
+[
+"96 días",
+"32 días",
+"16 días"
+],
+"Psicotécnicos",
+"Es el mínimo común múltiplo de 8 y 12: m.c.m.(8, 12) = 24."
+],
+[
+29,
+"Un coche recorre 60 km a una velocidad constante de 80 km/h. ¿Cuánto tarda?",
+"45 min",
+[
+"1 h",
+"30 min",
+"1 h 15 min"
+],
+"Psicotécnicos",
+"Tiempo = distancia / velocidad = 60 / 80 = 0,75 h, es decir, 45 min."
+],
+[
+29,
+"Un coche recorre 175 km a una velocidad constante de 100 km/h. ¿Cuánto tarda?",
+"1 h 45 min",
+[
+"2 h",
+"1 h 30 min",
+"2 h 15 min"
+],
+"Psicotécnicos",
+"Tiempo = distancia / velocidad = 175 / 100 = 1,75 h, es decir, 1 h 45 min."
+],
+[
+29,
+"Un coche recorre 105 km a una velocidad constante de 60 km/h. ¿Cuánto tarda?",
+"1 h 45 min",
+[
+"2 h",
+"1 h 30 min",
+"2 h 15 min"
+],
+"Psicotécnicos",
+"Tiempo = distancia / velocidad = 105 / 60 = 1,75 h, es decir, 1 h 45 min."
+],
+[
+29,
+"Un coche recorre 150 km a una velocidad constante de 120 km/h. ¿Cuánto tarda?",
+"1 h 15 min",
+[
+"1 h 30 min",
+"1 h",
+"1 h 45 min"
+],
+"Psicotécnicos",
+"Tiempo = distancia / velocidad = 150 / 120 = 1,25 h, es decir, 1 h 15 min."
+],
+[
+29,
+"Señala el sinónimo de «acatar»:",
+"Obedecer",
+[
+"Acotar",
+"Rechazar",
+"Atacar"
+],
+"Psicotécnicos",
+"Acatar es aceptar con sumisión una norma u orden: obedecer."
+],
+[
+29,
+"Señala el sinónimo de «ratificar»:",
+"Confirmar",
+[
+"Rectificar",
+"Revocar",
+"Retirar"
+],
+"Psicotécnicos",
+"Ratificar es aprobar o confirmar algo que se ha dicho o hecho. Rectificar es corregir."
+],
+[
+29,
+"Señala el sinónimo de «derogar»:",
+"Abolir",
+[
+"Promulgar",
+"Delegar",
+"Prorrogar"
+],
+"Psicotécnicos",
+"Derogar es dejar sin efecto una norma: abolir, anular."
+],
+[
+29,
+"Señala el sinónimo de «potestativo»:",
+"Facultativo",
+[
+"Obligatorio",
+"Poderoso",
+"Preceptivo"
+],
+"Psicotécnicos",
+"Potestativo es lo que no es obligatorio, sino que depende de la voluntad: facultativo."
+],
+[
+29,
+"Señala el sinónimo de «preceptivo»:",
+"Obligatorio",
+[
+"Opcional",
+"Preventivo",
+"Perceptivo"
+],
+"Psicotécnicos",
+"Preceptivo es lo ordenado por un precepto: obligatorio."
+],
+[
+29,
+"Señala el sinónimo de «sucinto»:",
+"Breve",
+[
+"Extenso",
+"Sugerente",
+"Confuso"
+],
+"Psicotécnicos",
+"Sucinto es breve, compendioso."
+],
+[
+29,
+"Señala el sinónimo de «inocuo»:",
+"Inofensivo",
+[
+"Nocivo",
+"Inútil",
+"Inicuo"
+],
+"Psicotécnicos",
+"Inocuo es lo que no hace daño. Inicuo significa injusto."
+],
+[
+29,
+"Señala el sinónimo de «vetusto»:",
+"Antiguo",
+[
+"Moderno",
+"Robusto",
+"Vistoso"
+],
+"Psicotécnicos",
+"Vetusto es muy antiguo o de mucha edad."
+],
+[
+29,
+"Señala el sinónimo de «óbice»:",
+"Obstáculo",
+[
+"Ayuda",
+"Óbolo",
+"Motivo"
+],
+"Psicotécnicos",
+"Óbice es un obstáculo o impedimento («no es óbice para…»)."
+],
+[
+29,
+"Señala el sinónimo de «nimio»:",
+"Insignificante",
+[
+"Esencial",
+"Nítido",
+"Numeroso"
+],
+"Psicotécnicos",
+"Nimio es lo pequeño o sin importancia."
+],
+[
+29,
+"Señala el sinónimo de «recabar»:",
+"Solicitar",
+[
+"Recalcar",
+"Terminar",
+"Rechazar"
+],
+"Psicotécnicos",
+"Recabar es pedir o reclamar algo, o conseguirlo a base de pedirlo («recabar información»)."
+],
+[
+29,
+"Señala el sinónimo de «proscribir»:",
+"Prohibir",
+[
+"Prescribir",
+"Permitir",
+"Proponer"
+],
+"Psicotécnicos",
+"Proscribir es prohibir o excluir. Prescribir es ordenar o recetar."
+],
+[
+29,
+"Señala el sinónimo de «incoar»:",
+"Iniciar",
+[
+"Concluir",
+"Incluir",
+"Inculcar"
+],
+"Psicotécnicos",
+"Incoar es comenzar algo, sobre todo un proceso o expediente."
+],
+[
+29,
+"Señala el sinónimo de «avenencia»:",
+"Acuerdo",
+[
+"Disputa",
+"Llegada",
+"Avenida"
+],
+"Psicotécnicos",
+"Avenencia es convenio o conformidad entre partes."
+],
+[
+29,
+"Señala el sinónimo de «somero»:",
+"Superficial",
+[
+"Profundo",
+"Sombrío",
+"Severo"
+],
+"Psicotécnicos",
+"Somero es ligero, superficial, hecho sin detenimiento."
+],
+[
+29,
+"Señala el sinónimo de «baladí»:",
+"Trivial",
+[
+"Importante",
+"Vistoso",
+"Grave"
+],
+"Psicotécnicos",
+"Baladí es lo de poca importancia."
+],
+[
+29,
+"Señala el sinónimo de «pertinaz»:",
+"Obstinado",
+[
+"Pertinente",
+"Dócil",
+"Breve"
+],
+"Psicotécnicos",
+"Pertinaz es obstinado o terco, y también muy duradero («sequía pertinaz»)."
+],
+[
+29,
+"Señala el sinónimo de «conculcar»:",
+"Vulnerar",
+[
+"Respetar",
+"Inculcar",
+"Conciliar"
+],
+"Psicotécnicos",
+"Conculcar es quebrantar una ley o un derecho."
+],
+[
+29,
+"Señala el antónimo de «exiguo»:",
+"Copioso",
+[
+"Escaso",
+"Mínimo",
+"Reducido"
+],
+"Psicotécnicos",
+"Exiguo es escaso; su contrario es copioso o abundante."
+],
+[
+29,
+"Señala el antónimo de «prolífico»:",
+"Estéril",
+[
+"Fecundo",
+"Productivo",
+"Fértil"
+],
+"Psicotécnicos",
+"Prolífico es lo que produce mucho; las otras tres son sinónimos."
+],
+[
+29,
+"Señala el antónimo de «diligente»:",
+"Negligente",
+[
+"Cuidadoso",
+"Esmerado",
+"Solícito"
+],
+"Psicotécnicos",
+"Diligente es cuidadoso y activo; su contrario es negligente."
+],
+[
+29,
+"Señala el antónimo de «locuaz»:",
+"Taciturno",
+[
+"Hablador",
+"Parlanchín",
+"Charlatán"
+],
+"Psicotécnicos",
+"Locuaz es quien habla mucho; taciturno, quien habla poco."
+],
+[
+29,
+"Señala el antónimo de «benévolo»:",
+"Malévolo",
+[
+"Indulgente",
+"Bondadoso",
+"Clemente"
+],
+"Psicotécnicos",
+"Benévolo es quien tiene buena voluntad; su contrario es malévolo."
+],
+[
+29,
+"Señala el antónimo de «perenne»:",
+"Caduco",
+[
+"Perpetuo",
+"Permanente",
+"Duradero"
+],
+"Psicotécnicos",
+"Perenne es lo que dura siempre; caduco, lo que se acaba o pierde vigencia."
+],
+[
+29,
+"Señala el antónimo de «verosímil»:",
+"Increíble",
+[
+"Creíble",
+"Probable",
+"Plausible"
+],
+"Psicotécnicos",
+"Verosímil es lo que parece verdadero y es creíble."
+],
+[
+29,
+"Señala el antónimo de «afable»:",
+"Arisco",
+[
+"Amable",
+"Cordial",
+"Simpático"
+],
+"Psicotécnicos",
+"Afable es agradable en el trato; arisco, áspero e intratable."
+],
+[
+29,
+"Señala el antónimo de «tácito»:",
+"Expreso",
+[
+"Implícito",
+"Sobreentendido",
+"Callado"
+],
+"Psicotécnicos",
+"Tácito es lo que no se dice pero se supone; su contrario es expreso."
+],
+[
+29,
+"Señala el antónimo de «promulgar»:",
+"Derogar",
+[
+"Publicar",
+"Sancionar",
+"Proclamar"
+],
+"Psicotécnicos",
+"Promulgar una ley es publicarla solemnemente; derogarla es dejarla sin efecto."
+],
+[
+29,
+"Pez es a agua como ave es a:",
+"Aire",
+[
+"Nido",
+"Pluma",
+"Árbol"
+],
+"Psicotécnicos",
+"El pez se mueve en el agua; el ave, en el aire."
+],
+[
+29,
+"Médico es a hospital como maestro es a:",
+"Escuela",
+[
+"Alumno",
+"Pizarra",
+"Lección"
+],
+"Psicotécnicos",
+"Es la relación entre la profesión y su lugar de trabajo."
+],
+[
+29,
+"Alcalde es a ayuntamiento como presidente autonómico es a:",
+"Comunidad autónoma",
+[
+"Diputación provincial",
+"Senado",
+"Municipio"
+],
+"Psicotécnicos",
+"Cada uno preside el gobierno de su territorio."
+],
+[
+29,
+"Senado es a senador como Congreso es a:",
+"Diputado",
+[
+"Concejal",
+"Ministro",
+"Procurador"
+],
+"Psicotécnicos",
+"Los miembros del Congreso de los Diputados son los diputados."
+],
+[
+29,
+"Hambre es a comer como sed es a:",
+"Beber",
+[
+"Agua",
+"Sequía",
+"Vaso"
+],
+"Psicotécnicos",
+"Es la relación entre una necesidad y la acción que la satisface."
+],
+[
+29,
+"Grande es a enorme como pequeño es a:",
+"Diminuto",
+[
+"Corto",
+"Mediano",
+"Bajo"
+],
+"Psicotécnicos",
+"Enorme es grado máximo de grande; diminuto, de pequeño."
+],
+[
+29,
+"Ley es a Cortes Generales como real decreto es a:",
+"Gobierno",
+[
+"Senado",
+"Tribunal Supremo",
+"Defensor del Pueblo"
+],
+"Psicotécnicos",
+"Las leyes las aprueban las Cortes Generales; los reales decretos, el Gobierno."
+],
+[
+29,
+"Kilogramo es a gramo como kilómetro es a:",
+"Metro",
+[
+"Litro",
+"Milla",
+"Centímetro"
+],
+"Psicotécnicos",
+"Un kilogramo son 1.000 gramos y un kilómetro, 1.000 metros."
+],
+[
+29,
+"Escribir es a bolígrafo como cortar es a:",
+"Tijeras",
+[
+"Papel",
+"Recorte",
+"Tela"
+],
+"Psicotécnicos",
+"Es la relación entre una acción y el instrumento con que se hace."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Lunes, miércoles, enero, viernes, domingo",
+"Enero",
+[
+"Lunes",
+"Viernes",
+"Domingo"
+],
+"Psicotécnicos",
+"Todas son días de la semana salvo enero, que es un mes."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Congreso, Senado, Tribunal Supremo, Cortes Generales",
+"Tribunal Supremo",
+[
+"Congreso",
+"Senado",
+"Cortes Generales"
+],
+"Psicotécnicos",
+"Congreso y Senado forman las Cortes Generales (poder legislativo); el Tribunal Supremo es un órgano judicial."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Word, Excel, PowerPoint, Windows, Outlook",
+"Windows",
+[
+"Excel",
+"Outlook",
+"PowerPoint"
+],
+"Psicotécnicos",
+"Todas son aplicaciones de Microsoft 365 salvo Windows, que es el sistema operativo."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Cuadrado, triángulo, rombo, cubo, pentágono",
+"Cubo",
+[
+"Rombo",
+"Triángulo",
+"Pentágono"
+],
+"Psicotécnicos",
+"Todas son figuras planas salvo el cubo, que es un cuerpo geométrico."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Alcalde, concejal, pleno, senador, junta de gobierno local",
+"Senador",
+[
+"Concejal",
+"Pleno",
+"Alcalde"
+],
+"Psicotécnicos",
+"Todos son órganos o cargos municipales salvo el senador."
+],
+[
+29,
+"¿Qué palabra NO pertenece al grupo? Kilogramo, metro, litro, segundo, euro",
+"Euro",
+[
+"Litro",
+"Metro",
+"Segundo"
+],
+"Psicotécnicos",
+"Todas son unidades de medida salvo el euro, que es una moneda."
+],
+[
+29,
+"¿Qué palabra está bien escrita?",
+"Cónyuge",
+[
+"Cónyugue",
+"Cónyujue",
+"Conyuge"
+],
+"Psicotécnicos",
+"Se escribe cónyuge: con g y sin u, y con tilde por ser esdrújula."
+],
+[
+29,
+"Indica la forma correcta:",
+"Espontáneo",
+[
+"Expontáneo",
+"Espontaneo",
+"Espontánio"
+],
+"Psicotécnicos",
+"Espontáneo se escribe con s y lleva tilde (esdrújula)."
+],
+[
+29,
+"¿Qué forma verbal es correcta en «Hay que ___ los posibles retrasos»?",
+"Prever",
+[
+"Preveer",
+"Proveer",
+"Preber"
+],
+"Psicotécnicos",
+"El verbo es prever (ver con anticipación), que se conjuga como ver. «Preveer» no existe; proveer significa suministrar."
+],
+[
+29,
+"Completa correctamente: «Espero que no ___ problemas con la solicitud»",
+"haya",
+[
+"halla",
+"aya",
+"allá"
+],
+"Psicotécnicos",
+"Haya es el subjuntivo de haber. Halla es del verbo hallar (encontrar), aya es una cuidadora y allá un adverbio de lugar."
 ]
 ]

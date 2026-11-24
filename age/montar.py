@@ -10,9 +10,21 @@ for f in sorted(glob.glob('age/n*.json')):
         t,preg,ok,mal,art,ex=q[:6]
         assert len(mal)==3 and ok not in mal and len(set(mal))==3, (f,preg)
         nuevas.append((f,t,preg,ok,mal,art,ex))
-out=[];pos=[0,1,2,3]*((len(nuevas)//4)+1);random.shuffle(pos)
+# Las preguntas que ya estaban publicadas conservan el orden de sus opciones
+# (así no cambia nada para quien ya las ha visto); solo se reparten las nuevas.
+import os
+previo={}
+if os.path.exists('bancos/aux-age.json'):
+    previo={q[1]:q for q in json.load(open('bancos/aux-age.json'))}
+def igual(q,ok,mal):
+    return q[2][q[3]]==ok and sorted(q[2])==sorted(mal+[ok])
+nuevas_sin=[x for x in nuevas if not (x[2] in previo and igual(previo[x[2]],x[3],x[4]))]
+pos=[0,1,2,3]*((len(nuevas_sin)//4)+1);random.shuffle(pos);k=0
+out=[]
 for i,(f,t,preg,ok,mal,art,ex) in enumerate(nuevas):
-    o=mal[:];random.shuffle(o);c=pos[i];o.insert(c,ok)
+    if preg in previo and igual(previo[preg],ok,mal):
+        q=previo[preg];out.append([t,preg,q[2],q[3],art,ex,None]);continue
+    o=mal[:];random.shuffle(o);c=pos[k];k+=1;o.insert(c,ok)
     out.append([t,preg,o,c,art,ex,None])
 banco=reuso+out
 textos=[q[1] for q in banco]
