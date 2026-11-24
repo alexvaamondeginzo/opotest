@@ -1,696 +1,5 @@
 -- Banco de preguntas, parte 8 de 10. Ejecútalo en Supabase → SQL Editor DESPUÉS de 1-configuracion.sql y 8-oposiciones.sql.
 insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
-('aux-age:29-3a2e9217d3','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Urbanismo | 1 | A | de la 7 a la 27
-Nóminas | 1 | B | de la 2 a la 16
-Licencias | 1 | C | de la 6 a la 17
-Contratos | 2 | B | de la 9 a la 17
-Becas | 3 | B | de la 9 a la 20
-Tributos | 3 | C | de la 6 a la 23
-¿Cuál de estos códigos NO puede existir en el archivo?','["3-C-25", "2-B-16", "3-C-07", "3-B-12"]'::jsonb,0,'Psicotécnicos','En la planta 3, pasillo C (Tributos), las estanterías solo llegan a la 23; los demás códigos están dentro de los tramos de la tabla.',null),
-('aux-age:29-cdbaaec1a4','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Nóminas | 1 | B | de la 3 a la 9
-Subvenciones | 2 | A | de la 9 a la 21
-Patrimonio | 2 | B | de la 8 a la 23
-Becas | 2 | C | de la 5 a la 16
-Urbanismo | 3 | A | de la 6 a la 12
-Tributos | 3 | B | de la 1 a la 10
-¿Qué código corresponde a un expediente de Patrimonio guardado en su estantería n.º 19?','["2-B-19", "B-2-19", "2-C-19", "1-B-19"]'::jsonb,0,'Psicotécnicos','Patrimonio está en la planta 2, pasillo B: 2-B-19.',null),
-('aux-age:29-caf67e7be8','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Nóminas | 1 | B | de la 3 a la 9
-Subvenciones | 2 | A | de la 9 a la 21
-Patrimonio | 2 | B | de la 8 a la 23
-Becas | 2 | C | de la 5 a la 16
-Urbanismo | 3 | A | de la 6 a la 12
-Tributos | 3 | B | de la 1 a la 10
-¿De qué materia es el expediente con código 2-C-10?','["Patrimonio", "Becas", "Nóminas", "Urbanismo"]'::jsonb,1,'Psicotécnicos','La planta 2, pasillo C, corresponde a Becas, que ocupa de la estantería 5 a la 16.',null),
-('aux-age:29-49bc0232d6','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Nóminas | 1 | B | de la 3 a la 9
-Subvenciones | 2 | A | de la 9 a la 21
-Patrimonio | 2 | B | de la 8 a la 23
-Becas | 2 | C | de la 5 a la 16
-Urbanismo | 3 | A | de la 6 a la 12
-Tributos | 3 | B | de la 1 a la 10
-¿Cuántas estanterías ocupa Becas?','["12", "13", "11", "14"]'::jsonb,0,'Psicotécnicos','De la 5 a la 16, ambas incluidas: 16 − 5 + 1 = 12.',null),
-('aux-age:29-a7cf03eac5','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Nóminas | 1 | B | de la 3 a la 9
-Subvenciones | 2 | A | de la 9 a la 21
-Patrimonio | 2 | B | de la 8 a la 23
-Becas | 2 | C | de la 5 a la 16
-Urbanismo | 3 | A | de la 6 a la 12
-Tributos | 3 | B | de la 1 a la 10
-¿Qué materia ocupa más estanterías?','["Subvenciones", "Tributos", "Nóminas", "Patrimonio"]'::jsonb,3,'Psicotécnicos','Estanterías por materia: Nóminas 7, Subvenciones 13, Patrimonio 16, Becas 12, Urbanismo 7, Tributos 10.',null),
-('aux-age:29-678a8018b4','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Nóminas | 1 | B | de la 3 a la 9
-Subvenciones | 2 | A | de la 9 a la 21
-Patrimonio | 2 | B | de la 8 a la 23
-Becas | 2 | C | de la 5 a la 16
-Urbanismo | 3 | A | de la 6 a la 12
-Tributos | 3 | B | de la 1 a la 10
-¿Cuántas estanterías hay en total en la planta 3?','["27", "16", "17", "18"]'::jsonb,2,'Psicotécnicos','Se suman las estanterías de las materias de la planta 3: 7 + 10 = 17.',null),
-('aux-age:29-2df9fd1e3c','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Nóminas | 1 | B | de la 3 a la 9
-Subvenciones | 2 | A | de la 9 a la 21
-Patrimonio | 2 | B | de la 8 a la 23
-Becas | 2 | C | de la 5 a la 16
-Urbanismo | 3 | A | de la 6 a la 12
-Tributos | 3 | B | de la 1 a la 10
-¿Cuál de estos códigos NO puede existir en el archivo?','["2-C-13", "2-B-15", "3-B-09", "3-B-11"]'::jsonb,3,'Psicotécnicos','En la planta 3, pasillo B (Tributos), las estanterías solo llegan a la 10; los demás códigos están dentro de los tramos de la tabla.',null),
-('aux-age:29-8c1deae35d','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Urbanismo | 1 | A | de la 8 a la 21
-Sanciones | 1 | C | de la 3 a la 13
-Licencias | 2 | C | de la 4 a la 9
-Contratos | 3 | A | de la 6 a la 15
-Becas | 3 | B | de la 9 a la 18
-Patrimonio | 3 | C | de la 4 a la 18
-¿Qué código corresponde a un expediente de Patrimonio guardado en su estantería n.º 12?','["1-C-12", "3-A-12", "C-3-12", "3-C-12"]'::jsonb,3,'Psicotécnicos','Patrimonio está en la planta 3, pasillo C: 3-C-12.',null),
-('aux-age:29-0ecba7e6fa','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Urbanismo | 1 | A | de la 8 a la 21
-Sanciones | 1 | C | de la 3 a la 13
-Licencias | 2 | C | de la 4 a la 9
-Contratos | 3 | A | de la 6 a la 15
-Becas | 3 | B | de la 9 a la 18
-Patrimonio | 3 | C | de la 4 a la 18
-¿De qué materia es el expediente con código 1-C-06?','["Urbanismo", "Licencias", "Sanciones", "Contratos"]'::jsonb,2,'Psicotécnicos','La planta 1, pasillo C, corresponde a Sanciones, que ocupa de la estantería 3 a la 13.',null),
-('aux-age:29-2d819ff439','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Urbanismo | 1 | A | de la 8 a la 21
-Sanciones | 1 | C | de la 3 a la 13
-Licencias | 2 | C | de la 4 a la 9
-Contratos | 3 | A | de la 6 a la 15
-Becas | 3 | B | de la 9 a la 18
-Patrimonio | 3 | C | de la 4 a la 18
-¿Cuántas estanterías ocupa Patrimonio?','["17", "14", "15", "16"]'::jsonb,2,'Psicotécnicos','De la 4 a la 18, ambas incluidas: 18 − 4 + 1 = 15.',null),
-('aux-age:29-c0a8319ffc','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Urbanismo | 1 | A | de la 8 a la 21
-Sanciones | 1 | C | de la 3 a la 13
-Licencias | 2 | C | de la 4 a la 9
-Contratos | 3 | A | de la 6 a la 15
-Becas | 3 | B | de la 9 a la 18
-Patrimonio | 3 | C | de la 4 a la 18
-¿Qué materia ocupa más estanterías?','["Becas", "Patrimonio", "Licencias", "Contratos"]'::jsonb,1,'Psicotécnicos','Estanterías por materia: Urbanismo 14, Sanciones 11, Licencias 6, Contratos 10, Becas 10, Patrimonio 15.',null),
-('aux-age:29-3d367bf69b','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Urbanismo | 1 | A | de la 8 a la 21
-Sanciones | 1 | C | de la 3 a la 13
-Licencias | 2 | C | de la 4 a la 9
-Contratos | 3 | A | de la 6 a la 15
-Becas | 3 | B | de la 9 a la 18
-Patrimonio | 3 | C | de la 4 a la 18
-¿Cuántas estanterías hay en total en la planta 1?','["25", "35", "26", "24"]'::jsonb,0,'Psicotécnicos','Se suman las estanterías de las materias de la planta 1: 14 + 11 = 25.',null),
-('aux-age:29-36a88352b3','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Urbanismo | 1 | A | de la 8 a la 21
-Sanciones | 1 | C | de la 3 a la 13
-Licencias | 2 | C | de la 4 a la 9
-Contratos | 3 | A | de la 6 a la 15
-Becas | 3 | B | de la 9 a la 18
-Patrimonio | 3 | C | de la 4 a la 18
-¿Cuál de estos códigos NO puede existir en el archivo?','["3-A-11", "2-C-04", "3-B-21", "1-A-16"]'::jsonb,2,'Psicotécnicos','En la planta 3, pasillo B (Becas), las estanterías solo llegan a la 18; los demás códigos están dentro de los tramos de la tabla.',null),
-('aux-age:29-4ceefcb285','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 11
-Sanciones | 1 | B | de la 8 a la 20
-Nóminas | 1 | C | de la 7 a la 12
-Tributos | 2 | A | de la 4 a la 18
-Becas | 3 | A | de la 2 a la 7
-Personal | 3 | C | de la 4 a la 20
-¿Qué código corresponde a un expediente de Subvenciones guardado en su estantería n.º 10?','["1-B-10", "A-1-10", "1-A-10", "3-C-10"]'::jsonb,2,'Psicotécnicos','Subvenciones está en la planta 1, pasillo A: 1-A-10.',null),
-('aux-age:29-87eded9549','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 11
-Sanciones | 1 | B | de la 8 a la 20
-Nóminas | 1 | C | de la 7 a la 12
-Tributos | 2 | A | de la 4 a la 18
-Becas | 3 | A | de la 2 a la 7
-Personal | 3 | C | de la 4 a la 20
-¿De qué materia es el expediente con código 1-C-07?','["Subvenciones", "Nóminas", "Sanciones", "Tributos"]'::jsonb,1,'Psicotécnicos','La planta 1, pasillo C, corresponde a Nóminas, que ocupa de la estantería 7 a la 12.',null),
-('aux-age:29-71df3b3195','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 11
-Sanciones | 1 | B | de la 8 a la 20
-Nóminas | 1 | C | de la 7 a la 12
-Tributos | 2 | A | de la 4 a la 18
-Becas | 3 | A | de la 2 a la 7
-Personal | 3 | C | de la 4 a la 20
-¿Cuántas estanterías ocupa Sanciones?','["14", "13", "15", "12"]'::jsonb,1,'Psicotécnicos','De la 8 a la 20, ambas incluidas: 20 − 8 + 1 = 13.',null),
-('aux-age:29-541328d3d9','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 11
-Sanciones | 1 | B | de la 8 a la 20
-Nóminas | 1 | C | de la 7 a la 12
-Tributos | 2 | A | de la 4 a la 18
-Becas | 3 | A | de la 2 a la 7
-Personal | 3 | C | de la 4 a la 20
-¿Qué materia ocupa más estanterías?','["Sanciones", "Personal", "Tributos", "Nóminas"]'::jsonb,1,'Psicotécnicos','Estanterías por materia: Subvenciones 7, Sanciones 13, Nóminas 6, Tributos 15, Becas 6, Personal 17.',null),
-('aux-age:29-636e47fd3d','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 11
-Sanciones | 1 | B | de la 8 a la 20
-Nóminas | 1 | C | de la 7 a la 12
-Tributos | 2 | A | de la 4 a la 18
-Becas | 3 | A | de la 2 a la 7
-Personal | 3 | C | de la 4 a la 20
-¿Cuántas estanterías hay en total en la planta 1?','["26", "36", "25", "27"]'::jsonb,0,'Psicotécnicos','Se suman las estanterías de las materias de la planta 1: 7 + 13 + 6 = 26.',null),
-('aux-age:29-6d818fc67d','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 11
-Sanciones | 1 | B | de la 8 a la 20
-Nóminas | 1 | C | de la 7 a la 12
-Tributos | 2 | A | de la 4 a la 18
-Becas | 3 | A | de la 2 a la 7
-Personal | 3 | C | de la 4 a la 20
-¿Cuál de estos códigos NO puede existir en el archivo?','["2-A-06", "1-B-21", "3-A-04", "1-A-09"]'::jsonb,1,'Psicotécnicos','En la planta 1, pasillo B (Sanciones), las estanterías solo llegan a la 20; los demás códigos están dentro de los tramos de la tabla.',null),
-('aux-age:29-8853caf71f','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 14
-Personal | 1 | B | de la 1 a la 9
-Becas | 1 | C | de la 4 a la 12
-Nóminas | 2 | B | de la 8 a la 17
-Tributos | 2 | C | de la 5 a la 15
-Urbanismo | 3 | B | de la 5 a la 14
-¿Qué código corresponde a un expediente de Personal guardado en su estantería n.º 8?','["B-1-08", "1-A-08", "1-B-08", "1-C-08"]'::jsonb,2,'Psicotécnicos','Personal está en la planta 1, pasillo B: 1-B-08.',null),
-('aux-age:29-6a61db02af','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 14
-Personal | 1 | B | de la 1 a la 9
-Becas | 1 | C | de la 4 a la 12
-Nóminas | 2 | B | de la 8 a la 17
-Tributos | 2 | C | de la 5 a la 15
-Urbanismo | 3 | B | de la 5 a la 14
-¿De qué materia es el expediente con código 2-B-13?','["Subvenciones", "Becas", "Nóminas", "Personal"]'::jsonb,2,'Psicotécnicos','La planta 2, pasillo B, corresponde a Nóminas, que ocupa de la estantería 8 a la 17.',null),
-('aux-age:29-0fb3996f36','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 14
-Personal | 1 | B | de la 1 a la 9
-Becas | 1 | C | de la 4 a la 12
-Nóminas | 2 | B | de la 8 a la 17
-Tributos | 2 | C | de la 5 a la 15
-Urbanismo | 3 | B | de la 5 a la 14
-¿Cuántas estanterías ocupa Tributos?','["13", "10", "12", "11"]'::jsonb,3,'Psicotécnicos','De la 5 a la 15, ambas incluidas: 15 − 5 + 1 = 11.',null),
-('aux-age:29-6bf52c2bea','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 14
-Personal | 1 | B | de la 1 a la 9
-Becas | 1 | C | de la 4 a la 12
-Nóminas | 2 | B | de la 8 a la 17
-Tributos | 2 | C | de la 5 a la 15
-Urbanismo | 3 | B | de la 5 a la 14
-¿Qué materia ocupa más estanterías?','["Tributos", "Becas", "Urbanismo", "Nóminas"]'::jsonb,0,'Psicotécnicos','Estanterías por materia: Subvenciones 10, Personal 9, Becas 9, Nóminas 10, Tributos 11, Urbanismo 10.',null),
-('aux-age:29-64ad0a2311','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 14
-Personal | 1 | B | de la 1 a la 9
-Becas | 1 | C | de la 4 a la 12
-Nóminas | 2 | B | de la 8 a la 17
-Tributos | 2 | C | de la 5 a la 15
-Urbanismo | 3 | B | de la 5 a la 14
-¿Cuántas estanterías hay en total en la planta 3?','["20", "10", "9", "11"]'::jsonb,1,'Psicotécnicos','En la planta 3 solo hay una materia, con 10 estanterías.',null),
-('aux-age:29-6f3f373594','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
-Materia | Planta | Pasillo | Estanterías
-Subvenciones | 1 | A | de la 5 a la 14
-Personal | 1 | B | de la 1 a la 9
-Becas | 1 | C | de la 4 a la 12
-Nóminas | 2 | B | de la 8 a la 17
-Tributos | 2 | C | de la 5 a la 15
-Urbanismo | 3 | B | de la 5 a la 14
-¿Cuál de estos códigos NO puede existir en el archivo?','["3-B-17", "3-B-11", "2-B-17", "1-B-01"]'::jsonb,0,'Psicotécnicos','En la planta 3, pasillo B (Urbanismo), las estanterías solo llegan a la 14; los demás códigos están dentro de los tramos de la tabla.',null),
-('aux-age:29-2c4e0f58a3','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-¿Qué porcentaje de los inscritos aprobó Igualdad?','["75 %", "50 %", "60 %", "100 %"]'::jsonb,0,'Psicotécnicos','24 / 32 × 100 = 75 %.',null),
-('aux-age:29-e37b6a9331','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-¿Cuál es la media de inscritos por curso?','["22", "26", "24", "29"]'::jsonb,2,'Psicotécnicos','(32 + 32 + 12 + 24 + 20) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-a957f59c27','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-¿Cuántas plazas quedaron libres en total?','["36", "46", "31", "41"]'::jsonb,0,'Psicotécnicos','Plazas menos inscritos en cada curso: 16 + 8 + 8 + 4 + 0 = 36.',null),
-('aux-age:29-5c6cd8a9c2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Atención al público", "Inglés", "Administración electrónica", "Igualdad"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Excel avanzado, 67 %; Igualdad, 80 %; Inglés, 60 %; Atención al público, 86 %; Administración electrónica, 100 %.',null),
-('aux-age:29-7b0738d733','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-Si cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["90", "105", "180", "75"]'::jsonb,0,'Psicotécnicos','6 aprobados × 15 horas = 90 horas.',null),
-('aux-age:29-2a6a35a2d2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-¿En qué curso hubo más inscritos sin aprobar?','["Inglés", "Igualdad", "Excel avanzado", "Administración electrónica"]'::jsonb,2,'Psicotécnicos','Inscritos menos aprobados: Excel avanzado, 24; Igualdad, 8; Inglés, 6; Atención al público, 6; Administración electrónica, 15.',null),
-('aux-age:29-9a33fd72c0','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Qué porcentaje de los inscritos aprobó Protección de datos?','["50 %", "75 %", "30 %", "25 %"]'::jsonb,0,'Psicotécnicos','6 / 12 × 100 = 50 %.',null),
-('aux-age:29-88db15ec89','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Cuál es la media de inscritos por curso?','["26", "22", "24", "29"]'::jsonb,2,'Psicotécnicos','(16 + 44 + 36 + 12 + 12) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-487b8930e2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Cuántas plazas quedaron libres en total?','["27", "42", "32", "37"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 8 + 4 + 0 + 8 + 12 = 32.',null),
-('aux-age:29-6c2bfa9055','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Atención al público", "Protección de datos", "Excel avanzado", "Contratación pública"]'::jsonb,0,'Psicotécnicos','Inscritos / plazas: Excel avanzado, 67 %; Contratación pública, 92 %; Atención al público, 100 %; Protección de datos, 60 %; Inglés, 50 %.',null),
-('aux-age:29-2e288cd414','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-Si cada aprobado de Contratación pública recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["300", "1.320", "360", "330"]'::jsonb,3,'Psicotécnicos','11 aprobados × 30 horas = 330 horas.',null),
-('aux-age:29-a6147c1b4c','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿En qué curso hubo más inscritos sin aprobar?','["Excel avanzado", "Protección de datos", "Contratación pública", "Atención al público"]'::jsonb,2,'Psicotécnicos','Inscritos menos aprobados: Excel avanzado, 12; Contratación pública, 33; Atención al público, 27; Protección de datos, 6; Inglés, 9.',null),
-('aux-age:29-f94ccad95a','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Qué porcentaje de los inscritos aprobó Inglés?','["25 %", "40 %", "75 %", "50 %"]'::jsonb,3,'Psicotécnicos','8 / 16 × 100 = 50 %.',null),
-('aux-age:29-62e72b1563','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Cuál es la media de inscritos por curso?','["29", "22", "26", "24"]'::jsonb,3,'Psicotécnicos','(16 + 32 + 24 + 16 + 32) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-56fe3b1499','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Cuántas plazas quedaron libres en total?','["66", "61", "56", "51"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 12 + 4 + 8 + 16 + 16 = 56.',null),
-('aux-age:29-99e5d7d027','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Prevención de riesgos", "Contratación pública", "Administración electrónica", "Protección de datos"]'::jsonb,1,'Psicotécnicos','Inscritos / plazas: Prevención de riesgos, 57 %; Contratación pública, 89 %; Protección de datos, 75 %; Inglés, 50 %; Administración electrónica, 67 %.',null),
-('aux-age:29-d1622b5f32','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-Si cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["240", "320", "230", "250"]'::jsonb,0,'Psicotécnicos','24 aprobados × 10 horas = 240 horas.',null),
-('aux-age:29-845dd55764','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿En qué curso hubo más inscritos sin aprobar?','["Administración electrónica", "Protección de datos", "Inglés", "Prevención de riesgos"]'::jsonb,1,'Psicotécnicos','Inscritos menos aprobados: Prevención de riesgos, 12; Contratación pública, 8; Protección de datos, 18; Inglés, 8; Administración electrónica, 8.',null),
-('aux-age:29-c636a122d4','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Qué porcentaje de los inscritos aprobó Administración electrónica?','["100 %", "75 %", "50 %", "65 %"]'::jsonb,1,'Psicotécnicos','18 / 24 × 100 = 75 %.',null),
-('aux-age:29-a3a5d418c5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Cuál es la media de inscritos por curso?','["20", "25", "18", "22"]'::jsonb,0,'Psicotécnicos','(12 + 24 + 16 + 20 + 28) / 5 = 100 / 5 = 20.',null),
-('aux-age:29-f1e8fb10c7','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Cuántas plazas quedaron libres en total?','["51", "61", "56", "66"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 8 + 12 + 12 + 16 + 8 = 56.',null),
-('aux-age:29-61417e8c81','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Atención al público", "Administración electrónica", "Contratación pública"]'::jsonb,1,'Psicotécnicos','Inscritos / plazas: Contratación pública, 60 %; Administración electrónica, 67 %; Protección de datos, 57 %; Prevención de riesgos, 56 %; Atención al público, 78 %.',null),
-('aux-age:29-bbc4792357','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-Si cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["450", "600", "425", "475"]'::jsonb,0,'Psicotécnicos','18 aprobados × 25 horas = 450 horas.',null),
-('aux-age:29-45140ff3ba','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿En qué curso hubo más inscritos sin aprobar?','["Contratación pública", "Prevención de riesgos", "Administración electrónica", "Protección de datos"]'::jsonb,1,'Psicotécnicos','Inscritos menos aprobados: Contratación pública, 6; Administración electrónica, 6; Protección de datos, 8; Prevención de riesgos, 10; Atención al público, 7.',null),
-('aux-age:29-3f6321aa0d','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Qué porcentaje de los inscritos aprobó Contratación pública?','["75 %", "50 %", "100 %", "60 %"]'::jsonb,0,'Psicotécnicos','12 / 16 × 100 = 75 %.',null),
-('aux-age:29-7015ddda9b','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Cuál es la media de inscritos por curso?','["29", "22", "24", "26"]'::jsonb,2,'Psicotécnicos','(20 + 12 + 28 + 16 + 44) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-00813db643','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Cuántas plazas quedaron libres en total?','["32", "37", "27", "42"]'::jsonb,0,'Psicotécnicos','Plazas menos inscritos en cada curso: 16 + 8 + 0 + 4 + 4 = 32.',null),
-('aux-age:29-a9956e4003','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Inglés", "Contratación pública", "Protección de datos", "Atención al público"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Atención al público, 56 %; Excel avanzado, 60 %; Protección de datos, 100 %; Contratación pública, 80 %; Inglés, 92 %.',null),
-('aux-age:29-fe1d0cfe9f','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-Si cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["840", "920", "1.760", "880"]'::jsonb,3,'Psicotécnicos','22 aprobados × 40 horas = 880 horas.',null),
-('aux-age:29-56751b9240','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿En qué curso hubo más inscritos sin aprobar?','["Inglés", "Contratación pública", "Protección de datos", "Atención al público"]'::jsonb,0,'Psicotécnicos','Inscritos menos aprobados: Atención al público, 5; Excel avanzado, 6; Protección de datos, 7; Contratación pública, 4; Inglés, 22.',null),
-('aux-age:29-3e2e37ee1b','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Qué porcentaje de los inscritos aprobó Atención al público?','["100 %", "75 %", "50 %", "65 %"]'::jsonb,1,'Psicotécnicos','24 / 32 × 100 = 75 %.',null),
-('aux-age:29-6908b3929a','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Cuál es la media de inscritos por curso?','["28", "26", "33", "30"]'::jsonb,0,'Psicotécnicos','(20 + 32 + 20 + 20 + 48) / 5 = 140 / 5 = 28.',null),
-('aux-age:29-2e010c81ce','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Cuántas plazas quedaron libres en total?','["45", "35", "50", "40"]'::jsonb,3,'Psicotécnicos','Plazas menos inscritos en cada curso: 4 + 16 + 12 + 8 + 0 = 40.',null),
-('aux-age:29-c7a29aaab0','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Igualdad", "Atención al público", "Prevención de riesgos"]'::jsonb,0,'Psicotécnicos','Inscritos / plazas: Igualdad, 83 %; Atención al público, 67 %; Excel avanzado, 62 %; Prevención de riesgos, 71 %; Protección de datos, 100 %.',null),
-('aux-age:29-35b094c796','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-Si cada aprobado de Protección de datos recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["720", "525", "540", "555"]'::jsonb,2,'Psicotécnicos','36 aprobados × 15 horas = 540 horas.',null),
-('aux-age:29-729378beb5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿En qué curso hubo más inscritos sin aprobar?','["Igualdad", "Prevención de riesgos", "Excel avanzado", "Protección de datos"]'::jsonb,3,'Psicotécnicos','Inscritos menos aprobados: Igualdad, 5; Atención al público, 8; Excel avanzado, 5; Prevención de riesgos, 5; Protección de datos, 12.',null),
-('aux-age:29-75bcf9ddd9','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-¿Qué porcentaje de los inscritos aprobó Atención al público?','["25 %", "29 %", "75 %", "50 %"]'::jsonb,3,'Psicotécnicos','14 / 28 × 100 = 50 %.',null),
-('aux-age:29-6a1bb88cce','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-¿Cuál es la media de inscritos por curso?','["24", "29", "26", "22"]'::jsonb,0,'Psicotécnicos','(24 + 24 + 28 + 16 + 28) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-b6dc091617','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-¿Cuántas plazas quedaron libres en total?','["59", "69", "74", "64"]'::jsonb,3,'Psicotécnicos','Plazas menos inscritos en cada curso: 24 + 8 + 20 + 8 + 4 = 64.',null),
-('aux-age:29-32e7c89803','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Administración electrónica", "Igualdad", "Prevención de riesgos"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Protección de datos, 50 %; Administración electrónica, 75 %; Atención al público, 58 %; Prevención de riesgos, 67 %; Igualdad, 88 %.',null),
-('aux-age:29-17a35db1c5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-Si cada aprobado de Atención al público recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["280", "560", "260", "300"]'::jsonb,0,'Psicotécnicos','14 aprobados × 20 horas = 280 horas.',null),
-('aux-age:29-434c90096c','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-¿En qué curso hubo más inscritos sin aprobar?','["Administración electrónica", "Igualdad", "Atención al público", "Prevención de riesgos"]'::jsonb,0,'Psicotécnicos','Inscritos menos aprobados: Protección de datos, 6; Administración electrónica, 18; Atención al público, 14; Prevención de riesgos, 8; Igualdad, 7.',null),
-('aux-age:29-ccda8a3236','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
-Tipo | Letra
-Informe | I
-Factura | F
-Contrato | C
-Queja | Q
-Números de las unidades:
-Unidad | Número
-Educación | 1
-Hacienda | 5
-Personal | 2
-Vivienda | 9
-¿Qué clave lleva una factura de Vivienda de 2023?','["C9-23", "F9-24", "F9-23", "F1-23"]'::jsonb,2,'Psicotécnicos','Factura = F; Vivienda = 9; año 2023 → F9-23.',null),
-('aux-age:29-86e8777e38','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
-Tipo | Letra
-Informe | I
-Factura | F
-Contrato | C
-Queja | Q
-Números de las unidades:
-Unidad | Número
-Educación | 1
-Hacienda | 5
-Personal | 2
-Vivienda | 9
-¿A qué documento corresponde la clave Q5-25?','["Queja de Personal de 2025", "Informe de Hacienda de 2025", "Queja de Hacienda de 2024", "Queja de Hacienda de 2025"]'::jsonb,3,'Psicotécnicos','Q = queja; 5 = Hacienda; 25 = 2025.',null),
-('aux-age:29-1789140256','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
-Tipo | Letra
-Informe | I
-Factura | F
-Contrato | C
-Queja | Q
-Números de las unidades:
-Unidad | Número
-Educación | 1
-Hacienda | 5
-Personal | 2
-Vivienda | 9
-¿Qué clave lleva un contrato de Personal de 2024?','["C2-25", "Q2-24", "C9-24", "C2-24"]'::jsonb,3,'Psicotécnicos','Contrato = C; Personal = 2; año 2024 → C2-24.',null),
-('aux-age:29-a3c005770e','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
-Tipo | Letra
-Informe | I
-Factura | F
-Contrato | C
-Queja | Q
-Números de las unidades:
-Unidad | Número
-Educación | 1
-Hacienda | 5
-Personal | 2
-Vivienda | 9
-¿Qué clave lleva una factura de Educación de 2026?','["C1-26", "F5-26", "F1-27", "F1-26"]'::jsonb,3,'Psicotécnicos','Factura = F; Educación = 1; año 2026 → F1-26.',null),
-('aux-age:29-1e1a0fcfc1','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
-Tipo | Letra
-Informe | I
-Queja | Q
-Factura | F
-Contrato | C
-Números de las unidades:
-Unidad | Número
-Sanidad | 6
-Cultura | 7
-Educación | 8
-Vivienda | 9
-¿Qué clave lleva un informe de Vivienda de 2024?','["I9-24", "I6-24", "I9-25", "Q9-24"]'::jsonb,0,'Psicotécnicos','Informe = I; Vivienda = 9; año 2024 → I9-24.',null),
-('aux-age:29-b4d8d58cbb','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
-Tipo | Letra
-Informe | I
-Queja | Q
-Factura | F
-Contrato | C
-Números de las unidades:
-Unidad | Número
-Sanidad | 6
-Cultura | 7
-Educación | 8
-Vivienda | 9
-¿A qué documento corresponde la clave Q9-25?','["Queja de Sanidad de 2025", "Queja de Vivienda de 2024", "Factura de Vivienda de 2025", "Queja de Vivienda de 2025"]'::jsonb,3,'Psicotécnicos','Q = queja; 9 = Vivienda; 25 = 2025.',null),
-('aux-age:29-20bcf378e2','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
-Tipo | Letra
-Informe | I
-Queja | Q
-Factura | F
-Contrato | C
-Números de las unidades:
-Unidad | Número
-Sanidad | 6
-Cultura | 7
-Educación | 8
-Vivienda | 9
-¿Qué clave lleva un informe de Sanidad de 2025?','["I7-25", "Q6-25", "I6-26", "I6-25"]'::jsonb,3,'Psicotécnicos','Informe = I; Sanidad = 6; año 2025 → I6-25.',null),
-('aux-age:29-b85e01cde4','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
-Tipo | Letra
-Informe | I
-Queja | Q
-Factura | F
-Contrato | C
-Números de las unidades:
-Unidad | Número
-Sanidad | 6
-Cultura | 7
-Educación | 8
-Vivienda | 9
-¿A qué documento corresponde la clave C7-23?','["Contrato de Cultura de 2023", "Contrato de Educación de 2023", "Contrato de Cultura de 2022", "Informe de Cultura de 2023"]'::jsonb,0,'Psicotécnicos','C = contrato; 7 = Cultura; 23 = 2023.',null),
-('aux-age:29-577785e536','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
-Tipo | Letra
-Informe | I
-Queja | Q
-Factura | F
-Contrato | C
-Números de las unidades:
-Unidad | Número
-Sanidad | 6
-Cultura | 7
-Educación | 8
-Vivienda | 9
-¿Qué clave lleva una queja de Educación de 2024?','["Q8-25", "Q8-24", "F8-24", "Q9-24"]'::jsonb,1,'Psicotécnicos','Queja = Q; Educación = 8; año 2024 → Q8-24.',null),
-('aux-age:29-72ad991d53','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
-Tipo | Letra
-Informe | I
-Queja | Q
-Factura | F
-Contrato | C
-Números de las unidades:
-Unidad | Número
-Sanidad | 6
-Cultura | 7
-Educación | 8
-Vivienda | 9
-¿A qué documento corresponde la clave I9-24?','["Informe de Vivienda de 2023", "Queja de Vivienda de 2024", "Informe de Sanidad de 2024", "Informe de Vivienda de 2024"]'::jsonb,3,'Psicotécnicos','I = informe; 9 = Vivienda; 24 = 2024.',null),
 ('aux-age:29-d9bfc0fb28','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, F5-25 es un documento de tipo factura de Cultura de 2025).
 Tipo | Letra
 Factura | F
@@ -994,9 +303,7 @@ Según la clave, ¿qué cadena corresponde a las letras NNHP?','["1011 1000 0101
 ('aux-age:29-7ba4936144','aux-age',29,'Clave:
 B | I | T | D | H | M
 0111 | 0000 | 1001 | 1011 | 0101 | 1010
-Según la clave, ¿qué letras corresponden a la cadena 1001 0101 0111 0000?','["THBI", "THTI", "TTBI", "THDI"]'::jsonb,0,'Psicotécnicos','Grupo a grupo: 1001=T, 0101=H, 0111=B, 0000=I → THBI.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+Según la clave, ¿qué letras corresponden a la cadena 1001 0101 0111 0000?','["THBI", "THTI", "TTBI", "THDI"]'::jsonb,0,'Psicotécnicos','Grupo a grupo: 1001=T, 0101=H, 0111=B, 0000=I → THBI.',null),
 ('aux-age:29-c7c5f156ca','aux-age',29,'Clave:
 J | S | P | G | A | T
 1101 | 1010 | 0001 | 0110 | 1100 | 0000
@@ -1094,7 +401,9 @@ Según la clave, ¿qué cadena corresponde a las letras LSLL?','["0010 1011 0010
 ('aux-ayto-mad:1-6f015125b8','aux-ayto-mad',1,'La libertad ideológica, religiosa y de culto tiene como única limitación en sus manifestaciones:','["La necesaria para el mantenimiento del orden público protegido por la ley", "La autorización gubernativa previa", "La moral pública y las buenas costumbres, según determine la ley"]'::jsonb,0,'Art. 16.1 CE','Sin más limitación, en sus manifestaciones, que la necesaria para el mantenimiento del orden público protegido por la ley.',null),
 ('aux-ayto-mad:1-136f7c32d9','aux-ayto-mad',1,'Según el art. 16.3, ¿alguna confesión tendrá carácter estatal?','["No, ninguna confesión tendrá carácter estatal", "Sí, la católica", "Las que tengan más de un millón de fieles"]'::jsonb,0,'Art. 16.3 CE','Ninguna confesión tendrá carácter estatal, aunque los poderes públicos mantendrán relaciones de cooperación con la Iglesia Católica y las demás confesiones.',null),
 ('aux-ayto-mad:1-ee2847158a','aux-ayto-mad',1,'Los principios del Capítulo III del Título I (principios rectores de la política social y económica):','["Solo vinculan al Parlamento, y son directamente exigibles ante los tribunales ordinarios por cualquier ciudadano", "Informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos", "Informarán la legislación positiva, pero no la práctica judicial ni la actuación de la Administración"]'::jsonb,1,'Art. 53.3 CE','Informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos; solo podrán alegarse ante la jurisdicción ordinaria según las leyes que los desarrollen.',null),
-('aux-ayto-mad:1-d4181563d2','aux-ayto-mad',1,'El derecho a comunicar o recibir información, según el art. 20.1 d), se refiere a información:','["Autorizada", "Veraz", "Oficial"]'::jsonb,1,'Art. 20.1 d) CE','Se reconoce el derecho a comunicar o recibir libremente información veraz por cualquier medio de difusión.',null),
+('aux-ayto-mad:1-d4181563d2','aux-ayto-mad',1,'El derecho a comunicar o recibir información, según el art. 20.1 d), se refiere a información:','["Autorizada", "Veraz", "Oficial"]'::jsonb,1,'Art. 20.1 d) CE','Se reconoce el derecho a comunicar o recibir libremente información veraz por cualquier medio de difusión.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('aux-ayto-mad:1-eed8ce60ff','aux-ayto-mad',1,'Los poderes públicos garantizan el derecho de los padres a que sus hijos reciban:','["Educación en su lengua materna en todo caso", "La formación religiosa y moral que esté de acuerdo con sus propias convicciones", "La formación religiosa y moral de la confesión mayoritaria, salvo renuncia expresa de los padres o tutores"]'::jsonb,1,'Art. 27.3 CE','Garantizan que los hijos reciban la formación religiosa y moral acorde con las convicciones de sus padres.',null),
 ('aux-ayto-mad:1-8831d69530','aux-ayto-mad',1,'El principio de legalidad del art. 25.1 establece que nadie puede ser condenado o sancionado por acciones u omisiones que:','["En el momento de dictarse la resolución no constituyan delito, falta o infracción administrativa", "En el momento de producirse no constituyan delito según la ley penal, aunque sí infracción según un reglamento", "En el momento de producirse no constituyan delito, falta o infracción administrativa, según la legislación vigente"]'::jsonb,2,'Art. 25.1 CE','Nadie puede ser condenado o sancionado por acciones u omisiones que, cuando se produjeron, no constituían delito, falta o infracción administrativa.',null),
 ('aux-ayto-mad:1-b25ce1e2ad','aux-ayto-mad',1,'Según el art. 14, los españoles son iguales ante la ley sin que pueda prevalecer discriminación por razón de:','["Sexo, raza, nacionalidad, ideología y orientación sexual, pero no por cualquier otra condición o circunstancia personal o social", "Nacimiento, raza, sexo, religión, opinión o cualquier otra condición, salvo las circunstancias económicas y sociales, que regulan las leyes", "Nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social"]'::jsonb,2,'Art. 14 CE','No puede prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.',null),
@@ -1167,9 +476,7 @@ Según la clave, ¿qué cadena corresponde a las letras LSLL?','["0010 1011 0010
 ('aux-ayto-mad:2-aef8afe342','aux-ayto-mad',2,'Según la Constitución, el gobierno y la administración de los municipios corresponde a:','["Sus respectivos Ayuntamientos, integrados por los Alcaldes y los Concejales", "Los Delegados del Gobierno, con la colaboración de los Concejales elegidos por los vecinos", "Las Diputaciones Provinciales, a través de sus delegaciones comarcales en cada municipio"]'::jsonb,0,'Art. 140 CE','Los Concejales son elegidos por los vecinos por sufragio universal, igual, libre, directo y secreto.',null),
 ('aux-ayto-mad:2-168fbe0745','aux-ayto-mad',2,'Según el artículo 140 de la Constitución, los Alcaldes serán elegidos:','["Por el Pleno de la Diputación Provincial", "Por el Delegado del Gobierno, a propuesta de los Concejales", "Por los Concejales o por los vecinos"]'::jsonb,2,'Art. 140 CE','La ley regula las condiciones en las que procede el régimen del concejo abierto.',null),
 ('aux-ayto-mad:2-4cd26132ea','aux-ayto-mad',2,'¿Qué tipo de ley es necesaria para alterar los límites provinciales?','["Una ley de la Comunidad Autónoma afectada, previo informe estatal", "Una ley orgánica aprobada por las Cortes Generales", "Una ley ordinaria de las Cortes Generales, por mayoría absoluta"]'::jsonb,1,'Art. 141.1 CE','La provincia es una entidad local con personalidad jurídica propia, agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado.',null),
-('aux-ayto-mad:2-47070daf94','aux-ayto-mad',2,'En los archipiélagos, las islas tendrán además su administración propia en forma de:','["Mancomunidades insulares", "Diputaciones forales", "Cabildos o Consejos"]'::jsonb,2,'Art. 141.4 CE','Los Cabildos existen en Canarias y los Consejos Insulares en Baleares.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+('aux-ayto-mad:2-47070daf94','aux-ayto-mad',2,'En los archipiélagos, las islas tendrán además su administración propia en forma de:','["Mancomunidades insulares", "Diputaciones forales", "Cabildos o Consejos"]'::jsonb,2,'Art. 141.4 CE','Los Cabildos existen en Canarias y los Consejos Insulares en Baleares.',null),
 ('aux-ayto-mad:2-7bc468b7be','aux-ayto-mad',2,'Según el artículo 143.2 de la Constitución, la iniciativa del proceso autonómico corresponde a todas las Diputaciones interesadas o al órgano interinsular correspondiente y a:','["La mitad de los municipios de cada provincia, sea cual sea su población", "Las dos terceras partes de los municipios cuya población represente, al menos, la mayoría del censo electoral de cada provincia o isla", "Los municipios que representen un tercio del censo electoral de la región histórica"]'::jsonb,1,'Art. 143.2 CE','Los requisitos deben cumplirse en el plazo de seis meses desde el primer acuerdo de una Corporación local.',null),
 ('aux-ayto-mad:2-aec88f0685','aux-ayto-mad',2,'¿En qué plazo deben cumplirse los requisitos de iniciativa autonómica del artículo 143.2 de la Constitución?','["Un año desde la publicación de la Constitución en el Boletín Oficial del Estado y en los diarios oficiales", "Dos años desde que se constituya la asamblea de parlamentarios", "Seis meses desde el primer acuerdo adoptado por alguna de las Corporaciones locales interesadas"]'::jsonb,2,'Art. 143.2 CE','Si la iniciativa no prospera, solo puede reiterarse pasados cinco años.',null),
 ('aux-ayto-mad:2-97650b28ae','aux-ayto-mad',2,'Si la iniciativa autonómica del artículo 143 no prospera:','["Solo podrá reiterarse pasados cinco años", "No podrá volver a plantearse nunca", "Podrá reiterarse pasados tres años"]'::jsonb,0,'Art. 143.3 CE','Así lo dispone el artículo 143.3 de la Constitución.',null),
@@ -1246,7 +553,9 @@ insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,artic
 ('aux-ayto-mad:3-fe18cacc28','aux-ayto-mad',3,'El registro electrónico de cada Administración permitirá la presentación de documentos:','["Todos los días del año durante las veinticuatro horas", "Solo en días hábiles, durante las veinticuatro horas", "Solo en horario de oficina de cada órgano"]'::jsonb,0,'Art. 31.2 Ley 39/2015','El registro electrónico funciona 24 horas los 365 días.',null),
 ('aux-ayto-mad:3-4e735c9c37','aux-ayto-mad',3,'El silencio será desestimatorio, entre otros, en los procedimientos relativos a:','["Inscripción en registros públicos", "El ejercicio del derecho de petición del art. 29 de la Constitución", "Las solicitudes de subvenciones de concurrencia competitiva, sin excepción"]'::jsonb,1,'Art. 24.1 Ley 39/2015','También en los de dominio o servicio público, medio ambiente, responsabilidad patrimonial, impugnación de actos y revisión de oficio a solicitud.',null),
 ('aux-ayto-mad:3-8a3ea9fa4d','aux-ayto-mad',3,'La representación podrá acreditarse mediante:','["Únicamente escritura notarial de apoderamiento, que deberá presentarse en papel en el registro del órgano competente en cada uno de los procedimientos en que se actúe", "Cualquier medio válido en Derecho que deje constancia fidedigna, comparecencia personal o electrónica, o inscripción en el registro de apoderamientos", "Cualquier medio, incluida una llamada telefónica o un correo electrónico sin firma, siempre que el funcionario que lo recibe deje constancia escrita en el expediente"]'::jsonb,1,'Art. 5.4 Ley 39/2015','Se admite cualquier medio válido en Derecho que deje constancia fidedigna.',null),
-('aux-ayto-mad:3-4a2541a0af','aux-ayto-mad',3,'Los interesados podrán firmar a través de cualquier medio que permita acreditar:','["Su identidad, pero no la integridad del documento", "La autenticidad de la expresión de su voluntad y consentimiento, pero no la integridad del documento", "La autenticidad de la expresión de su voluntad y consentimiento, y la integridad e inalterabilidad del documento"]'::jsonb,2,'Art. 10.1 Ley 39/2015','La firma debe acreditar autenticidad de la voluntad y la integridad del documento.',null),
+('aux-ayto-mad:3-4a2541a0af','aux-ayto-mad',3,'Los interesados podrán firmar a través de cualquier medio que permita acreditar:','["Su identidad, pero no la integridad del documento", "La autenticidad de la expresión de su voluntad y consentimiento, pero no la integridad del documento", "La autenticidad de la expresión de su voluntad y consentimiento, y la integridad e inalterabilidad del documento"]'::jsonb,2,'Art. 10.1 Ley 39/2015','La firma debe acreditar autenticidad de la voluntad y la integridad del documento.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('aux-ayto-mad:3-5ce80bd773','aux-ayto-mad',3,'Si el interesado actúa por medio de representante:','["Se requiere poder notarial en todo caso", "Las actuaciones se entienden siempre con el interesado, y solo se comunican al representante a título informativo", "Las actuaciones se entenderán con el representante, salvo manifestación expresa en contrario del interesado"]'::jsonb,2,'Art. 5.1 Ley 39/2015','Se entienden con el representante salvo manifestación expresa en contrario.',null),
 ('aux-ayto-mad:3-9ef89a0600','aux-ayto-mad',3,'En los procedimientos iniciados de oficio, si el procedimiento se paraliza por causa imputable al interesado:','["Se archiva sin más trámite y se declara la caducidad del procedimiento de forma automática", "Se suspenderá el cómputo del plazo, pero solo si así lo acuerda el órgano por resolución motivada notificada al interesado", "Se interrumpirá el cómputo del plazo para resolver y notificar la resolución"]'::jsonb,2,'Art. 25.2 Ley 39/2015','La paralización imputable al interesado interrumpe el cómputo del plazo.',null),
 ('aux-ayto-mad:3-5455e5f1d0','aux-ayto-mad',3,'Cuando el último día del plazo sea inhábil:','["Se entenderá prorrogado al primer día hábil siguiente", "El plazo vence ese mismo día", "Se entenderá prorrogado al tercer día hábil siguiente"]'::jsonb,0,'Art. 30.5 Ley 39/2015','Se prorroga al primer día hábil siguiente.',null),
@@ -1307,5 +616,93 @@ insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,artic
 ('aux-ayto-mad:3-f040c78c5e','aux-ayto-mad',3,'Las resoluciones administrativas de carácter particular no podrán vulnerar una disposición de carácter general:','["Aunque procedan de un órgano de igual o superior jerarquía al que dictó la disposición", "Salvo que lo autorice expresamente el Consejo de Ministros", "Salvo que sean favorables al interesado"]'::jsonb,0,'Art. 37.1 Ley 39/2015','Es el principio de inderogabilidad singular de los reglamentos.',null),
 ('aux-ayto-mad:3-27ef07925d','aux-ayto-mad',3,'Los plazos expresados en días se contarán:','["Desde el día en que se dictó el acto, aunque se notifique o publique con posterioridad a esa fecha", "Desde el mismo día de la notificación o publicación del acto", "A partir del día siguiente a aquel en que tenga lugar la notificación o publicación del acto"]'::jsonb,2,'Art. 30.3 Ley 39/2015','Se cuentan desde el día siguiente a la notificación o publicación.',null),
 ('aux-ayto-mad:3-837aa7c69b','aux-ayto-mad',3,'Según el art. 34.1 de la Ley 39/2015, los actos administrativos se producirán:','["Por el órgano competente, aunque no se ajusten al procedimiento establecido si el contenido es conforme a Derecho", "Por el funcionario que tramite el expediente, con el visto bueno del titular del órgano", "Por el órgano competente, ajustándose a los requisitos y al procedimiento establecido"]'::jsonb,2,'Art. 34.1 Ley 39/2015','Los actos se producen por el órgano competente ajustándose a los requisitos y al procedimiento establecido.',null),
-('aux-ayto-mad:3-69b3b20382','aux-ayto-mad',3,'La obligación de notificar en plazo se entiende cumplida, en las notificaciones electrónicas, con:','["La puesta a disposición de la notificación en la sede electrónica o en la dirección electrónica habilitada única", "El envío del aviso al correo electrónico del interesado, aunque no se ponga a disposición la notificación", "La publicación de un anuncio en el BOE"]'::jsonb,0,'Art. 43.3 Ley 39/2015','Se entiende cumplida con la puesta a disposición en la sede electrónica o la dirección electrónica habilitada única.',null)
+('aux-ayto-mad:3-69b3b20382','aux-ayto-mad',3,'La obligación de notificar en plazo se entiende cumplida, en las notificaciones electrónicas, con:','["La puesta a disposición de la notificación en la sede electrónica o en la dirección electrónica habilitada única", "El envío del aviso al correo electrónico del interesado, aunque no se ponga a disposición la notificación", "La publicación de un anuncio en el BOE"]'::jsonb,0,'Art. 43.3 Ley 39/2015','Se entiende cumplida con la puesta a disposición en la sede electrónica o la dirección electrónica habilitada única.',null),
+('aux-ayto-mad:3-5722026762','aux-ayto-mad',3,'¿A quién debe notificar el órgano que dicte una resolución?','["A todos los vecinos del municipio afectado", "A los interesados cuyos derechos e intereses sean afectados por ella", "Al superior jerárquico, que da traslado a los interesados"]'::jsonb,1,'Art. 40.1 Ley 39/2015','Se notifica a los interesados cuyos derechos e intereses sean afectados por las resoluciones y actos.',null),
+('aux-ayto-mad:3-9d0a3ccb96','aux-ayto-mad',3,'La nulidad en parte de un acto no implica la de las partes independientes, salvo que:','["La parte viciada sea de tal importancia que sin ella el acto no se habría dictado", "Se haya notificado conjuntamente y en un mismo documento a todos los interesados afectados", "Lo solicite el interesado en el recurso que interponga contra el acto, justificando su conexión"]'::jsonb,0,'Art. 49.2 Ley 39/2015','Las partes independientes se mantienen, salvo que la parte viciada fuera esencial.',null),
+('aux-ayto-mad:3-1e418f3e75','aux-ayto-mad',3,'En los procedimientos tramitados por la AGE, la lengua será:','["El castellano, aunque los interesados que se dirijan a órganos con sede en una Comunidad con lengua cooficial podrán utilizar también esta", "El castellano, sin que los interesados puedan utilizar ninguna otra lengua, aunque se dirijan a órganos con sede en una Comunidad Autónoma con lengua cooficial", "La que elija el funcionario que tramite el procedimiento, castellano o lengua cooficial, sin que el interesado pueda solicitar que se utilice otra"]'::jsonb,0,'Art. 15.1 Ley 39/2015','La lengua de la AGE es el castellano, con posibilidad de usar la cooficial ante órganos con sede en esa Comunidad.',null),
+('aux-ayto-mad:3-fbfc6fba38','aux-ayto-mad',3,'Según el art. 47.1 f), son nulos los actos expresos o presuntos contrarios al ordenamiento por los que se adquieren facultades o derechos:','["Cuando sean favorables al interesado y no haya terceros afectados por ellos", "Cuando se hayan publicado en el boletín oficial sin haberse notificado a los interesados", "Cuando se carezca de los requisitos esenciales para su adquisición"]'::jsonb,2,'Art. 47.1 f) Ley 39/2015','Son nulos si se adquieren facultades o derechos careciendo de los requisitos esenciales.',null),
+('aux-ayto-mad:3-3fa5fe4d20','aux-ayto-mad',3,'Los poderes inscritos en el registro electrónico de apoderamientos tendrán una validez máxima de:','["Diez años a contar desde la fecha de inscripción", "Indefinida, hasta su revocación", "Cinco años a contar desde la fecha de inscripción"]'::jsonb,2,'Art. 6.6 Ley 39/2015','Validez máxima de cinco años; pueden revocarse o prorrogarse, la prórroga por un máximo de cinco años.',null),
+('aux-ayto-mad:3-02123756ea','aux-ayto-mad',3,'Es nulo de pleno derecho el acto que:','["Se dicte fuera del plazo establecido", "Lesione los derechos y libertades susceptibles de amparo constitucional", "Incurra en desviación de poder o en cualquier otra infracción del ordenamiento"]'::jsonb,1,'Art. 47.1 a) Ley 39/2015','La lesión de derechos susceptibles de amparo es causa de nulidad de pleno derecho.',null),
+('aux-ayto-mad:3-c186415fe6','aux-ayto-mad',3,'Contra el acuerdo que declare la tramitación de urgencia:','["No cabrá recurso alguno, sin perjuicio del procedente contra la resolución que ponga fin al procedimiento", "Cabe recurso potestativo de reposición en el plazo de un mes desde su notificación, que no suspende la tramitación", "Cabe recurso contencioso-administrativo inmediato"]'::jsonb,0,'Art. 33.2 Ley 39/2015','El acuerdo de urgencia no es recurrible.',null),
+('aux-ayto-mad:3-f25d679a62','aux-ayto-mad',3,'Si en la notificación en papel en el domicilio el interesado no está presente, podrá hacerse cargo de ella:','["Cualquier persona mayor de 14 años que se encuentre en el domicilio y haga constar su identidad", "Solo un familiar mayor de 18 años", "Cualquier persona mayor de 16 años que se encuentre en el domicilio, sin necesidad de hacer constar su identidad"]'::jsonb,0,'Art. 42.2 Ley 39/2015','Puede recogerla cualquier persona mayor de catorce años que esté en el domicilio y haga constar su identidad.',null),
+('aux-ayto-mad:3-b38912d1b6','aux-ayto-mad',3,'Los actos nulos o anulables que contengan los elementos constitutivos de otro distinto producirán los efectos de este. Esto se denomina:','["Conservación de actos y trámites", "Conversión de actos viciados", "Convalidación"]'::jsonb,1,'Art. 50 Ley 39/2015','Es la conversión de actos viciados.',null),
+('aux-ayto-mad:3-92f40a8b4a','aux-ayto-mad',3,'Las Administraciones deben publicar y mantener actualizadas en el portal web:','["Las relaciones de procedimientos de su competencia, con los datos de los interesados y el estado de tramitación de cada expediente", "Las relaciones de procedimientos de su competencia, con indicación de los plazos máximos de duración y de los efectos del silencio administrativo", "Las resoluciones judiciales que les afecten"]'::jsonb,1,'Art. 21.4 Ley 39/2015','Deben publicar los procedimientos, sus plazos máximos y los efectos del silencio.',null),
+('aux-ayto-mad:3-9d669884e5','aux-ayto-mad',3,'Según el art. 1.2, solo podrán incluirse trámites adicionales o distintos de los de la Ley 39/2015:','["Por decisión del órgano instructor", "Mediante reglamento, cuando resulte eficaz, proporcionado y necesario para la consecución de los fines del procedimiento", "Mediante ley, cuando resulte eficaz, proporcionado y necesario para la consecución de los fines del procedimiento"]'::jsonb,2,'Art. 1.2 Ley 39/2015','Solo mediante ley y de forma motivada.',null),
+('aux-ayto-mad:3-f02b4e97b0','aux-ayto-mad',3,'Es nulo de pleno derecho el acto:','["Que sea constitutivo de infracción penal o se dicte como consecuencia de esta", "Que incurra en cualquier infracción del ordenamiento jurídico, incluida la desviación de poder", "Dictado un día inhábil"]'::jsonb,0,'Art. 47.1 d) Ley 39/2015','Los actos constitutivos de infracción penal o dictados como consecuencia de esta son nulos.',null),
+('aux-ayto-mad:3-72c2a71fa8','aux-ayto-mad',3,'Para los actos y gestiones de mero trámite, la representación:','["Se presumirá", "Debe inscribirse en el registro de apoderamientos", "No está permitida"]'::jsonb,0,'Art. 5.3 Ley 39/2015','En los actos de mero trámite se presume la representación.',null),
+('aux-ayto-mad:3-3e60451f0e','aux-ayto-mad',3,'Son nulos de pleno derecho los actos:','["Que no indiquen los recursos", "Que tengan un contenido imposible", "Dictados por órgano jerárquicamente incompetente"]'::jsonb,1,'Art. 47.1 c) Ley 39/2015','El contenido imposible es causa de nulidad (art. 47.1 c).',null),
+('aux-ayto-mad:3-d6e062bcb5','aux-ayto-mad',3,'Si la Administración no envía el aviso al dispositivo o correo electrónico del interesado de que tiene una notificación electrónica:','["La notificación debe repetirse en papel en el domicilio", "El plazo para acceder a la notificación se amplía diez días", "La notificación puede considerarse plenamente válida"]'::jsonb,2,'Art. 41.6 Ley 39/2015','La falta de práctica del aviso no impide que la notificación sea considerada plenamente válida.',null),
+('aux-ayto-mad:3-a4b841e063','aux-ayto-mad',3,'Con carácter general, ¿pueden las Administraciones exigir a los interesados la presentación de documentos originales?','["No, salvo que excepcionalmente la normativa reguladora aplicable establezca lo contrario", "No, en ningún caso, ni siquiera cuando lo establezca una norma reguladora", "Sí, siempre que el procedimiento se haya iniciado a solicitud del interesado"]'::jsonb,0,'Art. 28.3 Ley 39/2015','Las Administraciones no exigen originales, salvo que con carácter excepcional la normativa aplicable establezca lo contrario.',null),
+('aux-ayto-mad:3-35e487fcd5','aux-ayto-mad',3,'Si existen dudas derivadas de la calidad de la copia aportada por el interesado, la Administración puede:','["Exigir que el interesado aporte en el plazo de un mes una copia compulsada por notario o por el secretario de un ayuntamiento", "Solicitar de manera motivada el cotejo de la copia, requiriendo la exhibición del original", "Tener la copia por no presentada y archivar el procedimiento de oficio"]'::jsonb,1,'Art. 28.5 Ley 39/2015','Excepcionalmente, la Administración puede solicitar motivadamente el cotejo y requerir la exhibición del documento original.',null),
+('aux-ayto-mad:3-07e314b2b9','aux-ayto-mad',3,'Según el art. 28.7 de la Ley 39/2015, de la veracidad de los documentos que presentan responden:','["El órgano instructor del procedimiento", "Los interesados", "El funcionario que digitaliza los documentos"]'::jsonb,1,'Art. 28.7 Ley 39/2015','Los interesados se responsabilizarán de la veracidad de los documentos que presenten.',null),
+('aux-ayto-mad:3-42f085c79f','aux-ayto-mad',3,'La presentación de documentos en el registro electrónico en un día inhábil se entiende realizada:','["En el mismo día inhábil, a todos los efectos", "Al día siguiente, aunque también sea inhábil", "En la primera hora del primer día hábil siguiente, salvo que una norma permita expresamente la recepción en día inhábil"]'::jsonb,2,'Art. 31.2 b) Ley 39/2015','Los documentos se consideran presentados por el orden de hora efectiva en el que lo fueron en el día inhábil.',null),
+('aux-ayto-mad:3-75bb967412','aux-ayto-mad',3,'El registro electrónico de cada Administración permite la presentación de documentos:','["Todos los días del año, pero solo en el horario de atención al público", "Todos los días del año, durante las veinticuatro horas", "En días hábiles, de 9 a 14 horas, como las oficinas presenciales"]'::jsonb,1,'Art. 31.2 a) Ley 39/2015','El cómputo de plazos se rige por la fecha y hora oficial de la sede electrónica.',null),
+('aux-ayto-mad:3-8ede17cf74','aux-ayto-mad',3,'Las copias auténticas de documentos públicos administrativos o privados realizadas por las Administraciones:','["Son válidas dentro de la Administración que las expide y en sus organismos públicos", "Tienen valor informativo y no pueden aportarse a otros procedimientos", "Tienen la misma validez y eficacia que los documentos originales"]'::jsonb,2,'Art. 27.2 Ley 39/2015','Pueden expedirse en papel o en soporte electrónico.',null),
+('aux-ayto-mad:3-be87d9ad15','aux-ayto-mad',3,'Según el artículo 9 de la Ley 39/2015, ¿cuál de los siguientes es un sistema válido para que los interesados se identifiquen electrónicamente ante las Administraciones?','["El número de teléfono móvil", "La fotocopia del DNI enviada por correo electrónico", "Los sistemas de clave concertada"]'::jsonb,2,'Art. 9.2 Ley 39/2015','También los certificados electrónicos cualificados de firma y de sello y cualquier otro sistema que las Administraciones consideren válido en los términos y condiciones que se establezcan.',null),
+('aux-ayto-mad:3-29730b0800','aux-ayto-mad',3,'Según el artículo 43 de la Ley 39/2015, la notificación por medios electrónicos se entiende rechazada cuando:','["Han transcurrido diez días naturales desde su puesta a disposición sin que se acceda a su contenido", "Han transcurrido cinco días hábiles desde su envío sin que el interesado haya contestado ni presentado alegaciones", "El interesado no contesta en veinticuatro horas al aviso enviado a su dirección de correo electrónico o a su móvil"]'::jsonb,0,'Art. 43.2 Ley 39/2015','Se entiende practicada en el momento en que se produce el acceso a su contenido.',null),
+('aux-ayto-mad:3-a96393bd5d','aux-ayto-mad',3,'Según la Ley 39/2015, toda notificación debe cursarse dentro del plazo de:','["Tres días a partir de la fecha en que el acto haya adquirido firmeza", "Diez días a partir de la fecha en que el acto haya sido dictado", "Quince días a partir de la fecha en que el acto haya sido publicado"]'::jsonb,1,'Art. 40.2 Ley 39/2015','Debe contener el texto íntegro de la resolución, si pone fin o no a la vía administrativa y los recursos que procedan.',null),
+('aux-ayto-mad:3-91e59dff84','aux-ayto-mad',3,'¿Qué es la Dirección Electrónica Habilitada única (DEHú)?','["La dirección postal que el interesado designa para recibir las notificaciones en papel cuando no está obligado a relacionarse electrónicamente", "El punto donde el interesado puede consultar las notificaciones electrónicas que le remitan las Administraciones", "El correo electrónico oficial que la Administración asigna a cada ciudadano y a cada empresa para recibir sus comunicaciones oficiales"]'::jsonb,1,'Art. 43 Ley 39/2015 y RD 203/2021','Las notificaciones pueden practicarse por comparecencia en la sede electrónica o a través de la DEHú.',null),
+('aux-ayto-mad:3-b47bda38c3','aux-ayto-mad',3,'Según la Ley 39/2015, los interesados no estarán obligados a aportar documentos que:','["Estén redactados en una lengua cooficial distinta del castellano", "Hayan sido firmados electrónicamente por el propio interesado o por su representante con un certificado cualificado expedido por un prestador de confianza", "Hayan sido elaborados por cualquier Administración o que hayan sido aportados anteriormente por el interesado a cualquier Administración"]'::jsonb,2,'Art. 28.2 y 28.3 Ley 39/2015','La Administración los consultará o recabará, salvo oposición expresa del interesado o que una ley especial exija su consentimiento expreso.',null),
+('aux-ayto-mad:4-1bc75968f3','aux-ayto-mad',4,'La revisión de oficio de los actos nulos de pleno derecho requiere:','["Informe favorable del servicio jurídico y audiencia previa de todos los interesados", "Dictamen favorable previo del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma", "Sentencia judicial previa que declare la nulidad, a instancia de la Administración"]'::jsonb,1,'Art. 106.1 Ley 39/2015','Requiere dictamen favorable previo del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma, si lo hubiere.',null),
+('aux-ayto-mad:4-c32104058a','aux-ayto-mad',4,'La declaración de lesividad de un acto favorable anulable no puede adoptarse una vez transcurridos desde que se dictó:','["1 año", "6 meses", "4 años"]'::jsonb,2,'Art. 107.2 Ley 39/2015','No puede adoptarse una vez transcurridos cuatro años desde que se dictó el acto.',null),
+('aux-ayto-mad:4-b9f19e721d','aux-ayto-mad',4,'¿Qué actos pueden revocar las Administraciones mientras no haya transcurrido el plazo de prescripción?','["Las disposiciones generales", "Los actos firmes de cualquier tipo", "Los actos de gravamen o desfavorables"]'::jsonb,2,'Art. 109.1 Ley 39/2015','Pueden revocar sus actos de gravamen o desfavorables mientras no haya transcurrido el plazo de prescripción.',null),
+('aux-ayto-mad:4-09a158f48e','aux-ayto-mad',4,'Los errores materiales, de hecho o aritméticos de los actos pueden rectificarse:','["En el plazo de un mes desde la notificación, de oficio o a instancia de los interesados", "Solo a instancia de los interesados, mediante el correspondiente recurso de reposición", "En cualquier momento, de oficio o a instancia de los interesados"]'::jsonb,2,'Art. 109.2 Ley 39/2015','Pueden rectificarse en cualquier momento, de oficio o a instancia de los interesados.',null),
+('aux-ayto-mad:4-83f314bc47','aux-ayto-mad',4,'Contra las resoluciones y los actos de trámite cualificados caben los recursos de:','["Alzada y potestativo de reposición", "Reposición obligatoria y alzada", "Alzada y extraordinario de revisión, únicamente"]'::jsonb,0,'Art. 112.1 Ley 39/2015','Caben el recurso de alzada y el potestativo de reposición.',null),
+('aux-ayto-mad:4-f94346326a','aux-ayto-mad',4,'La interposición de un recurso administrativo, como regla general:','["Suspende la ejecución del acto, salvo que una disposición establezca lo contrario", "No suspende la ejecución del acto, salvo que una disposición establezca lo contrario", "No suspende la ejecución del acto, sin que ninguna disposición normativa pueda establecer otra cosa"]'::jsonb,1,'Art. 117.1 Ley 39/2015','La interposición de cualquier recurso no suspende la ejecución del acto impugnado, salvo disposición en contrario.',null),
+('aux-ayto-mad:4-48638cae86','aux-ayto-mad',4,'Si se solicita la suspensión de la ejecución al recurrir y no hay resolución expresa, la ejecución se entiende suspendida cuando pasa:','["3 meses desde la solicitud", "10 días desde la solicitud", "1 mes desde la solicitud"]'::jsonb,2,'Art. 117.3 Ley 39/2015','Se entiende suspendida si transcurre un mes desde la solicitud sin resolución expresa.',null),
+('aux-ayto-mad:4-4031a68b3e','aux-ayto-mad',4,'El recurso de alzada se interpone contra:','["Disposiciones de carácter general y actos que no ponen fin a la vía administrativa", "Actos que ponen fin a la vía administrativa, ante el mismo órgano que los dictó", "Resoluciones y actos que no ponen fin a la vía administrativa, ante el órgano superior jerárquico"]'::jsonb,2,'Art. 121.1 Ley 39/2015','Procede contra los actos que no ponen fin a la vía administrativa y se resuelve por el superior jerárquico.',null),
+('aux-ayto-mad:4-5a560a5eaf','aux-ayto-mad',4,'Si el acto es expreso, el plazo para interponer recurso de alzada es de:','["3 meses", "2 meses", "1 mes"]'::jsonb,2,'Art. 122.1 Ley 39/2015','Es de un mes si el acto es expreso; si no lo es, puede interponerse en cualquier momento desde el día siguiente a los efectos del silencio.',null),
+('aux-ayto-mad:4-39608f52bc','aux-ayto-mad',4,'¿Cuál es el plazo máximo para dictar y notificar la resolución del recurso de alzada?','["3 meses; pasado ese plazo sin resolución expresa, se entenderá siempre estimado", "1 mes; pasado ese plazo, se podrá entender estimado", "3 meses; pasado ese plazo, se podrá entender desestimado"]'::jsonb,2,'Art. 122.2 Ley 39/2015','El plazo es de tres meses. Transcurrido sin resolución, se podrá entender desestimado el recurso, salvo excepción.',null),
+('aux-ayto-mad:4-b683521523','aux-ayto-mad',4,'El recurso de reposición:','["Es obligatorio, contra actos que ponen fin a la vía administrativa, ante el mismo órgano", "Es potestativo, contra actos que ponen fin a la vía administrativa, ante el mismo órgano que los dictó", "Es obligatorio antes de acudir a los tribunales contencioso-administrativos"]'::jsonb,1,'Art. 123.1 Ley 39/2015','Es potestativo y se interpone ante el mismo órgano que dictó el acto que pone fin a la vía administrativa.',null),
+('aux-ayto-mad:4-e1ece96309','aux-ayto-mad',4,'¿Cuál es el plazo máximo para dictar y notificar la resolución del recurso de reposición?','["1 mes", "15 días", "2 meses"]'::jsonb,0,'Art. 124.2 Ley 39/2015','El plazo máximo es de un mes.',null),
+('aux-ayto-mad:4-67b031968f','aux-ayto-mad',4,'El recurso extraordinario de revisión por error de hecho que resulte de los documentos del expediente se interpone en el plazo de:','["3 meses desde la notificación de la resolución", "4 años desde la notificación de la resolución", "1 año desde la notificación de la resolución"]'::jsonb,1,'Art. 125.2 Ley 39/2015','Cuatro años desde la notificación en la causa a); tres meses en las demás causas.',null),
+('aux-ayto-mad:4-53d2bf665e','aux-ayto-mad',4,'Contra la resolución de un recurso de alzada:','["Cabe recurso potestativo de reposición ante el mismo órgano que resolvió la alzada", "Solo cabe recurso potestativo de reposición ante el mismo órgano, en los casos del art. 125.1", "Solo cabe el recurso extraordinario de revisión, en los casos del art. 125.1"]'::jsonb,2,'Art. 122.3 Ley 39/2015','No cabe ningún otro recurso administrativo, salvo el extraordinario de revisión en los casos previstos.',null),
+('aux-ayto-mad:4-56bf67a278','aux-ayto-mad',4,'¿Cuál de las siguientes NO es una forma de iniciación de oficio del procedimiento?','["Petición razonada de otros órganos", "Solicitud del interesado", "Orden superior"]'::jsonb,1,'Art. 58 Ley 39/2015','De oficio se inicia por propia iniciativa, orden superior, petición razonada de otros órganos o denuncia. La solicitud del interesado es la otra vía de inicio.',null),
+('aux-ayto-mad:4-a900825d93','aux-ayto-mad',4,'Si la solicitud no reúne los requisitos exigidos, se requiere al interesado para que la subsane en el plazo de:','["10 días, con indicación de que si no lo hace se declarará la caducidad", "10 días, con indicación de que si no lo hace se le tendrá por desistido", "5 días, con indicación de que si no lo hace se archivará sin más trámite"]'::jsonb,1,'Art. 68.1 Ley 39/2015','Se le da un plazo de diez días, con apercibimiento de que, si no lo hace, se le tendrá por desistido.',null),
+('aux-ayto-mad:4-e2d15c754a','aux-ayto-mad',4,'El periodo de prueba en el procedimiento administrativo tiene una duración:','["No superior a 15 días ni inferior a 5", "No superior a 30 días ni inferior a 10", "De 20 días exactos"]'::jsonb,1,'Art. 77.2 Ley 39/2015','El periodo de prueba no puede ser superior a treinta días ni inferior a diez.',null),
+('aux-ayto-mad:4-d21078c34f','aux-ayto-mad',4,'Salvo disposición expresa en contrario, los informes son:','["Preceptivos y vinculantes", "Preceptivos y no vinculantes", "Facultativos y no vinculantes"]'::jsonb,2,'Art. 80.1 Ley 39/2015','Salvo disposición expresa, los informes son facultativos y no vinculantes.',null),
+('aux-ayto-mad:4-0578029b60','aux-ayto-mad',4,'Salvo que se fije otro plazo, los informes deben emitirse en:','["3 días", "15 días", "10 días"]'::jsonb,2,'Art. 80.2 Ley 39/2015','Los informes se emiten en el plazo de diez días, salvo que una disposición o el cumplimiento del resto de plazos exija otro.',null),
+('aux-ayto-mad:4-c8954e2747','aux-ayto-mad',4,'En el trámite de audiencia, los interesados disponen de un plazo:','["De 20 días", "No inferior a 15 días ni superior a 30", "No inferior a 10 días ni superior a 15"]'::jsonb,2,'Art. 82.2 Ley 39/2015','El plazo de audiencia no puede ser inferior a diez días ni superior a quince.',null),
+('aux-ayto-mad:4-f670c16acb','aux-ayto-mad',4,'El plazo del trámite de información pública no puede ser inferior a:','["20 días", "10 días", "1 mes"]'::jsonb,0,'Art. 83.2 Ley 39/2015','El plazo de información pública no puede ser inferior a veinte días.',null),
+('aux-ayto-mad:4-88c1e7470d','aux-ayto-mad',4,'¿Cuál de las siguientes NO pone fin al procedimiento administrativo?','["La interposición de un recurso", "La declaración de caducidad", "El desistimiento"]'::jsonb,0,'Art. 84.1 Ley 39/2015','Ponen fin al procedimiento la resolución, el desistimiento, la renuncia y la caducidad, y también la imposibilidad material sobrevenida.',null),
+('aux-ayto-mad:4-2d9f4991e7','aux-ayto-mad',4,'En un procedimiento iniciado a solicitud que se paraliza por causa del interesado, la Administración le advierte de que se producirá la caducidad pasados:','["3 meses", "10 días", "1 mes"]'::jsonb,0,'Art. 95.1 Ley 39/2015','Transcurridos tres meses tras la advertencia sin que el interesado actúe, se produce la caducidad.',null),
+('aux-ayto-mad:4-650f2ca73b','aux-ayto-mad',4,'¿Cuál de los siguientes NO es un medio de ejecución forzosa de los actos administrativos?','["La revocación del acto", "La ejecución subsidiaria", "El apremio sobre el patrimonio"]'::jsonb,0,'Art. 100.1 Ley 39/2015','Los medios son el apremio sobre el patrimonio, la ejecución subsidiaria, la multa coercitiva y la compulsión sobre las personas.',null),
+('aux-ayto-mad:4-d00511eeff','aux-ayto-mad',4,'Se podrá prescindir del trámite de audiencia cuando:','["Lo acuerde motivadamente el instructor por razones de urgencia, aunque se tengan en cuenta hechos nuevos no aportados por el interesado", "No figuren ni sean tenidos en cuenta otros hechos, alegaciones o pruebas que los aducidos por el interesado", "El interesado sea una persona jurídica obligada a relacionarse electrónicamente"]'::jsonb,1,'Art. 82.4 Ley 39/2015','Si solo se valora lo aportado por el interesado, la audiencia puede omitirse.',null),
+('aux-ayto-mad:4-c5da52c35e','aux-ayto-mad',4,'Si el recurso de alzada se interpone ante el órgano que dictó el acto, este deberá remitirlo al competente:','["En el plazo de quince días, sin necesidad de informe", "En el plazo de diez días, con su informe y una copia completa y ordenada del expediente", "En el plazo de tres días, con el expediente original"]'::jsonb,1,'Art. 121.2 Ley 39/2015','Debe remitirlo en 10 días con informe y copia del expediente.',null),
+('aux-ayto-mad:4-68dde4b813','aux-ayto-mad',4,'A los interesados que no cumplan lo dispuesto en un trámite:','["Se les tendrá por desistidos de su solicitud y se archivará el procedimiento sin más trámite", "Se les podrá declarar decaídos en su derecho al trámite correspondiente", "Se declara la caducidad"]'::jsonb,1,'Art. 73.3 Ley 39/2015','Se admitirá su actuación si se produce antes o dentro del día en que se notifique la resolución que tenga por transcurrido el plazo.',null),
+('aux-ayto-mad:4-1338d7e6bb','aux-ayto-mad',4,'Según el art. 98.1, tampoco son inmediatamente ejecutivos los actos:','["Que hayan sido notificados con indicación de los recursos procedentes", "Que pongan fin a la vía administrativa y no hayan sido recurridos", "Que necesiten aprobación o autorización superior"]'::jsonb,2,'Art. 98.1 d) Ley 39/2015','Tampoco cuando se acuerde su suspensión o una disposición establezca lo contrario.',null),
+('aux-ayto-mad:4-4e63a37d0e','aux-ayto-mad',4,'Cuando hayan de tenerse en cuenta nuevos hechos o documentos no recogidos en el expediente original, se pondrán de manifiesto a los interesados para alegaciones en un plazo:','["No inferior a diez días ni superior a quince", "De veinte días hábiles, prorrogable por otros diez", "De un mes, prorrogable por otro mes a petición del interesado"]'::jsonb,0,'Art. 118.1 Ley 39/2015','El plazo es de 10 a 15 días.',null),
+('aux-ayto-mad:4-e41ecaad16','aux-ayto-mad',4,'Es un derecho del interesado en el procedimiento:','["Elegir al instructor del procedimiento", "Conocer en cualquier momento el estado de tramitación de cualquier procedimiento de la Administración, aunque no tenga la condición de interesado", "Conocer en cualquier momento el estado de la tramitación de los procedimientos en los que sea interesado"]'::jsonb,2,'Art. 53.1 a) Ley 39/2015','También el sentido del silencio, el órgano competente y obtener copia de los documentos.',null),
+('aux-ayto-mad:4-d7a70c24c1','aux-ayto-mad',4,'La declaración responsable es el documento por el que el interesado manifiesta, bajo su responsabilidad:','["Que cumple los requisitos de la normativa vigente, dispone de la documentación que lo acredita y la pondrá a disposición de la Administración cuando se le requiera", "Que pone en conocimiento de la Administración sus datos identificativos", "Que cumple los requisitos de la normativa vigente y aporta en ese momento toda la documentación que lo acredita, sin que la Administración pueda requerírsela después"]'::jsonb,0,'Art. 69.1 Ley 39/2015','Definición legal de la declaración responsable.',null),
+('aux-ayto-mad:4-4847964097','aux-ayto-mad',4,'¿Pueden revisarse de oficio las disposiciones administrativas nulas del art. 47.2?','["Sí, previo dictamen favorable del Consejo de Estado u órgano consultivo autonómico equivalente", "No, la revisión de oficio solo alcanza a los actos, no a las disposiciones", "Sí, previo dictamen no vinculante del Consejo de Estado u órgano consultivo equivalente, y a instancia del interesado"]'::jsonb,0,'Art. 106.2 Ley 39/2015','Las Administraciones pueden declarar de oficio la nulidad de disposiciones del art. 47.2 previo dictamen favorable.',null),
+('aux-ayto-mad:4-1c0d767f46','aux-ayto-mad',4,'En ningún caso podrá imponerse a los administrados una obligación pecuniaria que:','["No estuviese establecida en una norma de rango reglamentario aprobada por el Consejo de Gobierno o el Consejo de Ministros", "No estuviese establecida con arreglo a una norma de rango legal", "Supere los 3.000 euros sin autorización judicial previa y expresa"]'::jsonb,1,'Art. 101.2 Ley 39/2015','Las obligaciones pecuniarias requieren base en una norma de rango legal.',null),
+('aux-ayto-mad:4-b338cf6a6b','aux-ayto-mad',4,'La petición razonada de iniciación:','["Solo puede formularla un ciudadano afectado", "No vincula al órgano competente, que deberá comunicar los motivos por los que, en su caso, no inicia", "Equivale a una denuncia y obliga a iniciar el procedimiento"]'::jsonb,1,'Art. 61.2 Ley 39/2015','No es vinculante, pero hay que comunicar los motivos de no iniciar.',null),
+('aux-ayto-mad:4-c3a4ca4835','aux-ayto-mad',4,'La multa coercitiva:','["Sustituye a la sanción que corresponda", "Es incompatible con las sanciones, de modo que si se impone una multa coercitiva no puede imponerse sanción por los mismos hechos", "Es independiente de las sanciones que puedan imponerse y compatible con ellas"]'::jsonb,2,'Art. 103.2 Ley 39/2015','La multa coercitiva es independiente de las sanciones y compatible con ellas.',null),
+('aux-ayto-mad:4-5a9ddbb788','aux-ayto-mad',4,'No podrá acordarse la caducidad del procedimiento por la simple inactividad del interesado en la cumplimentación de trámites:','["Si el interesado es persona jurídica obligada a relacionarse electrónicamente", "Aunque sean indispensables para dictar resolución, si ha transcurrido el plazo", "Siempre que no sean indispensables para dictar resolución"]'::jsonb,2,'Art. 95.2 Ley 39/2015','La inactividad en trámites no indispensables no da lugar a caducidad.',null),
+('aux-ayto-mad:4-9d413f9e8e','aux-ayto-mad',4,'También es causa del recurso extraordinario de revisión que la resolución se haya dictado como consecuencia de:','["Prevaricación, cohecho, violencia, maquinación fraudulenta u otra conducta punible declarada en sentencia judicial firme", "Una denuncia de un tercero por prevaricación o cohecho, aunque todavía no haya recaído sentencia judicial firme", "Un error de calificación del recurso"]'::jsonb,0,'Art. 125.1 d) Ley 39/2015','Exige que la conducta se haya declarado en sentencia judicial firme.',null),
+('aux-ayto-mad:4-178ca38921','aux-ayto-mad',4,'En los procedimientos sancionadores, el presunto responsable tiene derecho, además:','["A no declarar contra sí mismo, pero no a la presunción de inocencia, que es exclusiva del proceso penal", "A la presunción de no existencia de responsabilidad administrativa mientras no se demuestre lo contrario", "A que se le notifique la sanción"]'::jsonb,1,'Art. 53.2 b) Ley 39/2015','Es la presunción de inocencia en el ámbito sancionador.',null),
+('aux-ayto-mad:4-307b923373','aux-ayto-mad',4,'Las Administraciones pueden imponer multas coercitivas:','["Cuando lo autorice un reglamento, en la forma y cuantía que determine el órgano que ordena la ejecución", "Cuando así lo autoricen las leyes, y en la forma y cuantía que estas determinen", "Solo en materia tributaria"]'::jsonb,1,'Art. 103.1 Ley 39/2015','Requieren autorización legal y se reiteran por lapsos de tiempo suficientes para cumplir lo ordenado.',null),
+('aux-ayto-mad:4-6bca3a7545','aux-ayto-mad',4,'La efectividad de las reducciones por reconocimiento o pago voluntario está condicionada a:','["El desistimiento o renuncia de cualquier acción o recurso en vía administrativa contra la sanción", "El desistimiento o renuncia de cualquier acción o recurso, tanto en vía administrativa como contencioso-administrativa", "La conformidad de la víctima o del denunciante y la renuncia expresa a la vía contencioso-administrativa"]'::jsonb,0,'Art. 85.3 Ley 39/2015','El infractor debe desistir o renunciar a recursos administrativos.',null),
+('aux-ayto-mad:4-71a61f6c97','aux-ayto-mad',4,'Si para la ejecución forzosa fuese necesario entrar en el domicilio del afectado, se requiere:','["Basta la resolución administrativa que ordena la ejecución, notificada al afectado", "Su consentimiento o, en su defecto, la oportuna autorización judicial", "Su consentimiento o, en su defecto, autorización del órgano superior jerárquico del que ordenó la ejecución"]'::jsonb,1,'Art. 100.3 Ley 39/2015','Se necesita el consentimiento del afectado o autorización judicial.',null),
+('aux-ayto-mad:4-530218746d','aux-ayto-mad',4,'La resolución de un recurso será congruente con las peticiones del recurrente:','["Salvo en materia de personal, en que puede agravarse su situación inicial", "Pudiendo agravar su situación inicial si así lo exige el interés público", "Sin que en ningún caso pueda agravarse su situación inicial"]'::jsonb,2,'Art. 119.3 Ley 39/2015','Es la prohibición de la reformatio in peius.',null),
+('aux-ayto-mad:4-bd8e94774e','aux-ayto-mad',4,'Si el acto no es expreso, el recurso de alzada podrá interponerse:','["En el plazo de tres meses desde la presentación de la solicitud", "En el plazo de un mes desde el día siguiente a aquel en que se produzcan los efectos del silencio", "En cualquier momento a partir del día siguiente a aquel en que se produzcan los efectos del silencio"]'::jsonb,2,'Art. 122.1 Ley 39/2015','Contra actos presuntos, en cualquier momento desde que se producen los efectos del silencio.',null),
+('aux-ayto-mad:4-4fca5eeaca','aux-ayto-mad',4,'Interpuesto un recurso de reposición, no se podrá interponer recurso contencioso-administrativo hasta que:','["Lo autorice el órgano que dictó el acto", "Sea resuelto expresamente o se haya producido su desestimación presunta", "Sea resuelto expresamente, sin que baste la desestimación presunta"]'::jsonb,1,'Art. 123.2 Ley 39/2015','Hay que esperar a la resolución expresa o la desestimación presunta.',null),
+('aux-ayto-mad:4-1303f7bb60','aux-ayto-mad',4,'También pone fin a la vía administrativa:','["El acuerdo de iniciación del procedimiento sancionador o de responsabilidad", "El informe preceptivo y vinculante emitido por un órgano consultivo", "La resolución de los procedimientos de responsabilidad patrimonial"]'::jsonb,2,'Art. 114.1 e) Ley 39/2015','Las resoluciones en materia de responsabilidad patrimonial ponen fin a la vía administrativa, cualquiera que sea el tipo de relación.',null),
+('aux-ayto-mad:4-df75e4dc49','aux-ayto-mad',4,'En la AGE, son competentes para la revisión de oficio de sus propios actos y de los dictados por los Ministros:','["El Presidente del Gobierno en solitario", "El Consejo de Ministros", "El Consejo de Estado"]'::jsonb,1,'Art. 111 a) Ley 39/2015','El Consejo de Ministros revisa sus propios actos y disposiciones y los de los Ministros.',null),
+('aux-ayto-mad:4-344d6b6b52','aux-ayto-mad',4,'Los procedimientos caducados:','["Interrumpen la prescripción", "Producen por sí solos la prescripción de las acciones", "No interrumpirán el plazo de prescripción"]'::jsonb,2,'Art. 95.3 Ley 39/2015','La caducidad no produce por sí sola la prescripción, pero el procedimiento caducado no la interrumpe.',null),
+('aux-ayto-mad:4-ba97c85ccc','aux-ayto-mad',4,'En los procedimientos de responsabilidad patrimonial es preceptivo solicitar informe al servicio cuyo funcionamiento haya ocasionado la presunta lesión, que deberá emitirse en un plazo máximo de:','["Dos meses", "Diez días", "Quince días"]'::jsonb,1,'Art. 81.1 Ley 39/2015','El informe del servicio no puede exceder de diez días.',null),
+('aux-ayto-mad:4-71d10c1be4','aux-ayto-mad',4,'En los procedimientos sancionadores, los hechos declarados probados por resoluciones judiciales penales firmes:','["Vincularán a las Administraciones solo si la sentencia penal es condenatoria y se dictó antes de iniciarse el procedimiento", "Solo vinculan si el interesado lo solicita expresamente en sus alegaciones al acuerdo de iniciación", "Vincularán a las Administraciones Públicas en los procedimientos sancionadores que substancien"]'::jsonb,2,'Art. 77.4 Ley 39/2015','Los hechos probados en sentencia penal firme vinculan a la Administración.',null),
+('aux-ayto-mad:4-13d4082e8c','aux-ayto-mad',4,'La resolución del procedimiento se dictará:','["Por escrito en papel, firmado por el titular del órgano", "Electrónicamente, garantizando la identidad del órgano competente y la autenticidad e integridad del documento", "Electrónicamente o en papel, a elección del órgano, garantizando solo la identidad del firmante y no la integridad del documento"]'::jsonb,1,'Art. 88.4 Ley 39/2015','La resolución se dicta electrónicamente.',null),
+('aux-ayto-mad:4-09adbc376f','aux-ayto-mad',4,'¿Quién puede acordar un período de información pública?','["El instructor del procedimiento, a petición de cualquier interesado y siempre que lo autorice el órgano superior jerárquico", "El órgano al que corresponda la resolución del procedimiento, cuando su naturaleza lo requiera", "Cualquier interesado, comunicándolo al órgano instructor, siempre que lo considere útil para su defensa"]'::jsonb,1,'Art. 83.1 Ley 39/2015','Lo acuerda el órgano competente para resolver.',null),
+('aux-ayto-mad:4-f30d8fae50','aux-ayto-mad',4,'Contra las disposiciones administrativas de carácter general:','["Cabe recurso de alzada", "Cabe recurso extraordinario de revisión", "No cabe recurso en vía administrativa"]'::jsonb,2,'Art. 112.3 Ley 39/2015','Contra las disposiciones de carácter general no cabe recurso administrativo.',null),
+('aux-ayto-mad:4-64ae115d72','aux-ayto-mad',4,'Excepcionalmente, cuando al iniciar el procedimiento sancionador no existan elementos suficientes para la calificación inicial de los hechos, esta podrá realizarse en una fase posterior mediante:','["Un nuevo acuerdo de iniciación", "La elaboración de un Pliego de cargos, que no se notifica a los interesados hasta la propuesta de resolución definitiva del instructor", "La elaboración de un Pliego de cargos, que deberá ser notificado a los interesados"]'::jsonb,2,'Art. 64.3 Ley 39/2015','Se elabora un Pliego de cargos que se notifica a los interesados.',null),
+('aux-ayto-mad:4-c94eee2eeb','aux-ayto-mad',4,'NO será inmediatamente ejecutiva la resolución:','["De un procedimiento sancionador contra la que quepa recurso de alzada, pero no si solo cabe el potestativo de reposición", "De un procedimiento sancionador contra la que quepa algún recurso en vía administrativa, incluido el potestativo de reposición", "De un recurso de alzada"]'::jsonb,1,'Art. 98.1 b) Ley 39/2015','Las sanciones no son ejecutivas mientras quepa recurso administrativo.',null),
+('aux-ayto-mad:4-1f8257c215','aux-ayto-mad',4,'Iniciado un procedimiento sancionador, si el infractor reconoce su responsabilidad:','["Se podrá resolver el procedimiento sin imponer sanción, salvo que la infracción sea muy grave o el infractor sea reincidente", "Se archiva el procedimiento sin imponer sanción, si el infractor paga voluntariamente", "Se podrá resolver el procedimiento con la imposición de la sanción que proceda"]'::jsonb,2,'Art. 85.1 Ley 39/2015','El reconocimiento permite resolver con la sanción procedente.',null),
+('aux-ayto-mad:4-6369c0b58c','aux-ayto-mad',4,'La ejecución subsidiaria procede respecto de actos que:','["Sean personalísimos de hacer y el obligado se niegue a realizarlos en el plazo fijado", "Por no ser personalísimos puedan ser realizados por sujeto distinto del obligado", "Impongan obligaciones de no hacer o de soportar, previo apercibimiento al obligado"]'::jsonb,1,'Art. 102.1 Ley 39/2015','Cabe cuando el acto no es personalísimo y otro sujeto puede realizarlo.',null),
+('aux-ayto-mad:4-a0ad387fd2','aux-ayto-mad',4,'Si antes del vencimiento del plazo de audiencia los interesados manifiestan su decisión de no efectuar alegaciones:','["Se ampliará de oficio el plazo para que puedan reconsiderar su decisión, que no será vinculante hasta su vencimiento", "Se tendrá por decaído su derecho y se archivará el procedimiento", "Se tendrá por realizado el trámite"]'::jsonb,2,'Art. 82.3 Ley 39/2015','El trámite se tiene por realizado.',null),
+('aux-ayto-mad:4-6d53ceefe5','aux-ayto-mad',4,'Si el procedimiento de revisión de oficio se inició de oficio y transcurren seis meses sin resolución, se produce:','["La nulidad automática del acto", "La caducidad del mismo", "La estimación por silencio"]'::jsonb,1,'Art. 106.5 Ley 39/2015','Iniciado de oficio: caducidad. Iniciado a solicitud: se podrá entender desestimada.',null),
+('aux-ayto-mad:4-e62938e91b','aux-ayto-mad',4,'Transcurrido el plazo de seis meses desde la iniciación del procedimiento de lesividad sin que se haya declarado, se produce:','["La estimación del interesado por silencio", "La declaración automática de lesividad", "La caducidad del procedimiento"]'::jsonb,2,'Art. 107.3 Ley 39/2015','Pasados seis meses sin declaración de lesividad, el procedimiento caduca.',null),
+('aux-ayto-mad:4-4e3e1cb72c','aux-ayto-mad',4,'Si el órgano competente para resolver considera que la infracción o la sanción revisten mayor gravedad que la propuesta, se notificará al inculpado para alegaciones en un plazo de:','["Cinco días", "Diez días", "Quince días"]'::jsonb,2,'Art. 90.2 Ley 39/2015','El inculpado dispone de quince días para alegar.',null),
+('aux-ayto-mad:4-2c0183f7c5','aux-ayto-mad',4,'Iniciado un procedimiento de revisión de oficio o de lesividad, el órgano competente podrá suspender la ejecución del acto cuando:','["Lo solicite cualquier tercero, aunque no acredite la condición de interesado ni perjuicio alguno", "El acto sea favorable al interesado y este lo solicite antes de que se dicte la resolución", "Esta pudiera causar perjuicios de imposible o difícil reparación"]'::jsonb,2,'Art. 108 Ley 39/2015','Puede suspenderse si la ejecución causaría perjuicios de imposible o difícil reparación.',null),
+('aux-ayto-mad:4-6174ad27c0','aux-ayto-mad',4,'¿Ante quién se interpone el recurso extraordinario de revisión?','["Ante el superior jerárquico del órgano que dictó el acto, previo dictamen del Consejo de Estado", "Ante el superior jerárquico del órgano que dictó el acto, que es competente para resolverlo", "Ante el órgano administrativo que dictó el acto, que también es competente para resolverlo"]'::jsonb,2,'Art. 125.1 Ley 39/2015','Se interpone y resuelve por el mismo órgano que dictó el acto.',null)
 on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;

@@ -1,71 +1,5 @@
 -- Banco de preguntas, parte 7 de 10. Ejecútalo en Supabase → SQL Editor DESPUÉS de 1-configuracion.sql y 8-oposiciones.sql.
 insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
-('aux-age:28-a32cdb50b5','aux-age',28,'En los navegadores, Ctrl + T sirve para:','["Volver a abrir la última pestaña cerrada", "Abrir una pestaña nueva", "Cerrar la pestaña actual", "Abrir una ventana privada"]'::jsonb,1,'Atajos del navegador','Ctrl + T abre una pestaña; Ctrl + W la cierra y Ctrl + Mayús + T reabre la última cerrada.',null),
-('aux-age:28-c4ad096f61','aux-age',28,'En los navegadores, Ctrl + W sirve para:','["Guardar la página", "Abrir el historial", "Cerrar la pestaña actual", "Abrir una pestaña nueva"]'::jsonb,2,'Atajos del navegador','Ctrl + W cierra la pestaña activa.',null),
-('aux-age:28-c4e926206f','aux-age',28,'El ancho de banda de una conexión indica:','["La distancia máxima entre el equipo y el router", "La cantidad de datos que puede transmitir por unidad de tiempo", "El número de dispositivos que se pueden conectar", "El tiempo que tarda en cargar por completo una página web concreta"]'::jsonb,1,'Redes','Se mide en bits por segundo (Mbps, Gbps).',null),
-('aux-age:28-76dbec5563','aux-age',28,'Un hipervínculo es:','["Un archivo temporal del navegador", "Un elemento que, al pulsarlo, lleva a otra página o recurso", "Un tipo de dirección IP", "Un programa del navegador que bloquea las ventanas emergentes publicitarias"]'::jsonb,1,'Navegación','Los hipervínculos o enlaces conectan páginas y recursos en la web.',null),
-('aux-age:29-56db979553','aux-age',29,'¿Qué número continúa la serie? 8, 20, 32, 44, 56, …','["80", "70", "66", "68"]'::jsonb,3,'Psicotécnicos','Cada término suma 12 al anterior: 56 + 12 = 68.',null),
-('aux-age:29-d7f2e3695c','aux-age',29,'¿Qué número continúa la serie? 27, 33, 39, 45, 51, …','["57", "51", "55", "58"]'::jsonb,0,'Psicotécnicos','Cada término suma 6 al anterior: 51 + 6 = 57.',null),
-('aux-age:29-b5cf144b10','aux-age',29,'¿Qué número continúa la serie? 23, 31, 39, 47, 55, …','["71", "72", "63", "65"]'::jsonb,2,'Psicotécnicos','Cada término suma 8 al anterior: 55 + 8 = 63.',null),
-('aux-age:29-a6c8194149','aux-age',29,'¿Qué número continúa la serie? 12, 21, 30, 39, 48, …','["59", "48", "55", "57"]'::jsonb,3,'Psicotécnicos','Cada término suma 9 al anterior: 48 + 9 = 57.',null),
-('aux-age:29-1f006010a0','aux-age',29,'¿Qué número continúa la serie? 12, 24, 36, 48, 60, …','["72", "84", "74", "73"]'::jsonb,0,'Psicotécnicos','Cada término suma 12 al anterior: 60 + 12 = 72.',null),
-('aux-age:29-61d9c1a57e','aux-age',29,'¿Qué número continúa la serie? 22, 34, 46, 58, 70, …','["82", "94", "83", "80"]'::jsonb,0,'Psicotécnicos','Cada término suma 12 al anterior: 70 + 12 = 82.',null),
-('aux-age:29-2a622f88bf','aux-age',29,'¿Qué número continúa la serie? 38, 42, 46, 50, 54, …','["60", "56", "58", "59"]'::jsonb,2,'Psicotécnicos','Cada término suma 4 al anterior: 54 + 4 = 58.',null),
-('aux-age:29-ea76575a4d','aux-age',29,'¿Qué número continúa la serie? 6, 18, 30, 42, 54, …','["65", "64", "66", "67"]'::jsonb,2,'Psicotécnicos','Cada término suma 12 al anterior: 54 + 12 = 66.',null),
-('aux-age:29-dbf7cea081','aux-age',29,'¿Qué número continúa la serie? 36, 39, 42, 45, 48, …','["50", "51", "55", "52"]'::jsonb,1,'Psicotécnicos','Cada término suma 3 al anterior: 48 + 3 = 51.',null),
-('aux-age:29-d6ceda9c06','aux-age',29,'¿Qué número continúa la serie? 2, 8, 14, 20, 26, …','["32", "30", "33", "38"]'::jsonb,0,'Psicotécnicos','Cada término suma 6 al anterior: 26 + 6 = 32.',null),
-('aux-age:29-65be495e7c','aux-age',29,'¿Qué número continúa la serie? 34, 45, 56, 67, 78, …','["78", "91", "89", "88"]'::jsonb,2,'Psicotécnicos','Cada término suma 11 al anterior: 78 + 11 = 89.',null),
-('aux-age:29-e4d47eb548','aux-age',29,'¿Qué número continúa la serie? 2, 6, 18, 54, 162, …','["486", "405", "483", "648"]'::jsonb,0,'Psicotécnicos','Cada término se multiplica por 3: 162 × 3 = 486.',null),
-('aux-age:29-0f83f960c4','aux-age',29,'¿Qué número continúa la serie? 4, 12, 36, 108, 324, …','["969", "1.296", "975", "972"]'::jsonb,3,'Psicotécnicos','Cada término se multiplica por 3: 324 × 3 = 972.',null),
-('aux-age:29-3d6edadac1','aux-age',29,'¿Qué número continúa la serie? 2, 4, 8, 16, 32, …','["62", "48", "66", "64"]'::jsonb,3,'Psicotécnicos','Cada término se multiplica por 2: 32 × 2 = 64.',null),
-('aux-age:29-eba57330b9','aux-age',29,'¿Qué número continúa la serie? 4, 8, 16, 32, 64, …','["126", "96", "128", "192"]'::jsonb,2,'Psicotécnicos','Cada término se multiplica por 2: 64 × 2 = 128.',null),
-('aux-age:29-05d0028ce1','aux-age',29,'¿Qué número continúa la serie? 3, 9, 27, 81, 243, …','["726", "608", "729", "972"]'::jsonb,2,'Psicotécnicos','Cada término se multiplica por 3: 243 × 3 = 729.',null),
-('aux-age:29-1290ccc957','aux-age',29,'¿Qué número continúa la serie? 5, 15, 45, 135, 405, …','["1.212", "1.218", "1.215", "1.013"]'::jsonb,2,'Psicotécnicos','Cada término se multiplica por 3: 405 × 3 = 1.215.',null),
-('aux-age:29-f949e584b1','aux-age',29,'¿Qué número continúa la serie? 15, 17, 22, 30, 41, 55, …','["73", "66", "69", "72"]'::jsonb,3,'Psicotécnicos','Las diferencias entre términos aumentan de 3 en 3 (2, 5, 8, 11, 14…); la siguiente diferencia es 17: 55 + 17 = 72.',null),
-('aux-age:29-6ca736df3d','aux-age',29,'¿Qué número continúa la serie? 7, 10, 15, 22, 31, 42, …','["55", "51", "54", "53"]'::jsonb,0,'Psicotécnicos','Las diferencias entre términos aumentan de 2 en 2 (3, 5, 7, 9, 11…); la siguiente diferencia es 13: 42 + 13 = 55.',null),
-('aux-age:29-82e33b10a6','aux-age',29,'¿Qué número continúa la serie? 9, 11, 14, 18, 23, 29, …','["37", "36", "38", "34"]'::jsonb,1,'Psicotécnicos','Las diferencias entre términos aumentan de 1 en 1 (2, 3, 4, 5, 6…); la siguiente diferencia es 7: 29 + 7 = 36.',null),
-('aux-age:29-fb568258e4','aux-age',29,'¿Qué número continúa la serie? 14, 15, 17, 20, 24, 29, …','["37", "36", "35", "34"]'::jsonb,2,'Psicotécnicos','Las diferencias entre términos aumentan de 1 en 1 (1, 2, 3, 4, 5…); la siguiente diferencia es 6: 29 + 6 = 35.',null),
-('aux-age:29-bb8d92cf83','aux-age',29,'¿Qué número continúa la serie? 1, 5, 12, 22, 35, 51, …','["71", "64", "70", "67"]'::jsonb,2,'Psicotécnicos','Las diferencias entre términos aumentan de 3 en 3 (4, 7, 10, 13, 16…); la siguiente diferencia es 19: 51 + 19 = 70.',null),
-('aux-age:29-77b32019d7','aux-age',29,'¿Qué número continúa la serie? 18, 22, 27, 33, 40, 48, …','["59", "55", "58", "57"]'::jsonb,3,'Psicotécnicos','Las diferencias entre términos aumentan de 1 en 1 (4, 5, 6, 7, 8…); la siguiente diferencia es 9: 48 + 9 = 57.',null),
-('aux-age:29-ac4c36a51e','aux-age',29,'¿Qué número continúa la serie? 5, 24, 8, 27, 11, 30, 14, …','["17", "33", "34", "36"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: en las posiciones pares el término varía +3 cada vez (24, 27, 30…), así que el siguiente es 33.',null),
-('aux-age:29-139990ac5e','aux-age',29,'¿Qué número continúa la serie? 3, 25, 6, 27, 9, 29, 12, …','["33", "31", "29", "15"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: en las posiciones pares el término varía +2 cada vez (25, 27, 29…), así que el siguiente es 31.',null),
-('aux-age:29-f37daf5914','aux-age',29,'¿Qué número continúa la serie? 12, 23, 15, 20, 18, 17, 21, …','["17", "11", "14", "24"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: en las posiciones pares el término varía -3 cada vez (23, 20, 17…), así que el siguiente es 14.',null),
-('aux-age:29-9165cd88b7','aux-age',29,'¿Qué número continúa la serie? 4, 31, 8, 28, 12, 25, 16, …','["20", "21", "22", "25"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: en las posiciones pares el término varía -3 cada vez (31, 28, 25…), así que el siguiente es 22.',null),
-('aux-age:29-e9d2d44ca2','aux-age',29,'¿Qué número continúa la serie? 2, 41, 5, 38, 8, 35, 11, …','["35", "31", "14", "32"]'::jsonb,3,'Psicotécnicos','Son dos series intercaladas: en las posiciones pares el término varía -3 cada vez (41, 38, 35…), así que el siguiente es 32.',null),
-('aux-age:29-0437aed1a3','aux-age',29,'¿Qué número continúa la serie? 13, 53, 16, 56, 19, 59, 22, …','["61", "62", "59", "65"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: en las posiciones pares el término varía +3 cada vez (53, 56, 59…), así que el siguiente es 62.',null),
-('aux-age:29-8ae8438e59','aux-age',29,'¿Qué número continúa la serie? 4, 10, 22, 46, 94, …','["195", "190", "191", "192"]'::jsonb,1,'Psicotécnicos','Cada término es el anterior multiplicado por 2 más 2: 94 × 2 + 2 = 190.',null),
-('aux-age:29-7a912c5b77','aux-age',29,'¿Qué número continúa la serie? 2, 5, 11, 23, 47, …','["97", "96", "98", "95"]'::jsonb,3,'Psicotécnicos','Cada término es el anterior multiplicado por 2 más 1: 47 × 2 + 1 = 95.',null),
-('aux-age:29-c14a8734fb','aux-age',29,'¿Qué número continúa la serie? 2, 6, 14, 30, 62, …','["126", "128", "124", "131"]'::jsonb,0,'Psicotécnicos','Cada término es el anterior multiplicado por 2 más 2: 62 × 2 + 2 = 126.',null),
-('aux-age:29-2ad14d2392','aux-age',29,'¿Qué número continúa la serie? 4, 11, 25, 53, 109, …','["219", "221", "222", "218"]'::jsonb,1,'Psicotécnicos','Cada término es el anterior multiplicado por 2 más 3: 109 × 2 + 3 = 221.',null),
-('aux-age:29-4ba2fee2cc','aux-age',29,'¿Qué número continúa la serie? 9, 16, 25, 36, 49, …','["63", "67", "64", "62"]'::jsonb,2,'Psicotécnicos','Son los cuadrados de números consecutivos: 8² = 64.',null),
-('aux-age:29-0d09e43028','aux-age',29,'¿Qué número continúa la serie? 15, 24, 35, 48, 63, …','["78", "80", "63", "81"]'::jsonb,1,'Psicotécnicos','Son los cuadrados menos 1 de números consecutivos: 9² − 1 = 80.',null),
-('aux-age:29-1334cee91f','aux-age',29,'¿Qué número continúa la serie? 1, 4, 9, 16, 25, …','["39", "25", "36", "37"]'::jsonb,2,'Psicotécnicos','Son los cuadrados de números consecutivos: 6² = 36.',null),
-('aux-age:29-9fc0c9038d','aux-age',29,'¿Qué número continúa la serie? 11, 18, 27, 38, 51, …','["65", "69", "66", "64"]'::jsonb,2,'Psicotécnicos','Son los cuadrados más 2 de números consecutivos: 8² + 2 = 66.',null),
-('aux-age:29-9002f5257c','aux-age',29,'¿Qué número continúa la serie? 3, 7, 10, 17, 27, 44, 71, …','["142", "113", "115", "114"]'::jsonb,2,'Psicotécnicos','Cada término es la suma de los dos anteriores: 44 + 71 = 115.',null),
-('aux-age:29-9f6904d471','aux-age',29,'¿Qué número continúa la serie? 3, 2, 5, 7, 12, 19, 31, …','["62", "48", "50", "51"]'::jsonb,2,'Psicotécnicos','Cada término es la suma de los dos anteriores: 19 + 31 = 50.',null),
-('aux-age:29-b6b6561ec6','aux-age',29,'¿Qué número continúa la serie? 4, 5, 9, 14, 23, 37, 60, …','["96", "98", "97", "120"]'::jsonb,2,'Psicotécnicos','Cada término es la suma de los dos anteriores: 37 + 60 = 97.',null),
-('aux-age:29-89e5a3a3ce','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? C, F, I, L, Ñ, …','["Q", "R", "T", "O"]'::jsonb,0,'Psicotécnicos','Se avanza de 3 en 3 letras (saltando 2): tras la Ñ viene la Q. Recuerda contar la Ñ.',null),
-('aux-age:29-6ab276470e','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? K, N, P, S, V, …','["X", "Z", "A", "Y"]'::jsonb,3,'Psicotécnicos','Se avanza de 3 en 3 letras (saltando 2): tras la V viene la Y. Recuerda contar la Ñ.',null),
-('aux-age:29-2a1cc296b2','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? A, C, E, G, I, …','["J", "I", "M", "K"]'::jsonb,3,'Psicotécnicos','Se avanza de 2 en 2 letras (saltando 1): tras la I viene la K. Recuerda contar la Ñ.',null),
-('aux-age:29-2e7e708448','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, F, J, N, Q, …','["Y", "S", "U", "V"]'::jsonb,2,'Psicotécnicos','Se avanza de 4 en 4 letras (saltando 3): tras la Q viene la U. Recuerda contar la Ñ.',null),
-('aux-age:29-82ac1afe25','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? K, M, Ñ, P, R, …','["T", "R", "S", "V"]'::jsonb,0,'Psicotécnicos','Se avanza de 2 en 2 letras (saltando 1): tras la R viene la T. Recuerda contar la Ñ.',null),
-('aux-age:29-0091d53061','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? E, I, M, P, T, …','["Y", "Z", "X", "W"]'::jsonb,2,'Psicotécnicos','Se avanza de 4 en 4 letras (saltando 3): tras la T viene la X. Recuerda contar la Ñ.',null),
-('aux-age:29-0cef79d190','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? G, I, K, M, Ñ, …','["Q", "O", "Ñ", "P"]'::jsonb,3,'Psicotécnicos','Se avanza de 2 en 2 letras (saltando 1): tras la Ñ viene la P. Recuerda contar la Ñ.',null),
-('aux-age:29-6040b4a7c4','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, I, L, Ñ, Q, …','["T", "S", "V", "U"]'::jsonb,0,'Psicotécnicos','Se avanza de 3 en 3 letras (saltando 2): tras la Q viene la T. Recuerda contar la Ñ.',null),
-('aux-age:29-1c8846f09a','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? H, K, N, P, S, …','["T", "Y", "V", "U"]'::jsonb,2,'Psicotécnicos','Se avanza de 3 en 3 letras (saltando 2): tras la S viene la V. Recuerda contar la Ñ.',null),
-('aux-age:29-bf1705898c','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? C, E, G, I, K, …','["M", "Ñ", "K", "N"]'::jsonb,0,'Psicotécnicos','Se avanza de 2 en 2 letras (saltando 1): tras la K viene la M. Recuerda contar la Ñ.',null),
-('aux-age:29-fe252e6105','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, E, H, K, N, …','["S", "P", "Ñ", "O"]'::jsonb,1,'Psicotécnicos','Se avanza de 3 en 3 letras (saltando 2): tras la N viene la P. Recuerda contar la Ñ.',null),
-('aux-age:29-cac46df4bd','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, Y, G, W, H, U, …','["H", "S", "I", "J"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la Y. Toca la primera: I.',null),
-('aux-age:29-dc3eda0b8a','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? C, T, E, S, G, R, …','["H", "J", "Q", "I"]'::jsonb,3,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la C (C, E, G…) y otra retrocede 1 desde la T. Toca la primera: I.',null),
-('aux-age:29-9b8c5053f1','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, S, G, Q, H, O, …','["I", "H", "N", "J"]'::jsonb,0,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la S. Toca la primera: I.',null),
-('aux-age:29-ec538760d3','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, Z, G, X, H, V, …','["H", "T", "I", "J"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la Z. Toca la primera: I.',null),
-('aux-age:29-fec0640514','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, X, F, V, H, T, …','["J", "K", "L", "I"]'::jsonb,0,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la D (D, F, H…) y otra retrocede 2 desde la X. Toca la primera: J.',null),
-('aux-age:29-9338e856aa','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, T, D, S, F, R, …','["G", "H", "J", "Q"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la B (B, D, F…) y otra retrocede 1 desde la T. Toca la primera: H.',null),
-('aux-age:29-32d3f81a14','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, Y, F, W, H, U, …','["S", "K", "J", "I"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la D (D, F, H…) y otra retrocede 2 desde la Y. Toca la primera: J.',null),
-('aux-age:29-e2b919829b','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? G, Y, H, X, I, W, …','["I", "J", "K", "V"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la G (G, H, I…) y otra retrocede 1 desde la Y. Toca la primera: J.',null),
-('aux-age:29-51c920e377','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, S, E, Q, F, O, …','["H", "G", "F", "N"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la D (D, E, F…) y otra retrocede 2 desde la S. Toca la primera: G.',null),
-('aux-age:29-68da2cdc55','aux-age',29,'¿Cuánto es el 35 % de 160?','["52", "56", "51,2", "64"]'::jsonb,1,'Psicotécnicos','160 × 35 / 100 = 56.',null),
-('aux-age:29-34c36a8bd8','aux-age',29,'¿Cuánto es el 25 % de 160?','["35,2", "40", "48", "36"]'::jsonb,1,'Psicotécnicos','160 × 25 / 100 = 40.',null),
 ('aux-age:29-506b7de0d7','aux-age',29,'¿Cuánto es el 18 % de 640?','["115,2", "96", "99,2", "147,2"]'::jsonb,0,'Psicotécnicos','640 × 18 / 100 = 115,2.',null),
 ('aux-age:29-4f01be668d','aux-age',29,'¿Cuánto es el 25 % de 720?','["216", "180", "162", "158,4"]'::jsonb,1,'Psicotécnicos','720 × 25 / 100 = 180.',null),
 ('aux-age:29-28983e4457','aux-age',29,'¿Cuánto es el 12 % de 240?','["28,8", "22,8", "21,6", "40,8"]'::jsonb,0,'Psicotécnicos','240 × 12 / 100 = 28,8.',null),
@@ -191,9 +125,7 @@ Ventanilla 1 | 155 | 194 | 234 | 98
 Ventanilla 2 | 153 | 204 | 141 | 228
 Ventanilla 3 | 117 | 102 | 170 | 192
 Ventanilla 4 | 207 | 134 | 240 | 105
-¿Cuántas personas hubo en total en mayo?','["795", "785", "775", "805"]'::jsonb,1,'Psicotécnicos','234 + 141 + 170 + 240 = 785.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+¿Cuántas personas hubo en total en mayo?','["795", "785", "775", "805"]'::jsonb,1,'Psicotécnicos','234 + 141 + 170 + 240 = 785.',null),
 ('aux-age:29-38e80c44ad','aux-age',29,'La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:
 Ventanilla | Marzo | Abril | Mayo | Junio
 Ventanilla 1 | 155 | 194 | 234 | 98
@@ -589,7 +521,9 @@ Ventanilla 4 | 141 | 121 | 82 | 101
 ('aux-age:29-c156494e17','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Olmedo, Osorio, Orozco, Olmo, Oliver, Oliva','["Orozco", "Oliver", "Olmedo", "Oliva"]'::jsonb,1,'Psicotécnicos','Orden alfabético: Oliva, Oliver, Olmedo, Olmo, Orozco, Osorio. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-6ffc960571','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Garcés, Gallardo, Gamero, Galán, Gascón, García','["Galán", "Garcés", "Gallardo", "Gamero"]'::jsonb,2,'Psicotécnicos','Orden alfabético: Galán, Gallardo, Gamero, Garcés, García, Gascón. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-193ef9831a','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Mata, Márquez, Marco, Mariño, Matas, Martínez','["Márquez", "Mariño", "Mata", "Martínez"]'::jsonb,0,'Psicotécnicos','Orden alfabético: Marco, Mariño, Márquez, Martínez, Mata, Matas. La tilde no cuenta y la Ñ va después de la N.',null),
-('aux-age:29-84a3a89e06','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Pelayo, Pereira, Penalva, Peñalver, Perea, Peña','["Pelayo", "Peña", "Peñalver", "Penalva"]'::jsonb,3,'Psicotécnicos','Orden alfabético: Pelayo, Penalva, Peña, Peñalver, Perea, Pereira. La tilde no cuenta y la Ñ va después de la N.',null),
+('aux-age:29-84a3a89e06','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Pelayo, Pereira, Penalva, Peñalver, Perea, Peña','["Pelayo", "Peña", "Peñalver", "Penalva"]'::jsonb,3,'Psicotécnicos','Orden alfabético: Pelayo, Penalva, Peña, Peñalver, Perea, Pereira. La tilde no cuenta y la Ñ va después de la N.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('aux-age:29-6666d45866','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Sanz, Sainz, Saez, Salinas, Salas, Sandoval','["Sainz", "Saez", "Salinas", "Salas"]'::jsonb,0,'Psicotécnicos','Orden alfabético: Saez, Sainz, Salas, Salinas, Sandoval, Sanz. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-76f7bb5b54','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Rubio, Rojo, Roldán, Rosales, Rosa, Romo','["Romo", "Rosa", "Roldán", "Rubio"]'::jsonb,0,'Psicotécnicos','Orden alfabético: Rojo, Roldán, Romo, Rosa, Rosales, Rubio. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-0f69863eec','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Núñez, Nadal, Navas, Nogales, Naranjo, Nava','["Navas", "Nava", "Nogales", "Naranjo"]'::jsonb,0,'Psicotécnicos','Orden alfabético: Nadal, Naranjo, Nava, Navas, Nogales, Núñez. La tilde no cuenta y la Ñ va después de la N.',null),
@@ -727,9 +661,7 @@ Con esta clave, ¿qué palabra corresponde al código 0585?','["TASA", "ATSA", "
 ('aux-age:29-db507db18c','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, E, G, J, N, …','["P", "R", "Q", "S"]'::jsonb,1,'Psicotécnicos','Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la N viene la R.',null),
 ('aux-age:29-ab515b7233','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, C, E, H, L, …','["O", "Q", "Ñ", "P"]'::jsonb,3,'Psicotécnicos','Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la L viene la P.',null),
 ('aux-age:29-e0a9c074a9','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? A, B, D, G, K, …','["N", "O", "P", "Ñ"]'::jsonb,1,'Psicotécnicos','Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la K viene la O.',null),
-('aux-age:29-65c0b65d4d','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? E, F, H, K, Ñ, …','["Q", "R", "T", "S"]'::jsonb,3,'Psicotécnicos','Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la Ñ viene la S.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+('aux-age:29-65c0b65d4d','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? E, F, H, K, Ñ, …','["Q", "R", "T", "S"]'::jsonb,3,'Psicotécnicos','Los saltos aumentan de uno en uno (se avanzan 1, 2, 3, 4 letras…); ahora toca avanzar 5: tras la Ñ viene la S.',null),
 ('aux-age:29-043dbbc7ad','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? X, V, T, R, P, …','["N", "Q", "Ñ", "O"]'::jsonb,2,'Psicotécnicos','Se retroceden 2 letras cada vez: antes de la P, contando hacia atrás 2, está la Ñ. Recuerda la Ñ.',null),
 ('aux-age:29-78213e2fb8','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? U, S, Q, O, N, …','["L", "K", "M", "Ñ"]'::jsonb,0,'Psicotécnicos','Se retroceden 2 letras cada vez: antes de la N, contando hacia atrás 2, está la L. Recuerda la Ñ.',null),
 ('aux-age:29-fe0168ec05','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? W, T, Q, Ñ, L, …','["H", "I", "J", "M"]'::jsonb,1,'Psicotécnicos','Se retroceden 3 letras cada vez: antes de la L, contando hacia atrás 3, está la I. Recuerda la Ñ.',null),
@@ -795,7 +727,9 @@ insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,artic
 ('aux-age:29-d4fdc97610','aux-age',29,'Una sesión de formación empieza a las 08:35 y dura 2 horas y 35 minutos. ¿A qué hora termina?','["11:00", "10:10", "11:10", "11:20"]'::jsonb,2,'Psicotécnicos','08:35 + 2 h = 10:35; + 35 min = 11:10.',null),
 ('aux-age:29-d473decd26','aux-age',29,'Entre dos hermanos suman 38 años y el mayor tiene 2 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["17 años", "18 años", "19 años", "20 años"]'::jsonb,1,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (38 − 2) / 2 = 18 años.',null),
 ('aux-age:29-7f841065cc','aux-age',29,'Entre dos hermanos suman 42 años y el mayor tiene 10 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["16 años", "21 años", "26 años", "15 años"]'::jsonb,0,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (42 − 10) / 2 = 16 años.',null),
-('aux-age:29-80f47ca347','aux-age',29,'Entre dos hermanos suman 44 años y el mayor tiene 8 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["22 años", "17 años", "18 años", "26 años"]'::jsonb,2,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (44 − 8) / 2 = 18 años.',null),
+('aux-age:29-80f47ca347','aux-age',29,'Entre dos hermanos suman 44 años y el mayor tiene 8 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["22 años", "17 años", "18 años", "26 años"]'::jsonb,2,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (44 − 8) / 2 = 18 años.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('aux-age:29-7e6c024e90','aux-age',29,'Entre dos hermanos suman 39 años y el mayor tiene 3 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["18 años", "17 años", "21 años", "19 años"]'::jsonb,0,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (39 − 3) / 2 = 18 años.',null),
 ('aux-age:29-dcbb5dbd9e','aux-age',29,'Entre dos hermanos suman 68 años y el mayor tiene 8 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["29 años", "30 años", "34 años", "38 años"]'::jsonb,1,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (68 − 8) / 2 = 30 años.',null),
 ('aux-age:29-7e05ebb2b4','aux-age',29,'Entre dos hermanos suman 65 años y el mayor tiene 5 años más que el pequeño. ¿Cuántos años tiene el pequeño?','["32 años", "29 años", "30 años", "35 años"]'::jsonb,2,'Psicotécnicos','Si al total se le quita la diferencia quedan dos edades iguales: (65 − 5) / 2 = 30 años.',null),
@@ -955,5 +889,696 @@ Licencias | 1 | C | de la 6 a la 17
 Contratos | 2 | B | de la 9 a la 17
 Becas | 3 | B | de la 9 a la 20
 Tributos | 3 | C | de la 6 a la 23
-¿Cuántas estanterías hay en total en la planta 1?','["58", "49", "47", "48"]'::jsonb,3,'Psicotécnicos','Se suman las estanterías de las materias de la planta 1: 21 + 15 + 12 = 48.',null)
+¿Cuántas estanterías hay en total en la planta 1?','["58", "49", "47", "48"]'::jsonb,3,'Psicotécnicos','Se suman las estanterías de las materias de la planta 1: 21 + 15 + 12 = 48.',null),
+('aux-age:29-3a2e9217d3','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Urbanismo | 1 | A | de la 7 a la 27
+Nóminas | 1 | B | de la 2 a la 16
+Licencias | 1 | C | de la 6 a la 17
+Contratos | 2 | B | de la 9 a la 17
+Becas | 3 | B | de la 9 a la 20
+Tributos | 3 | C | de la 6 a la 23
+¿Cuál de estos códigos NO puede existir en el archivo?','["3-C-25", "2-B-16", "3-C-07", "3-B-12"]'::jsonb,0,'Psicotécnicos','En la planta 3, pasillo C (Tributos), las estanterías solo llegan a la 23; los demás códigos están dentro de los tramos de la tabla.',null),
+('aux-age:29-cdbaaec1a4','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Nóminas | 1 | B | de la 3 a la 9
+Subvenciones | 2 | A | de la 9 a la 21
+Patrimonio | 2 | B | de la 8 a la 23
+Becas | 2 | C | de la 5 a la 16
+Urbanismo | 3 | A | de la 6 a la 12
+Tributos | 3 | B | de la 1 a la 10
+¿Qué código corresponde a un expediente de Patrimonio guardado en su estantería n.º 19?','["2-B-19", "B-2-19", "2-C-19", "1-B-19"]'::jsonb,0,'Psicotécnicos','Patrimonio está en la planta 2, pasillo B: 2-B-19.',null),
+('aux-age:29-caf67e7be8','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Nóminas | 1 | B | de la 3 a la 9
+Subvenciones | 2 | A | de la 9 a la 21
+Patrimonio | 2 | B | de la 8 a la 23
+Becas | 2 | C | de la 5 a la 16
+Urbanismo | 3 | A | de la 6 a la 12
+Tributos | 3 | B | de la 1 a la 10
+¿De qué materia es el expediente con código 2-C-10?','["Patrimonio", "Becas", "Nóminas", "Urbanismo"]'::jsonb,1,'Psicotécnicos','La planta 2, pasillo C, corresponde a Becas, que ocupa de la estantería 5 a la 16.',null),
+('aux-age:29-49bc0232d6','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Nóminas | 1 | B | de la 3 a la 9
+Subvenciones | 2 | A | de la 9 a la 21
+Patrimonio | 2 | B | de la 8 a la 23
+Becas | 2 | C | de la 5 a la 16
+Urbanismo | 3 | A | de la 6 a la 12
+Tributos | 3 | B | de la 1 a la 10
+¿Cuántas estanterías ocupa Becas?','["12", "13", "11", "14"]'::jsonb,0,'Psicotécnicos','De la 5 a la 16, ambas incluidas: 16 − 5 + 1 = 12.',null),
+('aux-age:29-a7cf03eac5','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Nóminas | 1 | B | de la 3 a la 9
+Subvenciones | 2 | A | de la 9 a la 21
+Patrimonio | 2 | B | de la 8 a la 23
+Becas | 2 | C | de la 5 a la 16
+Urbanismo | 3 | A | de la 6 a la 12
+Tributos | 3 | B | de la 1 a la 10
+¿Qué materia ocupa más estanterías?','["Subvenciones", "Tributos", "Nóminas", "Patrimonio"]'::jsonb,3,'Psicotécnicos','Estanterías por materia: Nóminas 7, Subvenciones 13, Patrimonio 16, Becas 12, Urbanismo 7, Tributos 10.',null),
+('aux-age:29-678a8018b4','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Nóminas | 1 | B | de la 3 a la 9
+Subvenciones | 2 | A | de la 9 a la 21
+Patrimonio | 2 | B | de la 8 a la 23
+Becas | 2 | C | de la 5 a la 16
+Urbanismo | 3 | A | de la 6 a la 12
+Tributos | 3 | B | de la 1 a la 10
+¿Cuántas estanterías hay en total en la planta 3?','["27", "16", "17", "18"]'::jsonb,2,'Psicotécnicos','Se suman las estanterías de las materias de la planta 3: 7 + 10 = 17.',null),
+('aux-age:29-2df9fd1e3c','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Nóminas | 1 | B | de la 3 a la 9
+Subvenciones | 2 | A | de la 9 a la 21
+Patrimonio | 2 | B | de la 8 a la 23
+Becas | 2 | C | de la 5 a la 16
+Urbanismo | 3 | A | de la 6 a la 12
+Tributos | 3 | B | de la 1 a la 10
+¿Cuál de estos códigos NO puede existir en el archivo?','["2-C-13", "2-B-15", "3-B-09", "3-B-11"]'::jsonb,3,'Psicotécnicos','En la planta 3, pasillo B (Tributos), las estanterías solo llegan a la 10; los demás códigos están dentro de los tramos de la tabla.',null),
+('aux-age:29-8c1deae35d','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Urbanismo | 1 | A | de la 8 a la 21
+Sanciones | 1 | C | de la 3 a la 13
+Licencias | 2 | C | de la 4 a la 9
+Contratos | 3 | A | de la 6 a la 15
+Becas | 3 | B | de la 9 a la 18
+Patrimonio | 3 | C | de la 4 a la 18
+¿Qué código corresponde a un expediente de Patrimonio guardado en su estantería n.º 12?','["1-C-12", "3-A-12", "C-3-12", "3-C-12"]'::jsonb,3,'Psicotécnicos','Patrimonio está en la planta 3, pasillo C: 3-C-12.',null),
+('aux-age:29-0ecba7e6fa','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Urbanismo | 1 | A | de la 8 a la 21
+Sanciones | 1 | C | de la 3 a la 13
+Licencias | 2 | C | de la 4 a la 9
+Contratos | 3 | A | de la 6 a la 15
+Becas | 3 | B | de la 9 a la 18
+Patrimonio | 3 | C | de la 4 a la 18
+¿De qué materia es el expediente con código 1-C-06?','["Urbanismo", "Licencias", "Sanciones", "Contratos"]'::jsonb,2,'Psicotécnicos','La planta 1, pasillo C, corresponde a Sanciones, que ocupa de la estantería 3 a la 13.',null),
+('aux-age:29-2d819ff439','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Urbanismo | 1 | A | de la 8 a la 21
+Sanciones | 1 | C | de la 3 a la 13
+Licencias | 2 | C | de la 4 a la 9
+Contratos | 3 | A | de la 6 a la 15
+Becas | 3 | B | de la 9 a la 18
+Patrimonio | 3 | C | de la 4 a la 18
+¿Cuántas estanterías ocupa Patrimonio?','["17", "14", "15", "16"]'::jsonb,2,'Psicotécnicos','De la 4 a la 18, ambas incluidas: 18 − 4 + 1 = 15.',null),
+('aux-age:29-c0a8319ffc','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Urbanismo | 1 | A | de la 8 a la 21
+Sanciones | 1 | C | de la 3 a la 13
+Licencias | 2 | C | de la 4 a la 9
+Contratos | 3 | A | de la 6 a la 15
+Becas | 3 | B | de la 9 a la 18
+Patrimonio | 3 | C | de la 4 a la 18
+¿Qué materia ocupa más estanterías?','["Becas", "Patrimonio", "Licencias", "Contratos"]'::jsonb,1,'Psicotécnicos','Estanterías por materia: Urbanismo 14, Sanciones 11, Licencias 6, Contratos 10, Becas 10, Patrimonio 15.',null),
+('aux-age:29-3d367bf69b','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Urbanismo | 1 | A | de la 8 a la 21
+Sanciones | 1 | C | de la 3 a la 13
+Licencias | 2 | C | de la 4 a la 9
+Contratos | 3 | A | de la 6 a la 15
+Becas | 3 | B | de la 9 a la 18
+Patrimonio | 3 | C | de la 4 a la 18
+¿Cuántas estanterías hay en total en la planta 1?','["25", "35", "26", "24"]'::jsonb,0,'Psicotécnicos','Se suman las estanterías de las materias de la planta 1: 14 + 11 = 25.',null),
+('aux-age:29-36a88352b3','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Urbanismo | 1 | A | de la 8 a la 21
+Sanciones | 1 | C | de la 3 a la 13
+Licencias | 2 | C | de la 4 a la 9
+Contratos | 3 | A | de la 6 a la 15
+Becas | 3 | B | de la 9 a la 18
+Patrimonio | 3 | C | de la 4 a la 18
+¿Cuál de estos códigos NO puede existir en el archivo?','["3-A-11", "2-C-04", "3-B-21", "1-A-16"]'::jsonb,2,'Psicotécnicos','En la planta 3, pasillo B (Becas), las estanterías solo llegan a la 18; los demás códigos están dentro de los tramos de la tabla.',null),
+('aux-age:29-4ceefcb285','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 11
+Sanciones | 1 | B | de la 8 a la 20
+Nóminas | 1 | C | de la 7 a la 12
+Tributos | 2 | A | de la 4 a la 18
+Becas | 3 | A | de la 2 a la 7
+Personal | 3 | C | de la 4 a la 20
+¿Qué código corresponde a un expediente de Subvenciones guardado en su estantería n.º 10?','["1-B-10", "A-1-10", "1-A-10", "3-C-10"]'::jsonb,2,'Psicotécnicos','Subvenciones está en la planta 1, pasillo A: 1-A-10.',null),
+('aux-age:29-87eded9549','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 11
+Sanciones | 1 | B | de la 8 a la 20
+Nóminas | 1 | C | de la 7 a la 12
+Tributos | 2 | A | de la 4 a la 18
+Becas | 3 | A | de la 2 a la 7
+Personal | 3 | C | de la 4 a la 20
+¿De qué materia es el expediente con código 1-C-07?','["Subvenciones", "Nóminas", "Sanciones", "Tributos"]'::jsonb,1,'Psicotécnicos','La planta 1, pasillo C, corresponde a Nóminas, que ocupa de la estantería 7 a la 12.',null),
+('aux-age:29-71df3b3195','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 11
+Sanciones | 1 | B | de la 8 a la 20
+Nóminas | 1 | C | de la 7 a la 12
+Tributos | 2 | A | de la 4 a la 18
+Becas | 3 | A | de la 2 a la 7
+Personal | 3 | C | de la 4 a la 20
+¿Cuántas estanterías ocupa Sanciones?','["14", "13", "15", "12"]'::jsonb,1,'Psicotécnicos','De la 8 a la 20, ambas incluidas: 20 − 8 + 1 = 13.',null),
+('aux-age:29-541328d3d9','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 11
+Sanciones | 1 | B | de la 8 a la 20
+Nóminas | 1 | C | de la 7 a la 12
+Tributos | 2 | A | de la 4 a la 18
+Becas | 3 | A | de la 2 a la 7
+Personal | 3 | C | de la 4 a la 20
+¿Qué materia ocupa más estanterías?','["Sanciones", "Personal", "Tributos", "Nóminas"]'::jsonb,1,'Psicotécnicos','Estanterías por materia: Subvenciones 7, Sanciones 13, Nóminas 6, Tributos 15, Becas 6, Personal 17.',null),
+('aux-age:29-636e47fd3d','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 11
+Sanciones | 1 | B | de la 8 a la 20
+Nóminas | 1 | C | de la 7 a la 12
+Tributos | 2 | A | de la 4 a la 18
+Becas | 3 | A | de la 2 a la 7
+Personal | 3 | C | de la 4 a la 20
+¿Cuántas estanterías hay en total en la planta 1?','["26", "36", "25", "27"]'::jsonb,0,'Psicotécnicos','Se suman las estanterías de las materias de la planta 1: 7 + 13 + 6 = 26.',null),
+('aux-age:29-6d818fc67d','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 11
+Sanciones | 1 | B | de la 8 a la 20
+Nóminas | 1 | C | de la 7 a la 12
+Tributos | 2 | A | de la 4 a la 18
+Becas | 3 | A | de la 2 a la 7
+Personal | 3 | C | de la 4 a la 20
+¿Cuál de estos códigos NO puede existir en el archivo?','["2-A-06", "1-B-21", "3-A-04", "1-A-09"]'::jsonb,1,'Psicotécnicos','En la planta 1, pasillo B (Sanciones), las estanterías solo llegan a la 20; los demás códigos están dentro de los tramos de la tabla.',null),
+('aux-age:29-8853caf71f','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 14
+Personal | 1 | B | de la 1 a la 9
+Becas | 1 | C | de la 4 a la 12
+Nóminas | 2 | B | de la 8 a la 17
+Tributos | 2 | C | de la 5 a la 15
+Urbanismo | 3 | B | de la 5 a la 14
+¿Qué código corresponde a un expediente de Personal guardado en su estantería n.º 8?','["B-1-08", "1-A-08", "1-B-08", "1-C-08"]'::jsonb,2,'Psicotécnicos','Personal está en la planta 1, pasillo B: 1-B-08.',null),
+('aux-age:29-6a61db02af','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 14
+Personal | 1 | B | de la 1 a la 9
+Becas | 1 | C | de la 4 a la 12
+Nóminas | 2 | B | de la 8 a la 17
+Tributos | 2 | C | de la 5 a la 15
+Urbanismo | 3 | B | de la 5 a la 14
+¿De qué materia es el expediente con código 2-B-13?','["Subvenciones", "Becas", "Nóminas", "Personal"]'::jsonb,2,'Psicotécnicos','La planta 2, pasillo B, corresponde a Nóminas, que ocupa de la estantería 8 a la 17.',null),
+('aux-age:29-0fb3996f36','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 14
+Personal | 1 | B | de la 1 a la 9
+Becas | 1 | C | de la 4 a la 12
+Nóminas | 2 | B | de la 8 a la 17
+Tributos | 2 | C | de la 5 a la 15
+Urbanismo | 3 | B | de la 5 a la 14
+¿Cuántas estanterías ocupa Tributos?','["13", "10", "12", "11"]'::jsonb,3,'Psicotécnicos','De la 5 a la 15, ambas incluidas: 15 − 5 + 1 = 11.',null),
+('aux-age:29-6bf52c2bea','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 14
+Personal | 1 | B | de la 1 a la 9
+Becas | 1 | C | de la 4 a la 12
+Nóminas | 2 | B | de la 8 a la 17
+Tributos | 2 | C | de la 5 a la 15
+Urbanismo | 3 | B | de la 5 a la 14
+¿Qué materia ocupa más estanterías?','["Tributos", "Becas", "Urbanismo", "Nóminas"]'::jsonb,0,'Psicotécnicos','Estanterías por materia: Subvenciones 10, Personal 9, Becas 9, Nóminas 10, Tributos 11, Urbanismo 10.',null),
+('aux-age:29-64ad0a2311','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 14
+Personal | 1 | B | de la 1 a la 9
+Becas | 1 | C | de la 4 a la 12
+Nóminas | 2 | B | de la 8 a la 17
+Tributos | 2 | C | de la 5 a la 15
+Urbanismo | 3 | B | de la 5 a la 14
+¿Cuántas estanterías hay en total en la planta 3?','["20", "10", "9", "11"]'::jsonb,1,'Psicotécnicos','En la planta 3 solo hay una materia, con 10 estanterías.',null),
+('aux-age:29-6f3f373594','aux-age',29,'Un archivo guarda los expedientes por materias. Cada expediente se localiza con el código planta-pasillo-estantería (por ejemplo, 2-B-07 es la planta 2, pasillo B, estantería 7).
+Materia | Planta | Pasillo | Estanterías
+Subvenciones | 1 | A | de la 5 a la 14
+Personal | 1 | B | de la 1 a la 9
+Becas | 1 | C | de la 4 a la 12
+Nóminas | 2 | B | de la 8 a la 17
+Tributos | 2 | C | de la 5 a la 15
+Urbanismo | 3 | B | de la 5 a la 14
+¿Cuál de estos códigos NO puede existir en el archivo?','["3-B-17", "3-B-11", "2-B-17", "1-B-01"]'::jsonb,0,'Psicotécnicos','En la planta 3, pasillo B (Urbanismo), las estanterías solo llegan a la 14; los demás códigos están dentro de los tramos de la tabla.',null),
+('aux-age:29-2c4e0f58a3','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 48 | 32 | 8 | 10
+Igualdad | 40 | 32 | 24 | 40
+Inglés | 20 | 12 | 6 | 15
+Atención al público | 28 | 24 | 18 | 30
+Administración electrónica | 20 | 20 | 5 | 10
+¿Qué porcentaje de los inscritos aprobó Igualdad?','["75 %", "50 %", "60 %", "100 %"]'::jsonb,0,'Psicotécnicos','24 / 32 × 100 = 75 %.',null),
+('aux-age:29-e37b6a9331','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 48 | 32 | 8 | 10
+Igualdad | 40 | 32 | 24 | 40
+Inglés | 20 | 12 | 6 | 15
+Atención al público | 28 | 24 | 18 | 30
+Administración electrónica | 20 | 20 | 5 | 10
+¿Cuál es la media de inscritos por curso?','["22", "26", "24", "29"]'::jsonb,2,'Psicotécnicos','(32 + 32 + 12 + 24 + 20) / 5 = 120 / 5 = 24.',null),
+('aux-age:29-a957f59c27','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 48 | 32 | 8 | 10
+Igualdad | 40 | 32 | 24 | 40
+Inglés | 20 | 12 | 6 | 15
+Atención al público | 28 | 24 | 18 | 30
+Administración electrónica | 20 | 20 | 5 | 10
+¿Cuántas plazas quedaron libres en total?','["36", "46", "31", "41"]'::jsonb,0,'Psicotécnicos','Plazas menos inscritos en cada curso: 16 + 8 + 8 + 4 + 0 = 36.',null),
+('aux-age:29-5c6cd8a9c2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 48 | 32 | 8 | 10
+Igualdad | 40 | 32 | 24 | 40
+Inglés | 20 | 12 | 6 | 15
+Atención al público | 28 | 24 | 18 | 30
+Administración electrónica | 20 | 20 | 5 | 10
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Atención al público", "Inglés", "Administración electrónica", "Igualdad"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Excel avanzado, 67 %; Igualdad, 80 %; Inglés, 60 %; Atención al público, 86 %; Administración electrónica, 100 %.',null),
+('aux-age:29-7b0738d733','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 48 | 32 | 8 | 10
+Igualdad | 40 | 32 | 24 | 40
+Inglés | 20 | 12 | 6 | 15
+Atención al público | 28 | 24 | 18 | 30
+Administración electrónica | 20 | 20 | 5 | 10
+Si cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["90", "105", "180", "75"]'::jsonb,0,'Psicotécnicos','6 aprobados × 15 horas = 90 horas.',null),
+('aux-age:29-2a6a35a2d2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 48 | 32 | 8 | 10
+Igualdad | 40 | 32 | 24 | 40
+Inglés | 20 | 12 | 6 | 15
+Atención al público | 28 | 24 | 18 | 30
+Administración electrónica | 20 | 20 | 5 | 10
+¿En qué curso hubo más inscritos sin aprobar?','["Inglés", "Igualdad", "Excel avanzado", "Administración electrónica"]'::jsonb,2,'Psicotécnicos','Inscritos menos aprobados: Excel avanzado, 24; Igualdad, 8; Inglés, 6; Atención al público, 6; Administración electrónica, 15.',null),
+('aux-age:29-9a33fd72c0','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 24 | 16 | 4 | 20
+Contratación pública | 48 | 44 | 11 | 30
+Atención al público | 36 | 36 | 9 | 40
+Protección de datos | 20 | 12 | 6 | 25
+Inglés | 24 | 12 | 3 | 15
+¿Qué porcentaje de los inscritos aprobó Protección de datos?','["50 %", "75 %", "30 %", "25 %"]'::jsonb,0,'Psicotécnicos','6 / 12 × 100 = 50 %.',null),
+('aux-age:29-88db15ec89','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 24 | 16 | 4 | 20
+Contratación pública | 48 | 44 | 11 | 30
+Atención al público | 36 | 36 | 9 | 40
+Protección de datos | 20 | 12 | 6 | 25
+Inglés | 24 | 12 | 3 | 15
+¿Cuál es la media de inscritos por curso?','["26", "22", "24", "29"]'::jsonb,2,'Psicotécnicos','(16 + 44 + 36 + 12 + 12) / 5 = 120 / 5 = 24.',null),
+('aux-age:29-487b8930e2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 24 | 16 | 4 | 20
+Contratación pública | 48 | 44 | 11 | 30
+Atención al público | 36 | 36 | 9 | 40
+Protección de datos | 20 | 12 | 6 | 25
+Inglés | 24 | 12 | 3 | 15
+¿Cuántas plazas quedaron libres en total?','["27", "42", "32", "37"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 8 + 4 + 0 + 8 + 12 = 32.',null),
+('aux-age:29-6c2bfa9055','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 24 | 16 | 4 | 20
+Contratación pública | 48 | 44 | 11 | 30
+Atención al público | 36 | 36 | 9 | 40
+Protección de datos | 20 | 12 | 6 | 25
+Inglés | 24 | 12 | 3 | 15
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Atención al público", "Protección de datos", "Excel avanzado", "Contratación pública"]'::jsonb,0,'Psicotécnicos','Inscritos / plazas: Excel avanzado, 67 %; Contratación pública, 92 %; Atención al público, 100 %; Protección de datos, 60 %; Inglés, 50 %.',null),
+('aux-age:29-2e288cd414','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 24 | 16 | 4 | 20
+Contratación pública | 48 | 44 | 11 | 30
+Atención al público | 36 | 36 | 9 | 40
+Protección de datos | 20 | 12 | 6 | 25
+Inglés | 24 | 12 | 3 | 15
+Si cada aprobado de Contratación pública recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["300", "1.320", "360", "330"]'::jsonb,3,'Psicotécnicos','11 aprobados × 30 horas = 330 horas.',null),
+('aux-age:29-a6147c1b4c','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Excel avanzado | 24 | 16 | 4 | 20
+Contratación pública | 48 | 44 | 11 | 30
+Atención al público | 36 | 36 | 9 | 40
+Protección de datos | 20 | 12 | 6 | 25
+Inglés | 24 | 12 | 3 | 15
+¿En qué curso hubo más inscritos sin aprobar?','["Excel avanzado", "Protección de datos", "Contratación pública", "Atención al público"]'::jsonb,2,'Psicotécnicos','Inscritos menos aprobados: Excel avanzado, 12; Contratación pública, 33; Atención al público, 27; Protección de datos, 6; Inglés, 9.',null),
+('aux-age:29-f94ccad95a','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Prevención de riesgos | 28 | 16 | 4 | 40
+Contratación pública | 36 | 32 | 24 | 30
+Protección de datos | 32 | 24 | 6 | 25
+Inglés | 32 | 16 | 8 | 40
+Administración electrónica | 48 | 32 | 24 | 10
+¿Qué porcentaje de los inscritos aprobó Inglés?','["25 %", "40 %", "75 %", "50 %"]'::jsonb,3,'Psicotécnicos','8 / 16 × 100 = 50 %.',null),
+('aux-age:29-62e72b1563','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Prevención de riesgos | 28 | 16 | 4 | 40
+Contratación pública | 36 | 32 | 24 | 30
+Protección de datos | 32 | 24 | 6 | 25
+Inglés | 32 | 16 | 8 | 40
+Administración electrónica | 48 | 32 | 24 | 10
+¿Cuál es la media de inscritos por curso?','["29", "22", "26", "24"]'::jsonb,3,'Psicotécnicos','(16 + 32 + 24 + 16 + 32) / 5 = 120 / 5 = 24.',null),
+('aux-age:29-56fe3b1499','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Prevención de riesgos | 28 | 16 | 4 | 40
+Contratación pública | 36 | 32 | 24 | 30
+Protección de datos | 32 | 24 | 6 | 25
+Inglés | 32 | 16 | 8 | 40
+Administración electrónica | 48 | 32 | 24 | 10
+¿Cuántas plazas quedaron libres en total?','["66", "61", "56", "51"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 12 + 4 + 8 + 16 + 16 = 56.',null),
+('aux-age:29-99e5d7d027','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Prevención de riesgos | 28 | 16 | 4 | 40
+Contratación pública | 36 | 32 | 24 | 30
+Protección de datos | 32 | 24 | 6 | 25
+Inglés | 32 | 16 | 8 | 40
+Administración electrónica | 48 | 32 | 24 | 10
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Prevención de riesgos", "Contratación pública", "Administración electrónica", "Protección de datos"]'::jsonb,1,'Psicotécnicos','Inscritos / plazas: Prevención de riesgos, 57 %; Contratación pública, 89 %; Protección de datos, 75 %; Inglés, 50 %; Administración electrónica, 67 %.',null),
+('aux-age:29-d1622b5f32','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Prevención de riesgos | 28 | 16 | 4 | 40
+Contratación pública | 36 | 32 | 24 | 30
+Protección de datos | 32 | 24 | 6 | 25
+Inglés | 32 | 16 | 8 | 40
+Administración electrónica | 48 | 32 | 24 | 10
+Si cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["240", "320", "230", "250"]'::jsonb,0,'Psicotécnicos','24 aprobados × 10 horas = 240 horas.',null),
+('aux-age:29-845dd55764','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Prevención de riesgos | 28 | 16 | 4 | 40
+Contratación pública | 36 | 32 | 24 | 30
+Protección de datos | 32 | 24 | 6 | 25
+Inglés | 32 | 16 | 8 | 40
+Administración electrónica | 48 | 32 | 24 | 10
+¿En qué curso hubo más inscritos sin aprobar?','["Administración electrónica", "Protección de datos", "Inglés", "Prevención de riesgos"]'::jsonb,1,'Psicotécnicos','Inscritos menos aprobados: Prevención de riesgos, 12; Contratación pública, 8; Protección de datos, 18; Inglés, 8; Administración electrónica, 8.',null),
+('aux-age:29-c636a122d4','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Contratación pública | 20 | 12 | 6 | 15
+Administración electrónica | 36 | 24 | 18 | 25
+Protección de datos | 28 | 16 | 8 | 30
+Prevención de riesgos | 36 | 20 | 10 | 25
+Atención al público | 36 | 28 | 21 | 30
+¿Qué porcentaje de los inscritos aprobó Administración electrónica?','["100 %", "75 %", "50 %", "65 %"]'::jsonb,1,'Psicotécnicos','18 / 24 × 100 = 75 %.',null),
+('aux-age:29-a3a5d418c5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Contratación pública | 20 | 12 | 6 | 15
+Administración electrónica | 36 | 24 | 18 | 25
+Protección de datos | 28 | 16 | 8 | 30
+Prevención de riesgos | 36 | 20 | 10 | 25
+Atención al público | 36 | 28 | 21 | 30
+¿Cuál es la media de inscritos por curso?','["20", "25", "18", "22"]'::jsonb,0,'Psicotécnicos','(12 + 24 + 16 + 20 + 28) / 5 = 100 / 5 = 20.',null),
+('aux-age:29-f1e8fb10c7','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Contratación pública | 20 | 12 | 6 | 15
+Administración electrónica | 36 | 24 | 18 | 25
+Protección de datos | 28 | 16 | 8 | 30
+Prevención de riesgos | 36 | 20 | 10 | 25
+Atención al público | 36 | 28 | 21 | 30
+¿Cuántas plazas quedaron libres en total?','["51", "61", "56", "66"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 8 + 12 + 12 + 16 + 8 = 56.',null),
+('aux-age:29-61417e8c81','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Contratación pública | 20 | 12 | 6 | 15
+Administración electrónica | 36 | 24 | 18 | 25
+Protección de datos | 28 | 16 | 8 | 30
+Prevención de riesgos | 36 | 20 | 10 | 25
+Atención al público | 36 | 28 | 21 | 30
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Atención al público", "Administración electrónica", "Contratación pública"]'::jsonb,1,'Psicotécnicos','Inscritos / plazas: Contratación pública, 60 %; Administración electrónica, 67 %; Protección de datos, 57 %; Prevención de riesgos, 56 %; Atención al público, 78 %.',null),
+('aux-age:29-bbc4792357','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Contratación pública | 20 | 12 | 6 | 15
+Administración electrónica | 36 | 24 | 18 | 25
+Protección de datos | 28 | 16 | 8 | 30
+Prevención de riesgos | 36 | 20 | 10 | 25
+Atención al público | 36 | 28 | 21 | 30
+Si cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["450", "600", "425", "475"]'::jsonb,0,'Psicotécnicos','18 aprobados × 25 horas = 450 horas.',null),
+('aux-age:29-45140ff3ba','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Contratación pública | 20 | 12 | 6 | 15
+Administración electrónica | 36 | 24 | 18 | 25
+Protección de datos | 28 | 16 | 8 | 30
+Prevención de riesgos | 36 | 20 | 10 | 25
+Atención al público | 36 | 28 | 21 | 30
+¿En qué curso hubo más inscritos sin aprobar?','["Contratación pública", "Prevención de riesgos", "Administración electrónica", "Protección de datos"]'::jsonb,1,'Psicotécnicos','Inscritos menos aprobados: Contratación pública, 6; Administración electrónica, 6; Protección de datos, 8; Prevención de riesgos, 10; Atención al público, 7.',null),
+('aux-age:29-3f6321aa0d','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Atención al público | 36 | 20 | 15 | 25
+Excel avanzado | 20 | 12 | 6 | 40
+Protección de datos | 28 | 28 | 21 | 30
+Contratación pública | 20 | 16 | 12 | 15
+Inglés | 48 | 44 | 22 | 40
+¿Qué porcentaje de los inscritos aprobó Contratación pública?','["75 %", "50 %", "100 %", "60 %"]'::jsonb,0,'Psicotécnicos','12 / 16 × 100 = 75 %.',null),
+('aux-age:29-7015ddda9b','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Atención al público | 36 | 20 | 15 | 25
+Excel avanzado | 20 | 12 | 6 | 40
+Protección de datos | 28 | 28 | 21 | 30
+Contratación pública | 20 | 16 | 12 | 15
+Inglés | 48 | 44 | 22 | 40
+¿Cuál es la media de inscritos por curso?','["29", "22", "24", "26"]'::jsonb,2,'Psicotécnicos','(20 + 12 + 28 + 16 + 44) / 5 = 120 / 5 = 24.',null),
+('aux-age:29-00813db643','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Atención al público | 36 | 20 | 15 | 25
+Excel avanzado | 20 | 12 | 6 | 40
+Protección de datos | 28 | 28 | 21 | 30
+Contratación pública | 20 | 16 | 12 | 15
+Inglés | 48 | 44 | 22 | 40
+¿Cuántas plazas quedaron libres en total?','["32", "37", "27", "42"]'::jsonb,0,'Psicotécnicos','Plazas menos inscritos en cada curso: 16 + 8 + 0 + 4 + 4 = 32.',null),
+('aux-age:29-a9956e4003','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Atención al público | 36 | 20 | 15 | 25
+Excel avanzado | 20 | 12 | 6 | 40
+Protección de datos | 28 | 28 | 21 | 30
+Contratación pública | 20 | 16 | 12 | 15
+Inglés | 48 | 44 | 22 | 40
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Inglés", "Contratación pública", "Protección de datos", "Atención al público"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Atención al público, 56 %; Excel avanzado, 60 %; Protección de datos, 100 %; Contratación pública, 80 %; Inglés, 92 %.',null),
+('aux-age:29-fe1d0cfe9f','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Atención al público | 36 | 20 | 15 | 25
+Excel avanzado | 20 | 12 | 6 | 40
+Protección de datos | 28 | 28 | 21 | 30
+Contratación pública | 20 | 16 | 12 | 15
+Inglés | 48 | 44 | 22 | 40
+Si cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["840", "920", "1.760", "880"]'::jsonb,3,'Psicotécnicos','22 aprobados × 40 horas = 880 horas.',null),
+('aux-age:29-56751b9240','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Atención al público | 36 | 20 | 15 | 25
+Excel avanzado | 20 | 12 | 6 | 40
+Protección de datos | 28 | 28 | 21 | 30
+Contratación pública | 20 | 16 | 12 | 15
+Inglés | 48 | 44 | 22 | 40
+¿En qué curso hubo más inscritos sin aprobar?','["Inglés", "Contratación pública", "Protección de datos", "Atención al público"]'::jsonb,0,'Psicotécnicos','Inscritos menos aprobados: Atención al público, 5; Excel avanzado, 6; Protección de datos, 7; Contratación pública, 4; Inglés, 22.',null),
+('aux-age:29-3e2e37ee1b','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Igualdad | 24 | 20 | 15 | 15
+Atención al público | 48 | 32 | 24 | 15
+Excel avanzado | 32 | 20 | 15 | 30
+Prevención de riesgos | 28 | 20 | 15 | 30
+Protección de datos | 48 | 48 | 36 | 15
+¿Qué porcentaje de los inscritos aprobó Atención al público?','["100 %", "75 %", "50 %", "65 %"]'::jsonb,1,'Psicotécnicos','24 / 32 × 100 = 75 %.',null),
+('aux-age:29-6908b3929a','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Igualdad | 24 | 20 | 15 | 15
+Atención al público | 48 | 32 | 24 | 15
+Excel avanzado | 32 | 20 | 15 | 30
+Prevención de riesgos | 28 | 20 | 15 | 30
+Protección de datos | 48 | 48 | 36 | 15
+¿Cuál es la media de inscritos por curso?','["28", "26", "33", "30"]'::jsonb,0,'Psicotécnicos','(20 + 32 + 20 + 20 + 48) / 5 = 140 / 5 = 28.',null),
+('aux-age:29-2e010c81ce','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Igualdad | 24 | 20 | 15 | 15
+Atención al público | 48 | 32 | 24 | 15
+Excel avanzado | 32 | 20 | 15 | 30
+Prevención de riesgos | 28 | 20 | 15 | 30
+Protección de datos | 48 | 48 | 36 | 15
+¿Cuántas plazas quedaron libres en total?','["45", "35", "50", "40"]'::jsonb,3,'Psicotécnicos','Plazas menos inscritos en cada curso: 4 + 16 + 12 + 8 + 0 = 40.',null),
+('aux-age:29-c7a29aaab0','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Igualdad | 24 | 20 | 15 | 15
+Atención al público | 48 | 32 | 24 | 15
+Excel avanzado | 32 | 20 | 15 | 30
+Prevención de riesgos | 28 | 20 | 15 | 30
+Protección de datos | 48 | 48 | 36 | 15
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Igualdad", "Atención al público", "Prevención de riesgos"]'::jsonb,0,'Psicotécnicos','Inscritos / plazas: Igualdad, 83 %; Atención al público, 67 %; Excel avanzado, 62 %; Prevención de riesgos, 71 %; Protección de datos, 100 %.',null),
+('aux-age:29-35b094c796','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Igualdad | 24 | 20 | 15 | 15
+Atención al público | 48 | 32 | 24 | 15
+Excel avanzado | 32 | 20 | 15 | 30
+Prevención de riesgos | 28 | 20 | 15 | 30
+Protección de datos | 48 | 48 | 36 | 15
+Si cada aprobado de Protección de datos recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["720", "525", "540", "555"]'::jsonb,2,'Psicotécnicos','36 aprobados × 15 horas = 540 horas.',null),
+('aux-age:29-729378beb5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Igualdad | 24 | 20 | 15 | 15
+Atención al público | 48 | 32 | 24 | 15
+Excel avanzado | 32 | 20 | 15 | 30
+Prevención de riesgos | 28 | 20 | 15 | 30
+Protección de datos | 48 | 48 | 36 | 15
+¿En qué curso hubo más inscritos sin aprobar?','["Igualdad", "Prevención de riesgos", "Excel avanzado", "Protección de datos"]'::jsonb,3,'Psicotécnicos','Inscritos menos aprobados: Igualdad, 5; Atención al público, 8; Excel avanzado, 5; Prevención de riesgos, 5; Protección de datos, 12.',null),
+('aux-age:29-75bcf9ddd9','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿Qué porcentaje de los inscritos aprobó Atención al público?','["25 %", "29 %", "75 %", "50 %"]'::jsonb,3,'Psicotécnicos','14 / 28 × 100 = 50 %.',null),
+('aux-age:29-6a1bb88cce','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿Cuál es la media de inscritos por curso?','["24", "29", "26", "22"]'::jsonb,0,'Psicotécnicos','(24 + 24 + 28 + 16 + 28) / 5 = 120 / 5 = 24.',null),
+('aux-age:29-b6dc091617','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿Cuántas plazas quedaron libres en total?','["59", "69", "74", "64"]'::jsonb,3,'Psicotécnicos','Plazas menos inscritos en cada curso: 24 + 8 + 20 + 8 + 4 = 64.',null),
+('aux-age:29-32e7c89803','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Administración electrónica", "Igualdad", "Prevención de riesgos"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Protección de datos, 50 %; Administración electrónica, 75 %; Atención al público, 58 %; Prevención de riesgos, 67 %; Igualdad, 88 %.',null),
+('aux-age:29-17a35db1c5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+Si cada aprobado de Atención al público recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["280", "560", "260", "300"]'::jsonb,0,'Psicotécnicos','14 aprobados × 20 horas = 280 horas.',null),
+('aux-age:29-434c90096c','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿En qué curso hubo más inscritos sin aprobar?','["Administración electrónica", "Igualdad", "Atención al público", "Prevención de riesgos"]'::jsonb,0,'Psicotécnicos','Inscritos menos aprobados: Protección de datos, 6; Administración electrónica, 18; Atención al público, 14; Prevención de riesgos, 8; Igualdad, 7.',null),
+('aux-age:29-ccda8a3236','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
+Tipo | Letra
+Informe | I
+Factura | F
+Contrato | C
+Queja | Q
+Números de las unidades:
+Unidad | Número
+Educación | 1
+Hacienda | 5
+Personal | 2
+Vivienda | 9
+¿Qué clave lleva una factura de Vivienda de 2023?','["C9-23", "F9-24", "F9-23", "F1-23"]'::jsonb,2,'Psicotécnicos','Factura = F; Vivienda = 9; año 2023 → F9-23.',null),
+('aux-age:29-86e8777e38','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
+Tipo | Letra
+Informe | I
+Factura | F
+Contrato | C
+Queja | Q
+Números de las unidades:
+Unidad | Número
+Educación | 1
+Hacienda | 5
+Personal | 2
+Vivienda | 9
+¿A qué documento corresponde la clave Q5-25?','["Queja de Personal de 2025", "Informe de Hacienda de 2025", "Queja de Hacienda de 2024", "Queja de Hacienda de 2025"]'::jsonb,3,'Psicotécnicos','Q = queja; 5 = Hacienda; 25 = 2025.',null),
+('aux-age:29-1789140256','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
+Tipo | Letra
+Informe | I
+Factura | F
+Contrato | C
+Queja | Q
+Números de las unidades:
+Unidad | Número
+Educación | 1
+Hacienda | 5
+Personal | 2
+Vivienda | 9
+¿Qué clave lleva un contrato de Personal de 2024?','["C2-25", "Q2-24", "C9-24", "C2-24"]'::jsonb,3,'Psicotécnicos','Contrato = C; Personal = 2; año 2024 → C2-24.',null),
+('aux-age:29-a3c005770e','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
+Tipo | Letra
+Informe | I
+Factura | F
+Contrato | C
+Queja | Q
+Números de las unidades:
+Unidad | Número
+Educación | 1
+Hacienda | 5
+Personal | 2
+Vivienda | 9
+¿Qué clave lleva una factura de Educación de 2026?','["C1-26", "F5-26", "F1-27", "F1-26"]'::jsonb,3,'Psicotécnicos','Factura = F; Educación = 1; año 2026 → F1-26.',null),
+('aux-age:29-1e1a0fcfc1','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
+Tipo | Letra
+Informe | I
+Queja | Q
+Factura | F
+Contrato | C
+Números de las unidades:
+Unidad | Número
+Sanidad | 6
+Cultura | 7
+Educación | 8
+Vivienda | 9
+¿Qué clave lleva un informe de Vivienda de 2024?','["I9-24", "I6-24", "I9-25", "Q9-24"]'::jsonb,0,'Psicotécnicos','Informe = I; Vivienda = 9; año 2024 → I9-24.',null),
+('aux-age:29-b4d8d58cbb','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
+Tipo | Letra
+Informe | I
+Queja | Q
+Factura | F
+Contrato | C
+Números de las unidades:
+Unidad | Número
+Sanidad | 6
+Cultura | 7
+Educación | 8
+Vivienda | 9
+¿A qué documento corresponde la clave Q9-25?','["Queja de Sanidad de 2025", "Queja de Vivienda de 2024", "Factura de Vivienda de 2025", "Queja de Vivienda de 2025"]'::jsonb,3,'Psicotécnicos','Q = queja; 9 = Vivienda; 25 = 2025.',null),
+('aux-age:29-20bcf378e2','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
+Tipo | Letra
+Informe | I
+Queja | Q
+Factura | F
+Contrato | C
+Números de las unidades:
+Unidad | Número
+Sanidad | 6
+Cultura | 7
+Educación | 8
+Vivienda | 9
+¿Qué clave lleva un informe de Sanidad de 2025?','["I7-25", "Q6-25", "I6-26", "I6-25"]'::jsonb,3,'Psicotécnicos','Informe = I; Sanidad = 6; año 2025 → I6-25.',null),
+('aux-age:29-b85e01cde4','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
+Tipo | Letra
+Informe | I
+Queja | Q
+Factura | F
+Contrato | C
+Números de las unidades:
+Unidad | Número
+Sanidad | 6
+Cultura | 7
+Educación | 8
+Vivienda | 9
+¿A qué documento corresponde la clave C7-23?','["Contrato de Cultura de 2023", "Contrato de Educación de 2023", "Contrato de Cultura de 2022", "Informe de Cultura de 2023"]'::jsonb,0,'Psicotécnicos','C = contrato; 7 = Cultura; 23 = 2023.',null),
+('aux-age:29-577785e536','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
+Tipo | Letra
+Informe | I
+Queja | Q
+Factura | F
+Contrato | C
+Números de las unidades:
+Unidad | Número
+Sanidad | 6
+Cultura | 7
+Educación | 8
+Vivienda | 9
+¿Qué clave lleva una queja de Educación de 2024?','["Q8-25", "Q8-24", "F8-24", "Q9-24"]'::jsonb,1,'Psicotécnicos','Queja = Q; Educación = 8; año 2024 → Q8-24.',null),
+('aux-age:29-72ad991d53','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I6-25 es un documento de tipo informe de Sanidad de 2025).
+Tipo | Letra
+Informe | I
+Queja | Q
+Factura | F
+Contrato | C
+Números de las unidades:
+Unidad | Número
+Sanidad | 6
+Cultura | 7
+Educación | 8
+Vivienda | 9
+¿A qué documento corresponde la clave I9-24?','["Informe de Vivienda de 2023", "Queja de Vivienda de 2024", "Informe de Sanidad de 2024", "Informe de Vivienda de 2024"]'::jsonb,3,'Psicotécnicos','I = informe; 9 = Vivienda; 24 = 2024.',null)
 on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
