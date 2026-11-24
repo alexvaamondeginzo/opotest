@@ -40,6 +40,10 @@ def wrap(d, text, f, maxw):
     if cur: lines.append(cur)
     return lines
 
+def ajustar(d, text, mk, size, maxw, minimo=28):
+    while size > minimo and d.textlength(text, font=mk(size)) > maxw: size -= 2
+    return mk(size)
+
 def ease(x): x = max(0.0, min(1.0, x)); return 1 - (1 - x) ** 3
 def mix(c1, c2, t): return tuple(int(c1[i] + (c2[i] - c1[i]) * t) for i in range(3))
 
@@ -55,7 +59,7 @@ def frame(q, t):
         d.text((196, 200), 'PREGUNTA DEL DÍA', font=COND(78), fill=WHITE)
         d.text((198, 282), q['oposicion'].upper(), font=CONDB(34), fill=MINT)
         # etiqueta del examen
-        etq = 'CAYÓ EN EL EXAMEN OFICIAL · ' + q['examen'].upper()
+        etq = (q.get('etiqueta') or 'CAYÓ EN EL EXAMEN OFICIAL · ' + q['examen']).upper()
         fe = CONDB(32); tw = d.textlength(etq, font=fe)
         y0 = 370 + int((1 - k) * 20)
         d.rounded_rectangle([80, y0, 80 + tw + 44, y0 + 58], 29, fill=MINT + (int(255 * k),))
@@ -89,7 +93,8 @@ def frame(q, t):
             else:
                 fl = COND(44); lt = 'ABCD'[i]; lw = d.textlength(lt, font=fl)
                 d.text((x0 + 58 - lw / 2, y + 30), lt, font=fl, fill=WHITE + (A,))
-            d.text((x0 + 116, y + 34), op, font=BODYS(46), fill=txt + (A,))
+            fo_ = ajustar(d, op, BODYS, 46, W - 160 - 116 - 30)
+            d.text((x0 + 116, y + 59), op, font=fo_, fill=txt + (A,), anchor='lm')
             y += 140
         # cuenta atrás
         if 2.4 <= t < 8.4:
@@ -97,7 +102,8 @@ def frame(q, t):
             d.rounded_rectangle([80, y + 20, W - 80, y + 44], 12, fill=LINE)
             d.rounded_rectangle([80, y + 20, 80 + int((W - 160) * (1 - p)), y + 44], 12, fill=TEAL)
             n = str(max(1, math.ceil(6 * (1 - p))))
-            d.text((80, y + 70), '¿A, B, C o D? Responde en comentarios', font=BODYS(40), fill=MUTED)
+            L = 'ABCD'[:len(q['opciones'])]
+            d.text((80, y + 70), '¿' + ', '.join(L[:-1]) + ' o ' + L[-1] + '? Responde en comentarios', font=BODYS(40), fill=MUTED)
             fn = COND(92); d.text((W - 80 - d.textlength(n, font=fn), y + 52), n, font=fn, fill=TEAL)
         # explicación
         if t >= 9.0:
@@ -107,7 +113,7 @@ def frame(q, t):
             xl = wrap(d, q['explicacion'], fx, W - 220)
             hgt = 96 + 50 * len(xl)
             d.rounded_rectangle([80, yb, W - 80, yb + hgt], 22, fill=INK + (int(255 * ke),))
-            d.text((112, yb + 26), q['fuente'].upper(), font=CONDB(38), fill=MINT + (int(255 * ke),))
+            d.text((112, yb + 26), q['fuente'].upper(), font=ajustar(d, q['fuente'].upper(), CONDB, 38, W - 224), fill=MINT + (int(255 * ke),))
             yy = yb + 80
             for ln in xl:
                 d.text((112, yy), ln, font=fx, fill=WHITE + (int(255 * ke),)); yy += 50

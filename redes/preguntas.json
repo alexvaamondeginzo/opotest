@@ -1,23 +1,150 @@
 [
-  {"id": "pd-01-ce-sancion",
-   "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
-   "examen": "oct. 2026",
-   "pregunta": "¿En qué plazo sanciona el Rey las leyes aprobadas por las Cortes Generales?",
-   "opciones": ["Diez días", "Un mes", "Quince días", "Veinte días"], "correcta": 2,
-   "fuente": "Art. 91 de la Constitución · comprobado en el BOE",
-   "explicacion": "El Rey sanciona las leyes aprobadas por las Cortes Generales en el plazo de quince días, y las promulga y ordena su inmediata publicación."},
-  {"id": "pd-02-lcsp-menores",
-   "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
-   "examen": "oct. 2026",
-   "pregunta": "Son contratos menores de obras los de valor estimado inferior a:",
-   "opciones": ["40.000 euros", "15.000 euros", "50.000 euros", "100.000 euros"], "correcta": 0,
-   "fuente": "Art. 118.1 de la Ley 9/2017 (LCSP) · comprobado en el BOE",
-   "explicacion": "Obras: valor estimado inferior a 40.000 €. Suministros o servicios: inferior a 15.000 €."},
-  {"id": "pd-03-win-explorador",
-   "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
-   "examen": "abr. 2026",
-   "pregunta": "En Windows 11, ¿qué combinación de teclas abre el Explorador de archivos?",
-   "opciones": ["Tecla Windows + E", "Tecla Windows + I", "Tecla Windows + L", "Tecla Windows + D"], "correcta": 0,
-   "fuente": "Windows 11 · atajos de teclado oficiales de Microsoft",
-   "explicacion": "Win + D muestra el escritorio, Win + L bloquea el equipo y Win + I abre Configuración."}
+  {
+    "id": "pd-01-ce-sancion",
+    "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
+    "examen": "oct. 2026",
+    "pregunta": "¿En qué plazo sanciona el Rey las leyes aprobadas por las Cortes Generales?",
+    "opciones": [
+      "Diez días",
+      "Un mes",
+      "Quince días",
+      "Veinte días"
+    ],
+    "correcta": 2,
+    "fuente": "Art. 91 de la Constitución · comprobado en el BOE",
+    "explicacion": "El Rey sanciona las leyes aprobadas por las Cortes Generales en el plazo de quince días, y las promulga y ordena su inmediata publicación."
+  },
+  {
+    "id": "pd-02-lcsp-menores",
+    "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
+    "examen": "oct. 2026",
+    "pregunta": "Son contratos menores de obras los de valor estimado inferior a:",
+    "opciones": [
+      "40.000 euros",
+      "15.000 euros",
+      "50.000 euros",
+      "100.000 euros"
+    ],
+    "correcta": 0,
+    "fuente": "Art. 118.1 de la Ley 9/2017 (LCSP) · comprobado en el BOE",
+    "explicacion": "Obras: valor estimado inferior a 40.000 €. Suministros o servicios: inferior a 15.000 €."
+  },
+  {
+    "id": "pd-03-win-explorador",
+    "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
+    "examen": "abr. 2026",
+    "pregunta": "En Windows 11, ¿qué combinación de teclas abre el Explorador de archivos?",
+    "opciones": [
+      "Tecla Windows + E",
+      "Tecla Windows + I",
+      "Tecla Windows + L",
+      "Tecla Windows + D"
+    ],
+    "correcta": 0,
+    "fuente": "Windows 11 · atajos de teclado oficiales de Microsoft",
+    "explicacion": "Win + D muestra el escritorio, Win + L bloquea el equipo y Win + I abre Configuración."
+  },
+  {
+    "id": "pd-04-ce-ilp",
+    "oposicion": "Auxiliar Administrativo del Estado",
+    "etiqueta": "Tema 3 · Cortes Generales",
+    "pregunta": "¿Cuántas firmas acreditadas exige como mínimo la iniciativa legislativa popular?",
+    "opciones": [
+      "100.000",
+      "1.000.000",
+      "250.000",
+      "500.000"
+    ],
+    "correcta": 3,
+    "fuente": "Art. 87.3 de la Constitución · comprobado en el BOE",
+    "explicacion": "Se exigen no menos de 500.000 firmas. No cabe en materias de ley orgánica, tributarias, de carácter internacional ni en la prerrogativa de gracia."
+  },
+  {
+    "id": "pd-05-defensor",
+    "oposicion": "Auxiliar Administrativo del Estado",
+    "etiqueta": "Tema 3 · Defensor del Pueblo",
+    "pregunta": "¿Por cuánto tiempo es elegido el Defensor del Pueblo?",
+    "opciones": [
+      "9 años",
+      "4 años",
+      "6 años",
+      "5 años"
+    ],
+    "correcta": 3,
+    "fuente": "Art. 2.1 de la LO 3/1981 · comprobado en el BOE",
+    "explicacion": "Lo eligen las Cortes Generales para un período de cinco años."
+  },
+  {
+    "id": "pd-06-info-publica",
+    "oposicion": "Auxiliar Administrativo del Estado",
+    "etiqueta": "Tema 11 · Procedimiento administrativo",
+    "pregunta": "El plazo del trámite de información pública no puede ser inferior a:",
+    "opciones": [
+      "10 días",
+      "15 días",
+      "20 días",
+      "1 mes"
+    ],
+    "correcta": 2,
+    "fuente": "Art. 83.2 de la Ley 39/2015 · comprobado en el BOE",
+    "explicacion": "El plazo para formular alegaciones en información pública no puede ser inferior a veinte días."
+  },
+  {
+    "id": "pd-07-psico-n",
+    "oposicion": "Auxiliar Administrativo del Estado",
+    "etiqueta": "Psicotécnicos · series de letras",
+    "pregunta": "Con el alfabeto español (con la Ñ), ¿qué letra continúa la serie?  K, N, P, S, V, …",
+    "opciones": [
+      "X",
+      "Z",
+      "A",
+      "Y"
+    ],
+    "correcta": 3,
+    "fuente": "Psicotécnico · ojo con la Ñ",
+    "explicacion": "Se avanza de 3 en 3 letras: de K a N, de N a P (contando la Ñ), de P a S, de S a V y de V a Y."
+  },
+  {
+    "id": "pd-08-ayto-010",
+    "oposicion": "Auxiliar Administrativo · Ayuntamiento de Madrid",
+    "etiqueta": "Tema 19 · Atención a la ciudadanía",
+    "pregunta": "¿En qué horario está disponible el teléfono 010 del Ayuntamiento de Madrid?",
+    "opciones": [
+      "24 horas los días laborables",
+      "De 8:00 a 22:00 todos los días del año",
+      "24 horas todos los días del año"
+    ],
+    "correcta": 2,
+    "fuente": "Art. 16.4 de la Ordenanza de Atención a la Ciudadanía (2019)",
+    "explicacion": "El 010 de Línea Madrid atiende en horario ininterrumpido, 24 horas todos los días del año."
+  },
+  {
+    "id": "pd-09-ayto-distritos",
+    "oposicion": "Auxiliar Administrativo · Ayuntamiento de Madrid",
+    "etiqueta": "Tema 12 · Los distritos",
+    "pregunta": "Nombrar y cesar a los Presidentes de los Distritos corresponde:",
+    "opciones": [
+      "Al Pleno",
+      "A la Junta de Gobierno",
+      "Al Alcalde"
+    ],
+    "correcta": 2,
+    "fuente": "Art. 14.3 d) de la Ley 22/2006 · comprobado en el BOE",
+    "explicacion": "El Alcalde nombra y cesa a los miembros de la Junta de Gobierno, a los Tenientes de Alcalde y a los Presidentes de los Distritos."
+  },
+  {
+    "id": "pd-10-bandera-cm",
+    "oposicion": "Auxiliar Administrativo · Comunidad de Madrid",
+    "examen": "nov. 2024",
+    "pregunta": "¿Cómo es la bandera de la Comunidad de Madrid?",
+    "opciones": [
+      "Roja con cinco estrellas blancas",
+      "Roja carmesí con siete estrellas blancas",
+      "Blanca con siete estrellas rojas",
+      "Carmesí con siete estrellas doradas"
+    ],
+    "correcta": 1,
+    "fuente": "Art. 4.1 del Estatuto de Autonomía · comprobado en el BOE",
+    "explicacion": "La bandera de la Comunidad de Madrid es roja carmesí, con siete estrellas en blanco, de cinco puntas."
+  }
 ]
