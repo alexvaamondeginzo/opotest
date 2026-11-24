@@ -97,7 +97,7 @@ async def main():
             print(f'\n== Usuario normal ({disp}) ==')
             pg, err = await abrir(ancho, alto, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
             await foto(pg, f'{disp}-portada')
-            for op in ('aux-cm', 'aux-age'):
+            for op in ('aux-cm', 'aux-age', 'aux-ayto-mad'):
                 await pg.evaluate(f"location.hash='#/o/{op}'")
                 await pg.wait_for_timeout(700)
                 comprobar(await pg.evaluate('OP') == op, f'{op}: abre el inicio de la oposición')
@@ -136,8 +136,27 @@ async def main():
                 await foto(pg, 'escritorio-respuesta', False)
                 await pg.click('#quit')
                 await pg.wait_for_timeout(300)
+                # respuestas de 3 opciones (Ayuntamiento de Madrid)
+                await pg.evaluate("location.hash='#/o/aux-ayto-mad/practicar'")
+                await pg.wait_for_timeout(300)
+                await pg.click('#start')
+                await pg.wait_for_timeout(1500)
+                nops = len(await pg.eval_on_selector_all('#opts .opt', 'e=>e'))
+                comprobar(nops == 3, f'aux-ayto-mad: las preguntas tienen 3 opciones ({nops})')
+                await pg.keyboard.press('d')
+                await pg.wait_for_timeout(200)
+                comprobar(not await pg.evaluate('st.locked'), 'aux-ayto-mad: la tecla D no responde con 3 opciones')
+                correcta = await pg.evaluate('st.qs[0][3]')
+                mala = (correcta + 1) % 3
+                await pg.click(f'#opts .opt >> nth={mala}')
+                await pg.wait_for_timeout(300)
+                clases = await pg.eval_on_selector_all('#opts .opt', 'e=>e.map(b=>b.className)')
+                comprobar('ok' in clases[correcta].split() and 'bad' in clases[mala].split(),
+                          'aux-ayto-mad: corrige bien con 3 opciones')
+                await pg.click('#quit')
+                await pg.wait_for_timeout(300)
                 # simulacro: arranca con su número de preguntas y temporizador
-                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1')):
+                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1'), ('aux-ayto-mad', 'ayto-teoria')):
                     await pg.evaluate(f"location.hash='#/o/{op}/simulacros'")
                     await pg.wait_for_timeout(700)
                     await pg.click(f'[data-sim={sim}]')
