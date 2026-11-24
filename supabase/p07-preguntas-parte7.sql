@@ -605,18 +605,18 @@ Ventanilla 4 | 141 | 121 | 82 | 101
 ('aux-age:29-3fa53bf6eb','aux-age',29,'Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el cuarto lugar? 19/03/2027, 18/02/2026, 07/03/2026, 09/02/2026, 18/07/2026','["09/02/2026", "19/03/2027", "18/07/2026", "18/02/2026"]'::jsonb,2,'Psicotécnicos','Orden: 09/02/2026, 18/02/2026, 07/03/2026, 18/07/2026, 19/03/2027. Se compara primero el año, luego el mes y por último el día.',null),
 ('aux-age:29-c8d980a9b3','aux-age',29,'Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el segundo lugar? 28/09/2024, 07/12/2024, 15/06/2024, 22/02/2024, 19/04/2024','["19/04/2024", "28/09/2024", "07/12/2024", "15/06/2024"]'::jsonb,0,'Psicotécnicos','Orden: 22/02/2024, 19/04/2024, 15/06/2024, 28/09/2024, 07/12/2024. Se compara primero el año, luego el mes y por último el día.',null),
 ('aux-age:29-2a0da78d04','aux-age',29,'Ordenadas de la más antigua a la más reciente, ¿qué fecha ocupa el tercer lugar? 14/11/2027, 08/01/2026, 13/06/2026, 20/04/2027, 16/11/2027','["20/04/2027", "16/11/2027", "13/06/2026", "08/01/2026"]'::jsonb,0,'Psicotécnicos','Orden: 08/01/2026, 13/06/2026, 20/04/2027, 14/11/2027, 16/11/2027. Se compara primero el año, luego el mes y por último el día.',null),
-('aux-age:29-06032bcadb','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2026/07159, 2026/07591, 2026/09175, 2026/05197, 2026/05719','["2026/05197", "2026/05719", "2026/07591", "2026/09175"]'::jsonb,2,'Psicotécnicos','Orden: 2026/05197, 2026/05719, 2026/07159, 2026/07591, 2026/09175.',null),
-('aux-age:29-c4b2fb7845','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2025/03789, 2025/03897, 2025/08973, 2025/09738, 2025/09873','["2025/03789", "2025/09738", "2025/08973", "2025/09873"]'::jsonb,1,'Psicotécnicos','Orden: 2025/03789, 2025/03897, 2025/08973, 2025/09738, 2025/09873.',null),
-('aux-age:29-969ade4c90','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2026/09157, 2026/05179, 2026/01759, 2026/09517, 2026/07195','["2026/09157", "2026/07195", "2026/01759", "2026/05179"]'::jsonb,1,'Psicotécnicos','Orden: 2026/09517, 2026/09157, 2026/07195, 2026/05179, 2026/01759.',null),
-('aux-age:29-b6ee181ff1','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/08524, 2025/02548, 2025/04852, 2025/08425, 2025/04528','["2025/08425", "2025/08524", "2025/04852", "2025/04528"]'::jsonb,2,'Psicotécnicos','Orden: 2025/08524, 2025/08425, 2025/04852, 2025/04528, 2025/02548.',null),
-('aux-age:29-fff021ec9a','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2026/06420, 2026/00246, 2026/06240, 2026/06204, 2026/04206','["2026/00246", "2026/06204", "2026/06240", "2026/06420"]'::jsonb,1,'Psicotécnicos','Orden: 2026/00246, 2026/04206, 2026/06204, 2026/06240, 2026/06420.',null),
-('aux-age:29-23cd6e0a9e','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2025/09751, 2025/01597, 2025/01759, 2025/09517, 2025/09175','["2025/01759", "2025/09175", "2025/09751", "2025/09517"]'::jsonb,1,'Psicotécnicos','Orden: 2025/01597, 2025/01759, 2025/09175, 2025/09517, 2025/09751.',null),
-('aux-age:29-705b607a84','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2025/09840, 2025/04980, 2025/00984, 2025/09084, 2025/04809','["2025/04809", "2025/04980", "2025/09840", "2025/09084"]'::jsonb,1,'Psicotécnicos','Orden: 2025/00984, 2025/04809, 2025/04980, 2025/09084, 2025/09840.',null),
-('aux-age:29-c86f82f4d0','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el cuarto lugar? 2025/00628, 2025/00682, 2025/06028, 2025/06802, 2025/06820','["2025/00628", "2025/06028", "2025/00682", "2025/06802"]'::jsonb,2,'Psicotécnicos','Orden: 2025/06820, 2025/06802, 2025/06028, 2025/00682, 2025/00628.',null),
-('aux-age:29-ecfb20642c','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/05971, 2025/09715, 2025/07591, 2025/05197, 2025/07915','["2025/07591", "2025/05971", "2025/09715", "2025/05197"]'::jsonb,0,'Psicotécnicos','Orden: 2025/09715, 2025/07915, 2025/07591, 2025/05971, 2025/05197.',null),
-('aux-age:29-983e40eea3','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/00572, 2025/00527, 2025/02507, 2025/07502, 2025/05027','["2025/07502", "2025/00572", "2025/00527", "2025/02507"]'::jsonb,3,'Psicotécnicos','Orden: 2025/07502, 2025/05027, 2025/02507, 2025/00572, 2025/00527.',null),
-('aux-age:29-6099c3c780','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2026/09214, 2026/09421, 2026/09412, 2026/02941, 2026/09124','["2026/09214", "2026/09124", "2026/09421", "2026/09412"]'::jsonb,3,'Psicotécnicos','Orden: 2026/02941, 2026/09124, 2026/09214, 2026/09412, 2026/09421.',null),
-('aux-age:29-a265808574','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el cuarto lugar? 2025/09135, 2025/05193, 2025/09351, 2025/03159, 2025/05391','["2025/05391", "2025/09351", "2025/05193", "2025/03159"]'::jsonb,2,'Psicotécnicos','Orden: 2025/09351, 2025/09135, 2025/05391, 2025/05193, 2025/03159.',null),
+('aux-age:29-d39f850a4b','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2026/09175, 2026/07159, 2026/05719, 2026/05197, 2026/07591','["2026/05197", "2026/05719", "2026/07591", "2026/09175"]'::jsonb,2,'Psicotécnicos','Orden: 2026/05197, 2026/05719, 2026/07159, 2026/07591, 2026/09175.',null),
+('aux-age:29-68155585c5','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2025/08973, 2025/09738, 2025/09873, 2025/03897, 2025/03789','["2025/03789", "2025/09738", "2025/08973", "2025/09873"]'::jsonb,1,'Psicotécnicos','Orden: 2025/03789, 2025/03897, 2025/08973, 2025/09738, 2025/09873.',null),
+('aux-age:29-750614140d','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2026/05179, 2026/07195, 2026/01759, 2026/09157, 2026/09517','["2026/09157", "2026/07195", "2026/01759", "2026/05179"]'::jsonb,1,'Psicotécnicos','Orden: 2026/09517, 2026/09157, 2026/07195, 2026/05179, 2026/01759.',null),
+('aux-age:29-41829c50a1','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/08524, 2025/04528, 2025/02548, 2025/04852, 2025/08425','["2025/08425", "2025/08524", "2025/04852", "2025/04528"]'::jsonb,2,'Psicotécnicos','Orden: 2025/08524, 2025/08425, 2025/04852, 2025/04528, 2025/02548.',null),
+('aux-age:29-ee446c3ac6','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2026/04206, 2026/06420, 2026/06204, 2026/00246, 2026/06240','["2026/00246", "2026/06204", "2026/06240", "2026/06420"]'::jsonb,1,'Psicotécnicos','Orden: 2026/00246, 2026/04206, 2026/06204, 2026/06240, 2026/06420.',null),
+('aux-age:29-aefca0b724','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2025/01597, 2025/01759, 2025/09175, 2025/09751, 2025/09517','["2025/01759", "2025/09175", "2025/09751", "2025/09517"]'::jsonb,1,'Psicotécnicos','Orden: 2025/01597, 2025/01759, 2025/09175, 2025/09517, 2025/09751.',null),
+('aux-age:29-82123210ee','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el tercer lugar? 2025/09840, 2025/04809, 2025/09084, 2025/00984, 2025/04980','["2025/04809", "2025/04980", "2025/09840", "2025/09084"]'::jsonb,1,'Psicotécnicos','Orden: 2025/00984, 2025/04809, 2025/04980, 2025/09084, 2025/09840.',null),
+('aux-age:29-8b7df2b816','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el cuarto lugar? 2025/06028, 2025/06820, 2025/06802, 2025/00682, 2025/00628','["2025/00628", "2025/06028", "2025/00682", "2025/06802"]'::jsonb,2,'Psicotécnicos','Orden: 2025/06820, 2025/06802, 2025/06028, 2025/00682, 2025/00628.',null),
+('aux-age:29-738a52ea34','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/07591, 2025/05197, 2025/05971, 2025/07915, 2025/09715','["2025/07591", "2025/05971", "2025/09715", "2025/05197"]'::jsonb,0,'Psicotécnicos','Orden: 2025/09715, 2025/07915, 2025/07591, 2025/05971, 2025/05197.',null),
+('aux-age:29-7b9e5ca4a2','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el tercer lugar? 2025/02507, 2025/05027, 2025/07502, 2025/00527, 2025/00572','["2025/07502", "2025/00572", "2025/00527", "2025/02507"]'::jsonb,3,'Psicotécnicos','Orden: 2025/07502, 2025/05027, 2025/02507, 2025/00572, 2025/00527.',null),
+('aux-age:29-75d2e9beca','aux-age',29,'Ordenados de menor a mayor, ¿qué número de expediente ocupa el cuarto lugar? 2026/09412, 2026/02941, 2026/09214, 2026/09124, 2026/09421','["2026/09214", "2026/09124", "2026/09421", "2026/09412"]'::jsonb,3,'Psicotécnicos','Orden: 2026/02941, 2026/09124, 2026/09214, 2026/09412, 2026/09421.',null),
+('aux-age:29-22f7719057','aux-age',29,'Ordenados de mayor a menor, ¿qué número de expediente ocupa el cuarto lugar? 2025/09135, 2025/05193, 2025/03159, 2025/09351, 2025/05391','["2025/05391", "2025/09351", "2025/05193", "2025/03159"]'::jsonb,2,'Psicotécnicos','Orden: 2025/09351, 2025/09135, 2025/05391, 2025/05193, 2025/03159.',null),
 ('aux-age:29-c68013d9c3','aux-age',29,'Clave:
 Z | S | I | O | P | L | A
 8 | 3 | 4 | 1 | 6 | 2 | 5
@@ -695,112 +695,112 @@ BM8-6ZS | BM8-6ZS
 N6Z-13E | N6Z-13E
 6E3-82I | 6E3-82I
 OO1-3ME | O01-3ME
-BOO-G42 | BOO-G42','["3", "5", "4", "2"]'::jsonb,2,'Psicotécnicos','Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+BOO-G42 | BOO-G42','["3", "5", "4", "2"]'::jsonb,2,'Psicotécnicos','Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-6578b538eb','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 N41-BBM | N41-BBN
 IE3-5G8 | 1E3-5G8
 G80-37I | G8O-37I
 IAZ-901 | IAZ-9O1
-EIZ-3ZZ | FIZ-3ZZ','["3", "1", "2", "0"]'::jsonb,3,'Psicotécnicos','Son iguales 0 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+EIZ-3ZZ | FIZ-3ZZ','["3", "1", "2", "0"]'::jsonb,3,'Psicotécnicos','Coinciden 0 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-2d25daf3f5','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 217-47B | 217-47B
 5FN-E26 | 5EN-E26
 I5M-97E | 15M-97E
 A7G-F19 | A7G-E19
-0Z4-7NI | 0Z4-7NI','["1", "4", "3", "2"]'::jsonb,3,'Psicotécnicos','Son iguales 2 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+0Z4-7NI | 0Z4-7NI','["1", "4", "3", "2"]'::jsonb,3,'Psicotécnicos','Coinciden 2 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-4c305ccbd8','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 ASZ-4IB | ASZ-4IB
 OFN-0G4 | OFN-0G4
 192-05S | 192-05S
 GGI-AN1 | 6GI-AN1
-BB4-16I | BB4-16I','["3", "2", "4", "5"]'::jsonb,2,'Psicotécnicos','Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+BB4-16I | BB4-16I','["3", "2", "4", "5"]'::jsonb,2,'Psicotécnicos','Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-74cf8ff9f0','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 ZZA-601 | ZZA-601
 0EB-36Z | 0EB-36Z
 FAZ-8IO | FAZ-BIO
 ZEO-245 | ZEO-Z45
-B23-1FZ | B23-1F2','["3", "2", "1", "4"]'::jsonb,1,'Psicotécnicos','Son iguales 2 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+B23-1FZ | B23-1F2','["3", "2", "1", "4"]'::jsonb,1,'Psicotécnicos','Coinciden 2 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-ee21f3e010','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 NB5-3A5 | N85-3A5
 7F6-N85 | 7F6-N8S
 FSF-MMB | FSE-MMB
 0I2-SMG | 012-SMG
-AZ8-BSZ | AZ8-BSZ','["0", "2", "1", "3"]'::jsonb,2,'Psicotécnicos','Son iguales 1 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+AZ8-BSZ | AZ8-BSZ','["0", "2", "1", "3"]'::jsonb,2,'Psicotécnicos','Coinciden 1 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-d73435c233','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 234-ZNS | 234-ZNS
 NO4-IG7 | NO4-IG7
 46S-1M0 | 46S-1M0
 I20-AO0 | I20-AO0
-NBS-NBZ | NBS-NBZ','["4", "5", "2", "3"]'::jsonb,1,'Psicotécnicos','Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+NBS-NBZ | NBS-NBZ','["4", "5", "2", "3"]'::jsonb,1,'Psicotécnicos','Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-6905de430c','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 N45-GG2 | N45-GG2
 1AM-A4S | 1AM-A4S
 6I8-Z38 | 6I8-Z38
 9BA-BON | 9BA-8ON
-FS3-4MF | FS3-4MF','["5", "4", "3", "2"]'::jsonb,1,'Psicotécnicos','Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+FS3-4MF | FS3-4MF','["5", "4", "3", "2"]'::jsonb,1,'Psicotécnicos','Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-f186ecda91','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 61B-ZMM | 61B-ZMM
 F1G-GSA | F1G-GSA
 E5M-GM4 | E5M-GM4
 31N-F0S | 31N-F0S
-197-2SB | 197-2S8','["3", "5", "4", "2"]'::jsonb,2,'Psicotécnicos','Son iguales 4 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+197-2SB | 197-2S8','["3", "5", "4", "2"]'::jsonb,2,'Psicotécnicos','Coinciden 4 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-bd40b14052','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 2ZN-7O6 | 2ZN-7O6
 228-707 | 228-707
 0O0-OOM | 0O0-OOM
 S3E-28S | S3E-28S
-SE0-932 | SE0-932','["2", "3", "5", "4"]'::jsonb,2,'Psicotécnicos','Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+SE0-932 | SE0-932','["2", "3", "5", "4"]'::jsonb,2,'Psicotécnicos','Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-e6793c590f','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 O4G-16B | O4G-1GB
 0GB-A23 | 0GB-AZ3
 6S6-SFA | 6S6-SFA
 OAB-I1O | OAB-I10
-M15-8N9 | N15-8N9','["0", "2", "1", "3"]'::jsonb,2,'Psicotécnicos','Son iguales 1 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+M15-8N9 | N15-8N9','["0", "2", "1", "3"]'::jsonb,2,'Psicotécnicos','Coinciden 1 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-d41690d4c8','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 E5A-IG8 | E5A-1G8
 9NI-OI0 | 9NI-0I0
 MBO-M94 | NBO-M94
 S34-B5N | S34-85N
-7S1-N01 | 751-N01','["1", "2", "0", "3"]'::jsonb,2,'Psicotécnicos','Son iguales 0 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+7S1-N01 | 751-N01','["1", "2", "0", "3"]'::jsonb,2,'Psicotécnicos','Coinciden 0 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-87b7c6a380','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 68F-BO2 | 68F-B02
 ON7-EM5 | 0N7-EM5
 S6A-2ON | S6A-2OM
 45A-GIO | 45A-GI0
-O1I-1A6 | O1I-1AG','["3", "2", "1", "0"]'::jsonb,3,'Psicotécnicos','Son iguales 0 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+O1I-1A6 | O1I-1AG','["3", "2", "1", "0"]'::jsonb,3,'Psicotécnicos','Coinciden 0 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-1120a7ebfd','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 217-N51 | 217-N51
 F95-FE5 | F95-FE5
 22G-969 | 22G-969
 I3M-2BA | I3M-2BA
-GE6-I89 | GE6-I89','["4", "2", "3", "5"]'::jsonb,3,'Psicotécnicos','Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+GE6-I89 | GE6-I89','["4", "2", "3", "5"]'::jsonb,3,'Psicotécnicos','Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-9c687cbfe8','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 A2G-7FS | A2G-7FS
 605-BON | 605-BON
 9AZ-65B | 9AZ-65B
 17B-IZO | 17B-IZO
-A61-4S4 | A61-4S4','["2", "3", "5", "4"]'::jsonb,2,'Psicotécnicos','Son iguales 5 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+A61-4S4 | A61-4S4','["2", "3", "5", "4"]'::jsonb,2,'Psicotécnicos','Coinciden 5 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-1d12c1cc40','aux-age',29,'¿Cuántos de estos pares de códigos son exactamente iguales?
 Código 1 | Código 2
 EN0-998 | EN0-99B
 99F-471 | 99E-471
 426-0BE | 4Z6-0BE
 6GG-7EM | GGG-7EM
-ZFA-A39 | ZFA-A39','["2", "1", "0", "3"]'::jsonb,1,'Psicotécnicos','Son iguales 1 de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
+ZFA-A39 | ZFA-A39','["2", "1", "0", "3"]'::jsonb,1,'Psicotécnicos','Coinciden 1 de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).',null),
 ('aux-age:29-ec588f116e','aux-age',29,'¿Cuántas veces aparece la letra «p» en esta serie? bdqbddqpdqpdbpbddbqqpqbddd','["3", "5", "4", "6"]'::jsonb,2,'Psicotécnicos','Aparece 4 veces.',null),
 ('aux-age:29-5f47e64990','aux-age',29,'¿Cuántas veces aparece el número 9 en esta serie? 6 9 6 9 6 6 9 8 9 6 8 9 9 6 8 8 8 6 9 6 9 6 8 8','["8", "9", "7", "10"]'::jsonb,0,'Psicotécnicos','Aparece 8 veces.',null),
 ('aux-age:29-0cfb4d3f0d','aux-age',29,'¿Cuántas veces aparece la letra «b» en esta serie? dpbppqdpdpqdpqbpddqbpbqbbb','["6", "8", "7", "9"]'::jsonb,2,'Psicotécnicos','Aparece 7 veces.',null),

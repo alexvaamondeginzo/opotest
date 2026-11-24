@@ -390,7 +390,7 @@ for n in range(12):
         dig = base[:]; R2.shuffle(dig)
         nums.add("".join(dig))
     año = R2.choice(["2025", "2026"])
-    nums = list(nums)
+    nums = sorted(nums); random.Random(1000 + n).shuffle(nums)  # orden fijo (un set de textos cambia en cada ejecución)
     orden = sorted(nums, key=int)
     k = R2.randint(1, 3)
     asc = R2.random() < 0.5
@@ -454,7 +454,7 @@ for n in range(16):
         lineas.append(f"{c} | {d}")
     add("¿Cuántos de estos pares de códigos son exactamente iguales?\nCódigo 1 | Código 2\n" + "\n".join(lineas), str(k),
         [str(x) for x in [k + 1, k - 1, k + 2, k - 2, k + 3, k - 3] if 0 <= x <= 5],
-        f"Son iguales {k} de los 5 pares; en los demás cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).")
+        f"Coinciden {k} de los 5 pares. En cada par distinto cambia un solo carácter parecido (8 y B, 0 y O, 1 e I, 5 y S…).")
 for n in range(14):
     if n % 2 == 0:
         alf = "bdpq"; obj = R2.choice(alf); txt = "".join(R2.choice(alf) for _ in range(26)); que = f"la letra «{obj}»"
