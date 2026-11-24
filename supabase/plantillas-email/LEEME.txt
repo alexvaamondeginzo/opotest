@@ -1,0 +1,9 @@
+Plantillas de los emails de Supabase en español (Authentication > Emails > Templates).
+Para cada una: copia el asunto y pega el HTML completo en «Message body».
+
+  Confirm signup     → asunto: Confirma tu cuenta de OpoNota   → 1-confirmar-cuenta.html
+  Reset password     → asunto: Cambia tu contraseña de OpoNota  → 2-cambiar-contrasena.html
+  Change email       → asunto: Confirma tu nuevo email          → 3-cambiar-email.html
+  Magic link         → asunto: Tu enlace para entrar en OpoNota → 4-enlace-de-acceso.html
+
+{{ .ConfirmationURL }} lo sustituye Supabase por el enlace de cada usuario: no lo cambies.

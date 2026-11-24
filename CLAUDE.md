@@ -97,7 +97,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
   - revisar las páginas legales con un asesor antes de cobrar;
   - añadir a las condiciones de compra el precio y lo que incluye cada oposición cuando esté decidido.
 - [x] Proyecto de Netlify renombrado a `oponota`: la web está en https://oponota.netlify.app/ (en la cuenta de Netlify del otro socio). La antigua `opomadridprueba.netlify.app` es una versión vieja: no usarla.
-- [ ] SMTP propio en Supabase para los emails de confirmación.
+- [ ] SMTP propio en Supabase para volver a activar «Confirm email»: plan acordado, Brevo ahora (smtp-relay.brevo.com:587, remitente oponota.contacto@gmail.com) y Gmail o dominio propio más adelante. Plantillas en español listas en `supabase/plantillas-email/` (instrucciones en su `LEEME.txt`).
 - [x] Nombre de la marca: OpoNota. Rediseño de la web con sus colores, portada con varias secciones y panel por oposición.
 - [ ] Pasar la web a Cloudflare Pages (paso 4b de `INSTRUCCIONES.txt`) y comprar el dominio (idea: oponota.com).
 - [ ] Pasar Supabase a Pro (25 $/mes) cuando se empiece a cobrar: copias de seguridad diarias y sin pausa por inactividad.
