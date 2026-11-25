@@ -611,7 +611,7 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
         <details id="faq-precio" class="hidden"><summary>¿Cuánto cuesta?</summary><p id="faq-precio-txt">Cada oposición se paga una sola vez, sin suscripción.</p></details>
         <details><summary>¿Por qué tengo que crear una cuenta?</summary><p>Para guardar tu progreso, tus fallos y tu racha, y recuperarlos en cualquier dispositivo. No se admiten emails temporales y nadie más ve tus resultados.</p></details>
         <details><summary>¿Es material oficial?</summary><p>No. Es una herramienta de práctica independiente, sin relación con ninguna administración. Ante cualquier duda, manda siempre el texto del BOE y las bases de la convocatoria.</p></details>
-        <details><summary>He visto un error, ¿qué hago?</summary><p id="faq-error">Pulsa «Reportar error» en la propia pregunta. Lo revisamos contra el BOE y lo corregimos.</p></details>
+        <details><summary>He visto un error, ¿qué hago?</summary><p id="faq-error">Pulsa «Reportar error» en la propia pregunta o envíanos un correo a <a href="mailto:oponota.contacto@gmail.com">oponota.contacto@gmail.com</a>. Lo revisamos contra el BOE y lo corregimos.</p></details>
       </div>
     </div>
   </section>
@@ -974,7 +974,7 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
     <div class="cta hidden" id="cta">
       <h3>¿Nos das tu opinión? Es un minuto</h3>
       <p>Cuéntanos qué te ha parecido, qué echas en falta o si has visto algún error.</p>
-      <a id="cta-link" href="#" target="_blank" rel="noopener">Dar mi opinión</a>
+      <a id="cta-link" href="mailto:oponota.contacto@gmail.com">Enviar un correo</a>
     </div>
     <h2 id="review-h">Repaso de fallos y preguntas en blanco</h2>
     <div class="review" id="review"></div>
@@ -1092,7 +1092,8 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
 </div>
 
 <script>
-const FORM_URL="https://forms.gle/2ShnxHhTrBVKBMQ48";
+// Contacto: ya no se usa el formulario de Google; todo va al email del equipo
+const CONTACTO="oponota.contacto@gmail.com";
 // ===== CONFIGURACIÓN DEL REGISTRO (Supabase) =====
 // Pega aquí los datos de tu proyecto (Supabase → Project Settings → API).
 // Si se dejan vacíos, la web funciona igual pero sin cuentas de usuario.
@@ -1195,7 +1196,6 @@ function buildSetup(){
   const resto=AVAIL.filter(k=>!BL.some(b=>b.temas.includes(k)));if(resto.length)BL.push({nombre:"",temas:resto});
   $("temas").innerHTML=BL.map((b,i)=>`<div class="tgrupo">${b.nombre&&BL.length>1?`<h4>${esc(b.nombre)} <button type="button" class="linkbtn" data-bloque="${i}">Quitar</button></h4>`:""}<div class="chips">${b.temas.map(chip).join("")}</div></div>`).join("");
   $("nums").innerHTML=[10,20,40,0].map(n=>`<label class="chip"><input type="radio" name="num" id="num-${n||'todas'}" value="${n}" ${n===20?"checked":""}><span>${n||"Todas"}</span></label>`).join("");
-  if(FORM_URL) $("faq-error").innerHTML=`Pulsa «Reportar error» en la propia pregunta, o escríbenos en <a href="${FORM_URL}" target="_blank" rel="noopener">este formulario</a>. Lo revisamos contra el BOE y lo corregimos.`;
   document.querySelectorAll("#setup input").forEach(i=>i.addEventListener("change",refreshSetup));
   refreshSetup();renderStats();renderToday();
 }
@@ -1484,7 +1484,7 @@ function finish(timeout){
     r.appendChild(d);
   });
   st.wrong=wrong.map(k=>st.qs[k]);
-  if(FORM_URL){$("cta-link").href=FORM_URL;$("cta").classList.remove("hidden")}
+  $("cta-link").href="mailto:"+CONTACTO+"?subject="+encodeURIComponent("Mi opinión sobre OpoNota");$("cta").classList.remove("hidden");
   window.scrollTo({top:0});
 }
 function home(){
@@ -1619,7 +1619,7 @@ $("f-report").addEventListener("submit",async e=>{
   $("rep-btn").disabled=true;
   const ok=await enviarForm("reporte",{oposicion:OP,id:repQ.id||"",pregunta:repQ[1],referencia:repQ[4]||"",mensaje:msg,email:$("rep-email").value.trim()});
   if(ok){showMsg("rep-status","Gracias. Lo revisamos contra el BOE y lo corregimos si hace falta.","ok");setTimeout(()=>$("dlg-report").close(),1800)}
-  else{$("rep-btn").disabled=false;showMsg("rep-status",FORM_URL?"No se ha podido enviar. Puedes avisarnos en el formulario de la web (pie de página).":"No se ha podido enviar. Inténtalo de nuevo más tarde.")}
+  else{$("rep-btn").disabled=false;showMsg("rep-status","No se ha podido enviar. Escríbenos a "+CONTACTO+" y lo revisamos.")}
 });
 let waitOp=null;
 function abrirEspera(op){
@@ -1971,7 +1971,7 @@ function renderAccess(){
   if(!user&&BETA) html=`<p><strong>Versión de pruebas.</strong> Crea tu cuenta y tendrás acceso completo gratis mientras dure la fase de pruebas.</p><button class="primary small" id="acc-cta">Crear mi cuenta</button>`;
   else if(!user) html=`<p><strong>Pruébalo gratis 2 días con todo incluido.</strong> Solo necesitas crear una cuenta: sin tarjeta y sin compromiso.</p><button class="primary small" id="acc-cta">Empezar la prueba gratis</button>`;
   else if(ACC.admin){a.classList.add("ok");html=`<p><strong>Cuenta de administrador.</strong> Tienes acceso a todo.${BETA?" El modo pruebas está activado: no se puede pagar.":""}</p><button class="ghost small" id="acc-admin">Panel de administración</button>`}
-  else if(ACC.plan==="beta"){a.classList.add("ok");html=`<p><strong>Versión de pruebas:</strong> tienes acceso completo gratis a todas las oposiciones, simulacros incluidos.${FORM_URL?` Si ves un error o tienes una idea, <a href="${FORM_URL}" target="_blank" rel="noopener">cuéntamelo aquí</a>.`:""}</p>`}
+  else if(ACC.plan==="beta"){a.classList.add("ok");html=`<p><strong>Versión de pruebas:</strong> tienes acceso completo gratis a todas las oposiciones, simulacros incluidos. Si ves un error o tienes una idea, escríbenos a <a href="mailto:${CONTACTO}">${CONTACTO}</a>.</p>`}
   else if(ACC.plan==="prueba") html=`<p><strong>Prueba gratis activa:</strong> te quedan ${quedan(ACC.hasta)}. Tienes acceso a todo, simulacros incluidos.</p><button class="ghost small" id="acc-cta">Ver planes</button>`;
   else if(ACC.plan){a.classList.add("ok");const mej=PLANES.some(p=>(RANGO[p.id]||0)>(RANGO[ACC.plan]||0));html=`<p><strong>${PLAN_NOMBRE[ACC.plan]}</strong> de ${esc(CFG().corto)} activo hasta el ${fechaCorta(ACC.hasta)}.</p>${mej?'<button class="ghost small" id="acc-cta">Mejorar plan</button>':""}`}
   else if(ACC.cargando) html=`<p>Comprobando tu acceso…</p>`;
