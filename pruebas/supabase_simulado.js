@@ -17,7 +17,7 @@ function qb(table){
       if(+localStorage.getItem('mock-down')){return Promise.resolve({data:null,error:{message:'TypeError: Failed to fetch'}})}
       const f=+localStorage.getItem('mock-fail')||0;if(f>0){localStorage.setItem('mock-fail',f-1);return Promise.resolve({data:null,error:{message:'fallo temporal simulado'}})}
       const rows=ROWS.filter(r=>r.tema<=mx()&&(!OPF||(r.oposicion||'aux-cm')===OPF));return Promise.resolve({data:rows.slice(a,z+1),error:null})},
-    then(res,rej){return Promise.resolve({count:ROWS.filter(r=>r.tema<=mx()).length,data:null,error:null}).then(res,rej)},
+    then(res,rej){if(table==='compras')return Promise.resolve({data:S().compras||[],error:null}).then(res,rej);return Promise.resolve({count:ROWS.filter(r=>r.tema<=mx()).length,data:null,error:null}).then(res,rej)},
     limit(){return Promise.resolve({data:[],error:null})}};
   return b;
 }

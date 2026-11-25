@@ -468,6 +468,18 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
 
 /* ---------- funciones en pruebas (solo administradores) ---------- */
 .lab-card{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+/* perfil */
+.pf-ops{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.pf-op{background:var(--surface);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:8px}
+.pf-op h3{margin:0;font:800 22px/1.1 var(--cond);text-transform:uppercase}
+.pf-op .estado{font-weight:600}
+.pf-op .estado.sin{color:var(--muted);font-weight:500}
+.pf-op .pf-acc{margin-top:auto;padding-top:8px}
+.pf-compra{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.pf-compra:last-child{border-bottom:0}
+.pf-compra b{font-variant-numeric:tabular-nums}
+.pf-cuenta{display:flex;flex-direction:column;gap:14px}
+.pf-btns{display:flex;flex-wrap:wrap;gap:10px}
 .kpis.dos{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:900px){.kpis.dos{grid-template-columns:1fr}}
 .hoy-extra{margin-top:18px}
@@ -512,7 +524,7 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
       <button class="avatar hidden" id="btn-cuenta" aria-haspopup="true" aria-expanded="false" aria-controls="menu-cuenta"><span class="ini" id="ini" aria-hidden="true"></span><span class="visually-hidden">Tu cuenta</span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5l4 4 4-4"/></svg></button>
       <div class="menu-cuenta hidden" id="menu-cuenta">
         <div class="yo"><b id="who"></b><span id="who-plan"></span><span class="sync hidden" id="sync-state"></span></div>
-        <button type="button" id="btn-account"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="3.5"/><path d="M3.5 17c1.2-3 3.6-4.5 6.5-4.5s5.3 1.5 6.5 4.5"/></svg>Mi cuenta</button>
+        <button type="button" id="btn-account" data-perfil><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="3.5"/><path d="M3.5 17c1.2-3 3.6-4.5 6.5-4.5s5.3 1.5 6.5 4.5"/></svg>Mi cuenta</button>
         <button type="button" id="btn-admin" class="hidden"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5l6 2.5v4.5c0 4-2.6 6.8-6 8-3.4-1.2-6-4-6-8V5z"/></svg>Administración</button>
         <button type="button" id="lab-oscuro" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 12.5A7 7 0 0 1 7.5 3.5a7 7 0 1 0 9 9z"/></svg>Modo oscuro</button>
         <button type="button" id="lab-instalar" class="hidden"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10M6 9l4 4 4-4M4 16h12"/></svg>Instalar la aplicación</button>
@@ -876,6 +888,46 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
       </div>
     </section>
   </div>
+</main>
+
+<!-- PERFIL: #/perfil -->
+<main data-view="perfil" class="hidden" aria-labelledby="pf-h">
+  <header class="pagecab"><div class="wrap"><div class="tit"><h1 id="pf-h">Mi perfil</h1><p class="sub" id="pf-sub">Tus oposiciones, tus compras y tu cuenta.</p></div></div></header>
+  <section class="seccion">
+    <div class="wrap">
+      <section class="card hidden" id="pf-anon"><p style="margin:0 0 12px">Entra en tu cuenta para ver tu perfil, tus compras y tu progreso.</p><button class="primary small" id="pf-entrar">Entrar</button></section>
+      <div id="pf-body">
+        <div class="bloque">
+          <h2>Mis estadísticas</h2>
+          <div class="kpis" id="pf-kpis"></div>
+        </div>
+        <div class="bloque">
+          <h2>Mis oposiciones</h2>
+          <div class="pf-ops" id="pf-ops"></div>
+        </div>
+        <div class="bloque">
+          <h2>Mis compras</h2>
+          <section class="card">
+            <div id="pf-compras"></div>
+            <p class="meta" style="margin:12px 0 0">Stripe te envía el recibo de cada compra a tu email. Si necesitas una factura o tienes cualquier problema con un pago, escríbenos a <a href="mailto:oponota.contacto@gmail.com">oponota.contacto@gmail.com</a>.</p>
+          </section>
+        </div>
+        <div class="bloque">
+          <h2>Mi cuenta</h2>
+          <section class="card pf-cuenta">
+            <p style="margin:0">Has entrado como <strong id="pf-email"></strong>.</p>
+            <div class="pf-btns">
+              <button class="ghost small" id="pf-oscuro" aria-pressed="false">Modo oscuro</button>
+              <button class="ghost small" id="pf-datos">Descargar mis datos</button>
+              <button class="ghost small" id="pf-pass">Cambiar contraseña</button>
+              <button class="ghost small" id="pf-salir">Cerrar sesión</button>
+            </div>
+            <p class="meta" style="margin:0">Para eliminar tu cuenta y todo tu progreso, pulsa «Cambiar contraseña» y abre «Eliminar mi cuenta».</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <div class="wrap zona-test" id="zona-test">
@@ -1588,6 +1640,7 @@ function mostrarVista(v){
   if(v==="inicio")marcarSeccion();
   document.querySelectorAll("#opnav a").forEach(a=>a.setAttribute("aria-current",enOp&&a.dataset.sub===SUB?"page":"false"));
   if(v==="inicio"){renderInicio();renderPrecio()}
+  if(v==="perfil"){document.querySelectorAll("#mainnav a").forEach(x=>x.setAttribute("aria-current","false"));renderPerfil()}
   if(enOp){
     $("faq-examen-w").classList.toggle("hidden",!CFG().faqExamen);$("faq-cayo-w").classList.toggle("hidden",!CFG().faqCayo);
     renderStats();renderToday();
@@ -1613,6 +1666,7 @@ function ruta(){
   const viejo=["#practicar","#progreso"].includes(location.hash);
   if(EN_TEST)home();
   if(m&&opValida(m[1])){if(m[1]!==OP)cambiarOp(m[1]);SUB=SUBS.includes(m[2])?m[2]:"inicio";mostrarVista("op")}
+  else if(location.hash==="#/perfil")mostrarVista("perfil");
   else if(viejo){SUB=location.hash.slice(1);try{history.replaceState(null,"",hashSub(OP,SUB))}catch(e){}mostrarVista("op")}
   else mostrarVista("inicio");
   window.scrollTo({top:0});
@@ -1760,6 +1814,8 @@ function mergeOp(a,b){
     const x=(a.t||{})[k]||{a:0,n:0},y=(b.t||{})[k]||{a:0,n:0};out.t[k]=x.n>=y.n?x:y});
   out.wrong=[...new Set([...(a.wrong||[]),...(b.wrong||[])])];
   out.marks=[...new Set([...(a.marks||[]),...(b.marks||[])])];
+  // repaso 1/3/7: por pregunta, gana la etapa más avanzada (y, a igual etapa, la fecha más tardía)
+  const ra=a.rep||{},rb=b.rep||{};out.rep={...rb};Object.entries(ra).forEach(([id,x])=>{const y=out.rep[id];if(!y||x[0]>y[0]||(x[0]===y[0]&&x[1]>y[1]))out.rep[id]=x});
   const seen=new Set();out.sims=[...(a.sims||[]),...(b.sims||[])].filter(s=>!seen.has(s.ts)&&seen.add(s.ts)).sort((p,q)=>p.ts-q.ts).slice(-20);
   return out;
 }
@@ -1790,6 +1846,7 @@ function setUser(u){
   user=u;
   $("btn-login").classList.toggle("hidden",!!u);
   $("btn-cuenta").classList.toggle("hidden",!u);if(!u)menuCuenta(false);
+  if(VISTA==="perfil")renderPerfil();
   if(VISTA==="inicio")renderPrecio();$("hero-cuenta").textContent=u?"Ir a mis oposiciones":"Crear cuenta gratis";
   if(u&&changed&&!(u.user_metadata||{}).acepta_privacidad){const g=getLS("auxcm-google");if(g&&sb)sb.auth.updateUser({data:{acepta_privacidad:g,mayor_14:true,via:"google"}}).then(()=>{},()=>{})}
   if(u){$("who").textContent=u.email;$("ini").textContent=(u.email||"?").charAt(0).toUpperCase();$("acc-email").textContent=u.email;if(changed){
@@ -2225,7 +2282,7 @@ if(AUTH_ON){
     if(hasStoredSession()||/access_token|type=recovery|code=/.test(location.hash+location.search)){const r=await sb.auth.getSession();setUser(r.data.session?r.data.session.user:null)}
   }).catch(()=>{BETA=false;applyBeta()});
   $("btn-login").addEventListener("click",()=>openAuth("signup"));
-  $("btn-account").addEventListener("click",openAccount);
+  $("btn-account").addEventListener("click",()=>{menuCuenta(false);if(location.hash==="#/perfil")ruta();else location.hash="#/perfil"});
   $("auth-close").addEventListener("click",()=>$("dlg-auth").close());
   $("acc-close").addEventListener("click",()=>$("dlg-account").close());
   ["signup","login","reset"].forEach(t=>$("tab-"+t).addEventListener("click",()=>setTab(t)));
@@ -2290,8 +2347,13 @@ if(AUTH_ON){
 // modo oscuro y aplicación instalable. Nada de esto cambia el formato del progreso (auxcm-v2):
 // el repaso espaciado se guarda aparte, en «oponota-repaso», solo en este navegador.
 var REP_KEY="oponota-repaso",REP_DIAS=[1,3,7];
-function repLeer(){try{return JSON.parse(localStorage.getItem(REP_KEY))||{}}catch(e){return {}}}
-function repGuardar(r){try{localStorage.setItem(REP_KEY,JSON.stringify(r))}catch(e){}}
+// Desde el 25/11/2026 el repaso se guarda en el progreso de la cuenta (DB.ops[op].rep) y se sincroniza con Supabase.
+function repLeer(){const R={};Object.entries(DB.ops||{}).forEach(([k,o])=>{R[k]=(o&&o.rep)||{}});return R}
+function repGuardar(R){Object.entries(R).forEach(([k,r])=>{const o=DB.ops[k]=DB.ops[k]||{t:{},wrong:[],sims:[],marks:[]};o.rep=r});save(DB)}
+// Lo que quedara en el formato antiguo (solo en este navegador) pasa a la cuenta una vez
+(function(){try{const v=JSON.parse(localStorage.getItem(REP_KEY)||"null");if(!v)return;
+  Object.entries(v).forEach(([k,r])=>{const o=DB.ops[k]=DB.ops[k]||{t:{},wrong:[],sims:[],marks:[]};o.rep={...r,...(o.rep||{})}});
+  save(DB);localStorage.removeItem(REP_KEY)}catch(e){}})();
 function diaMas(n){const d=new Date();d.setDate(d.getDate()+n);return dayKey(d)}
 function labRecord(q,ok){
   if(!q.id)return;
@@ -2395,6 +2457,47 @@ $("lab-oscuro").addEventListener("click",()=>{const on=document.documentElement.
 var LAB_INSTALAR=null;
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();LAB_INSTALAR=e;$("lab-instalar").classList.remove("hidden")});
 $("lab-instalar").addEventListener("click",async()=>{if(!LAB_INSTALAR)return;LAB_INSTALAR.prompt();try{await LAB_INSTALAR.userChoice}catch(e){}LAB_INSTALAR=null;$("lab-instalar").classList.add("hidden")});
+// ===== Perfil (#/perfil): estadísticas, oposiciones, compras y cuenta (25/11/2026) =====
+function nombrePlanOp(op,id){const p=((OPOS[op]||{}).planes||[]).find(x=>x.id===id);return p?"Plan "+p.nombre:(PLAN_BASE[id]||id)}
+var PF_T=0;
+async function renderPerfil(){
+  const anon=!user;$("pf-anon").classList.toggle("hidden",!anon);$("pf-body").classList.toggle("hidden",anon);
+  if(anon)return;
+  $("pf-email").textContent=user.email;
+  $("pf-oscuro").setAttribute("aria-pressed",String(document.documentElement.dataset.tema==="oscuro"));
+  // estadísticas de todas las oposiciones juntas
+  let n=0,a=0;Object.values(DB.ops||{}).forEach(o=>Object.values((o&&o.t)||{}).forEach(x=>{n+=x.n||0;a+=x.a||0}));
+  const racha=streakInfo(),hoy=DB.days[dayKey()]||0,sims=Object.values(DB.ops||{}).reduce((s,o)=>s+((o&&o.sims)||[]).length,0);
+  $("pf-kpis").innerHTML=`
+    <div class="kpi"><span class="lbl">Racha de estudio</span><span class="big">${racha} ${racha===1?"día":"días"}</span><span class="nota">Hoy llevas ${plural(hoy,"pregunta","preguntas")}.</span></div>
+    <div class="kpi"><span class="lbl">Preguntas respondidas</span><span class="big">${n.toLocaleString("es-ES")}</span><span class="nota">${n?`Aciertas el ${Math.round(a/n*100)} % en todas tus oposiciones.`:"Haz tu primer test para empezar."}</span></div>
+    <div class="kpi"><span class="lbl">Simulacros hechos</span><span class="big">${sims}</span><span class="nota">${plural(DB.done||0,"test terminado","tests terminados")} en total.</span></div>`;
+  // oposiciones: primero las que has practicado
+  const ops=Object.keys(OPOS).filter(opValida).sort((x,y)=>{const nx=Object.values(((DB.ops[x]||{}).t)||{}).reduce((s,v)=>s+v.n,0),ny=Object.values(((DB.ops[y]||{}).t)||{}).reduce((s,v)=>s+v.n,0);return ny-nx});
+  const tarjeta=(op,acc)=>{const T=((DB.ops[op]||{}).t)||{},nn=Object.values(T).reduce((s,v)=>s+v.n,0),aa=Object.values(T).reduce((s,v)=>s+v.a,0);
+    const est=acc===undefined?"Comprobando tu acceso…":acc&&acc.plan?`${acc.admin?"Administrador":acc.plan==="beta"?PLAN_BASE.beta:nombrePlanOp(op,acc.plan)}${acc.hasta?(acc.plan==="prueba"?` · te quedan ${quedan(acc.hasta)}`:` · hasta el ${fechaCorta(acc.hasta)}`):""}`:"Sin plan activo";
+    return `<div class="pf-op"><h3>${esc(OPOS[op].corto||OPOS[op].nombre)}</h3><span class="estado${acc&&acc.plan?"":" sin"}">${esc(est)}</span><span class="meta">${nn?`${plural(nn,"respuesta","respuestas")} · ${Math.round(aa/nn*100)} % de aciertos`:"Aún sin practicar"}</span><div class="pf-acc"><a class="primary small btn" href="#/o/${op}">${nn?"Seguir practicando":"Empezar"}</a>${acc&&!acc.plan&&!BETA?` <a class="ghost small btn" href="#/o/${op}" data-pf-planes="${op}">Ver planes</a>`:""}</div></div>`};
+  $("pf-ops").innerHTML=ops.map(op=>tarjeta(op,undefined)).join("");
+  $("pf-compras").innerHTML=`<p class="meta" style="margin:0">Cargando…</p>`;
+  if(Date.now()-PF_T<1500)return;PF_T=Date.now();
+  // acceso a cada oposición y compras, desde Supabase
+  const accs=await Promise.all(ops.map(op=>sb.rpc("mi_acceso_op",{op}).then(r=>r.error?null:(r.data||{plan:null}),()=>null)));
+  if(VISTA!=="perfil")return;
+  $("pf-ops").innerHTML=ops.map((op,i)=>tarjeta(op,accs[i]||{plan:null})).join("");
+  let compras=[];try{const r=await sb.from("compras").select("oposicion,plan,importe_cent,moneda,creado,hasta").order("creado",{ascending:false});if(!r.error)compras=r.data||[]}catch(e){}
+  $("pf-compras").innerHTML=compras.length?compras.map(c=>`<div class="pf-compra"><span><b>${esc(nombrePlanOp(c.oposicion,c.plan))}</b> · ${esc((OPOS[c.oposicion]||{}).corto||c.oposicion||"")}<br><span class="meta">Comprado el ${fechaCorta(c.creado)}${c.hasta?` · acceso hasta el ${fechaCorta(c.hasta)}`:""}</span></span><b>${(c.importe_cent/100).toLocaleString("es-ES",{style:"currency",currency:(c.moneda||"eur").toUpperCase()})}</b></div>`).join(""):`<p class="meta" style="margin:0">Todavía no has comprado ningún plan.</p>`;
+}
+$("pf-entrar").addEventListener("click",()=>{if(typeof openAuth==="function")openAuth("login")});
+$("pf-oscuro").addEventListener("click",()=>{$("lab-oscuro").click();$("pf-oscuro").setAttribute("aria-pressed",String(document.documentElement.dataset.tema==="oscuro"))});
+$("pf-pass").addEventListener("click",()=>{openAccount();$("acc-changepass").click()});
+$("pf-salir").addEventListener("click",()=>$("btn-logout").click());
+$("pf-datos").addEventListener("click",async()=>{
+  let compras=[];try{const r=await sb.from("compras").select("*");if(!r.error)compras=r.data||[]}catch(e){}
+  const datos={email:user&&user.email,descargado:new Date().toISOString(),progreso:DB,compras};
+  const url=URL.createObjectURL(new Blob([JSON.stringify(datos,null,2)],{type:"application/json"}));
+  const a=document.createElement("a");a.href=url;a.download="oponota-mis-datos.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
+});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-pf-planes]");if(!b)return;e.preventDefault();location.hash="#/o/"+b.dataset.pfPlanes;setTimeout(()=>{if(typeof showPlans==="function")showPlans()},300)});
 function labOffline(){
   if(labOffline.hecho||!("serviceWorker" in navigator)||location.protocol!=="https:")return;labOffline.hecho=true;
   navigator.serviceWorker.register("sw.js").catch(()=>{});
