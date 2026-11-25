@@ -132,6 +132,49 @@ def pagina(site, op, c, counts):
 """
 
 
+PIE_MAX = 6  # oposiciones que caben en el pie; si hay más, enlace a oposiciones.html
+
+
+def disponibles(opos):
+    return [(op, c) for op, c in opos.items()
+            if not c.get('proximamente') and op in SLUGS and c.get('counts')]
+
+
+def pie_html(opos):
+    """Enlaces a las oposiciones para el pie de la web (lo usa build.py en __PIE_OPOS__)."""
+    L = disponibles(opos)
+    links = ''.join(f'<a href="{SLUGS[op]}.html">{e(c.get("corto") or c["nombre"])}</a>' for op, c in L[:PIE_MAX])
+    if len(L) > PIE_MAX:
+        links += f'<a class="todas" href="oposiciones.html">Ver todas las oposiciones ({len(L)})</a>'
+    return links
+
+
+def indice(site, opos):
+    """oposiciones.html: todas las oposiciones disponibles, con enlace a su página."""
+    L = disponibles(opos)
+    filas = ''.join(f'<li><a href="{SLUGS[op]}.html">Test de {e(c["nombre"])}</a> · {miles(sum(c["counts"].values()))} preguntas</li>' for op, c in L)
+    titulo = 'Tests de oposiciones comprobados con el BOE'
+    return f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Todas las oposiciones · OpoNota</title>
+<meta name="description" content="Tests de {len(L)} oposiciones con cada pregunta comprobada en el BOE, su artículo y su explicación.">
+<link rel="canonical" href="{e(site)}oposiciones.html">
+<link rel="icon" type="image/png" sizes="32x32" href="logo-32.png">
+<style>{ESTILO}</style>
+</head>
+<body>
+<header><div><a href="./"><img src="oponota.png" alt="OpoNota" width="123" height="30"></a><a href="./">Ir a la web</a></div></header>
+<section class="cab"><div><h1>{titulo}</h1><p>Elige tu oposición para ver su temario, cómo es el examen y los planes.</p></div></section>
+<main><h2>Oposiciones disponibles</h2><ul>{filas}</ul></main>
+<footer><a href="./">OpoNota</a><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><span>Herramienta de práctica independiente, sin relación con ninguna administración.</span></footer>
+</body>
+</html>
+"""
+
+
 def seo(site, opos, counts_por_op, out='web'):
     hoy = datetime.date.today().isoformat()
     urls = [(site, '1.0')]
@@ -141,6 +184,8 @@ def seo(site, opos, counts_por_op, out='web'):
         slug, doc = pagina(site, op, c, counts_por_op[op])
         open(os.path.join(out, slug + '.html'), 'w').write(doc)
         urls.append((site + slug + '.html', '0.9'))
+    open(os.path.join(out, 'oposiciones.html'), 'w').write(indice(site, opos))
+    urls.append((site + 'oposiciones.html', '0.8'))
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += ''.join(f'  <url><loc>{e(u)}</loc><lastmod>{hoy}</lastmod><priority>{p}</priority></url>\n' for u, p in urls)
     sm += '</urlset>\n'

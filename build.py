@@ -34,7 +34,7 @@ out=(t.replace('__OPOS__',json.dumps(OPOS,ensure_ascii=False)).replace('__PAYLIN
      .replace('__DOMS__',json.dumps(doms)).replace('__N__',str(len(Q))).replace('__T__',str(len(counts)))
      .replace('__FORM__','https://forms.gle/2ShnxHhTrBVKBMQ48').replace('__BRAND__',BRAND)
      .replace('__SB_URL__','https://djzqzywpwliytbtkpdzk.supabase.co').replace('__SB_KEY__','sb_publishable_OBFWgh-yTm0EJvAT8FkTpQ_y1GiRhf6')
-     .replace('__SITE__',SITE).replace('__PRECIO__',json.dumps(precio,ensure_ascii=False)))
+     .replace('__SITE__',SITE).replace('__PIE_OPOS__',__import__('seo_build').pie_html(OPOS)).replace('__PRECIO__',json.dumps(precio,ensure_ascii=False)))
 open('web/index.html','w').write(out)
 # recursos de la marca y la fuente
 import shutil

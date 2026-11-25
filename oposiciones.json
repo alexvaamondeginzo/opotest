@@ -655,7 +655,8 @@
         "desde": 1,
         "hasta": 47,
         "elegirTemas": true,
-        "equilibrar": true
+        "equilibrar": true,
+        "escala": 30
       },
       {
         "id": "adm-ej2",
@@ -667,7 +668,8 @@
         "desde": 9,
         "hasta": 39,
         "elegirTemas": false,
-        "equilibrar": true
+        "equilibrar": true,
+        "escala": 40
       },
       {
         "id": "adm-ej3",
@@ -679,7 +681,8 @@
         "desde": 40,
         "hasta": 47,
         "elegirTemas": false,
-        "equilibrar": true
+        "equilibrar": true,
+        "escala": 30
       }
     ],
     "faqExamen": "Tres ejercicios eliminatorios tipo test de cuatro opciones; cada fallo resta un tercio. El primero, 40 preguntas (más 5 de reserva) en 45 minutos repartidas entre los temas del programa, de 0 a 30 puntos (se aprueba con 15). El segundo, dos supuestos prácticos de 15 preguntas cada uno en 45 minutos sobre derecho administrativo, recursos humanos y gestión financiera, de 0 a 40 (al menos 10 en cada supuesto y 20 en total). El tercero, 40 preguntas en 45 minutos de informática y ofimática (temas 40 a 47), de 0 a 30 (se aprueba con 15). En la web la nota sale sobre 50 (25 equivale a aprobar).",
@@ -1144,7 +1147,8 @@
         "elegirTemas": true,
         "equilibrar": true,
         "pen": 3,
-        "penEntera": true
+        "penEntera": true,
+        "escala": 10
       },
       {
         "id": "can-p2",
@@ -1158,7 +1162,8 @@
         "elegirTemas": false,
         "equilibrar": true,
         "pen": 2,
-        "penEntera": true
+        "penEntera": true,
+        "escala": 10
       }
     ],
     "faqExamen": "Un ejercicio único de 100 minutos con dos partes tipo test de cuatro opciones. La primera parte tiene 50 preguntas (más 4 de reserva) de la parte general, temas 1 a 20, y cada tres fallos descuentan un acierto. La segunda es un supuesto práctico con 25 preguntas (más 3 de reserva) de la parte práctica, temas 21 a 40, y cada dos fallos descuentan un acierto. Cada parte se califica de 0 a 10 y hay que sacar al menos 5 en cada una. En la web la nota sale sobre 50 (25 equivale al 5).",

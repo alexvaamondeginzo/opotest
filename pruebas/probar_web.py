@@ -93,6 +93,9 @@ async def main():
                 await pg.screenshot(path=f'{DIR_CAP}/{nombre}.png', full_page=entera)
 
         usuario = {'id': 'u-a@gmail.com', 'email': 'a@gmail.com'}
+        pie = open(os.path.join(RAIZ, 'web', 'index.html')).read()
+        comprobar('class="pie-ops"' in pie and 'test-auxiliar-administrativo-gobierno-de-canarias.html' in pie, 'el pie lista las oposiciones (generado por build.py)')
+        comprobar(os.path.exists(os.path.join(RAIZ, 'web', 'oposiciones.html')), 'existe la página con todas las oposiciones')
         for ancho, alto, disp in [(1366, 900, 'escritorio'), (390, 844, 'movil')]:
             print(f'\n== Usuario normal ({disp}) ==')
             pg, err = await abrir(ancho, alto, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
@@ -215,6 +218,8 @@ async def main():
         # penalización propia de Canarias: 30 aciertos y 20 fallos de 50 → descuenta 6 (grupos enteros de 3) → 24 sobre 50
         nota_can = await pg.evaluate("(()=>{const o=OP;OP='aux-canarias';const C=SIMCFG;SIMCFG={x:{n:50,pen:3,penEntera:true,cupos:[{desde:1,hasta:20,n:50}],nombre:'Simulacro 1.ª parte'}};const g=P;P=()=>({t:{'1':{a:30,n:50}}});const r=labNota()[0].nota;SIMCFG=C;P=g;OP=o;return r})()")
         comprobar(nota_can == 24, f'nota estimada con la penalización de Canarias ({nota_can})')
+        ofi = await pg.evaluate("(()=>{const C=SIMCFG;SIMCFG={x:{n:50,pen:3,penEntera:true,escala:10,cupos:[{desde:1,hasta:20,n:50}],nombre:'Simulacro 1.ª parte'}};const g=P;P=()=>({t:{'1':{a:30,n:50}}});const N=labNota();const r=N[0].nota/50*10;SIMCFG=C;P=g;return Math.round(r*10)/10})()")
+        comprobar(ofi == 4.8, f'nota en la escala oficial de Canarias ({ofi} sobre 10)')
         await pg.evaluate("location.hash='#/o/aux-cm/practicar'")
         await pg.wait_for_timeout(500)
         comprobar(len(await pg.eval_on_selector_all('#lab-norma option', 'e=>e')) > 5, 'lista las leyes para practicar')

@@ -368,6 +368,15 @@ footer.pie{background:var(--surface);border-top:1px solid var(--line);padding:40
 footer.pie .wrap{display:flex;flex-direction:column;gap:10px}
 footer.pie nav{display:flex;gap:20px;flex-wrap:wrap}
 footer.pie a{color:var(--muted)}
+footer.pie h2{font:700 15px/1 var(--cond);text-transform:uppercase;letter-spacing:.04em;color:var(--ink);margin:6px 0 10px}
+.pie-ops{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 24px!important}
+.pie-ops a,.pie-legal a{text-decoration:none}
+.pie-ops a:hover,.pie-legal a:hover,.pie-ops a:focus-visible,.pie-legal a:focus-visible{text-decoration:underline}
+.pie-ops .todas{font-weight:600;color:var(--teal)!important}
+.pie-legal{gap:0!important;font-size:14px;margin-top:10px;padding-top:14px;border-top:1px solid var(--line)}
+.pie-legal>*:not(:last-child)::after{content:"·";margin:0 10px;color:var(--line-strong)}
+.pie-legal button{font-size:14px}
+@media (max-width:760px){.pie-ops{grid-template-columns:repeat(2,minmax(0,1fr))}footer.pie{font-size:14px}}
 footer.pie img{height:26px;width:auto;align-self:flex-start;margin-bottom:8px}
 
 /* ---------- diálogos y campos (campos con línea inferior, como en la referencia) ---------- */
@@ -975,8 +984,10 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
 <footer class="pie">
   <div class="wrap">
     <img src="oponota.png" alt="__BRAND__" width="107" height="26">
-    <nav aria-label="Oposiciones"><a href="test-auxiliar-administrativo-comunidad-de-madrid.html">Test de Auxiliar Administrativo de la Comunidad de Madrid</a><a href="test-auxiliar-administrativo-del-estado.html">Test de Auxiliar Administrativo del Estado</a><a href="test-auxiliar-administrativo-ayuntamiento-de-madrid.html">Test de Auxiliar Administrativo del Ayuntamiento de Madrid</a><a href="test-auxiliar-administrativo-gobierno-de-canarias.html">Test de Auxiliar Administrativo del Gobierno de Canarias</a><a href="test-administrativo-comunidad-de-madrid.html">Test de Administrativo de la Comunidad de Madrid</a></nav>
-    <nav aria-label="Información legal"><a href="aviso-legal.html">Aviso legal</a><a href="condiciones.html">Condiciones de compra</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a><button type="button" class="linkbtn" id="open-cookies" style="font-size:14px">Ver aviso de cookies</button></nav>
+    <div class="pie-cols">
+      <div><h2>Oposiciones</h2><nav aria-label="Oposiciones" class="pie-ops">__PIE_OPOS__</nav></div>
+    </div>
+    <nav aria-label="Información legal" class="pie-legal"><a href="aviso-legal.html">Aviso legal</a><a href="condiciones.html">Condiciones de compra</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><button type="button" class="linkbtn" id="open-cookies" style="font-size:14px">Ver aviso de cookies</button></nav>
     <span>Fuentes: textos consolidados del BOE y de los boletines autonómicos de cada ley del programa. Ofimática: documentación oficial de Microsoft para Windows 11 y Microsoft 365.</span>
     <span id="foot-programa"></span>
     <span>Tests de práctica independientes, sin relación con ninguna administración pública.</span>
@@ -1446,6 +1457,7 @@ function finish(timeout){
   if(isSim(st.modo)&&n>=SIMCFG[st.modo].n){const o=P();o.sims.push({ts:Date.now(),nota,ex:SIMCFG[st.modo].ex});o.sims=o.sims.slice(-20);save(DB)}
   $("quiz").classList.add("hidden");$("result").classList.remove("hidden");
   $("score").innerHTML=`
+    ${cfgS&&cfgS.escala?`<div class="tile oficial"><span>Nota oficial (sobre ${cfgS.escala})</span><b>${(Math.round(nota/50*cfgS.escala*100)/100).toLocaleString("es-ES")}</b></div>`:""}
     <div class="tile"><span>Nota sobre 50</span><b>${nota.toLocaleString("es-ES")}</b></div>
     <div class="tile"><span>Aciertos</span><b>${a}</b></div>
     <div class="tile"><span>Fallos</span><b>${f}</b></div>
@@ -2436,7 +2448,7 @@ function labRender(){
   $("lab-rep-btn").classList.toggle("hidden",!rep.length);
   const N=labNota(),hay=N.filter(x=>x.nota!==null);
   $("lab-nota").textContent=hay.length?hay.map(x=>x.nota.toLocaleString("es-ES")).join(" · "):"—";
-  $("lab-nota-n").textContent=hay.length?`Sobre 50 y con la penalización de cada simulacro, si contestas todo (${N.map(x=>`${x.c.nombre.replace(/^Simulacro /,"")}: ${x.nota===null?"faltan datos":x.nota>=25?"aprobado":"suspenso"}`).join("; ")}). Es orientativa: sale de tus aciertos por tema.`:"Responde al menos 30 preguntas de los temas de un ejercicio para estimarla.";
+  $("lab-nota-n").textContent=hay.length?`Sobre 50 y con la penalización de cada simulacro, si contestas todo (${N.map(x=>`${x.c.nombre.replace(/^Simulacro /,"")}: ${x.nota===null?"faltan datos":(x.nota>=25?"aprobado":"suspenso")+(x.c.escala?`, ${(Math.round(x.nota/50*x.c.escala*10)/10).toLocaleString("es-ES")} sobre ${x.c.escala} en la escala oficial`:"")}`).join("; ")}). Es orientativa: sale de tus aciertos por tema.`:"Responde al menos 30 preguntas de los temas de un ejercicio para estimarla.";
   labPlan();labNormas();labBuscar();labExamenes();labPercentil();
   $("lab-oscuro").setAttribute("aria-pressed",String(document.documentElement.dataset.tema==="oscuro"));
   labOffline();
