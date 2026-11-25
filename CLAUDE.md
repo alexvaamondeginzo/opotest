@@ -152,6 +152,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 25/11/2026 · Edu · Simulacros: la evolución de notas tiene una línea de color por ejercicio (`ex` del simulacro) en la misma gráfica y, debajo, la media, la última y la mejor de cada uno.
 - 25/11/2026 · Edu · Perfil: «Mi semana» con flechas, objetivo diario y fecha del examen propia; aviso semanal en Inicio; ritmo de la semana frente al necesario; «Compartir mi nota» de los simulacros como imagen. La cuenta atrás cuenta días naturales. Pruebas nuevas en `probar_web.py`.
 - 25/11/2026 · Edu · Corregido: en modo oscuro los botones 👍 / 👎 de la opinión salían blanco sobre blanco. Prueba nueva en `probar_web.py`.
 - 25/11/2026 · Edu · Opinión de un toque (👍 / 👎 tras el 3.er test, y «¿Qué mejorarías?» con 👎) en vez de la caja de opinión por correo. Tabla `opiniones` en Supabase (`15-opiniones.sql`, aplicado) y bloque «Opiniones» en el panel de administración.

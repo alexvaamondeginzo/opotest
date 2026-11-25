@@ -286,6 +286,17 @@ legend{font:700 22px/1 var(--cond);text-transform:uppercase;margin-bottom:14px;d
 .chart .line{stroke:var(--teal);stroke-width:2.5;fill:none}
 .chart .dot{fill:var(--surface);stroke:var(--teal);stroke-width:2.5}
 .chart .last{fill:var(--teal)}
+.chart .s2 .line{stroke:#d97706}.chart .s2 .dot{stroke:#d97706}.chart .s2 .last{fill:#d97706}
+.chart .s3 .line{stroke:#7c3aed}.chart .s3 .dot{stroke:#7c3aed}.chart .s3 .last{fill:#7c3aed}
+html[data-tema="oscuro"] .chart .s2 .line,html[data-tema="oscuro"] .chart .s2 .dot{stroke:#f2b25c}html[data-tema="oscuro"] .chart .s2 .last{fill:#f2b25c}
+html[data-tema="oscuro"] .chart .s3 .line,html[data-tema="oscuro"] .chart .s3 .dot{stroke:#b9a2ff}html[data-tema="oscuro"] .chart .s3 .last{fill:#b9a2ff}
+.leyenda{display:flex;flex-direction:column;gap:8px;margin-top:6px;color:var(--ink);font-size:14px}
+.ley{display:flex;flex-wrap:wrap;align-items:center;gap:4px 16px}
+.ley i{width:22px;height:4px;border-radius:2px;background:var(--teal)}
+.ley.s2 i{background:#d97706}.ley.s3 i{background:#7c3aed}
+html[data-tema="oscuro"] .ley.s2 i{background:#f2b25c}html[data-tema="oscuro"] .ley.s3 i{background:#b9a2ff}
+.ley span{color:var(--muted)}.ley span b{color:var(--ink)}
+.ley span:first-of-type{color:var(--ink);min-width:0}
 .temario{display:flex;flex-direction:column}
 .temario div{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
 .temario div b{font:800 26px/1 var(--cond);color:var(--teal-deep)}
@@ -806,7 +817,7 @@ html[data-tema="oscuro"] #op-form textarea{background:#fff;color:#052f2e}
             <p class="vacio" id="sims-vacio">Cuando hagas tu primer simulacro, aquí verás tu nota sobre 50 y si llegarías al aprobado.</p>
             <div id="sims-wrap" class="hidden">
               <div id="sims"></div>
-              <p class="meta" id="sims-note"></p>
+              <div id="sims-note"></div>
             </div>
           </section>
         </div>
@@ -1405,15 +1416,23 @@ function renderSims(){
   const W=640,H=200,L=34,R=14,T=14,B=26,iw=W-L-R,ih=H-T-B;
   const x=i=>L+(S.length===1?iw/2:i*iw/(S.length-1)), y=v=>T+ih-(v/50)*ih;
   let g="";[0,10,20,30,40,50].forEach(v=>{g+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L-8}" y="${y(v)+4}" text-anchor="end">${v}</text>`});
-  const pts=S.map((s,i)=>[x(i),y(s.nota)]);
-  const line=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
-  const area=S.length>1?`<path class="area" d="${line} L${pts[pts.length-1][0]} ${y(0)} L${pts[0][0]} ${y(0)} Z"/>`:"";
-  const dots=pts.map((p,i)=>`<circle class="${i===pts.length-1?"last":"dot"}" cx="${p[0]}" cy="${p[1]}" r="${i===pts.length-1?5.5:4}"><title>${new Date(S[i].ts).toLocaleDateString("es-ES")} · ${S[i].ex===2?"2.º ejercicio":"1.er ejercicio"}: ${S[i].nota.toLocaleString("es-ES")}</title></circle>`).join("");
-  $("sims").innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolución de la nota en los simulacros">${g}${area}<line class="pass" x1="${L}" x2="${W-R}" y1="${y(25)}" y2="${y(25)}"/><text x="${L+6}" y="${y(25)-6}" class="passlbl">Aprobado: 25</text><path class="line" d="${line}"/>${dots}</svg>`;
-  const last=S[S.length-1].nota, best=Math.max(...S.map(s=>s.nota));
-  $("sims-note").textContent=`${S.length} simulacro${S.length>1?"s":""} · último: ${last.toLocaleString("es-ES")} · mejor: ${best.toLocaleString("es-ES")}`;
+  // una serie por ejercicio (ex), cada una con su color, sobre el mismo eje de tiempo
+  const nombreEx=ex=>{const c=Object.values(SIMCFG).find(z=>(z.ex||1)===ex);const n=c?c.nombre.replace(/^Simulacro\s*/i,""):ex+".º ejercicio";return n.charAt(0).toUpperCase()+n.slice(1)};
+  const exs=[...new Set(S.map(s=>s.ex||1))].sort((a,b)=>a-b),varias=exs.length>1,fmt=v=>(Math.round(v*100)/100).toLocaleString("es-ES");
+  let series="",leyenda="";
+  exs.forEach((ex,k)=>{
+    const idx=S.map((s,i)=>[s,i]).filter(([s])=>(s.ex||1)===ex),cls="s"+(k%3+1);
+    const pts=idx.map(([s,i])=>[x(i),y(s.nota)]);
+    const line=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+    const area=!varias&&pts.length>1?`<path class="area" d="${line} L${pts[pts.length-1][0]} ${y(0)} L${pts[0][0]} ${y(0)} Z"/>`:"";
+    const dots=pts.map((p,n)=>{const ult=n===pts.length-1,s=idx[n][0];return `<circle class="${ult?"last":"dot"}" cx="${p[0]}" cy="${p[1]}" r="${ult?5.5:4}"><title>${new Date(s.ts).toLocaleDateString("es-ES")} · ${esc(nombreEx(ex))}: ${s.nota.toLocaleString("es-ES")}</title></circle>`}).join("");
+    series+=`<g class="serie ${cls}">${area}<path class="line" d="${line}"/>${dots}</g>`;
+    const notas=idx.map(([s])=>s.nota),media=notas.reduce((a,b)=>a+b,0)/notas.length;
+    leyenda+=`<div class="ley ${cls}"><i></i><span><b>${esc(nombreEx(ex))}</b> · ${plural(notas.length,"simulacro","simulacros")}</span><span>Media <b>${fmt(media)}</b></span><span>Última <b>${fmt(notas[notas.length-1])}</b></span><span>Mejor <b>${fmt(Math.max(...notas))}</b></span></div>`;
+  });
+  $("sims").innerHTML=`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolución de la nota en los simulacros">${g}<line class="pass" x1="${L}" x2="${W-R}" y1="${y(25)}" y2="${y(25)}"/><text x="${L+6}" y="${y(25)-6}" class="passlbl">Aprobado: 25</text>${series}</svg>`;
+  $("sims-note").innerHTML=`<div class="leyenda">${leyenda}</div>`;
 }
-
 // ----- test -----
 function start(list){
   const {temas,num,modo}=selected();
