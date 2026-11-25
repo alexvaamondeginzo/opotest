@@ -361,6 +361,12 @@ kbd{font:600 12px var(--body);border:1px solid var(--line);border-bottom-width:2
 .rev a.boe{font-size:15px;font-weight:600}
 .cta{background:var(--ink);color:#d9ece8;border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px}
 .cta h3{color:#fff}
+.op-btns{display:flex;gap:10px;flex-wrap:wrap}
+.op-btns button,#op-form button{background:#fff;color:var(--ink);border:0;border-radius:999px;padding:12px 20px;font:600 16px var(--body);text-transform:none;letter-spacing:0}
+#op-form{display:flex;flex-direction:column;gap:10px}
+#op-form label{display:flex;flex-direction:column;gap:6px;color:#d9ece8}
+#op-form textarea{font:16px var(--body);border-radius:10px;border:0;padding:10px;resize:vertical}
+#op-form button{align-self:flex-start}
 .cta a{align-self:flex-start;text-decoration:none;background:#fff;color:var(--ink);font:600 16px var(--body);border-radius:999px;padding:12px 20px}
 
 /* ---------- pie ---------- */
@@ -865,6 +871,11 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
             <p class="meta">Lo que mandan los usuarios con «Reportar error». Revísalo contra el BOE y márcalo como resuelto.</p>
             <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Fecha</th><th>Oposición</th><th>Pregunta</th><th>Mensaje</th><th>Email</th><th></th></tr></thead><tbody id="admin-reportes"></tbody></table></div>
           </details>
+          <details class="plegable-admin" id="opiniones-w">
+            <summary><span>Opiniones</span><span class="meta" id="opiniones-resumen"></span></summary>
+            <p class="meta">Respuestas a «¿Te está sirviendo OpoNota?», que se pregunta una vez al terminar el tercer test.</p>
+            <div class="tabla-wrap"><table class="tabla"><thead><tr><th>Fecha</th><th>Oposición</th><th></th><th>¿Qué mejorarías?</th><th>Email</th></tr></thead><tbody id="admin-opiniones"></tbody></table></div>
+          </details>
           <details class="plegable-admin" id="espera-w">
             <summary><span>Lista de espera</span><span class="meta" id="espera-resumen"></span></summary>
             <p class="meta">Quién quiere que avisemos cuando salga cada oposición «Próximamente».</p>
@@ -971,10 +982,13 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
       <button class="primary" id="again">Volver a mi panel</button>
       <button class="ghost" id="retry-wrong">Repetir solo los fallos</button>
     </div>
-    <div class="cta hidden" id="cta">
-      <h3>¿Nos das tu opinión? Es un minuto</h3>
-      <p>Cuéntanos qué te ha parecido, qué echas en falta o si has visto algún error.</p>
-      <a id="cta-link" href="mailto:oponota.contacto@gmail.com">Enviar un correo</a>
+    <div class="cta hidden" id="cta" aria-live="polite">
+      <h3 id="op-h">¿Te está sirviendo OpoNota?</h3>
+      <div class="op-btns" id="op-btns"><button type="button" data-opinion="1">👍 Sí</button><button type="button" data-opinion="0">👎 No mucho</button></div>
+      <form id="op-form" class="hidden" novalidate>
+        <label>¿Qué mejorarías? (opcional)<textarea id="op-txt" maxlength="2000" rows="3" placeholder="Por ejemplo: más preguntas de un tema, otra oposición, algo que no funciona…"></textarea></label>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
     <h2 id="review-h">Repaso de fallos y preguntas en blanco</h2>
     <div class="review" id="review"></div>
@@ -1484,7 +1498,7 @@ function finish(timeout){
     r.appendChild(d);
   });
   st.wrong=wrong.map(k=>st.qs[k]);
-  $("cta-link").href="mailto:"+CONTACTO+"?subject="+encodeURIComponent("Mi opinión sobre OpoNota");$("cta").classList.remove("hidden");
+  opinionMostrar();
   window.scrollTo({top:0});
 }
 function home(){
@@ -2199,6 +2213,12 @@ async function cargarFormularios(){
     $("reportes-resumen").textContent=pend?`${plural(pend,"pendiente","pendientes")} de revisar`:"Nada pendiente";
     $("admin-reportes").innerHTML=ADMIN_REPORTES.map(x=>`<tr${x.resuelto?' class="resuelto"':""}><td>${fmtFH(x.creado)}</td><td>${esc((OPOS[x.oposicion]||{}).corto||x.oposicion||"")}</td><td style="white-space:normal;min-width:220px">${esc(x.pregunta||"")}<br><span class="meta">${esc(x.referencia||"")}</span></td><td style="white-space:normal;min-width:220px">${esc(x.mensaje)}</td><td>${x.email?`<a href="mailto:${esc(x.email)}">${esc(x.email)}</a>`:'<span class="meta">—</span>'}</td><td><button class="ghost small" type="button" data-resolver="${x.id}" data-res="${x.resuelto?0:1}">${x.resuelto?"Reabrir":"Resuelto"}</button></td></tr>`).join("")||'<tr><td colspan="6" class="meta">Nadie ha reportado errores todavía.</td></tr>';
   }
+  sb.rpc("admin_opiniones").then(o=>{
+    if(o.error){$("admin-opiniones").innerHTML='<tr><td colspan="5" class="meta">Falta ejecutar el archivo 15-opiniones.sql en Supabase.</td></tr>';return}
+    const L=o.data||[],si=L.filter(x=>x.util).length;
+    $("opiniones-resumen").textContent=L.length?`👍 ${si} · 👎 ${L.length-si}`:"Ninguna todavía";
+    $("admin-opiniones").innerHTML=L.map(x=>`<tr><td>${fmtFH(x.creado)}</td><td>${esc((OPOS[x.oposicion]||{}).corto||x.oposicion||"")}</td><td>${x.util?"👍":"👎"}</td><td style="white-space:normal;min-width:240px">${esc(x.texto||"")}</td><td>${esc(x.email||"")}</td></tr>`).join("")||'<tr><td colspan="5" class="meta">Todavía no hay opiniones.</td></tr>';
+  });
   if(l.error){$("admin-espera").innerHTML='<tr><td colspan="3" class="meta">Falta ejecutar el archivo 10-formularios.sql en Supabase.</td></tr>';return}
   const por={};(l.data||[]).forEach(x=>(por[x.oposicion]=por[x.oposicion]||[]).push(x.email));
   const total=(l.data||[]).length;$("espera-resumen").textContent=plural(total,"persona apuntada","personas apuntadas");
@@ -2469,6 +2489,30 @@ $("lab-oscuro").addEventListener("click",()=>{const on=document.documentElement.
 var LAB_INSTALAR=null;
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();LAB_INSTALAR=e;$("lab-instalar").classList.remove("hidden")});
 $("lab-instalar").addEventListener("click",async()=>{if(!LAB_INSTALAR)return;LAB_INSTALAR.prompt();try{await LAB_INSTALAR.userChoice}catch(e){}LAB_INSTALAR=null;$("lab-instalar").classList.add("hidden")});
+// ===== Opinión de un toque (25/11/2026): se pregunta al terminar el 3.er test, como mucho dos veces, hasta que responde =====
+var OPI_KEY="oponota-opinion";
+function opinionEstado(){try{return JSON.parse(localStorage.getItem(OPI_KEY))||{}}catch(e){return {}}}
+function opinionGuardar(x){try{localStorage.setItem(OPI_KEY,JSON.stringify(x))}catch(e){}}
+function opinionMostrar(){
+  const e=opinionEstado(),ver=!!user&&(DB.done||0)>=3&&!e.resp&&(e.vistas||0)<2;
+  $("cta").classList.toggle("hidden",!ver);if(!ver)return;
+  e.vistas=(e.vistas||0)+1;opinionGuardar(e);
+  $("op-h").textContent="¿Te está sirviendo OpoNota?";$("op-btns").classList.remove("hidden");$("op-form").classList.add("hidden");$("op-txt").value="";
+}
+async function opinionEnviar(util,texto){try{const r=await sb.rpc("enviar_opinion",{o:OP,u:util,t:texto||null});return !r.error}catch(e){return false}}
+document.addEventListener("click",async ev=>{
+  const b=ev.target.closest("[data-opinion]");if(!b)return;
+  const util=b.dataset.opinion==="1";const e=opinionEstado();e.resp=true;opinionGuardar(e);
+  $("op-btns").classList.add("hidden");
+  opinionEnviar(util,null);
+  if(util){$("op-h").textContent="¡Gracias! Nos alegra que te sirva. 💚";setTimeout(()=>$("cta").classList.add("hidden"),4000)}
+  else{$("op-h").textContent="Gracias por decírnoslo.";$("op-form").classList.remove("hidden");$("op-txt").focus()}
+});
+$("op-form").addEventListener("submit",async ev=>{ev.preventDefault();
+  const t=$("op-txt").value.trim();if(t)await opinionEnviar(false,t);
+  $("op-form").classList.add("hidden");$("op-h").textContent=t?"¡Gracias! Lo leemos todo y lo tendremos en cuenta.":"Gracias por decírnoslo.";
+  setTimeout(()=>$("cta").classList.add("hidden"),4000)});
+
 // ===== Perfil (#/perfil): estadísticas, oposiciones, compras y cuenta (25/11/2026) =====
 function nombrePlanOp(op,id){const p=((OPOS[op]||{}).planes||[]).find(x=>x.id===id);return p?"Plan "+p.nombre:(PLAN_BASE[id]||id)}
 var PF_T=0;

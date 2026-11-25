@@ -14,6 +14,7 @@ PASO 1 · BASE DE DATOS (Supabase, ~5 minutos)
 3. Haz lo mismo, en este orden, con:
      supabase/8-oposiciones.sql
      supabase/9-pagos.sql  (precios; ya está aplicado en el proyecto actual)
+     supabase/10-formularios.sql, 11-comparativa.sql y 15-opiniones.sql
      supabase/p01-preguntas-parte1.sql, p02, p03... (todos los que empiecen por p, en orden)
    (Son las preguntas de todas las oposiciones. Están fuera de la carpeta
     "web" a propósito: así nadie puede verlas sin cuenta.)
