@@ -1,11 +1,5 @@
 -- Banco de preguntas, parte 7 de 21. Ejecútalo en Supabase → SQL Editor DESPUÉS de 1-configuracion.sql y 8-oposiciones.sql.
 insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
-('aux-age:29-fe252e6105','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, E, H, K, N, …','["S", "P", "Ñ", "O"]'::jsonb,1,'Psicotécnicos','Se avanza de 3 en 3 letras (saltando 2): tras la N viene la P. Recuerda contar la Ñ.',null),
-('aux-age:29-cac46df4bd','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, Y, G, W, H, U, …','["H", "S", "I", "J"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la Y. Toca la primera: I.',null),
-('aux-age:29-dc3eda0b8a','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? C, T, E, S, G, R, …','["H", "J", "Q", "I"]'::jsonb,3,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la C (C, E, G…) y otra retrocede 1 desde la T. Toca la primera: I.',null),
-('aux-age:29-9b8c5053f1','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, S, G, Q, H, O, …','["I", "H", "N", "J"]'::jsonb,0,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la S. Toca la primera: I.',null),
-('aux-age:29-ec538760d3','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? F, Z, G, X, H, V, …','["H", "T", "I", "J"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la F (F, G, H…) y otra retrocede 2 desde la Z. Toca la primera: I.',null),
-('aux-age:29-fec0640514','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, X, F, V, H, T, …','["J", "K", "L", "I"]'::jsonb,0,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la D (D, F, H…) y otra retrocede 2 desde la X. Toca la primera: J.',null),
 ('aux-age:29-9338e856aa','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? B, T, D, S, F, R, …','["G", "H", "J", "Q"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la B (B, D, F…) y otra retrocede 1 desde la T. Toca la primera: H.',null),
 ('aux-age:29-32d3f81a14','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? D, Y, F, W, H, U, …','["S", "K", "J", "I"]'::jsonb,2,'Psicotécnicos','Son dos series intercaladas: una avanza 2 desde la D (D, F, H…) y otra retrocede 2 desde la Y. Toca la primera: J.',null),
 ('aux-age:29-e2b919829b','aux-age',29,'Teniendo en cuenta el alfabeto español (con la Ñ), ¿qué letra continúa la serie? G, Y, H, X, I, W, …','["I", "J", "K", "V"]'::jsonb,1,'Psicotécnicos','Son dos series intercaladas: una avanza 1 desde la G (G, H, I…) y otra retrocede 1 desde la Y. Toca la primera: J.',null),
@@ -515,9 +509,7 @@ Ventanilla 1 | 210 | 179 | 159 | 178
 Ventanilla 2 | 88 | 90 | 137 | 214
 Ventanilla 3 | 201 | 198 | 224 | 78
 Ventanilla 4 | 141 | 121 | 82 | 101
-Sumando los cuatro meses, ¿qué ventanilla atendió menos personas?','["Ventanilla 4", "Ventanilla 2", "Ventanilla 1", "Ventanilla 3"]'::jsonb,0,'Psicotécnicos','Totales: Ventanilla 1, 726; Ventanilla 2, 529; Ventanilla 3, 701; Ventanilla 4, 445.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+Sumando los cuatro meses, ¿qué ventanilla atendió menos personas?','["Ventanilla 4", "Ventanilla 2", "Ventanilla 1", "Ventanilla 3"]'::jsonb,0,'Psicotécnicos','Totales: Ventanilla 1, 726; Ventanilla 2, 529; Ventanilla 3, 701; Ventanilla 4, 445.',null),
 ('aux-age:29-96f26fb283','aux-age',29,'La tabla recoge las personas atendidas en cuatro ventanillas de una oficina:
 Ventanilla | Marzo | Abril | Mayo | Junio
 Ventanilla 1 | 210 | 179 | 159 | 178
@@ -529,7 +521,9 @@ Ventanilla 4 | 141 | 121 | 82 | 101
 ('aux-age:29-f6b400d561','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Martín, Marco, Mata, Matas, Marín, Mas','["Marco", "Marín", "Mas", "Martín"]'::jsonb,3,'Psicotécnicos','Orden alfabético: Marco, Marín, Martín, Mas, Mata, Matas. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-a0939e2dd4','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en tercer lugar? Pereira, Perea, Pena, Peña, Pérez, Peral','["Pena", "Perea", "Peral", "Peña"]'::jsonb,2,'Psicotécnicos','Orden alfabético: Pena, Peña, Peral, Perea, Pereira, Pérez. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-630986f285','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en cuarto lugar? Salinas, Saez, Sánchez, Salas, Sandoval, Sainz','["Sandoval", "Salas", "Salinas", "Sánchez"]'::jsonb,2,'Psicotécnicos','Orden alfabético: Saez, Sainz, Salas, Salinas, Sánchez, Sandoval. La tilde no cuenta y la Ñ va después de la N.',null),
-('aux-age:29-4819e7cf2d','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Román, Rosa, Romero, Rubio, Rojas, Rojo','["Rosa", "Román", "Rojo", "Rojas"]'::jsonb,2,'Psicotécnicos','Orden alfabético: Rojas, Rojo, Román, Romero, Rosa, Rubio. La tilde no cuenta y la Ñ va después de la N.',null),
+('aux-age:29-4819e7cf2d','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Román, Rosa, Romero, Rubio, Rojas, Rojo','["Rosa", "Román", "Rojo", "Rojas"]'::jsonb,2,'Psicotécnicos','Orden alfabético: Rojas, Rojo, Román, Romero, Rosa, Rubio. La tilde no cuenta y la Ñ va después de la N.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('aux-age:29-dc930aa4e2','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Nogales, Noguera, Núñez, Nava, Naranjo, Nieto','["Nava", "Nieto", "Núñez", "Naranjo"]'::jsonb,0,'Psicotécnicos','Orden alfabético: Naranjo, Nava, Nieto, Nogales, Noguera, Núñez. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-e566fce8f4','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en quinto lugar? Calvo, Castro, Camacho, Campos, Casas, Casado','["Casas", "Casado", "Calvo", "Castro"]'::jsonb,0,'Psicotécnicos','Orden alfabético: Calvo, Camacho, Campos, Casado, Casas, Castro. La tilde no cuenta y la Ñ va después de la N.',null),
 ('aux-age:29-c156494e17','aux-age',29,'Si se ordenan alfabéticamente estos apellidos, ¿cuál queda en segundo lugar? Olmedo, Osorio, Orozco, Olmo, Oliver, Oliva','["Orozco", "Oliver", "Olmedo", "Oliva"]'::jsonb,1,'Psicotécnicos','Orden alfabético: Oliva, Oliver, Olmedo, Olmo, Orozco, Osorio. La tilde no cuenta y la Ñ va después de la N.',null),
@@ -727,15 +721,15 @@ Con esta clave, ¿qué palabra corresponde al código 0585?','["TASA", "ATSA", "
 ('aux-age:29-9eed223ed3','aux-age',29,'Se reparten 960 € entre tres unidades, A, B y C, en proporción a 1, 2 y 5. ¿Cuánto recibe C?','["600 €", "840 €", "540 €", "660 €"]'::jsonb,0,'Psicotécnicos','Hay 1 + 2 + 5 = 8 partes; cada parte vale 960 / 8 = 120 €. C recibe 5 × 120 = 600 €.',null),
 ('aux-age:29-6a56420b64','aux-age',29,'Se reparten 2.500 € entre tres unidades, A, B y C, en proporción a 2, 5 y 3. ¿Cuánto recibe C?','["1.000 €", "750 €", "875 €", "500 €"]'::jsonb,1,'Psicotécnicos','Hay 2 + 5 + 3 = 10 partes; cada parte vale 2.500 / 10 = 250 €. C recibe 3 × 250 = 750 €.',null),
 ('aux-age:29-b095ce2663','aux-age',29,'Se reparten 400 € entre tres unidades, A, B y C, en proporción a 1, 2 y 5. ¿Cuánto recibe B?','["75 €", "150 €", "125 €", "100 €"]'::jsonb,3,'Psicotécnicos','Hay 1 + 2 + 5 = 8 partes; cada parte vale 400 / 8 = 50 €. B recibe 2 × 50 = 100 €.',null),
-('aux-age:29-debc86b5d7','aux-age',29,'Se reparten 500 € entre tres unidades, A, B y C, en proporción a 2, 3 y 5. ¿Cuánto recibe A?','["125 €", "75 €", "150 €", "100 €"]'::jsonb,3,'Psicotécnicos','Hay 2 + 3 + 5 = 10 partes; cada parte vale 500 / 10 = 50 €. A recibe 2 × 50 = 100 €.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+('aux-age:29-debc86b5d7','aux-age',29,'Se reparten 500 € entre tres unidades, A, B y C, en proporción a 2, 3 y 5. ¿Cuánto recibe A?','["125 €", "75 €", "150 €", "100 €"]'::jsonb,3,'Psicotécnicos','Hay 2 + 3 + 5 = 10 partes; cada parte vale 500 / 10 = 50 €. A recibe 2 × 50 = 100 €.',null),
 ('aux-age:29-9876f65bdf','aux-age',29,'Se reparten 1.200 € entre tres unidades, A, B y C, en proporción a 2, 3 y 5. ¿Cuánto recibe A?','["360 €", "180 €", "240 €", "120 €"]'::jsonb,2,'Psicotécnicos','Hay 2 + 3 + 5 = 10 partes; cada parte vale 1.200 / 10 = 120 €. A recibe 2 × 120 = 240 €.',null),
 ('aux-age:29-c839767a59','aux-age',29,'Se reparten 1.000 € entre tres unidades, A, B y C, en proporción a 2, 3 y 5. ¿Cuánto recibe A?','["100 €", "200 €", "300 €", "150 €"]'::jsonb,1,'Psicotécnicos','Hay 2 + 3 + 5 = 10 partes; cada parte vale 1.000 / 10 = 100 €. A recibe 2 × 100 = 200 €.',null),
 ('aux-age:29-b000f2ba56','aux-age',29,'Una sesión de formación empieza a las 09:35 y dura 1 hora y 40 minutos. ¿A qué hora termina?','["10:15", "11:15", "11:05", "11:25"]'::jsonb,1,'Psicotécnicos','09:35 + 1 h = 10:35; + 40 min = 11:15.',null),
 ('aux-age:29-acbcc5f781','aux-age',29,'Una sesión de formación empieza a las 11:05 y dura 3 horas y 45 minutos. ¿A qué hora termina?','["13:50", "14:50", "14:40", "15:00"]'::jsonb,1,'Psicotécnicos','11:05 + 3 h = 14:05; + 45 min = 14:50.',null),
 ('aux-age:29-51ffcf6d98','aux-age',29,'Una sesión de formación empieza a las 10:35 y dura 1 hora y 40 minutos. ¿A qué hora termina?','["12:25", "12:05", "11:15", "12:15"]'::jsonb,3,'Psicotécnicos','10:35 + 1 h = 11:35; + 40 min = 12:15.',null),
-('aux-age:29-8badcd6ede','aux-age',29,'Una sesión de formación empieza a las 12:40 y dura 3 horas y 25 minutos. ¿A qué hora termina?','["15:05", "15:55", "16:05", "16:15"]'::jsonb,2,'Psicotécnicos','12:40 + 3 h = 15:40; + 25 min = 16:05.',null),
+('aux-age:29-8badcd6ede','aux-age',29,'Una sesión de formación empieza a las 12:40 y dura 3 horas y 25 minutos. ¿A qué hora termina?','["15:05", "15:55", "16:05", "16:15"]'::jsonb,2,'Psicotécnicos','12:40 + 3 h = 15:40; + 25 min = 16:05.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('aux-age:29-d3eb345e0d','aux-age',29,'Una sesión de formación empieza a las 11:05 y dura 1 hora y 45 minutos. ¿A qué hora termina?','["11:50", "12:40", "13:00", "12:50"]'::jsonb,3,'Psicotécnicos','11:05 + 1 h = 12:05; + 45 min = 12:50.',null),
 ('aux-age:29-6800d1a77c','aux-age',29,'Una sesión de formación empieza a las 11:45 y dura 3 horas y 25 minutos. ¿A qué hora termina?','["15:00", "14:10", "15:20", "15:10"]'::jsonb,3,'Psicotécnicos','11:45 + 3 h = 14:45; + 25 min = 15:10.',null),
 ('aux-age:29-d4fdc97610','aux-age',29,'Una sesión de formación empieza a las 08:35 y dura 2 horas y 35 minutos. ¿A qué hora termina?','["11:00", "10:10", "11:10", "11:20"]'::jsonb,2,'Psicotécnicos','08:35 + 2 h = 10:35; + 35 min = 11:10.',null),
@@ -1430,5 +1424,76 @@ Administración electrónica | 32 | 24 | 6 | 10
 Atención al público | 48 | 28 | 14 | 20
 Prevención de riesgos | 24 | 16 | 8 | 30
 Igualdad | 32 | 28 | 21 | 15
-¿Cuál es la media de inscritos por curso?','["24", "29", "26", "22"]'::jsonb,0,'Psicotécnicos','(24 + 24 + 28 + 16 + 28) / 5 = 120 / 5 = 24.',null)
+¿Cuál es la media de inscritos por curso?','["24", "29", "26", "22"]'::jsonb,0,'Psicotécnicos','(24 + 24 + 28 + 16 + 28) / 5 = 120 / 5 = 24.',null),
+('aux-age:29-b6dc091617','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿Cuántas plazas quedaron libres en total?','["59", "69", "74", "64"]'::jsonb,3,'Psicotécnicos','Plazas menos inscritos en cada curso: 24 + 8 + 20 + 8 + 4 = 64.',null),
+('aux-age:29-32e7c89803','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Administración electrónica", "Igualdad", "Prevención de riesgos"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Protección de datos, 50 %; Administración electrónica, 75 %; Atención al público, 58 %; Prevención de riesgos, 67 %; Igualdad, 88 %.',null),
+('aux-age:29-17a35db1c5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+Si cada aprobado de Atención al público recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["280", "560", "260", "300"]'::jsonb,0,'Psicotécnicos','14 aprobados × 20 horas = 280 horas.',null),
+('aux-age:29-434c90096c','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
+Curso | Plazas | Inscritos | Aprobados | Horas
+Protección de datos | 48 | 24 | 18 | 40
+Administración electrónica | 32 | 24 | 6 | 10
+Atención al público | 48 | 28 | 14 | 20
+Prevención de riesgos | 24 | 16 | 8 | 30
+Igualdad | 32 | 28 | 21 | 15
+¿En qué curso hubo más inscritos sin aprobar?','["Administración electrónica", "Igualdad", "Atención al público", "Prevención de riesgos"]'::jsonb,0,'Psicotécnicos','Inscritos menos aprobados: Protección de datos, 6; Administración electrónica, 18; Atención al público, 14; Prevención de riesgos, 8; Igualdad, 7.',null),
+('aux-age:29-ccda8a3236','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
+Tipo | Letra
+Informe | I
+Factura | F
+Contrato | C
+Queja | Q
+Números de las unidades:
+Unidad | Número
+Educación | 1
+Hacienda | 5
+Personal | 2
+Vivienda | 9
+¿Qué clave lleva una factura de Vivienda de 2023?','["C9-23", "F9-24", "F9-23", "F1-23"]'::jsonb,2,'Psicotécnicos','Factura = F; Vivienda = 9; año 2023 → F9-23.',null),
+('aux-age:29-86e8777e38','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
+Tipo | Letra
+Informe | I
+Factura | F
+Contrato | C
+Queja | Q
+Números de las unidades:
+Unidad | Número
+Educación | 1
+Hacienda | 5
+Personal | 2
+Vivienda | 9
+¿A qué documento corresponde la clave Q5-25?','["Queja de Personal de 2025", "Informe de Hacienda de 2025", "Queja de Hacienda de 2024", "Queja de Hacienda de 2025"]'::jsonb,3,'Psicotécnicos','Q = queja; 5 = Hacienda; 25 = 2025.',null),
+('aux-age:29-1789140256','aux-age',29,'En un registro, cada documento recibe una clave con la letra del tipo, el número de la unidad y las dos últimas cifras del año (por ejemplo, I1-25 es un documento de tipo informe de Educación de 2025).
+Tipo | Letra
+Informe | I
+Factura | F
+Contrato | C
+Queja | Q
+Números de las unidades:
+Unidad | Número
+Educación | 1
+Hacienda | 5
+Personal | 2
+Vivienda | 9
+¿Qué clave lleva un contrato de Personal de 2024?','["C2-25", "Q2-24", "C9-24", "C2-24"]'::jsonb,3,'Psicotécnicos','Contrato = C; Personal = 2; año 2024 → C2-24.',null)
 on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
