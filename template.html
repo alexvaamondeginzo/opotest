@@ -2075,12 +2075,21 @@ async function cargarPrecios(){
   catch(e){registrarError("cargar precios",e)}
 }
 const euros=c=>(c/100).toLocaleString("es-ES",{minimumFractionDigits:2,maximumFractionDigits:2});
+// Lo que el usuario ya ha pagado en cada oposición (compras en vigor): al mejorar de plan solo paga la diferencia (lo calcula también crear-pago)
+var PAGADO={};
+async function cargarPagado(op){
+  if(!user||PAGADO[op]!==undefined)return;PAGADO[op]=0;
+  try{const r=await sb.from("compras").select("importe_cent,hasta").eq("oposicion",op);if(!r.error){PAGADO[op]=(r.data||[]).filter(c=>new Date(c.hasta)>new Date()).reduce((t,c)=>t+(c.importe_cent||0),0);if(op===OP)renderPlans()}}catch(e){}
+}
 function renderPlans(){
   const actual=ACC.admin?0:(RANGO[ACC.plan]||0),P0=PRECIOS[OP]||{};
+  const pagado=actual&&ACC.plan!=="prueba"&&ACC.plan!=="beta"?(PAGADO[OP]||0):0;
+  if(actual&&ACC.plan!=="prueba"&&ACC.plan!=="beta")cargarPagado(OP);
   $("planes-list").innerHTML=PLANES.map((p,i)=>{
-    const tengo=actual>=(RANGO[p.id]||0),pr=P0[p.id];
-    const boton=tengo?'<span class="actual">✓ Incluido en tu plan</span>':pr?`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">Elegir ${esc(p.nombre)}</button>`:'<span class="meta">Todavía no está a la venta</span>';
-    return `<div class="plan${p.dest?" dest":""}">${p.dest?'<span class="recomendado">El más completo</span>':""}<h3>${esc(p.nombre)}</h3><div class="precio">${pr?euros(pr.importe_cent)+" €":"—"} <small>pago único, IVA incluido</small></div><ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}${pr?`<li>Acceso hasta el ${fechaCorta(pr.hasta)}</li>`:""}</ul>${boton}</div>`}).join("");
+    const tengo=actual>=(RANGO[p.id]||0),pr=P0[p.id],dif=pr&&pagado&&!tengo?Math.max(50,pr.importe_cent-pagado):0;
+    const boton=tengo?'<span class="actual">✓ Incluido en tu plan</span>':pr?`<button class="${p.dest?"primary":"ghost"}" data-plan="${p.id}">${dif?"Mejorar a ":"Elegir "}${esc(p.nombre)}</button>`:'<span class="meta">Todavía no está a la venta</span>';
+    const precio=dif?`${euros(dif)} € <small><s>${euros(pr.importe_cent)} €</s> · pagas solo la diferencia</small>`:`${pr?euros(pr.importe_cent)+" €":"—"} <small>pago único, IVA incluido</small>`;
+    return `<div class="plan${p.dest?" dest":""}">${p.dest?'<span class="recomendado">El más completo</span>':""}<h3>${esc(p.nombre)}</h3><div class="precio">${precio}</div><ul>${p.desc.map(x=>`<li>${x}</li>`).join("")}${pr?`<li>Acceso hasta el ${fechaCorta(pr.hasta)}</li>`:""}</ul>${boton}</div>`}).join("");
   document.querySelectorAll("#planes-list button[data-plan]").forEach(b=>b.addEventListener("click",()=>comprar(b.dataset.plan,b)));
 }
 function applyBeta(){
@@ -2125,7 +2134,7 @@ async function comprar(plan,btn){
     const link=(PAY_LINKS[OP]||{})[plan];
     if(link){location.href=link+(link.includes("?")?"&":"?")+"client_reference_id="+encodeURIComponent(user.id+"__"+OP)+"&locked_prefilled_email="+encodeURIComponent(user.email);return}
     registrarError("crear pago",e);
-    showMsg("planes-msg",/no se puede pagar|no está a la venta|Inicia sesión/i.test(e.message)?e.message:"No se ha podido abrir la página de pago. Inténtalo de nuevo en unos minutos.");
+    showMsg("planes-msg",/no se puede pagar|no está a la venta|Inicia sesión|Ya tienes/i.test(e.message)?e.message:"No se ha podido abrir la página de pago. Inténtalo de nuevo en unos minutos.");
   }finally{if(btn){btn.disabled=false;btn.textContent=txt}}
 }
 function applyPlan(){

@@ -204,7 +204,8 @@ async def main():
             await pg.close()
         print('\n== Planes tras pagar ==')
         for plan, visible, txt in [('prueba', True, 'en la prueba gratis se ven los planes'), ('legislacion', False, 'con un plan pagado no se ven los planes en Inicio'), ('completo', False, 'con el plan Completo no se ven los planes')]:
-            pg, err = await abrir(1366, 900, {'beta': False, 'user': usuario, 'acc': {'plan': plan, 'hasta': '2027-12-31T22:59:59Z'}})
+            pg, err = await abrir(1366, 900, {'beta': False, 'user': usuario, 'acc': {'plan': plan, 'hasta': '2027-12-31T22:59:59Z'},
+                                              'compras': [{'oposicion': 'aux-cm', 'plan': 'legislacion', 'importe_cent': 1199, 'moneda': 'eur', 'creado': '2026-11-25T10:00:00Z', 'hasta': '2027-12-31T22:59:59Z'}] if plan == 'legislacion' else []})
             await pg.evaluate("location.hash='#/o/aux-cm'")
             await pg.wait_for_timeout(900)
             comprobar(await pg.is_visible('#planes') == visible, txt)
@@ -215,6 +216,8 @@ async def main():
                 await pg.click('#acc-cta')
                 await pg.wait_for_timeout(600)
                 await foto(pg, 'plan-mejorable-despues', False)
+                tarjeta = await pg.inner_text('#planes-list .plan.dest')
+                comprobar('3,00 €' in tarjeta and 'MEJORAR A COMPLETO' in tarjeta.upper(), f'al mejorar de plan solo se cobra la diferencia ({tarjeta[:60]!r})')
                 comprobar(await pg.is_visible('#planes'), '«Mejorar plan» enseña los planes')
             await pg.close()
         pg, err = await abrir(1366, 900, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
