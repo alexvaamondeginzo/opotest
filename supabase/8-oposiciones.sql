@@ -47,12 +47,13 @@ grant execute on function public.mi_acceso() to authenticated;
 --   aux-cm:  legislacion = temas 1-15 · completo = + ofimática (todo)
 --   aux-age: legislacion = teoría, temas 1-20 · completo = + informática (hasta el 28) · premium = + psicotécnicos (todo)
 --   aux-ayto-mad: legislacion = parte teórica, temas 1-20 · completo = + ofimática (todo)
+--   aux-canarias: legislacion = parte general, temas 1-20 · completo = + parte práctica (todo)
 create or replace function public.tema_maximo_op(op text)
 returns integer language sql stable security definer set search_path = '' as $$
   select case (public.mi_acceso_op(op)->>'plan')
     when 'prueba' then 999 when 'beta' then 999 when 'premium' then 999
     when 'completo' then case op when 'aux-age' then 28 else 999 end
-    when 'legislacion' then case op when 'aux-cm' then 15 when 'aux-age' then 20 when 'aux-ayto-mad' then 20 else 0 end
+    when 'legislacion' then case op when 'aux-cm' then 15 when 'aux-age' then 20 when 'aux-ayto-mad' then 20 when 'aux-canarias' then 20 else 0 end
     else 0 end;
 $$;
 revoke execute on function public.tema_maximo_op(text) from public, anon;
@@ -73,6 +74,7 @@ create policy "Ver preguntas de mi plan" on public.preguntas
       when 'aux-age'      then (select public.tema_maximo_op('aux-age'))
       when 'adm-cm'       then (select public.tema_maximo_op('adm-cm'))
       when 'aux-ayto-mad' then (select public.tema_maximo_op('aux-ayto-mad'))
+      when 'aux-canarias' then (select public.tema_maximo_op('aux-canarias'))
       else 0 end);
 
 -- Panel: dar acceso a mano a una oposición concreta
@@ -81,7 +83,7 @@ returns void language plpgsql security definer set search_path = '' as $$
 begin
   if not public.es_admin() then raise exception 'Solo administradores'; end if;
   if p not in ('legislacion','completo','premium') then raise exception 'Plan no válido'; end if;
-  if o not in ('aux-cm','aux-age','adm-cm','aux-ayto-mad') then raise exception 'Oposición no válida'; end if;
+  if o not in ('aux-cm','aux-age','adm-cm','aux-ayto-mad','aux-canarias') then raise exception 'Oposición no válida'; end if;
   insert into public.compras (user_id, email_norm, plan, importe_cent, moneda, stripe_session, hasta, oposicion)
   values (public.usuario_por_email(e), public.normalizar_email(e), p, 0, 'eur', 'manual-' || gen_random_uuid(), h, o);
 end $$;
