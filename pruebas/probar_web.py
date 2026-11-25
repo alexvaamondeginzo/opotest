@@ -209,8 +209,12 @@ async def main():
             await pg.wait_for_timeout(900)
             comprobar(await pg.is_visible('#planes') == visible, txt)
             if plan == 'legislacion':
+                await pg.evaluate("PRECIOS={'aux-cm':{legislacion:{importe_cent:1199,hasta:'2027-12-31'},completo:{importe_cent:1499,hasta:'2027-12-31'}}};renderPlans()")
+                if CAPTURAS:
+                    await pg.locator('#acceso').screenshot(path=f'{DIR_CAP}/plan-mejorable-antes.png')
                 await pg.click('#acc-cta')
-                await pg.wait_for_timeout(300)
+                await pg.wait_for_timeout(600)
+                await foto(pg, 'plan-mejorable-despues', False)
                 comprobar(await pg.is_visible('#planes'), '«Mejorar plan» enseña los planes')
             await pg.close()
         pg, err = await abrir(1366, 900, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
