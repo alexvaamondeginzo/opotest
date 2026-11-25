@@ -13,6 +13,7 @@ SLUGS = {
     'aux-age': 'test-auxiliar-administrativo-del-estado',
     'aux-ayto-mad': 'test-auxiliar-administrativo-ayuntamiento-de-madrid',
     'aux-canarias': 'test-auxiliar-administrativo-gobierno-de-canarias',
+    'adm-cm': 'test-administrativo-comunidad-de-madrid',
 }
 
 ESTILO = """

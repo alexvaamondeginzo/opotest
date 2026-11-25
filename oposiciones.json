@@ -417,8 +417,310 @@
     "corto": "Administrativo · Comunidad de Madrid",
     "grupo": "C1",
     "ambito": "Comunidad de Madrid",
+    "eyebrow": "Cuerpo de Administrativos · Comunidad de Madrid · C1",
+    "titulo": "Test de los 47 temas para la convocatoria de 2026",
+    "sub": "Preguntas tipo examen de derecho constitucional y administrativo, recursos humanos, gestión financiera e informática, con cuatro opciones como en el examen real y cada una con su explicación y el artículo exacto, comprobada con los textos consolidados del BOE.",
     "plazas": 107,
-    "proximamente": true
+    "plazasNota": "acceso libre",
+    "examen": "",
+    "examenOficial": false,
+    "examenTxt": "Por fijar (convocatoria de 2026)",
+    "examenLbl": "Primer ejercicio",
+    "programa": "Orden 1634/2026, de 30 de junio (BOCM n.º 166, de 14 de julio de 2026), anexo III",
+    "temario": [
+      [
+        1,
+        "Constitución: estructura, principios, derechos, deberes y garantías"
+      ],
+      [
+        2,
+        "Corona y Cortes Generales"
+      ],
+      [
+        3,
+        "Poder Judicial, CGPJ y Tribunal Constitucional"
+      ],
+      [
+        4,
+        "Gobierno y Administración General del Estado"
+      ],
+      [
+        5,
+        "Comunidades Autónomas y Administración local"
+      ],
+      [
+        6,
+        "Comunidad de Madrid (I): Estatuto y Asamblea"
+      ],
+      [
+        7,
+        "Comunidad de Madrid (II): Ley de Gobierno y Administración"
+      ],
+      [
+        8,
+        "Unión Europea"
+      ],
+      [
+        9,
+        "Fuentes del Derecho administrativo"
+      ],
+      [
+        10,
+        "Órganos administrativos y competencia"
+      ],
+      [
+        11,
+        "Procedimiento administrativo (I): interesados, derechos, plazos y silencio"
+      ],
+      [
+        12,
+        "Acto administrativo: eficacia, nulidad, anulabilidad y revisión de oficio"
+      ],
+      [
+        13,
+        "Procedimiento administrativo (II): garantías y fases"
+      ],
+      [
+        14,
+        "Recursos administrativos y jurisdicción contencioso-administrativa"
+      ],
+      [
+        15,
+        "Responsabilidad patrimonial"
+      ],
+      [
+        16,
+        "Potestad sancionadora"
+      ],
+      [
+        17,
+        "Expropiación forzosa"
+      ],
+      [
+        18,
+        "Contratos del sector público"
+      ],
+      [
+        19,
+        "Subvenciones públicas"
+      ],
+      [
+        20,
+        "Transparencia"
+      ],
+      [
+        21,
+        "Igualdad, violencia de género y LGTBI"
+      ],
+      [
+        22,
+        "Atención al ciudadano y administración electrónica"
+      ],
+      [
+        23,
+        "Documentos, registro y archivo"
+      ],
+      [
+        24,
+        "Protección de datos"
+      ],
+      [
+        25,
+        "TREBEP y Ley de Función Pública de Madrid"
+      ],
+      [
+        26,
+        "Selección, provisión y movilidad"
+      ],
+      [
+        27,
+        "Derechos, deberes y código de conducta"
+      ],
+      [
+        28,
+        "Situaciones, incompatibilidades y régimen disciplinario"
+      ],
+      [
+        29,
+        "Personal laboral y convenio colectivo"
+      ],
+      [
+        30,
+        "Contrato de trabajo"
+      ],
+      [
+        31,
+        "Seguridad Social (I)"
+      ],
+      [
+        32,
+        "Seguridad Social (II): acción protectora"
+      ],
+      [
+        33,
+        "Ingresos públicos y sistema tributario"
+      ],
+      [
+        34,
+        "Ley de Hacienda de Madrid (I)"
+      ],
+      [
+        35,
+        "Ley de Hacienda de Madrid (II)"
+      ],
+      [
+        36,
+        "Ley de Hacienda de Madrid (III)"
+      ],
+      [
+        37,
+        "Ley de Hacienda de Madrid (IV)"
+      ],
+      [
+        38,
+        "Retribuciones"
+      ],
+      [
+        39,
+        "Plan General de Contabilidad Pública"
+      ],
+      [
+        40,
+        "Informática básica"
+      ],
+      [
+        41,
+        "Entorno Windows"
+      ],
+      [
+        42,
+        "Explorador de archivos"
+      ],
+      [
+        43,
+        "Word"
+      ],
+      [
+        44,
+        "Excel"
+      ],
+      [
+        45,
+        "Access y Power BI"
+      ],
+      [
+        46,
+        "Outlook"
+      ],
+      [
+        47,
+        "Trabajo colaborativo en Microsoft 365"
+      ]
+    ],
+    "bloques": [
+      {
+        "nombre": "Organización del Estado y de la Comunidad",
+        "desde": 1,
+        "hasta": 8
+      },
+      {
+        "nombre": "Derecho administrativo",
+        "desde": 9,
+        "hasta": 24
+      },
+      {
+        "nombre": "Recursos humanos",
+        "desde": 25,
+        "hasta": 32
+      },
+      {
+        "nombre": "Gestión financiera",
+        "desde": 33,
+        "hasta": 39
+      },
+      {
+        "nombre": "Informática y ofimática",
+        "desde": 40,
+        "hasta": 47
+      }
+    ],
+    "sims": [
+      {
+        "id": "adm-ej1",
+        "nombre": "Simulacro 1.er ejercicio",
+        "desc": "Preguntas de todo el programa (temas 1 a 47) repartidas de forma equilibrada: 40 preguntas en 45 minutos. Cada fallo resta un tercio.",
+        "n": 40,
+        "min": 45,
+        "ex": 1,
+        "desde": 1,
+        "hasta": 47,
+        "elegirTemas": true,
+        "equilibrar": true
+      },
+      {
+        "id": "adm-ej2",
+        "nombre": "Simulacro 2.º ejercicio",
+        "desc": "Derecho administrativo, recursos humanos y gestión financiera (temas 9 a 39): 30 preguntas en 45 minutos, como los dos supuestos de 15. Cada fallo resta un tercio.",
+        "n": 30,
+        "min": 45,
+        "ex": 2,
+        "desde": 9,
+        "hasta": 39,
+        "elegirTemas": false,
+        "equilibrar": true
+      },
+      {
+        "id": "adm-ej3",
+        "nombre": "Simulacro 3.er ejercicio",
+        "desc": "Informática y ofimática (temas 40 a 47): 40 preguntas en 45 minutos. Cada fallo resta un tercio.",
+        "n": 40,
+        "min": 45,
+        "ex": 3,
+        "desde": 40,
+        "hasta": 47,
+        "elegirTemas": false,
+        "equilibrar": true
+      }
+    ],
+    "faqExamen": "Tres ejercicios eliminatorios tipo test de cuatro opciones; cada fallo resta un tercio. El primero, 40 preguntas (más 5 de reserva) en 45 minutos repartidas entre los temas del programa, de 0 a 30 puntos (se aprueba con 15). El segundo, dos supuestos prácticos de 15 preguntas cada uno en 45 minutos sobre derecho administrativo, recursos humanos y gestión financiera, de 0 a 40 (al menos 10 en cada supuesto y 20 en total). El tercero, 40 preguntas en 45 minutos de informática y ofimática (temas 40 a 47), de 0 a 30 (se aprueba con 15). En la web la nota sale sobre 50 (25 equivale a aprobar).",
+    "planes": [
+      {
+        "id": "legislacion",
+        "nombre": "Legislación",
+        "temas": 39,
+        "desc": [
+          "Temas 1 a 39 (todo menos informática)",
+          "Simulacros del 2.º ejercicio (temas 9 a 39), con penalización",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "11,99"
+      },
+      {
+        "id": "completo",
+        "nombre": "Completo",
+        "temas": 47,
+        "dest": true,
+        "desc": [
+          "Todo lo de Legislación",
+          "Informática y ofimática: Windows, Word, Excel, Access, Outlook y Microsoft 365 (temas 40 a 47)",
+          "Simulacros de los tres ejercicios, con penalización",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "14,99"
+      }
+    ],
+    "enlaces": [
+      {
+        "t": "Convocatoria y programa: Orden 1634/2026 (BOCM n.º 166, PDF)",
+        "u": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/07/14/BOCM-20260714-6.PDF"
+      },
+      {
+        "t": "Página del proceso selectivo en comunidad.madrid",
+        "u": "https://www.comunidad.madrid/empleo/administrativos-c1-2026"
+      }
+    ],
+    "enlacesTxt": "Convocatoria de 2026: 107 plazas de acceso libre (y 105 de promoción interna). El plazo de solicitudes terminó el 26 de agosto de 2026; la fecha del primer ejercicio aún no se ha publicado."
   },
   "aux-ayto-mad": {
     "nombre": "Auxiliar Administrativo del Ayuntamiento de Madrid",
