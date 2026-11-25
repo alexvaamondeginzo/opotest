@@ -1604,6 +1604,12 @@ const BOE_ELI="https://www.boe.es/eli/es/";
 const SEDE_MAD="https://sede.madrid.es/eli/es-md-01860896/"; // normas municipales de Madrid (Cibelex), sin anclas por artículo
 const BOC="https://www.gobiernodecanarias.org/boc/"; // normas de Canarias solo publicadas en el BOC, sin anclas por artículo
 const NORMAS=[
+  // Administrativo del Gobierno de Navarra (admin-navarra): las normas forales llevan «Navarra» en la referencia
+  [/\bLORAFNA\b/,"https://www.boe.es/buscar/act.php?id=BOE-A-1982-20824"],
+  [/\bLF 14\/2004 Navarra\b/,"https://www.boe.es/eli/es-nc/lf/2004/12/03/14/con"],[/\bLF 11\/2019 Navarra\b/,"https://www.boe.es/eli/es-nc/lf/2019/03/11/11/con"],
+  [/\bDFLeg 251\/1993 Navarra\b/,"https://www.boe.es/buscar/act.php?id=BON-n-1993-90004"],[/\bLF 5\/2018 Navarra\b/,"https://www.boe.es/eli/es-nc/lf/2018/05/17/5/con"],
+  [/\bLF 13\/2007 Navarra\b/,"https://www.boe.es/eli/es-nc/lf/2007/04/04/13/con"],[/\bLF 2\/2018 Navarra\b/,"https://www.boe.es/eli/es-nc/lf/2018/04/13/2/con"],
+  [/\bLF 11\/2005 Navarra\b/,"https://www.boe.es/eli/es-nc/lf/2005/11/09/11/con"],[/\bLF 17\/2019 Navarra\b/,"https://www.boe.es/eli/es-nc/lf/2019/04/04/17/con"],
   // Gobierno de Canarias (aux-canarias): van primero para que «Ley 4/2023 Canarias» no coja la Ley 4/2023 estatal
   [/\bEACan\b/,BOE_ELI+"lo/2018/11/05/1/con"],[/\bLey 4\/2023 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2023/03/23/4/con"],
   [/\bLey 8\/2015 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2015/04/01/8/con"],[/\bLey 7\/2015 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2015/04/01/7/con"],

@@ -14,6 +14,7 @@ SLUGS = {
     'aux-ayto-mad': 'test-auxiliar-administrativo-ayuntamiento-de-madrid',
     'aux-canarias': 'test-auxiliar-administrativo-gobierno-de-canarias',
     'adm-cm': 'test-administrativo-comunidad-de-madrid',
+    'admin-navarra': 'test-administrativo-gobierno-de-navarra',
 }
 
 ESTILO = """

@@ -936,14 +936,246 @@
     "proximamente": true
   },
   "admin-navarra": {
-    "nombre": "Administrativo · Gobierno de Navarra",
+    "nombre": "Administrativo del Gobierno de Navarra",
     "corto": "Administrativo · Navarra",
     "grupo": "C",
     "ambito": "Navarra",
+    "eyebrow": "Administrativo · Administración de la Comunidad Foral de Navarra · nivel C",
+    "titulo": "Test de los 27 temas y aptitudes para la próxima convocatoria",
+    "sub": "Preguntas tipo examen de la actividad administrativa, la normativa foral y la informática del programa, con cuatro opciones y cada una con su explicación y el artículo exacto, comprobada con los textos consolidados del BOE.",
     "plazas": 585,
     "plazasNota": "última convocatoria",
-    "convocatoria": "BON 22/05/2025 · OPE 2026 en camino",
-    "proximamente": true
+    "examen": "",
+    "examenOficial": false,
+    "examenTxt": "Por convocar (próxima OPE)",
+    "examenLbl": "Examen",
+    "programa": "Resolución 1322/2025 (BON n.º 101, de 22/05/2025), anexo I",
+    "temario": [
+      [
+        1,
+        "Derechos de las personas en sus relaciones con la Administración Pública Foral. Derecho a la información. Tipos de información. Participación de la ciudadanía en la Administración. Quejas y sugerencias"
+      ],
+      [
+        2,
+        "Principios de protección de datos y seguridad de la información. La comunicación oral y telefónica: normas, medios y confidencialidad; finalidad, uso y limitaciones. La comunicación escrita: normas, medios y clases. La carta: contenido, estructura y modelos"
+      ],
+      [
+        3,
+        "Funcionamiento electrónico de la Administración Pública Foral. Obligaciones de la Administración Pública Foral en la tramitación electrónica"
+      ],
+      [
+        4,
+        "Registros, archivo de la información y documentación. Sistemas de ordenación y clasificación documental. Conservación, acceso, seguridad y confidencialidad de la información y documentación. Los archivos: conceptos, tipos y normas prácticas de utilización. El control del archivo"
+      ],
+      [
+        5,
+        "Documentación administrativa. El oficio, la instancia, el certificado, el acta, resoluciones administrativas, órdenes forales. El expediente administrativo. Validez de las copias realizadas por las administraciones públicas"
+      ],
+      [
+        6,
+        "La Constitución Española de 1978: Principios generales. Derechos y deberes fundamentales. La Corona. Las Cortes Generales: composición y funciones. El Gobierno y la Administración del Estado. El Poder Judicial. El Tribunal Constitucional: composición, naturaleza y competencias"
+      ],
+      [
+        7,
+        "La Unión Europea: el Parlamento Europeo, el Consejo Europeo, el Consejo de la Unión Europea, la Comisión Europea y el Tribunal de Justicia. Las fuentes del ordenamiento jurídico comunitario: el derecho originario y el derecho derivado"
+      ],
+      [
+        8,
+        "La Ley Orgánica de Reintegración y Amejoramiento del Régimen Foral de Navarra: naturaleza y significado. El título preliminar. Las competencias de Navarra"
+      ],
+      [
+        9,
+        "El Parlamento o Cortes de Navarra: composición, organización y funciones. La Cámara de Comptos de Navarra: ámbito de competencia, funciones y órganos. El Defensor del Pueblo de la Comunidad Foral de Navarra: funciones, procedimiento y resoluciones"
+      ],
+      [
+        10,
+        "El Gobierno de Navarra: funciones; composición, nombramiento, constitución y cese; atribuciones y competencias; funcionamiento; órganos de asistencia y apoyo; responsabilidad política, control parlamentario y disolución del Parlamento. La presidenta o presidente, las vicepresidentas o vicepresidentes y las consejeras o consejeros"
+      ],
+      [
+        11,
+        "Las fuentes del Derecho: la jerarquía de las fuentes. La Ley. Las disposiciones del ejecutivo con rango de ley. La iniciativa legislativa y potestad para dictar normas con rango de ley. El reglamento: concepto, clases y límites. La potestad reglamentaria del Gobierno"
+      ],
+      [
+        12,
+        "La Ley Foral 11/2019, de la Administración de la Comunidad Foral de Navarra y del Sector Público Institucional Foral: disposiciones generales, Administración Pública Foral, organización, régimen jurídico del ejercicio de las competencias, órganos colegiados y organización de la Administración de la Comunidad Foral"
+      ],
+      [
+        13,
+        "Los actos administrativos. Requisitos. Eficacia. Nulidad y anulabilidad. La revisión de los actos en vía administrativa: revisión de oficio y recursos administrativos"
+      ],
+      [
+        14,
+        "Disposiciones generales sobre el procedimiento administrativo: los interesados; normas generales de actuación; términos y plazos; garantías del procedimiento; iniciación, ordenación, instrucción y finalización; ejecución"
+      ],
+      [
+        15,
+        "El Estatuto del Personal al servicio de las Administraciones Públicas de Navarra: ámbito de aplicación, exclusiones y tipos de personal. Referencia al personal docente y sanitario. Personal al servicio de la Administración de Justicia"
+      ],
+      [
+        16,
+        "Personal de la Administración de la Comunidad Foral I: ingreso, convocatoria, sistemas, órganos y procedimientos de selección. Niveles y grados. Carrera administrativa. Situaciones administrativas"
+      ],
+      [
+        17,
+        "Personal de la Administración de la Comunidad Foral II: provisión de puestos (concurso de méritos, libre designación, provisión interina). Derechos y deberes. Retribuciones. Régimen disciplinario"
+      ],
+      [
+        18,
+        "La Ley Orgánica 3/2007, para la igualdad efectiva de mujeres y hombres: el principio de igualdad y la tutela contra la discriminación. La Ley Foral 17/2019, de igualdad entre mujeres y hombres"
+      ],
+      [
+        19,
+        "La Ley Foral 5/2018, de Transparencia, Acceso a la Información Pública y Buen Gobierno: disposiciones generales, transparencia y publicidad activa, derecho de acceso a la información pública y el Consejo de Transparencia de Navarra"
+      ],
+      [
+        20,
+        "La Hacienda Pública de Navarra. Régimen jurídico. Derechos y obligaciones. El control: la intervención y el control financiero. El régimen de responsabilidades"
+      ],
+      [
+        21,
+        "Los Presupuestos Generales de Navarra. Principios generales. Contenido, elaboración y aprobación. Los créditos y sus modificaciones. Ejecución y liquidación"
+      ],
+      [
+        22,
+        "Ley Foral 2/2018, de Contratos Públicos: título preliminar, los contratistas, tipología de contratos y régimen jurídico, reglas de publicidad y procedimientos de adjudicación"
+      ],
+      [
+        23,
+        "La Ley Foral 11/2005, de Subvenciones: disposiciones generales, procedimiento de concesión y control. Reintegro de subvenciones"
+      ],
+      [
+        24,
+        "Conceptos elementales sobre Windows 10: escritorio, Administrador de tareas, Explorador de archivos, Panel de control, impresoras y escáneres, botón de inicio, barra de tareas, comando Ejecutar, ayuda, trabajo en red y cuentas de usuario"
+      ],
+      [
+        25,
+        "Procesadores de textos. Microsoft Word 2021: área de trabajo, cintas de opciones, escribir y editar, formato, diseño de página, estilos, plantillas, tablas, archivos, combinar correspondencia, campos e imprimir"
+      ],
+      [
+        26,
+        "Hojas de cálculo. Microsoft Excel 2021: libros, hojas, celdas, cintas de opciones, introducción de datos, fórmulas y vínculos, funciones, diseño de página, edición, formatos, gráficos e imprimir"
+      ],
+      [
+        27,
+        "Bases de datos. Microsoft Access 2021: fundamentos, tablas, consultas, formularios, informes, imprimir y cintas de opciones"
+      ],
+      [
+        28,
+        "Aptitudes: razonamiento verbal, numérico, ortografía y percepción (práctica con psicotécnicos tipo test)"
+      ]
+    ],
+    "bloques": [
+      {
+        "nombre": "Actividad administrativa",
+        "desde": 1,
+        "hasta": 5
+      },
+      {
+        "nombre": "Normativa",
+        "desde": 6,
+        "hasta": 23
+      },
+      {
+        "nombre": "Informática",
+        "desde": 24,
+        "hasta": 27
+      },
+      {
+        "nombre": "Aptitudes",
+        "desde": 28,
+        "hasta": 28
+      }
+    ],
+    "sims": [
+      {
+        "id": "nav-ej2",
+        "nombre": "1.ª prueba · Conocimientos",
+        "desc": "Test sobre las Partes I y II del programa (temas 1-23): 50 preguntas en 60 minutos, un error resta un tercio de acierto. En el examen este ejercicio vale de 0 a 20 puntos.",
+        "n": 50,
+        "min": 60,
+        "ex": 1,
+        "desde": 1,
+        "hasta": 23,
+        "elegirTemas": true,
+        "equilibrar": true,
+        "pen": 3,
+        "escala": 20
+      },
+      {
+        "id": "nav-ej1",
+        "nombre": "1.ª prueba · Aptitudes",
+        "desc": "Test de aptitudes (verbal, numérica, ortografía y percepción): 40 preguntas en 40 minutos, un error resta un tercio de acierto. En el examen vale de 0 a 30 puntos.",
+        "n": 40,
+        "min": 40,
+        "ex": 2,
+        "desde": 28,
+        "hasta": 28,
+        "elegirTemas": false,
+        "equilibrar": false,
+        "pen": 3,
+        "escala": 30
+      },
+      {
+        "id": "nav-inf",
+        "nombre": "Informática (repaso tipo test)",
+        "desc": "Windows 10, Word, Excel y Access (temas 24-27): 30 preguntas en 30 minutos. En el examen la 2.ª prueba es práctica, con ordenador, y vale de 0 a 50 puntos.",
+        "n": 30,
+        "min": 30,
+        "ex": 3,
+        "desde": 24,
+        "hasta": 27,
+        "elegirTemas": true,
+        "equilibrar": true,
+        "pen": 3
+      }
+    ],
+    "faqExamen": "Dos pruebas. La 1.ª tiene dos ejercicios tipo test en los que un error resta un tercio de acierto: un test de aptitudes (verbal, numérica, ortografía y percepción), de 0 a 30 puntos, y un test sobre las Partes I y II del programa (temas 1 a 23 en la web), de 0 a 20 puntos. La 2.ª prueba es práctica, con ordenador, sobre la Parte III (Windows 10, Word, Excel y Access 2021), de 0 a 50 puntos. Hay que sacar al menos la mitad de la puntuación en cada prueba. El número de preguntas y la duración los fija el tribunal; en la web los simulacros usan 50 y 40 preguntas y la nota sale sobre 50.",
+    "planes": [
+      {
+        "id": "legislacion",
+        "nombre": "Legislación",
+        "temas": 23,
+        "desc": [
+          "Temas 1 a 23 (actividad administrativa y normativa)",
+          "Simulacros de conocimientos, con penalización",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "11,99"
+      },
+      {
+        "id": "completo",
+        "nombre": "Legislación + Informática",
+        "temas": 27,
+        "desc": [
+          "Todo lo de Legislación",
+          "Windows 10, Word, Excel y Access (temas 24 a 27)",
+          "Simulacros de informática tipo test",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "14,99"
+      },
+      {
+        "id": "premium",
+        "nombre": "Completo",
+        "temas": 28,
+        "dest": true,
+        "desc": [
+          "Todo lo anterior",
+          "617 psicotécnicos para el test de aptitudes",
+          "Simulacros de las dos partes de la 1.ª prueba",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "17,99"
+      }
+    ],
+    "enlaces": [
+      {
+        "t": "Convocatoria y programa (BON n.º 101, de 22/05/2025)",
+        "u": "https://bon.navarra.es/es/anuncio/-/texto/2025/101/21"
+      }
+    ],
+    "enlacesTxt": "Bases y programa de la última convocatoria (585 plazas, examen del 8 de febrero de 2026). La siguiente aún no se ha publicado."
   },
   "aux-canarias": {
     "nombre": "Auxiliar Administrativo del Gobierno de Canarias",
