@@ -1601,6 +1601,7 @@ document.addEventListener("keydown",e=>{
 // ===== ENLACE A LA NORMA (BOE) =====
 // Cada referencia ("Art. 16.4 Ley 39/2015") enlaza al texto consolidado. Si añades una norma nueva, añádela aquí.
 const BOE_ELI="https://www.boe.es/eli/es/";
+const LEXNAV="https://www.lexnavarra.navarra.es/detalle.asp?r="; // LexNavarra, sin anclas por artículo
 const SEDE_MAD="https://sede.madrid.es/eli/es-md-01860896/"; // normas municipales de Madrid (Cibelex), sin anclas por artículo
 const BOC="https://www.gobiernodecanarias.org/boc/"; // normas de Canarias solo publicadas en el BOC, sin anclas por artículo
 const NORMAS=[
@@ -1648,7 +1649,9 @@ const NORMAS=[
   [/\bLO 2\/2024\b/,BOE_ELI+"lo/2024/08/01/2/con"],[/\bLO 10\/2022\b/,BOE_ELI+"lo/2022/09/06/10/con"],
   // Ayuntamiento de Madrid (aux-ayto-mad)
   [/\bLey 22\/2006\b/,BOE_ELI+"l/2006/07/04/22/con"],[/\bROGA\b/,SEDE_MAD+"reg/2004/06/23/(1)/con"],[/\bRO 6\/2021\b/,SEDE_MAD+"reg/2021/06/16/6/con"],[/\bOACAE\b/,SEDE_MAD+"odnz/2019/03/11/(1)/con"],[/\bTRLRHL\b/,BOE_ELI+"rdlg/2004/03/05/2/con"],
-  [/\bLey 31\/1995\b/,BOE_ELI+"l/1995/11/08/31/con"]
+  [/\bLey 31\/1995\b/,BOE_ELI+"l/1995/11/08/31/con"],
+  // Navarra: Cámara de Comptos (el texto consolidado del BOE no se actualiza desde 1991)
+  [/\bLF 19\/1984 Navarra\b/,LEXNAV+"2127"]
 ];
 function fuente(ref){
   ref=String(ref||"");
@@ -1657,6 +1660,7 @@ function fuente(ref){
   for(const [re,url] of NORMAS)if(re.test(ref)){
     if(url.startsWith(SEDE_MAD))return{url,txt:"Ver la norma en la sede del Ayuntamiento"};
     if(url.startsWith(BOC))return{url,txt:"Ver la norma en el BOC"};
+    if(url.startsWith(LEXNAV))return{url,txt:"Ver la norma en LexNavarra"};
     const m=ref.match(/^Arts?\.\s*(\d+)(\s*bis)?/);
     return{url:url+(m?"#a"+m[1]+(m[2]?"bis":""):""),txt:m?"Ver el artículo en el BOE":"Ver la norma en el BOE"};
   }
