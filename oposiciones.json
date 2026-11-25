@@ -641,13 +641,263 @@
     "proximamente": true
   },
   "aux-canarias": {
-    "nombre": "Auxiliar Administrativo · Gobierno de Canarias",
-    "corto": "Auxiliar · Canarias",
+    "nombre": "Auxiliar Administrativo del Gobierno de Canarias",
+    "corto": "Auxiliar · Gobierno de Canarias",
     "grupo": "C2",
     "ambito": "Canarias",
+    "eyebrow": "Cuerpo Auxiliar · Gobierno de Canarias · C2",
+    "titulo": "Test de los 40 temas para la próxima convocatoria",
+    "sub": "Preguntas tipo examen de la parte general y de la parte práctica, con cuatro opciones como en el examen real y cada una con su explicación y el artículo exacto, comprobada con los textos consolidados del BOE y del Boletín Oficial de Canarias.",
     "plazas": 296,
-    "convocatoria": "BOC 24/03/2026",
-    "proximamente": true
+    "plazasNota": "última convocatoria",
+    "examen": "",
+    "examenOficial": false,
+    "examenTxt": "Por convocar (próxima OEP)",
+    "examenLbl": "Examen",
+    "programa": "Resolución de 23 de noviembre de 2024 (BOC n.º 239, de 29/11/2024), anexo",
+    "temario": [
+      [
+        1,
+        "La Constitución Española de 1978. Principios constitucionales y valores superiores. Derechos y deberes fundamentales. Su garantía y suspensión"
+      ],
+      [
+        2,
+        "La organización territorial del Estado. Las Comunidades Autónomas: formación y distribución de competencias. La Administración local"
+      ],
+      [
+        3,
+        "El Estatuto de Autonomía de Canarias: posición en el sistema de fuentes, defensa de su integridad y competencias"
+      ],
+      [
+        4,
+        "El Estatuto de Autonomía de Canarias: disposiciones generales, derechos, deberes y principios rectores. La reforma parlamentaria"
+      ],
+      [
+        5,
+        "Las instituciones autonómicas: naturaleza, régimen jurídico y funciones"
+      ],
+      [
+        6,
+        "El Gobierno de Canarias. Consejerías: denominación, organización y competencias"
+      ],
+      [
+        7,
+        "Las islas y la Comunidad Autónoma. Ley 8/2015 de cabildos insulares y Ley 7/2015 de municipios de Canarias"
+      ],
+      [
+        8,
+        "El Presupuesto de la Comunidad Autónoma de Canarias: concepto, estructura y ciclo presupuestario"
+      ],
+      [
+        9,
+        "La organización de la Unión Europea y sus instituciones. Canarias en la Unión Europea"
+      ],
+      [
+        10,
+        "LO 3/2007 de igualdad efectiva de mujeres y hombres. Ley 1/2010 Canaria de Igualdad"
+      ],
+      [
+        11,
+        "LO 1/2004 de violencia de género: derechos de las víctimas. Ley General de derechos de las personas con discapacidad"
+      ],
+      [
+        12,
+        "Derechos de las personas ante las Administraciones. Relación electrónica. Lengua de los procedimientos. Registros"
+      ],
+      [
+        13,
+        "Atención al ciudadano: información administrativa, iniciativas, reclamaciones, quejas y peticiones"
+      ],
+      [
+        14,
+        "Transparencia: publicidad activa y derecho de acceso a la información pública"
+      ],
+      [
+        15,
+        "Protección de datos personales: regulación, principios y seguridad de los datos"
+      ],
+      [
+        16,
+        "La competencia: desconcentración, delegación, avocación, encomienda de gestión, delegación de firma, suplencia y conflictos"
+      ],
+      [
+        17,
+        "El personal al servicio de las Administraciones Públicas. Adquisición y pérdida de la condición de funcionario"
+      ],
+      [
+        18,
+        "Selección del personal funcionario y laboral. Provisión de puestos y movilidad"
+      ],
+      [
+        19,
+        "Situaciones administrativas. Régimen disciplinario"
+      ],
+      [
+        20,
+        "Derechos y deberes de los empleados públicos. Retribuciones, jornada, permisos y vacaciones. Código de conducta"
+      ],
+      [
+        21,
+        "Organización general de la Administración de la Comunidad Autónoma de Canarias. Decreto 212/1991. Reglamentos orgánicos"
+      ],
+      [
+        22,
+        "Acceso electrónico de los ciudadanos a los servicios públicos: sede, identificación, registros y notificaciones electrónicas"
+      ],
+      [
+        23,
+        "El acto administrativo: concepto, elementos y clases. El silencio administrativo"
+      ],
+      [
+        24,
+        "Validez e invalidez de los actos: nulidad, anulabilidad, convalidación, conservación y conversión"
+      ],
+      [
+        25,
+        "Eficacia, notificación y publicación. Ejecutividad, ejecución forzosa y suspensión"
+      ],
+      [
+        26,
+        "Revisión de oficio, declaración de lesividad, revocación y rectificación de errores"
+      ],
+      [
+        27,
+        "El procedimiento administrativo: principios, interesados, términos y plazos"
+      ],
+      [
+        28,
+        "Fases del procedimiento: iniciación, ordenación, instrucción y terminación. Los informes"
+      ],
+      [
+        29,
+        "Los recursos administrativos: concepto, clases, principios y tramitación"
+      ],
+      [
+        30,
+        "Recursos de alzada, reposición y revisión. Otros medios de impugnación"
+      ],
+      [
+        31,
+        "Contratación pública (I): contratos del sector público, órganos de contratación y contratista"
+      ],
+      [
+        32,
+        "Contratación pública (II): preparación del contrato y selección del contratista"
+      ],
+      [
+        33,
+        "Contratación pública (III): ejecución, modificación, extinción, invalidez y recursos"
+      ],
+      [
+        34,
+        "Régimen general de ayudas y subvenciones de la Comunidad Autónoma de Canarias"
+      ],
+      [
+        35,
+        "Funcionamiento electrónico del sector público"
+      ],
+      [
+        36,
+        "Documentos administrativos: registro y archivo. Formación del expediente"
+      ],
+      [
+        37,
+        "Windows: fundamentos, entorno gráfico, escritorio y menú de inicio"
+      ],
+      [
+        38,
+        "El Explorador de Windows: carpetas, archivos, búsquedas y herramientas del sistema"
+      ],
+      [
+        39,
+        "Documentos administrativos: oficios, notificaciones, pie de recurso, actas, certificaciones y diligencias"
+      ],
+      [
+        40,
+        "Regulación reglamentaria del archivo de la Administración de la Comunidad Autónoma de Canarias"
+      ]
+    ],
+    "bloques": [
+      {
+        "nombre": "Parte general",
+        "desde": 1,
+        "hasta": 20
+      },
+      {
+        "nombre": "Parte práctica",
+        "desde": 21,
+        "hasta": 40
+      }
+    ],
+    "sims": [
+      {
+        "id": "can-p1",
+        "nombre": "Simulacro 1.ª parte",
+        "desc": "Parte general (temas 1-20): 50 preguntas. El ejercicio entero dura 100 minutos; aquí, 60 para esta parte. Cada tres fallos restan un acierto.",
+        "n": 50,
+        "min": 60,
+        "ex": 1,
+        "desde": 1,
+        "hasta": 20,
+        "elegirTemas": true,
+        "equilibrar": true,
+        "pen": 3,
+        "penEntera": true
+      },
+      {
+        "id": "can-p2",
+        "nombre": "Simulacro 2.ª parte",
+        "desc": "Parte práctica (temas 21-40): 25 preguntas en 40 minutos. Cada dos fallos restan un acierto.",
+        "n": 25,
+        "min": 40,
+        "ex": 2,
+        "desde": 21,
+        "hasta": 40,
+        "elegirTemas": false,
+        "equilibrar": true,
+        "pen": 2,
+        "penEntera": true
+      }
+    ],
+    "faqExamen": "Un ejercicio único de 100 minutos con dos partes tipo test de cuatro opciones. La primera parte tiene 50 preguntas (más 4 de reserva) de la parte general, temas 1 a 20, y cada tres fallos descuentan un acierto. La segunda es un supuesto práctico con 25 preguntas (más 3 de reserva) de la parte práctica, temas 21 a 40, y cada dos fallos descuentan un acierto. Cada parte se califica de 0 a 10 y hay que sacar al menos 5 en cada una. En la web la nota sale sobre 50 (25 equivale al 5).",
+    "planes": [
+      {
+        "id": "legislacion",
+        "nombre": "Parte general",
+        "temas": 20,
+        "desc": [
+          "Temas 1 a 20 (parte general)",
+          "Simulacros de la 1.ª parte: 50 preguntas, con penalización",
+          "Modo práctica, repaso de fallos y gráfica de notas",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "11,99"
+      },
+      {
+        "id": "completo",
+        "nombre": "Completo",
+        "temas": 40,
+        "dest": true,
+        "desc": [
+          "Todo lo de Parte general",
+          "Parte práctica: procedimiento, contratos, subvenciones, archivo y Windows (temas 21 a 40)",
+          "Simulacros de las dos partes, con penalización",
+          "Progreso guardado en tu cuenta"
+        ],
+        "precio": "14,99"
+      }
+    ],
+    "enlaces": [
+      {
+        "t": "Programa de temas (BOC n.º 239, de 29/11/2024)",
+        "u": "https://www.gobiernodecanarias.org/boc/2024/239/3965.html"
+      },
+      {
+        "t": "Convocatoria de 2026, proceso C211L26 (BOC n.º 57, de 24/03/2026)",
+        "u": "https://www.gobiernodecanarias.org/boc/2026/057/948.html"
+      }
+    ],
+    "enlacesTxt": "Programa y bases de la última convocatoria (296 plazas, examen del 31 de octubre de 2026). La siguiente aún no se ha publicado."
   },
   "osakidetza-aux-enf": {
     "nombre": "Auxiliar de Enfermería · Osakidetza",

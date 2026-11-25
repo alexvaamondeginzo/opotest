@@ -915,7 +915,7 @@ html[data-tema="oscuro"] .pildora,html[data-tema="oscuro"] .btn.pildora,html[dat
 <footer class="pie">
   <div class="wrap">
     <img src="oponota.png" alt="__BRAND__" width="107" height="26">
-    <nav aria-label="Oposiciones"><a href="test-auxiliar-administrativo-comunidad-de-madrid.html">Test de Auxiliar Administrativo de la Comunidad de Madrid</a><a href="test-auxiliar-administrativo-del-estado.html">Test de Auxiliar Administrativo del Estado</a><a href="test-auxiliar-administrativo-ayuntamiento-de-madrid.html">Test de Auxiliar Administrativo del Ayuntamiento de Madrid</a></nav>
+    <nav aria-label="Oposiciones"><a href="test-auxiliar-administrativo-comunidad-de-madrid.html">Test de Auxiliar Administrativo de la Comunidad de Madrid</a><a href="test-auxiliar-administrativo-del-estado.html">Test de Auxiliar Administrativo del Estado</a><a href="test-auxiliar-administrativo-ayuntamiento-de-madrid.html">Test de Auxiliar Administrativo del Ayuntamiento de Madrid</a><a href="test-auxiliar-administrativo-gobierno-de-canarias.html">Test de Auxiliar Administrativo del Gobierno de Canarias</a></nav>
     <nav aria-label="Información legal"><a href="aviso-legal.html">Aviso legal</a><a href="condiciones.html">Condiciones de compra</a><a href="privacidad.html">Política de privacidad</a><a href="cookies.html">Política de cookies</a><button type="button" class="linkbtn" id="open-cookies" style="font-size:14px">Ver aviso de cookies</button></nav>
     <span>Fuentes: textos consolidados del BOE y de los boletines autonómicos de cada ley del programa. Ofimática: documentación oficial de Microsoft para Windows 11 y Microsoft 365.</span>
     <span id="foot-programa"></span>
@@ -1380,7 +1380,9 @@ function finish(timeout){
   const n=st.qs.length;let a=0,f=0,b=0;const wrong=[];const per={};
   st.qs.forEach((q,k)=>{const x=st.ans[k];const p=per[q[0]]=per[q[0]]||{a:0,n:0};p.n++;
     if(x===null||x===-1){b++;wrong.push(k)}else if(x===q[3]){a++;p.a++}else{f++;wrong.push(k)}});
-  const nota=Math.round(Math.max(0,a-f/3)/n*50*100)/100;
+  // penalización: un tercio por defecto; cada simulacro puede fijar "pen" (2 = un medio) y "penEntera" (solo descuentan grupos completos de fallos, como en Canarias)
+  const cfgS=isSim(st.modo)?SIMCFG[st.modo]:null,penD=(cfgS&&cfgS.pen)||3,desc=cfgS&&cfgS.penEntera?Math.floor(f/penD):f/penD;
+  const nota=Math.round(Math.max(0,a-desc)/n*50*100)/100;
   if(isSim(st.modo)&&n>=SIMCFG[st.modo].n){const o=P();o.sims.push({ts:Date.now(),nota,ex:SIMCFG[st.modo].ex});o.sims=o.sims.slice(-20);save(DB)}
   $("quiz").classList.add("hidden");$("result").classList.remove("hidden");
   $("score").innerHTML=`
@@ -1389,7 +1391,7 @@ function finish(timeout){
     <div class="tile"><span>Fallos</span><b>${f}</b></div>
     <div class="tile"><span>En blanco</span><b>${b}</b></div>`;
   const pass=nota>=25;
-  $("verdict").innerHTML=`<span class="pill ${pass?"ok":"bad"}">${pass?"Aprobado":"Suspenso"}</span> ${timeout?"Se acabó el tiempo. ":""}Cada fallo resta un tercio de acierto, como en el examen real. Se aprueba con 25 sobre 50.`;
+  $("verdict").innerHTML=`<span class="pill ${pass?"ok":"bad"}">${pass?"Aprobado":"Suspenso"}</span> ${timeout?"Se acabó el tiempo. ":""}${penD===2?(cfgS.penEntera?"Cada dos fallos restan un acierto":"Cada fallo resta medio acierto"):(cfgS&&cfgS.penEntera?"Cada tres fallos restan un acierto":"Cada fallo resta un tercio de acierto")}, como en el examen real. Se aprueba con 25 sobre 50.`;
   const pk=Object.keys(per);
   $("by-tema-wrap").classList.toggle("hidden",pk.length<2);
   $("by-tema").innerHTML=pk.map(k=>bar(`T${k} · ${TNAME[k]||""}`,per[k].a,per[k].n)).join("");
@@ -1446,7 +1448,14 @@ document.addEventListener("keydown",e=>{
 // Cada referencia ("Art. 16.4 Ley 39/2015") enlaza al texto consolidado. Si añades una norma nueva, añádela aquí.
 const BOE_ELI="https://www.boe.es/eli/es/";
 const SEDE_MAD="https://sede.madrid.es/eli/es-md-01860896/"; // normas municipales de Madrid (Cibelex), sin anclas por artículo
+const BOC="https://www.gobiernodecanarias.org/boc/"; // normas de Canarias solo publicadas en el BOC, sin anclas por artículo
 const NORMAS=[
+  // Gobierno de Canarias (aux-canarias): van primero para que «Ley 4/2023 Canarias» no coja la Ley 4/2023 estatal
+  [/\bEACan\b/,BOE_ELI+"lo/2018/11/05/1/con"],[/\bLey 4\/2023 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2023/03/23/4/con"],
+  [/\bLey 8\/2015 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2015/04/01/8/con"],[/\bLey 7\/2015 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2015/04/01/7/con"],
+  [/\bLey 11\/2006 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2006/12/11/11/con"],[/\bLey 1\/2010 Canarias\b/,"https://www.boe.es/eli/es-cn/l/2010/02/26/1/con"],
+  [/\bDecreto 212\/1991\b/,BOC+"1991/122/001.html"],[/\bDecreto 160\/2006\b/,BOC+"2006/223/002.html"],
+  [/\bLey 38\/2003\b/,BOE_ELI+"l/2003/11/17/38/con"],
   [/\bLey 39\/2015\b/,BOE_ELI+"l/2015/10/01/39/con"],[/\bLey 40\/2015\b/,BOE_ELI+"l/2015/10/01/40/con"],
   [/\bCE\b/,BOE_ELI+"c/1978/12/27/(1)/con"],[/\bTREBEP\b/,BOE_ELI+"rdlg/2015/10/30/5/con"],
   [/\bLey 29\/1998\b/,BOE_ELI+"l/1998/07/13/29/con"],[/\bLO 3\/2018\b/,BOE_ELI+"lo/2018/12/05/3/con"],
@@ -1484,6 +1493,7 @@ function fuente(ref){
   if(/\bTFUE\b/.test(ref))return{url:"https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:12016E/TXT",txt:"Ver el Tratado de Funcionamiento de la UE"};
   for(const [re,url] of NORMAS)if(re.test(ref)){
     if(url.startsWith(SEDE_MAD))return{url,txt:"Ver la norma en la sede del Ayuntamiento"};
+    if(url.startsWith(BOC))return{url,txt:"Ver la norma en el BOC"};
     const m=ref.match(/^Arts?\.\s*(\d+)(\s*bis)?/);
     return{url:url+(m?"#a"+m[1]+(m[2]?"bis":""):""),txt:m?"Ver el artículo en el BOE":"Ver la norma en el BOE"};
   }
