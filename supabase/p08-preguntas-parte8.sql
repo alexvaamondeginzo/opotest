@@ -1,285 +1,5 @@
--- Banco de preguntas, parte 8 de 17. Ejecútalo en Supabase → SQL Editor DESPUÉS de 1-configuracion.sql y 8-oposiciones.sql.
+-- Banco de preguntas, parte 8 de 21. Ejecútalo en Supabase → SQL Editor DESPUÉS de 1-configuracion.sql y 8-oposiciones.sql.
 insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
-('aux-age:29-5c6cd8a9c2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Atención al público", "Inglés", "Administración electrónica", "Igualdad"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Excel avanzado, 67 %; Igualdad, 80 %; Inglés, 60 %; Atención al público, 86 %; Administración electrónica, 100 %.',null),
-('aux-age:29-7b0738d733','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-Si cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["90", "105", "180", "75"]'::jsonb,0,'Psicotécnicos','6 aprobados × 15 horas = 90 horas.',null),
-('aux-age:29-2a6a35a2d2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 48 | 32 | 8 | 10
-Igualdad | 40 | 32 | 24 | 40
-Inglés | 20 | 12 | 6 | 15
-Atención al público | 28 | 24 | 18 | 30
-Administración electrónica | 20 | 20 | 5 | 10
-¿En qué curso hubo más inscritos sin aprobar?','["Inglés", "Igualdad", "Excel avanzado", "Administración electrónica"]'::jsonb,2,'Psicotécnicos','Inscritos menos aprobados: Excel avanzado, 24; Igualdad, 8; Inglés, 6; Atención al público, 6; Administración electrónica, 15.',null),
-('aux-age:29-9a33fd72c0','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Qué porcentaje de los inscritos aprobó Protección de datos?','["50 %", "75 %", "30 %", "25 %"]'::jsonb,0,'Psicotécnicos','6 / 12 × 100 = 50 %.',null),
-('aux-age:29-88db15ec89','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Cuál es la media de inscritos por curso?','["26", "22", "24", "29"]'::jsonb,2,'Psicotécnicos','(16 + 44 + 36 + 12 + 12) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-487b8930e2','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Cuántas plazas quedaron libres en total?','["27", "42", "32", "37"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 8 + 4 + 0 + 8 + 12 = 32.',null),
-('aux-age:29-6c2bfa9055','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Atención al público", "Protección de datos", "Excel avanzado", "Contratación pública"]'::jsonb,0,'Psicotécnicos','Inscritos / plazas: Excel avanzado, 67 %; Contratación pública, 92 %; Atención al público, 100 %; Protección de datos, 60 %; Inglés, 50 %.',null),
-('aux-age:29-2e288cd414','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-Si cada aprobado de Contratación pública recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["300", "1.320", "360", "330"]'::jsonb,3,'Psicotécnicos','11 aprobados × 30 horas = 330 horas.',null),
-('aux-age:29-a6147c1b4c','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Excel avanzado | 24 | 16 | 4 | 20
-Contratación pública | 48 | 44 | 11 | 30
-Atención al público | 36 | 36 | 9 | 40
-Protección de datos | 20 | 12 | 6 | 25
-Inglés | 24 | 12 | 3 | 15
-¿En qué curso hubo más inscritos sin aprobar?','["Excel avanzado", "Protección de datos", "Contratación pública", "Atención al público"]'::jsonb,2,'Psicotécnicos','Inscritos menos aprobados: Excel avanzado, 12; Contratación pública, 33; Atención al público, 27; Protección de datos, 6; Inglés, 9.',null),
-('aux-age:29-f94ccad95a','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Qué porcentaje de los inscritos aprobó Inglés?','["25 %", "40 %", "75 %", "50 %"]'::jsonb,3,'Psicotécnicos','8 / 16 × 100 = 50 %.',null),
-('aux-age:29-62e72b1563','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Cuál es la media de inscritos por curso?','["29", "22", "26", "24"]'::jsonb,3,'Psicotécnicos','(16 + 32 + 24 + 16 + 32) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-56fe3b1499','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Cuántas plazas quedaron libres en total?','["66", "61", "56", "51"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 12 + 4 + 8 + 16 + 16 = 56.',null),
-('aux-age:29-99e5d7d027','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Prevención de riesgos", "Contratación pública", "Administración electrónica", "Protección de datos"]'::jsonb,1,'Psicotécnicos','Inscritos / plazas: Prevención de riesgos, 57 %; Contratación pública, 89 %; Protección de datos, 75 %; Inglés, 50 %; Administración electrónica, 67 %.',null),
-('aux-age:29-d1622b5f32','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-Si cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["240", "320", "230", "250"]'::jsonb,0,'Psicotécnicos','24 aprobados × 10 horas = 240 horas.',null),
-('aux-age:29-845dd55764','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Prevención de riesgos | 28 | 16 | 4 | 40
-Contratación pública | 36 | 32 | 24 | 30
-Protección de datos | 32 | 24 | 6 | 25
-Inglés | 32 | 16 | 8 | 40
-Administración electrónica | 48 | 32 | 24 | 10
-¿En qué curso hubo más inscritos sin aprobar?','["Administración electrónica", "Protección de datos", "Inglés", "Prevención de riesgos"]'::jsonb,1,'Psicotécnicos','Inscritos menos aprobados: Prevención de riesgos, 12; Contratación pública, 8; Protección de datos, 18; Inglés, 8; Administración electrónica, 8.',null),
-('aux-age:29-c636a122d4','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Qué porcentaje de los inscritos aprobó Administración electrónica?','["100 %", "75 %", "50 %", "65 %"]'::jsonb,1,'Psicotécnicos','18 / 24 × 100 = 75 %.',null),
-('aux-age:29-a3a5d418c5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Cuál es la media de inscritos por curso?','["20", "25", "18", "22"]'::jsonb,0,'Psicotécnicos','(12 + 24 + 16 + 20 + 28) / 5 = 100 / 5 = 20.',null),
-('aux-age:29-f1e8fb10c7','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Cuántas plazas quedaron libres en total?','["51", "61", "56", "66"]'::jsonb,2,'Psicotécnicos','Plazas menos inscritos en cada curso: 8 + 12 + 12 + 16 + 8 = 56.',null),
-('aux-age:29-61417e8c81','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Atención al público", "Administración electrónica", "Contratación pública"]'::jsonb,1,'Psicotécnicos','Inscritos / plazas: Contratación pública, 60 %; Administración electrónica, 67 %; Protección de datos, 57 %; Prevención de riesgos, 56 %; Atención al público, 78 %.',null),
-('aux-age:29-bbc4792357','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-Si cada aprobado de Administración electrónica recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["450", "600", "425", "475"]'::jsonb,0,'Psicotécnicos','18 aprobados × 25 horas = 450 horas.',null),
-('aux-age:29-45140ff3ba','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Contratación pública | 20 | 12 | 6 | 15
-Administración electrónica | 36 | 24 | 18 | 25
-Protección de datos | 28 | 16 | 8 | 30
-Prevención de riesgos | 36 | 20 | 10 | 25
-Atención al público | 36 | 28 | 21 | 30
-¿En qué curso hubo más inscritos sin aprobar?','["Contratación pública", "Prevención de riesgos", "Administración electrónica", "Protección de datos"]'::jsonb,1,'Psicotécnicos','Inscritos menos aprobados: Contratación pública, 6; Administración electrónica, 6; Protección de datos, 8; Prevención de riesgos, 10; Atención al público, 7.',null),
-('aux-age:29-3f6321aa0d','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Qué porcentaje de los inscritos aprobó Contratación pública?','["75 %", "50 %", "100 %", "60 %"]'::jsonb,0,'Psicotécnicos','12 / 16 × 100 = 75 %.',null),
-('aux-age:29-7015ddda9b','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Cuál es la media de inscritos por curso?','["29", "22", "24", "26"]'::jsonb,2,'Psicotécnicos','(20 + 12 + 28 + 16 + 44) / 5 = 120 / 5 = 24.',null),
-('aux-age:29-00813db643','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Cuántas plazas quedaron libres en total?','["32", "37", "27", "42"]'::jsonb,0,'Psicotécnicos','Plazas menos inscritos en cada curso: 16 + 8 + 0 + 4 + 4 = 32.',null),
-('aux-age:29-a9956e4003','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Inglés", "Contratación pública", "Protección de datos", "Atención al público"]'::jsonb,2,'Psicotécnicos','Inscritos / plazas: Atención al público, 56 %; Excel avanzado, 60 %; Protección de datos, 100 %; Contratación pública, 80 %; Inglés, 92 %.',null),
-('aux-age:29-fe1d0cfe9f','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-Si cada aprobado de Inglés recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["840", "920", "1.760", "880"]'::jsonb,3,'Psicotécnicos','22 aprobados × 40 horas = 880 horas.',null),
-('aux-age:29-56751b9240','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Atención al público | 36 | 20 | 15 | 25
-Excel avanzado | 20 | 12 | 6 | 40
-Protección de datos | 28 | 28 | 21 | 30
-Contratación pública | 20 | 16 | 12 | 15
-Inglés | 48 | 44 | 22 | 40
-¿En qué curso hubo más inscritos sin aprobar?','["Inglés", "Contratación pública", "Protección de datos", "Atención al público"]'::jsonb,0,'Psicotécnicos','Inscritos menos aprobados: Atención al público, 5; Excel avanzado, 6; Protección de datos, 7; Contratación pública, 4; Inglés, 22.',null),
-('aux-age:29-3e2e37ee1b','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Qué porcentaje de los inscritos aprobó Atención al público?','["100 %", "75 %", "50 %", "65 %"]'::jsonb,1,'Psicotécnicos','24 / 32 × 100 = 75 %.',null),
-('aux-age:29-6908b3929a','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Cuál es la media de inscritos por curso?','["28", "26", "33", "30"]'::jsonb,0,'Psicotécnicos','(20 + 32 + 20 + 20 + 48) / 5 = 140 / 5 = 28.',null),
-('aux-age:29-2e010c81ce','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Cuántas plazas quedaron libres en total?','["45", "35", "50", "40"]'::jsonb,3,'Psicotécnicos','Plazas menos inscritos en cada curso: 4 + 16 + 12 + 8 + 0 = 40.',null),
-('aux-age:29-c7a29aaab0','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿Qué curso tiene el mayor porcentaje de plazas ocupadas?','["Protección de datos", "Igualdad", "Atención al público", "Prevención de riesgos"]'::jsonb,0,'Psicotécnicos','Inscritos / plazas: Igualdad, 83 %; Atención al público, 67 %; Excel avanzado, 62 %; Prevención de riesgos, 71 %; Protección de datos, 100 %.',null),
-('aux-age:29-35b094c796','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-Si cada aprobado de Protección de datos recibe un certificado con las horas del curso, ¿cuántas horas de formación certifica ese curso en total?','["720", "525", "540", "555"]'::jsonb,2,'Psicotécnicos','36 aprobados × 15 horas = 540 horas.',null),
-('aux-age:29-729378beb5','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Igualdad | 24 | 20 | 15 | 15
-Atención al público | 48 | 32 | 24 | 15
-Excel avanzado | 32 | 20 | 15 | 30
-Prevención de riesgos | 28 | 20 | 15 | 30
-Protección de datos | 48 | 48 | 36 | 15
-¿En qué curso hubo más inscritos sin aprobar?','["Igualdad", "Prevención de riesgos", "Excel avanzado", "Protección de datos"]'::jsonb,3,'Psicotécnicos','Inscritos menos aprobados: Igualdad, 5; Atención al público, 8; Excel avanzado, 5; Prevención de riesgos, 5; Protección de datos, 12.',null),
-('aux-age:29-75bcf9ddd9','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-¿Qué porcentaje de los inscritos aprobó Atención al público?','["25 %", "29 %", "75 %", "50 %"]'::jsonb,3,'Psicotécnicos','14 / 28 × 100 = 50 %.',null),
-('aux-age:29-6a1bb88cce','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
-Curso | Plazas | Inscritos | Aprobados | Horas
-Protección de datos | 48 | 24 | 18 | 40
-Administración electrónica | 32 | 24 | 6 | 10
-Atención al público | 48 | 28 | 14 | 20
-Prevención de riesgos | 24 | 16 | 8 | 30
-Igualdad | 32 | 28 | 21 | 15
-¿Cuál es la media de inscritos por curso?','["24", "29", "26", "22"]'::jsonb,0,'Psicotécnicos','(24 + 24 + 28 + 16 + 28) / 5 = 120 / 5 = 24.',null),
 ('aux-age:29-b6dc091617','aux-age',29,'La tabla recoge los cursos de formación de una consejería:
 Curso | Plazas | Inscritos | Aprobados | Horas
 Protección de datos | 48 | 24 | 18 | 40
@@ -794,9 +514,7 @@ Según la clave, ¿qué cadena corresponde a las letras LSLL?','["0010 1011 0010
 ('aux-age:29-4f24fd009f','aux-age',29,'¿Qué significa «fútil»?','["De gran utilidad", "De larga duración", "De mucha dificultad", "De poca importancia"]'::jsonb,3,'Psicotécnicos','«Fútil» significa: de poca importancia.',null),
 ('aux-age:29-2462b32bbb','aux-age',29,'¿Qué significa «venial»?','["Que se puede vender", "Que es muy grave", "Leve y fácil de perdonar", "Que se repite cada año"]'::jsonb,2,'Psicotécnicos','«Venial» significa: leve y fácil de perdonar.',null),
 ('aux-age:29-be84f9d847','aux-age',29,'¿Qué significa «acérrimo»?','["Muy antiguo o viejo", "Muy ácido o amargo", "Muy tenaz o decidido", "Muy cercano o próximo"]'::jsonb,2,'Psicotécnicos','«Acérrimo» significa: muy tenaz o decidido.',null),
-('aux-age:29-c2080e93b5','aux-age',29,'¿Qué significa «compulsar»?','["Cotejar una copia con su original", "Pulsar una tecla varias veces", "Obligar a alguien a hacer algo", "Comprar algo de forma impulsiva"]'::jsonb,0,'Psicotécnicos','«Compulsar» significa: cotejar una copia con su original.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+('aux-age:29-c2080e93b5','aux-age',29,'¿Qué significa «compulsar»?','["Cotejar una copia con su original", "Pulsar una tecla varias veces", "Obligar a alguien a hacer algo", "Comprar algo de forma impulsiva"]'::jsonb,0,'Psicotécnicos','«Compulsar» significa: cotejar una copia con su original.',null),
 ('aux-age:29-5436e42643','aux-age',29,'¿Qué significa «recusar»?','["Negarse a pagar una deuda", "Volver a acusar a una persona", "Corregir un error ya publicado", "Rechazar a quien no ofrece imparcialidad"]'::jsonb,3,'Psicotécnicos','«Recusar» significa: rechazar a quien no ofrece imparcialidad.',null),
 ('aux-age:29-7fd5ec2521','aux-age',29,'¿Qué significa «notificar»?','["Firmar ante un notario", "Publicar algo en un periódico", "Comunicar formalmente una resolución", "Anotar algo en un registro"]'::jsonb,2,'Psicotécnicos','«Notificar» significa: comunicar formalmente una resolución.',null),
 ('aux-age:29-1462d52960','aux-age',29,'¿Qué significa «caducidad»?','["Caída de un documento en un archivo", "Pérdida de un objeto por descuido", "Cuidado especial de un expediente", "Fin de un derecho o trámite por el paso del tiempo"]'::jsonb,3,'Psicotécnicos','«Caducidad» significa: fin de un derecho o trámite por el paso del tiempo.',null),
@@ -831,7 +549,9 @@ insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,artic
 ('adm-cm:1-5c62e01d2b','adm-cm',1,'¿Qué artículo modificó la reforma constitucional de 2024?','["El art. 135, sobre estabilidad presupuestaria", "El art. 13.2, sobre el sufragio de los extranjeros en elecciones municipales", "El art. 49, sobre las personas con discapacidad", "El art. 69.3, sobre la elección de los senadores provinciales"]'::jsonb,2,'Art. 49 CE','La reforma de febrero de 2024 modificó el art. 49. Las anteriores fueron la de 1992 (art. 13.2) y la de 2011 (art. 135); la de mayo de 2026 modificó el art. 69.3.',null),
 ('adm-cm:1-8ae3155af6','adm-cm',1,'Según el art. 53.1, el ejercicio de los derechos del Capítulo II solo puede regularse:','["Por decreto-ley", "Por reglamento del Gobierno", "Por ley de las Comunidades Autónomas exclusivamente", "Por ley, que deberá respetar su contenido esencial"]'::jsonb,3,'Art. 53.1 CE','Vinculan a todos los poderes públicos y solo por ley, que respete su contenido esencial, podrá regularse su ejercicio.',null),
 ('adm-cm:1-741c5a8b0c','adm-cm',1,'¿Qué derechos pueden protegerse mediante recurso de amparo ante el Tribunal Constitucional?','["El art. 14, la Sección 1.ª del Capítulo II y la objeción de conciencia del art. 30", "Todos los derechos del Capítulo II del Título I, incluida su Sección 2.ª", "El art. 14 y los principios rectores del Capítulo III del Título I", "La Sección 1.ª del Capítulo II, pero no la igualdad del art. 14"]'::jsonb,0,'Art. 53.2 CE','Cabe amparo para el art. 14, la Sección 1.ª del Capítulo II y la objeción de conciencia del art. 30, en su caso tras acudir a los tribunales ordinarios.',null),
-('adm-cm:1-05385a13b7','adm-cm',1,'El Defensor del Pueblo es:','["Alto comisionado del Gobierno, designado por el Consejo de Ministros", "Alto comisionado de las Cortes Generales, designado por estas", "Alto comisionado de las Cortes Generales, designado por el Rey", "Alto comisionado del Consejo General del Poder Judicial"]'::jsonb,1,'Art. 54 CE','Es alto comisionado de las Cortes Generales, designado por ellas para la defensa de los derechos del Título I.',null),
+('adm-cm:1-05385a13b7','adm-cm',1,'El Defensor del Pueblo es:','["Alto comisionado del Gobierno, designado por el Consejo de Ministros", "Alto comisionado de las Cortes Generales, designado por estas", "Alto comisionado de las Cortes Generales, designado por el Rey", "Alto comisionado del Consejo General del Poder Judicial"]'::jsonb,1,'Art. 54 CE','Es alto comisionado de las Cortes Generales, designado por ellas para la defensa de los derechos del Título I.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('adm-cm:1-ec035f8eac','adm-cm',1,'Según el art. 55.1, los derechos pueden suspenderse cuando se declare el estado de:','["Alarma", "Alarma, excepción o sitio", "Excepción o sitio", "Solo sitio"]'::jsonb,2,'Art. 55.1 CE','La suspensión general cabe en el estado de excepción o de sitio, no en el de alarma.',null),
 ('adm-cm:1-d873eb045f','adm-cm',1,'La suspensión individual de derechos para investigaciones sobre bandas armadas o terrorismo se regula mediante:','["Real decreto", "Ley ordinaria", "Orden ministerial", "Ley orgánica"]'::jsonb,3,'Art. 55.2 CE','Una ley orgánica puede determinar la suspensión individual de los derechos de los arts. 17.2 y 18.2 y 3 en esas investigaciones.',null),
 ('adm-cm:1-ff8dfa0c2d','adm-cm',1,'¿Qué principios garantiza el art. 9.3 de la Constitución en relación con las normas?','["La legalidad, la jerarquía normativa y la retroactividad de las normas favorables", "La legalidad, la competencia normativa y la publicidad de las normas", "La legalidad, la jerarquía normativa y la publicidad de las normas", "La seguridad jurídica, la reserva de ley y la jerarquía normativa"]'::jsonb,2,'Art. 9.3 CE','Garantiza, entre otros, el principio de legalidad, la jerarquía normativa y la publicidad de las normas.',null),
@@ -946,9 +666,7 @@ insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,artic
 ('adm-cm:2-5853c3d1ee','adm-cm',2,'¿A quién corresponde, según el art. 63.3 CE, declarar la guerra y hacer la paz?','["Al Rey, previa deliberación del Consejo de Ministros", "Al Rey, previa autorización de las Cortes Generales", "Al Gobierno, previa autorización del Congreso de los Diputados", "A las Cortes Generales, a propuesta del Rey"]'::jsonb,1,'Art. 63.3 CE','Corresponde al Rey, previa autorización de las Cortes Generales.',null),
 ('adm-cm:2-0f0cf9f1c4','adm-cm',2,'¿Quién refrenda la propuesta y el nombramiento del Presidente del Gobierno y la disolución prevista en el art. 99 CE?','["El Presidente del Senado, como presidente de las Cortes", "El Presidente del Congreso", "El Ministro de Justicia", "El Presidente del Gobierno en funciones"]'::jsonb,1,'Art. 64.1 CE','El resto de actos del Rey los refrendan el Presidente del Gobierno y, en su caso, los ministros competentes.',null),
 ('adm-cm:2-28feb89481','adm-cm',2,'De los actos del Rey serán responsables:','["Las personas que los refrenden", "El Gobierno de forma solidaria en todo caso", "El Consejo de Estado, que los informa previamente", "El propio Rey, ante las Cortes Generales"]'::jsonb,0,'Art. 64.2 CE','El refrendo traslada la responsabilidad a quien refrenda.',null),
-('adm-cm:2-b611a4a635','adm-cm',2,'Según el art. 65 CE, el Rey recibe de los Presupuestos del Estado una cantidad global para el sostenimiento de su Familia y Casa y:','["La distribuye libremente", "La distribuye según el plan que aprueben las Cortes", "La distribuye con autorización del Ministerio de Hacienda", "Debe justificarla anualmente ante el Tribunal de Cuentas"]'::jsonb,0,'Art. 65.1 CE','Además, nombra y releva libremente a los miembros civiles y militares de su Casa (art. 65.2), actos que no necesitan refrendo.',null)
-on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
-insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
+('adm-cm:2-b611a4a635','adm-cm',2,'Según el art. 65 CE, el Rey recibe de los Presupuestos del Estado una cantidad global para el sostenimiento de su Familia y Casa y:','["La distribuye libremente", "La distribuye según el plan que aprueben las Cortes", "La distribuye con autorización del Ministerio de Hacienda", "Debe justificarla anualmente ante el Tribunal de Cuentas"]'::jsonb,0,'Art. 65.1 CE','Además, nombra y releva libremente a los miembros civiles y militares de su Casa (art. 65.2), actos que no necesitan refrendo.',null),
 ('adm-cm:2-d4359566ea','adm-cm',2,'Según el art. 66.2 CE, las Cortes Generales:','["Ejercen la potestad legislativa, elaboran los Presupuestos y dirigen la política exterior", "Ejercen la potestad legislativa del Estado, aprueban sus Presupuestos, controlan la acción del Gobierno y tienen las demás competencias que les atribuya la Constitución", "Aprueban los Presupuestos y controlan al Gobierno, pero la potestad legislativa es del Congreso", "Ejercen la potestad legislativa y reglamentaria del Estado y dirigen la Administración General del Estado"]'::jsonb,1,'Art. 66.2 CE','Las Cortes representan al pueblo español y están formadas por el Congreso de los Diputados y el Senado (art. 66.1).',null),
 ('adm-cm:2-157cecf5ee','adm-cm',2,'Según el art. 67 CE, los miembros de las Cortes Generales:','["Están ligados por el mandato del partido con el que concurrieron a las elecciones, salvo en votaciones secretas", "No están ligados por mandato imperativo", "Pueden ser a la vez Diputados y Senadores si lo autoriza la Mesa", "Pueden acumular el acta de Diputado con la de una Asamblea autonómica"]'::jsonb,1,'Art. 67.2 CE','Nadie puede ser miembro de las dos Cámaras simultáneamente ni acumular el acta de una Asamblea de CA con la de Diputado al Congreso (art. 67.1).',null),
 ('adm-cm:2-66fada6957','adm-cm',2,'¿Entre qué número mínimo y máximo de Diputados puede componerse el Congreso según la Constitución?','["Entre 250 y 400", "Entre 350 y 400", "Entre 300 y 350", "Entre 300 y 400"]'::jsonb,3,'Art. 68.1 CE','La Constitución fija la horquilla y la LOREG concreta el número en 350.',null),
@@ -983,7 +701,9 @@ insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,artic
 ('adm-cm:3-c13fc40526','adm-cm',3,'Los miembros del Tribunal Constitucional deben ser juristas de reconocida competencia con más de:','["20 años de ejercicio profesional", "10 años de ejercicio profesional", "12 años de ejercicio profesional", "15 años de ejercicio profesional"]'::jsonb,3,'Art. 159.2 CE','Se nombran entre magistrados y fiscales, profesores de universidad, funcionarios públicos y abogados.',null),
 ('adm-cm:3-ea6e2a1beb','adm-cm',3,'¿Por cuánto tiempo son designados los miembros del Tribunal Constitucional y cómo se renueva?','["Por 9 años, renovándose por terceras partes cada 3 años", "Por 6 años, renovándose por mitades cada 3 años", "Por 12 años, renovándose por terceras partes cada 4 años", "Por 9 años, renovándose por mitades cada 4 años y medio"]'::jsonb,0,'Art. 159.3 CE','Así lo dispone el art. 159.3 CE.',null),
 ('adm-cm:3-aea48dd5be','adm-cm',3,'El Presidente del Tribunal Constitucional es nombrado por el Rey:','["Entre sus miembros, a propuesta del mismo Tribunal en pleno y por un período de tres años", "Entre juristas de reconocida competencia con más de quince años de ejercicio, a propuesta del Congreso, por tres años", "Entre sus miembros, a propuesta del Gobierno, oído el Pleno, y por un período de nueve años", "Entre sus miembros, a propuesta del CGPJ y por un período de cuatro años"]'::jsonb,0,'Art. 160 CE','El Pleno propone y el Rey nombra, por tres años.',null),
-('adm-cm:3-747c5c0d64','adm-cm',3,'¿Quiénes están legitimados para interponer el recurso de inconstitucionalidad?','["El Presidente del Gobierno, el Ministerio Fiscal, 50 Diputados, 50 Senadores y los Presidentes y Asambleas de las Comunidades Autónomas", "Cualquier persona natural o jurídica que invoque un interés legítimo, además del Defensor del Pueblo", "El Presidente del Gobierno, el Defensor del Pueblo, 30 Diputados, 30 Senadores y las Asambleas de las CCAA", "El Presidente del Gobierno, el Defensor del Pueblo, 50 Diputados, 50 Senadores y los órganos colegiados ejecutivos y Asambleas de las CCAA"]'::jsonb,3,'Art. 162.1 a) CE','El Ministerio Fiscal no está legitimado para el recurso de inconstitucionalidad, sí para el de amparo.',null),
+('adm-cm:3-747c5c0d64','adm-cm',3,'¿Quiénes están legitimados para interponer el recurso de inconstitucionalidad?','["El Presidente del Gobierno, el Ministerio Fiscal, 50 Diputados, 50 Senadores y los Presidentes y Asambleas de las Comunidades Autónomas", "Cualquier persona natural o jurídica que invoque un interés legítimo, además del Defensor del Pueblo", "El Presidente del Gobierno, el Defensor del Pueblo, 30 Diputados, 30 Senadores y las Asambleas de las CCAA", "El Presidente del Gobierno, el Defensor del Pueblo, 50 Diputados, 50 Senadores y los órganos colegiados ejecutivos y Asambleas de las CCAA"]'::jsonb,3,'Art. 162.1 a) CE','El Ministerio Fiscal no está legitimado para el recurso de inconstitucionalidad, sí para el de amparo.',null)
+on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
+insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,articulo,explicacion,examen) values
 ('adm-cm:3-8a731e9dab','adm-cm',3,'¿Quiénes están legitimados para interponer el recurso de amparo?','["Toda persona natural o jurídica que invoque un interés legítimo, el Defensor del Pueblo y el Ministerio Fiscal", "El Defensor del Pueblo y el Ministerio Fiscal, a instancia de la persona afectada, que no puede recurrir por sí misma", "Solo la persona directamente afectada por la vulneración del derecho fundamental, asistida de abogado y representada por procurador", "Toda persona natural o jurídica que invoque un interés legítimo, el Defensor del Pueblo y 50 Diputados"]'::jsonb,0,'Art. 162.1 b) CE','Así lo dispone el art. 162.1 b) CE.',null),
 ('adm-cm:3-f177e2b2ca','adm-cm',3,'Cuando el Gobierno impugna ante el Tribunal Constitucional disposiciones y resoluciones de las CCAA, la impugnación produce la suspensión, que el Tribunal debe ratificar o levantar en un plazo no superior a:','["3 meses", "5 meses", "2 meses", "6 meses"]'::jsonb,1,'Art. 161.2 CE','La suspensión es automática y el Tribunal la ratifica o levanta en un plazo no superior a cinco meses.',null),
 ('adm-cm:3-306228a347','adm-cm',3,'La cuestión de inconstitucionalidad la plantea:','["El Ministerio Fiscal en cualquier proceso, antes de que se dicte sentencia firme por el órgano judicial", "Un órgano judicial que considere que una norma con rango de ley aplicable al caso pueda ser contraria a la Constitución", "El Defensor del Pueblo cuando una ley vulnere derechos fundamentales, en el plazo de tres meses", "Cualquier ciudadano afectado por una norma con rango de ley que considere inconstitucional, en el plazo de tres meses desde su publicación"]'::jsonb,1,'Art. 163 CE','En ningún caso tiene efectos suspensivos.',null),
@@ -1090,5 +810,45 @@ insert into public.preguntas (id,oposicion,tema,pregunta,opciones,correcta,artic
 ('adm-cm:5-9d2d673bab','adm-cm',5,'Según la Constitución, el gobierno y la administración de los municipios corresponde a:','["Las Diputaciones Provinciales, a través de sus delegaciones comarcales en cada municipio", "Los Delegados del Gobierno, con la colaboración de los Concejales elegidos por los vecinos", "Las asambleas vecinales abiertas, presididas por el Alcalde y el Secretario municipal", "Sus respectivos Ayuntamientos, integrados por los Alcaldes y los Concejales"]'::jsonb,3,'Art. 140 CE','Los Concejales son elegidos por los vecinos por sufragio universal, igual, libre, directo y secreto.',null),
 ('adm-cm:5-0e1d41d6d7','adm-cm',5,'Según el artículo 140 de la Constitución, los Alcaldes serán elegidos:','["Por el Delegado del Gobierno, a propuesta de los Concejales", "Por el Pleno de la Diputación Provincial", "Por los Concejales o por los vecinos", "Siempre por sufragio universal directo de los vecinos"]'::jsonb,2,'Art. 140 CE','La ley regula las condiciones en las que procede el régimen del concejo abierto.',null),
 ('adm-cm:5-ce41f43327','adm-cm',5,'¿Qué tipo de ley es necesaria para alterar los límites provinciales?','["Una ley orgánica aprobada por las Cortes Generales", "Un real decreto del Consejo de Ministros", "Una ley ordinaria de las Cortes Generales, por mayoría absoluta", "Una ley de la Comunidad Autónoma afectada, previo informe estatal"]'::jsonb,0,'Art. 141.1 CE','La provincia es una entidad local con personalidad jurídica propia, agrupación de municipios y división territorial para el cumplimiento de las actividades del Estado.',null),
-('adm-cm:5-31f41b6046','adm-cm',5,'En los archipiélagos, las islas tendrán además su administración propia en forma de:','["Diputaciones forales", "Cabildos o Consejos", "Juntas Generales", "Mancomunidades insulares"]'::jsonb,1,'Art. 141.4 CE','Los Cabildos existen en Canarias y los Consejos Insulares en Baleares.',null)
+('adm-cm:5-31f41b6046','adm-cm',5,'En los archipiélagos, las islas tendrán además su administración propia en forma de:','["Diputaciones forales", "Cabildos o Consejos", "Juntas Generales", "Mancomunidades insulares"]'::jsonb,1,'Art. 141.4 CE','Los Cabildos existen en Canarias y los Consejos Insulares en Baleares.',null),
+('adm-cm:5-22a7698b7a','adm-cm',5,'Según el artículo 143.2 de la Constitución, la iniciativa del proceso autonómico corresponde a todas las Diputaciones interesadas o al órgano interinsular correspondiente y a:','["Los municipios que representen un tercio del censo electoral de la región histórica", "Las tres cuartas partes de los municipios que representen la mayoría absoluta de los electores", "La mitad de los municipios de cada provincia, sea cual sea su población", "Las dos terceras partes de los municipios cuya población represente, al menos, la mayoría del censo electoral de cada provincia o isla"]'::jsonb,3,'Art. 143.2 CE','Los requisitos deben cumplirse en el plazo de seis meses desde el primer acuerdo de una Corporación local.',null),
+('adm-cm:5-58be9bc3d5','adm-cm',5,'¿En qué plazo deben cumplirse los requisitos de iniciativa autonómica del artículo 143.2 de la Constitución?','["Dos años desde que se constituya la asamblea de parlamentarios", "Seis meses desde el primer acuerdo adoptado por alguna de las Corporaciones locales interesadas", "Tres meses desde el acuerdo de la última de las Diputaciones interesadas", "Un año desde la publicación de la Constitución en el Boletín Oficial del Estado y en los diarios oficiales"]'::jsonb,1,'Art. 143.2 CE','Si la iniciativa no prospera, solo puede reiterarse pasados cinco años.',null),
+('adm-cm:5-42387ccc1e','adm-cm',5,'Si la iniciativa autonómica del artículo 143 no prospera:','["Podrá reiterarse pasados tres años", "Solo podrá reiterarse pasados cinco años", "Podrá reiterarse al año siguiente", "No podrá volver a plantearse nunca"]'::jsonb,1,'Art. 143.3 CE','Así lo dispone el artículo 143.3 de la Constitución.',null),
+('adm-cm:5-2ded04ceed','adm-cm',5,'Según el artículo 144 de la Constitución, las Cortes Generales, mediante ley orgánica y por motivos de interés nacional, podrán:','["Integrar dos Comunidades Autónomas limítrofes en una sola, sin necesidad de referéndum", "Disolver una Comunidad Autónoma que incumpla de forma grave las obligaciones que le imponen la Constitución u otras leyes", "Suspender la autonomía de una Comunidad Autónoma por un plazo máximo de seis meses", "Autorizar la constitución de una Comunidad Autónoma cuyo ámbito territorial no supere el de una provincia y no reúna las condiciones del artículo 143.1"]'::jsonb,3,'Art. 144 a) CE','El artículo 155 no permite disolver Comunidades, sino adoptar medidas para obligarlas a cumplir.',null),
+('adm-cm:5-bd3b6cb572','adm-cm',5,'¿Qué prohíbe el artículo 145 de la Constitución?','["Que una Comunidad Autónoma tenga varias provincias", "La federación de Comunidades Autónomas", "Los convenios entre Comunidades Autónomas", "Que las Comunidades Autónomas tengan himno propio"]'::jsonb,1,'Art. 145.1 CE','Sí se permiten convenios entre Comunidades para la gestión de servicios propios, que deben comunicarse a las Cortes Generales.',null),
+('adm-cm:5-b7c080270f','adm-cm',5,'Los acuerdos de cooperación entre Comunidades Autónomas, distintos de los convenios para gestión de servicios propios, requieren:','["El dictamen del Consejo de Estado", "La aprobación del Consejo de Ministros", "La autorización de las Cortes Generales", "Una simple comunicación a las Cortes Generales"]'::jsonb,2,'Art. 145.2 CE','Los convenios para la gestión y prestación de servicios propios solo deben comunicarse a las Cortes.',null),
+('adm-cm:5-14285c79c8','adm-cm',5,'Según el artículo 147 de la Constitución, el Estatuto de Autonomía es:','["Un tratado entre el Estado y la Comunidad Autónoma", "Un reglamento del Gobierno de la Nación para cada Comunidad", "La norma institucional básica de cada Comunidad Autónoma", "Una ley ordinaria aprobada por el Parlamento autonómico"]'::jsonb,2,'Art. 147.1 CE','El Estado lo reconoce y ampara como parte integrante de su ordenamiento jurídico.',null),
+('adm-cm:5-ba3204f517','adm-cm',5,'¿Cuál de los siguientes contenidos NO exige la Constitución que figure en los Estatutos de Autonomía?','["La delimitación de su territorio", "La denominación de la Comunidad", "La lengua cooficial de la Comunidad", "Las competencias asumidas"]'::jsonb,2,'Art. 147.2 CE','El art. 147.2 exige denominación, delimitación del territorio, denominación, organización y sede de las instituciones propias y competencias asumidas.',null),
+('adm-cm:5-8fbee0d64e','adm-cm',5,'La reforma de los Estatutos de Autonomía requiere, en todo caso:','["Un referéndum en todo el territorio nacional", "La aprobación por las Cortes Generales mediante ley orgánica", "El acuerdo del Senado por mayoría de tres quintos", "La aprobación por el Gobierno de la Nación mediante real decreto"]'::jsonb,1,'Art. 147.3 CE','El procedimiento lo fija cada Estatuto.',null),
+('adm-cm:5-0518b2a82a','adm-cm',5,'Según el artículo 148.2 de la Constitución, las Comunidades Autónomas podían ampliar sucesivamente sus competencias transcurridos:','["Diez años", "Dos años", "Tres años", "Cinco años"]'::jsonb,3,'Art. 148.2 CE','Mediante la reforma de sus Estatutos, dentro del marco del artículo 149.',null),
+('adm-cm:5-422431515a','adm-cm',5,'Las materias no atribuidas expresamente al Estado por la Constitución podrán corresponder a las Comunidades Autónomas:','["Por acuerdo de la Conferencia de Presidentes", "Solo mediante ley de transferencia", "En virtud de sus respectivos Estatutos", "Siempre, de forma automática"]'::jsonb,2,'Art. 149.3 CE','Las no asumidas por los Estatutos corresponden al Estado, cuyo derecho es en todo caso supletorio del de las Comunidades Autónomas.',null),
+('adm-cm:5-2a692ef88b','adm-cm',5,'En caso de conflicto, las normas del Estado prevalecen sobre las de las Comunidades Autónomas:','["En todo lo que no esté atribuido a la exclusiva competencia de estas", "Solo en materia de relaciones internacionales", "Solo si la norma estatal es posterior", "En todo caso, sin excepción alguna"]'::jsonb,0,'Art. 149.3 CE','Es la cláusula de prevalencia del derecho estatal.',null),
+('adm-cm:5-ff9c7c773d','adm-cm',5,'¿Qué leyes permiten a las Cortes atribuir a las Comunidades Autónomas la facultad de dictar normas legislativas en el marco de principios, bases y directrices fijados por una ley estatal?','["Las leyes de bases", "Las leyes marco", "Las leyes de armonización", "Las leyes orgánicas de transferencia"]'::jsonb,1,'Art. 150.1 CE','Las leyes de bases sirven para delegar en el Gobierno la elaboración de textos articulados.',null),
+('adm-cm:5-376420ac4f','adm-cm',5,'La transferencia o delegación a las Comunidades Autónomas de facultades de titularidad estatal se hace mediante:','["Ley ordinaria", "Real decreto legislativo", "Ley orgánica", "Ley marco"]'::jsonb,2,'Art. 150.2 CE','Debe prever la correspondiente transferencia de medios financieros y las formas de control que se reserve el Estado.',null),
+('adm-cm:5-98a8a56b8f','adm-cm',5,'¿Quién aprecia la necesidad de dictar una ley de armonización?','["El Senado, por mayoría de dos tercios, a propuesta de la Comisión General de las CCAA", "El Tribunal Constitucional, a instancia del Gobierno o de cincuenta diputados", "Las Cortes Generales, por mayoría absoluta de cada Cámara", "El Gobierno de la Nación, previo dictamen favorable del Consejo de Estado"]'::jsonb,2,'Art. 150.3 CE','Lo exige el interés general, aunque se trate de materias atribuidas a la competencia de las Comunidades Autónomas.',null),
+('adm-cm:5-76cec20a27','adm-cm',5,'En la vía del artículo 151 de la Constitución, la iniciativa autonómica debía ratificarse mediante referéndum por:','["La mayoría absoluta de los votos válidos emitidos en el conjunto de toda España", "El voto afirmativo de la mayoría absoluta de los electores de cada provincia", "La mayoría simple de los votos emitidos en el conjunto del territorio de la futura Comunidad", "Dos tercios de los votantes de cada provincia"]'::jsonb,1,'Art. 151.1 CE','Además, la iniciativa debía acordarse por las Diputaciones y por las tres cuartas partes de los municipios de cada provincia.',null),
+('adm-cm:5-e538c0d657','adm-cm',5,'Según el artículo 152 de la Constitución, el Presidente de la Comunidad Autónoma es:','["Elegido por el Senado entre los senadores de la Comunidad", "Elegido directamente por los ciudadanos de la Comunidad en las elecciones autonómicas y nombrado por el Rey", "Nombrado por el Presidente del Gobierno, a propuesta de la Asamblea", "Elegido por la Asamblea Legislativa de entre sus miembros y nombrado por el Rey"]'::jsonb,3,'Art. 152.1 CE','Dirige el Consejo de Gobierno y ostenta la suprema representación de la Comunidad y la ordinaria del Estado en ella.',null),
+('adm-cm:5-71fa8ffe17','adm-cm',5,'El control económico y presupuestario de los órganos de las Comunidades Autónomas corresponde, según el artículo 153 de la Constitución, a:','["La jurisdicción contencioso-administrativa", "El Tribunal de Cuentas", "El Ministerio de Hacienda", "El Tribunal Constitucional"]'::jsonb,1,'Art. 153 d) CE','El TC controla las disposiciones con fuerza de ley y la jurisdicción contencioso-administrativa, la administración autónoma y sus reglamentos.',null),
+('adm-cm:5-dd9cf963b1','adm-cm',5,'¿Quién controla las funciones delegadas a las Comunidades Autónomas conforme al artículo 150.2 de la Constitución?','["El Tribunal de Cuentas, previo informe de la Intervención General", "El Tribunal Constitucional, previo recurso del Senado", "Los Tribunales Superiores de Justicia", "El Gobierno, previo dictamen del Consejo de Estado"]'::jsonb,3,'Art. 153 b) CE','Es una de las cuatro vías de control de la actividad autonómica que enumera el artículo 153.',null),
+('adm-cm:5-440db796b1','adm-cm',5,'Para aplicar las medidas del artículo 155 de la Constitución, el Gobierno necesita:','["Requerir previamente al Presidente de la Comunidad Autónoma y la aprobación de la mayoría absoluta del Senado", "La aprobación del Consejo de Estado y del Congreso", "La autorización del Congreso de los Diputados por mayoría de tres quintos", "Un dictamen favorable del Tribunal Constitucional"]'::jsonb,0,'Art. 155.1 CE','Se aplica si una Comunidad no cumple las obligaciones de la Constitución o las leyes o actúa contra el interés general de España.',null),
+('adm-cm:5-92a43ec271','adm-cm',5,'¿Qué fondo prevé el artículo 158.2 de la Constitución para corregir desequilibrios económicos interterritoriales?','["El Fondo de Suficiencia Global", "El Fondo de Compensación", "El Fondo de Garantía de Servicios Públicos Fundamentales", "El Fondo de Cohesión Territorial"]'::jsonb,1,'Art. 158.2 CE','Sus recursos se distribuyen por las Cortes Generales entre las Comunidades Autónomas y provincias.',null),
+('adm-cm:5-ccacac6acf','adm-cm',5,'Según la Ley 7/1985, son elementos del municipio:','["El territorio, la población y la organización", "El término municipal, el padrón y el presupuesto", "El territorio, los vecinos y el Alcalde", "La población, el patrimonio y el Pleno"]'::jsonb,0,'Art. 11.2 LBRL','El municipio es la entidad local básica de la organización territorial del Estado.',null),
+('adm-cm:5-808399455a','adm-cm',5,'La Junta de Gobierno Local existe:','["En los municipios de más de 5.000 habitantes y en los de menos si lo disponen su reglamento orgánico o el Pleno", "Solo en los municipios de más de 20.000 habitantes", "En todos los municipios, sea cual sea su población, como órgano de asistencia permanente al Alcalde en sus funciones", "Solo en los municipios de gran población, regulados en el título X de la Ley 7/1985, reguladora de las Bases del Régimen Local"]'::jsonb,0,'Art. 20.1 b) LBRL','El Alcalde, los Tenientes de Alcalde y el Pleno existen en todos los Ayuntamientos.',null),
+('adm-cm:5-2ed8abf22a','adm-cm',5,'¿Qué servicio deben prestar los municipios de más de 50.000 habitantes, además de los exigidos a los más pequeños?','["Transporte colectivo urbano de viajeros", "Biblioteca pública", "Instalaciones deportivas de uso público", "Alumbrado público"]'::jsonb,0,'Art. 26.1 d) LBRL','La biblioteca es obligatoria desde 5.000 habitantes, las instalaciones deportivas desde 20.000 y el alumbrado en todos.',null),
+('adm-cm:6-2b9be6cc02','adm-cm',6,'Según el Estatuto, el territorio de la Comunidad de Madrid:','["Comprende el de los municipios dentro de los límites de la provincia de Madrid", "Es el que fije en cada legislatura una ley aprobada por la Asamblea", "Coincide con el área metropolitana de la capital y sus municipios limítrofes", "Lo delimita el Gobierno de la Nación mediante real decreto"]'::jsonb,0,'Art. 2 EA','El territorio coincide con los límites de la provincia de Madrid.',null),
+('adm-cm:6-e7a0b99a77','adm-cm',6,'¿Cómo es la bandera de la Comunidad de Madrid?','["Roja con cinco estrellas blancas", "Roja carmesí con siete estrellas blancas", "Blanca con siete estrellas rojas", "Carmesí con siete estrellas doradas"]'::jsonb,1,'Art. 4.1 EA','La bandera es roja carmesí, con siete estrellas en blanco de cinco puntas.','nov. 2024 · 1.er ejercicio'),
+('adm-cm:6-196e7c1ca9','adm-cm',6,'¿Qué día es la fiesta de la Comunidad de Madrid según el Estatuto?','["El 15 de mayo", "El 12 de octubre", "El 2 de mayo", "El 9 de noviembre"]'::jsonb,2,'Art. 4.4 EA','Se declara fiesta de la Comunidad el 2 de mayo.',null),
+('adm-cm:6-5e043f2cf7','adm-cm',6,'El himno de la Comunidad de Madrid se establece:','["Por decreto del Gobierno", "Por acuerdo de la Mesa de la Asamblea", "En el propio texto del Estatuto", "Por ley de la Asamblea"]'::jsonb,3,'Art. 4.3 EA','La Comunidad tiene himno propio, establecido por ley de la Asamblea.',null),
+('adm-cm:6-cc8332eb8d','adm-cm',6,'¿Cuál es la capital de la Comunidad de Madrid y sede de sus instituciones?','["Madrid y Alcalá de Henares de forma compartida", "La villa de Madrid, aunque sus organismos pueden ubicarse en otros municipios", "La que fije la Asamblea en cada legislatura", "La villa de Madrid, donde deben estar obligatoriamente todos los organismos"]'::jsonb,1,'Art. 5 EA','La capital es la villa de Madrid, pero los organismos pueden establecerse en otros municipios de la Comunidad.',null),
+('adm-cm:6-f52ad3c8c3','adm-cm',6,'El régimen especial de la villa de Madrid como capital del Estado se regula por:','["Una ley de la Asamblea de Madrid", "Un decreto del Gobierno de la Comunidad", "Una ley votada en Cortes Generales", "El reglamento orgánico del Ayuntamiento"]'::jsonb,2,'Art. 6 EA','La villa de Madrid tiene un régimen especial regulado por ley votada en Cortes.',null),
+('adm-cm:6-5d838a76e1','adm-cm',6,'Las circunscripciones territoriales propias de la Comunidad se pueden crear:','["Por acuerdo de los plenos de los municipios limítrofes afectados", "Por decreto del Consejo de Gobierno, agrupando municipios limítrofes", "Por ley de las Cortes Generales, agrupando municipios limítrofes", "Por ley de la Asamblea, agrupando municipios limítrofes"]'::jsonb,3,'Art. 3.3 EA','La Asamblea puede establecer por ley circunscripciones territoriales propias agrupando municipios limítrofes.',null),
+('adm-cm:6-70eec72b49','adm-cm',6,'¿Cuáles son las instituciones de autogobierno de la Comunidad de Madrid?','["La Asamblea, el Gobierno y el Presidente", "La Asamblea, el Gobierno, el Presidente y el Tribunal Superior de Justicia", "La Asamblea y el Gobierno", "La Asamblea, el Gobierno y el Defensor del Pueblo"]'::jsonb,0,'Art. 8 EA','Los poderes se ejercen a través de la Asamblea, el Gobierno y el Presidente.',null),
+('adm-cm:6-6cd1bc7082','adm-cm',6,'¿Gozan de los derechos políticos de los madrileños los españoles residentes en el extranjero?','["No, porque los derechos políticos exigen vecindad administrativa en Madrid", "Sí, si nacieron en la Comunidad de Madrid, aunque nunca residieran en ella", "Sí, si su última vecindad administrativa fue en Madrid y lo acreditan en el Consulado", "Sí, si residieron en Madrid al menos cinco años antes de marchar al extranjero"]'::jsonb,2,'Art. 7.3 EA','Gozan de ellos si su última vecindad administrativa fue Madrid y lo acreditan en el Consulado de España correspondiente.',null),
+('adm-cm:6-b58c0ab532','adm-cm',6,'¿Cada cuántos años se elige la Asamblea de Madrid?','["Cinco años", "Tres años", "Seis años", "Cuatro años"]'::jsonb,3,'Art. 10.1 EA','La Asamblea se elige por cuatro años.',null),
+('adm-cm:6-8a20953188','adm-cm',6,'¿Cuántos diputados componen la Asamblea de Madrid?','["Uno por cada 50.000 habitantes o fracción superior a 25.000", "Uno por cada 40.000 habitantes o fracción superior a 20.000", "Un número fijo de 129", "Uno por cada 100.000 habitantes"]'::jsonb,0,'Art. 10.2 EA','El número depende de la población: uno por cada 50.000 habitantes o fracción superior a 25.000.','oct. 2026 · 1.er ejercicio'),
+('adm-cm:6-fa9a0cf8ea','adm-cm',6,'¿Cuál es la circunscripción electoral para las elecciones a la Asamblea?','["Cada municipio", "La provincia", "Cada partido judicial", "Cada comarca"]'::jsonb,1,'Art. 10.5 EA','La circunscripción electoral es la provincia.',null),
+('adm-cm:6-aa57815a72','adm-cm',6,'¿Qué porcentaje mínimo de votos necesita una lista para entrar en el reparto de escaños?','["El 3 % de los votos válidos emitidos", "El 5 % del censo electoral", "El 5 % de los votos válidos emitidos", "El 3 % del censo electoral"]'::jsonb,2,'Art. 10.6 EA','Solo entran en el reparto las listas con al menos el 5 % de los sufragios válidamente emitidos.','nov. 2024 · 1.er ejercicio'),
+('adm-cm:6-a856f67158','adm-cm',6,'¿Cuándo se celebran las elecciones a la Asamblea de Madrid?','["El primer domingo de junio", "El último domingo de mayo", "En la fecha que fije libremente el Presidente", "El cuarto domingo de mayo"]'::jsonb,3,'Art. 10.7 EA','Las elecciones se celebran el cuarto domingo de mayo.',null),
+('adm-cm:6-5c8bfd4c7c','adm-cm',6,'Respecto al mandato de los diputados de la Asamblea:','["Están sujetos al mandato imperativo de su partido", "No están sujetos a mandato imperativo", "Están sujetos al mandato de su Grupo Parlamentario", "Solo hay mandato imperativo en las votaciones de investidura"]'::jsonb,1,'Art. 10.3 EA','Los diputados no están ligados por mandato imperativo.',null),
+('adm-cm:6-7b7ed3b404','adm-cm',6,'¿Quiénes son electores y elegibles en las elecciones a la Asamblea?','["Los madrileños mayores de 18 años en pleno uso de sus derechos políticos", "Los madrileños mayores de 16 años", "Cualquier residente en la Comunidad, sea cual sea su nacionalidad", "Los madrileños mayores de 18 años con dos años de residencia"]'::jsonb,0,'Art. 10.8 EA','Son electores y elegibles los madrileños mayores de 18 años en pleno uso de sus derechos políticos.',null)
 on conflict (id) do update set oposicion=excluded.oposicion,tema=excluded.tema,pregunta=excluded.pregunta,opciones=excluded.opciones,correcta=excluded.correcta,articulo=excluded.articulo,explicacion=excluded.explicacion,examen=excluded.examen;
