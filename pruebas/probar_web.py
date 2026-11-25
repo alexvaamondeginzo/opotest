@@ -211,6 +211,8 @@ async def main():
         comprobar(await pg.evaluate("$('cta').classList.contains('hidden')"), 'opinión: no se pregunta antes del 3.er test')
         await pg.evaluate("DB.done=3;opinionMostrar()")
         comprobar(not await pg.evaluate("$('cta').classList.contains('hidden')"), 'opinión: se pregunta tras el 3.er test')
+        col = await pg.evaluate("(()=>{document.documentElement.dataset.tema='oscuro';const c=getComputedStyle(document.querySelector('[data-opinion]')).color;delete document.documentElement.dataset.tema;return c})()")
+        comprobar(col == 'rgb(5, 47, 46)', f'opinión: botones legibles en modo oscuro ({col})')
         await pg.evaluate("document.querySelector('[data-opinion=\"0\"]').click()")
         await pg.wait_for_timeout(200)
         comprobar(not await pg.evaluate("$('op-form').classList.contains('hidden')"), 'opinión: con 👎 pide qué mejorar')

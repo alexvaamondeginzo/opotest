@@ -151,6 +151,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 25/11/2026 · Edu · Corregido: en modo oscuro los botones 👍 / 👎 de la opinión salían blanco sobre blanco. Prueba nueva en `probar_web.py`.
 - 25/11/2026 · Edu · Opinión de un toque (👍 / 👎 tras el 3.er test, y «¿Qué mejorarías?» con 👎) en vez de la caja de opinión por correo. Tabla `opiniones` en Supabase (`15-opiniones.sql`, aplicado) y bloque «Opiniones» en el panel de administración.
 - 25/11/2026 · Edu · Fuera el formulario de Google (`__FORM__`): la pregunta frecuente «He visto un error», el aviso de la versión de pruebas, la caja de opinión tras cada test y el error al reportar llevan ahora al email oponota.contacto@gmail.com (`CONTACTO` en `template.html`).
 - 25/11/2026 · Edu · Pie de la web ordenado y generado solo (oposiciones con nombre corto en columnas, máximo 6 + «Ver todas», lo legal en una línea con puntos) y página nueva `oposiciones.html`. Nota en la escala oficial (`escala` en los simulacros de Canarias y del C1).
