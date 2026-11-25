@@ -1,0 +1,362 @@
+[
+[
+17,
+"Según la Ley de Expropiación Forzosa, ¿qué comprende la expropiación forzosa?",
+"Cualquier forma de privación singular de la propiedad privada o de derechos o intereses patrimoniales legítimos acordada imperativamente",
+[
+"Solo la transmisión forzosa del dominio de bienes inmuebles",
+"Las limitaciones generales del derecho de propiedad impuestas por los planes urbanísticos y las ventas forzosas de la legislación de abastecimientos y divisas",
+"Las ventas forzosas reguladas por la legislación de abastecimientos y comercio exterior"
+],
+"Art. 1 LEF",
+"Comprende cualquier forma de privación singular de la propiedad o de derechos o intereses patrimoniales legítimos; las ventas forzosas de abastecimientos quedan fuera."
+],
+[
+17,
+"Según la Ley de Expropiación Forzosa, ¿qué Administraciones pueden acordar la expropiación?",
+"El Estado, la provincia o el municipio",
+[
+"Cualquier entidad de derecho público",
+"Solo el Estado",
+"El Estado y los concesionarios de servicios públicos"
+],
+"Art. 2 LEF",
+"La expropiación solo podrá ser acordada por el Estado, la provincia o el municipio; los concesionarios pueden ser beneficiarios."
+],
+[
+17,
+"¿Quién puede ser beneficiario de una expropiación por causa de interés social?",
+"Cualquier persona física o jurídica que reúna los requisitos de la ley especial",
+[
+"Solo las Administraciones públicas",
+"Solo los concesionarios de obras públicas",
+"Solo las entidades sin ánimo de lucro"
+],
+"Art. 2 LEF",
+"Por causa de interés social puede ser beneficiaria cualquier persona natural o jurídica en la que concurran los requisitos de la ley especial."
+],
+[
+17,
+"¿A quién considera propietario la Administración expropiante, salvo prueba en contrario?",
+"A quien conste como tal en registros públicos que produzcan presunción de titularidad",
+[
+"A quien ocupe materialmente el bien",
+"A quien pague el impuesto sobre bienes inmuebles",
+"A quien aparezca en el catastro inmobiliario, con preferencia sobre el Registro de la Propiedad"
+],
+"Art. 3 LEF",
+"Considera propietario a quien conste en registros públicos con presunción de titularidad; en su defecto, en registros fiscales; y finalmente a quien lo sea pública y notoriamente."
+],
+[
+17,
+"¿Con quién se entienden las diligencias cuando no comparecen los propietarios o la propiedad es litigiosa?",
+"Con el Ministerio Fiscal",
+[
+"Con el alcalde del municipio",
+"Con el registrador de la propiedad",
+"Con el abogado del Estado"
+],
+"Art. 5 LEF",
+"Se entienden con el Ministerio Fiscal si no comparecen los titulares, están incapacitados sin representante o la propiedad es litigiosa."
+],
+[
+17,
+"¿Qué es indispensable para proceder a la expropiación forzosa?",
+"La previa declaración de utilidad pública o interés social del fin",
+[
+"La previa consignación del justo precio",
+"El acuerdo previo con el propietario",
+"La previa inscripción del bien en el inventario de la Administración"
+],
+"Art. 9 LEF",
+"Es indispensable la previa declaración de utilidad pública o interés social del fin a que haya de afectarse el objeto expropiado."
+],
+[
+17,
+"¿En qué planes se entiende implícita la utilidad pública para expropiar inmuebles?",
+"En todos los planes de obras y servicios del Estado, provincia y municipio",
+[
+"Solo en los planes aprobados por ley",
+"En los planes de vivienda protegida exclusivamente",
+"En ninguno; la utilidad pública debe declararse siempre, caso por caso, por acuerdo del Consejo de Ministros"
+],
+"Art. 10 LEF",
+"La utilidad pública se entiende implícita, para inmuebles, en todos los planes de obras y servicios del Estado, provincia y municipio."
+],
+[
+17,
+"Declarada la utilidad pública, ¿sobre qué resuelve la Administración?",
+"Sobre la necesidad concreta de ocupar los bienes estrictamente indispensables",
+[
+"Sobre el justo precio de los bienes",
+"Sobre la reversión de los bienes no utilizados",
+"Sobre la urgencia de la ocupación"
+],
+"Art. 15 LEF",
+"La Administración resuelve sobre la necesidad concreta de ocupar los bienes o adquirir los derechos estrictamente indispensables."
+],
+[
+17,
+"¿Quién debe formular la relación concreta e individualizada de los bienes de necesaria expropiación?",
+"El beneficiario de la expropiación",
+[
+"El propietario afectado",
+"El Jurado de Expropiación",
+"El registrador de la propiedad"
+],
+"Art. 17 LEF",
+"El beneficiario está obligado a formular una relación concreta e individualizada de los bienes o derechos de necesaria expropiación."
+],
+[
+17,
+"Recibida la relación de bienes, ¿durante cuánto tiempo se abre información pública?",
+"Quince días",
+[
+"Diez días",
+"Veinte días",
+"Un mes"
+],
+"Art. 18 LEF",
+"Se abre información pública durante un plazo de quince días."
+],
+[
+17,
+"¿En qué plazo máximo se resuelve sobre la necesidad de ocupación tras la información pública?",
+"Veinte días",
+[
+"Quince días",
+"Diez días",
+"Un mes"
+],
+"Art. 20 LEF",
+"Se resuelve en el plazo máximo de veinte días, describiendo los bienes y designando a los interesados."
+],
+[
+17,
+"¿Qué acto inicia el expediente expropiatorio?",
+"El acuerdo de necesidad de ocupación",
+[
+"La declaración de utilidad pública",
+"La hoja de aprecio del propietario",
+"El acta previa a la ocupación"
+],
+"Art. 21 LEF",
+"El acuerdo de necesidad de ocupación inicia el expediente expropiatorio."
+],
+[
+17,
+"Si no hay acuerdo de adquisición amistosa, ¿en qué plazo se sigue con el procedimiento de justiprecio?",
+"Quince días",
+[
+"Diez días",
+"Veinte días",
+"Un mes"
+],
+"Art. 24 LEF",
+"Si en quince días no se llega al mutuo acuerdo, se sigue el procedimiento, aunque las partes pueden convenir después en cualquier momento."
+],
+[
+17,
+"¿Cómo se tramita la fijación del justo precio?",
+"Como pieza separada, con un expediente individual para cada propietario",
+[
+"En el mismo expediente de necesidad de ocupación",
+"Ante el juzgado de primera instancia",
+"Mediante un único expediente para todos los propietarios afectados por la misma obra"
+],
+"Art. 26 LEF",
+"La fijación del justo precio se tramita como pieza separada, con un expediente individual por propietario, salvo comunidad o unidad económica."
+],
+[
+17,
+"¿De qué plazo disponen los propietarios para presentar su hoja de aprecio?",
+"Veinte días desde el siguiente a la notificación",
+[
+"Diez días desde la publicación en el boletín",
+"Quince días hábiles desde la notificación",
+"Un mes desde el acuerdo de necesidad de ocupación"
+],
+"Art. 29 LEF",
+"La Administración requiere a los propietarios para que en veinte días presenten hoja de aprecio motivada."
+],
+[
+17,
+"¿De quién son los honorarios del perito que avala la hoja de aprecio del propietario?",
+"De los propietarios",
+[
+"De la Administración expropiante",
+"Del beneficiario de la expropiación",
+"Se reparten por mitades"
+],
+"Art. 29 LEF",
+"La valoración puede estar avalada por un perito, cuyos honorarios son siempre de cuenta de los propietarios."
+],
+[
+17,
+"Si el propietario recibe la hoja de aprecio de la Administración, ¿en qué plazo puede aceptarla o rechazarla?",
+"Diez días",
+[
+"Veinte días",
+"Quince días",
+"Cinco días"
+],
+"Art. 30 LEF",
+"El propietario puede aceptarla o rechazarla dentro de los diez días siguientes, con las alegaciones y pruebas que estime oportunas."
+],
+[
+17,
+"Si el propietario rechaza el precio ofrecido por la Administración, ¿quién fija el justiprecio?",
+"El Jurado provincial de expropiación",
+[
+"El juez de primera instancia",
+"El Consejo de Ministros",
+"El Tribunal Superior de Justicia"
+],
+"Art. 31 LEF",
+"Si el propietario rechaza el precio fundado de la Administración, el expediente pasa al Jurado provincial de expropiación."
+],
+[
+17,
+"¿Quién preside el Jurado provincial de expropiación?",
+"El magistrado que designe el presidente de la audiencia",
+[
+"El delegado del Gobierno en la provincia",
+"El abogado del Estado de la Delegación de Hacienda",
+"Un notario designado por el colegio notarial"
+],
+"Art. 32 LEF",
+"Lo preside el magistrado que designe el presidente de la audiencia correspondiente."
+],
+[
+17,
+"¿Qué recurso cabe contra la resolución del Jurado de expropiación?",
+"Solo el recurso contencioso-administrativo",
+[
+"Recurso de alzada ante el ministro",
+"Recurso de reposición y después alzada",
+"Recurso extraordinario de revisión, únicamente"
+],
+"Art. 35 LEF",
+"La resolución del Jurado ultima la vía gubernativa y contra ella procede tan solo el recurso contencioso-administrativo."
+],
+[
+17,
+"¿Con arreglo a qué valor se efectúan las tasaciones de los bienes expropiados?",
+"El que tengan al iniciarse el expediente de justiprecio, sin las plusvalías del proyecto",
+[
+"El que tengan en la fecha de la ocupación efectiva, incluidas las plusvalías derivadas del proyecto",
+"El valor catastral del último ejercicio",
+"El que tengan en la fecha del pago efectivo"
+],
+"Art. 36 LEF",
+"Se tasan según su valor al iniciarse el expediente de justiprecio, sin las plusvalías consecuencia del proyecto ni las previsibles."
+],
+[
+17,
+"Una vez determinado el justo precio, ¿en qué plazo máximo debe pagarse?",
+"Seis meses",
+[
+"Tres meses",
+"Un año",
+"Dos meses"
+],
+"Art. 48 LEF",
+"Se procede al pago en el plazo máximo de seis meses."
+],
+[
+17,
+"¿Dónde se consigna el justiprecio cuando el propietario rehúsa recibirlo o existe litigio?",
+"En la Caja General de Depósitos",
+[
+"En el juzgado de primera instancia",
+"En la cuenta del Jurado de Expropiación",
+"En una entidad bancaria elegida por el expropiado"
+],
+"Art. 50 LEF",
+"Se consigna en la Caja General de Depósitos, a disposición de la autoridad o tribunal competente."
+],
+[
+17,
+"¿Quién puede declarar la urgente ocupación de los bienes afectados por una expropiación?",
+"El Consejo de Ministros, excepcionalmente",
+[
+"El Jurado provincial de expropiación",
+"El delegado del Gobierno",
+"El alcalde del municipio afectado"
+],
+"Art. 52 LEF",
+"Excepcionalmente y mediante acuerdo del Consejo de Ministros podrá declararse urgente la ocupación."
+],
+[
+17,
+"En la expropiación urgente, ¿con qué antelación mínima se notifica el levantamiento del acta previa a la ocupación?",
+"Ocho días",
+[
+"Quince días",
+"Tres días",
+"Diez días"
+],
+"Art. 52 LEF",
+"La notificación del día y hora del acta previa se hace con una antelación mínima de ocho días y mediante cédula."
+],
+[
+17,
+"Si no se ejecuta la obra que motivó la expropiación, ¿qué derecho tiene el primitivo dueño?",
+"El derecho de reversión",
+[
+"El derecho de retracto",
+"El derecho de retasación",
+"El derecho de tanteo"
+],
+"Art. 54 LEF",
+"Si no se ejecuta la obra o no se establece el servicio, el primitivo dueño o sus causahabientes pueden recobrar lo expropiado (reversión)."
+],
+[
+17,
+"¿Cuándo no hay derecho de reversión por prolongarse la afectación?",
+"Cuando la afectación dure diez años desde la terminación de la obra o el establecimiento del servicio",
+[
+"Cuando la afectación dure cinco años desde la ocupación",
+"Cuando hayan pasado veinte años desde el pago del justiprecio, aunque no se haya ejecutado nunca la obra prevista",
+"Cuando la afectación dure dos años, sea cual sea el uso"
+],
+"Art. 54 LEF",
+"No hay reversión cuando la afectación se prolongue durante diez años desde la terminación de la obra o el establecimiento del servicio."
+],
+[
+17,
+"Notificada la desafectación por la Administración, ¿en qué plazo puede solicitarse la reversión?",
+"Tres meses",
+[
+"Un mes",
+"Seis meses",
+"Un año"
+],
+"Art. 54 LEF",
+"El plazo para solicitar la reversión es de tres meses desde la notificación del exceso, la desafectación o el propósito de no ejecutar la obra."
+],
+[
+17,
+"¿Cuándo procede la retasación de los bienes expropiados?",
+"Si transcurren cuatro años sin pagar ni consignar el justo precio",
+[
+"Si transcurren dos años sin ocupar el bien",
+"Si el justo precio no se fija en seis meses",
+"Siempre que el expropiado lo solicite antes del pago"
+],
+"Art. 58 LEF",
+"Si pasan cuatro años sin pagar o consignar el justo precio, hay que evaluar de nuevo los bienes; tras el pago o consignación no procede."
+],
+[
+17,
+"Si pasan seis meses desde la iniciación del expediente sin fijar el justo precio, ¿qué debe abonar la Administración culpable?",
+"El interés legal del justo precio hasta que se determine",
+[
+"Un recargo del 20 % sobre el justo precio",
+"Una indemnización fija por daños morales",
+"El doble del interés legal desde el inicio"
+],
+"Art. 56 LEF",
+"Debe abonar el interés legal del justo precio hasta su determinación, liquidado con efectos retroactivos."
+]
+]
