@@ -498,6 +498,29 @@ label.chk input{margin-top:3px;width:18px;height:18px;accent-color:var(--ink)}
 .kpis.dos{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:900px){.kpis.dos{grid-template-columns:1fr}}
 .hoy-extra{margin-top:18px}
+.aviso-semana{background:var(--surface);border-left:5px solid var(--teal);border-radius:var(--r);padding:16px 20px;margin-bottom:18px;display:flex;gap:12px 18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.aviso-semana p{margin:0}
+.pf-semana{display:flex;flex-direction:column;gap:16px}
+.sem-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:center}
+.sem-nav b{display:block;font:800 22px/1.1 var(--cond);text-transform:uppercase}
+.sem-nav button{min-width:44px;font-size:22px;line-height:1}
+.sem-nav button:disabled{opacity:.3}
+.sem-barras{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:end;height:110px}
+.sem-barras div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px;font-size:12px;color:var(--muted)}
+.sem-barras i{display:block;width:100%;max-width:34px;border-radius:6px 6px 2px 2px;background:var(--teal);min-height:3px}
+.sem-barras i.cero{background:var(--line)}
+.sem-barras i.meta{background:var(--ink)}
+.sem-barras small{font-size:11px;color:var(--ink);font-weight:600}
+.sem-datos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.sem-datos div{background:var(--bg);border-radius:12px;padding:12px}
+.sem-datos span{display:block;font-size:13px;color:var(--muted)}
+.sem-datos b{display:block;font:800 26px/1.1 var(--cond)}
+.sem-datos em{display:block;font-style:normal;font-size:12px;color:var(--muted)}
+.sem-datos em.sube{color:var(--teal);font-weight:600}
+.sem-frase{margin:0}
+.pf-fecha{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--muted)}
+.pf-fecha input{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;max-width:200px}
+@media (max-width:640px){.sem-datos{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .hoy-extra .kpi,.prog-kpis .kpi{min-height:0}
 .plan-hoy{margin:0;font-size:16px;line-height:1.5}
 .prog-kpis{margin-bottom:18px}
@@ -662,6 +685,7 @@ html[data-tema="oscuro"] #op-form textarea{background:#fff;color:#052f2e}
         </section>
 
         <div class="bloque" id="todaycard">
+          <div class="aviso-semana hidden" id="aviso-semana" role="status"><p id="aviso-semana-txt"></p><div><a class="primary small btn" href="#/perfil" id="aviso-semana-ver">Ver mi resumen</a> <button type="button" class="linkbtn" id="aviso-semana-x" aria-label="Cerrar el resumen">Cerrar</button></div></div>
           <h2 id="today-h">Hoy</h2>
           <div class="kpis">
             <div class="kpi">
@@ -924,6 +948,16 @@ html[data-tema="oscuro"] #op-form textarea{background:#fff;color:#052f2e}
           <div class="kpis" id="pf-kpis"></div>
         </div>
         <div class="bloque">
+          <h2>Mi semana</h2>
+          <section class="card pf-semana" id="pf-semana">
+            <div class="sem-nav"><button type="button" class="ghost small" id="sem-ant" aria-label="Semana anterior">‹</button><div><b id="sem-tit"></b><span class="meta" id="sem-fechas"></span></div><button type="button" class="ghost small" id="sem-sig" aria-label="Semana siguiente">›</button></div>
+            <div class="sem-barras" id="sem-barras" aria-hidden="true"></div>
+            <div class="sem-datos" id="sem-datos"></div>
+            <p class="sem-frase" id="sem-frase"></p>
+            <div class="goalsel" role="group" aria-label="Objetivo diario"><span>Objetivo diario:</span><button type="button" data-pf-goal="10">10</button><button type="button" data-pf-goal="20">20</button><button type="button" data-pf-goal="40">40</button><button type="button" data-pf-goal="80">80</button><span>preguntas</span></div>
+          </section>
+        </div>
+        <div class="bloque">
           <h2>Mis oposiciones</h2>
           <div class="pf-ops" id="pf-ops"></div>
         </div>
@@ -983,6 +1017,7 @@ html[data-tema="oscuro"] #op-form textarea{background:#fff;color:#052f2e}
     <div class="row" style="justify-content:flex-start">
       <button class="primary" id="again">Volver a mi panel</button>
       <button class="ghost" id="retry-wrong">Repetir solo los fallos</button>
+      <button class="ghost hidden" id="compartir">Compartir mi nota</button>
     </div>
     <div class="cta hidden" id="cta" aria-live="polite">
       <h3 id="op-h">¿Te está sirviendo OpoNota?</h3>
@@ -1188,16 +1223,16 @@ function normDB(d){
     o.t={...(d.t||{}),...o.t};o.wrong=[...new Set([...(o.wrong||[]),...(d.wrong||[])])];o.sims=[...(o.sims||[]),...(d.sims||[])];
     delete d.t;delete d.wrong;delete d.sims;
   }
-  d.done=d.done||0;d.days=d.days||{};d.goal=d.goal||20;
+  d.done=d.done||0;d.days=d.days||{};d.ac=d.ac||{};d.goal=d.goal||20;
   return d;
 }
-const dbVacia=()=>({ops:{},done:0,days:{},goal:20});
+const dbVacia=()=>({ops:{},done:0,days:{},ac:{},goal:20});
 let DB=normDB(load());
 function P(){const o=DB.ops[OP]=DB.ops[OP]||{t:{},wrong:[],sims:[],marks:[]};o.t=o.t||{};o.wrong=o.wrong||[];o.sims=o.sims||[];o.marks=o.marks||[];return o}
 function dayKey(d){d=d||new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
 function record(q,ok){
   const o=P(),t=o.t[q[0]]=o.t[q[0]]||{a:0,n:0};t.n++;if(ok)t.a++;
-  const dk=dayKey();DB.days[dk]=(DB.days[dk]||0)+1;
+  const dk=dayKey();DB.days[dk]=(DB.days[dk]||0)+1;DB.ac[dk]=(DB.ac[dk]||0)+(ok?1:0);
   const w=new Set(o.wrong); if(ok) w.delete(q.id); else w.add(q.id); o.wrong=[...w];
   if(typeof labRecord==="function")labRecord(q,ok);
 }
@@ -1313,9 +1348,13 @@ $("btn-debiles").addEventListener("click",async()=>{
 // Plan hasta el examen: preguntas al día para dar dos vueltas al banco
 function renderPlanExamen(days){
   const el=$("plan-examen"),n=CFG().n||0;
-  if(!days||days<=0||!n){el.innerHTML=days===null?"Cuando se publique la fecha, aquí verás cuántas preguntas al día necesitas para repasarlo todo.":"";return}
+  if(!days||days<=0||!n){el.innerHTML=days===null?`Cuando se publique la fecha, aquí verás cuántas preguntas al día necesitas para repasarlo todo. Si ya sabes cuándo es tu examen, <a href="#/perfil">ponlo en tu perfil</a>.`:"";return}
   const dia=Math.max(5,Math.ceil(2*n/days));
-  el.innerHTML=`Para dar dos vueltas a las ${n.toLocaleString("es-ES")} preguntas antes del examen necesitas unas <strong>${dia} al día</strong>.${DB.goal!==dia?` <button type="button" class="linkbtn" id="usar-plan">Usar ${dia} como objetivo</button>`:""}`;
+  // ritmo real: media de los últimos 7 días
+  let s7=0;for(let i=0;i<7;i++){const d=new Date();d.setDate(d.getDate()-i);s7+=DB.days[dayKey(d)]||0}
+  const media=Math.round(s7/7);
+  const ritmo=s7?` Esta semana llevas una media de <strong>${media} al día</strong>${media>=dia?": vas bien.":`: te faltan unas ${dia-media} más cada día.`}`:"";
+  el.innerHTML=`Para dar dos vueltas a las ${n.toLocaleString("es-ES")} preguntas antes del examen necesitas unas <strong>${dia} al día</strong>.${ritmo}${DB.goal!==dia?` <button type="button" class="linkbtn" id="usar-plan">Usar ${dia} como objetivo</button>`:""}`;
   const u=$("usar-plan");if(u)u.addEventListener("click",()=>{DB.goal=dia;save(DB);renderToday()});
 }
 function bar(label,a,n){
@@ -1340,11 +1379,14 @@ function streakInfo(){
   return s;
 }
 function renderToday(){
-  const c=CFG(),now=new Date(),ex=new Date(EXAM_DATE+"T09:00:00");
-  const days=EXAM_DATE?Math.ceil((ex-now)/86400000):null;
+  // fecha del examen: la oficial si está publicada; si no, la que el usuario ponga en su perfil; si no, la prevista
+  const mia=!EXAM_DATE_OFFICIAL&&(DB.ops[OP]||{}).fecha,fecha=mia||EXAM_DATE;
+  const c=CFG(),now=new Date(),ex=new Date(fecha+"T12:00:00");now.setHours(12,0,0,0);
+  const days=fecha?Math.round((ex-now)/86400000):null;
   $("cd-lbl").textContent=c.examenLbl||"Examen";
-  $("cd-days").textContent=days===null?"Sin fecha":days>0?(EXAM_DATE_OFFICIAL?"":"≈ ")+days+" días":"¡Ya es el examen!";
-  $("cd-note").textContent=days===null?"Aún no hay fecha publicada":EXAM_DATE_OFFICIAL?"hasta el examen":`${c.examenTxt||""} (fecha exacta aún por publicar)`;
+  $("cd-days").textContent=days===null?"Sin fecha":days>0?(EXAM_DATE_OFFICIAL||mia?"":"≈ ")+days+(days===1?" día":" días"):"¡Ya es el examen!";
+  $("cd-note").innerHTML=mia?`hasta tu examen (${esc(fechaCorta(mia+"T12:00:00"))}) · <a href="#/perfil">cambiar</a>`:days===null?`Aún no hay fecha publicada · <a href="#/perfil">pon la tuya</a>`:EXAM_DATE_OFFICIAL?"hasta el examen":`${esc(c.examenTxt||"")} (fecha exacta aún por publicar) · <a href="#/perfil">pon la tuya</a>`;
+  renderAvisoSemana();
   const s=streakInfo(),today=DB.days[dayKey()]||0;
   $("streak").textContent=s+(s===1?" día":" días");
   $("streak-note").textContent=today?"Hoy ya has estudiado. ¡Sigue así!":(s?"Responde una pregunta hoy para no perder la racha.":"Responde una pregunta para empezar tu racha.");
@@ -1353,9 +1395,9 @@ function renderToday(){
   $("goal-num").textContent=`${Math.min(today,DB.goal)} / ${DB.goal}${today>=DB.goal?" ✓":""}`;
   $("goal-ring").style.strokeDashoffset=(194.8*(1-Math.min(1,today/DB.goal))).toFixed(1);
   renderPlanExamen(days);
-  document.querySelectorAll(".goalsel button").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.goal===DB.goal)));
+  document.querySelectorAll(".goalsel button[data-goal]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.goal===DB.goal)));
 }
-document.querySelectorAll(".goalsel button").forEach(b=>b.addEventListener("click",()=>{DB.goal=+b.dataset.goal;save(DB);renderToday()}));
+document.querySelectorAll(".goalsel button[data-goal]").forEach(b=>b.addEventListener("click",()=>{DB.goal=+b.dataset.goal;save(DB);renderToday()}));
 function renderSims(){
   const S=P().sims;
   $("sims-wrap").classList.toggle("hidden",!S.length);$("sims-vacio").classList.toggle("hidden",!!S.length);
@@ -1479,6 +1521,8 @@ function finish(timeout){
     <div class="tile"><span>Fallos</span><b>${f}</b></div>
     <div class="tile"><span>En blanco</span><b>${b}</b></div>`;
   const pass=nota>=25;
+  ULT_SIM=isSim(st.modo)?{nota,a,f,b,pass,escala:cfgS.escala||0,sim:cfgS.nombre,op:CFG().corto||CFG().nombre}:null;
+  $("compartir").classList.toggle("hidden",!ULT_SIM);
   $("verdict").innerHTML=`<span class="pill ${pass?"ok":"bad"}">${pass?"Aprobado":"Suspenso"}</span> ${timeout?"Se acabó el tiempo. ":""}${penD===2?(cfgS.penEntera?"Cada dos fallos restan un acierto":"Cada fallo resta medio acierto"):(cfgS&&cfgS.penEntera?"Cada tres fallos restan un acierto":"Cada fallo resta un tercio de acierto")}, como en el examen real. Se aprueba con 25 sobre 50.`;
   const pk=Object.keys(per);
   $("by-tema-wrap").classList.toggle("hidden",pk.length<2);
@@ -1842,6 +1886,7 @@ function mergeOp(a,b){
     const x=(a.t||{})[k]||{a:0,n:0},y=(b.t||{})[k]||{a:0,n:0};out.t[k]=x.n>=y.n?x:y});
   out.wrong=[...new Set([...(a.wrong||[]),...(b.wrong||[])])];
   out.marks=[...new Set([...(a.marks||[]),...(b.marks||[])])];
+  if(a.fecha!==undefined||b.fecha!==undefined)out.fecha=a.fecha!==undefined?a.fecha:b.fecha;
   // repaso 1/3/7: por pregunta, gana la etapa más avanzada (y, a igual etapa, la fecha más tardía)
   const ra=a.rep||{},rb=b.rep||{};out.rep={...rb};Object.entries(ra).forEach(([id,x])=>{const y=out.rep[id];if(!y||x[0]>y[0]||(x[0]===y[0]&&x[1]>y[1]))out.rep[id]=x});
   const seen=new Set();out.sims=[...(a.sims||[]),...(b.sims||[])].filter(s=>!seen.has(s.ts)&&seen.add(s.ts)).sort((p,q)=>p.ts-q.ts).slice(-20);
@@ -1852,6 +1897,7 @@ function mergeDB(a,b){
   const out={ops:{},done:Math.max(a.done||0,b.done||0)};
   new Set([...Object.keys(a.ops),...Object.keys(b.ops)]).forEach(o=>{out.ops[o]=mergeOp(a.ops[o],b.ops[o])});
   out.days={...(b.days||{})};Object.entries(a.days||{}).forEach(([k,v])=>{out.days[k]=Math.max(v,out.days[k]||0)});
+  out.ac={...(b.ac||{})};Object.entries(a.ac||{}).forEach(([k,v])=>{out.ac[k]=Math.max(v,out.ac[k]||0)});
   out.goal=a.goal||b.goal||20;
   return out;
 }
@@ -2534,7 +2580,8 @@ async function renderPerfil(){
   const ops=Object.keys(OPOS).filter(opValida).sort((x,y)=>{const nx=Object.values(((DB.ops[x]||{}).t)||{}).reduce((s,v)=>s+v.n,0),ny=Object.values(((DB.ops[y]||{}).t)||{}).reduce((s,v)=>s+v.n,0);return ny-nx});
   const tarjeta=(op,acc)=>{const T=((DB.ops[op]||{}).t)||{},nn=Object.values(T).reduce((s,v)=>s+v.n,0),aa=Object.values(T).reduce((s,v)=>s+v.a,0);
     const est=acc===undefined?"Comprobando tu acceso…":acc&&acc.plan?`${acc.admin?"Administrador":acc.plan==="beta"?PLAN_BASE.beta:nombrePlanOp(op,acc.plan)}${acc.hasta?(acc.plan==="prueba"?` · te quedan ${quedan(acc.hasta)}`:` · hasta el ${fechaCorta(acc.hasta)}`):""}`:"Sin plan activo";
-    return `<div class="pf-op"><h3>${esc(OPOS[op].corto||OPOS[op].nombre)}</h3><span class="estado${acc&&acc.plan?"":" sin"}">${esc(est)}</span><span class="meta">${nn?`${plural(nn,"respuesta","respuestas")} · ${Math.round(aa/nn*100)} % de aciertos`:"Aún sin practicar"}</span><div class="pf-acc"><a class="primary small btn" href="#/o/${op}">${nn?"Seguir practicando":"Empezar"}</a>${acc&&!acc.plan&&!BETA?` <a class="ghost small btn" href="#/o/${op}" data-pf-planes="${op}">Ver planes</a>`:""}</div></div>`};
+    return `<div class="pf-op"><h3>${esc(OPOS[op].corto||OPOS[op].nombre)}</h3><span class="estado${acc&&acc.plan?"":" sin"}">${esc(est)}</span><span class="meta">${nn?`${plural(nn,"respuesta","respuestas")} · ${Math.round(aa/nn*100)} % de aciertos`:"Aún sin practicar"}</span>${pfFecha(op)}<div class="pf-acc"><a class="primary small btn" href="#/o/${op}">${nn?"Seguir practicando":"Empezar"}</a>${acc&&!acc.plan&&!BETA?` <a class="ghost small btn" href="#/o/${op}" data-pf-planes="${op}">Ver planes</a>`:""}</div></div>`};
+  renderSemana();
   $("pf-ops").innerHTML=ops.map(op=>tarjeta(op,undefined)).join("");
   $("pf-compras").innerHTML=`<p class="meta" style="margin:0">Cargando…</p>`;
   if(Date.now()-PF_T<1500)return;PF_T=Date.now();
@@ -2556,6 +2603,116 @@ $("pf-datos").addEventListener("click",async()=>{
   const a=document.createElement("a");a.href=url;a.download="oponota-mis-datos.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
 });
 document.addEventListener("click",e=>{const b=e.target.closest("[data-pf-planes]");if(!b)return;e.preventDefault();location.hash="#/o/"+b.dataset.pfPlanes;setTimeout(()=>{if(typeof showPlans==="function")showPlans()},300)});
+
+// ===== Fecha del examen propia, objetivo diario y resumen semanal (25/11/2026) =====
+function pfFecha(op){
+  const c=OPOS[op]||{};
+  if(c.examenOficial&&c.examen)return `<span class="meta">Examen: ${esc(fechaCorta(c.examen+"T12:00:00"))}</span>`;
+  const v=(DB.ops[op]||{}).fecha||"",hoy=dayKey();
+  return `<label class="pf-fecha">Mi fecha de examen${c.examen&&!v?` <span>(prevista: ${esc(c.examenTxt||fechaCorta(c.examen+"T12:00:00"))})</span>`:""}<input type="date" min="${hoy}" value="${esc(v)}" data-pf-fecha="${esc(op)}"></label>`;
+}
+document.addEventListener("change",e=>{
+  const i=e.target.closest("[data-pf-fecha]");if(!i)return;
+  const op=i.dataset.pfFecha,o=DB.ops[op]=DB.ops[op]||{t:{},wrong:[],sims:[],marks:[]};
+  o.fecha=i.value||"";save(DB);
+});
+document.querySelectorAll("[data-pf-goal]").forEach(b=>b.addEventListener("click",()=>{DB.goal=+b.dataset.pfGoal;save(DB);renderSemana()}));
+// semanas de lunes a domingo; w = 0 es la semana actual, 1 la anterior…
+var SEM_W=0;
+function lunes(w){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7)-7*(w||0));return d}
+function datosSemana(w){
+  const ini=lunes(w),dias=[],hoy=dayKey();let n=0,ac=0,nAc=0,estudiados=0,meta=0,mejor=null;
+  for(let i=0;i<7;i++){const d=new Date(ini);d.setDate(ini.getDate()+i);const k=dayKey(d),v=DB.days[k]||0;
+    dias.push({k,d,v,futuro:k>hoy});n+=v;if(v){estudiados++;if(v>=(DB.goal||20))meta++;if(!mejor||v>mejor.v)mejor={d,v}}
+    if(DB.ac&&DB.ac[k]!==undefined&&v){ac+=DB.ac[k];nAc+=v}}
+  const fin=new Date(ini);fin.setDate(ini.getDate()+7);
+  let sims=0,mejorSim=null;Object.entries(DB.ops||{}).forEach(([op,o])=>((o&&o.sims)||[]).forEach(x=>{if(x.ts>=ini.getTime()-12*36e5&&x.ts<fin.getTime()-12*36e5){sims++;if(mejorSim===null||x.nota>mejorSim)mejorSim=x.nota}}));
+  return{ini,dias,n,pct:nAc?Math.round(ac/nAc*100):null,estudiados,meta,mejor,sims,mejorSim};
+}
+function primeraSemana(){const ks=Object.keys(DB.days||{}).filter(k=>DB.days[k]).sort();if(!ks.length)return 0;const d=new Date(ks[0]+"T12:00:00");d.setDate(d.getDate()-((d.getDay()+6)%7));return Math.max(0,Math.round((lunes(0)-d)/(7*864e5)))}
+function renderSemana(){
+  if(!$("pf-semana"))return;
+  const maxW=Math.min(104,primeraSemana());if(SEM_W>maxW)SEM_W=maxW;
+  const S=datosSemana(SEM_W),A=datosSemana(SEM_W+1),fmt=d=>d.toLocaleDateString("es-ES",{day:"numeric",month:"long"});
+  const fin=new Date(S.ini);fin.setDate(S.ini.getDate()+6);
+  $("sem-tit").textContent=SEM_W===0?"Esta semana":SEM_W===1?"La semana pasada":"Hace "+SEM_W+" semanas";
+  $("sem-fechas").textContent=`Del ${fmt(S.ini)} al ${fmt(fin)}`;
+  $("sem-ant").disabled=SEM_W>=maxW;$("sem-sig").disabled=SEM_W===0;
+  const tope=Math.max(DB.goal||20,...S.dias.map(x=>x.v)),L=["L","M","X","J","V","S","D"];
+  $("sem-barras").innerHTML=S.dias.map((x,i)=>`<div><small>${x.v||""}</small><i class="${x.v?(x.v>=(DB.goal||20)?"meta":""):"cero"}" style="height:${x.v?Math.max(6,Math.round(x.v/tope*80)):3}px"></i>${L[i]}</div>`).join("");
+  const cmp=(a,b)=>{if(!b)return a?"":"";const p=Math.round((a-b)/b*100);return p>0?`<em class="sube">▲ ${p} % más que la anterior</em>`:p<0?`<em>▼ ${-p} % menos que la anterior</em>`:`<em>Igual que la anterior</em>`};
+  const transcurridos=SEM_W===0?S.dias.filter(x=>!x.futuro).length:7;
+  $("sem-datos").innerHTML=`
+    <div><span>Preguntas</span><b>${S.n.toLocaleString("es-ES")}</b>${cmp(S.n,A.n)}</div>
+    <div><span>Aciertos</span><b>${S.pct===null?"—":S.pct+" %"}</b>${S.pct!==null&&A.pct!==null?(S.pct>A.pct?`<em class="sube">▲ ${S.pct-A.pct} puntos</em>`:S.pct<A.pct?`<em>▼ ${A.pct-S.pct} puntos</em>`:`<em>Igual que la anterior</em>`):""}</div>
+    <div><span>Días de estudio</span><b>${S.estudiados} / ${transcurridos}</b><em>Objetivo cumplido ${plural(S.meta,"día","días")}</em></div>
+    <div><span>Simulacros</span><b>${S.sims}</b>${S.mejorSim!==null?`<em>Mejor nota: ${S.mejorSim.toLocaleString("es-ES")} / 50</em>`:""}</div>`;
+  let f;
+  if(!S.n)f=SEM_W===0?"Aún no has estudiado esta semana. Con un test de 20 preguntas ya empiezas.":"Esta semana no estudiaste.";
+  else{const dia=S.mejor.d.toLocaleDateString("es-ES",{weekday:"long"});
+    f=`Tu mejor día fue el ${dia}, con ${plural(S.mejor.v,"pregunta","preguntas")}.`;
+    if(A.n&&S.n>A.n&&SEM_W>0)f+=" Estudiaste más que la semana anterior: así se llega al examen.";
+    else if(SEM_W===0&&S.estudiados===transcurridos&&transcurridos>1)f+=" No has fallado ni un día. ¡Sigue así!";
+    else if(S.estudiados<transcurridos-2)f+=" Mejor poco cada día que mucho un solo día: intenta no saltarte más de uno seguido.";}
+  $("sem-frase").textContent=f;
+  document.querySelectorAll("[data-pf-goal]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.pfGoal===DB.goal)));
+}
+$("sem-ant").addEventListener("click",()=>{SEM_W++;renderSemana()});
+$("sem-sig").addEventListener("click",()=>{if(SEM_W>0)SEM_W--;renderSemana()});
+// aviso en Inicio: una vez por semana (la primera vez que entras desde el lunes), con el resumen de la semana pasada
+function renderAvisoSemana(){
+  const el=$("aviso-semana");if(!el)return;
+  let visto="";try{visto=localStorage.getItem("oponota-resumen")||""}catch(e){}
+  const sem=dayKey(lunes(0)),A=datosSemana(1),B=datosSemana(2);
+  if(!user||visto===sem||!A.n){el.classList.add("hidden");return}
+  const cambio=B.n?Math.round((A.n-B.n)/B.n*100):null;
+  $("aviso-semana-txt").innerHTML=`📊 <strong>Tu semana pasada:</strong> ${plural(A.n,"pregunta","preguntas")}${A.pct!==null?` con un ${A.pct} % de aciertos`:""}, ${plural(A.estudiados,"día","días")} de estudio${cambio!==null&&cambio!==0?` (${cambio>0?"un "+cambio+" % más":"un "+(-cambio)+" % menos"} que la anterior)`:""}.`;
+  el.classList.remove("hidden");
+}
+function avisoVisto(){try{localStorage.setItem("oponota-resumen",dayKey(lunes(0)))}catch(e){}$("aviso-semana").classList.add("hidden")}
+$("aviso-semana-x").addEventListener("click",avisoVisto);
+$("aviso-semana-ver").addEventListener("click",()=>{avisoVisto();SEM_W=1});
+// ===== Compartir la nota de un simulacro como imagen (1080x1920, para historias y WhatsApp) =====
+var ULT_SIM=null;
+async function imagenNota(r){
+  const W=1080,H=1920,c=document.createElement("canvas");c.width=W;c.height=H;const x=c.getContext("2d");
+  try{await Promise.all(['800 100px "Barlow Condensed"','700 60px "Barlow Condensed"','400 40px "Barlow"'].map(f=>document.fonts.load(f)))}catch(e){}
+  const C='"Barlow Condensed",Arial Narrow,sans-serif',B='"Barlow",Arial,sans-serif';
+  x.fillStyle="#052F2E";x.fillRect(0,0,W,H);
+  // anillo de fondo
+  x.lineCap="round";x.lineWidth=70;x.strokeStyle="rgba(153,246,228,.07)";x.beginPath();x.arc(W-60,330,420,0,Math.PI*2);x.stroke();
+  // marca
+  x.lineWidth=16;x.strokeStyle="#10776D";x.beginPath();x.arc(140,170,46,0,Math.PI*2);x.stroke();
+  x.strokeStyle="#99F6E4";x.beginPath();x.arc(140,170,46,-Math.PI/2,Math.PI*1.1);x.stroke();
+  x.fillStyle="#fff";x.font=`800 72px ${C}`;x.textBaseline="middle";x.fillText("OPONOTA",216,174);
+  x.textBaseline="alphabetic";
+  const ajusta=(t,max,size,peso,fam)=>{let s=size;do{x.font=`${peso} ${s}px ${fam}`;s-=2}while(x.measureText(t).width>max&&s>20)};
+  x.fillStyle="#99F6E4";x.font=`700 54px ${C}`;x.fillText("MI NOTA EN EL SIMULACRO",90,470);
+  x.fillStyle="#fff";ajusta(r.op.toUpperCase(),W-180,76,800,C);x.fillText(r.op.toUpperCase(),90,560);
+  x.fillStyle="rgba(255,255,255,.75)";ajusta(r.sim,W-180,46,400,B);x.fillText(r.sim,90,630);
+  // nota grande
+  const nt=r.nota.toLocaleString("es-ES");x.fillStyle="#fff";x.font=`800 380px ${C}`;x.fillText(nt,80,1060);
+  const anchoN=x.measureText(nt).width;x.fillStyle="#99F6E4";x.font=`700 110px ${C}`;x.fillText("/ 50",80+anchoN+30,1060);
+  let y=1210;
+  if(r.escala){x.fillStyle="rgba(255,255,255,.85)";x.font=`700 58px ${C}`;x.fillText(`NOTA OFICIAL: ${(Math.round(r.nota/50*r.escala*100)/100).toLocaleString("es-ES")} SOBRE ${r.escala}`,90,y);y+=90}
+  if(r.pass){x.fillStyle="#99F6E4";const t="APROBADO";x.font=`800 64px ${C}`;const w=x.measureText(t).width+70;x.beginPath();x.roundRect?x.roundRect(90,y-58,w,90,45):x.rect(90,y-58,w,90);x.fill();x.fillStyle="#052F2E";x.fillText(t,125,y+10);y+=130}
+  // aciertos, fallos, en blanco
+  y=Math.max(y+40,1340);[["ACIERTOS",r.a],["FALLOS",r.f],["EN BLANCO",r.b]].forEach(([l,v],i)=>{const cx=90+i*310;
+    x.fillStyle="rgba(255,255,255,.08)";x.beginPath();x.roundRect?x.roundRect(cx,y,280,200,28):x.rect(cx,y,280,200);x.fill();
+    x.fillStyle="#fff";x.font=`800 110px ${C}`;x.fillText(String(v),cx+30,y+125);x.fillStyle="rgba(255,255,255,.7)";x.font=`700 38px ${C}`;x.fillText(l,cx+30,y+175)});
+  x.fillStyle="#fff";x.font=`700 56px ${C}`;x.fillText("¿TE ATREVES A SUPERARLA?",90,1780);
+  x.fillStyle="#99F6E4";x.font=`400 44px ${B}`;x.fillText("Tests verificados con el BOE · oponota.pages.dev",90,1850);
+  return new Promise(res=>c.toBlob(res,"image/png"));
+}
+$("compartir").addEventListener("click",async()=>{
+  if(!ULT_SIM)return;const b=$("compartir"),t=b.textContent;b.disabled=true;b.textContent="Preparando la imagen…";
+  try{
+    const blob=await imagenNota(ULT_SIM),file=new File([blob],"mi-nota-oponota.png",{type:"image/png"});
+    const texto=`He sacado un ${ULT_SIM.nota.toLocaleString("es-ES")} / 50 en el simulacro de ${ULT_SIM.op} en OpoNota. ¿Te atreves? ${location.origin}/`;
+    if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],text:texto})}catch(e){}}
+    else{const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=file.name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000)}
+  }finally{b.disabled=false;b.textContent=t}
+});
 function labOffline(){
   if(labOffline.hecho||!("serviceWorker" in navigator)||location.protocol!=="https:")return;labOffline.hecho=true;
   navigator.serviceWorker.register("sw.js").catch(()=>{});
