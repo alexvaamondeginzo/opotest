@@ -16,17 +16,21 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(RAIZ)
 SALIDA = 'bancos/admin-navarra.json'
 
-TEMAS = {1: 'Derechos de la ciudadanía, información, quejas y sugerencias', 2: 'Protección de datos y comunicación',
-         3: 'Funcionamiento electrónico de las Administraciones', 4: 'Registros y archivo',
-         5: 'Documentos administrativos y copias', 6: 'La Constitución española', 7: 'La Unión Europea',
-         8: 'LORAFNA: naturaleza, título preliminar y competencias', 9: 'Parlamento, Cámara de Comptos y Defensor del Pueblo',
-         10: 'Gobierno de Navarra y su Presidente', 11: 'Fuentes del Derecho', 12: 'Administración de la Comunidad Foral (LF 11/2019)',
-         13: 'Actos administrativos, revisión y recursos', 14: 'Procedimiento administrativo común',
-         15: 'Estatuto del Personal (I): clases, ingreso, carrera y situaciones', 16: 'Estatuto del Personal (II): retribuciones, deberes y representación',
-         17: 'Estatuto del Personal (III): régimen disciplinario', 18: 'Igualdad entre mujeres y hombres',
-         19: 'Transparencia (LF 5/2018)', 20: 'Hacienda Pública de Navarra', 21: 'Presupuestos Generales de Navarra',
-         22: 'Contratos públicos (LF 2/2018)', 23: 'Subvenciones (LF 11/2005)', 24: 'Windows y explorador de archivos',
-         25: 'Word', 26: 'Excel', 27: 'Access', 28: 'Aptitudes (psicotécnicos)'}
+TEMAS = {1: 'Derechos de las personas ante la Administración Pública Foral, información, participación, quejas y sugerencias',
+         2: 'Protección de datos y seguridad de la información; comunicación oral, telefónica y escrita',
+         3: 'Funcionamiento electrónico de la Administración Pública Foral', 4: 'Registros, archivo y documentación',
+         5: 'Documentación administrativa, expediente y validez de las copias', 6: 'La Constitución Española de 1978',
+         7: 'La Unión Europea: instituciones y fuentes', 8: 'LORAFNA: naturaleza, título preliminar y competencias de Navarra',
+         9: 'Parlamento de Navarra, Cámara de Comptos y Defensor del Pueblo', 10: 'Gobierno de Navarra y su Presidente',
+         11: 'Fuentes del Derecho y potestad normativa', 12: 'Ley Foral 11/2019 de la Administración de la Comunidad Foral',
+         13: 'Actos administrativos, revisión de oficio y recursos', 14: 'Procedimiento administrativo común',
+         15: 'Estatuto del Personal: ámbito, exclusiones y tipos de personal',
+         16: 'Personal I: ingreso, selección, niveles, grados, carrera y situaciones',
+         17: 'Personal II: provisión, derechos y deberes, retribuciones y régimen disciplinario',
+         18: 'Igualdad: LO 3/2007 y Ley Foral 17/2019', 19: 'Ley Foral 5/2018 de Transparencia',
+         20: 'Hacienda Pública de Navarra: régimen, control y responsabilidades', 21: 'Presupuestos Generales de Navarra',
+         22: 'Ley Foral 2/2018 de Contratos Públicos', 23: 'Ley Foral 11/2005 de Subvenciones',
+         24: 'Windows y explorador de archivos', 25: 'Word', 26: 'Excel', 27: 'Access', 28: 'Aptitudes (psicotécnicos)'}
 
 
 def art(ref):
@@ -51,9 +55,9 @@ def tema_navarra(origen, t, ref):
             return 1
         if 9 <= a <= 12 or 41 <= a <= 43:
             return 3
-        if a in (16, 70):
+        if a == 16:
             return 4
-        if a in (26, 27, 28):
+        if a in (26, 27, 28, 70):
             return 5
         if 34 <= a <= 52 or 106 <= a <= 126:
             return 13
