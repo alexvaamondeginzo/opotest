@@ -97,7 +97,7 @@ async def main():
             print(f'\n== Usuario normal ({disp}) ==')
             pg, err = await abrir(ancho, alto, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
             await foto(pg, f'{disp}-portada')
-            for op in ('aux-cm', 'aux-age', 'aux-ayto-mad'):
+            for op in ('aux-cm', 'aux-age', 'aux-ayto-mad', 'aux-canarias'):
                 await pg.evaluate(f"location.hash='#/o/{op}'")
                 await pg.wait_for_timeout(700)
                 comprobar(await pg.evaluate('OP') == op, f'{op}: abre el inicio de la oposición')
@@ -156,7 +156,7 @@ async def main():
                 await pg.click('#quit')
                 await pg.wait_for_timeout(300)
                 # simulacro: arranca con su número de preguntas y temporizador
-                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1'), ('aux-ayto-mad', 'ayto-teoria')):
+                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1'), ('aux-ayto-mad', 'ayto-teoria'), ('aux-canarias', 'can-p2')):
                     await pg.evaluate(f"location.hash='#/o/{op}/simulacros'")
                     await pg.wait_for_timeout(700)
                     await pg.click(f'[data-sim={sim}]')
@@ -167,6 +167,9 @@ async def main():
                     await pg.click('#quit')
                     await pg.wait_for_timeout(300)
                     comprobar(await pg.is_visible('#result'), f'{op}: el simulacro termina y da la nota')
+                    if sim == 'can-p2':
+                        comprobar('Cada dos fallos restan un acierto' in await pg.inner_text('#verdict'),
+                                  'aux-canarias: la 2.ª parte penaliza un acierto por cada dos fallos')
                     await pg.click('#again')
                     await pg.wait_for_timeout(300)
             comprobar(not err, f'sin errores de JavaScript en toda la sesión ({err[:1]})')
