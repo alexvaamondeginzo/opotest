@@ -108,6 +108,12 @@ async def main():
                     await pg.evaluate(f"location.hash='#/o/{op}/{sub}'")
                     await pg.wait_for_timeout(300)
                     await foto(pg, f'{disp}-{op}-{sub}', sub != 'temario')
+                    if sub == 'progreso' and op == 'aux-cm':
+                        await pg.evaluate("DB.ops['aux-cm'].t={'4':{a:0,n:2},'6':{a:3,n:4},'7':{a:1,n:2},'10':{a:5,n:6}};save(DB);renderStats()")
+                        await pg.wait_for_timeout(300)
+                        ancho = await pg.evaluate("Math.min(...[...document.querySelectorAll('#stats .stat > span:first-child')].map(e=>e.getBoundingClientRect().width))")
+                        comprobar(ancho > 150, f'progreso: el nombre del tema tiene sitio ({round(ancho)} px)')
+                        await foto(pg, f'{disp}-{op}-progreso-datos')
                     if sub == 'progreso': comprobar(await pg.is_visible('#lab-nota') and await pg.is_visible('#lab-pct'), f'{op}: nota estimada y comparativa en Progreso')
                     if sub == 'practicar': comprobar(await pg.is_visible('#lab-bus-card'), f'{op}: practicar por ley en Practicar')
                 comprobar(not err, f'{op}: sin errores de JavaScript al navegar ({err[:1]})')

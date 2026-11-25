@@ -264,6 +264,14 @@ legend{font:700 22px/1 var(--cond);text-transform:uppercase;margin-bottom:14px;d
 .stat .track i,.debil .track i{display:block;height:100%;border-radius:999px}
 .stat .pct{text-align:right;font:800 22px/1 var(--cond);font-variant-numeric:tabular-nums}
 #by-tema .stat{padding:10px 0}
+/* en el móvil la barra va debajo del nombre del tema (si no, el nombre se queda sin sitio) */
+@media (max-width:640px){
+  .tabla-temas .cab,.stat{grid-template-columns:minmax(0,1fr) auto;gap:8px 12px}
+  .stat .pct{white-space:nowrap}
+  .tabla-temas .cab span:nth-child(2){display:none}
+  .stat .track{grid-column:1/-1;grid-row:2}
+  .stat .pct{grid-column:2;grid-row:1}
+}
 .debiles{display:flex;flex-direction:column;gap:14px}
 .debil{display:grid;grid-template-columns:minmax(0,1fr) 64px;gap:6px 12px;align-items:center}
 .debil .track{grid-column:1/-1}
