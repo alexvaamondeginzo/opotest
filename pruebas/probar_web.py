@@ -97,7 +97,7 @@ async def main():
             print(f'\n== Usuario normal ({disp}) ==')
             pg, err = await abrir(ancho, alto, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
             await foto(pg, f'{disp}-portada')
-            for op in ('aux-cm', 'aux-age', 'aux-ayto-mad', 'aux-canarias'):
+            for op in ('aux-cm', 'aux-age', 'aux-ayto-mad', 'aux-canarias', 'adm-cm'):
                 await pg.evaluate(f"location.hash='#/o/{op}'")
                 await pg.wait_for_timeout(700)
                 comprobar(await pg.evaluate('OP') == op, f'{op}: abre el inicio de la oposición')
@@ -156,7 +156,7 @@ async def main():
                 await pg.click('#quit')
                 await pg.wait_for_timeout(300)
                 # simulacro: arranca con su número de preguntas y temporizador
-                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1'), ('aux-ayto-mad', 'ayto-teoria'), ('aux-canarias', 'can-p2')):
+                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1'), ('aux-ayto-mad', 'ayto-teoria'), ('aux-canarias', 'can-p2'), ('adm-cm', 'adm-ej1')):
                     await pg.evaluate(f"location.hash='#/o/{op}/simulacros'")
                     await pg.wait_for_timeout(700)
                     await pg.click(f'[data-sim={sim}]')
