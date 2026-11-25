@@ -143,6 +143,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (sobre todo si toca `template.html` o la base de datos) y bórrate al terminar.
 
+- 25/11/2026 · Edu · Abriendo a todos las funciones «En pruebas» y repartiéndolas por Inicio, Progreso, Practicar y el menú de la cuenta (`template.html`).
 
 ## Registro de cambios
 
