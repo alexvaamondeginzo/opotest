@@ -152,6 +152,7 @@ Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (s
 
 Una línea por cambio importante, la más reciente arriba: fecha · quién · qué.
 
+- 25/11/2026 · Edu · Corregido: en el móvil, las tarjetas de oposición de la portada se cortaban con fechas largas («Por fijar (convocatoria de 2026)»); ahora los datos van en 2 columnas y la fecha ocupa toda la fila. Prueba nueva en `probar_web.py`.
 - 25/11/2026 · Edu · Mejorar de plan cobra solo la diferencia con lo ya pagado en esa oposición (compras en vigor; mínimo 0,50 €): `crear-pago` desplegada (versión 13) y la tarjeta del plan muestra «3,00 € ~~14,99 €~~ · pagas solo la diferencia» y «Mejorar a …». Si ya tiene ese plan o uno superior, `crear-pago` no deja pagar.
 - 25/11/2026 · Edu · Inicio: con un plan pagado ya no salen los planes (solo con «Mejorar plan», si hay uno superior); en la prueba gratis y sin plan siguen saliendo, y los administradores los ven siempre. Función `planesOcultos`.
 - 25/11/2026 · Edu · Simulacros: la evolución de notas tiene una línea de color por ejercicio (`ex` del simulacro) en la misma gráfica y, debajo, la media, la última y la mejor de cada uno.

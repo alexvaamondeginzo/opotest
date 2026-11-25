@@ -94,6 +94,11 @@ async def main():
 
         usuario = {'id': 'u-a@gmail.com', 'email': 'a@gmail.com'}
         pie = open(os.path.join(RAIZ, 'web', 'index.html')).read()
+        pg, err = await abrir(390, 844, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
+        corta = await pg.evaluate("[...document.querySelectorAll('.opcard')].filter(c=>c.offsetParent&&c.scrollWidth>c.clientWidth+1).length")
+        comprobar(corta == 0, f'portada (móvil): ninguna tarjeta de oposición se sale ({corta})')
+        await foto(pg, 'movil-portada')
+        await pg.close()
         comprobar('class="pie-ops"' in pie and 'test-auxiliar-administrativo-gobierno-de-canarias.html' in pie, 'el pie lista las oposiciones (generado por build.py)')
         comprobar(os.path.exists(os.path.join(RAIZ, 'web', 'oposiciones.html')), 'existe la página con todas las oposiciones')
         for ancho, alto, disp in [(1366, 900, 'escritorio'), (390, 844, 'movil')]:
