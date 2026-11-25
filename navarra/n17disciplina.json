@@ -1,0 +1,242 @@
+[
+[
+17,
+"¿Cuándo prescriben las faltas leves de los funcionarios de Navarra?",
+"Al mes",
+[
+"A los seis meses",
+"Al año",
+"A los tres meses"
+],
+"Art. 61 DFLeg 251/1993 Navarra",
+"Las faltas leves prescriben al mes; las graves, al año; y las muy graves, a los tres años."
+],
+[
+17,
+"¿Cuándo prescriben las faltas graves de los funcionarios de Navarra?",
+"Al año",
+[
+"A los dos años",
+"A los seis meses",
+"A los tres años"
+],
+"Art. 61 DFLeg 251/1993 Navarra",
+"Las faltas graves prescriben al año."
+],
+[
+17,
+"¿Cuándo prescriben las faltas muy graves de los funcionarios de Navarra?",
+"A los tres años",
+[
+"A los dos años",
+"A los seis años",
+"A los cuatro años"
+],
+"Art. 61 DFLeg 251/1993 Navarra",
+"Las faltas muy graves prescriben a los tres años."
+],
+[
+17,
+"¿Qué tipo de falta son trece faltas de puntualidad injustificadas en el mismo mes en Navarra?",
+"Grave",
+[
+"Leve",
+"Muy grave",
+"No constituye falta"
+],
+"Art. 63 DFLeg 251/1993 Navarra",
+"Más de doce faltas de puntualidad injustificadas en el mismo mes son falta grave; hasta doce, leve."
+],
+[
+17,
+"¿Qué tipo de falta es una sola falta de asistencia injustificada en un mes en Navarra?",
+"Leve",
+[
+"Grave",
+"Muy grave",
+"No constituye falta, solo descuento"
+],
+"Art. 62 DFLeg 251/1993 Navarra",
+"La falta de asistencia injustificada por una sola vez en un mes es falta leve."
+],
+[
+17,
+"¿Qué tipo de falta son seis faltas de asistencia injustificadas en un mes en Navarra?",
+"Muy grave",
+[
+"Grave",
+"Leve",
+"Grave si no hay perjuicio"
+],
+"Art. 64 DFLeg 251/1993 Navarra",
+"Más de cinco faltas de asistencia injustificadas en un mes son falta muy grave."
+],
+[
+17,
+"¿Cómo califica el Estatuto navarro el incumplimiento del deber de secreto profesional?",
+"Falta grave",
+[
+"Falta leve",
+"Falta muy grave",
+"Infracción penal exclusivamente"
+],
+"Art. 63 DFLeg 251/1993 Navarra",
+"El incumplimiento del deber de secreto profesional es falta grave."
+],
+[
+17,
+"¿Cómo califica el Estatuto navarro la intervención en un procedimiento cuando concurre causa de abstención?",
+"Falta grave",
+[
+"Falta leve",
+"Falta muy grave",
+"No es falta, solo causa de nulidad"
+],
+"Art. 63 DFLeg 251/1993 Navarra",
+"La intervención en un procedimiento concurriendo causa legal de abstención es falta grave."
+],
+[
+17,
+"¿Qué se entiende por abandono del servicio a efectos disciplinarios en Navarra?",
+"La ausencia continuada e injustificada durante más de un mes",
+[
+"La ausencia injustificada durante más de quince días",
+"La ausencia injustificada durante más de cinco días en un mes",
+"La ausencia continuada durante más de tres meses"
+],
+"Art. 64 DFLeg 251/1993 Navarra",
+"Es falta muy grave el abandono del servicio: ausencia continuada e injustificada durante más de un mes."
+],
+[
+17,
+"¿Cuál de estas conductas es falta muy grave según el Estatuto navarro?",
+"El acoso sexual",
+[
+"El descuido en la conservación del material",
+"La incorrección en el trato con los compañeros",
+"Originar altercados en el trabajo"
+],
+"Art. 64 DFLeg 251/1993 Navarra",
+"El acoso sexual es falta muy grave; los altercados son graves y el descuido o la incorrección, leves."
+],
+[
+17,
+"Según el Estatuto navarro, ¿cuándo existe reiteración?",
+"Cuando se ha sido sancionado por una falta más grave o por dos de igual o menor gravedad",
+[
+"Cuando se ha sido sancionado antes por otra u otras faltas de la misma índole",
+"Cuando se cometen dos faltas en el mismo mes",
+"Cuando la sanción anterior no se ha cumplido"
+],
+"Art. 65 DFLeg 251/1993 Navarra",
+"Hay reiteración si se fue sancionado por otra falta de mayor gravedad o por dos de gravedad igual o inferior; reincidencia, por faltas de la misma índole."
+],
+[
+17,
+"Además de los autores, ¿quién incurre en responsabilidad disciplinaria según el Estatuto navarro?",
+"Los superiores que toleren las faltas y quienes las encubran o induzcan",
+[
+"Solo los autores materiales",
+"Los compañeros que estén presentes",
+"Los representantes sindicales del centro"
+],
+"Art. 66 DFLeg 251/1993 Navarra",
+"Incurren también los superiores que las toleren, los que las encubran y los que induzcan a su comisión."
+],
+[
+17,
+"¿Qué sanción puede imponerse por falta leve según el Estatuto navarro?",
+"Suspensión de empleo y sueldo de uno a cuatro días",
+[
+"Suspensión de empleo y sueldo de cinco a treinta días",
+"Traslado forzoso sin cambio de residencia",
+"Suspensión de funciones hasta un año"
+],
+"Art. 67 DFLeg 251/1993 Navarra",
+"Las faltas leves se sancionan con apercibimiento o suspensión de empleo y sueldo de uno a cuatro días."
+],
+[
+17,
+"¿Qué sanción puede imponerse por falta grave según el Estatuto navarro?",
+"Traslado forzoso con o sin cambio de residencia",
+[
+"Separación del servicio",
+"Apercibimiento",
+"Suspensión de funciones de uno a cinco años"
+],
+"Art. 67 DFLeg 251/1993 Navarra",
+"Las graves: suspensión de empleo y sueldo de cinco a treinta días, traslado forzoso o suspensión de funciones hasta un año."
+],
+[
+17,
+"¿Qué sanciones corresponden a las faltas muy graves en el Estatuto navarro?",
+"Suspensión de funciones de uno a cinco años o separación del servicio",
+[
+"Suspensión de funciones hasta un año, traslado forzoso o suspensión de empleo y sueldo",
+"Suspensión de empleo y sueldo hasta seis meses",
+"Separación del servicio exclusivamente"
+],
+"Art. 67 DFLeg 251/1993 Navarra",
+"Las muy graves se sancionan con suspensión de funciones de uno a cinco años o separación del servicio."
+],
+[
+17,
+"¿En qué plazo pueden cancelarse las anotaciones de sanciones por faltas graves en Navarra?",
+"Dos años desde el cumplimiento de la sanción",
+[
+"Seis meses desde el cumplimiento de la sanción",
+"Seis años desde el cumplimiento de la sanción",
+"Un año desde la imposición de la sanción"
+],
+"Art. 69 DFLeg 251/1993 Navarra",
+"Seis meses para las leves, dos años para las graves y seis años para las muy graves, desde el cumplimiento."
+],
+[
+17,
+"¿Se cancela la anotación de la sanción de separación definitiva del servicio en Navarra?",
+"No, nunca",
+[
+"Sí, a los seis años",
+"Sí, a los diez años",
+"Sí, a instancia del interesado en cualquier momento"
+],
+"Art. 69 DFLeg 251/1993 Navarra",
+"La anotación de la sanción de separación definitiva del servicio no es objeto de cancelación."
+],
+[
+17,
+"¿Quién impone las sanciones por faltas leves en el Estatuto navarro?",
+"El superior jerárquico, previo expediente sumario con audiencia",
+[
+"El Consejero competente, previo expediente disciplinario con audiencia del interesado",
+"El Gobierno de Navarra",
+"La Comisión de Personal"
+],
+"Art. 70 DFLeg 251/1993 Navarra",
+"Las impone el superior jerárquico, previa incoación de un expediente sumario que garantice la audiencia del interesado."
+],
+[
+17,
+"¿Cuándo prescriben las sanciones impuestas por faltas graves en Navarra?",
+"A los dos años",
+[
+"Al año",
+"A los tres años",
+"A los seis meses"
+],
+"Art. 70 DFLeg 251/1993 Navarra",
+"Las sanciones por faltas leves prescriben al año; por graves, a los dos años; por muy graves, a los tres años."
+],
+[
+17,
+"¿Cuál es el plazo máximo para resolver y notificar un procedimiento disciplinario por falta grave en Navarra?",
+"Doce meses desde la incoación",
+[
+"Seis meses desde la incoación",
+"Tres meses desde la incoación",
+"Dieciocho meses desde los hechos"
+],
+"Art. 71 DFLeg 251/1993 Navarra",
+"Es de doce meses desde la resolución de incoación para faltas graves y muy graves, y de seis meses para las leves."
+]
+]
