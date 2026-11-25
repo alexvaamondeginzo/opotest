@@ -143,6 +143,7 @@ Estrategia: priorizar oposiciones con muchos aspirantes que OpositaTest no cubre
 
 Quién está trabajando ahora en qué. Apúntate antes de empezar algo grande (sobre todo si toca `template.html` o la base de datos) y bórrate al terminar.
 
+- 25/11/2026 · Edu · Página de perfil (`#/perfil`) y repaso 1/3/7 guardado en la cuenta (`template.html`, quizá tabla o función nueva en Supabase).
 
 ## Registro de cambios
 
