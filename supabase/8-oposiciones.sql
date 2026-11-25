@@ -48,12 +48,13 @@ grant execute on function public.mi_acceso() to authenticated;
 --   aux-age: legislacion = teoría, temas 1-20 · completo = + informática (hasta el 28) · premium = + psicotécnicos (todo)
 --   aux-ayto-mad: legislacion = parte teórica, temas 1-20 · completo = + ofimática (todo)
 --   aux-canarias: legislacion = parte general, temas 1-20 · completo = + parte práctica (todo)
+--   adm-cm: legislacion = temas 1-39 · completo = + informática y ofimática (todo)
 create or replace function public.tema_maximo_op(op text)
 returns integer language sql stable security definer set search_path = '' as $$
   select case (public.mi_acceso_op(op)->>'plan')
     when 'prueba' then 999 when 'beta' then 999 when 'premium' then 999
     when 'completo' then case op when 'aux-age' then 28 else 999 end
-    when 'legislacion' then case op when 'aux-cm' then 15 when 'aux-age' then 20 when 'aux-ayto-mad' then 20 when 'aux-canarias' then 20 else 0 end
+    when 'legislacion' then case op when 'aux-cm' then 15 when 'aux-age' then 20 when 'aux-ayto-mad' then 20 when 'aux-canarias' then 20 when 'adm-cm' then 39 else 0 end
     else 0 end;
 $$;
 revoke execute on function public.tema_maximo_op(text) from public, anon;
