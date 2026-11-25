@@ -1738,7 +1738,7 @@ function mostrarVista(v){
     if(SUB==="simulacros")renderSimulacros();
     if(SUB==="admin"&&!EN_TEST)loadAdmin();
   }
-  if(typeof applyBeta==="function"&&BETA!==null&&!EN_TEST){$("planes").classList.toggle("hidden",!enOp||(BETA!==false&&!ACC.admin))}
+  if(typeof applyBeta==="function"&&BETA!==null&&!EN_TEST){$("planes").classList.toggle("hidden",!enOp||planesOcultos())}
 }
 function enTest(si){EN_TEST=si;mostrarVista(VISTA)}
 // Navegación: el hash manda (#/, #/o/<oposición>, #/o/<oposición>/<sección>), así funcionan Atrás y Adelante
@@ -2061,7 +2061,7 @@ function renderAccess(){
   const b=$("acc-cta");if(b)b.addEventListener("click",()=>{if(!user)return openAuth("signup");showPlans()});
   const ba=$("acc-admin");if(ba)ba.addEventListener("click",openAdmin);
   $("btn-admin").classList.toggle("hidden",!ACC.admin);$("admin").classList.toggle("hidden",!ACC.admin);if(typeof labRender==="function")labRender();
-  if(BETA!==null)$("planes").classList.toggle("hidden",(BETA!==false&&!ACC.admin)||VISTA!=="op"||EN_TEST);
+  if(BETA!==null)$("planes").classList.toggle("hidden",planesOcultos()||VISTA!=="op"||EN_TEST);
   if(ACC.admin&&VISTA==="op"&&SUB==="admin"&&!EN_TEST&&Date.now()-ADMIN_T>5000)loadAdmin();
   $("acc-plan").textContent=user?(ACC.plan?`${PLAN_NOMBRE[ACC.plan]}${ACC.plan==="beta"?"":" · "+CFG().corto}${ACC.hasta?` · hasta el ${fechaCorta(ACC.hasta)}`:""}`:`Sin plan activo en ${CFG().corto}.`):"";
   $("who-plan").textContent=ACC.admin?"Administrador":($("acc-plan").textContent||"");
@@ -2086,15 +2086,24 @@ function renderPlans(){
 function applyBeta(){
   const beta=BETA!==false;   // mientras no se sabe, se ocultan los precios
   // En modo pruebas los planes solo los ven los administradores, para probar el pago
-  $("planes").classList.toggle("hidden",(beta&&!ACC.admin)||VISTA!=="op"||EN_TEST);
+  $("planes").classList.toggle("hidden",planesOcultos()||VISTA!=="op"||EN_TEST);
   $("faq-precio").classList.toggle("hidden",beta);
   $("sub-oferta").textContent=BETA?"Gratis durante la fase de pruebas. Solo necesitas una cuenta.":"Pruébalo gratis 2 días, sin tarjeta.";
   if(VISTA==="inicio")renderPrecio();
   $("auth-intro").innerHTML=BETA?"Estamos en <strong>fase de pruebas</strong>: al crear tu cuenta tendrás acceso completo gratis. Tu progreso se guarda y lo recuperas en cualquier dispositivo.":"Al crear tu cuenta empiezas <strong>2 días de prueba gratis con todo incluido</strong>, sin tarjeta. Tu progreso se guarda y lo recuperas en cualquier dispositivo.";
   renderAccess();
 }
+// Con un plan pagado, los planes no se enseñan en Inicio salvo que se pidan («Mejorar plan»); los administradores los ven siempre para probar el pago
+var PLANES_VER="";
+function planesOcultos(){
+  if(ACC.admin)return false;
+  if(BETA!==false)return true;
+  const pagado=!!ACC.plan&&ACC.plan!=="prueba"&&ACC.plan!=="beta";
+  return pagado&&PLANES_VER!==OP;
+}
 function showPlans(msg){
   if(BETA){showMsg(MSG_DEST,msg||"Ahora mismo no se puede comprar: la web está en fase de pruebas.");return}
+  PLANES_VER=OP;$("planes").classList.remove("hidden");
   if(msg)showMsg("planes-msg",msg,"err");else hideMsg("planes-msg");
   if(SUB!=="inicio")irSub("inicio");
   setTimeout(()=>$("planes").scrollIntoView({behavior:"smooth",block:"start"}),80);

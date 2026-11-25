@@ -202,6 +202,17 @@ async def main():
             await foto(pg, f'{disp}-perfil')
             comprobar(not err, f'perfil ({disp}): sin errores de JavaScript ({err[:1]})')
             await pg.close()
+        print('\n== Planes tras pagar ==')
+        for plan, visible, txt in [('prueba', True, 'en la prueba gratis se ven los planes'), ('legislacion', False, 'con un plan pagado no se ven los planes en Inicio'), ('completo', False, 'con el plan Completo no se ven los planes')]:
+            pg, err = await abrir(1366, 900, {'beta': False, 'user': usuario, 'acc': {'plan': plan, 'hasta': '2027-12-31T22:59:59Z'}})
+            await pg.evaluate("location.hash='#/o/aux-cm'")
+            await pg.wait_for_timeout(900)
+            comprobar(await pg.is_visible('#planes') == visible, txt)
+            if plan == 'legislacion':
+                await pg.click('#acc-cta')
+                await pg.wait_for_timeout(300)
+                comprobar(await pg.is_visible('#planes'), '«Mejorar plan» enseña los planes')
+            await pg.close()
         pg, err = await abrir(1366, 900, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
         await pg.click('#btn-cuenta')
         await pg.click('#btn-account')
