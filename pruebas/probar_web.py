@@ -105,7 +105,7 @@ async def main():
             print(f'\n== Usuario normal ({disp}) ==')
             pg, err = await abrir(ancho, alto, {'beta': True, 'user': usuario, 'acc': {'plan': 'beta'}})
             await foto(pg, f'{disp}-portada')
-            for op in ('aux-cm', 'aux-age', 'aux-ayto-mad', 'aux-canarias', 'adm-cm'):
+            for op in ('aux-cm', 'aux-age', 'aux-ayto-mad', 'aux-canarias', 'adm-cm', 'admin-navarra'):
                 await pg.evaluate(f"location.hash='#/o/{op}'")
                 await pg.wait_for_timeout(700)
                 comprobar(await pg.evaluate('OP') == op, f'{op}: abre el inicio de la oposición')
@@ -174,7 +174,7 @@ async def main():
                 await pg.click('#quit')
                 await pg.wait_for_timeout(300)
                 # simulacro: arranca con su número de preguntas y temporizador
-                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1'), ('aux-ayto-mad', 'ayto-teoria'), ('aux-canarias', 'can-p2'), ('adm-cm', 'adm-ej1')):
+                for op, sim in (('aux-cm', 'simulacro'), ('aux-age', 'age-p1'), ('aux-ayto-mad', 'ayto-teoria'), ('aux-canarias', 'can-p2'), ('adm-cm', 'adm-ej1'), ('admin-navarra', 'nav-ej2')):
                     await pg.evaluate(f"location.hash='#/o/{op}/simulacros'")
                     await pg.wait_for_timeout(700)
                     await pg.click(f'[data-sim={sim}]')
@@ -201,7 +201,7 @@ async def main():
             await pg.evaluate("location.hash='#/perfil'")
             await pg.wait_for_timeout(900)
             comprobar(await pg.is_visible('#pf-body'), f'perfil ({disp}): se abre')
-            comprobar(await pg.evaluate("document.querySelectorAll('#pf-ops .pf-op').length") == len([1 for _ in range(5)]), f'perfil ({disp}): una tarjeta por oposición')
+            comprobar(await pg.evaluate("document.querySelectorAll('#pf-ops .pf-op').length") == len([o for o in json.load(open(os.path.join(RAIZ, 'oposiciones.json'))).values() if not o.get('proximamente')]), f'perfil ({disp}): una tarjeta por oposición')
             comprobar('14,99' in await pg.inner_text('#pf-compras'), f'perfil ({disp}): lista las compras')
             comprobar('Teoría + Ofimática' in await pg.inner_text('#pf-compras'), f'perfil ({disp}): nombre del plan según la oposición')
             await foto(pg, f'{disp}-perfil')
